@@ -30,6 +30,7 @@ website:
             - text: "Intellectual Credit"
               href: mod_credit.qmd
             - text: "Project Management"
+              href: mod_project-mgmt.qmd
             - text: "Logic Models"
               href: mod_logic-models.qmd
             - text: "Communicating Findings"
