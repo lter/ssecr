@@ -24,6 +24,7 @@ website:
       - section: "Team Science Modules"
         contents: 
             - text: "Team Science"
+              href: mod_team-sci.qmd
             - text: "Inclusive Facilitation"
               href: mod_facilitation.qmd
             - text: "Supporting Alt. Thinking"
