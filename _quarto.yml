@@ -52,6 +52,7 @@ website:
             - text: "Analysis & Modeling"
               href: mod_stats.qmd
             - text: "Spatial Data & Interactivity"
+              href: mod_spatial.qmd
             - text: "Reproducible Reports"
               href: mod_reports.qmd
   navbar:
