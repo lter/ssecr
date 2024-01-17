@@ -21,32 +21,24 @@ website:
     contents:
       - text: "Course Overview"
         href: index.qmd
-      - section: "In-Person Week"
-        contents: 
-            - text: "Reproducibility"
-            - text: "Version Control"
-      - section: "Virtual 1"
-        contents: 
-            - text: "Data Discovery"
-      - section: "Virtual 2"
+      - section: "Team Science Modules"
         contents: 
             - text: "Team Science"
-      - section: "Virtual 3"
-        contents: 
             - text: "Inclusive Facilitation"
-      - section: "Virtual 4"
-        contents: 
-            - text: "Data Visualization"
-      - section: "Virtual 5"
-        contents: 
-            - text: "Supporting Divergent, Emergent, and Convergent Thinking"
-            - text: "Data Wrangling"
+            - text: "Supporting Alt. Thinking"
             - text: "Intellectual Credit"
-            - text: "Analysis & Modeling"
             - text: "Project Management"
             - text: "Logic Models"
-            - text: "Spatial Data & Interactivity"
             - text: "Communicating Findings"
+      - section: "Quantitative Modules"
+        contents:
+            - text: "Reproducibility"
+            - text: "Version Control"
+            - text: "Data Discovery"
+            - text: "Data Visualization"
+            - text: "Data Wrangling"
+            - text: "Analysis & Modeling"
+            - text: "Spatial Data & Interactivity"
             - text: "Reproducible Reports"
   navbar:
     background: primary
