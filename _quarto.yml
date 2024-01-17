@@ -31,6 +31,7 @@ website:
               href: mod_credit.qmd
             - text: "Project Management"
             - text: "Logic Models"
+              href: mod_logic-models.qmd
             - text: "Communicating Findings"
               href: mod_findings.qmd
       - section: "Quantitative Modules"
