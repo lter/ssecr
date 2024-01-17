@@ -6,6 +6,6 @@ title: "Spatial Data & Interactivity"
 
 Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.
 
-{{< include sub-modules/topic_spatial.qmd >}}
+{{< include topic_spatial.qmd >}}
 
-{{< include sub-modules/topic_interactivity.qmd >}}
+{{< include topic_interactivity.qmd >}}
