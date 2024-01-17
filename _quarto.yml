@@ -36,6 +36,7 @@ website:
             - text: "Reproducibility"
             - text: "Version Control"
             - text: "Data Discovery"
+              href: mod_data-disc.qmd
             - text: "Data Visualization"
             - text: "Data Wrangling"
             - text: "Analysis & Modeling"
