@@ -1,19 +1,39 @@
 project:
   type: website
+  execute-dir: project
+  output-dir: docs
 
 website:
-  title: "ssecr-course"
+  title: "Synthesis Skills for Early Career Researchers"
+  repo-url: https://github.com/lter/ssecr
+  repo-actions: [issue]
+  google-analytics: "G-YGFW2JT4EY"
   navbar:
+    background: primary
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+    right: 
+      - text: "Instructors"
+        menu: 
+          - text: "Marty Downs"
+            href: https://lternet.edu/
+          - text: "Nick J Lyon"
+            href: https://njlyon0.github.io/
+  page-footer: 
+    center: "Copyright 2024, LTER Network"
+    background: secondary
 
 format:
   html:
-    theme: cosmo
+    theme:
+       light: cosmo
+       dark: cyborg
     css: styles.css
     toc: true
+    link-external-newwindow: true
+    link-external-icon: false
 
-editor: visual
-
+editor: source
