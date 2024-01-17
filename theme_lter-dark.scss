@@ -24,12 +24,15 @@ $font-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 // Base document colors
-$navbar-bg: $lter-green-3; // navbar
+$navbar-bg: $lter-blue-2; // navbar
 $navbar-fg: $cream; // navbar foreground elements
+$sidebar-bg: $lter-green-3; // sidebar
+$sidebar-fg: $cream; // sidebar foreground elements
 $navbar-hl: $lter-green-1; // highlight color when on a page
 $body-bg: $black; // page background
 $body-color: $cream; // page text
 $footer-bg: $lter-blue-2; // footer
+$footer-fg: $cream; // footer text
 $link-color: $lter-tan; // hyperlinks
 
 // Code text
