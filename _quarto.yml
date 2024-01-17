@@ -25,6 +25,7 @@ website:
         contents: 
             - text: "Team Science"
             - text: "Inclusive Facilitation"
+              href: mod_facilitation.qmd
             - text: "Supporting Alt. Thinking"
             - text: "Intellectual Credit"
               href: mod_credit.qmd
