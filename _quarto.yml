@@ -14,7 +14,7 @@ website:
   navbar:
     background: primary
     left:
-      - text: "Home"
+      - text: "Course Home"
         href: index.qmd
       - text: "About"
         href: about.qmd
@@ -35,12 +35,12 @@ website:
 format:
   html:
     code-overflow: scroll
-    code-line-numbers: true
+    code-line-numbers: false
     code-copy: hover
     theme:
-       light: cosmo
-       dark: cyborg
-    css: styles.css
+       light: theme_lter-light.scss
+       dark: theme_lter-dark.scss
+    mainfont: Lato
     toc: true
     link-external-newwindow: true
     link-external-icon: false

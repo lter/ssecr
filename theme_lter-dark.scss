@@ -1,0 +1,38 @@
+/*-- scss:defaults --*/
+
+// Colors
+$lter-green-1: #97AE3F;
+$lter-green-2: #5A5C37;
+$lter-green-3: #374228;
+$lter-blue-1: #209ACA;
+$lter-blue-2: #4AB2CB;
+$lter-tan: #B89E92;
+$lter-yellow: #FFDF1D;
+$lter-orange: #DA6641;
+
+/* generally useful other colors */
+$cream: #F4F3EE;
+$gray-0: #d6d6d6;
+$gray-1: #BCB8B1;
+$gray-2: #8A817C;
+$gray-3: #222823;
+$gray-4: #191919;
+$black: #08090A;
+
+// Fonts
+$font-size: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
+
+// Base document colors
+$navbar-bg: $lter-green-3; // navbar
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $lter-green-1; // highlight color when on a page
+$body-bg: $black; // page background
+$body-color: $cream; // page text
+$footer-bg: $lter-blue-2; // footer
+$link-color: $lter-tan; // hyperlinks
+
+// Code text
+$code-bg: $gray-3; // inline code background color
+$code-block-bg: $gray-3; // code block background color
+$code-color: $lter-orange; // inline code text color
