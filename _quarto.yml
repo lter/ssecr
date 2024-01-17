@@ -3,6 +3,9 @@ project:
   execute-dir: project
   output-dir: docs
 
+execute: 
+  freeze: auto
+
 website:
   title: "Synthesis Skills for Early Career Researchers"
   repo-url: https://github.com/lter/ssecr
