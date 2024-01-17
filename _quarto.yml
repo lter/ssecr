@@ -42,6 +42,7 @@ website:
             - text: "Reproducibile Code"
               href: mod_reproducibility.qmd
             - text: "Version Control"
+              href: mod_version-control.qmd
             - text: "Data Discovery"
               href: mod_data-disc.qmd
             - text: "Data Visualization"
