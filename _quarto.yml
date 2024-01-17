@@ -10,6 +10,7 @@ website:
   title: "Synthesis Skills for Early Career Researchers"
   repo-url: https://github.com/lter/ssecr
   repo-actions: [issue]
+  favicon: images/logo_lter.png
   google-analytics: "G-YGFW2JT4EY"
   sidebar: 
     title: "Modules"
