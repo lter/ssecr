@@ -32,6 +32,7 @@ website:
             - text: "Project Management"
             - text: "Logic Models"
             - text: "Communicating Findings"
+              href: mod_findings.qmd
       - section: "Quantitative Modules"
         contents:
             - text: "Reproducibility"
