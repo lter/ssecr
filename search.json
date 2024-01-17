@@ -1,5 +1,89 @@
 [
   {
+    "objectID": "mod_wrangle.html",
+    "href": "mod_wrangle.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_wrangle.html#under-construction",
+    "href": "mod_wrangle.html#under-construction",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_logic-models.html",
+    "href": "mod_logic-models.html",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_logic-models.html#under-construction",
+    "href": "mod_logic-models.html#under-construction",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_team-sci.html",
+    "href": "mod_team-sci.html",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_team-sci.html#under-construction",
+    "href": "mod_team-sci.html#under-construction",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_reports.html#under-construction",
+    "href": "mod_reports.html#under-construction",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_project-mgmt.html#under-construction",
+    "href": "mod_project-mgmt.html#under-construction",
+    "title": "Project Management",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_version-control.html#under-construction",
+    "href": "mod_version-control.html#under-construction",
+    "title": "Version Control",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Course Overview",
@@ -7,10 +91,171 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "mod_credit.html",
+    "href": "mod_credit.html",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_credit.html#under-construction",
+    "href": "mod_credit.html#under-construction",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_spatial.html",
+    "href": "mod_spatial.html",
+    "title": "Spatial Data & Interactivity",
+    "section": "",
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module."
+  },
+  {
+    "objectID": "mod_spatial.html#overview",
+    "href": "mod_spatial.html#overview",
+    "title": "Spatial Data & Interactivity",
+    "section": "",
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module."
+  },
+  {
+    "objectID": "mod_spatial.html#working-with-spatial-data",
+    "href": "mod_spatial.html#working-with-spatial-data",
+    "title": "Spatial Data & Interactivity",
+    "section": "Working with Spatial Data",
+    "text": "Working with Spatial Data\n\nUnder Construction\nStay tuned for more details!"
+  },
+  {
+    "objectID": "mod_spatial.html#interactivity",
+    "href": "mod_spatial.html#interactivity",
+    "title": "Spatial Data & Interactivity",
+    "section": "Interactivity",
+    "text": "Interactivity\n\nUnder Construction\nStay tuned for more details!"
+  },
+  {
+    "objectID": "topic_interactivity.html",
+    "href": "topic_interactivity.html",
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_interactivity.html#interactivity",
+    "href": "topic_interactivity.html#interactivity",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_reproducibility.html",
+    "href": "mod_reproducibility.html",
+    "title": "Reproducibility Best Practices",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_reproducibility.html#under-construction",
+    "href": "mod_reproducibility.html#under-construction",
+    "title": "Reproducibility Best Practices",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_data-viz.html",
+    "href": "mod_data-viz.html",
+    "title": "Data Visualization & Exploration",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_data-viz.html#under-construction",
+    "href": "mod_data-viz.html#under-construction",
+    "title": "Data Visualization & Exploration",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_thinking.html",
+    "href": "mod_thinking.html",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_thinking.html#under-construction",
+    "href": "mod_thinking.html#under-construction",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html",
+    "href": "topic_spatial.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html#working-with-spatial-data",
+    "href": "topic_spatial.html#working-with-spatial-data",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_facilitation.html#under-construction",
+    "href": "mod_facilitation.html#under-construction",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_stats.html#under-construction",
+    "href": "mod_stats.html#under-construction",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_data-disc.html#under-construction",
+    "href": "mod_data-disc.html#under-construction",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_findings.html#under-construction",
+    "href": "mod_findings.html#under-construction",
+    "title": "Communicating Findings",
+    "section": "",
+    "text": "Stay tuned for more details!"
   }
 ]
