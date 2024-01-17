@@ -37,7 +37,8 @@ website:
               href: mod_findings.qmd
       - section: "Quantitative Modules"
         contents:
-            - text: "Reproducibility"
+            - text: "Reproducibile Code"
+              href: mod_reproducibility.qmd
             - text: "Version Control"
             - text: "Data Discovery"
               href: mod_data-disc.qmd
