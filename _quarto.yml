@@ -27,6 +27,7 @@ website:
             - text: "Inclusive Facilitation"
             - text: "Supporting Alt. Thinking"
             - text: "Intellectual Credit"
+              href: mod_credit.qmd
             - text: "Project Management"
             - text: "Logic Models"
             - text: "Communicating Findings"
