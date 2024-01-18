@@ -20,7 +20,7 @@ Communicating via email is fine though we also have a channel (`#lter-grad-cours
 
 - Individual tasks should be tracked as [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart)
     - Be sure that each task is **SMART** (i.e., specific, measurable, achievable, relevant, and time-bound)
-- Please use the issue template
+- **Please use the issue template**
     - When you select "New Issue" you will be prompted to use this template automatically
 - Try to document task progress within the dedicated issue for that task (for posterity)
 - Strategic planning (i.e., project management across tasks) should use the [SSECR GitHub Project](https://github.com/orgs/lter/projects/6/views/1)
