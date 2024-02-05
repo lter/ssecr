@@ -40,7 +40,7 @@ website:
               href: mod_findings.qmd
       - section: "Quantitative Modules"
         contents:
-            - text: "Reproducibile Code"
+            - text: "Reproducible Code"
               href: mod_reproducibility.qmd
             - text: "Version Control"
               href: mod_version-control.qmd
