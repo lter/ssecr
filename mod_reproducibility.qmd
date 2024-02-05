@@ -13,6 +13,30 @@ After completing this module you will be able to:
 - <u>A</u> x
 
 
+## Module Content
+
+### Workflow Documentation
+
+
+
+### Project Organization
+
+
+
+### Reproducible Coding
+
+
+
+### FAIR & CARE
+
+
+
+
+
+
+
+
+
 
 
 
