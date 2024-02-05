@@ -282,7 +282,7 @@
     "href": "mod_reproducibility.html",
     "title": "Reproducibility Best Practices",
     "section": "",
-    "text": "Stay tuned for more details!",
+    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
     "crumbs": [
       "Quantitative Modules",
       "Reproducible Code"
@@ -293,7 +293,7 @@
     "href": "mod_reproducibility.html#overview",
     "title": "Reproducibility Best Practices",
     "section": "",
-    "text": "Stay tuned for more details!",
+    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
     "crumbs": [
       "Quantitative Modules",
       "Reproducible Code"
@@ -304,7 +304,18 @@
     "href": "mod_reproducibility.html#learning-objectives",
     "title": "Reproducibility Best Practices",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nA x",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify core tenets of reproducibility best practices\nCreate reproducible workflow documentation\nImplement reproducible project organization strategies\nDiscuss methods for improving the reproducibility of your code products\nSummarize FAIR and CARE data principles\nEvaluate the FAIR/CAREness of your work",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Code"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#module-content",
+    "href": "mod_reproducibility.html#module-content",
+    "title": "Reproducibility Best Practices",
+    "section": "Module Content",
+    "text": "Module Content\n\nWorkflow Documentation\n\n\nProject Organization\n\n\nReproducible Coding\n\n\nFAIR & CARE\nFAIR is an acronym for Findable Accessible Interpoerable and Reusable\nWhile making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the sole tool to use in evaluating how data/code are shared and stored. The Global Indigenous Data Alliance (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets.\nCARE stands for Collective Benefit, Authority to Control, Responsibility, and Ethics.",
     "crumbs": [
       "Quantitative Modules",
       "Reproducible Code"
@@ -315,7 +326,7 @@
     "href": "mod_reproducibility.html#additional-resources",
     "title": "Reproducibility Best Practices",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\ncoreR Course, Chapter 5: FAIR and CARE Principles. NCEAS Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\nCoding Tips. National Center for Ecological Analysis and Synthesis (NCEAS) Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries",
+    "text": "Additional Resources\n\nPapers & Documents\n\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.",
     "crumbs": [
       "Quantitative Modules",
       "Reproducible Code"
@@ -392,7 +403,7 @@
     "href": "mod_version-control.html#additional-resources",
     "title": "Version Control",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
     "crumbs": [
       "Quantitative Modules",
       "Version Control"
