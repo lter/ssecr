@@ -11,7 +11,7 @@ As we set out to engage with the synthesis skills this course aims to offer, it 
 After completing this module you will be able to: 
 
 - <u>Identify</u> core tenets of reproducibility best practices
-- <u>Create</u> reproducible workflow documentation
+- <u>Create</u> robust workflow documentation
 - <u>Implement</u> reproducible project organization strategies
 - <u>Discuss</u> methods for improving the reproducibility of your code products
 - <u>Summarize</u> FAIR and CARE data principles
@@ -19,11 +19,9 @@ After completing this module you will be able to:
 
 ## Module Content
 
-### Workflow Documentation
+### Project Organization & Documentation
 
 
-
-### Project Organization
 
 
 
@@ -39,11 +37,15 @@ While making data and code more FAIR is often a good ideal the philosophy behind
 
 CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. 
 
+"The CARE Principles complement, enhance and extend the FAIR Principles by advancing Indigenous self-determination and Indigenous standards to be used alongside mainstream data guidelines" -- Jennings 2023
+
 ## Additional Resources
 
 ### Papers & Documents
 
+- [Applying the 'CARE Principles for Indigenous Data Governance' to Ecology and Biodiversity Research](https://www.nature.com/articles/s41559-023-02161-2). Jennings _et al._, 2023. **Nature Ecology & Evolution**
 - [Guides to Better Science - Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). The British Ecological Society, 2024.
+- [R Packages](https://r-pkgs.org/) (2nd ed.). Wickham & Bryan.
 
 ### Workshops & Courses
 
@@ -56,3 +58,6 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 
 - [Coding Tips](https://nceas.github.io/scicomp.github.io/best_practices.html). NCEAS Scientific Computing Team, 2024.
 - [Team Coding: 5 Essentials](https://nceas.github.io/scicomp.github.io/onboard-scaffold_team_coding.html). NCEAS Scientific Computing Team, 2024.
+- Advanced R (1st ed.) [Style Guide](http://adv-r.had.co.nz/Style.html). Wickham
+- PEP 8 [Style Guide for Python Code](https://peps.python.org/pep-0008/). van Rossum _et al._ 2013.
+- [Google Style Guides](https://google.github.io/styleguide/)
