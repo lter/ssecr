@@ -4,7 +4,7 @@ title: "Reproducibility Best Practices"
 
 ## Overview
 
-Stay tuned for more details!
+As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of "reproducibility." Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. "Reproducibility" is a wide sphere encompassing many different--albeit related--topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to puish yourself to elevate your practices to the next level.
 
 ## Learning Objectives
 
