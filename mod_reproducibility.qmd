@@ -2,6 +2,19 @@
 title: "Reproducibility Best Practices"
 ---
 
-## Under Construction
+## Overview
 
 Stay tuned for more details!
+
+## Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>A</u> x
+
+
+
+
+
+
+## Additional Resources

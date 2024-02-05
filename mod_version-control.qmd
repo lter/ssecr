@@ -2,6 +2,20 @@
 title: "Version Control"
 ---
 
-## Under Construction
+## Overview
 
 Stay tuned for more details!
+
+## Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>A</u> x
+
+
+ ```{=html}
+<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="600" width="900" style="border: 1px solid #2e3846;"></iframe>
+```
+
+## Additional Resources
+
