@@ -4,13 +4,18 @@ title: "Reproducibility Best Practices"
 
 ## Overview
 
-As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of "reproducibility." Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. "Reproducibility" is a wide sphere encompassing many different--albeit related--topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to puish yourself to elevate your practices to the next level.
+As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of "reproducibility." Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. "Reproducibility" is a wide sphere encompassing many different--albeit related--topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.
 
 ## Learning Objectives
 
 After completing this module you will be able to: 
 
-- <u>A</u> x
+- <u>Identify</u> core tenets of reproducibility best practices
+- <u>Create</u> reproducible workflow documentation
+- <u>Implement</u> reproducible project organization strategies
+- <u>Discuss</u> methods for improving the reproducibility of your code products
+- <u></u> x
+- <u></u> x
 - <u>Summarize</u> FAIR and CARE data principles
 - <u>Evaluate</u> the FAIR/CAREness of your work
 
@@ -38,10 +43,18 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 
 ## Additional Resources
 
+### Papers & Documents
+
 - [Guides to Better Science - Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). The British Ecological Society, 2024.
-- coreR Course, [Chapter 5: FAIR and CARE Principles](https://learning.nceas.ucsb.edu/2023-10-coreR/session_05.html). NCEAS Learning Hub, 2023.
-- coreR Course, [Chapter 18: Reproducibility & Provenance](https://learning.nceas.ucsb.edu/2023-10-coreR/session_18.html). NCEAS Learning Hub, 2023.
-- [Coding Tips](https://nceas.github.io/scicomp.github.io/best_practices.html). National Center for Ecological Analysis and Synthesis (NCEAS) Scientific Computing Team, 2024.
-- [Team Coding: 5 Essentials](https://nceas.github.io/scicomp.github.io/onboard-scaffold_team_coding.html). NCEAS Scientific Computing Team, 2024.
+
+### Workshops & Courses
+
 - Data Analysis and Visualization in R for Ecologists, [Episode 1: Before We Start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html). The Carpentries
 - Introduction to R for Geospatial Data, [Episode 2: Project Management with RStudio](https://datacarpentry.org/r-intro-geospatial/02-project-intro.html). The Carpentries
+- coreR Course, [Chapter 5: FAIR and CARE Principles](https://learning.nceas.ucsb.edu/2023-10-coreR/session_05.html). National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.
+- coreR Course, [Chapter 18: Reproducibility & Provenance](https://learning.nceas.ucsb.edu/2023-10-coreR/session_18.html). NCEAS Learning Hub, 2023.
+
+### Websites
+
+- [Coding Tips](https://nceas.github.io/scicomp.github.io/best_practices.html). NCEAS Scientific Computing Team, 2024.
+- [Team Coding: 5 Essentials](https://nceas.github.io/scicomp.github.io/onboard-scaffold_team_coding.html). NCEAS Scientific Computing Team, 2024.
