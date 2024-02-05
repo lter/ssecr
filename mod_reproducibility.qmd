@@ -11,7 +11,8 @@ Stay tuned for more details!
 After completing this module you will be able to: 
 
 - <u>A</u> x
-
+- <u>Summarize</u> FAIR and CARE data principles
+- <u>Evaluate</u> the FAIR/CAREness of your work
 
 ## Module Content
 
@@ -29,17 +30,11 @@ After completing this module you will be able to:
 
 ### FAIR & CARE
 
+FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable
 
+While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the _sole_ tool to use in evaluating how data/code are shared and stored. The [Global Indigenous Data Alliance](https://www.gida-global.org/) (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets.
 
-
-
-
-
-
-
-
-
-
+CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. 
 
 ## Additional Resources
 
