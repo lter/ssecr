@@ -285,7 +285,7 @@
     "text": "Stay tuned for more details!",
     "crumbs": [
       "Quantitative Modules",
-      "Reproducibile Code"
+      "Reproducible Code"
     ]
   },
   {
@@ -296,7 +296,7 @@
     "text": "Stay tuned for more details!",
     "crumbs": [
       "Quantitative Modules",
-      "Reproducibile Code"
+      "Reproducible Code"
     ]
   },
   {
@@ -307,7 +307,7 @@
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nA x",
     "crumbs": [
       "Quantitative Modules",
-      "Reproducibile Code"
+      "Reproducible Code"
     ]
   },
   {
@@ -315,10 +315,10 @@
     "href": "mod_reproducibility.html#additional-resources",
     "title": "Reproducibility Best Practices",
     "section": "Additional Resources",
-    "text": "Additional Resources",
+    "text": "Additional Resources\n\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\ncoreR Course, Chapter 5: FAIR and CARE Principles. NCEAS Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\nCoding Tips. National Center for Ecological Analysis and Synthesis (NCEAS) Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries",
     "crumbs": [
       "Quantitative Modules",
-      "Reproducibile Code"
+      "Reproducible Code"
     ]
   },
   {
@@ -392,7 +392,7 @@
     "href": "mod_version-control.html#additional-resources",
     "title": "Version Control",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nHappy Git and GitHub for the useR Bryan et al., 2024.\nNCEAS Learning Hub’s coreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "text": "Additional Resources\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
     "crumbs": [
       "Quantitative Modules",
       "Version Control"
