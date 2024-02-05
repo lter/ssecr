@@ -14,8 +14,6 @@ After completing this module you will be able to:
 - <u>Create</u> reproducible workflow documentation
 - <u>Implement</u> reproducible project organization strategies
 - <u>Discuss</u> methods for improving the reproducibility of your code products
-- <u></u> x
-- <u></u> x
 - <u>Summarize</u> FAIR and CARE data principles
 - <u>Evaluate</u> the FAIR/CAREness of your work
 
