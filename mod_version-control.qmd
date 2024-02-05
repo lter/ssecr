@@ -27,9 +27,10 @@ The workshop materials we will be working through live [here](https://nceas.gith
 
 ## Additional Resources
 
-### Papers
+### Papers & Documents
 
 - [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). Pereira Braga _et al._, 2023. **Methods in Ecology and Evolution**
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). GitHub
 
 ### Workshops & Courses
 
