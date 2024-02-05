@@ -1,262 +1,179 @@
 [
   {
-    "objectID": "mod_wrangle.html",
-    "href": "mod_wrangle.html",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_wrangle.html#under-construction",
-    "href": "mod_wrangle.html#under-construction",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_logic-models.html",
-    "href": "mod_logic-models.html",
-    "title": "Logic Models",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_logic-models.html#under-construction",
-    "href": "mod_logic-models.html#under-construction",
-    "title": "Logic Models",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
     "objectID": "mod_data-disc.html",
     "href": "mod_data-disc.html",
     "title": "Data Discovery & Management",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Discovery"
+    ]
   },
   {
     "objectID": "mod_data-disc.html#under-construction",
     "href": "mod_data-disc.html#under-construction",
     "title": "Data Discovery & Management",
     "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_stats.html",
-    "href": "mod_stats.html",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_stats.html#under-construction",
-    "href": "mod_stats.html#under-construction",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_facilitation.html",
-    "href": "mod_facilitation.html",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_facilitation.html#under-construction",
-    "href": "mod_facilitation.html#under-construction",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_spatial.html",
-    "href": "topic_spatial.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_spatial.html#working-with-spatial-data",
-    "href": "topic_spatial.html#working-with-spatial-data",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_thinking.html",
-    "href": "mod_thinking.html",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_thinking.html#under-construction",
-    "href": "mod_thinking.html#under-construction",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_data-viz.html",
-    "href": "mod_data-viz.html",
-    "title": "Data Visualization & Exploration",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_data-viz.html#under-construction",
-    "href": "mod_data-viz.html#under-construction",
-    "title": "Data Visualization & Exploration",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_reproducibility.html",
-    "href": "mod_reproducibility.html",
-    "title": "Reproducibility Best Practices",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_reproducibility.html#under-construction",
-    "href": "mod_reproducibility.html#under-construction",
-    "title": "Reproducibility Best Practices",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_interactivity.html",
-    "href": "topic_interactivity.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_interactivity.html#interactivity",
-    "href": "topic_interactivity.html#interactivity",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Discovery"
+    ]
   },
   {
     "objectID": "mod_spatial.html",
     "href": "mod_spatial.html",
     "title": "Spatial Data & Interactivity",
     "section": "",
-    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module."
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Spatial Data & Interactivity"
+    ]
   },
   {
     "objectID": "mod_spatial.html#overview",
     "href": "mod_spatial.html#overview",
     "title": "Spatial Data & Interactivity",
     "section": "",
-    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module."
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Spatial Data & Interactivity"
+    ]
   },
   {
     "objectID": "mod_spatial.html#working-with-spatial-data",
     "href": "mod_spatial.html#working-with-spatial-data",
     "title": "Spatial Data & Interactivity",
     "section": "Working with Spatial Data",
-    "text": "Working with Spatial Data\n\nUnder Construction\nStay tuned for more details!"
+    "text": "Working with Spatial Data\n\nUnder Construction\nStay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Spatial Data & Interactivity"
+    ]
   },
   {
     "objectID": "mod_spatial.html#interactivity",
     "href": "mod_spatial.html#interactivity",
     "title": "Spatial Data & Interactivity",
     "section": "Interactivity",
-    "text": "Interactivity\n\nUnder Construction\nStay tuned for more details!"
+    "text": "Interactivity\n\nUnder Construction\nStay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Spatial Data & Interactivity"
+    ]
   },
   {
-    "objectID": "mod_credit.html",
-    "href": "mod_credit.html",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-viz.html",
+    "href": "mod_data-viz.html",
+    "title": "Data Visualization & Exploration",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Visualization"
+    ]
   },
   {
-    "objectID": "mod_credit.html#under-construction",
-    "href": "mod_credit.html#under-construction",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-viz.html#under-construction",
+    "href": "mod_data-viz.html#under-construction",
+    "title": "Data Visualization & Exploration",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Visualization"
+    ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Course Overview",
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
     "section": "",
-    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology."
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
   },
   {
-    "objectID": "index.html#course-priorities",
-    "href": "index.html#course-priorities",
-    "title": "Course Overview",
-    "section": "Course Priorities",
-    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis project\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research"
-  },
-  {
-    "objectID": "index.html#course-structure",
-    "href": "index.html#course-structure",
-    "title": "Course Overview",
-    "section": "Course Structure",
-    "text": "Course Structure\n\nParticipants: ~27 (approx. 1 graduate students from each LTER site)\nTime frame: Biweekly meetings (1 session / 2 weeks) over the course of 9 months\nCourse management: LTER Network Office (LNO)\nInstruction: LNO staff, guest speakers, LTER Network-recruited mentors"
-  },
-  {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
+    "objectID": "mod_stats.html#under-construction",
+    "href": "mod_stats.html#under-construction",
+    "title": "Analysis & Modeling",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
   },
   {
-    "objectID": "mod_version-control.html#under-construction",
-    "href": "mod_version-control.html#under-construction",
-    "title": "Version Control",
+    "objectID": "mod_logic-models.html",
+    "href": "mod_logic-models.html",
+    "title": "Logic Models",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
   },
   {
-    "objectID": "mod_project-mgmt.html",
-    "href": "mod_project-mgmt.html",
-    "title": "Project Management",
+    "objectID": "mod_logic-models.html#under-construction",
+    "href": "mod_logic-models.html#under-construction",
+    "title": "Logic Models",
     "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_project-mgmt.html#under-construction",
-    "href": "mod_project-mgmt.html#under-construction",
-    "title": "Project Management",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_reports.html#under-construction",
-    "href": "mod_reports.html#under-construction",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
   },
   {
     "objectID": "mod_team-sci.html",
     "href": "mod_team-sci.html",
     "title": "Team Science Practices",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
   },
   {
     "objectID": "mod_team-sci.html#under-construction",
     "href": "mod_team-sci.html#under-construction",
     "title": "Team Science Practices",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#under-construction",
+    "href": "mod_reports.html#under-construction",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
   },
   {
     "objectID": "CONTRIBUTING.html",
@@ -287,17 +204,292 @@
     "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
   },
   {
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#under-construction",
+    "href": "mod_facilitation.html#under-construction",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-priorities",
+    "href": "index.html#course-priorities",
+    "title": "Course Overview",
+    "section": "Course Priorities",
+    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis project\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "Course Overview",
+    "section": "Course Structure",
+    "text": "Course Structure\n\nParticipants: ~27 (approx. 1 graduate students from each LTER site)\nTime frame: Biweekly meetings (1 session / 2 weeks) over the course of 9 months\nCourse management: LTER Network Office (LNO)\nInstruction: LNO staff, guest speakers, LTER Network-recruited mentors",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
     "objectID": "mod_findings.html",
     "href": "mod_findings.html",
     "title": "Communicating Findings",
     "section": "",
-    "text": "Stay tuned for more details!"
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
   },
   {
     "objectID": "mod_findings.html#under-construction",
     "href": "mod_findings.html#under-construction",
     "title": "Communicating Findings",
     "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html",
+    "href": "mod_reproducibility.html",
+    "title": "Reproducibility Best Practices",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibile Code"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#overview",
+    "href": "mod_reproducibility.html#overview",
+    "title": "Reproducibility Best Practices",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibile Code"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#learning-objectives",
+    "href": "mod_reproducibility.html#learning-objectives",
+    "title": "Reproducibility Best Practices",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nA x",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibile Code"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#additional-resources",
+    "href": "mod_reproducibility.html#additional-resources",
+    "title": "Reproducibility Best Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibile Code"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html",
+    "href": "mod_wrangle.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html#under-construction",
+    "href": "mod_wrangle.html#under-construction",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nHappy Git and GitHub for the useR Bryan et al., 2024.\nNCEAS Learning Hub’s coreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_thinking.html",
+    "href": "mod_thinking.html",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Supporting D.E.C. Thinking"
+    ]
+  },
+  {
+    "objectID": "mod_thinking.html#under-construction",
+    "href": "mod_thinking.html#under-construction",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Supporting D.E.C. Thinking"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#under-construction",
+    "href": "mod_project-mgmt.html#under-construction",
+    "title": "Project Management",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "topic_interactivity.html",
+    "href": "topic_interactivity.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
     "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_interactivity.html#interactivity",
+    "href": "topic_interactivity.html#interactivity",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html",
+    "href": "topic_spatial.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html#working-with-spatial-data",
+    "href": "topic_spatial.html#working-with-spatial-data",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_credit.html",
+    "href": "mod_credit.html",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#under-construction",
+    "href": "mod_credit.html#under-construction",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
   }
 ]

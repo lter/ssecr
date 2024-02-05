@@ -1,1 +1,1 @@
-Sitemap: https://github.com/lter/ssecr/sitemap.xml
+Sitemap: https://lter.github.io/ssecr/sitemap.xml
