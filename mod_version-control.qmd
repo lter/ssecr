@@ -4,7 +4,7 @@ title: "Version Control"
 
 ## Overview
 
-Stay tuned for more details!
+Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code "scripts") that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/)) has a [Scientific Computing Team](https://nceas.github.io/scicomp.github.io/) that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.
 
 ## Learning Objectives
 
@@ -12,6 +12,9 @@ After completing this module you will be able to:
 
 - <u>A</u> x
 
+## Module Content
+
+The workshop materials we will be working through live [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
 
  ```{=html}
 <iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="600" width="900" style="border: 1px solid #2e3846;"></iframe>
