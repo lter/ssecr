@@ -28,6 +28,6 @@ The workshop materials we will be working through live [here](https://nceas.gith
 ## Additional Resources
 
 - [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). Pereira Braga _et al._, 2023. **Methods in Ecology and Evolution**
-- [Happy Git and GitHub for the useR](https://happygitwithr.com/) Bryan _et al._, 2024.
-- NCEAS Learning Hub's coreR Course, [Chapter 6: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). NCEAS Learning Hub, 2023.
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/). Bryan _et al._, 2024.
+- coreR Course, [Chapter 6: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). NCEAS Learning Hub, 2023.
 
