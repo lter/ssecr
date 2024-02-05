@@ -10,14 +10,19 @@ Synthesis projects require an intensely collaborative team spirit complemented b
 
 After completing this module you will be able to: 
 
-- <u>A</u> x
+- <u>Describe</u> how version control facilitates code collaboration
+- <u>Navigate</u> GitHub via a web browser
+- <u>Create</u> and edit a repository through GitHub
+- <u>Define</u> fundamental git vocabulary
+- <u>Sketch</u> the RStudio-to-GitHub order of operations
+- <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
 
 ## Module Content
 
 The workshop materials we will be working through live [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
 
  ```{=html}
-<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="600" width="900" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="550" width="900" style="border: 1px solid #2e3846;"></iframe>
 ```
 
 ## Additional Resources
