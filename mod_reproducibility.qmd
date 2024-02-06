@@ -48,10 +48,16 @@ With a partner, discuss how you typically organize your projects' files.
 
 #### File Names
 
+Beyond the structure and degree of nestedness you adopt for your folders, your files can (and should) include a lot of helpful contextual information about themselves. An ideal file name should be very informative about that file's contents, purpose, and relation to other project files. Some or all of that information may be reinforced by the folder(s) in which the file is placed, but the file name itself should _also_ confer that information. This may feel redundant but if late in your project's lifecycle you decide a different folder system is needed, information-dense file names will allow you to change file locations without excessive difficulty.
 
-- Name and location of file should be very informative about the contents, purpose, and relation of that file to other project files
+You should also consider how 'machine readable' your file names are. One fundamental way in which this changes user's experience is how file management applications (e.g., Apple's Finder) visually display files. By default files are typically sorted alphabetically and numerically. So, even if the script "wrangle.R" should be run _first_ in your workflow, most file explorers would put that script last or at the bottom. If instead you changed it's name to "01_wrangle.R" now it would likely be sorted towards the top and encountered earlier by those interested in your workflow. Notice too in that example that we have "zero padded" the script so that if we eventually had a tenth script file explorers would correctly sort it ("10..." would be before "1..." in most file sorting systems).
+
+You should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., "raw data" versus "raw_data").
 
 
+- Avoid spaces, accented characters, and case sensitivity
+- Be consistent about delimiters
+- Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
 
 
 #### Documentation
@@ -59,12 +65,6 @@ With a partner, discuss how you typically organize your projects' files.
 - Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation
 - May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information
 - Keep track of ideas, discussions, and decisions about the project
-
-#### Machine Readability
-
-- Avoid spaces, accented characters, and case sensitivity
-- Be consistent about delimiters
-- Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
 
 
 #### Best Practices / Recommendations
