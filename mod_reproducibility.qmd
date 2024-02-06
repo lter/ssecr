@@ -19,6 +19,12 @@ After completing this module you will be able to:
 
 ## Module Content
 
+### Lego Activity
+
+Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we'll cover today. The LEGO {{< fa registered >}} activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).
+
+
+
 ### Points to Make (DELETE ME)
 
 - Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices
