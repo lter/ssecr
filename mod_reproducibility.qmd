@@ -27,24 +27,40 @@ Before we dive into the world of reproducibility for synthesis projects, we thou
 
 Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is critically important that we first discuss what factors go into project-wide reproducibility. "Perfect" code in a project that isn't structured thoughtfully can still result in a synthesis project that is not reproducible while even "bad" code can be made more intelligible when it is placed in a well-documented/organized project!
 
+#### Folder Structure
 
-- The raw data and products of scripts should be separated into different folders
-- Simplest/best way of documenting a workflow is via a good file organization system
+The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single "best" way of organizing your projects' files as long as you are consistent. Consistency allows those navigating your system to _deduce_ where particular files are likely to be without having in-depth knowledge of the entire suite of materials. 
+
+
+
 - Name and location of file should be very informative about the contents, purpose, and relation of that file to other project files
 - One folder == one project
     - Increases ease of sharing, documenting, and collaborating
-- No single "best" way to organize but _consistency_ will be a huge benefit regardless of the particular organization strategy
-- Folder tips
-    - Be consistent
-    - Structure hierarchically
-    - Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation
-    - May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information
-    - Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
-    - Keep track of ideas, discussions, and decisions about the project
-- Machine readability
-    - Avoid spaces, accented characters, and case sensitivity
-    - Be consistent about delimiters
-    - Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
+- Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
+- The raw data and products of scripts should be separated into different folders
+
+- Folder tips - Structure hierarchically
+
+
+#### Documentation
+
+- Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation
+- May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information
+- Keep track of ideas, discussions, and decisions about the project
+
+#### Machine Readability
+
+- Avoid spaces, accented characters, and case sensitivity
+- Be consistent about delimiters
+- Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
+
+
+
+
+
+
+    
+
     
 ### Reproducible Coding
 
