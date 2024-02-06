@@ -19,11 +19,57 @@ After completing this module you will be able to:
 
 ## Module Content
 
+### Points to Make (DELETE ME)
+
+- Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices
+- _Never_ touch raw data
+- Principles
+    - All changes between raw data and the final data should be done with scripts
+    - Workflow should be divided into logical, modular scripts (e.g., wrangle vs. analyze vs. graph)
+    - If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work
+    - If an operation is duplicated across more than 3 _projects_, consider creating an R package
+    - The raw data and products of scripts should be separated into different folders
+    - Code should be thoroughly documented with comments
+    - Comments should focus on "why" of operations rather than "what" (assumes code is being read by a person who can interpret the 'what' by scanning the code)
+    - 
+- Simplest/best way of documenting a workflow is via a good file organization system
+- Name and location of file should be very informative about the contents, purpose, and relation of that file to other project files
+- One folder == one project
+    - Increases ease of sharing, documenting, and collaborating
+- No single "best" way to organize but _consistency_ will be a huge benefit regardless of the particular organization strategy
+- Folder tips
+    - Be consistent
+    - Structure hierarchically
+    - Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation
+    - May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information
+    - Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
+    - Keep track of ideas, discussions, and decisions about the project
+- Machine readability
+    - Avoid spaces, accented characters, and case sensitivity
+    - Be consistent about delimiters
+    - Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
+- Code tells the computer what to do, comments tell the human what we're telling the computer to do
+- Benefits of clear / reproducible code:
+    - Returning to code months later is easier
+    - Easier to share methods and facilitate external result validation
+    - Encourages adoption of your methods/workflows
+- Choose a logical coding style and _stick with it_
+- Concise and descriptive object names (and variable names)
+- Use spaces between operators and after commas
+- Indentation should be consistent about tabs vs. spaces
+- Low (ish) effort way to increase reproducibility is to use extensive/clear comments
+- Portable code (i.e., transferable) uses relative file paths
+- Custom functions should be written "defensively"
+    - Anticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them
+    - Key is to "fail fast" and ensure code throws an error _as soon as something unexpected happens_ rather than doing a bunch of processing and failing later on because of something that could be identified early on
+- Carefully load packages and record package versions
+
 ### Project Organization & Documentation
 
 
 
 ### Reproducible Coding
+
 
 
 
