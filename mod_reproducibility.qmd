@@ -31,15 +31,27 @@ Much of the popular conversation around reproducibility centers on reproducibili
 
 The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single "best" way of organizing your projects' files as long as you are consistent. Consistency allows those navigating your system to _deduce_ where particular files are likely to be without having in-depth knowledge of the entire suite of materials. 
 
+To begin, it is best to have a single folder for each project. This makes it simple to find the project's inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project's life cycle, this 'one folder' approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects' scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary <u>I</u>ntegrated <u>D</u>eveloper <u>E</u>nvironment for R) and most version control systems assume that each project's materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).
+
+Within your project folder, it is valuable to structure your folders and files hierarchically. Having a folder with dozens of mixed file types of various purposes that may be either inputs or outputs is cumbersome to document and difficult to navigate. If instead you adopt a system of sub-folders that group files based on purpose and/or source engagement becomes much simpler. You need not use an intricate web of sub-folders either; often just a single layer of these sub-folders provides sufficient structure to meet your project's organizational needs.
+
+:::{.callout-warning icon="false"}
+#### Discussion: Folder Structure
+
+With a partner, discuss how you typically organize your projects' files.
+
+- What benefits do you see of your current approach?
+- What--if any--limitations to your system have you experienced?
+- Do you think your structure would work well in a team environment?
+    - If not, what changes might you make to better fit that context?
+:::
+
+#### File Names
 
 
 - Name and location of file should be very informative about the contents, purpose, and relation of that file to other project files
-- One folder == one project
-    - Increases ease of sharing, documenting, and collaborating
-- Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
-- The raw data and products of scripts should be separated into different folders
 
-- Folder tips - Structure hierarchically
+
 
 
 #### Documentation
@@ -55,6 +67,11 @@ The simplest and often most effective way of beginning a reproducible project is
 - Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
 
 
+#### Best Practices / Recommendations
+
+- Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
+- The raw data and products of scripts should be separated into different folders
+- _Never_ touch raw data
 
 
 
@@ -65,9 +82,6 @@ The simplest and often most effective way of beginning a reproducible project is
 ### Reproducible Coding
 
 - Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices
-
-
-- _Never_ touch raw data
 - Principles
     - All changes between raw data and the final data should be done with scripts
     - Workflow should be divided into logical, modular scripts (e.g., wrangle vs. analyze vs. graph)
@@ -75,8 +89,6 @@ The simplest and often most effective way of beginning a reproducible project is
     - If an operation is duplicated across more than 3 _projects_, consider creating an R package
     - Code should be thoroughly documented with comments
     - Comments should focus on "why" of operations rather than "what" (assumes code is being read by a person who can interpret the 'what' by scanning the code)
-    - 
-
 - Code tells the computer what to do, comments tell the human what we're telling the computer to do
 - Benefits of clear / reproducible code:
     - Returning to code months later is easier
@@ -131,7 +143,7 @@ Consider the following list of actions you might take to make your data FAIR. No
 - Ensure that your data meet _discipline-specific_ community standards
 
 :::{.callout-warning icon="false"}
-### Discussion: Consider Data FAIRness
+#### Discussion: Consider Data FAIRness
 
 Consider the first data chapter of your thesis or dissertation. On a scale of 1-5, how FAIR do you think your data and metadata are? What actions could you take to make your data more FAIR compliant? If it helps, feel free to rate your (meta)data based on each FAIR criterion separately!
 
