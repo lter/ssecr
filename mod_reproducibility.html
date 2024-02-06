@@ -272,7 +272,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#project-organization-documentation" id="toc-project-organization-documentation" class="nav-link" data-scroll-target="#project-organization-documentation">Project Organization &amp; Documentation</a></li>
   <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a></li>
-  <li><a href="#fair-care" id="toc-fair-care" class="nav-link" data-scroll-target="#fair-care">FAIR &amp; CARE</a></li>
+  <li><a href="#fair-care-data-principles" id="toc-fair-care-data-principles" class="nav-link" data-scroll-target="#fair-care-data-principles">FAIR &amp; CARE Data Principles</a></li>
   </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
@@ -331,12 +331,79 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="reproducible-coding" class="level3">
 <h3 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h3>
 </section>
-<section id="fair-care" class="level3">
-<h3 class="anchored" data-anchor-id="fair-care">FAIR &amp; CARE</h3>
-<p>FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable</p>
-<p>While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the <em>sole</em> tool to use in evaluating how data/code are shared and stored. The <a href="https://www.gida-global.org/">Global Indigenous Data Alliance</a> (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets.</p>
-<p>CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics.</p>
-<p>“The CARE Principles complement, enhance and extend the FAIR Principles by advancing Indigenous self-determination and Indigenous standards to be used alongside mainstream data guidelines” – Jennings 2023</p>
+<section id="fair-care-data-principles" class="level3">
+<h3 class="anchored" data-anchor-id="fair-care-data-principles">FAIR &amp; CARE Data Principles</h3>
+<p>Data availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These ‘synthesis data products’ can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product.</p>
+<p>In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles. We will begin with a discussion of FAIR data practices.</p>
+<section id="fair" class="level4">
+<h4 class="anchored" data-anchor-id="fair">FAIR</h4>
+<p>FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take <em>throughout the lifecycle of your project</em> to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is–in some ways–dependent upon how thoroughly you consider these actions.</p>
+<p>Consider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider–even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the ‘actual’ data but for ease of reference we will call both of these resources “data.”</p>
+<p><img src="images/comic_fair-data.png" alt="Stick figure students point at large capital letters spelling out FAIR" width="50%" align="right"></p>
+<p><strong>Findability</strong></p>
+<ul>
+<li>Ensure that data have a globally unique and <em>persistent</em> identifier</li>
+<li>Completely fill out all metadata details</li>
+<li>Register/index data in a searchable resource</li>
+</ul>
+<p><strong>Accessibility</strong></p>
+<ul>
+<li>Store data in a file format that is open, free, and universally implementable (e.g., CSV rather than MS Excel, etc.)</li>
+<li>Ensure that metadata will be available <em>even if the data they describe are not</em></li>
+</ul>
+<p><strong>Interoperability</strong></p>
+<ul>
+<li>Use formal, shared, and broadly applicable language for knowledge representation
+<ul>
+<li>This can mean using full species names rather than codes or shorthand that may not be widely known</li>
+</ul></li>
+<li>Use vocabularies that are broadly used and that themselves follow FAIR principles</li>
+<li>Include explicit references to other FAIR data</li>
+</ul>
+<p><strong>Reusability</strong></p>
+<ul>
+<li>Describe your data with rich detail that covers a <em>plurality of relevant attributes</em></li>
+<li>Attach a clear data usage license so that secondary data users know how they are allowed to use your data</li>
+<li>Include detailed provenance information about your data</li>
+<li>Ensure that your data meet <em>discipline-specific</em> community standards</li>
+</ul>
+</section>
+<section id="care" class="level4">
+<h4 class="anchored" data-anchor-id="care">CARE</h4>
+<p>While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a <em>good in and of itself</em>. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the <em>sole</em> tool to use in evaluating how data/code are shared and stored. The <a href="https://www.gida-global.org/">Global Indigenous Data Alliance</a> (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. <strong>Before</strong> making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension.</p>
+<p>CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been–and continue to be–collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings <em>et al.</em> 2023 (linked at the bottom of this page).</p>
+<p><strong>Collective Benefit</strong></p>
+<ul>
+<li>Demonstrate how your research and its potential results are relevant and of value to the interests of the community at large and its individual members</li>
+<li>Include and value local community experts in the research team</li>
+<li>Use classifications and categories in ways defined by Indigenous communities and individuals</li>
+<li>Disaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities</li>
+<li>Compensate community experts <em>throughout</em> the research process (proposal development through to community review of _pre-_publication manuscripts)</li>
+</ul>
+<p><strong>Authority to Control</strong></p>
+<ul>
+<li>Establish institutional principles or protocoles that explicitly recognize Indigenous Peoples’ rights to and interests in their knowledges/data</li>
+<li>Ensure data collection and distribution are consistent with individual and community consent provisions and that consent is <em>ongoing</em> (including the right to withdraw or refuse)</li>
+<li>Ensure Indigenous communities have access to the (meta)data in usable format</li>
+</ul>
+<p><strong>Responsibility</strong></p>
+<ul>
+<li>Create and expand opportunities for community capacity</li>
+<li>Record the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata</li>
+<li>Ensure review of draft publications <em>before</em> publication</li>
+<li>Use the languages of Indigenous Peoples in the (meta)data</li>
+</ul>
+<p><strong>Ethics</strong></p>
+<ul>
+<li>Access research using Indigenous ethical frameworks</li>
+<li>Use community-defined review processes with appropriate reviewers for activities delineated in data management plans</li>
+<li>Work to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals</li>
+<li>Engage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)</li>
+</ul>
+<p align="center">
+<img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" width="70%">
+</p>
+</section>
 </section>
 </section>
 <section id="additional-resources" class="level2">
@@ -346,6 +413,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ul>
 <li><a href="https://www.nature.com/articles/s41559-023-02161-2">Applying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research</a>. Jennings <em>et al.</em>, 2023. <strong>Nature Ecology &amp; Evolution</strong></li>
 <li><a href="https://www.britishecologicalsociety.org/publications/better-science/">Guides to Better Science - Reproducible Code</a>. The British Ecological Society, 2024.</li>
+<li><a href="https://fairsfair.gitbook.io/fair-teaching-handbook/">FAIR Teaching Handbook</a>. Englehardt <em>et al.</em>, 2024.</li>
 <li><a href="https://r-pkgs.org/">R Packages</a> (2nd ed.). Wickham &amp; Bryan.</li>
 </ul>
 </section>
