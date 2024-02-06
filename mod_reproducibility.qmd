@@ -23,8 +23,6 @@ After completing this module you will be able to:
 
 
 
-
-
 ### Reproducible Coding
 
 
@@ -66,6 +64,24 @@ Consider the following list of actions you might take to make your data FAIR. No
 - Include detailed provenance information about your data
 - Ensure that your data meet _discipline-specific_ community standards
 
+:::{.callout-note}
+### Activity: Consider Data FAIRness
+
+Consider the first data chapter of your thesis or dissertation. On a scale of 1-5, how FAIR do you think your data and metadata are? What actions could you take to make your data more FAIR compliant? If it helps, feel free to rate your (meta)data based on each FAIR criterion separately!
+
+:::{.callout-tip collapse="true"}
+### Hint: Guiding Questions
+
+Feel free to use these questions to jumpstart your thinking:
+
+- How are the data for that project stored?
+- What metadata exists to document those data?
+- How easy would it be for someone else in your lab group to pick up and use your data?
+- How easy would it be for someone <u>not</u> in your lab group?
+:::
+
+:::
+
 #### CARE
 
 While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a _good in and of itself_. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the _sole_ tool to use in evaluating how data/code are shared and stored. The [Global Indigenous Data Alliance](https://www.gida-global.org/) (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. **Before** making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension. 
@@ -78,7 +94,7 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 - Include and value local community experts in the research team
 - Use classifications and categories in ways defined by Indigenous communities and individuals
 - Disaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities
-- Compensate community experts _throughout_ the research process (proposal development through to community review of _pre-_publication manuscripts)
+- Compensate community experts _throughout_ the research process (proposal development through to community review of _pre_-publication manuscripts)
 
 **Authority to Control**
 
@@ -103,6 +119,9 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 <p align="center">
 <img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" width="70%">
 </p>
+
+
+
 
 ## Additional Resources
 
