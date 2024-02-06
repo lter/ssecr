@@ -29,15 +29,82 @@ After completing this module you will be able to:
 
 
 
-### FAIR & CARE
+### FAIR & CARE Data Principles
 
-FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable
+Data availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These 'synthesis data products' can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product.
 
-While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the _sole_ tool to use in evaluating how data/code are shared and stored. The [Global Indigenous Data Alliance](https://www.gida-global.org/) (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets.
+In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles. We will begin with a discussion of FAIR data practices.
 
-CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. 
+#### FAIR
 
-"The CARE Principles complement, enhance and extend the FAIR Principles by advancing Indigenous self-determination and Indigenous standards to be used alongside mainstream data guidelines" -- Jennings 2023
+FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take _throughout the lifecycle of your project_ to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is--in some ways--dependent upon how thoroughly you consider these actions.
+
+Consider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider--even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the 'actual' data but for ease of reference we will call both of these resources "data."
+
+<img src="images/comic_fair-data.png" alt="Stick figure students point at large capital letters spelling out FAIR" width="50%" align="right">
+
+**Findability**
+
+- Ensure that data have a globally unique and _persistent_ identifier
+- Completely fill out all metadata details
+- Register/index data in a searchable resource
+
+**Accessibility**
+
+- Store data in a file format that is open, free, and universally implementable (e.g., CSV rather than MS Excel, etc.)
+- Ensure that metadata will be available _even if the data they describe are not_
+
+**Interoperability**
+
+- Use formal, shared, and broadly applicable language for knowledge representation
+    - This can mean using full species names rather than codes or shorthand that may not be widely known
+- Use vocabularies that are broadly used and that themselves follow FAIR principles
+- Include explicit references to other FAIR data
+
+**Reusability**
+
+- Describe your data with rich detail that covers a _plurality of relevant attributes_
+- Attach a clear data usage license so that secondary data users know how they are allowed to use your data
+- Include detailed provenance information about your data
+- Ensure that your data meet _discipline-specific_ community standards
+
+#### CARE
+
+While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a _good in and of itself_. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the _sole_ tool to use in evaluating how data/code are shared and stored. The [Global Indigenous Data Alliance](https://www.gida-global.org/) (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. **Before** making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension. 
+
+CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been--and continue to be--collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings _et al._ 2023 (linked at the bottom of this page).
+
+**Collective Benefit**
+
+- Demonstrate how your research and its potential results are relevant and of value to the interests of the community at large and its individual members
+- Include and value local community experts in the research team
+- Use classifications and categories in ways defined by Indigenous communities and individuals
+- Disaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities
+- Compensate community experts _throughout_ the research process (proposal development through to community review of _pre-_publication manuscripts)
+
+**Authority to Control**
+
+- Establish institutional principles or protocoles that explicitly recognize Indigenous Peoples' rights to and interests in their knowledges/data
+- Ensure data collection and distribution are consistent with individual and community consent provisions and that consent is _ongoing_ (including the right to withdraw or refuse)
+- Ensure Indigenous communities have access to the (meta)data in usable format
+
+**Responsibility**
+
+- Create and expand opportunities for community capacity
+- Record the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata
+- Ensure review of draft publications _before_ publication
+- Use the languages of Indigenous Peoples in the (meta)data
+
+**Ethics**
+
+- Access research using Indigenous ethical frameworks
+- Use community-defined review processes with appropriate reviewers for activities delineated in data management plans
+- Work to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals
+- Engage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)
+
+<p align="center">
+<img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" width="70%">
+</p>
 
 ## Additional Resources
 
@@ -45,6 +112,7 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 
 - [Applying the 'CARE Principles for Indigenous Data Governance' to Ecology and Biodiversity Research](https://www.nature.com/articles/s41559-023-02161-2). Jennings _et al._, 2023. **Nature Ecology & Evolution**
 - [Guides to Better Science - Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). The British Ecological Society, 2024.
+- [FAIR Teaching Handbook](https://fairsfair.gitbook.io/fair-teaching-handbook/). Englehardt _et al._, 2024.
 - [R Packages](https://r-pkgs.org/) (2nd ed.). Wickham & Bryan.
 
 ### Workshops & Courses
