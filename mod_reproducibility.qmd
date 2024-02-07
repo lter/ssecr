@@ -67,14 +67,20 @@ Finally, you should choose a place to keep track of ideas, conversations, and de
 
 ### Best Practices / Recommendations
 
-- Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
-- The raw data and products of scripts should be separated into different folders
-- _Never_ touch raw data
+If you integrate any of the concepts we've covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you'd like additional recommendations we've assembled a non-exhaustive set of _additional_ "best practices" that you may find helpful.
 
+#### Never Edit Raw Data
 
+First and foremost, it is critical that you <u>**_never_**</u> edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a _separate_ file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that "looks" like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the 'real' raw data personally.
 
+#### Separate Raw and Processed Data
 
-    
+In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project's scripts; even if you choose not to adopt a file naming convention that would make this clear.
+
+#### Quarantine External Outputs
+
+This can sound harsh, but it is often a good idea to "quarantine" outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we've described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)
+
 ## Reproducible Coding
 
 - Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices
