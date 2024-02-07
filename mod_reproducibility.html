@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -440,24 +474,47 @@ Discussion: Folder Structure
 </section>
 <section id="code-comments" class="level3">
 <h3 class="anchored" data-anchor-id="code-comments">Code Comments</h3>
-<ul>
-<li>Code should be thoroughly documented with comments</li>
-<li>Comments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)</li>
-<li>Code tells the computer what to do, comments tell the human what we’re telling the computer to do</li>
-<li>Low (ish) effort way to increase reproducibility is to use extensive/clear comments</li>
-</ul>
+<p>A “comment” in a script is a human readable, non-coding line that helps give context on the next line of code (or potentially next few lines). In R (and Python), such lines are preceded by a hashtag (#). Including such lines is a low(ish) effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so if you are in doubt about whether you’ve sufficiently explained something, you should consider adding additional comments.</p>
+<p><img src="images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right"></p>
+<p>There are a few philosophies about what the content of comments should be that are somewhat in tension. There are strong reasons behind each so we will list two of them and encourage you to adopt the style that best fits your project and team!</p>
+<section id="what-comments" class="level4">
+<h4 class="anchored" data-anchor-id="what-comments">“What” Comments</h4>
+<p>The first style of commenting is “what” comments. Here your comments should basically be human readable equivalents to the lines of code. You can think of this as the code telling the computer what to do while the comments tell the human what we’re telling the computer to do.</p>
+<p>Commenting in this way can be really effective for teams with varying code experience and are inherently more accessible to those with less code literacy. However, this style of comments has the potential to fail to record the larger reasoning or context behind the code.</p>
+</section>
+<section id="why-comments" class="level4">
+<h4 class="anchored" data-anchor-id="why-comments">“Why” Comments</h4>
+<p>This method of commenting focuses on <em>why</em> particular lines of code are being included. The focus is mostly/only on the bigger picture of the purpose of the script. This method assumes that anyone looking to understand the “what” of the code can read the non-comment lines.</p>
+<p>A clear drawback of this approach is that even extensive comments in this format can be inaccessible to those without code experience. However, the strategic perspective of these comments can be valuable to record explicitly, particularly if such judgement calls/decisions are not documented elsewhere.</p>
+</section>
 </section>
 <section id="consider-custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h3>
-<ul>
-<li>If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work</li>
-<li>If an operation is duplicated across more than 3 <em>projects</em>, consider creating an R package</li>
-<li>Custom functions should be written “defensively”
-<ul>
-<li>Anticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them</li>
-<li>Key is to “fail fast” and ensure code throws an error <em>as soon as something unexpected happens</em> rather than doing a bunch of processing and failing later on because of something that could be identified early on</li>
-</ul></li>
-</ul>
+<p>In most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.</p>
+<p>Instead of taking this copy/paste approach, you could <em>consider</em> writing a “custom” function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.</p>
+<section id="function-recommendations" class="level4">
+<h4 class="anchored" data-anchor-id="function-recommendations">Function Recommendations</h4>
+<p>We have the following ‘rules of thumb’ for custom function use:</p>
+<p><strong>- If a given operation is duplicated 3 or more times <u>within a project</u>, write a custom function</strong></p>
+<p>Functions written in this case can be extremely specific and–though documentation is always a good idea–can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won’t be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation <em>post hoc</em>.</p>
+<p><strong>- Write functions defensively</strong></p>
+<p>When you write custom functions, it is really valuable to take the time to write them defensively. In this context, “defensively” means that you anticipate likely errors and <em>write your own informative/human readable error messages</em>. Let’s consider a simplified version of a function rom the <a href="https://github.com/lter/ltertools/tree/main">ltertools</a> R package for calculating the coefficient of variation (CV).</p>
+<p>The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given <em>a non-number</em> you get the following warning message: <code>In mean.default(x = "...") : argument is not numeric or logical: returning NA</code>.</p>
+<p>Someone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cv <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if x is not numeric</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.numeric</span>(x) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`x` must be numeric"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate CV</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sd</span>(<span class="at">x =</span> x) <span class="sc">/</span> <span class="fu">mean</span>(<span class="at">x =</span> x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The key to defensive programming is to try to get functions to fail <em>fast</em> and fail <em>informatively</em> as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and–for complex functions–can save a ton of useless processing time when failure is guaranteed at a later step.</p>
+<p><strong>- If a given operation is duplicated 3 or more times <u>across projects</u>, consider creating an R package</strong></p>
+<p>Creating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function’s script for each project that needs the tool.</p>
+<p><a href="https://hadley.nz/">Hadley Wickham</a> and <a href="https://jennybryan.org/about/">Jenny Bryan</a> have written a <a href="https://r-pkgs.org/">free digital book</a> on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.</p>
+<p>If you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.</p>
+</section>
 </section>
 </section>
 <section id="fair-care-data-principles" class="level2">
