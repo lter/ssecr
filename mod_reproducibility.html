@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -126,7 +128,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Quantitative Modules</a></li><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Reproducible Code</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Quantitative Modules</a></li><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Reproducibility</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -209,7 +211,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mod_reproducibility.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Reproducible Code</span></a>
+ <span class="menu-text">Reproducibility</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -268,11 +270,19 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#module-content" id="toc-module-content" class="nav-link" data-scroll-target="#module-content">Module Content</a>
+  <li><a href="#lego-activity" id="toc-lego-activity" class="nav-link" data-scroll-target="#lego-activity">Lego Activity</a></li>
+  <li><a href="#project-organization-documentation" id="toc-project-organization-documentation" class="nav-link" data-scroll-target="#project-organization-documentation">Project Organization &amp; Documentation</a>
   <ul class="collapse">
-  <li><a href="#project-organization-documentation" id="toc-project-organization-documentation" class="nav-link" data-scroll-target="#project-organization-documentation">Project Organization &amp; Documentation</a></li>
+  <li><a href="#folder-structure" id="toc-folder-structure" class="nav-link" data-scroll-target="#folder-structure">Folder Structure</a></li>
+  <li><a href="#file-names" id="toc-file-names" class="nav-link" data-scroll-target="#file-names">File Names</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#best-practices-recommendations" id="toc-best-practices-recommendations" class="nav-link" data-scroll-target="#best-practices-recommendations">Best Practices / Recommendations</a></li>
+  </ul></li>
   <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a></li>
-  <li><a href="#fair-care-data-principles" id="toc-fair-care-data-principles" class="nav-link" data-scroll-target="#fair-care-data-principles">FAIR &amp; CARE Data Principles</a></li>
+  <li><a href="#fair-care-data-principles" id="toc-fair-care-data-principles" class="nav-link" data-scroll-target="#fair-care-data-principles">FAIR &amp; CARE Data Principles</a>
+  <ul class="collapse">
+  <li><a href="#fair" id="toc-fair" class="nav-link" data-scroll-target="#fair">FAIR</a></li>
+  <li><a href="#care" id="toc-care" class="nav-link" data-scroll-target="#care">CARE</a></li>
   </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
@@ -288,7 +298,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Quantitative Modules</a></li><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Reproducible Code</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Quantitative Modules</a></li><li class="breadcrumb-item"><a href="./mod_reproducibility.html">Reproducibility</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Reproducibility Best Practices</h1>
 </div>
@@ -323,19 +333,105 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><u>Evaluate</u> the FAIR/CAREness of your work</li>
 </ul>
 </section>
-<section id="module-content" class="level2">
-<h2 class="anchored" data-anchor-id="module-content">Module Content</h2>
-<section id="project-organization-documentation" class="level3">
-<h3 class="anchored" data-anchor-id="project-organization-documentation">Project Organization &amp; Documentation</h3>
+<section id="lego-activity" class="level2">
+<h2 class="anchored" data-anchor-id="lego-activity">Lego Activity</h2>
+<p>Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO <i class="fa-solid fa-registered" aria-label="registered"></i> activity was designed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a> at the University of Glasgow. The full materials can be accessed <a href="https://eprints.gla.ac.uk/196477/">here</a>.</p>
 </section>
-<section id="reproducible-coding" class="level3">
-<h3 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h3>
+<section id="project-organization-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="project-organization-documentation">Project Organization &amp; Documentation</h2>
+<p>Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is critically important that we first discuss what factors go into project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a synthesis project that is not reproducible while even “bad” code can be made more intelligible when it is placed in a well-documented/organized project!</p>
+<section id="folder-structure" class="level3">
+<h3 class="anchored" data-anchor-id="folder-structure">Folder Structure</h3>
+<p>The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency allows those navigating your system to <em>deduce</em> where particular files are likely to be without having in-depth knowledge of the entire suite of materials.</p>
+<p>To begin, it is best to have a single folder for each project. This makes it simple to find the project’s inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project’s life cycle, this ‘one folder’ approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects’ scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary <u>I</u>ntegrated <u>D</u>eveloper <u>E</u>nvironment for R) and most version control systems assume that each project’s materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).</p>
+<p>Within your project folder, it is valuable to structure your folders and files hierarchically. Having a folder with dozens of mixed file types of various purposes that may be either inputs or outputs is cumbersome to document and difficult to navigate. If instead you adopt a system of sub-folders that group files based on purpose and/or source engagement becomes much simpler. You need not use an intricate web of sub-folders either; often just a single layer of these sub-folders provides sufficient structure to meet your project’s organizational needs.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discussion: Folder Structure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With a partner discuss (some of) the following questions:</p>
+<ul>
+<li>How do you typically organize your projects’ files?</li>
+<li>What benefits do you see of your current approach?</li>
+<li>What–if any–limitations to your system have you experienced?</li>
+<li>Do you think your structure would work well in a team environment?
+<ul>
+<li>If not, what changes might you make to better fit that context?</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </section>
-<section id="fair-care-data-principles" class="level3">
-<h3 class="anchored" data-anchor-id="fair-care-data-principles">FAIR &amp; CARE Data Principles</h3>
+<section id="file-names" class="level3">
+<h3 class="anchored" data-anchor-id="file-names">File Names</h3>
+<p>Beyond the structure and degree of nestedness you adopt for your folders, your files can (and should) include a lot of helpful contextual information about themselves. An ideal file name should be very informative about that file’s contents, purpose, and relation to other project files. Some or all of that information may be reinforced by the folder(s) in which the file is placed, but the file name itself should <em>also</em> confer that information. This may feel redundant but if late in your project’s lifecycle you decide a different folder system is needed, information-dense file names will allow you to change file locations without excessive difficulty.</p>
+<p>You should also consider how ‘machine readable’ your file names are. One fundamental way in which this changes user’s experience is how file management applications (e.g., Apple’s Finder) visually display files. By default files are typically sorted alphabetically and numerically. So, even if the script “wrangle.R” should be run <em>first</em> in your workflow, most file explorers would put that script last or at the bottom. If instead you changed it’s name to “01_wrangle.R” now it would likely be sorted towards the top and encountered earlier by those interested in your workflow. Notice too in that example that we have “zero padded” the script so that if we eventually had a tenth script file explorers would correctly sort it (“10…” would be before “1…” in most file sorting systems).</p>
+<p>You should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., “raw data” versus “raw_data”). Using a mix of upper and lowercase letters can be effective when done carefully but also requires a lot of attention to detail on the part of those creating new files. It may be simplest to stick with all lowercase or all uppercase for your file names.</p>
+<p>Be consistent with any delimiters you use in file names! Two common ones are the hyphen (-) and underscore (_). If you use one instead of spaces, be sure to <em>only</em> use that one for that use-case rather than using them interchangeably. You may find it useful to use one delimiter to separate a type of information and then the other in lieu of spaces. For example, “fxn_calc-diversity.R” uses the prefix “fxn_” to indicate that the script contains a function while the words to the right of the underscore briefly describe the purpose of that function.</p>
+<p>In that same vein, you may want to consider using “slugs” in your file names. Slugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. For example, the files created by “01_wrangle.R” could all begin with “01_” (the slug in this case). The benefit of this approach is that diagnosing strange outputs–or simply finding the source of a given file or graph–is a straightforward matter of looking for the matching slug.</p>
+</section>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<ul>
+<li>Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation</li>
+<li>May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information</li>
+<li>Keep track of ideas, discussions, and decisions about the project</li>
+</ul>
+</section>
+<section id="best-practices-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="best-practices-recommendations">Best Practices / Recommendations</h3>
+<ul>
+<li>Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema</li>
+<li>The raw data and products of scripts should be separated into different folders</li>
+<li><em>Never</em> touch raw data</li>
+</ul>
+</section>
+</section>
+<section id="reproducible-coding" class="level2">
+<h2 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h2>
+<ul>
+<li>Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices</li>
+<li>Principles
+<ul>
+<li>All changes between raw data and the final data should be done with scripts</li>
+<li>Workflow should be divided into logical, modular scripts (e.g., wrangle vs.&nbsp;analyze vs.&nbsp;graph)</li>
+<li>If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work</li>
+<li>If an operation is duplicated across more than 3 <em>projects</em>, consider creating an R package</li>
+<li>Code should be thoroughly documented with comments</li>
+<li>Comments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)</li>
+</ul></li>
+<li>Code tells the computer what to do, comments tell the human what we’re telling the computer to do</li>
+<li>Benefits of clear / reproducible code:
+<ul>
+<li>Returning to code months later is easier</li>
+<li>Easier to share methods and facilitate external result validation</li>
+<li>Encourages adoption of your methods/workflows</li>
+</ul></li>
+<li>Choose a logical coding style and <em>stick with it</em></li>
+<li>Concise and descriptive object names (and variable names)</li>
+<li>Use spaces between operators and after commas</li>
+<li>Indentation should be consistent about tabs vs.&nbsp;spaces</li>
+<li>Low (ish) effort way to increase reproducibility is to use extensive/clear comments</li>
+<li>Portable code (i.e., transferable) uses relative file paths</li>
+<li>Custom functions should be written “defensively”
+<ul>
+<li>Anticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them</li>
+<li>Key is to “fail fast” and ensure code throws an error <em>as soon as something unexpected happens</em> rather than doing a bunch of processing and failing later on because of something that could be identified early on</li>
+</ul></li>
+<li>Carefully load packages and record package versions</li>
+</ul>
+</section>
+<section id="fair-care-data-principles" class="level2">
+<h2 class="anchored" data-anchor-id="fair-care-data-principles">FAIR &amp; CARE Data Principles</h2>
 <p>Data availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These ‘synthesis data products’ can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.</p>
-<section id="fair" class="level4">
-<h4 class="anchored" data-anchor-id="fair">FAIR</h4>
+<section id="fair" class="level3">
+<h3 class="anchored" data-anchor-id="fair">FAIR</h3>
 <p>FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take <em>throughout the lifecycle of your project</em> to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is–in some ways–dependent upon how thoroughly you consider these actions.</p>
 <p>Consider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider–even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the ‘actual’ data but for ease of reference we will call both of these resources “data.”</p>
 <p><img src="images/comic_fair-data.png" alt="Stick figure students point at large capital letters spelling out FAIR" width="50%" align="right"></p>
@@ -387,8 +483,8 @@ Discussion: Consider Data FAIRness
 </div>
 </div>
 </section>
-<section id="care" class="level4">
-<h4 class="anchored" data-anchor-id="care">CARE</h4>
+<section id="care" class="level3">
+<h3 class="anchored" data-anchor-id="care">CARE</h3>
 <p>While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a <em>good in and of itself</em>. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the <em>sole</em> tool to use in evaluating how data/code are shared and stored. The <a href="https://www.gida-global.org/">Global Indigenous Data Alliance</a> (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. <strong>Before</strong> making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension.</p>
 <p>CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been–and continue to be–collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings <em>et al.</em> 2023 (linked at the bottom of this page).</p>
 <p><strong>Collective Benefit</strong></p>
@@ -422,7 +518,6 @@ Discussion: Consider Data FAIRness
 <p align="center">
 <img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" width="70%">
 </p>
-</section>
 </section>
 </section>
 <section id="additional-resources" class="level2">
