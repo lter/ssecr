@@ -59,10 +59,11 @@ In that same vein, you may want to consider using "slugs" in your file names. Sl
 
 ### Documentation
 
-- Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation
-- May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information
-- Keep track of ideas, discussions, and decisions about the project
+Documenting a project can feel like a Sisyphean task but it is often not as hard as one might imagine and well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include (1) a project overview written in plain language, (2) a basic table of contents for the primary folders in your project folder, and (3) a brief description of the file naming scheme you've adopted for this project.
 
+Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
+
+Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the [Version Control module](https://lter.github.io/ssecr/mod_version-control.html) but GitHub offers something called [Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) that can be a really effective place to record some of this information.
 
 ### Best Practices / Recommendations
 
