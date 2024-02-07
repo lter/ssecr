@@ -278,7 +278,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
   <li><a href="#organization-recommendations" id="toc-organization-recommendations" class="nav-link" data-scroll-target="#organization-recommendations">Organization Recommendations</a></li>
   </ul></li>
-  <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a></li>
+  <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a>
+  <ul class="collapse">
+  <li><a href="#packages-namespacing-and-software-versions" id="toc-packages-namespacing-and-software-versions" class="nav-link" data-scroll-target="#packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</a></li>
+  <li><a href="#script-organization" id="toc-script-organization" class="nav-link" data-scroll-target="#script-organization">Script Organization</a></li>
+  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style</a></li>
+  <li><a href="#code-comments" id="toc-code-comments" class="nav-link" data-scroll-target="#code-comments">Code Comments</a></li>
+  <li><a href="#consider-custom-functions" id="toc-consider-custom-functions" class="nav-link" data-scroll-target="#consider-custom-functions">Consider Custom Functions</a></li>
+  </ul></li>
   <li><a href="#fair-care-data-principles" id="toc-fair-care-data-principles" class="nav-link" data-scroll-target="#fair-care-data-principles">FAIR &amp; CARE Data Principles</a>
   <ul class="collapse">
   <li><a href="#fair" id="toc-fair" class="nav-link" data-scroll-target="#fair">FAIR</a></li>
@@ -343,7 +350,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="folder-structure" class="level3">
 <h3 class="anchored" data-anchor-id="folder-structure">Folder Structure</h3>
 <p>The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency allows those navigating your system to <em>deduce</em> where particular files are likely to be without having in-depth knowledge of the entire suite of materials.</p>
-<p><img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="20%" align="right"></p>
+<p><img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right"></p>
 <p>To begin, it is best to have a single folder for each project. This makes it simple to find the project’s inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project’s life cycle, this ‘one folder’ approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects’ scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary <u>I</u>ntegrated <u>D</u>eveloper <u>E</u>nvironment for R) and most version control systems assume that each project’s materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).</p>
 <p>Within your project folder, it is valuable to structure your folders and files hierarchically. Having a folder with dozens of mixed file types of various purposes that may be either inputs or outputs is cumbersome to document and difficult to navigate. If instead you adopt a system of sub-folders that group files based on purpose and/or source engagement becomes much simpler. You need not use an intricate web of sub-folders either; often just a single layer of these sub-folders provides sufficient structure to meet your project’s organizational needs.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
@@ -411,31 +418,28 @@ Discussion: Folder Structure
 <li>Sharing methods for external result validation is more straightforward</li>
 <li>In cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy</li>
 </ol>
-<section id="session-information" class="level4">
-<h4 class="anchored" data-anchor-id="session-information">Session Information</h4>
-<ul>
-<li>Carefully load packages and record package versions</li>
-</ul>
+<section id="packages-namespacing-and-software-versions" class="level3">
+<h3 class="anchored" data-anchor-id="packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</h3>
+<p>One of the first things that <em>every</em> script should begin with is an explicit loading of all libraries that script need (these are called “dependencies). Scripts that don’t specify which libraries are needed are unlikely to run on anyone’s computer. Unfortunately, many R packages need to be installed by each user before they can be loaded with the <code>library</code> function. You may find it simpler to use the <a href="https://cran.r-project.org/web/packages/librarian/index.html">librarian</a> package which automatically detects and installs needed packages if they are not already present. Note that users would still need to install librarian itself!</p>
+<p>It is also strongly recommended to “namespace” functions everywhere you use them. In R this is technically optional (Python requires this) but it is a really good practice to adopt, particularly for functions that may appear in multiple packages with the same name but do very different operations depending on their source. Namespacing in R is done by adding the package name and two colons before the function name (e.g., <code>dplyr::mutate</code>). This prevents accidental use of functions from the ‘wrong’ package for a given context.</p>
+<p>You may also need to consider the version of the packages that you’re using and the version of R. The <code>sessionInfo</code> function (from the <a href="https://cran.r-project.org/web/packages/R.utils/index.html">utils</a> package loaded into R by default) is a good way of capturing some of this information but it is relatively high level and lacks sufficient detail for many contexts. For a more complete amount of information, consider using the <a href="https://cran.r-project.org/web/packages/renv/index.html">renv</a> or <a href="https://cran.r-project.org/web/packages/packrat/index.html">packrat</a> packages.</p>
 </section>
-<section id="script-organization" class="level4">
-<h4 class="anchored" data-anchor-id="script-organization">Script Organization</h4>
-<ul>
-<li>All changes between raw data and the final data should be done with scripts</li>
-<li>Workflow should be divided into logical, modular scripts (e.g., wrangle vs.&nbsp;analyze vs.&nbsp;graph)</li>
-<li>Portable code (i.e., transferable) uses relative file paths</li>
-</ul>
+<section id="script-organization" class="level3">
+<h3 class="anchored" data-anchor-id="script-organization">Script Organization</h3>
+<p>Every change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!</p>
+<p>You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).</p>
+<p>Finally, <u>your code should never use absolute file paths</u>. Absolute file paths are those that begin at the root of your entire computer (“C:…” on Windows and “~…” on Mac). Such paths are <em>inherently not reproducible</em> as the odds of anyone having the exact same absolute file path are extremely slim. Instead, using relative file paths that begin at the project folder is preferable. These are transferable among users. You can even use R’s <code>file.path</code> function to automatically detect the correct direction of slashes between folders to make it easier to collaborate across operating systems! Note in the above figure from Trisovic <em>et al.</em> (2022) that many scripts that set the working directory manually had errors until that bit was removed. Avoid setting the working directory explicitly and instead structure your project such that relative paths within the project folder will always succeed.</p>
 </section>
-<section id="code-style" class="level4">
-<h4 class="anchored" data-anchor-id="code-style">Code Style</h4>
-<ul>
-<li>Choose a logical coding style and <em>stick with it</em></li>
-<li>Concise and descriptive object names (and variable names)</li>
-<li>Use spaces between operators and after commas</li>
-<li>Indentation should be consistent about tabs vs.&nbsp;spaces</li>
-</ul>
+<section id="code-style" class="level3">
+<h3 class="anchored" data-anchor-id="code-style">Code Style</h3>
+<p>When it comes to code style, the same ‘rule of thumb’ applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! Thtat said, there are a few principles worth adopting if you have not already done so.</p>
+<p><strong>1. Use concise and descriptive object names</strong></p>
+<p>It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.</p>
+<p><strong>2. Don’t be afraid of space!</strong></p>
+<p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
 </section>
-<section id="code-comments" class="level4">
-<h4 class="anchored" data-anchor-id="code-comments">Code Comments</h4>
+<section id="code-comments" class="level3">
+<h3 class="anchored" data-anchor-id="code-comments">Code Comments</h3>
 <ul>
 <li>Code should be thoroughly documented with comments</li>
 <li>Comments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)</li>
@@ -443,8 +447,8 @@ Discussion: Folder Structure
 <li>Low (ish) effort way to increase reproducibility is to use extensive/clear comments</li>
 </ul>
 </section>
-<section id="consider-custom-functions" class="level4">
-<h4 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h4>
+<section id="consider-custom-functions" class="level3">
+<h3 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h3>
 <ul>
 <li>If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work</li>
 <li>If an operation is duplicated across more than 3 <em>projects</em>, consider creating an R package</li>
