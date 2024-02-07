@@ -124,12 +124,6 @@ It can be difficult to balance these two imperatives but short object names are 
 
 Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.
 
-**3. **
-
-
-- Indentation should be consistent about tabs vs. spaces
-
-
 ### Code Comments
 
 - Code should be thoroughly documented with comments
