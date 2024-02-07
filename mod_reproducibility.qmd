@@ -146,11 +146,47 @@ A clear drawback of this approach is that even extensive comments in this format
 
 ### Consider Custom Functions
 
-- If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work
-- If an operation is duplicated across more than 3 _projects_, consider creating an R package
-- Custom functions should be written "defensively"
-    - Anticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them
-    - Key is to "fail fast" and ensure code throws an error _as soon as something unexpected happens_ rather than doing a bunch of processing and failing later on because of something that could be identified early on
+In most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.
+
+Instead of taking this copy/paste approach, you could _consider_ writing a "custom" function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.
+
+#### Function Recommendations
+
+We have the following 'rules of thumb' for custom function use:
+
+**- If a given operation is duplicated 3 or more times <u>within a project</u>, write a custom function**
+
+Functions written in this case can be extremely specific and--though documentation is always a good idea--can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won't be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation _post hoc_.
+
+**- Write functions defensively**
+
+When you write custom functions, it is really valuable to take the time to write them defensively. In this context, "defensively" means that you anticipate likely errors and _write your own informative/human readable error messages_. Let's consider a simplified version of a function rom the [ltertools](https://github.com/lter/ltertools/tree/main) R package for calculating the coefficient of variation (CV).
+
+The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given _a non-number_ you get the following warning message:
+`In mean.default(x = "...") : argument is not numeric or logical: returning NA`.
+
+Someone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.
+
+```{.r}
+cv <- function(x){
+  
+  # Error out if x is not numeric
+  if(is.numeric(x) != TRUE)
+    stop("`x` must be numeric")
+  
+  # Calculate CV
+  sd(x = x) / mean(x = x)
+```
+
+The key to defensive programming is to try to get functions to fail _fast_ and fail _informatively_ as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and--for complex functions--can save a ton of useless processing time when failure is guaranteed at a later step.
+
+**- If a given operation is duplicated 3 or more times <u>across projects</u>, consider creating an R package**
+
+Creating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function's script for each project that needs the tool.
+
+[Hadley Wickham](https://hadley.nz/) and [Jenny Bryan](https://jennybryan.org/about/) have written a [free digital book](https://r-pkgs.org/) on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.
+
+If you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.
 
 ## FAIR & CARE Data Principles
 
