@@ -276,7 +276,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#folder-structure" id="toc-folder-structure" class="nav-link" data-scroll-target="#folder-structure">Folder Structure</a></li>
   <li><a href="#file-names" id="toc-file-names" class="nav-link" data-scroll-target="#file-names">File Names</a></li>
   <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#best-practices-recommendations" id="toc-best-practices-recommendations" class="nav-link" data-scroll-target="#best-practices-recommendations">Best Practices / Recommendations</a></li>
+  <li><a href="#organization-recommendations" id="toc-organization-recommendations" class="nav-link" data-scroll-target="#organization-recommendations">Organization Recommendations</a></li>
   </ul></li>
   <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a></li>
   <li><a href="#fair-care-data-principles" id="toc-fair-care-data-principles" class="nav-link" data-scroll-target="#fair-care-data-principles">FAIR &amp; CARE Data Principles</a>
@@ -383,8 +383,8 @@ Discussion: Folder Structure
 <p>Your project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.</p>
 <p>Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the <a href="https://lter.github.io/ssecr/mod_version-control.html">Version Control module</a> but GitHub offers something called <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html">Issues</a> that can be a really effective place to record some of this information.</p>
 </section>
-<section id="best-practices-recommendations" class="level3">
-<h3 class="anchored" data-anchor-id="best-practices-recommendations">Best Practices / Recommendations</h3>
+<section id="organization-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="organization-recommendations">Organization Recommendations</h3>
 <p>If you integrate any of the concepts we’ve covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you’d like additional recommendations we’ve assembled a non-exhaustive set of <em>additional</em> “best practices” that you may find helpful.</p>
 <section id="never-edit-raw-data" class="level4">
 <h4 class="anchored" data-anchor-id="never-edit-raw-data">Never Edit Raw Data</h4>
@@ -402,37 +402,59 @@ Discussion: Folder Structure
 </section>
 <section id="reproducible-coding" class="level2">
 <h2 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h2>
+<p>Now that you’ve organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project’s worth of R code found that 74% of the associated R files <strong>failed to complete without error</strong> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
+<p><img src="images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right"></p>
+<p>When your scripts are clear and reproducibly-written you will reap the following benefits:</p>
+<ol type="1">
+<li>Returning to your code after having set it down for weeks/months is much simpler</li>
+<li>Collaborating with team members requires less verbal explanation</li>
+<li>Sharing methods for external result validation is more straightforward</li>
+<li>In cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy</li>
+</ol>
+<section id="session-information" class="level4">
+<h4 class="anchored" data-anchor-id="session-information">Session Information</h4>
 <ul>
-<li>Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices</li>
-<li>Principles
+<li>Carefully load packages and record package versions</li>
+</ul>
+</section>
+<section id="script-organization" class="level4">
+<h4 class="anchored" data-anchor-id="script-organization">Script Organization</h4>
 <ul>
 <li>All changes between raw data and the final data should be done with scripts</li>
 <li>Workflow should be divided into logical, modular scripts (e.g., wrangle vs.&nbsp;analyze vs.&nbsp;graph)</li>
-<li>If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work</li>
-<li>If an operation is duplicated across more than 3 <em>projects</em>, consider creating an R package</li>
-<li>Code should be thoroughly documented with comments</li>
-<li>Comments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)</li>
-</ul></li>
-<li>Code tells the computer what to do, comments tell the human what we’re telling the computer to do</li>
-<li>Benefits of clear / reproducible code:
+<li>Portable code (i.e., transferable) uses relative file paths</li>
+</ul>
+</section>
+<section id="code-style" class="level4">
+<h4 class="anchored" data-anchor-id="code-style">Code Style</h4>
 <ul>
-<li>Returning to code months later is easier</li>
-<li>Easier to share methods and facilitate external result validation</li>
-<li>Encourages adoption of your methods/workflows</li>
-</ul></li>
 <li>Choose a logical coding style and <em>stick with it</em></li>
 <li>Concise and descriptive object names (and variable names)</li>
 <li>Use spaces between operators and after commas</li>
 <li>Indentation should be consistent about tabs vs.&nbsp;spaces</li>
+</ul>
+</section>
+<section id="code-comments" class="level4">
+<h4 class="anchored" data-anchor-id="code-comments">Code Comments</h4>
+<ul>
+<li>Code should be thoroughly documented with comments</li>
+<li>Comments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)</li>
+<li>Code tells the computer what to do, comments tell the human what we’re telling the computer to do</li>
 <li>Low (ish) effort way to increase reproducibility is to use extensive/clear comments</li>
-<li>Portable code (i.e., transferable) uses relative file paths</li>
+</ul>
+</section>
+<section id="consider-custom-functions" class="level4">
+<h4 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h4>
+<ul>
+<li>If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work</li>
+<li>If an operation is duplicated across more than 3 <em>projects</em>, consider creating an R package</li>
 <li>Custom functions should be written “defensively”
 <ul>
 <li>Anticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them</li>
 <li>Key is to “fail fast” and ensure code throws an error <em>as soon as something unexpected happens</em> rather than doing a bunch of processing and failing later on because of something that could be identified early on</li>
 </ul></li>
-<li>Carefully load packages and record package versions</li>
 </ul>
+</section>
 </section>
 <section id="fair-care-data-principles" class="level2">
 <h2 class="anchored" data-anchor-id="fair-care-data-principles">FAIR &amp; CARE Data Principles</h2>
@@ -532,6 +554,7 @@ Discussion: Consider Data FAIRness
 <section id="papers-documents" class="level3">
 <h3 class="anchored" data-anchor-id="papers-documents">Papers &amp; Documents</h3>
 <ul>
+<li><a href="https://www.nature.com/articles/s41597-022-01143-6">A Large-Scale Study on Research Code Quality and Execution</a>. Trisovic <em>et al.</em>, 2022. <strong>Scientific Data</strong></li>
 <li><a href="https://www.nature.com/articles/s41559-023-02161-2">Applying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research</a>. Jennings <em>et al.</em>, 2023. <strong>Nature Ecology &amp; Evolution</strong></li>
 <li><a href="https://www.britishecologicalsociety.org/publications/better-science/">Guides to Better Science - Reproducible Code</a>. The British Ecological Society, 2024.</li>
 <li><a href="https://fairsfair.gitbook.io/fair-teaching-handbook/">FAIR Teaching Handbook</a>. Englehardt <em>et al.</em>, 2024.</li>

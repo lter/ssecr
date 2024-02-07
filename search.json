@@ -1,25 +1,39 @@
 [
   {
-    "objectID": "mod_data-disc.html",
-    "href": "mod_data-disc.html",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
+      "Team Science Modules",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-disc.html#under-construction",
-    "href": "mod_data-disc.html#under-construction",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html#under-construction",
+    "href": "mod_facilitation.html#under-construction",
+    "title": "Inclusive Facilitation",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
+      "Team Science Modules",
+      "Inclusive Facilitation"
     ]
+  },
+  {
+    "objectID": "topic_interactivity.html",
+    "href": "topic_interactivity.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_interactivity.html#interactivity",
+    "href": "topic_interactivity.html#interactivity",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
   },
   {
     "objectID": "mod_spatial.html",
@@ -66,6 +80,20 @@
     ]
   },
   {
+    "objectID": "topic_spatial.html",
+    "href": "topic_spatial.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html#working-with-spatial-data",
+    "href": "topic_spatial.html#working-with-spatial-data",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
     "objectID": "mod_data-viz.html",
     "href": "mod_data-viz.html",
     "title": "Data Visualization & Exploration",
@@ -85,6 +113,361 @@
     "crumbs": [
       "Quantitative Modules",
       "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-priorities",
+    "href": "index.html#course-priorities",
+    "title": "Course Overview",
+    "section": "Course Priorities",
+    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis project\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-structure",
+    "href": "index.html#course-structure",
+    "title": "Course Overview",
+    "section": "Course Structure",
+    "text": "Course Structure\n\nParticipants: ~27 (approx. 1 graduate students from each LTER site)\nTime frame: Biweekly meetings (1 session / 2 weeks) over the course of 9 months\nCourse management: LTER Network Office (LNO)\nInstruction: LNO staff, guest speakers, LTER Network-recruited mentors",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#under-construction",
+    "href": "mod_reports.html#under-construction",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#under-construction",
+    "href": "mod_data-disc.html#under-construction",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html",
+    "href": "mod_reproducibility.html",
+    "title": "Reproducibility Best Practices",
+    "section": "",
+    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#overview",
+    "href": "mod_reproducibility.html#overview",
+    "title": "Reproducibility Best Practices",
+    "section": "",
+    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#learning-objectives",
+    "href": "mod_reproducibility.html#learning-objectives",
+    "title": "Reproducibility Best Practices",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify core tenets of reproducibility best practices\nCreate robust workflow documentation\nImplement reproducible project organization strategies\nDiscuss methods for improving the reproducibility of your code products\nSummarize FAIR and CARE data principles\nEvaluate the FAIR/CAREness of your work",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#lego-activity",
+    "href": "mod_reproducibility.html#lego-activity",
+    "title": "Reproducibility Best Practices",
+    "section": "Lego Activity",
+    "text": "Lego Activity\nBefore we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO  activity was designed by Mary Donaldson and Matt Mahon at the University of Glasgow. The full materials can be accessed here.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#project-organization-documentation",
+    "href": "mod_reproducibility.html#project-organization-documentation",
+    "title": "Reproducibility Best Practices",
+    "section": "Project Organization & Documentation",
+    "text": "Project Organization & Documentation\nMuch of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is critically important that we first discuss what factors go into project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a synthesis project that is not reproducible while even “bad” code can be made more intelligible when it is placed in a well-documented/organized project!\n\nFolder Structure\nThe simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency allows those navigating your system to deduce where particular files are likely to be without having in-depth knowledge of the entire suite of materials.\n\nTo begin, it is best to have a single folder for each project. This makes it simple to find the project’s inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project’s life cycle, this ‘one folder’ approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects’ scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary Integrated Developer Environment for R) and most version control systems assume that each project’s materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).\nWithin your project folder, it is valuable to structure your folders and files hierarchically. Having a folder with dozens of mixed file types of various purposes that may be either inputs or outputs is cumbersome to document and difficult to navigate. If instead you adopt a system of sub-folders that group files based on purpose and/or source engagement becomes much simpler. You need not use an intricate web of sub-folders either; often just a single layer of these sub-folders provides sufficient structure to meet your project’s organizational needs.\n\n\n\n\n\n\nDiscussion: Folder Structure\n\n\n\nWith a partner discuss (some of) the following questions:\n\nHow do you typically organize your projects’ files?\nWhat benefits do you see of your current approach?\nWhat–if any–limitations to your system have you experienced?\nDo you think your structure would work well in a team environment?\n\nIf not, what changes might you make to better fit that context?\n\n\n\n\n\n\nFile Names\nBeyond the structure and degree of nestedness you adopt for your folders, your files can (and should) include a lot of helpful contextual information about themselves. An ideal file name should be very informative about that file’s contents, purpose, and relation to other project files. Some or all of that information may be reinforced by the folder(s) in which the file is placed, but the file name itself should also confer that information. This may feel redundant but if late in your project’s lifecycle you decide a different folder system is needed, information-dense file names will allow you to change file locations without excessive difficulty.\nYou should also consider how ‘machine readable’ your file names are. One fundamental way in which this changes user’s experience is how file management applications (e.g., Apple’s Finder) visually display files. By default files are typically sorted alphabetically and numerically. So, even if the script “wrangle.R” should be run first in your workflow, most file explorers would put that script last or at the bottom. If instead you changed it’s name to “01_wrangle.R” now it would likely be sorted towards the top and encountered earlier by those interested in your workflow. Notice too in that example that we have “zero padded” the script so that if we eventually had a tenth script file explorers would correctly sort it (“10…” would be before “1…” in most file sorting systems).\nYou should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., “raw data” versus “raw_data”). Using a mix of upper and lowercase letters can be effective when done carefully but also requires a lot of attention to detail on the part of those creating new files. It may be simplest to stick with all lowercase or all uppercase for your file names.\nBe consistent with any delimiters you use in file names! Two common ones are the hyphen (-) and underscore (_). If you use one instead of spaces, be sure to only use that one for that use-case rather than using them interchangeably. You may find it useful to use one delimiter to separate a type of information and then the other in lieu of spaces. For example, “fxn_calc-diversity.R” uses the prefix “fxn_” to indicate that the script contains a function while the words to the right of the underscore briefly describe the purpose of that function.\nIn that same vein, you may want to consider using “slugs” in your file names. Slugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. For example, the files created by “01_wrangle.R” could all begin with “01_” (the slug in this case). The benefit of this approach is that diagnosing strange outputs–or simply finding the source of a given file or graph–is a straightforward matter of looking for the matching slug.\n\n\nDocumentation\nDocumenting a project can feel like a Sisyphean task but it is often not as hard as one might imagine and well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a “README” file in the top-level of your project’s folder system. This file can be formatted however you’d like but generally READMEs should include (1) a project overview written in plain language, (2) a basic table of contents for the primary folders in your project folder, and (3) a brief description of the file naming scheme you’ve adopted for this project.\nYour project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.\nFinally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the Version Control module but GitHub offers something called Issues that can be a really effective place to record some of this information.\n\n\nOrganization Recommendations\nIf you integrate any of the concepts we’ve covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you’d like additional recommendations we’ve assembled a non-exhaustive set of additional “best practices” that you may find helpful.\n\nNever Edit Raw Data\nFirst and foremost, it is critical that you never edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a separate file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.\n\n\nSeparate Raw and Processed Data\nIn the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.\n\n\nQuarantine External Outputs\nThis can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#reproducible-coding",
+    "href": "mod_reproducibility.html#reproducible-coding",
+    "title": "Reproducibility Best Practices",
+    "section": "Reproducible Coding",
+    "text": "Reproducible Coding\nNow that you’ve organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project’s worth of R code found that 74% of the associated R files failed to complete without error (Trisovic et al. 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.\n\nWhen your scripts are clear and reproducibly-written you will reap the following benefits:\n\nReturning to your code after having set it down for weeks/months is much simpler\nCollaborating with team members requires less verbal explanation\nSharing methods for external result validation is more straightforward\nIn cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy\n\n\nSession Information\n\nCarefully load packages and record package versions\n\n\n\nScript Organization\n\nAll changes between raw data and the final data should be done with scripts\nWorkflow should be divided into logical, modular scripts (e.g., wrangle vs. analyze vs. graph)\nPortable code (i.e., transferable) uses relative file paths\n\n\n\nCode Style\n\nChoose a logical coding style and stick with it\nConcise and descriptive object names (and variable names)\nUse spaces between operators and after commas\nIndentation should be consistent about tabs vs. spaces\n\n\n\nCode Comments\n\nCode should be thoroughly documented with comments\nComments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)\nCode tells the computer what to do, comments tell the human what we’re telling the computer to do\nLow (ish) effort way to increase reproducibility is to use extensive/clear comments\n\n\n\nConsider Custom Functions\n\nIf an operation is duplicated more than 3 times within a project, write a custom function to centralize the work\nIf an operation is duplicated across more than 3 projects, consider creating an R package\nCustom functions should be written “defensively”\n\nAnticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them\nKey is to “fail fast” and ensure code throws an error as soon as something unexpected happens rather than doing a bunch of processing and failing later on because of something that could be identified early on",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#fair-care-data-principles",
+    "href": "mod_reproducibility.html#fair-care-data-principles",
+    "title": "Reproducibility Best Practices",
+    "section": "FAIR & CARE Data Principles",
+    "text": "FAIR & CARE Data Principles\nData availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These ‘synthesis data products’ can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.\n\nFAIR\nFAIR is an acronym for Findable Accessible Interpoerable and Reusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take throughout the lifecycle of your project to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is–in some ways–dependent upon how thoroughly you consider these actions.\nConsider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider–even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the ‘actual’ data but for ease of reference we will call both of these resources “data.”\n\nFindability\n\nEnsure that data have a globally unique and persistent identifier\nCompletely fill out all metadata details\nRegister/index data in a searchable resource\n\nAccessibility\n\nStore data in a file format that is open, free, and universally implementable (e.g., CSV rather than MS Excel, etc.)\nEnsure that metadata will be available even if the data they describe are not\n\nInteroperability\n\nUse formal, shared, and broadly applicable language for knowledge representation\n\nThis can mean using full species names rather than codes or shorthand that may not be widely known\n\nUse vocabularies that are broadly used and that themselves follow FAIR principles\nInclude explicit references to other FAIR data\n\nReusability\n\nDescribe your data with rich detail that covers a plurality of relevant attributes\nAttach a clear data usage license so that secondary data users know how they are allowed to use your data\nInclude detailed provenance information about your data\nEnsure that your data meet discipline-specific community standards\n\n\n\n\n\n\n\nDiscussion: Consider Data FAIRness\n\n\n\nConsider the first data chapter of your thesis or dissertation. On a scale of 1-5, how FAIR do you think your data and metadata are? What actions could you take to make your data more FAIR compliant? If it helps, feel free to rate your (meta)data based on each FAIR criterion separately!\nFeel free to use these questions to guide your thinking\n\nHow are the data for that project stored?\nWhat metadata exists to document those data?\nHow easy would it be for someone in your lab group to pick up and use your data?\nHow easy would it be for someone not in your lab group?\n\n\n\n\n\nCARE\nWhile making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the sole tool to use in evaluating how data/code are shared and stored. The Global Indigenous Data Alliance (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. Before making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension.\nCARE stands for Collective Benefit, Authority to Control, Responsibility, and Ethics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been–and continue to be–collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings et al. 2023 (linked at the bottom of this page).\nCollective Benefit\n\nDemonstrate how your research and its potential results are relevant and of value to the interests of the community at large and its individual members\nInclude and value local community experts in the research team\nUse classifications and categories in ways defined by Indigenous communities and individuals\nDisaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities\nCompensate community experts throughout the research process (proposal development through to community review of pre-publication manuscripts)\n\nAuthority to Control\n\nEstablish institutional principles or protocoles that explicitly recognize Indigenous Peoples’ rights to and interests in their knowledges/data\nEnsure data collection and distribution are consistent with individual and community consent provisions and that consent is ongoing (including the right to withdraw or refuse)\nEnsure Indigenous communities have access to the (meta)data in usable format\n\nResponsibility\n\nCreate and expand opportunities for community capacity\nRecord the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata\nEnsure review of draft publications before publication\nUse the languages of Indigenous Peoples in the (meta)data\n\nEthics\n\nAccess research using Indigenous ethical frameworks\nUse community-defined review processes with appropriate reviewers for activities delineated in data management plans\nWork to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals\nEngage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#additional-resources",
+    "href": "mod_reproducibility.html#additional-resources",
+    "title": "Reproducibility Best Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nA Large-Scale Study on Research Code Quality and Execution. Trisovic et al., 2022. Scientific Data\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#accessing-course-materials",
+    "href": "CONTRIBUTING.html#accessing-course-materials",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#project-management",
+    "href": "CONTRIBUTING.html#project-management",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#style-guide",
+    "href": "CONTRIBUTING.html#style-guide",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#under-construction",
+    "href": "mod_project-mgmt.html#under-construction",
+    "title": "Project Management",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html",
+    "href": "mod_wrangle.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html#under-construction",
+    "href": "mod_wrangle.html#under-construction",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html#under-construction",
+    "href": "mod_findings.html#under-construction",
+    "title": "Communicating Findings",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html",
+    "href": "mod_credit.html",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#under-construction",
+    "href": "mod_credit.html#under-construction",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_thinking.html",
+    "href": "mod_thinking.html",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Supporting D.E.C. Thinking"
+    ]
+  },
+  {
+    "objectID": "mod_thinking.html#under-construction",
+    "href": "mod_thinking.html#under-construction",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
@@ -151,389 +534,6 @@
     "crumbs": [
       "Team Science Modules",
       "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#under-construction",
-    "href": "mod_reports.html#under-construction",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#accessing-course-materials",
-    "href": "CONTRIBUTING.html#accessing-course-materials",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#project-management",
-    "href": "CONTRIBUTING.html#project-management",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#style-guide",
-    "href": "CONTRIBUTING.html#style-guide",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "mod_facilitation.html",
-    "href": "mod_facilitation.html",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#under-construction",
-    "href": "mod_facilitation.html#under-construction",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-priorities",
-    "href": "index.html#course-priorities",
-    "title": "Course Overview",
-    "section": "Course Priorities",
-    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis project\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-structure",
-    "href": "index.html#course-structure",
-    "title": "Course Overview",
-    "section": "Course Structure",
-    "text": "Course Structure\n\nParticipants: ~27 (approx. 1 graduate students from each LTER site)\nTime frame: Biweekly meetings (1 session / 2 weeks) over the course of 9 months\nCourse management: LTER Network Office (LNO)\nInstruction: LNO staff, guest speakers, LTER Network-recruited mentors",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html",
-    "href": "mod_findings.html",
-    "title": "Communicating Findings",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#under-construction",
-    "href": "mod_findings.html#under-construction",
-    "title": "Communicating Findings",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html",
-    "href": "mod_reproducibility.html",
-    "title": "Reproducibility Best Practices",
-    "section": "",
-    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#overview",
-    "href": "mod_reproducibility.html#overview",
-    "title": "Reproducibility Best Practices",
-    "section": "",
-    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#learning-objectives",
-    "href": "mod_reproducibility.html#learning-objectives",
-    "title": "Reproducibility Best Practices",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify core tenets of reproducibility best practices\nCreate robust workflow documentation\nImplement reproducible project organization strategies\nDiscuss methods for improving the reproducibility of your code products\nSummarize FAIR and CARE data principles\nEvaluate the FAIR/CAREness of your work",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#lego-activity",
-    "href": "mod_reproducibility.html#lego-activity",
-    "title": "Reproducibility Best Practices",
-    "section": "Lego Activity",
-    "text": "Lego Activity\nBefore we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO  activity was designed by Mary Donaldson and Matt Mahon at the University of Glasgow. The full materials can be accessed here.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#project-organization-documentation",
-    "href": "mod_reproducibility.html#project-organization-documentation",
-    "title": "Reproducibility Best Practices",
-    "section": "Project Organization & Documentation",
-    "text": "Project Organization & Documentation\nMuch of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is critically important that we first discuss what factors go into project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a synthesis project that is not reproducible while even “bad” code can be made more intelligible when it is placed in a well-documented/organized project!\n\nFolder Structure\nThe simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency allows those navigating your system to deduce where particular files are likely to be without having in-depth knowledge of the entire suite of materials.\n\nTo begin, it is best to have a single folder for each project. This makes it simple to find the project’s inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project’s life cycle, this ‘one folder’ approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects’ scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary Integrated Developer Environment for R) and most version control systems assume that each project’s materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).\nWithin your project folder, it is valuable to structure your folders and files hierarchically. Having a folder with dozens of mixed file types of various purposes that may be either inputs or outputs is cumbersome to document and difficult to navigate. If instead you adopt a system of sub-folders that group files based on purpose and/or source engagement becomes much simpler. You need not use an intricate web of sub-folders either; often just a single layer of these sub-folders provides sufficient structure to meet your project’s organizational needs.\n\n\n\n\n\n\nDiscussion: Folder Structure\n\n\n\nWith a partner discuss (some of) the following questions:\n\nHow do you typically organize your projects’ files?\nWhat benefits do you see of your current approach?\nWhat–if any–limitations to your system have you experienced?\nDo you think your structure would work well in a team environment?\n\nIf not, what changes might you make to better fit that context?\n\n\n\n\n\n\nFile Names\nBeyond the structure and degree of nestedness you adopt for your folders, your files can (and should) include a lot of helpful contextual information about themselves. An ideal file name should be very informative about that file’s contents, purpose, and relation to other project files. Some or all of that information may be reinforced by the folder(s) in which the file is placed, but the file name itself should also confer that information. This may feel redundant but if late in your project’s lifecycle you decide a different folder system is needed, information-dense file names will allow you to change file locations without excessive difficulty.\nYou should also consider how ‘machine readable’ your file names are. One fundamental way in which this changes user’s experience is how file management applications (e.g., Apple’s Finder) visually display files. By default files are typically sorted alphabetically and numerically. So, even if the script “wrangle.R” should be run first in your workflow, most file explorers would put that script last or at the bottom. If instead you changed it’s name to “01_wrangle.R” now it would likely be sorted towards the top and encountered earlier by those interested in your workflow. Notice too in that example that we have “zero padded” the script so that if we eventually had a tenth script file explorers would correctly sort it (“10…” would be before “1…” in most file sorting systems).\nYou should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., “raw data” versus “raw_data”). Using a mix of upper and lowercase letters can be effective when done carefully but also requires a lot of attention to detail on the part of those creating new files. It may be simplest to stick with all lowercase or all uppercase for your file names.\nBe consistent with any delimiters you use in file names! Two common ones are the hyphen (-) and underscore (_). If you use one instead of spaces, be sure to only use that one for that use-case rather than using them interchangeably. You may find it useful to use one delimiter to separate a type of information and then the other in lieu of spaces. For example, “fxn_calc-diversity.R” uses the prefix “fxn_” to indicate that the script contains a function while the words to the right of the underscore briefly describe the purpose of that function.\nIn that same vein, you may want to consider using “slugs” in your file names. Slugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. For example, the files created by “01_wrangle.R” could all begin with “01_” (the slug in this case). The benefit of this approach is that diagnosing strange outputs–or simply finding the source of a given file or graph–is a straightforward matter of looking for the matching slug.\n\n\nDocumentation\nDocumenting a project can feel like a Sisyphean task but it is often not as hard as one might imagine and well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a “README” file in the top-level of your project’s folder system. This file can be formatted however you’d like but generally READMEs should include (1) a project overview written in plain language, (2) a basic table of contents for the primary folders in your project folder, and (3) a brief description of the file naming scheme you’ve adopted for this project.\nYour project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.\nFinally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the Version Control module but GitHub offers something called Issues that can be a really effective place to record some of this information.\n\n\nBest Practices / Recommendations\nIf you integrate any of the concepts we’ve covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you’d like additional recommendations we’ve assembled a non-exhaustive set of additional “best practices” that you may find helpful.\n\nNever Edit Raw Data\nFirst and foremost, it is critical that you never edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a separate file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.\n\n\nSeparate Raw and Processed Data\nIn the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.\n\n\nQuarantine External Outputs\nThis can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#reproducible-coding",
-    "href": "mod_reproducibility.html#reproducible-coding",
-    "title": "Reproducibility Best Practices",
-    "section": "Reproducible Coding",
-    "text": "Reproducible Coding\n\nScripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices\nPrinciples\n\nAll changes between raw data and the final data should be done with scripts\nWorkflow should be divided into logical, modular scripts (e.g., wrangle vs. analyze vs. graph)\nIf an operation is duplicated more than 3 times within a project, write a custom function to centralize the work\nIf an operation is duplicated across more than 3 projects, consider creating an R package\nCode should be thoroughly documented with comments\nComments should focus on “why” of operations rather than “what” (assumes code is being read by a person who can interpret the ‘what’ by scanning the code)\n\nCode tells the computer what to do, comments tell the human what we’re telling the computer to do\nBenefits of clear / reproducible code:\n\nReturning to code months later is easier\nEasier to share methods and facilitate external result validation\nEncourages adoption of your methods/workflows\n\nChoose a logical coding style and stick with it\nConcise and descriptive object names (and variable names)\nUse spaces between operators and after commas\nIndentation should be consistent about tabs vs. spaces\nLow (ish) effort way to increase reproducibility is to use extensive/clear comments\nPortable code (i.e., transferable) uses relative file paths\nCustom functions should be written “defensively”\n\nAnticipate/identify likely errors and code custom warning/error messages that clearly identify how to fix them\nKey is to “fail fast” and ensure code throws an error as soon as something unexpected happens rather than doing a bunch of processing and failing later on because of something that could be identified early on\n\nCarefully load packages and record package versions",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#fair-care-data-principles",
-    "href": "mod_reproducibility.html#fair-care-data-principles",
-    "title": "Reproducibility Best Practices",
-    "section": "FAIR & CARE Data Principles",
-    "text": "FAIR & CARE Data Principles\nData availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These ‘synthesis data products’ can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.\n\nFAIR\nFAIR is an acronym for Findable Accessible Interpoerable and Reusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take throughout the lifecycle of your project to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is–in some ways–dependent upon how thoroughly you consider these actions.\nConsider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider–even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the ‘actual’ data but for ease of reference we will call both of these resources “data.”\n\nFindability\n\nEnsure that data have a globally unique and persistent identifier\nCompletely fill out all metadata details\nRegister/index data in a searchable resource\n\nAccessibility\n\nStore data in a file format that is open, free, and universally implementable (e.g., CSV rather than MS Excel, etc.)\nEnsure that metadata will be available even if the data they describe are not\n\nInteroperability\n\nUse formal, shared, and broadly applicable language for knowledge representation\n\nThis can mean using full species names rather than codes or shorthand that may not be widely known\n\nUse vocabularies that are broadly used and that themselves follow FAIR principles\nInclude explicit references to other FAIR data\n\nReusability\n\nDescribe your data with rich detail that covers a plurality of relevant attributes\nAttach a clear data usage license so that secondary data users know how they are allowed to use your data\nInclude detailed provenance information about your data\nEnsure that your data meet discipline-specific community standards\n\n\n\n\n\n\n\nDiscussion: Consider Data FAIRness\n\n\n\nConsider the first data chapter of your thesis or dissertation. On a scale of 1-5, how FAIR do you think your data and metadata are? What actions could you take to make your data more FAIR compliant? If it helps, feel free to rate your (meta)data based on each FAIR criterion separately!\nFeel free to use these questions to guide your thinking\n\nHow are the data for that project stored?\nWhat metadata exists to document those data?\nHow easy would it be for someone in your lab group to pick up and use your data?\nHow easy would it be for someone not in your lab group?\n\n\n\n\n\nCARE\nWhile making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the sole tool to use in evaluating how data/code are shared and stored. The Global Indigenous Data Alliance (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. Before making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension.\nCARE stands for Collective Benefit, Authority to Control, Responsibility, and Ethics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been–and continue to be–collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings et al. 2023 (linked at the bottom of this page).\nCollective Benefit\n\nDemonstrate how your research and its potential results are relevant and of value to the interests of the community at large and its individual members\nInclude and value local community experts in the research team\nUse classifications and categories in ways defined by Indigenous communities and individuals\nDisaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities\nCompensate community experts throughout the research process (proposal development through to community review of pre-publication manuscripts)\n\nAuthority to Control\n\nEstablish institutional principles or protocoles that explicitly recognize Indigenous Peoples’ rights to and interests in their knowledges/data\nEnsure data collection and distribution are consistent with individual and community consent provisions and that consent is ongoing (including the right to withdraw or refuse)\nEnsure Indigenous communities have access to the (meta)data in usable format\n\nResponsibility\n\nCreate and expand opportunities for community capacity\nRecord the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata\nEnsure review of draft publications before publication\nUse the languages of Indigenous Peoples in the (meta)data\n\nEthics\n\nAccess research using Indigenous ethical frameworks\nUse community-defined review processes with appropriate reviewers for activities delineated in data management plans\nWork to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals\nEngage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#additional-resources",
-    "href": "mod_reproducibility.html#additional-resources",
-    "title": "Reproducibility Best Practices",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html",
-    "href": "mod_wrangle.html",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#under-construction",
-    "href": "mod_wrangle.html#under-construction",
-    "title": "Data Wrangling",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#overview",
-    "href": "mod_version-control.html#overview",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#learning-objectives",
-    "href": "mod_version-control.html#learning-objectives",
-    "title": "Version Control",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#module-content",
-    "href": "mod_version-control.html#module-content",
-    "title": "Version Control",
-    "section": "Module Content",
-    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#additional-resources",
-    "href": "mod_version-control.html#additional-resources",
-    "title": "Version Control",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html",
-    "href": "mod_thinking.html",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Supporting D.E.C. Thinking"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html#under-construction",
-    "href": "mod_thinking.html#under-construction",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Supporting D.E.C. Thinking"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html",
-    "href": "mod_project-mgmt.html",
-    "title": "Project Management",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html#under-construction",
-    "href": "mod_project-mgmt.html#under-construction",
-    "title": "Project Management",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "topic_interactivity.html",
-    "href": "topic_interactivity.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_interactivity.html#interactivity",
-    "href": "topic_interactivity.html#interactivity",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_spatial.html",
-    "href": "topic_spatial.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_spatial.html#working-with-spatial-data",
-    "href": "topic_spatial.html#working-with-spatial-data",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "mod_credit.html",
-    "href": "mod_credit.html",
-    "title": "Authorship & Intellectual Credit",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_credit.html#under-construction",
-    "href": "mod_credit.html#under-construction",
-    "title": "Authorship & Intellectual Credit",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
     ]
   }
 ]
