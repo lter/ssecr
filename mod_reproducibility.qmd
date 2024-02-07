@@ -29,7 +29,7 @@ Much of the popular conversation around reproducibility centers on reproducibili
 
 The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single "best" way of organizing your projects' files as long as you are consistent. Consistency allows those navigating your system to _deduce_ where particular files are likely to be without having in-depth knowledge of the entire suite of materials. 
 
-<img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="20%" align="right">
+<img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right">
 
 To begin, it is best to have a single folder for each project. This makes it simple to find the project's inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project's life cycle, this 'one folder' approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects' scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary <u>I</u>ntegrated <u>D</u>eveloper <u>E</u>nvironment for R) and most version control systems assume that each project's materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).
 
@@ -96,19 +96,23 @@ When your scripts are clear and reproducibly-written you will reap the following
 3. Sharing methods for external result validation is more straightforward
 4. In cases where you're developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy
 
-#### Session Information
+### Packages, Namespacing, and Software Versions
 
-- Carefully load packages and record package versions
+One of the first things that _every_ script should begin with is an explicit loading of all libraries that script need (these are called "dependencies). Scripts that don't specify which libraries are needed are unlikely to run on anyone's computer. Unfortunately, many R packages need to be installed by each user before they can be loaded with the `library` function. You may find it simpler to use the [librarian](https://cran.r-project.org/web/packages/librarian/index.html) package which automatically detects and installs needed packages if they are not already present. Note that users would still need to install librarian itself!
 
+It is also strongly recommended to "namespace" functions everywhere you use them. In R this is technically optional (Python requires this) but it is a really good practice to adopt, particularly for functions that may appear in multiple packages with the same name but do very different operations depending on their source. Namespacing in R is done by adding the package name and two colons before the function name (e.g., `dplyr::mutate`). This prevents accidental use of functions from the 'wrong' package for a given context.
 
-#### Script Organization
+You may also need to consider the version of the packages that you're using and the version of R. The `sessionInfo` function (from the [utils](https://cran.r-project.org/web/packages/R.utils/index.html) package loaded into R by default) is a good way of capturing some of this information but it is relatively high level and lacks sufficient detail for many contexts. For a more complete amount of information, consider using the [renv](https://cran.r-project.org/web/packages/renv/index.html) or [packrat](https://cran.r-project.org/web/packages/packrat/index.html) packages.
 
-- All changes between raw data and the final data should be done with scripts
-- Workflow should be divided into logical, modular scripts (e.g., wrangle vs. analyze vs. graph)
-- Portable code (i.e., transferable) uses relative file paths
+### Script Organization
 
+Every change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!
 
-#### Code Style
+You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).
+
+Finally, your code should <u>never use absolute file paths</u>. Absolute file paths are those that begin at the root of your entire computer ("C:..." on Windows and "~..." on Mac). Such paths are _inherently unreproducible_ as the odds of anyone having the exact same absolute file path are extremely slim. Instead, using relative file paths that begin at the project folder is preferable. These are transferable among users. You can even use R's `file.path` function to automatically detect the correct direction of slashes between folders to make it easier to collaborate across operating systems! Note in the above figure from Trisovic _et al._ (2022) that many scripts that set the working directory manually had errors until that bit was removed. Avoid setting the working directory explicitly and instead structure your project such that relative paths within the project folder will always succeed.
+
+### Code Style
 
 - Choose a logical coding style and _stick with it_
 - Concise and descriptive object names (and variable names)
@@ -116,7 +120,7 @@ When your scripts are clear and reproducibly-written you will reap the following
 - Indentation should be consistent about tabs vs. spaces
 
 
-#### Code Comments
+### Code Comments
 
 - Code should be thoroughly documented with comments
 - Comments should focus on "why" of operations rather than "what" (assumes code is being read by a person who can interpret the 'what' by scanning the code)
@@ -124,7 +128,7 @@ When your scripts are clear and reproducibly-written you will reap the following
 - Low (ish) effort way to increase reproducibility is to use extensive/clear comments
 
 
-#### Consider Custom Functions
+### Consider Custom Functions
 
 - If an operation is duplicated more than 3 times within a project, write a custom function to centralize the work
 - If an operation is duplicated across more than 3 _projects_, consider creating an R package
