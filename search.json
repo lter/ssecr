@@ -1,39 +1,25 @@
 [
   {
-    "objectID": "mod_facilitation.html",
-    "href": "mod_facilitation.html",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_facilitation.html#under-construction",
-    "href": "mod_facilitation.html#under-construction",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_data-disc.html#under-construction",
+    "href": "mod_data-disc.html#under-construction",
+    "title": "Data Discovery & Management",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
-  },
-  {
-    "objectID": "topic_interactivity.html",
-    "href": "topic_interactivity.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_interactivity.html#interactivity",
-    "href": "topic_interactivity.html#interactivity",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
   },
   {
     "objectID": "mod_spatial.html",
@@ -80,20 +66,6 @@
     ]
   },
   {
-    "objectID": "topic_spatial.html",
-    "href": "topic_spatial.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
-    "objectID": "topic_spatial.html#working-with-spatial-data",
-    "href": "topic_spatial.html#working-with-spatial-data",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "Stay tuned for more details!"
-  },
-  {
     "objectID": "mod_data-viz.html",
     "href": "mod_data-viz.html",
     "title": "Data Visualization & Exploration",
@@ -113,6 +85,144 @@
     "crumbs": [
       "Quantitative Modules",
       "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#under-construction",
+    "href": "mod_stats.html#under-construction",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html",
+    "href": "mod_logic-models.html",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#under-construction",
+    "href": "mod_logic-models.html#under-construction",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html",
+    "href": "mod_team-sci.html",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#under-construction",
+    "href": "mod_team-sci.html#under-construction",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#under-construction",
+    "href": "mod_reports.html#under-construction",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#accessing-course-materials",
+    "href": "CONTRIBUTING.html#accessing-course-materials",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#project-management",
+    "href": "CONTRIBUTING.html#project-management",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#style-guide",
+    "href": "CONTRIBUTING.html#style-guide",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#under-construction",
+    "href": "mod_facilitation.html#under-construction",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Stay tuned for more details!",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
     ]
   },
   {
@@ -146,102 +256,25 @@
     ]
   },
   {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
+      "Team Science Modules",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_reports.html#under-construction",
-    "href": "mod_reports.html#under-construction",
-    "title": "Reproducible Reports",
+    "objectID": "mod_findings.html#under-construction",
+    "href": "mod_findings.html#under-construction",
+    "title": "Communicating Findings",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#overview",
-    "href": "mod_version-control.html#overview",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#learning-objectives",
-    "href": "mod_version-control.html#learning-objectives",
-    "title": "Version Control",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#module-content",
-    "href": "mod_version-control.html#module-content",
-    "title": "Version Control",
-    "section": "Module Content",
-    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#additional-resources",
-    "href": "mod_version-control.html#additional-resources",
-    "title": "Version Control",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html",
-    "href": "mod_data-disc.html",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#under-construction",
-    "href": "mod_data-disc.html#under-construction",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
+      "Team Science Modules",
+      "Communicating Findings"
     ]
   },
   {
@@ -333,56 +366,6 @@
     ]
   },
   {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#accessing-course-materials",
-    "href": "CONTRIBUTING.html#accessing-course-materials",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#project-management",
-    "href": "CONTRIBUTING.html#project-management",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#style-guide",
-    "href": "CONTRIBUTING.html#style-guide",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "mod_project-mgmt.html",
-    "href": "mod_project-mgmt.html",
-    "title": "Project Management",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html#under-construction",
-    "href": "mod_project-mgmt.html#under-construction",
-    "title": "Project Management",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Team Science Modules",
-      "Project Management"
-    ]
-  },
-  {
     "objectID": "mod_wrangle.html",
     "href": "mod_wrangle.html",
     "title": "Data Wrangling",
@@ -405,47 +388,58 @@
     ]
   },
   {
-    "objectID": "mod_findings.html",
-    "href": "mod_findings.html",
-    "title": "Communicating Findings",
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
     "section": "",
-    "text": "Stay tuned for more details!",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
     "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
+      "Quantitative Modules",
+      "Version Control"
     ]
   },
   {
-    "objectID": "mod_findings.html#under-construction",
-    "href": "mod_findings.html#under-construction",
-    "title": "Communicating Findings",
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
     "section": "",
-    "text": "Stay tuned for more details!",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
     "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
+      "Quantitative Modules",
+      "Version Control"
     ]
   },
   {
-    "objectID": "mod_credit.html",
-    "href": "mod_credit.html",
-    "title": "Authorship & Intellectual Credit",
-    "section": "",
-    "text": "Stay tuned for more details!",
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
     "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
+      "Quantitative Modules",
+      "Version Control"
     ]
   },
   {
-    "objectID": "mod_credit.html#under-construction",
-    "href": "mod_credit.html#under-construction",
-    "title": "Authorship & Intellectual Credit",
-    "section": "",
-    "text": "Stay tuned for more details!",
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
     "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
     ]
   },
   {
@@ -471,69 +465,75 @@
     ]
   },
   {
-    "objectID": "mod_stats.html",
-    "href": "mod_stats.html",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#under-construction",
-    "href": "mod_stats.html#under-construction",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Stay tuned for more details!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_logic-models.html",
-    "href": "mod_logic-models.html",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
       "Team Science Modules",
-      "Logic Models"
+      "Project Management"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#under-construction",
-    "href": "mod_logic-models.html#under-construction",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html#under-construction",
+    "href": "mod_project-mgmt.html#under-construction",
+    "title": "Project Management",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
       "Team Science Modules",
-      "Logic Models"
+      "Project Management"
     ]
   },
   {
-    "objectID": "mod_team-sci.html",
-    "href": "mod_team-sci.html",
-    "title": "Team Science Practices",
+    "objectID": "topic_interactivity.html",
+    "href": "topic_interactivity.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_interactivity.html#interactivity",
+    "href": "topic_interactivity.html#interactivity",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html",
+    "href": "topic_spatial.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "topic_spatial.html#working-with-spatial-data",
+    "href": "topic_spatial.html#working-with-spatial-data",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "Stay tuned for more details!"
+  },
+  {
+    "objectID": "mod_credit.html",
+    "href": "mod_credit.html",
+    "title": "Authorship & Intellectual Credit",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
       "Team Science Modules",
-      "Team Science"
+      "Intellectual Credit"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#under-construction",
-    "href": "mod_team-sci.html#under-construction",
-    "title": "Team Science Practices",
+    "objectID": "mod_credit.html#under-construction",
+    "href": "mod_credit.html#under-construction",
+    "title": "Authorship & Intellectual Credit",
     "section": "",
     "text": "Stay tuned for more details!",
     "crumbs": [
       "Team Science Modules",
-      "Team Science"
+      "Intellectual Credit"
     ]
   }
 ]
