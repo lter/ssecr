@@ -128,6 +128,8 @@ Scripts are free to write regardless of the number of lines so do not feel as th
 
 A "comment" in a script is a human readable, non-coding line that helps give context on the next line of code (or potentially next few lines). In R (and Python), such lines are preceded by a hashtag (#). Including such lines is a low(ish) effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include "too many" comments, so if you are in doubt about whether you've sufficiently explained something, you should consider adding additional comments.
 
+<img src="images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right">
+
 There are a few philosophies about what the content of comments should be that are somewhat in tension. There are strong reasons behind each so we will list two of them and encourage you to adopt the style that best fits your project and team!
 
 #### "What" Comments
