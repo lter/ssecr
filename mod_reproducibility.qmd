@@ -110,13 +110,57 @@ Every change to the data between the initial raw data and the finished product s
 
 You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).
 
-Finally, your code should <u>never use absolute file paths</u>. Absolute file paths are those that begin at the root of your entire computer ("C:..." on Windows and "~..." on Mac). Such paths are _inherently unreproducible_ as the odds of anyone having the exact same absolute file path are extremely slim. Instead, using relative file paths that begin at the project folder is preferable. These are transferable among users. You can even use R's `file.path` function to automatically detect the correct direction of slashes between folders to make it easier to collaborate across operating systems! Note in the above figure from Trisovic _et al._ (2022) that many scripts that set the working directory manually had errors until that bit was removed. Avoid setting the working directory explicitly and instead structure your project such that relative paths within the project folder will always succeed.
+Finally, <u>your code should never use absolute file paths</u>. Absolute file paths are those that begin at the root of your entire computer ("C:..." on Windows and "~..." on Mac). Such paths are _inherently not reproducible_ as the odds of anyone having the exact same absolute file path are extremely slim. Instead, using relative file paths that begin at the project folder is preferable. These are transferable among users. You can even use R's `file.path` function to automatically detect the correct direction of slashes between folders to make it easier to collaborate across operating systems! Note in the above figure from Trisovic _et al._ (2022) that many scripts that set the working directory manually had errors until that bit was removed. Avoid setting the working directory explicitly and instead structure your project such that relative paths within the project folder will always succeed.
 
 ### Code Style
 
-- Choose a logical coding style and _stick with it_
-- Concise and descriptive object names (and variable names)
-- Use spaces between operators and after commas
+When it comes to code style, the same 'rule of thumb' applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! Thtat said, there are a few principles worth adopting if you have not already done so.
+
+**1. Use concise and descriptive object names**
+
+It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.
+
+**2. Don't be afraid of space!**
+
+Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.
+
+:::panel-tabset
+
+## Cramped Code
+
+Note that I've removed the comments from this example but even cramped code should still have comments! More on that shortly.
+
+```{.r}
+proportion_traps<-seeds_v1%>%
+  dplyr::filter(General.method=="TRAP")%>%
+  dplyr::filter(Count>0)%>%
+  dplyr::group_by(LTER.Site,Plot.ID,Species.Name)%>%
+  dplyr::summarise(n.traps.species=length(unique(Trap.ID)))%>%
+  dplyr::ungroup()%>%
+  dplyr::left_join(y=traps_plot_max,by=c("LTER.Site","Plot.ID"))%>%
+  dplyr::mutate(prop.traps=n.traps.species/max.traps)
+```
+
+## Spacious Code
+
+Even without comments, see how much more readable this code is?
+
+```{.r}
+proportion_traps <- seeds_v1 %>%
+  dplyr::filter(General.method == "TRAP") %>%
+  dplyr::filter(Count > 0) %>%
+  dplyr::group_by(LTER.Site, Plot.ID, Species.Name) %>% 
+  dplyr::summarise(n.traps.species = length(unique(Trap.ID))) %>%
+  dplyr::ungroup() %>%
+  dplyr::left_join(y = traps_plot_max, by = c("LTER.Site", "Plot.ID")) %>%
+  dplyr::mutate(prop.traps = n.traps.species / max.traps)
+```
+
+:::
+
+**3. **
+
+
 - Indentation should be consistent about tabs vs. spaces
 
 
