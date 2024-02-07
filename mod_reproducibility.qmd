@@ -51,13 +51,11 @@ Beyond the structure and degree of nestedness you adopt for your folders, your f
 
 You should also consider how 'machine readable' your file names are. One fundamental way in which this changes user's experience is how file management applications (e.g., Apple's Finder) visually display files. By default files are typically sorted alphabetically and numerically. So, even if the script "wrangle.R" should be run _first_ in your workflow, most file explorers would put that script last or at the bottom. If instead you changed it's name to "01_wrangle.R" now it would likely be sorted towards the top and encountered earlier by those interested in your workflow. Notice too in that example that we have "zero padded" the script so that if we eventually had a tenth script file explorers would correctly sort it ("10..." would be before "1..." in most file sorting systems).
 
-You should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., "raw data" versus "raw_data").
+You should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., "raw data" versus "raw_data"). Using a mix of upper and lowercase letters can be effective when done carefully but also requires a lot of attention to detail on the part of those creating new files. It may be simplest to stick with all lowercase or all uppercase for your file names.
 
+Be consistent with any delimiters you use in file names! Two common ones are the hyphen (-) and underscore (_). If you use one instead of spaces, be sure to _only_ use that one for that use-case rather than using them interchangeably. You may find it useful to use one delimiter to separate a type of information and then the other in lieu of spaces. For example, "fxn_calc-diversity.R" uses the prefix "fxn_" to indicate that the script contains a function while the words to the right of the underscore briefly describe the purpose of that function.
 
-- Avoid spaces, accented characters, and case sensitivity
-- Be consistent about delimiters
-- Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
-
+In that same vein, you may want to consider using "slugs" in your file names. Slugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. For example, the files created by "01_wrangle.R" could all begin with "01_" (the slug in this case). The benefit of this approach is that diagnosing strange outputs--or simply finding the source of a given file or graph--is a straightforward matter of looking for the matching slug.
 
 ### Documentation
 
