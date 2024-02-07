@@ -17,17 +17,15 @@ After completing this module you will be able to:
 - <u>Summarize</u> FAIR and CARE data principles
 - <u>Evaluate</u> the FAIR/CAREness of your work
 
-## Module Content
-
-### Lego Activity
+## Lego Activity
 
 Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we'll cover today. The LEGO {{< fa registered >}} activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).
 
-### Project Organization & Documentation
+## Project Organization & Documentation
 
 Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is critically important that we first discuss what factors go into project-wide reproducibility. "Perfect" code in a project that isn't structured thoughtfully can still result in a synthesis project that is not reproducible while even "bad" code can be made more intelligible when it is placed in a well-documented/organized project!
 
-#### Folder Structure
+### Folder Structure
 
 The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single "best" way of organizing your projects' files as long as you are consistent. Consistency allows those navigating your system to _deduce_ where particular files are likely to be without having in-depth knowledge of the entire suite of materials. 
 
@@ -38,15 +36,16 @@ Within your project folder, it is valuable to structure your folders and files h
 :::{.callout-warning icon="false"}
 #### Discussion: Folder Structure
 
-With a partner, discuss how you typically organize your projects' files.
+With a partner discuss (some of) the following questions:
 
+- How do you typically organize your projects' files?
 - What benefits do you see of your current approach?
 - What--if any--limitations to your system have you experienced?
 - Do you think your structure would work well in a team environment?
     - If not, what changes might you make to better fit that context?
 :::
 
-#### File Names
+### File Names
 
 Beyond the structure and degree of nestedness you adopt for your folders, your files can (and should) include a lot of helpful contextual information about themselves. An ideal file name should be very informative about that file's contents, purpose, and relation to other project files. Some or all of that information may be reinforced by the folder(s) in which the file is placed, but the file name itself should _also_ confer that information. This may feel redundant but if late in your project's lifecycle you decide a different folder system is needed, information-dense file names will allow you to change file locations without excessive difficulty.
 
@@ -60,14 +59,14 @@ You should also avoid spaces and accented characters (e.g., é, ü, etc.) as som
 - Consider "slugs" -- human-readable / unique pieces of file names that tie scripts together with their outputs
 
 
-#### Documentation
+### Documentation
 
 - Include a README with (A) project overview, (B) basic table of contents of rest of folder hierarchy, and (C) file naming scheme explanation
 - May also want folder-specific READMEs (at least for the first level of subfolders) to give greater detail / data provenance information
 - Keep track of ideas, discussions, and decisions about the project
 
 
-#### Best Practices / Recommendations
+### Best Practices / Recommendations
 
 - Quarantine inputs from others until you can rename / repurpose for consistency with your chosen organization schema
 - The raw data and products of scripts should be separated into different folders
@@ -77,9 +76,7 @@ You should also avoid spaces and accented characters (e.g., é, ü, etc.) as som
 
 
     
-
-    
-### Reproducible Coding
+## Reproducible Coding
 
 - Scripted approaches are more reproducible than unscripted ones (e.g., Excel, Google Sheets, etc.) but still often do not use reproducibility best practices
 - Principles
@@ -105,11 +102,11 @@ You should also avoid spaces and accented characters (e.g., é, ü, etc.) as som
     - Key is to "fail fast" and ensure code throws an error _as soon as something unexpected happens_ rather than doing a bunch of processing and failing later on because of something that could be identified early on
 - Carefully load packages and record package versions
 
-### FAIR & CARE Data Principles
+## FAIR & CARE Data Principles
 
 Data availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These 'synthesis data products' can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.
 
-#### FAIR
+### FAIR
 
 FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take _throughout the lifecycle of your project_ to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is--in some ways--dependent upon how thoroughly you consider these actions.
 
@@ -155,7 +152,7 @@ Feel free to use these questions to guide your thinking
 - How easy would it be for someone <u>not</u> in your lab group?
 :::
 
-#### CARE
+### CARE
 
 While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a _good in and of itself_. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the _sole_ tool to use in evaluating how data/code are shared and stored. The [Global Indigenous Data Alliance](https://www.gida-global.org/) (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. **Before** making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension. 
 
@@ -192,9 +189,6 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 <p align="center">
 <img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" width="70%">
 </p>
-
-
-
 
 ## Additional Resources
 
