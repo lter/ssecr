@@ -126,11 +126,21 @@ Scripts are free to write regardless of the number of lines so do not feel as th
 
 ### Code Comments
 
-- Code should be thoroughly documented with comments
-- Comments should focus on "why" of operations rather than "what" (assumes code is being read by a person who can interpret the 'what' by scanning the code)
-- Code tells the computer what to do, comments tell the human what we're telling the computer to do
-- Low (ish) effort way to increase reproducibility is to use extensive/clear comments
+A "comment" in a script is a human readable, non-coding line that helps give context on the next line of code (or potentially next few lines). In R (and Python), such lines are preceded by a hashtag (#). Including such lines is a low(ish) effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include "too many" comments, so if you are in doubt about whether you've sufficiently explained something, you should consider adding additional comments.
 
+There are a few philosophies about what the content of comments should be that are somewhat in tension. There are strong reasons behind each so we will list two of them and encourage you to adopt the style that best fits your project and team!
+
+#### "What" Comments
+
+The first style of commenting is "what" comments. Here your comments should basically be human readable equivalents to the lines of code. You can think of this as the code telling the computer what to do while the comments tell the human what we're telling the computer to do.
+
+Commenting in this way can be really effective for teams with varying code experience and are inherently more accessible to those with less code literacy. However, this style of comments has the potential to fail to record the larger reasoning or context behind the code.
+
+#### "Why" Comments
+
+This method of commenting focuses on _why_ particular lines of code are being included. The focus is mostly/only on the bigger picture of the purpose of the script. This method assumes that anyone looking to understand the "what" of the code can read the non-comment lines.
+
+A clear drawback of this approach is that even extensive comments in this format can be inaccessible to those without code experience. However, the strategic perspective of these comments can be valuable to record explicitly, particularly if such judgement calls/decisions are not documented elsewhere.
 
 ### Consider Custom Functions
 
