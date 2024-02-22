@@ -25,7 +25,7 @@ Before we dive into the world of reproducibility for synthesis projects, we thou
 
 Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. "Perfect" code in a project that isn't structured thoughtfully can still result in a project that isn't reproducible. On the other hand, "bad" code can be made more intelligible when it is placed in a well-documented/organized project!
 
-### Folder Structure
+### Fundamental Structure
 
 <img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right">
 
@@ -53,17 +53,38 @@ With a partner discuss (some of) the following questions:
     - If not, what changes might you make to better fit that context?
 :::
 
-### File Names
+3. **Craft informative file names**
 
-Beyond the structure and degree of nestedness you adopt for your folders, your files can (and should) include a lot of helpful contextual information about themselves. An ideal file name should be very informative about that file's contents, purpose, and relation to other project files. Some or all of that information may be reinforced by the folder(s) in which the file is placed, but the file name itself should _also_ confer that information. This may feel redundant but if late in your project's lifecycle you decide a different folder system is needed, information-dense file names will allow you to change file locations without excessive difficulty.
+An ideal file name should give some information about the file's contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should _be inherently meaningful_. This lets you change folder names without fear that files would also need to be re-named.
 
-You should also consider how 'machine readable' your file names are. One fundamental way in which this changes user's experience is how file management applications (e.g., Apple's Finder) visually display files. By default files are typically sorted alphabetically and numerically. So, even if the script "wrangle.R" should be run _first_ in your workflow, most file explorers would put that script last or at the bottom. If instead you changed it's name to "01_wrangle.R" now it would likely be sorted towards the top and encountered earlier by those interested in your workflow. Notice too in that example that we have "zero padded" the script so that if we eventually had a tenth script file explorers would correctly sort it ("10..." would be before "1..." in most file sorting systems).
+#### Naming Tips
 
-You should also avoid spaces and accented characters (e.g., é, ü, etc.) as some computers will not be able to recognize these characters. Windows operating systems in particular have a very difficult time parsing folder names with spaces (e.g., "raw data" versus "raw_data"). Using a mix of upper and lowercase letters can be effective when done carefully but also requires a lot of attention to detail on the part of those creating new files. It may be simplest to stick with all lowercase or all uppercase for your file names.
+We've brought up the importance of naming several times already but haven't actually discussed the specifics of what makes a "good" name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.
 
-Be consistent with any delimiters you use in file names! Two common ones are the hyphen (-) and underscore (_). If you use one instead of spaces, be sure to _only_ use that one for that use-case rather than using them interchangeably. You may find it useful to use one delimiter to separate a type of information and then the other in lieu of spaces. For example, "fxn_calc-diversity.R" uses the prefix "fxn_" to indicate that the script contains a function while the words to the right of the underscore briefly describe the purpose of that function.
+> Names should be sorted by a computer and human in the same way
 
-In that same vein, you may want to consider using "slugs" in your file names. Slugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. For example, the files created by "01_wrangle.R" could all begin with "01_" (the slug in this case). The benefit of this approach is that diagnosing strange outputs--or simply finding the source of a given file or graph--is a straightforward matter of looking for the matching slug.
+Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow _should be_ run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project.
+
+You may also want to "zero pad" numbers so that all numbers have the same number of digits (e.g., "01" and "10" vs. "1" and "10").
+
+> Names should avoid spaces and special characters
+
+Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible.
+
+You may also want to be consistent about casing (i.e., lower vs. uppercase).
+
+> Names should use consistent delimiters
+
+**Delimiters** are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder "coral_reef_data" which would be more readable than "coralreefdata".
+
+
+You may also want to use _multiple_ delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.
+
+> Names should use "slugs" to connect inputs and outputs
+
+**Slugs** are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named "02_tidy.R" and all of the data files it creates are named "02_...".
+
+Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.
 
 ### Documentation
 
