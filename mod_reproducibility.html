@@ -378,13 +378,20 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="project-organization-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="project-organization-documentation">Project Organization &amp; Documentation</h2>
-<p>Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is critically important that we first discuss what factors go into project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a synthesis project that is not reproducible while even “bad” code can be made more intelligible when it is placed in a well-documented/organized project!</p>
+<p>Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a project that isn’t reproducible. On the other hand, “bad” code can be made more intelligible when it is placed in a well-documented/organized project!</p>
 <section id="folder-structure" class="level3">
 <h3 class="anchored" data-anchor-id="folder-structure">Folder Structure</h3>
-<p>The simplest and often most effective way of beginning a reproducible project is adopting (and sticking to) a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency allows those navigating your system to <em>deduce</em> where particular files are likely to be without having in-depth knowledge of the entire suite of materials.</p>
 <p><img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right"></p>
-<p>To begin, it is best to have a single folder for each project. This makes it simple to find the project’s inputs and outputs and also makes collaboration and documentation much cleaner. Later in your project’s life cycle, this ‘one folder’ approach will also make it easier to share your project with external reviewers or new team members. For researchers used to working alone there can be a temptation to think about your leadership of a project as the fundamental unit rather than the individual projects’ scopes. This method works fine when working alone but greatly increases the difficulty of communication and co-working in projects led by teams. RStudio (the primary <u>I</u>ntegrated <u>D</u>eveloper <u>E</u>nvironment for R) and most version control systems assume that each project’s materials will be placed in a single folder and either of these systems can confer significant benefits to your work (well worth any potential reorganization difficulty).</p>
-<p>Within your project folder, it is valuable to structure your folders and files hierarchically. Having a folder with dozens of mixed file types of various purposes that may be either inputs or outputs is cumbersome to document and difficult to navigate. If instead you adopt a system of sub-folders that group files based on purpose and/or source engagement becomes much simpler. You need not use an intricate web of sub-folders either; often just a single layer of these sub-folders provides sufficient structure to meet your project’s organizational needs.</p>
+<p><u>The simplest way of beginning a reproducible project is adopting a good file organization system</u>. There is no single “best” way of organizing your projects’ files as long as you are <em>consistent</em>. Consistency will make your system–whatever that consists of–understandable to others.</p>
+<p>Here are some rules to keep in mind as you decide how to organize your project:</p>
+<ol type="1">
+<li><strong>Use one folder per project</strong></li>
+</ol>
+<p>Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.</p>
+<ol start="2" type="1">
+<li><strong>Organize content with sub-folders</strong></li>
+</ol>
+<p>Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don’t feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
