@@ -19,7 +19,7 @@ After completing this module you will be able to:
 
 ## Lego Activity
 
-Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we'll cover today. The LEGO {{< fa registered >}} activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).
+Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we'll cover today. The LEGO activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).
 
 ## Project Organization & Documentation
 
@@ -124,25 +124,46 @@ It can be difficult to balance these two imperatives but short object names are 
 
 Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.
 
-### Code Comments
-
-A "comment" in a script is a human readable, non-coding line that helps give context on the next line of code (or potentially next few lines). In R (and Python), such lines are preceded by a hashtag (#). Including such lines is a low(ish) effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include "too many" comments, so if you are in doubt about whether you've sufficiently explained something, you should consider adding additional comments.
-
 <img src="images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right">
 
-There are a few philosophies about what the content of comments should be that are somewhat in tension. There are strong reasons behind each so we will list two of them and encourage you to adopt the style that best fits your project and team!
+\
+\
+\
+\
+\
 
-#### "What" Comments
+### Code Comments
 
-The first style of commenting is "what" comments. Here your comments should basically be human readable equivalents to the lines of code. You can think of this as the code telling the computer what to do while the comments tell the human what we're telling the computer to do.
+A "comment" in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include "too many" comments, so when in doubt: add more comments!
 
-Commenting in this way can be really effective for teams with varying code experience and are inherently more accessible to those with less code literacy. However, this style of comments has the potential to fail to record the larger reasoning or context behind the code.
+There are two major strategies for comments and either or both might make sense for your project.
 
-#### "Why" Comments
+:::panel-tabset
+## "What" Comments
 
-This method of commenting focuses on _why_ particular lines of code are being included. The focus is mostly/only on the bigger picture of the purpose of the script. This method assumes that anyone looking to understand the "what" of the code can read the non-comment lines.
+Comments describe _what_ the code is doing.
 
-A clear drawback of this approach is that even extensive comments in this format can be inaccessible to those without code experience. However, the strategic perspective of these comments can be valuable to record explicitly, particularly if such judgement calls/decisions are not documented elsewhere.
+- Benefits: allows team members to understand workflow without code literacy
+- Risks: rationale for code not explicit 
+
+```{.r}
+# Remove all pine trees from dataset
+no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
+```
+
+## "Why" Comments
+
+Comments describe _rationale_ and/or _context_ for code.
+
+- Benefits: built-in documentation for team decisions
+- Risks: assumes everyone can read code
+
+```{.r}
+# Cone-bearing plants are not comparable with other plants in dataset
+no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
+```
+
+:::
 
 ### Consider Custom Functions
 
