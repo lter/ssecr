@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -76,8 +76,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -376,7 +374,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="lego-activity" class="level2">
 <h2 class="anchored" data-anchor-id="lego-activity">Lego Activity</h2>
-<p>Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO <i class="fa-solid fa-registered" aria-label="registered"></i> activity was designed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a> at the University of Glasgow. The full materials can be accessed <a href="https://eprints.gla.ac.uk/196477/">here</a>.</p>
+<p>Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO activity was designed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a> at the University of Glasgow. The full materials can be accessed <a href="https://eprints.gla.ac.uk/196477/">here</a>.</p>
 </section>
 <section id="project-organization-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="project-organization-documentation">Project Organization &amp; Documentation</h2>
@@ -471,22 +469,41 @@ Discussion: Folder Structure
 <p>It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.</p>
 <p><strong>2. Don’t be afraid of space!</strong></p>
 <p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
+<p><img src="images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right"></p>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
 </section>
 <section id="code-comments" class="level3">
 <h3 class="anchored" data-anchor-id="code-comments">Code Comments</h3>
-<p>A “comment” in a script is a human readable, non-coding line that helps give context on the next line of code (or potentially next few lines). In R (and Python), such lines are preceded by a hashtag (#). Including such lines is a low(ish) effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so if you are in doubt about whether you’ve sufficiently explained something, you should consider adding additional comments.</p>
-<p><img src="images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right"></p>
-<p>There are a few philosophies about what the content of comments should be that are somewhat in tension. There are strong reasons behind each so we will list two of them and encourage you to adopt the style that best fits your project and team!</p>
-<section id="what-comments" class="level4">
-<h4 class="anchored" data-anchor-id="what-comments">“What” Comments</h4>
-<p>The first style of commenting is “what” comments. Here your comments should basically be human readable equivalents to the lines of code. You can think of this as the code telling the computer what to do while the comments tell the human what we’re telling the computer to do.</p>
-<p>Commenting in this way can be really effective for teams with varying code experience and are inherently more accessible to those with less code literacy. However, this style of comments has the potential to fail to record the larger reasoning or context behind the code.</p>
-</section>
-<section id="why-comments" class="level4">
-<h4 class="anchored" data-anchor-id="why-comments">“Why” Comments</h4>
-<p>This method of commenting focuses on <em>why</em> particular lines of code are being included. The focus is mostly/only on the bigger picture of the purpose of the script. This method assumes that anyone looking to understand the “what” of the code can read the non-comment lines.</p>
-<p>A clear drawback of this approach is that even extensive comments in this format can be inaccessible to those without code experience. However, the strategic perspective of these comments can be valuable to record explicitly, particularly if such judgement calls/decisions are not documented elsewhere.</p>
-</section>
+<p>A “comment” in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so when in doubt: add more comments!</p>
+<p>There are two major strategies for comments and either or both might make sense for your project.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">“What” Comments</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">“Why” Comments</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Comments describe <em>what</em> the code is doing.</p>
+<ul>
+<li>Benefits: allows team members to understand workflow without code literacy</li>
+<li>Risks: rationale for code not explicit</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove all pine trees from dataset</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>no_pine_df <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(full_df, genus <span class="sc">!=</span> <span class="st">"Pinus"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Comments describe <em>rationale</em> and/or <em>context</em> for code.</p>
+<ul>
+<li>Benefits: built-in documentation for team decisions</li>
+<li>Risks: assumes everyone can read code</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cone-bearing plants are not comparable with other plants in dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>no_pine_df <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(full_df, genus <span class="sc">!=</span> <span class="st">"Pinus"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="consider-custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h3>
@@ -501,14 +518,14 @@ Discussion: Folder Structure
 <p>When you write custom functions, it is really valuable to take the time to write them defensively. In this context, “defensively” means that you anticipate likely errors and <em>write your own informative/human readable error messages</em>. Let’s consider a simplified version of a function rom the <a href="https://github.com/lter/ltertools/tree/main">ltertools</a> R package for calculating the coefficient of variation (CV).</p>
 <p>The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given <em>a non-number</em> you get the following warning message: <code>In mean.default(x = "...") : argument is not numeric or logical: returning NA</code>.</p>
 <p>Someone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cv <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if x is not numeric</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.numeric</span>(x) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`x` must be numeric"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate CV</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sd</span>(<span class="at">x =</span> x) <span class="sc">/</span> <span class="fu">mean</span>(<span class="at">x =</span> x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>cv <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if x is not numeric</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.numeric</span>(x) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`x` must be numeric"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate CV</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sd</span>(<span class="at">x =</span> x) <span class="sc">/</span> <span class="fu">mean</span>(<span class="at">x =</span> x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>The key to defensive programming is to try to get functions to fail <em>fast</em> and fail <em>informatively</em> as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and–for complex functions–can save a ton of useless processing time when failure is guaranteed at a later step.</p>
 <p><strong>- If a given operation is duplicated 3 or more times <u>across projects</u>, consider creating an R package</strong></p>
 <p>Creating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function’s script for each project that needs the tool.</p>
