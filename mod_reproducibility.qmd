@@ -77,7 +77,6 @@ You may also want to be consistent about casing (i.e., lower vs. uppercase).
 
 **Delimiters** are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder "coral_reef_data" which would be more readable than "coralreefdata".
 
-
 You may also want to use _multiple_ delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.
 
 > Names should use "slugs" to connect inputs and outputs
@@ -86,9 +85,112 @@ You may also want to use _multiple_ delimiters to indicate different things. For
 
 Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.
 
+### Organizing Example
+
+These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let's consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.
+
+:::panel-tabset
+
+## Version 1
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="images/image_proj-struct-v1.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- All project files are in one folder
+
+#### Areas for Improvement
+
+- No use of sub-folders to divide logically-linked content
+- File names lack key context (e.g., workflow order, inputs vs. outputs, etc.)
+- Inconsistent use of delimiters
+
+:::
+::::
+
+## Version 2
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="images/image_proj-struct-v2.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- Sub-folders used to divide content
+- Project documentation included in top level (README and license files)
+
+#### Areas for Improvement
+
+- File names still inconsistent
+    - File names contain different information in different order
+    - Mixed use of delimiters
+    - Many file names include spaces
+
+:::
+::::
+
+## Version 3
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="images/image_proj-struct-v3.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- Most file names contain context
+- Standardized use of casing and--within sub-folder--consistent delimiters used
+
+#### Areas for Improvement
+
+- Workflow order "guessable" but not explicit
+- Unclear which files are inputs / outputs (and of which scripts)
+
+:::
+::::
+
+## Version 4
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="images/image_proj-struct-v4.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- Scripts include zero-padded numbers indicating order of operations
+- Inputs / outputs share zero padded slug with source script
+- Report file names machine sorted from least to most recent (top to bottom)
+
+#### Areas for Improvement
+
+- Depending on sub-folder complexity, could add sub-folder specific README files
+- Graph file names still include spaces
+
+:::
+::::
+
+:::
+
 ### Documentation
 
-Documenting a project can feel like a Sisyphean task but it is often not as hard as one might imagine and well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include (1) a project overview written in plain language, (2) a basic table of contents for the primary folders in your project folder, and (3) a brief description of the file naming scheme you've adopted for this project.
+Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include (1) a project overview written in plain language, (2) a basic table of contents for the primary folders in your project folder, and (3) a brief description of the file naming scheme you've adopted for this project.
 
 Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
 
