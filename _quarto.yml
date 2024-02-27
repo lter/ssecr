@@ -61,10 +61,14 @@ website:
     right: 
       - text: "Instructors"
         menu: 
-          - text: "Marty Downs"
+          - text: "LTER Network"
             href: https://lternet.edu/
+          - text: "Marty Downs"
+            href: https://orcid.org/0000-0003-2833-956X
           - text: "Nick J Lyon"
             href: https://njlyon0.github.io/
+          - text: "Carrie Kappel"
+            href: https://legacyworksgroup.com/team-content/carrie-kappel
   page-footer: 
     center: "Copyright 2024, LTER Network"
     background: secondary
