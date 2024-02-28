@@ -63,15 +63,11 @@ We've brought up the importance of naming several times already but haven't actu
 
 > Names should be sorted by a computer and human in the same way
 
-Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow _should be_ run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project.
-
-You may also want to "zero pad" numbers so that all numbers have the same number of digits (e.g., "01" and "10" vs. "1" and "10").
+Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow _should be_ run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to "zero pad" numbers so that all numbers have the same number of digits (e.g., "01" and "10" vs. "1" and "10").
 
 > Names should avoid spaces and special characters
 
-Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible.
-
-You may also want to be consistent about casing (i.e., lower vs. uppercase).
+Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs. uppercase).
 
 > Names should use consistent delimiters
 
@@ -81,9 +77,7 @@ You may also want to use _multiple_ delimiters to indicate different things. For
 
 > Names should use "slugs" to connect inputs and outputs
 
-**Slugs** are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named "02_tidy.R" and all of the data files it creates are named "02_...".
-
-Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.
+**Slugs** are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named "02_tidy.R" and all of the data files it creates are named "02_...". Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.
 
 ### Organizing Example
 
