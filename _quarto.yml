@@ -69,6 +69,8 @@ website:
             href: https://njlyon0.github.io/
           - text: "Carrie Kappel"
             href: https://legacyworksgroup.com/team-content/carrie-kappel
+      - icon: github
+        href: https://github.com/lter/ssecr
   page-footer: 
     center: "Copyright 2024, LTER Network"
     background: secondary
