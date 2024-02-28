@@ -156,6 +156,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   </li>  
     </ul>
   </li>
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lter/ssecr"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -432,13 +437,11 @@ Discussion: Folder Structure
 <blockquote class="blockquote">
 <p>Names should be sorted by a computer and human in the same way</p>
 </blockquote>
-<p>Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow <em>should be</em> run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project.</p>
-<p>You may also want to “zero pad” numbers so that all numbers have the same number of digits (e.g., “01” and “10” vs.&nbsp;“1” and “10”).</p>
+<p>Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow <em>should be</em> run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to “zero pad” numbers so that all numbers have the same number of digits (e.g., “01” and “10” vs.&nbsp;“1” and “10”).</p>
 <blockquote class="blockquote">
 <p>Names should avoid spaces and special characters</p>
 </blockquote>
-<p>Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible.</p>
-<p>You may also want to be consistent about casing (i.e., lower vs.&nbsp;uppercase).</p>
+<p>Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs.&nbsp;uppercase).</p>
 <blockquote class="blockquote">
 <p>Names should use consistent delimiters</p>
 </blockquote>
@@ -447,8 +450,7 @@ Discussion: Folder Structure
 <blockquote class="blockquote">
 <p>Names should use “slugs” to connect inputs and outputs</p>
 </blockquote>
-<p><strong>Slugs</strong> are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named “02_tidy.R” and all of the data files it creates are named “02_…”.</p>
-<p>Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.</p>
+<p><strong>Slugs</strong> are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named “02_tidy.R” and all of the data files it creates are named “02_…”. Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.</p>
 </section>
 </section>
 <section id="organizing-example" class="level3">
