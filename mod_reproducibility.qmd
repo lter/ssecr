@@ -276,7 +276,7 @@ It is also strongly recommended to "namespace" functions everywhere you use them
 
 ```{.r}
 # Use the `mutate` function from the `dplyr` package
-df_v2 <- dplyr::mutate(df_v1, new_column = old_column / 2.2)
+dplyr::mutate(. . .)
 ```
 
 An ancillary benefit of namespacing is that namespaced functions don't need to have their respective libraries loaded. Still good practice to load the library though!
@@ -297,23 +297,17 @@ Finally, <u>your code should never use absolute file paths</u>. Absolute file pa
 
 ### Code Style
 
-When it comes to code style, the same 'rule of thumb' applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! Thtat said, there are a few principles worth adopting if you have not already done so.
+When it comes to code style, the same 'rule of thumb' applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! That said, there are a few principles worth adopting if you have not already done so.
 
-**1. Use concise and descriptive object names**
+> Use concise and descriptive object names
 
 It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.
 
-**2. Don't be afraid of space!**
+> Don't be afraid of empty space!
 
 Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.
 
 <img src="images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right">
-
-\
-\
-\
-\
-\
 
 ### Code Comments
 
@@ -321,8 +315,7 @@ A "comment" in a script is a human readable, non-coding line that helps give con
 
 There are two major strategies for comments and either or both might make sense for your project.
 
-:::panel-tabset
-## "What" Comments
+#### "What" Comments
 
 Comments describe _what_ the code is doing.
 
@@ -334,7 +327,7 @@ Comments describe _what_ the code is doing.
 no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
 ```
 
-## "Why" Comments
+#### "Why" Comments
 
 Comments describe _rationale_ and/or _context_ for code.
 
@@ -345,6 +338,33 @@ Comments describe _rationale_ and/or _context_ for code.
 # Cone-bearing plants are not comparable with other plants in dataset
 no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
 ```
+
+:::{.callout-warning icon="false"}
+#### Discussion: Comment on Comments
+
+With a partner discuss the following questions:
+
+- When you write comments, do you focus more on the "what" or the "why"?
+- What would you estimate is the ratio of code to comment lines in your code?
+    - 1:1 being every code line has one comment line
+- If you have revisited old code, were your comments helpful?
+    - How could you make them more helpful?
+- In what ways do you think you would need to change your commenting style for a team project?
+
+:::
+
+:::{.callout-note icon="false"}
+#### Activity: Make Comments
+
+Revisit a script from an old project (ideally one you haven't worked on recently). Once you've opened the script:
+
+- Scan through the script
+    - Can you identify the main purpose(s) of the code?
+- Identify any areas where you're _not sure_ either (A) what the code is doing or (B) why that section of code exists
+    - Add comments to these areas to document what they're up to
+- Share the commented version of one of these trouble areas with a partner
+    - Do they understand the what and/or why of your code?
+    - If not, revise the comments and repeat
 
 :::
 
