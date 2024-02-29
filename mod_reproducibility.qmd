@@ -1,5 +1,6 @@
 ---
 title: "Reproducibility Best Practices"
+code-annotations: hover
 ---
 
 ## Overview
@@ -293,7 +294,73 @@ Every change to the data between the initial raw data and the finished product s
 
 You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).
 
-Finally, <u>your code should never use absolute file paths</u>. Absolute file paths are those that begin at the root of your entire computer ("C:..." on Windows and "~..." on Mac). Such paths are _inherently not reproducible_ as the odds of anyone having the exact same absolute file path are extremely slim. Instead, using relative file paths that begin at the project folder is preferable. These are transferable among users. You can even use R's `file.path` function to automatically detect the correct direction of slashes between folders to make it easier to collaborate across operating systems! Note in the above figure from Trisovic _et al._ (2022) that many scripts that set the working directory manually had errors until that bit was removed. Avoid setting the working directory explicitly and instead structure your project such that relative paths within the project folder will always succeed.
+### File Paths
+
+When importing inputs or exporting outputs we need to specify "file paths". These are the set of folders between where your project is 'looking' and where the input/output should come from/go. The figure from Trisovic _et al._ (2022) shows that file path and working directory errors are a substantial barrier to code that can be re-run in clean coding environments. Consider the following ways of specifying file paths from least to most reproducible.
+
+::::panel-tabset
+## Worst
+
+#### Absolute Paths
+
+The worst way of specifying a file path is to use the "absolute" file path. This is the path from the root of your computer to a given file. There are many issues here but the primary one is that <u>absolute paths only work for one computer</u>! Given that only one person can even run lines of code that use absolute paths, it's not really worth specifying the other issues.
+
+#### Example
+
+```{.r}
+# Read in bee community data
+my_df <- read.csv(file = "~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)/Data/bees.csv")
+```
+
+## Bad
+
+#### Manually Setting the Working Directory
+
+Marginally better than using the absolute path is to set the working directory to some location. This may look neater than the absolute path option but it actually has the same point of failure: Both methods <u>only work for one computer</u>!
+
+#### Example
+
+```{.r}
+# Set working directory
+setwd(dir = "~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)")
+
+# Read in bee community data
+my_df <- read.csv(file = "Data/bees.csv")
+```
+
+## Better
+
+#### Relative Paths
+
+Instead of using absolute paths or manually setting the working directory you can use "relative" file paths! Relative paths <u>assume all project content lives in the same folder</u>. 
+
+This is a safe assumption because it is the most fundamental tenet of reproducible project organization! The strength of relative paths is actually a serious contributing factor for why it is good practice to use a single folder.
+
+#### Example
+
+```{.r}
+# Read in bee community data
+my_df <- read.csv(file = "Data/bees.csv") # <1>
+```
+1. Parts of file path specific to each user are automatically recognized by the computer
+
+## Best!
+
+#### Operating System-Flexible Relative Paths
+
+The "better" example is nice but has a serious limitation: <u>it hard coded the type of slash between file path elements</u>. This means that _only computers of the same operating system as the code author_ could run that line.
+
+We can use functions to automatically detect and insert the correct slashes though!
+
+#### Example
+
+```{.r}
+# Read in bee community data
+my_df <- read.csv(file = file.path("Data", "bees.csv"))
+```
+
+
+::::
 
 ### Code Style
 
@@ -384,10 +451,9 @@ Functions written in this case can be extremely specific and--though documentati
 
 **- Write functions defensively**
 
-When you write custom functions, it is really valuable to take the time to write them defensively. In this context, "defensively" means that you anticipate likely errors and _write your own informative/human readable error messages_. Let's consider a simplified version of a function rom the [ltertools](https://github.com/lter/ltertools/tree/main) R package for calculating the coefficient of variation (CV).
+When you write custom functions, it is really valuable to take the time to write them defensively. In this context, "defensively" means that you anticipate likely errors and _write your own informative/human readable error messages_. Let's consider a simplified version of a function from the [`ltertools` R package](https://github.com/lter/ltertools/tree/main) for calculating the coefficient of variation (CV).
 
-The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given _a non-number_ you get the following warning message:
-`In mean.default(x = "...") : argument is not numeric or logical: returning NA`.
+The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given _a non-number_ you get the following warning message: "In mean.default(x = "...") : argument is not numeric or logical: returning NA".
 
 Someone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.
 
