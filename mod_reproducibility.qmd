@@ -239,11 +239,53 @@ When your scripts are clear and reproducibly-written you will reap the following
 
 ### Packages, Namespacing, and Software Versions
 
-One of the first things that _every_ script should begin with is an explicit loading of all libraries that script need (these are called "dependencies). Scripts that don't specify which libraries are needed are unlikely to run on anyone's computer. Unfortunately, many R packages need to be installed by each user before they can be loaded with the `library` function. You may find it simpler to use the [librarian](https://cran.r-project.org/web/packages/librarian/index.html) package which automatically detects and installs needed packages if they are not already present. Note that users would still need to install librarian itself!
+An under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script _and_ the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions **is not sustainable** but recording key information can help users set up the code environment that does work for your project.
 
-It is also strongly recommended to "namespace" functions everywhere you use them. In R this is technically optional (Python requires this) but it is a really good practice to adopt, particularly for functions that may appear in multiple packages with the same name but do very different operations depending on their source. Namespacing in R is done by adding the package name and two colons before the function name (e.g., `dplyr::mutate`). This prevents accidental use of functions from the 'wrong' package for a given context.
+#### Load Libraries Explicitly
 
-You may also need to consider the version of the packages that you're using and the version of R. The `sessionInfo` function (from the [utils](https://cran.r-project.org/web/packages/R.utils/index.html) package loaded into R by default) is a good way of capturing some of this information but it is relatively high level and lacks sufficient detail for many contexts. For a more complete amount of information, consider using the [renv](https://cran.r-project.org/web/packages/renv/index.html) or [packrat](https://cran.r-project.org/web/packages/packrat/index.html) packages.
+It is important to load libraries at the start of _every_ script. In some languages (like Python) this step is required but in others (like R) this step is technically "optional" but disastrous to skip. It is safe to skip including the installation step in your code because the library step should tell code-literate users which packages they need to install.
+
+For instance you might begin each script with something like:
+
+```{.r}
+# Load needed libraries
+library(dplyr); library(magrittr); library(ggplot2)
+
+# Get to actual work
+. . .
+```
+
+In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way thus lets everyone reading the code know exactly which packages they will need to have installed.
+
+If you are feeling generous you could use the [`librarian` R package](https://cran.r-project.org/web/packages/librarian/index.html) to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:
+
+```{.r}
+# Load `librarian` package
+library(librarian)
+
+# Install missing packages and load needed libraries
+shelf(dplyr, magrittr, ggplot2)
+
+# Get to actual work
+. . .
+```
+
+#### Function Namespacing
+
+It is also strongly recommended to "namespace" functions everywhere you use them. In R this is technically optional but it is a really good practice to adopt, _particularly for functions that may appear in multiple packages_ with the same name but do very different operations depending on their source. In R the 'namespacing operator' is two colons.
+
+```{.r}
+# Use the `mutate` function from the `dplyr` package
+df_v2 <- dplyr::mutate(df_v1, new_column = old_column / 2.2)
+```
+
+An ancillary benefit of namespacing is that namespaced functions don't need to have their respective libraries loaded. Still good practice to load the library though!
+
+#### Package Versions
+
+While working on a project you should use the latest version of every needed package. However, as you prepare to publish or otherwise publicize your code, you'll need to record package versions. R provides the `sessionInfo` function (from the [`utils` package](https://cran.r-project.org/web/packages/R.utils/index.html) included in "base" R) which neatly summarizes some high level facets of your code environment. Note that for this method to work you'll need to actually run the library-loading steps of your scripts.
+
+For more in-depth records of package versions and environment preservation--in R--you might also consider the [`renv` package](https://cran.r-project.org/web/packages/renv/index.html) or the [`packrat` package](https://cran.r-project.org/web/packages/packrat/index.html).
 
 ### Script Organization
 
