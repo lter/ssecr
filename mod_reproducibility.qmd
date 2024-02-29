@@ -41,8 +41,12 @@ Keeping all inputs, outputs, and documentation in a single folder makes it easie
 
 Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don't feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.
 
+3. **Craft informative file names**
+
+An ideal file name should give some information about the file's contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should _be inherently meaningful_. This lets you change folder names without fear that files would also need to be re-named.
+
 :::{.callout-warning icon="false"}
-#### Discussion: Folder Structure
+#### Discussion: Project Structure
 
 With a partner discuss (some of) the following questions:
 
@@ -52,10 +56,6 @@ With a partner discuss (some of) the following questions:
 - Do you think your structure would work well in a team environment?
     - If not, what changes might you make to better fit that context?
 :::
-
-3. **Craft informative file names**
-
-An ideal file name should give some information about the file's contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should _be inherently meaningful_. This lets you change folder names without fear that files would also need to be re-named.
 
 #### Naming Tips
 
@@ -386,6 +386,8 @@ Feel free to use these questions to guide your thinking
 
 While making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a _good in and of itself_. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the _sole_ tool to use in evaluating how data/code are shared and stored. The [Global Indigenous Data Alliance](https://www.gida-global.org/) (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. **Before** making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension. 
 
+<img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" align="right" width="40%">
+
 CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>esponsibility, and <u>E</u>thics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been--and continue to be--collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings _et al._ 2023 (linked at the bottom of this page).
 
 **Collective Benefit**
@@ -416,8 +418,12 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 - Work to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals
 - Engage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)
 
+## Reproducibility Best Practices Summary
+
+Making sure that your project is reproducible requires a handful of steps before you begin, some actions during the life of the project, and then a few finishing touches when the project nears its conclusion. The following diagram may prove helpful as a coarse roadmap for how these steps might be followed in a general project setting.
+
 <p align="center">
-<img src="images/image_care-fair.png" alt="Patterned image reading 'Be FAIR and CARE' with the letters of both acronyms defined beneath each letter" width="70%">
+<img src="images/image_synthesis-project-steps.png" alt="General steps for creating and maintaining a reproducible project. Steps follow the major headings of this section from starting on the 'right foot' with well thought out documentation, flowing through to consistent maintenance, and ending with some of the decisions needed for publication" width="90%">
 </p>
 
 ## Additional Resources
