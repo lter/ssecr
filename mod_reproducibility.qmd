@@ -184,7 +184,11 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 
 ### Documentation
 
-Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include (1) a project overview written in plain language, (2) a basic table of contents for the primary folders in your project folder, and (3) a brief description of the file naming scheme you've adopted for this project.
+Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include:
+
+1. Project overview written in plain language
+2. Basic table of contents for the primary folders in your project folder
+3. Brief description of the file naming scheme you've adopted for this project.
 
 Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
 
