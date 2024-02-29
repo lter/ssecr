@@ -55,6 +55,7 @@ With a partner discuss (some of) the following questions:
 - What--if any--limitations to your system have you experienced?
 - Do you think your structure would work well in a team environment?
     - If not, what changes might you make to better fit that context?
+
 :::
 
 #### Naming Tips
@@ -193,6 +194,19 @@ Documenting a project can feel daunting but it is often not as hard as one might
 Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
 
 Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the [Version Control module](https://lter.github.io/ssecr/mod_version-control.html) but GitHub offers something called [Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) that can be a really effective place to record some of this information.
+
+:::{.callout-note icon="false"}
+#### Activity: Create a README
+
+Create a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.
+
+- Include a 2-4 sentence description of the project objectives / hypotheses
+- Identify and describe (in 1 sentence) the primary sub-folders in the project
+- If your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them
+
+Feel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.
+
+:::
 
 ### Organization Recommendations
 
