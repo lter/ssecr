@@ -112,9 +112,9 @@
   {
     "objectID": "mod_wrangle.html",
     "href": "mod_wrangle.html",
-    "title": "Data Wrangling",
+    "title": "Data Harmonization & Wrangling",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/logistical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
@@ -123,9 +123,9 @@
   {
     "objectID": "mod_wrangle.html#overview",
     "href": "mod_wrangle.html#overview",
-    "title": "Data Wrangling",
+    "title": "Data Harmonization & Wrangling",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/logistical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
@@ -134,7 +134,7 @@
   {
     "objectID": "mod_wrangle.html#learning-objectives",
     "href": "mod_wrangle.html#learning-objectives",
-    "title": "Data Wrangling",
+    "title": "Data Harmonization & Wrangling",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
@@ -143,11 +143,22 @@
     ]
   },
   {
-    "objectID": "mod_wrangle.html#module-content",
-    "href": "mod_wrangle.html#module-content",
-    "title": "Data Wrangling",
-    "section": "Module Content",
-    "text": "Module Content",
+    "objectID": "mod_wrangle.html#harmonizing-content",
+    "href": "mod_wrangle.html#harmonizing-content",
+    "title": "Data Harmonization & Wrangling",
+    "section": "Harmonizing Content",
+    "text": "Harmonizing Content",
+    "crumbs": [
+      "Quantitative Modules",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html#wrangling-content",
+    "href": "mod_wrangle.html#wrangling-content",
+    "title": "Data Harmonization & Wrangling",
+    "section": "Wrangling Content",
+    "text": "Wrangling Content",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
@@ -156,7 +167,7 @@
   {
     "objectID": "mod_wrangle.html#additional-resources",
     "href": "mod_wrangle.html#additional-resources",
-    "title": "Data Wrangling",
+    "title": "Data Harmonization & Wrangling",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
