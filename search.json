@@ -136,18 +136,18 @@
     "href": "mod_wrangle.html#learning-objectives",
     "title": "Data Harmonization & Wrangling",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify typical steps in data harmonization and wrangling workflows\nCreate a harmonization workflow",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
     ]
   },
   {
-    "objectID": "mod_wrangle.html#harmonizing-content",
-    "href": "mod_wrangle.html#harmonizing-content",
+    "objectID": "mod_wrangle.html#harmonizing-data",
+    "href": "mod_wrangle.html#harmonizing-data",
     "title": "Data Harmonization & Wrangling",
-    "section": "Harmonizing Content",
-    "text": "Harmonizing Content",
+    "section": "Harmonizing Data",
+    "text": "Harmonizing Data\nData harmonization is an interesting topic in that it is vital for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.\nFor tabular data, we recommend using the ltertools R package to perform any needed harmonization. This package relies on a “column key” to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key.\nThe column key requires three columns:\n\n“source” – Name of the raw file\n“raw_name” – Name of all raw columns in that file to be synonymized\n“tidy_name” – New name for each raw column that should be carried to the harmonized data\n\nNote that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the ltertools package vignette. For convenience, we’re attaching the visual diagram of this method of harmonization included in the ltertools vignette below.",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
@@ -158,7 +158,7 @@
     "href": "mod_wrangle.html#wrangling-content",
     "title": "Data Harmonization & Wrangling",
     "section": "Wrangling Content",
-    "text": "Wrangling Content",
+    "text": "Wrangling Content\nUnder Construction! Check back later",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"

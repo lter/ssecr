@@ -281,7 +281,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#harmonizing-content" id="toc-harmonizing-content" class="nav-link" data-scroll-target="#harmonizing-content">Harmonizing Content</a></li>
+  <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
   <li><a href="#wrangling-content" id="toc-wrangling-content" class="nav-link" data-scroll-target="#wrangling-content">Wrangling Content</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
@@ -328,14 +328,31 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>After completing this module you will be able to:</p>
 <ul>
-<li><u>X</u> …</li>
+<li><u>Identify</u> typical steps in data harmonization and wrangling workflows</li>
+<li><u>Create</u> a harmonization workflow</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
 </section>
-<section id="harmonizing-content" class="level2">
-<h2 class="anchored" data-anchor-id="harmonizing-content">Harmonizing Content</h2>
+<section id="harmonizing-data" class="level2">
+<h2 class="anchored" data-anchor-id="harmonizing-data">Harmonizing Data</h2>
+<p>Data harmonization is an interesting topic in that it is <em>vital</em> for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.</p>
+<p>For tabular data, we recommend using the <a href="https://lter.github.io/ltertools/"><code>ltertools</code> R package</a> to perform any needed harmonization. This package relies on a “column key” to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key.</p>
+<p>The column key requires three columns:</p>
+<ol type="1">
+<li>“source” – Name of the raw file</li>
+<li>“raw_name” – Name of all raw columns in that file to be synonymized</li>
+<li>“tidy_name” – New name for each raw column that should be carried to the harmonized data</li>
+</ol>
+<p>Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the <a href="https://lter.github.io/ltertools/articles/ltertools.html"><code>ltertools</code> package vignette</a>. For convenience, we’re attaching the visual diagram of this method of harmonization included in the <code>ltertools</code> vignette below.</p>
+<p align="center">
+<img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
+</p>
 </section>
 <section id="wrangling-content" class="level2">
 <h2 class="anchored" data-anchor-id="wrangling-content">Wrangling Content</h2>
+<p>Under Construction! Check back later</p>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
