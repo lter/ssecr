@@ -50,7 +50,10 @@ Under Construction! Check back later
 
 ### Workshops & Courses
 
-- 
+- Data Analysis and Visualization in R for Ecologists, [Episode 4: Manipulating, Analyzing, and Exporting Data with `tidyverse`](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html). The Carpentries
+- [Coding in the Tidyverse](https://nceas.github.io/scicomp-workshop-tidyverse/). NCEAS Scientific Computing Team, 2023.
+- coreR Course, [Chapter 8: Cleaning & Wrangling Data](https://learning.nceas.ucsb.edu/2023-10-coreR/session_08.html). NCEAS Learning Hub, 2023.
+- coreR Course, [Chapter 16: Writing Functions & Packages](https://learning.nceas.ucsb.edu/2023-10-coreR/session_16.html). NCEAS Learning Hub, 2023.
 
 ### Websites
 
