@@ -154,11 +154,11 @@
     ]
   },
   {
-    "objectID": "mod_wrangle.html#wrangling-content",
-    "href": "mod_wrangle.html#wrangling-content",
+    "objectID": "mod_wrangle.html#wrangling-data",
+    "href": "mod_wrangle.html#wrangling-data",
     "title": "Data Harmonization & Wrangling",
-    "section": "Wrangling Content",
-    "text": "Wrangling Content\nUnder Construction! Check back later",
+    "section": "Wrangling Data",
+    "text": "Wrangling Data\n\nJoining Data\na.k.a. attaching data by columns\n\n\nLeveraging Data Shape\n\n\nQuality Control\n\n\nCustom Functions\n\n\nText Methods\n\n\nRegular Expressions",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
