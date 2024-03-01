@@ -38,9 +38,45 @@ Note that any raw names either not included in the column key or that lack a tid
 <img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
 </p>
 
-## Wrangling Content
+## Wrangling Data
 
-Under Construction! Check back later
+### Joining Data
+
+a.k.a. attaching data by columns
+
+
+
+
+### Leveraging Data Shape
+
+
+
+### Quality Control
+
+
+
+### Custom Functions
+
+
+
+### Text Methods
+
+
+### Regular Expressions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Additional Resources
 
