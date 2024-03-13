@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -308,7 +308,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </header>
 
 
-<p>Synthesis Skills for Early Career Researchers (SSECR; <em>[SEE-ker]</em>) is a newly-designed course organized by the <a href="https://lternet.edu/">Long Term Ecological Research (LTER) Network</a>. This course aims to address the need for more comprehensive interpersonal and data skills in ecology.</p>
+<p>Synthesis Skills for Early Career Researchers (SSECR; <em>[SEE-ker]</em>) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the <a href="https://lternet.edu/ssecr/">LTER Network page for the course</a>.</p>
+<p>If you’re interested in joining the course as a student you can see the application <a href="https://lternet.edu/ssecr-application/">here</a>. If instead you’re interested in joining as a team project mentor you can find more information–and apply–<a href="https://lternet.edu/ssecr-mentor-application/">here</a>.</p>
 <section id="course-priorities" class="level2">
 <h2 class="anchored" data-anchor-id="course-priorities">Course Priorities</h2>
 <ul>
@@ -571,6 +572,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
           // target, if specified
           link.setAttribute("target", "_blank");
           if (link.getAttribute("rel") === null) {
@@ -612,7 +618,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

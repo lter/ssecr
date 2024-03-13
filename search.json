@@ -1,60 +1,5 @@
 [
   {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#overview",
-    "href": "mod_version-control.html#overview",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#learning-objectives",
-    "href": "mod_version-control.html#learning-objectives",
-    "title": "Version Control",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#module-content",
-    "href": "mod_version-control.html#module-content",
-    "title": "Version Control",
-    "section": "Module Content",
-    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#additional-resources",
-    "href": "mod_version-control.html#additional-resources",
-    "title": "Version Control",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
-    "crumbs": [
-      "Quantitative Modules",
-      "Version Control"
-    ]
-  },
-  {
     "objectID": "mod_thinking.html",
     "href": "mod_thinking.html",
     "title": "Supporting Divergent, Emergent, and Convergent Thinking",
@@ -107,6 +52,146 @@
     "crumbs": [
       "Team Science Modules",
       "Supporting D.E.C. Thinking"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the LTER Network page for the course.\nIf you’re interested in joining the course as a student you can see the application here. If instead you’re interested in joining as a team project mentor you can find more information–and apply–here.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-priorities",
+    "href": "index.html#course-priorities",
+    "title": "Course Overview",
+    "section": "Course Priorities",
+    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis projects\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Course Overview",
+    "section": "Course Description",
+    "text": "Course Description\nThe course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. The course starts with an in-person launch to establish cohort cohesion and ensure that any setup issues are resolved. Participants will pitch projects to the group and assemble a team of collaborators.The ideal configuration would be 6 project teams of 4-5 students each. Prior to the start of the course, the Network Office will recruit a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately 4-5 times per year.\nCourse participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.\nApplicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants’ own work, course mentors will make available a small library of synthesis ideas in search of execution. The in-person kickoff week will focus on cohort-building, pitching projects and assembling project teams, identifying relevant data, and getting set up on servers and collaboration tools.\nParticipants should expect to participate in one 3-hour virtual session every-other week during the academic year. Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.\nEach three-hour session will include 2 components:\n\nInspiration (~60 minutes): Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.\nInstruction (~120 minutes): Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently.\n\nTechnical skills will build on earlier lessons and are not intended to be stand-alone modules. The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html#overview",
+    "href": "mod_findings.html#overview",
+    "title": "Communicating Findings",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html#learning-objectives",
+    "href": "mod_findings.html#learning-objectives",
+    "title": "Communicating Findings",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html#module-content",
+    "href": "mod_findings.html#module-content",
+    "title": "Communicating Findings",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_findings.html#additional-resources",
+    "href": "mod_findings.html#additional-resources",
+    "title": "Communicating Findings",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Team Science Modules",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#overview",
+    "href": "mod_project-mgmt.html#overview",
+    "title": "Project Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#learning-objectives",
+    "href": "mod_project-mgmt.html#learning-objectives",
+    "title": "Project Management",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#module-content",
+    "href": "mod_project-mgmt.html#module-content",
+    "title": "Project Management",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#additional-resources",
+    "href": "mod_project-mgmt.html#additional-resources",
+    "title": "Project Management",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Team Science Modules",
+      "Project Management"
     ]
   },
   {
@@ -173,511 +258,6 @@
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_credit.html",
-    "href": "mod_credit.html",
-    "title": "Authorship & Intellectual Credit",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_credit.html#overview",
-    "href": "mod_credit.html#overview",
-    "title": "Authorship & Intellectual Credit",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_credit.html#learning-objectives",
-    "href": "mod_credit.html#learning-objectives",
-    "title": "Authorship & Intellectual Credit",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_credit.html#module-content",
-    "href": "mod_credit.html#module-content",
-    "title": "Authorship & Intellectual Credit",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_credit.html#additional-resources",
-    "href": "mod_credit.html#additional-resources",
-    "title": "Authorship & Intellectual Credit",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Team Science Modules",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html",
-    "href": "mod_findings.html",
-    "title": "Communicating Findings",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#overview",
-    "href": "mod_findings.html#overview",
-    "title": "Communicating Findings",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#learning-objectives",
-    "href": "mod_findings.html#learning-objectives",
-    "title": "Communicating Findings",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#module-content",
-    "href": "mod_findings.html#module-content",
-    "title": "Communicating Findings",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#additional-resources",
-    "href": "mod_findings.html#additional-resources",
-    "title": "Communicating Findings",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Team Science Modules",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html",
-    "href": "mod_data-disc.html",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#overview",
-    "href": "mod_data-disc.html#overview",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#learning-objectives",
-    "href": "mod_data-disc.html#learning-objectives",
-    "title": "Data Discovery & Management",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#module-content",
-    "href": "mod_data-disc.html#module-content",
-    "title": "Data Discovery & Management",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#additional-resources",
-    "href": "mod_data-disc.html#additional-resources",
-    "title": "Data Discovery & Management",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "topic_interactivity.html#interactivity-learning-objectives",
-    "href": "topic_interactivity.html#interactivity-learning-objectives",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "Interactivity Learning Objectives",
-    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nX …"
-  },
-  {
-    "objectID": "topic_interactivity.html#topic-content",
-    "href": "topic_interactivity.html#topic-content",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "Topic Content",
-    "text": "Topic Content"
-  },
-  {
-    "objectID": "topic_interactivity.html#additional-interactivity-resources",
-    "href": "topic_interactivity.html#additional-interactivity-resources",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "Additional Interactivity Resources",
-    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites"
-  },
-  {
-    "objectID": "mod_facilitation.html",
-    "href": "mod_facilitation.html",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#overview",
-    "href": "mod_facilitation.html#overview",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#learning-objectives",
-    "href": "mod_facilitation.html#learning-objectives",
-    "title": "Inclusive Facilitation",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#module-content",
-    "href": "mod_facilitation.html#module-content",
-    "title": "Inclusive Facilitation",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#additional-resources",
-    "href": "mod_facilitation.html#additional-resources",
-    "title": "Inclusive Facilitation",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Team Science Modules",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html",
-    "href": "mod_data-viz.html",
-    "title": "Data Visualization & Exploration",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#overview",
-    "href": "mod_data-viz.html#overview",
-    "title": "Data Visualization & Exploration",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#learning-objectives",
-    "href": "mod_data-viz.html#learning-objectives",
-    "title": "Data Visualization & Exploration",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#module-content",
-    "href": "mod_data-viz.html#module-content",
-    "title": "Data Visualization & Exploration",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#additional-resources",
-    "href": "mod_data-viz.html#additional-resources",
-    "title": "Data Visualization & Exploration",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Quantitative Modules",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html",
-    "href": "mod_team-sci.html",
-    "title": "Team Science Practices",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#overview",
-    "href": "mod_team-sci.html#overview",
-    "title": "Team Science Practices",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Team Science Modules",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#learning-objectives",
-    "href": "mod_team-sci.html#learning-objectives",
-    "title": "Team Science Practices",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Team Science Modules",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#module-content",
-    "href": "mod_team-sci.html#module-content",
-    "title": "Team Science Practices",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Team Science Modules",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#additional-resources",
-    "href": "mod_team-sci.html#additional-resources",
-    "title": "Team Science Practices",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Team Science Modules",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-priorities",
-    "href": "index.html#course-priorities",
-    "title": "Course Overview",
-    "section": "Course Priorities",
-    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis projects\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Course Overview",
-    "section": "Course Description",
-    "text": "Course Description\nThe course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. The course starts with an in-person launch to establish cohort cohesion and ensure that any setup issues are resolved. Participants will pitch projects to the group and assemble a team of collaborators.The ideal configuration would be 6 project teams of 4-5 students each. Prior to the start of the course, the Network Office will recruit a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately 4-5 times per year.\nCourse participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.\nApplicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants’ own work, course mentors will make available a small library of synthesis ideas in search of execution. The in-person kickoff week will focus on cohort-building, pitching projects and assembling project teams, identifying relevant data, and getting set up on servers and collaboration tools.\nParticipants should expect to participate in one 3-hour virtual session every-other week during the academic year. Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.\nEach three-hour session will include 2 components:\n\nInspiration (~60 minutes): Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.\nInstruction (~120 minutes): Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently.\n\nTechnical skills will build on earlier lessons and are not intended to be stand-alone modules. The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#overview",
-    "href": "mod_reports.html#overview",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#learning-objectives",
-    "href": "mod_reports.html#learning-objectives",
-    "title": "Reproducible Reports",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#module-content",
-    "href": "mod_reports.html#module-content",
-    "title": "Reproducible Reports",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#additional-resources",
-    "href": "mod_reports.html#additional-resources",
-    "title": "Reproducible Reports",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Quantitative Modules",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "topic_spatial.html",
-    "href": "topic_spatial.html",
-    "title": "Working with Spatial Data",
-    "section": "",
-    "text": "After completing this topic you will be able to:\n\nX …"
-  },
-  {
-    "objectID": "topic_spatial.html#spatial-learning-objectives",
-    "href": "topic_spatial.html#spatial-learning-objectives",
-    "title": "Working with Spatial Data",
-    "section": "",
-    "text": "After completing this topic you will be able to:\n\nX …"
-  },
-  {
-    "objectID": "mod_stats.html",
-    "href": "mod_stats.html",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#overview",
-    "href": "mod_stats.html#overview",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#learning-objectives",
-    "href": "mod_stats.html#learning-objectives",
-    "title": "Analysis & Modeling",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#module-content",
-    "href": "mod_stats.html#module-content",
-    "title": "Analysis & Modeling",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#additional-resources",
-    "href": "mod_stats.html#additional-resources",
-    "title": "Analysis & Modeling",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Quantitative Modules",
-      "Analysis & Modeling"
     ]
   },
   {
@@ -780,6 +360,316 @@
     ]
   },
   {
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#overview",
+    "href": "mod_facilitation.html#overview",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#learning-objectives",
+    "href": "mod_facilitation.html#learning-objectives",
+    "title": "Inclusive Facilitation",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#module-content",
+    "href": "mod_facilitation.html#module-content",
+    "title": "Inclusive Facilitation",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#additional-resources",
+    "href": "mod_facilitation.html#additional-resources",
+    "title": "Inclusive Facilitation",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Team Science Modules",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "topic_spatial.html",
+    "href": "topic_spatial.html",
+    "title": "Working with Spatial Data",
+    "section": "",
+    "text": "After completing this topic you will be able to:\n\nX …"
+  },
+  {
+    "objectID": "topic_spatial.html#spatial-learning-objectives",
+    "href": "topic_spatial.html#spatial-learning-objectives",
+    "title": "Working with Spatial Data",
+    "section": "",
+    "text": "After completing this topic you will be able to:\n\nX …"
+  },
+  {
+    "objectID": "topic_interactivity.html#interactivity-learning-objectives",
+    "href": "topic_interactivity.html#interactivity-learning-objectives",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "Interactivity Learning Objectives",
+    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nX …"
+  },
+  {
+    "objectID": "topic_interactivity.html#topic-content",
+    "href": "topic_interactivity.html#topic-content",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "Topic Content",
+    "text": "Topic Content"
+  },
+  {
+    "objectID": "topic_interactivity.html#additional-interactivity-resources",
+    "href": "topic_interactivity.html#additional-interactivity-resources",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "Additional Interactivity Resources",
+    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites"
+  },
+  {
+    "objectID": "mod_logic-models.html",
+    "href": "mod_logic-models.html",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#overview",
+    "href": "mod_logic-models.html#overview",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#learning-objectives",
+    "href": "mod_logic-models.html#learning-objectives",
+    "title": "Logic Models",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#module-content",
+    "href": "mod_logic-models.html#module-content",
+    "title": "Logic Models",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#additional-resources",
+    "href": "mod_logic-models.html#additional-resources",
+    "title": "Logic Models",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Team Science Modules",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html",
+    "href": "mod_team-sci.html",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#overview",
+    "href": "mod_team-sci.html#overview",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#learning-objectives",
+    "href": "mod_team-sci.html#learning-objectives",
+    "title": "Team Science Practices",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#module-content",
+    "href": "mod_team-sci.html#module-content",
+    "title": "Team Science Practices",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#additional-resources",
+    "href": "mod_team-sci.html#additional-resources",
+    "title": "Team Science Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Team Science Modules",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#overview",
+    "href": "mod_reports.html#overview",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#learning-objectives",
+    "href": "mod_reports.html#learning-objectives",
+    "title": "Reproducible Reports",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#module-content",
+    "href": "mod_reports.html#module-content",
+    "title": "Reproducible Reports",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#additional-resources",
+    "href": "mod_reports.html#additional-resources",
+    "title": "Reproducible Reports",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Quantitative Modules",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html",
+    "href": "mod_credit.html",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#overview",
+    "href": "mod_credit.html#overview",
+    "title": "Authorship & Intellectual Credit",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#learning-objectives",
+    "href": "mod_credit.html#learning-objectives",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#module-content",
+    "href": "mod_credit.html#module-content",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#additional-resources",
+    "href": "mod_credit.html#additional-resources",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Team Science Modules",
+      "Intellectual Credit"
+    ]
+  },
+  {
     "objectID": "mod_spatial.html",
     "href": "mod_spatial.html",
     "title": "Spatial Data & Interactivity",
@@ -879,58 +769,168 @@
     ]
   },
   {
-    "objectID": "mod_logic-models.html",
-    "href": "mod_logic-models.html",
-    "title": "Logic Models",
+    "objectID": "mod_data-viz.html",
+    "href": "mod_data-viz.html",
+    "title": "Data Visualization & Exploration",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Team Science Modules",
-      "Logic Models"
+      "Quantitative Modules",
+      "Data Visualization"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#overview",
-    "href": "mod_logic-models.html#overview",
-    "title": "Logic Models",
+    "objectID": "mod_data-viz.html#overview",
+    "href": "mod_data-viz.html#overview",
+    "title": "Data Visualization & Exploration",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Team Science Modules",
-      "Logic Models"
+      "Quantitative Modules",
+      "Data Visualization"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#learning-objectives",
-    "href": "mod_logic-models.html#learning-objectives",
-    "title": "Logic Models",
+    "objectID": "mod_data-viz.html#learning-objectives",
+    "href": "mod_data-viz.html#learning-objectives",
+    "title": "Data Visualization & Exploration",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Team Science Modules",
-      "Logic Models"
+      "Quantitative Modules",
+      "Data Visualization"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#module-content",
-    "href": "mod_logic-models.html#module-content",
-    "title": "Logic Models",
+    "objectID": "mod_data-viz.html#module-content",
+    "href": "mod_data-viz.html#module-content",
+    "title": "Data Visualization & Exploration",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Team Science Modules",
-      "Logic Models"
+      "Quantitative Modules",
+      "Data Visualization"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#additional-resources",
-    "href": "mod_logic-models.html#additional-resources",
-    "title": "Logic Models",
+    "objectID": "mod_data-viz.html#additional-resources",
+    "href": "mod_data-viz.html#additional-resources",
+    "title": "Data Visualization & Exploration",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Team Science Modules",
-      "Logic Models"
+      "Quantitative Modules",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#overview",
+    "href": "mod_stats.html#overview",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#learning-objectives",
+    "href": "mod_stats.html#learning-objectives",
+    "title": "Analysis & Modeling",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#module-content",
+    "href": "mod_stats.html#module-content",
+    "title": "Analysis & Modeling",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#additional-resources",
+    "href": "mod_stats.html#additional-resources",
+    "title": "Analysis & Modeling",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Quantitative Modules",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Quantitative Modules",
+      "Version Control"
     ]
   },
   {
@@ -962,58 +962,58 @@
     "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
   },
   {
-    "objectID": "mod_project-mgmt.html",
-    "href": "mod_project-mgmt.html",
-    "title": "Project Management",
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Team Science Modules",
-      "Project Management"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#overview",
-    "href": "mod_project-mgmt.html#overview",
-    "title": "Project Management",
+    "objectID": "mod_data-disc.html#overview",
+    "href": "mod_data-disc.html#overview",
+    "title": "Data Discovery & Management",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Team Science Modules",
-      "Project Management"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#learning-objectives",
-    "href": "mod_project-mgmt.html#learning-objectives",
-    "title": "Project Management",
+    "objectID": "mod_data-disc.html#learning-objectives",
+    "href": "mod_data-disc.html#learning-objectives",
+    "title": "Data Discovery & Management",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Team Science Modules",
-      "Project Management"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#module-content",
-    "href": "mod_project-mgmt.html#module-content",
-    "title": "Project Management",
+    "objectID": "mod_data-disc.html#module-content",
+    "href": "mod_data-disc.html#module-content",
+    "title": "Data Discovery & Management",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Team Science Modules",
-      "Project Management"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#additional-resources",
-    "href": "mod_project-mgmt.html#additional-resources",
-    "title": "Project Management",
+    "objectID": "mod_data-disc.html#additional-resources",
+    "href": "mod_data-disc.html#additional-resources",
+    "title": "Data Discovery & Management",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Team Science Modules",
-      "Project Management"
+      "Quantitative Modules",
+      "Data Discovery"
     ]
   }
 ]
