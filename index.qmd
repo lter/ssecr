@@ -2,7 +2,9 @@
 title: "Course Overview"
 ---
 
-Synthesis Skills for Early Career Researchers (SSECR; _\[SEE-ker\]_) is a newly-designed course organized by the [Long Term Ecological Research (LTER) Network](https://lternet.edu/). This course aims to address the need for more comprehensive interpersonal and data skills in ecology. 
+Synthesis Skills for Early Career Researchers (SSECR; _\[SEE-ker\]_) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the [LTER Network page for the course](https://lternet.edu/ssecr/).
+
+If you're interested in joining the course as a student you can see the application [here](https://lternet.edu/ssecr-application/). If instead you're interested in joining as a team project mentor you can find more information--and apply--[here](https://lternet.edu/ssecr-mentor-application/).
 
 ## Course Priorities
 
