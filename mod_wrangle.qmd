@@ -40,6 +40,9 @@ Note that any raw names either not included in the column key or that lack a tid
 
 ## Wrangling Data
 
+### Uniting / Separating Columns
+
+
 ### Joining Data
 
 a.k.a. attaching data by columns
