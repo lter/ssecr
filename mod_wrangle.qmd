@@ -43,20 +43,29 @@ Note that any raw names either not included in the column key or that lack a tid
 ### Uniting / Separating Columns
 
 
+`tidyr::separate_wider_delim`
+
 ### Joining Data
 
 a.k.a. attaching data by columns
 
 
+`dplyr::left_join`
+`supportR::diff_check`
 
 
 ### Leveraging Data Shape
 
-
+`tidyr::pivot_longer`
+operations on consolidated columns
+`tidyr::pivot_wider`
 
 ### Quality Control
 
-
+`summary`
+`sort(unique())`
+`psych::multi.hist`
+`suppportR::num_check`
 
 ### Custom Functions
 
@@ -64,6 +73,8 @@ a.k.a. attaching data by columns
 
 ### Text Methods
 
+`gsub`
+`stringr::str_sub`
 
 ### Regular Expressions
 
