@@ -40,6 +40,31 @@ Note that any raw names either not included in the column key or that lack a tid
 
 ## Wrangling Data
 
+### Quality Control
+
+`summary`
+
+`sort(unique())`
+
+`psych::multi.hist`
+
+`suppportR::num_check`
+
+### Text Methods
+
+`gsub`
+
+`stringr::str_sub`
+
+### Regular Expressions
+
+
+
+### Custom Functions
+
+
+
+
 ### Uniting / Separating Columns
 
 
@@ -49,37 +74,16 @@ Note that any raw names either not included in the column key or that lack a tid
 
 a.k.a. attaching data by columns
 
-
 `dplyr::left_join`
+
 `supportR::diff_check`
 
 
 ### Leveraging Data Shape
 
-`tidyr::pivot_longer`
-operations on consolidated columns
-`tidyr::pivot_wider`
-
-### Quality Control
-
-`summary`
-`sort(unique())`
-`psych::multi.hist`
-`suppportR::num_check`
-
-### Custom Functions
-
-
-
-### Text Methods
-
-`gsub`
-`stringr::str_sub`
-
-### Regular Expressions
-
-
-
+1. `tidyr::pivot_longer`
+2. operations on consolidated columns
+3. `tidyr::pivot_wider`
 
 
 
