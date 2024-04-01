@@ -243,7 +243,7 @@
     "href": "mod_wrangle.html#wrangling-data",
     "title": "Data Harmonization & Wrangling",
     "section": "Wrangling Data",
-    "text": "Wrangling Data\n\nUniting / Separating Columns\ntidyr::separate_wider_delim\n\n\nJoining Data\na.k.a. attaching data by columns\ndplyr::left_join supportR::diff_check\n\n\nLeveraging Data Shape\ntidyr::pivot_longer operations on consolidated columns tidyr::pivot_wider\n\n\nQuality Control\nsummary sort(unique()) psych::multi.hist suppportR::num_check\n\n\nCustom Functions\n\n\nText Methods\ngsub stringr::str_sub\n\n\nRegular Expressions",
+    "text": "Wrangling Data\n\nQuality Control\nsummary\nsort(unique())\npsych::multi.hist\nsuppportR::num_check\n\n\nText Methods\ngsub\nstringr::str_sub\n\n\nRegular Expressions\n\n\nCustom Functions\n\n\nUniting / Separating Columns\ntidyr::separate_wider_delim\n\n\nJoining Data\na.k.a. attaching data by columns\ndplyr::left_join\nsupportR::diff_check\n\n\nLeveraging Data Shape\n\ntidyr::pivot_longer\noperations on consolidated columns\ntidyr::pivot_wider",
     "crumbs": [
       "Quantitative Modules",
       "Data Wrangling"
