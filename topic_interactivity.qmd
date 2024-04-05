@@ -1,11 +1,13 @@
 
-## Interactivity
+# Interactivity
 
 ## Interactivity Learning Objectives
 
 After completing this topic you will be able to: 
 
-- <u>X</u> ...
+- <u>Define</u> the three fundamental components of an R Shiny app
+- <u>Explain</u> benefits and limitations of interactive approaches to data exploration
+- <u>Create</u> an R Shiny app for interacting with a dataset
 
 ## Topic Content
 
@@ -18,7 +20,7 @@ After completing this topic you will be able to:
 
 ### Workshops & Courses
 
-- 
+- 2022 All Scientists' Meeting [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop
 
 ### Websites
 

@@ -10,7 +10,11 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>X</u> ...
+- <u>Identify</u> appropriate graph types for given data type/distribution
+- <u>Explain</u> how visualization can be a tool for quality control
+- <u>Use</u> data visualization as an exploratory tool
+- <u>Define</u> fundamental `ggplot2` vocabulary
+- <u>Create</u> publication-quality graphs with `ggplot2`
 
 ## Module Content
 
@@ -24,7 +28,9 @@ After completing this module you will be able to:
 
 ### Workshops & Courses
 
-- 
+- NCEAS Scientific Computing team's Coding in the Tidyverse workshop [`ggplot2` module](https://nceas.github.io/scicomp-workshop-tidyverse/visualize.html)
+- The Carpentries' Data Analysis and Visualization in R for Ecologists [`ggplot2` episode](https://datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html)
+
 
 ### Websites
 

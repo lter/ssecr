@@ -10,7 +10,10 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>X</u> ...
+- <u>Define</u> types of intellectual contributions to a synthesis project
+- <u>Describe</u> some common frameworks for equitable authorship decisions
+- <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
+- <u>Create</u> a draft intellectual credit plan for your team
 
 ## Module Content
 
@@ -20,7 +23,8 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
-- 
+- Dahlin _et al._, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. _Frontiers in Ecology and the Environment_
+- Allen _et al._, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. _Learned Publishing_
 
 ### Workshops & Courses
 
@@ -28,4 +32,5 @@ After completing this module you will be able to:
 
 ### Websites
 
-- 
+- Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
+- Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)

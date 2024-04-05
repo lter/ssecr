@@ -10,7 +10,11 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>X</u> ...
+- <u>Explore</u> common data repositories
+- <u>Use</u> Google search operators to more effectively perform general searches
+- <u>Define</u> fundamental properties of effective data management plans
+- <u>Create</u> a data management plan
+- <u>Describe</u> best practices for documenting data for archiving
 
 ## Module Content
 
@@ -20,11 +24,14 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
-- 
+- The British Ecological Society's [Better Science Guides](https://www.britishecologicalsociety.org/publications/better-science/) -- Data Management Guide
 
 ### Workshops & Courses
 
-- 
+- NCEAS coreR [Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html) lesson
+- Open Science Synthesis for the Delta Science Program's [Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html)
+- Open Science Synthesis for the Delta Science Program's [Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html)
+- NCEAS Scientific Computing team's [Data Acquisition](https://nceas.github.io/scicomp.github.io/data-acquisition.html) instructions
 
 ### Websites
 

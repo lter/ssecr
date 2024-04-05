@@ -10,7 +10,11 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>X</u> ...
+- <u>Define</u> common approaches for logic models
+- <u>Identify</u> and make explicit internal logical leaps
+- <u>Identify</u> needed data and target audience(s)
+- <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
+- <u>Write</u> polished, funding-worthy proposals
 
 ## Module Content
 
@@ -20,11 +24,11 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
-- 
+- Deutsch _et al._, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. _Environmental Science & Policy_
 
 ### Workshops & Courses
 
-- 
+- Open Science Synthesis for the Delta Science Program's [Logic Models and Synthesis Development](https://learning.nceas.ucsb.edu/2021-09-delta/session-8-hands-on-logic-models-and-synthesis-development.html)
 
 ### Websites
 

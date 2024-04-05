@@ -10,7 +10,8 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>X</u> ...
+- <u>Articulate</u> key principles of project management
+- <u>Develop</u> (or refine) the project management framework for your team project
 
 ## Module Content
 
@@ -24,7 +25,9 @@ After completing this module you will be able to:
 
 ### Workshops & Courses
 
-- 
+- NCEAS Scientific Computing team's Collaborative Coding with GitHub workshop project management modules
+    - [GitHub Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html)
+    - [GitHub Projects](https://nceas.github.io/scicomp-workshop-collaborative-coding/projects.html)
 
 ### Websites
 

@@ -10,7 +10,10 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>X</u> ...
+- <u>Define</u> elements of (in)effective communication
+- <u>Identify</u> relevant audiences for a particular work
+- <u>Determine</u> audience motivations and interest
+- <u>Translate</u> communication into various formats based on efficacy with target group
 
 ## Module Content
 
@@ -24,8 +27,8 @@ After completing this module you will be able to:
 
 ### Workshops & Courses
 
-- 
+- Open Science Synthesis for the Delta Science Program's [Communicating Your Science](https://learning.nceas.ucsb.edu/2023-10-delta/session_02.html)
 
 ### Websites
 
-- 
+- Compass' [The Message Box](https://www.compassscicomm.org/leadership-development/the-message-box/)
