@@ -1,57 +1,393 @@
 [
   {
-    "objectID": "mod_thinking.html",
-    "href": "mod_thinking.html",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#accessing-course-materials",
+    "href": "CONTRIBUTING.html#accessing-course-materials",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#project-management",
+    "href": "CONTRIBUTING.html#project-management",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#style-guide",
+    "href": "CONTRIBUTING.html#style-guide",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase II -- Plan",
-      "Supporting D.E.C. Thinking"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_thinking.html#overview",
-    "href": "mod_thinking.html#overview",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_findings.html#overview",
+    "href": "mod_findings.html#overview",
+    "title": "Communicating Findings",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase II -- Plan",
-      "Supporting D.E.C. Thinking"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_thinking.html#learning-objectives",
-    "href": "mod_thinking.html#learning-objectives",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_findings.html#learning-objectives",
+    "href": "mod_findings.html#learning-objectives",
+    "title": "Communicating Findings",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine elements of (in)effective communication\nIdentify relevant audiences for a particular work\nDetermine audience motivations and interest\nTranslate communication into various formats based on efficacy with target group",
     "crumbs": [
-      "Phase II -- Plan",
-      "Supporting D.E.C. Thinking"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_thinking.html#module-content",
-    "href": "mod_thinking.html#module-content",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_findings.html#module-content",
+    "href": "mod_findings.html#module-content",
+    "title": "Communicating Findings",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase II -- Plan",
-      "Supporting D.E.C. Thinking"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_thinking.html#additional-resources",
-    "href": "mod_thinking.html#additional-resources",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_findings.html#additional-resources",
+    "href": "mod_findings.html#additional-resources",
+    "title": "Communicating Findings",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nOpen Science Synthesis for the Delta Science Program’s Communicating Your Science\n\n\n\nWebsites\n\nCompass’ The Message Box",
     "crumbs": [
-      "Phase II -- Plan",
-      "Supporting D.E.C. Thinking"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#overview",
+    "href": "mod_reports.html#overview",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#learning-objectives",
+    "href": "mod_reports.html#learning-objectives",
+    "title": "Reproducible Reports",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify the three fundamental elements of R Markdown / Quarto documents\nUse Markdown syntax to accomplish text styling\nCreate reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings\nMake a (small) Quarto website\nDeploy a website and/or report through GitHub Pages",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#module-content",
+    "href": "mod_reports.html#module-content",
+    "title": "Reproducible Reports",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#additional-resources",
+    "href": "mod_reports.html#additional-resources",
+    "title": "Reproducible Reports",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Literature Analysis with Quarto session\nOSS Reproducible Papers with R Markdown\nUCSB’s Master of Environmental Data Science (MEDS) Creating your Personal Website using Quarto lesson\n\n\n\nWebsites\n\nPosit’s Welcome to Quarto",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html",
+    "href": "mod_spatial.html",
+    "title": "Spatial Data & Interactivity",
+    "section": "",
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#overview",
+    "href": "mod_spatial.html#overview",
+    "title": "Spatial Data & Interactivity",
+    "section": "",
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#spatial-learning-objectives",
+    "href": "mod_spatial.html#spatial-learning-objectives",
+    "title": "Spatial Data & Interactivity",
+    "section": "Spatial Learning Objectives",
+    "text": "Spatial Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine characteristics of common types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#topic-content",
+    "href": "mod_spatial.html#topic-content",
+    "title": "Spatial Data & Interactivity",
+    "section": "Topic Content",
+    "text": "Topic Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#additional-spatial-resources",
+    "href": "mod_spatial.html#additional-spatial-resources",
+    "title": "Spatial Data & Interactivity",
+    "section": "Additional Spatial Resources",
+    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#interactivity-learning-objectives",
+    "href": "mod_spatial.html#interactivity-learning-objectives",
+    "title": "Spatial Data & Interactivity",
+    "section": "Interactivity Learning Objectives",
+    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine the three fundamental components of an R Shiny app\nExplain benefits and limitations of interactive approaches to data exploration\nCreate an R Shiny app for interacting with a dataset",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#topic-content-1",
+    "href": "mod_spatial.html#topic-content-1",
+    "title": "Spatial Data & Interactivity",
+    "section": "Topic Content",
+    "text": "Topic Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#additional-interactivity-resources",
+    "href": "mod_spatial.html#additional-interactivity-resources",
+    "title": "Spatial Data & Interactivity",
+    "section": "Additional Interactivity Resources",
+    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n2022 All Scientists’ Meeting Shiny Apps for Sharing Science workshop\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#overview",
+    "href": "mod_data-disc.html#overview",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#learning-objectives",
+    "href": "mod_data-disc.html#learning-objectives",
+    "title": "Data Discovery & Management",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nExplore common data repositories\nUse Google search operators to more effectively perform general searches\nDefine fundamental properties of effective data management plans\nCreate a data management plan\nDescribe best practices for documenting data for archiving",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#module-content",
+    "href": "mod_data-disc.html#module-content",
+    "title": "Data Discovery & Management",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#additional-resources",
+    "href": "mod_data-disc.html#additional-resources",
+    "title": "Data Discovery & Management",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nThe British Ecological Society’s Better Science Guides – Data Management Guide\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Data Management Essentials lesson\nOpen Science Synthesis for the Delta Science Program’s Data Management Essentials and the FAIR & CARE Principles\nOpen Science Synthesis for the Delta Science Program’s Writing Data Management Plans\nNCEAS Scientific Computing team’s Data Acquisition instructions\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#overview",
+    "href": "mod_project-mgmt.html#overview",
+    "title": "Project Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#learning-objectives",
+    "href": "mod_project-mgmt.html#learning-objectives",
+    "title": "Project Management",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nArticulate key principles of project management\nDevelop (or refine) the project management framework for your team project",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#module-content",
+    "href": "mod_project-mgmt.html#module-content",
+    "title": "Project Management",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Project Management"
+    ]
+  },
+  {
+    "objectID": "mod_project-mgmt.html#additional-resources",
+    "href": "mod_project-mgmt.html#additional-resources",
+    "title": "Project Management",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS Scientific Computing team’s Collaborative Coding with GitHub workshop project management modules\n\nGitHub Issues\nGitHub Projects\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Project Management"
     ]
   },
   {
@@ -85,113 +421,157 @@
     ]
   },
   {
-    "objectID": "mod_findings.html",
-    "href": "mod_findings.html",
-    "title": "Communicating Findings",
+    "objectID": "mod_team-sci.html",
+    "href": "mod_team-sci.html",
+    "title": "Team Science Practices",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase IV -- Conclude",
-      "Communicating Findings"
+      "Phase I -- Prepare",
+      "Team Science"
     ]
   },
   {
-    "objectID": "mod_findings.html#overview",
-    "href": "mod_findings.html#overview",
-    "title": "Communicating Findings",
+    "objectID": "mod_team-sci.html#overview",
+    "href": "mod_team-sci.html#overview",
+    "title": "Team Science Practices",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase IV -- Conclude",
-      "Communicating Findings"
+      "Phase I -- Prepare",
+      "Team Science"
     ]
   },
   {
-    "objectID": "mod_findings.html#learning-objectives",
-    "href": "mod_findings.html#learning-objectives",
-    "title": "Communicating Findings",
+    "objectID": "mod_team-sci.html#learning-objectives",
+    "href": "mod_team-sci.html#learning-objectives",
+    "title": "Team Science Practices",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nInterpret and enact current best practices in team science\nIdentify different interaction styles and the effect they have on group dynamics\nIdentify benefits (and potential costs of) diverse teams\nDescribe ways to mitigate costs of diverse teams\nExplain methods for improving the experience of virtual participants on hybrid teams ## Module Content",
     "crumbs": [
-      "Phase IV -- Conclude",
-      "Communicating Findings"
+      "Phase I -- Prepare",
+      "Team Science"
     ]
   },
   {
-    "objectID": "mod_findings.html#module-content",
-    "href": "mod_findings.html#module-content",
-    "title": "Communicating Findings",
+    "objectID": "mod_team-sci.html#additional-resources",
+    "href": "mod_team-sci.html#additional-resources",
+    "title": "Team Science Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nFarrell et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton & Parker, Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nOpen Science Synthesis for the Delta Science Program’s Team Science for Synthesis\nOpen Science Synthesis for the Delta Science Program’s Thinking Preferences\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html",
+    "href": "mod_logic-models.html",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#overview",
+    "href": "mod_logic-models.html#overview",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#learning-objectives",
+    "href": "mod_logic-models.html#learning-objectives",
+    "title": "Logic Models",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine common approaches for logic models\nIdentify and make explicit internal logical leaps\nIdentify needed data and target audience(s)\nArticulate connection(s) between proposed investigation and beneficial outcome\nWrite polished, funding-worthy proposals",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#module-content",
+    "href": "mod_logic-models.html#module-content",
+    "title": "Logic Models",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
       "Phase IV -- Conclude",
-      "Communicating Findings"
+      "Logic Models"
     ]
   },
   {
-    "objectID": "mod_findings.html#additional-resources",
-    "href": "mod_findings.html#additional-resources",
-    "title": "Communicating Findings",
+    "objectID": "mod_logic-models.html#additional-resources",
+    "href": "mod_logic-models.html#additional-resources",
+    "title": "Logic Models",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nDeutsch et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\n\n\n\nWorkshops & Courses\n\nOpen Science Synthesis for the Delta Science Program’s Logic Models and Synthesis Development\n\n\n\nWebsites",
     "crumbs": [
       "Phase IV -- Conclude",
-      "Communicating Findings"
+      "Logic Models"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html",
-    "href": "mod_project-mgmt.html",
-    "title": "Project Management",
+    "objectID": "mod_thinking.html",
+    "href": "mod_thinking.html",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
-      "Project Management"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#overview",
-    "href": "mod_project-mgmt.html#overview",
-    "title": "Project Management",
+    "objectID": "mod_thinking.html#overview",
+    "href": "mod_thinking.html#overview",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
-      "Project Management"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#learning-objectives",
-    "href": "mod_project-mgmt.html#learning-objectives",
-    "title": "Project Management",
+    "objectID": "mod_thinking.html#learning-objectives",
+    "href": "mod_thinking.html#learning-objectives",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDevelop strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting",
     "crumbs": [
-      "Phase III -- Execute",
-      "Project Management"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#module-content",
-    "href": "mod_project-mgmt.html#module-content",
-    "title": "Project Management",
+    "objectID": "mod_thinking.html#module-content",
+    "href": "mod_thinking.html#module-content",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase III -- Execute",
-      "Project Management"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_project-mgmt.html#additional-resources",
-    "href": "mod_project-mgmt.html#additional-resources",
-    "title": "Project Management",
+    "objectID": "mod_thinking.html#additional-resources",
+    "href": "mod_thinking.html#additional-resources",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
     "crumbs": [
-      "Phase III -- Execute",
-      "Project Management"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
@@ -259,6 +639,82 @@
       "Phase III -- Execute",
       "Data Wrangling"
     ]
+  },
+  {
+    "objectID": "mod_data-viz.html",
+    "href": "mod_data-viz.html",
+    "title": "Data Visualization & Exploration",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#overview",
+    "href": "mod_data-viz.html#overview",
+    "title": "Data Visualization & Exploration",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#learning-objectives",
+    "href": "mod_data-viz.html#learning-objectives",
+    "title": "Data Visualization & Exploration",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify appropriate graph types for given data type/distribution\nExplain how visualization can be a tool for quality control\nUse data visualization as an exploratory tool\nDefine fundamental ggplot2 vocabulary\nCreate publication-quality graphs with ggplot2",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#module-content",
+    "href": "mod_data-viz.html#module-content",
+    "title": "Data Visualization & Exploration",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#additional-resources",
+    "href": "mod_data-viz.html#additional-resources",
+    "title": "Data Visualization & Exploration",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS Scientific Computing team’s Coding in the Tidyverse workshop ggplot2 module\nThe Carpentries’ Data Analysis and Visualization in R for Ecologists ggplot2 episode\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "topic_spatial.html",
+    "href": "topic_spatial.html",
+    "title": "Working with Spatial Data",
+    "section": "",
+    "text": "After completing this topic you will be able to:\n\nDefine characteristics of common types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course"
+  },
+  {
+    "objectID": "topic_spatial.html#spatial-learning-objectives",
+    "href": "topic_spatial.html#spatial-learning-objectives",
+    "title": "Working with Spatial Data",
+    "section": "",
+    "text": "After completing this topic you will be able to:\n\nDefine characteristics of common types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data"
+  },
+  {
+    "objectID": "topic_spatial.html#additional-spatial-resources",
+    "href": "topic_spatial.html#additional-spatial-resources",
+    "title": "Working with Spatial Data",
+    "section": "",
+    "text": "The Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course"
   },
   {
     "objectID": "mod_reproducibility.html",
@@ -360,6 +816,61 @@
     ]
   },
   {
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than the others. One half of the module will use a “flipped approach” where project teams will share their proposed analyses with one another. The other half of the module will be dedicated to analyses that are more common in–or exclusive to–synthesis research.",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#overview",
+    "href": "mod_stats.html#overview",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than the others. One half of the module will use a “flipped approach” where project teams will share their proposed analyses with one another. The other half of the module will be dedicated to analyses that are more common in–or exclusive to–synthesis research.",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#learning-objectives",
+    "href": "mod_stats.html#learning-objectives",
+    "title": "Analysis & Modeling",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe proposed analytical methods to an interested audience of mixed prior experience\nExplain nuance in interpretation of results of proposed analyses\nCompare and contrast interpretation of results in synthesis work versus primary research\nIdentify statistical tests common in synthesis research\nPerform some synthesis-specific analyses",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#module-content",
+    "href": "mod_stats.html#module-content",
+    "title": "Analysis & Modeling",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#additional-resources",
+    "href": "mod_stats.html#additional-resources",
+    "title": "Analysis & Modeling",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nDoing Meta-Analysis with R: A Hands-On Guide\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
     "objectID": "mod_facilitation.html",
     "href": "mod_facilitation.html",
     "title": "Inclusive Facilitation",
@@ -386,7 +897,7 @@
     "href": "mod_facilitation.html#learning-objectives",
     "title": "Inclusive Facilitation",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe benefits of encouraging full, thoughtful, engaged participation\nIdentify methods for ensuring equitable access to participation in a team setting\nIdentify one activity that privileges each thinking style",
     "crumbs": [
       "Phase II -- Plan",
       "Inclusive Facilitation"
@@ -408,211 +919,32 @@
     "href": "mod_facilitation.html#additional-resources",
     "title": "Inclusive Facilitation",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
     "crumbs": [
       "Phase II -- Plan",
       "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "topic_spatial.html",
-    "href": "topic_spatial.html",
-    "title": "Working with Spatial Data",
+    "objectID": "topic_interactivity.html",
+    "href": "topic_interactivity.html",
+    "title": "Interactivity",
     "section": "",
-    "text": "After completing this topic you will be able to:\n\nX …"
-  },
-  {
-    "objectID": "topic_spatial.html#spatial-learning-objectives",
-    "href": "topic_spatial.html#spatial-learning-objectives",
-    "title": "Working with Spatial Data",
-    "section": "",
-    "text": "After completing this topic you will be able to:\n\nX …"
+    "text": "After completing this topic you will be able to:\n\nDefine the three fundamental components of an R Shiny app\nExplain benefits and limitations of interactive approaches to data exploration\nCreate an R Shiny app for interacting with a dataset\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2022 All Scientists’ Meeting Shiny Apps for Sharing Science workshop"
   },
   {
     "objectID": "topic_interactivity.html#interactivity-learning-objectives",
     "href": "topic_interactivity.html#interactivity-learning-objectives",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "Interactivity Learning Objectives",
-    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nX …"
-  },
-  {
-    "objectID": "topic_interactivity.html#topic-content",
-    "href": "topic_interactivity.html#topic-content",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "Topic Content",
-    "text": "Topic Content"
+    "title": "Interactivity",
+    "section": "",
+    "text": "After completing this topic you will be able to:\n\nDefine the three fundamental components of an R Shiny app\nExplain benefits and limitations of interactive approaches to data exploration\nCreate an R Shiny app for interacting with a dataset"
   },
   {
     "objectID": "topic_interactivity.html#additional-interactivity-resources",
     "href": "topic_interactivity.html#additional-interactivity-resources",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "Additional Interactivity Resources",
-    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites"
-  },
-  {
-    "objectID": "mod_logic-models.html",
-    "href": "mod_logic-models.html",
-    "title": "Logic Models",
+    "title": "Interactivity",
     "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Logic Models"
-    ]
-  },
-  {
-    "objectID": "mod_logic-models.html#overview",
-    "href": "mod_logic-models.html#overview",
-    "title": "Logic Models",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Logic Models"
-    ]
-  },
-  {
-    "objectID": "mod_logic-models.html#learning-objectives",
-    "href": "mod_logic-models.html#learning-objectives",
-    "title": "Logic Models",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Logic Models"
-    ]
-  },
-  {
-    "objectID": "mod_logic-models.html#module-content",
-    "href": "mod_logic-models.html#module-content",
-    "title": "Logic Models",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Logic Models"
-    ]
-  },
-  {
-    "objectID": "mod_logic-models.html#additional-resources",
-    "href": "mod_logic-models.html#additional-resources",
-    "title": "Logic Models",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Logic Models"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html",
-    "href": "mod_team-sci.html",
-    "title": "Team Science Practices",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#overview",
-    "href": "mod_team-sci.html#overview",
-    "title": "Team Science Practices",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#learning-objectives",
-    "href": "mod_team-sci.html#learning-objectives",
-    "title": "Team Science Practices",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#module-content",
-    "href": "mod_team-sci.html#module-content",
-    "title": "Team Science Practices",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_team-sci.html#additional-resources",
-    "href": "mod_team-sci.html#additional-resources",
-    "title": "Team Science Practices",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#overview",
-    "href": "mod_reports.html#overview",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#learning-objectives",
-    "href": "mod_reports.html#learning-objectives",
-    "title": "Reproducible Reports",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#module-content",
-    "href": "mod_reports.html#module-content",
-    "title": "Reproducible Reports",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#additional-resources",
-    "href": "mod_reports.html#additional-resources",
-    "title": "Reproducible Reports",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Reproducible Reports"
-    ]
+    "text": "2022 All Scientists’ Meeting Shiny Apps for Sharing Science workshop"
   },
   {
     "objectID": "mod_credit.html",
@@ -641,7 +973,7 @@
     "href": "mod_credit.html#learning-objectives",
     "title": "Authorship & Intellectual Credit",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine types of intellectual contributions to a synthesis project\nDescribe some common frameworks for equitable authorship decisions\nExplain benefits (or avoided costs) of making authorship decisions both collaboratively and transparently\nCreate a draft intellectual credit plan for your team",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
@@ -663,357 +995,10 @@
     "href": "mod_credit.html#additional-resources",
     "title": "Authorship & Intellectual Credit",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nDahlin et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nAllen et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html",
-    "href": "mod_spatial.html",
-    "title": "Spatial Data & Interactivity",
-    "section": "",
-    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#overview",
-    "href": "mod_spatial.html#overview",
-    "title": "Spatial Data & Interactivity",
-    "section": "",
-    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#spatial-learning-objectives",
-    "href": "mod_spatial.html#spatial-learning-objectives",
-    "title": "Spatial Data & Interactivity",
-    "section": "Spatial Learning Objectives",
-    "text": "Spatial Learning Objectives\nAfter completing this topic you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#topic-content",
-    "href": "mod_spatial.html#topic-content",
-    "title": "Spatial Data & Interactivity",
-    "section": "Topic Content",
-    "text": "Topic Content",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#additional-spatial-resources",
-    "href": "mod_spatial.html#additional-spatial-resources",
-    "title": "Spatial Data & Interactivity",
-    "section": "Additional Spatial Resources",
-    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#interactivity",
-    "href": "mod_spatial.html#interactivity",
-    "title": "Spatial Data & Interactivity",
-    "section": "Interactivity",
-    "text": "Interactivity",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#interactivity-learning-objectives",
-    "href": "mod_spatial.html#interactivity-learning-objectives",
-    "title": "Spatial Data & Interactivity",
-    "section": "Interactivity Learning Objectives",
-    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#topic-content-1",
-    "href": "mod_spatial.html#topic-content-1",
-    "title": "Spatial Data & Interactivity",
-    "section": "Topic Content",
-    "text": "Topic Content",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#additional-interactivity-resources",
-    "href": "mod_spatial.html#additional-interactivity-resources",
-    "title": "Spatial Data & Interactivity",
-    "section": "Additional Interactivity Resources",
-    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase IV -- Conclude",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html",
-    "href": "mod_data-viz.html",
-    "title": "Data Visualization & Exploration",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Plan",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#overview",
-    "href": "mod_data-viz.html#overview",
-    "title": "Data Visualization & Exploration",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Plan",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#learning-objectives",
-    "href": "mod_data-viz.html#learning-objectives",
-    "title": "Data Visualization & Exploration",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase II -- Plan",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#module-content",
-    "href": "mod_data-viz.html#module-content",
-    "title": "Data Visualization & Exploration",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase II -- Plan",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_data-viz.html#additional-resources",
-    "href": "mod_data-viz.html#additional-resources",
-    "title": "Data Visualization & Exploration",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase II -- Plan",
-      "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html",
-    "href": "mod_stats.html",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#overview",
-    "href": "mod_stats.html#overview",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#learning-objectives",
-    "href": "mod_stats.html#learning-objectives",
-    "title": "Analysis & Modeling",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#module-content",
-    "href": "mod_stats.html#module-content",
-    "title": "Analysis & Modeling",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#additional-resources",
-    "href": "mod_stats.html#additional-resources",
-    "title": "Analysis & Modeling",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#overview",
-    "href": "mod_version-control.html#overview",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#learning-objectives",
-    "href": "mod_version-control.html#learning-objectives",
-    "title": "Version Control",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#module-content",
-    "href": "mod_version-control.html#module-content",
-    "title": "Version Control",
-    "section": "Module Content",
-    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#additional-resources",
-    "href": "mod_version-control.html#additional-resources",
-    "title": "Version Control",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#accessing-course-materials",
-    "href": "CONTRIBUTING.html#accessing-course-materials",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#project-management",
-    "href": "CONTRIBUTING.html#project-management",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#style-guide",
-    "href": "CONTRIBUTING.html#style-guide",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "mod_data-disc.html",
-    "href": "mod_data-disc.html",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#overview",
-    "href": "mod_data-disc.html#overview",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#learning-objectives",
-    "href": "mod_data-disc.html#learning-objectives",
-    "title": "Data Discovery & Management",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#module-content",
-    "href": "mod_data-disc.html#module-content",
-    "title": "Data Discovery & Management",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#additional-resources",
-    "href": "mod_data-disc.html#additional-resources",
-    "title": "Data Discovery & Management",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
     ]
   }
 ]
