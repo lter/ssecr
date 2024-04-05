@@ -35,4 +35,6 @@ After completing this module you will be able to:
 
 ### Websites
 
-- 
+- Environmental Data Initiative (EDI) [Data Portal](https://portal.edirepository.org/nis/advancedSearch.jsp)
+- DataONE [Data Catalog](https://search.dataone.org/data)
+- Ocean Observatories Initiative (OOI) [Data Explorer](https://dataexplorer.oceanobservatories.org/)
