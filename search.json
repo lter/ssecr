@@ -241,7 +241,7 @@
     "href": "mod_spatial.html#additional-spatial-resources",
     "title": "Spatial Data & Interactivity",
     "section": "Additional Spatial Resources",
-    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\n\n\n\nWebsites",
+    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\n\n\n\nWebsites\n\nNASA’s Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) Portal",
     "crumbs": [
       "Phase IV -- Conclude",
       "Spatial Data & Interactivity"
@@ -329,7 +329,7 @@
     "href": "mod_data-disc.html#additional-resources",
     "title": "Data Discovery & Management",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nThe British Ecological Society’s Better Science Guides – Data Management Guide\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Data Management Essentials lesson\nOpen Science Synthesis for the Delta Science Program’s Data Management Essentials and the FAIR & CARE Principles\nOpen Science Synthesis for the Delta Science Program’s Writing Data Management Plans\nNCEAS Scientific Computing team’s Data Acquisition instructions\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nThe British Ecological Society’s Better Science Guides – Data Management Guide\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Data Management Essentials lesson\nOpen Science Synthesis for the Delta Science Program’s Data Management Essentials and the FAIR & CARE Principles\nOpen Science Synthesis for the Delta Science Program’s Writing Data Management Plans\nNCEAS Scientific Computing team’s Data Acquisition instructions\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
@@ -700,7 +700,7 @@
     "href": "topic_spatial.html",
     "title": "Working with Spatial Data",
     "section": "",
-    "text": "After completing this topic you will be able to:\n\nDefine characteristics of common types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course"
+    "text": "After completing this topic you will be able to:\n\nDefine characteristics of common types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\n\n\n\n\n\nNASA’s Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) Portal"
   },
   {
     "objectID": "topic_spatial.html#spatial-learning-objectives",
@@ -714,7 +714,7 @@
     "href": "topic_spatial.html#additional-spatial-resources",
     "title": "Working with Spatial Data",
     "section": "",
-    "text": "The Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course"
+    "text": "The Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\n\n\n\n\n\nNASA’s Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) Portal"
   },
   {
     "objectID": "mod_reproducibility.html",
