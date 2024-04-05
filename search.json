@@ -1,404 +1,57 @@
 [
   {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#accessing-course-materials",
-    "href": "CONTRIBUTING.html#accessing-course-materials",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#project-management",
-    "href": "CONTRIBUTING.html#project-management",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#style-guide",
-    "href": "CONTRIBUTING.html#style-guide",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "mod_findings.html",
-    "href": "mod_findings.html",
-    "title": "Communicating Findings",
+    "objectID": "mod_thinking.html",
+    "href": "mod_thinking.html",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Finish",
-      "Communicating Findings"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_findings.html#overview",
-    "href": "mod_findings.html#overview",
-    "title": "Communicating Findings",
+    "objectID": "mod_thinking.html#overview",
+    "href": "mod_thinking.html#overview",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Finish",
-      "Communicating Findings"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_findings.html#learning-objectives",
-    "href": "mod_findings.html#learning-objectives",
-    "title": "Communicating Findings",
+    "objectID": "mod_thinking.html#learning-objectives",
+    "href": "mod_thinking.html#learning-objectives",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Phase III -- Finish",
-      "Communicating Findings"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_findings.html#module-content",
-    "href": "mod_findings.html#module-content",
-    "title": "Communicating Findings",
+    "objectID": "mod_thinking.html#module-content",
+    "href": "mod_thinking.html#module-content",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase III -- Finish",
-      "Communicating Findings"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_findings.html#additional-resources",
-    "href": "mod_findings.html#additional-resources",
-    "title": "Communicating Findings",
+    "objectID": "mod_thinking.html#additional-resources",
+    "href": "mod_thinking.html#additional-resources",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Phase III -- Finish",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#overview",
-    "href": "mod_reports.html#overview",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#learning-objectives",
-    "href": "mod_reports.html#learning-objectives",
-    "title": "Reproducible Reports",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#module-content",
-    "href": "mod_reports.html#module-content",
-    "title": "Reproducible Reports",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#additional-resources",
-    "href": "mod_reports.html#additional-resources",
-    "title": "Reproducible Reports",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#overview",
-    "href": "mod_version-control.html#overview",
-    "title": "Version Control",
-    "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#learning-objectives",
-    "href": "mod_version-control.html#learning-objectives",
-    "title": "Version Control",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#module-content",
-    "href": "mod_version-control.html#module-content",
-    "title": "Version Control",
-    "section": "Module Content",
-    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_version-control.html#additional-resources",
-    "href": "mod_version-control.html#additional-resources",
-    "title": "Version Control",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Version Control"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html",
-    "href": "mod_spatial.html",
-    "title": "Spatial Data & Interactivity",
-    "section": "",
-    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#overview",
-    "href": "mod_spatial.html#overview",
-    "title": "Spatial Data & Interactivity",
-    "section": "",
-    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#spatial-learning-objectives",
-    "href": "mod_spatial.html#spatial-learning-objectives",
-    "title": "Spatial Data & Interactivity",
-    "section": "Spatial Learning Objectives",
-    "text": "Spatial Learning Objectives\nAfter completing this topic you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#topic-content",
-    "href": "mod_spatial.html#topic-content",
-    "title": "Spatial Data & Interactivity",
-    "section": "Topic Content",
-    "text": "Topic Content",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#additional-spatial-resources",
-    "href": "mod_spatial.html#additional-spatial-resources",
-    "title": "Spatial Data & Interactivity",
-    "section": "Additional Spatial Resources",
-    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#interactivity",
-    "href": "mod_spatial.html#interactivity",
-    "title": "Spatial Data & Interactivity",
-    "section": "Interactivity",
-    "text": "Interactivity",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#interactivity-learning-objectives",
-    "href": "mod_spatial.html#interactivity-learning-objectives",
-    "title": "Spatial Data & Interactivity",
-    "section": "Interactivity Learning Objectives",
-    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#topic-content-1",
-    "href": "mod_spatial.html#topic-content-1",
-    "title": "Spatial Data & Interactivity",
-    "section": "Topic Content",
-    "text": "Topic Content",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_spatial.html#additional-interactivity-resources",
-    "href": "mod_spatial.html#additional-interactivity-resources",
-    "title": "Spatial Data & Interactivity",
-    "section": "Additional Interactivity Resources",
-    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase III -- Finish",
-      "Spatial Data & Interactivity"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html",
-    "href": "mod_data-disc.html",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#overview",
-    "href": "mod_data-disc.html#overview",
-    "title": "Data Discovery & Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#learning-objectives",
-    "href": "mod_data-disc.html#learning-objectives",
-    "title": "Data Discovery & Management",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#module-content",
-    "href": "mod_data-disc.html#module-content",
-    "title": "Data Discovery & Management",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_data-disc.html#additional-resources",
-    "href": "mod_data-disc.html#additional-resources",
-    "title": "Data Discovery & Management",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Data Discovery"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html",
-    "href": "mod_project-mgmt.html",
-    "title": "Project Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html#overview",
-    "href": "mod_project-mgmt.html#overview",
-    "title": "Project Management",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html#learning-objectives",
-    "href": "mod_project-mgmt.html#learning-objectives",
-    "title": "Project Management",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html#module-content",
-    "href": "mod_project-mgmt.html#module-content",
-    "title": "Project Management",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Project Management"
-    ]
-  },
-  {
-    "objectID": "mod_project-mgmt.html#additional-resources",
-    "href": "mod_project-mgmt.html#additional-resources",
-    "title": "Project Management",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Project Management"
+      "Phase II -- Plan",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
@@ -432,168 +85,113 @@
     ]
   },
   {
-    "objectID": "mod_team-sci.html",
-    "href": "mod_team-sci.html",
-    "title": "Team Science Practices",
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase I -- Plan",
-      "Team Science"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#overview",
-    "href": "mod_team-sci.html#overview",
-    "title": "Team Science Practices",
+    "objectID": "mod_findings.html#overview",
+    "href": "mod_findings.html#overview",
+    "title": "Communicating Findings",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase I -- Plan",
-      "Team Science"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#learning-objectives",
-    "href": "mod_team-sci.html#learning-objectives",
-    "title": "Team Science Practices",
+    "objectID": "mod_findings.html#learning-objectives",
+    "href": "mod_findings.html#learning-objectives",
+    "title": "Communicating Findings",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Phase I -- Plan",
-      "Team Science"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#module-content",
-    "href": "mod_team-sci.html#module-content",
-    "title": "Team Science Practices",
+    "objectID": "mod_findings.html#module-content",
+    "href": "mod_findings.html#module-content",
+    "title": "Communicating Findings",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase I -- Plan",
-      "Team Science"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#additional-resources",
-    "href": "mod_team-sci.html#additional-resources",
-    "title": "Team Science Practices",
+    "objectID": "mod_findings.html#additional-resources",
+    "href": "mod_findings.html#additional-resources",
+    "title": "Communicating Findings",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Phase I -- Plan",
-      "Team Science"
+      "Phase IV -- Conclude",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_logic-models.html",
-    "href": "mod_logic-models.html",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html",
+    "href": "mod_project-mgmt.html",
+    "title": "Project Management",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Finish",
-      "Logic Models"
+      "Phase III -- Execute",
+      "Project Management"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#overview",
-    "href": "mod_logic-models.html#overview",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html#overview",
+    "href": "mod_project-mgmt.html#overview",
+    "title": "Project Management",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Finish",
-      "Logic Models"
+      "Phase III -- Execute",
+      "Project Management"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#learning-objectives",
-    "href": "mod_logic-models.html#learning-objectives",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html#learning-objectives",
+    "href": "mod_project-mgmt.html#learning-objectives",
+    "title": "Project Management",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Phase III -- Finish",
-      "Logic Models"
+      "Phase III -- Execute",
+      "Project Management"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#module-content",
-    "href": "mod_logic-models.html#module-content",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html#module-content",
+    "href": "mod_project-mgmt.html#module-content",
+    "title": "Project Management",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase III -- Finish",
-      "Logic Models"
+      "Phase III -- Execute",
+      "Project Management"
     ]
   },
   {
-    "objectID": "mod_logic-models.html#additional-resources",
-    "href": "mod_logic-models.html#additional-resources",
-    "title": "Logic Models",
+    "objectID": "mod_project-mgmt.html#additional-resources",
+    "href": "mod_project-mgmt.html#additional-resources",
+    "title": "Project Management",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Phase III -- Finish",
-      "Logic Models"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html",
-    "href": "mod_thinking.html",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Supporting D.E.C. Thinking"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html#overview",
-    "href": "mod_thinking.html#overview",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Supporting D.E.C. Thinking"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html#learning-objectives",
-    "href": "mod_thinking.html#learning-objectives",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Supporting D.E.C. Thinking"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html#module-content",
-    "href": "mod_thinking.html#module-content",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Supporting D.E.C. Thinking"
-    ]
-  },
-  {
-    "objectID": "mod_thinking.html#additional-resources",
-    "href": "mod_thinking.html#additional-resources",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Supporting D.E.C. Thinking"
+      "Phase III -- Execute",
+      "Project Management"
     ]
   },
   {
@@ -603,7 +201,7 @@
     "section": "",
     "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/logistical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Data Wrangling"
     ]
   },
@@ -614,7 +212,7 @@
     "section": "",
     "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/logistical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Data Wrangling"
     ]
   },
@@ -625,7 +223,7 @@
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify typical steps in data harmonization and wrangling workflows\nCreate a harmonization workflow",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Data Wrangling"
     ]
   },
@@ -636,7 +234,7 @@
     "section": "Harmonizing Data",
     "text": "Harmonizing Data\nData harmonization is an interesting topic in that it is vital for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.\nFor tabular data, we recommend using the ltertools R package to perform any needed harmonization. This package relies on a “column key” to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key.\nThe column key requires three columns:\n\n“source” – Name of the raw file\n“raw_name” – Name of all raw columns in that file to be synonymized\n“tidy_name” – New name for each raw column that should be carried to the harmonized data\n\nNote that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the ltertools package vignette. For convenience, we’re attaching the visual diagram of this method of harmonization included in the ltertools vignette below.",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Data Wrangling"
     ]
   },
@@ -647,7 +245,7 @@
     "section": "Wrangling Data",
     "text": "Wrangling Data\n\nQuality Control\nsummary\nsort(unique())\npsych::multi.hist\nsuppportR::num_check\n\n\nText Methods\ngsub\nstringr::str_sub\n\n\nRegular Expressions\n\n\nCustom Functions\n\n\nUniting / Separating Columns\ntidyr::separate_wider_delim\n\n\nJoining Data\na.k.a. attaching data by columns\ndplyr::left_join\nsupportR::diff_check\n\n\nLeveraging Data Shape\n\ntidyr::pivot_longer\noperations on consolidated columns\ntidyr::pivot_wider",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Data Wrangling"
     ]
   },
@@ -658,63 +256,162 @@
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\ncoreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\ncoreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\n\n\n\nWebsites",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Data Wrangling"
     ]
   },
   {
-    "objectID": "mod_data-viz.html",
-    "href": "mod_data-viz.html",
-    "title": "Data Visualization & Exploration",
+    "objectID": "mod_reproducibility.html",
+    "href": "mod_reproducibility.html",
+    "title": "Reproducibility Best Practices",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
     "crumbs": [
-      "Phase II -- Execute",
-      "Data Visualization"
+      "Phase I -- Prepare",
+      "Reproducibility"
     ]
   },
   {
-    "objectID": "mod_data-viz.html#overview",
-    "href": "mod_data-viz.html#overview",
-    "title": "Data Visualization & Exploration",
+    "objectID": "mod_reproducibility.html#overview",
+    "href": "mod_reproducibility.html#overview",
+    "title": "Reproducibility Best Practices",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
     "crumbs": [
-      "Phase II -- Execute",
-      "Data Visualization"
+      "Phase I -- Prepare",
+      "Reproducibility"
     ]
   },
   {
-    "objectID": "mod_data-viz.html#learning-objectives",
-    "href": "mod_data-viz.html#learning-objectives",
-    "title": "Data Visualization & Exploration",
+    "objectID": "mod_reproducibility.html#learning-objectives",
+    "href": "mod_reproducibility.html#learning-objectives",
+    "title": "Reproducibility Best Practices",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify core tenets of reproducibility best practices\nCreate robust workflow documentation\nImplement reproducible project organization strategies\nDiscuss methods for improving the reproducibility of your code products\nSummarize FAIR and CARE data principles\nEvaluate the FAIR/CAREness of your work",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#lego-activity",
+    "href": "mod_reproducibility.html#lego-activity",
+    "title": "Reproducibility Best Practices",
+    "section": "Lego Activity",
+    "text": "Lego Activity\nBefore we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO activity was designed by Mary Donaldson and Matt Mahon at the University of Glasgow. The full materials can be accessed here.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#project-organization-documentation",
+    "href": "mod_reproducibility.html#project-organization-documentation",
+    "title": "Reproducibility Best Practices",
+    "section": "Project Organization & Documentation",
+    "text": "Project Organization & Documentation\nMuch of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a project that isn’t reproducible. On the other hand, “bad” code can be made more intelligible when it is placed in a well-documented/organized project!\n\nFundamental Structure\n\nThe simplest way of beginning a reproducible project is adopting a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency will make your system–whatever that consists of–understandable to others.\nHere are some rules to keep in mind as you decide how to organize your project:\n\nUse one folder per project\n\nKeeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.\n\nOrganize content with sub-folders\n\nPutting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don’t feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.\n\nCraft informative file names\n\nAn ideal file name should give some information about the file’s contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should be inherently meaningful. This lets you change folder names without fear that files would also need to be re-named.\n\n\n\n\n\n\nDiscussion: Project Structure\n\n\n\nWith a partner discuss (some of) the following questions:\n\nHow do you typically organize your projects’ files?\nWhat benefits do you see of your current approach?\nWhat–if any–limitations to your system have you experienced?\nDo you think your structure would work well in a team environment?\n\nIf not, what changes might you make to better fit that context?\n\n\n\n\n\nNaming Tips\nWe’ve brought up the importance of naming several times already but haven’t actually discussed the specifics of what makes a “good” name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.\n\nNames should be sorted by a computer and human in the same way\n\nComputers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow should be run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to “zero pad” numbers so that all numbers have the same number of digits (e.g., “01” and “10” vs. “1” and “10”).\n\nNames should avoid spaces and special characters\n\nSpaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs. uppercase).\n\nNames should use consistent delimiters\n\nDelimiters are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder “coral_reef_data” which would be more readable than “coralreefdata”.\nYou may also want to use multiple delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.\n\nNames should use “slugs” to connect inputs and outputs\n\nSlugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named “02_tidy.R” and all of the data files it creates are named “02_…”. Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.\n\n\n\nOrganizing Example\nThese tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let’s consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.\n\nVersion 1Version 2Version 3Version 4\n\n\n\n\n\n\n\nPositives\n\nAll project files are in one folder\n\n\n\nAreas for Improvement\n\nNo use of sub-folders to divide logically-linked content\nFile names lack key context (e.g., workflow order, inputs vs. outputs, etc.)\nInconsistent use of delimiters\n\n\n\n\n\n\n\n\n\n\n\nPositives\n\nSub-folders used to divide content\nProject documentation included in top level (README and license files)\n\n\n\nAreas for Improvement\n\nFile names still inconsistent\n\nFile names contain different information in different order\nMixed use of delimiters\nMany file names include spaces\n\n\n\n\n\n\n\n\n\n\n\n\nPositives\n\nMost file names contain context\nStandardized use of casing and–within sub-folder–consistent delimiters used\n\n\n\nAreas for Improvement\n\nWorkflow order “guessable” but not explicit\nUnclear which files are inputs / outputs (and of which scripts)\n\n\n\n\n\n\n\n\n\n\n\nPositives\n\nScripts include zero-padded numbers indicating order of operations\nInputs / outputs share zero padded slug with source script\nReport file names machine sorted from least to most recent (top to bottom)\n\n\n\nAreas for Improvement\n\nDepending on sub-folder complexity, could add sub-folder specific README files\nGraph file names still include spaces\n\n\n\n\n\n\n\n\n\nDocumentation\nDocumenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a “README” file in the top-level of your project’s folder system. This file can be formatted however you’d like but generally READMEs should include:\n\nProject overview written in plain language\nBasic table of contents for the primary folders in your project folder\nBrief description of the file naming scheme you’ve adopted for this project.\n\nYour project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.\nFinally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the Version Control module but GitHub offers something called Issues that can be a really effective place to record some of this information.\n\n\n\n\n\n\nActivity: Create a README\n\n\n\nCreate a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.\n\nInclude a 2-4 sentence description of the project objectives / hypotheses\nIdentify and describe (in 1 sentence) the primary sub-folders in the project\nIf your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them\n\nFeel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.\n\n\n\n\nOrganization Recommendations\nIf you integrate any of the concepts we’ve covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you’d like additional recommendations we’ve assembled a non-exhaustive set of additional “best practices” that you may find helpful.\n\nNever Edit Raw Data\nFirst and foremost, it is critical that you never edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a separate file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.\n\n\nSeparate Raw and Processed Data\nIn the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.\n\n\nQuarantine External Outputs\nThis can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#reproducible-coding",
+    "href": "mod_reproducibility.html#reproducible-coding",
+    "title": "Reproducibility Best Practices",
+    "section": "Reproducible Coding",
+    "text": "Reproducible Coding\nNow that you’ve organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project’s worth of R code found that 74% of the associated R files failed to complete without error (Trisovic et al. 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.\n\nWhen your scripts are clear and reproducibly-written you will reap the following benefits:\n\nReturning to your code after having set it down for weeks/months is much simpler\nCollaborating with team members requires less verbal explanation\nSharing methods for external result validation is more straightforward\nIn cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy\n\n\nPackages, Namespacing, and Software Versions\nAn under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script and the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions is not sustainable but recording key information can help users set up the code environment that does work for your project.\n\nLoad Libraries Explicitly\nIt is important to load libraries at the start of every script. In some languages (like Python) this step is required but in others (like R) this step is technically “optional” but disastrous to skip. It is safe to skip including the installation step in your code because the library step should tell code-literate users which packages they need to install.\nFor instance you might begin each script with something like:\n# Load needed libraries\nlibrary(dplyr); library(magrittr); library(ggplot2)\n\n# Get to actual work\n. . .\nIn R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way thus lets everyone reading the code know exactly which packages they will need to have installed.\nIf you are feeling generous you could use the librarian R package to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:\n# Load `librarian` package\nlibrary(librarian)\n\n# Install missing packages and load needed libraries\nshelf(dplyr, magrittr, ggplot2)\n\n# Get to actual work\n. . .\n\n\nFunction Namespacing\nIt is also strongly recommended to “namespace” functions everywhere you use them. In R this is technically optional but it is a really good practice to adopt, particularly for functions that may appear in multiple packages with the same name but do very different operations depending on their source. In R the ‘namespacing operator’ is two colons.\n# Use the `mutate` function from the `dplyr` package\ndplyr::mutate(. . .)\nAn ancillary benefit of namespacing is that namespaced functions don’t need to have their respective libraries loaded. Still good practice to load the library though!\n\n\nPackage Versions\nWhile working on a project you should use the latest version of every needed package. However, as you prepare to publish or otherwise publicize your code, you’ll need to record package versions. R provides the sessionInfo function (from the utils package included in “base” R) which neatly summarizes some high level facets of your code environment. Note that for this method to work you’ll need to actually run the library-loading steps of your scripts.\nFor more in-depth records of package versions and environment preservation–in R–you might also consider the renv package or the packrat package.\n\n\n\nScript Organization\nEvery change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!\nYou may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).\n\n\nFile Paths\nWhen importing inputs or exporting outputs we need to specify “file paths”. These are the set of folders between where your project is ‘looking’ and where the input/output should come from/go. The figure from Trisovic et al. (2022) shows that file path and working directory errors are a substantial barrier to code that can be re-run in clean coding environments. Consider the following ways of specifying file paths from least to most reproducible.\n\nWorstBadBetterBest!\n\n\n\nAbsolute Paths\nThe worst way of specifying a file path is to use the “absolute” file path. This is the path from the root of your computer to a given file. There are many issues here but the primary one is that absolute paths only work for one computer! Given that only one person can even run lines of code that use absolute paths, it’s not really worth specifying the other issues.\n\n\nExample\n# Read in bee community data\nmy_df &lt;- read.csv(file = \"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)/Data/bees.csv\")\n\n\n\n\nManually Setting the Working Directory\nMarginally better than using the absolute path is to set the working directory to some location. This may look neater than the absolute path option but it actually has the same point of failure: Both methods only work for one computer!\n\n\nExample\n# Set working directory\nsetwd(dir = \"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)\")\n\n# Read in bee community data\nmy_df &lt;- read.csv(file = \"Data/bees.csv\")\n\n\n\n\nRelative Paths\nInstead of using absolute paths or manually setting the working directory you can use “relative” file paths! Relative paths assume all project content lives in the same folder.\nThis is a safe assumption because it is the most fundamental tenet of reproducible project organization! The strength of relative paths is actually a serious contributing factor for why it is good practice to use a single folder.\n\n\nExample\n# Read in bee community data\n1my_df &lt;- read.csv(file = \"Data/bees.csv\")\n\n1\n\nParts of file path specific to each user are automatically recognized by the computer\n\n\n\n\n\n\nOperating System-Flexible Relative Paths\nThe “better” example is nice but has a serious limitation: it hard coded the type of slash between file path elements. This means that only computers of the same operating system as the code author could run that line.\nWe can use functions to automatically detect and insert the correct slashes though!\n\n\nExample\n# Read in bee community data\nmy_df &lt;- read.csv(file = file.path(\"Data\", \"bees.csv\"))\n\n\n\n\n\n\nCode Style\nWhen it comes to code style, the same ‘rule of thumb’ applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! That said, there are a few principles worth adopting if you have not already done so.\n\nUse concise and descriptive object names\n\nIt can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.\n\nDon’t be afraid of empty space!\n\nScripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.\n\n\n\nCode Comments\nA “comment” in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so when in doubt: add more comments!\nThere are two major strategies for comments and either or both might make sense for your project.\n\n“What” Comments\nComments describe what the code is doing.\n\nBenefits: allows team members to understand workflow without code literacy\nRisks: rationale for code not explicit\n\n# Remove all pine trees from dataset\nno_pine_df &lt;- dplyr::filter(full_df, genus != \"Pinus\")\n\n\n“Why” Comments\nComments describe rationale and/or context for code.\n\nBenefits: built-in documentation for team decisions\nRisks: assumes everyone can read code\n\n# Cone-bearing plants are not comparable with other plants in dataset\nno_pine_df &lt;- dplyr::filter(full_df, genus != \"Pinus\")\n\n\n\n\n\n\nDiscussion: Comment on Comments\n\n\n\nWith a partner discuss the following questions:\n\nWhen you write comments, do you focus more on the “what” or the “why”?\nWhat would you estimate is the ratio of code to comment lines in your code?\n\n1:1 being every code line has one comment line\n\nIf you have revisited old code, were your comments helpful?\n\nHow could you make them more helpful?\n\nIn what ways do you think you would need to change your commenting style for a team project?\n\n\n\n\n\n\n\n\n\nActivity: Make Comments\n\n\n\nRevisit a script from an old project (ideally one you haven’t worked on recently). Once you’ve opened the script:\n\nScan through the script\n\nCan you identify the main purpose(s) of the code?\n\nIdentify any areas where you’re not sure either (A) what the code is doing or (B) why that section of code exists\n\nAdd comments to these areas to document what they’re up to\n\nShare the commented version of one of these trouble areas with a partner\n\nDo they understand the what and/or why of your code?\nIf not, revise the comments and repeat\n\n\n\n\n\n\n\nConsider Custom Functions\nIn most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.\nInstead of taking this copy/paste approach, you could consider writing a “custom” function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.\n\nFunction Recommendations\nWe have the following ‘rules of thumb’ for custom function use:\n- If a given operation is duplicated 3 or more times within a project, write a custom function\nFunctions written in this case can be extremely specific and–though documentation is always a good idea–can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won’t be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation post hoc.\n- Write functions defensively\nWhen you write custom functions, it is really valuable to take the time to write them defensively. In this context, “defensively” means that you anticipate likely errors and write your own informative/human readable error messages. Let’s consider a simplified version of a function from the ltertools R package for calculating the coefficient of variation (CV).\nThe coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given a non-number you get the following warning message: “In mean.default(x =”…“) : argument is not numeric or logical: returning NA”.\nSomeone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.\ncv &lt;- function(x){\n  \n  # Error out if x is not numeric\n  if(is.numeric(x) != TRUE)\n    stop(\"`x` must be numeric\")\n  \n  # Calculate CV\n  sd(x = x) / mean(x = x)\nThe key to defensive programming is to try to get functions to fail fast and fail informatively as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and–for complex functions–can save a ton of useless processing time when failure is guaranteed at a later step.\n- If a given operation is duplicated 3 or more times across projects, consider creating an R package\nCreating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function’s script for each project that needs the tool.\nHadley Wickham and Jenny Bryan have written a free digital book on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.\nIf you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#fair-care-data-principles",
+    "href": "mod_reproducibility.html#fair-care-data-principles",
+    "title": "Reproducibility Best Practices",
+    "section": "FAIR & CARE Data Principles",
+    "text": "FAIR & CARE Data Principles\nData availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These ‘synthesis data products’ can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.\n\nFAIR\nFAIR is an acronym for Findable Accessible Interpoerable and Reusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take throughout the lifecycle of your project to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is–in some ways–dependent upon how thoroughly you consider these actions.\nConsider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider–even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the ‘actual’ data but for ease of reference we will call both of these resources “data.”\n\nFindability\n\nEnsure that data have a globally unique and persistent identifier\nCompletely fill out all metadata details\nRegister/index data in a searchable resource\n\nAccessibility\n\nStore data in a file format that is open, free, and universally implementable (e.g., CSV rather than MS Excel, etc.)\nEnsure that metadata will be available even if the data they describe are not\n\nInteroperability\n\nUse formal, shared, and broadly applicable language for knowledge representation\n\nThis can mean using full species names rather than codes or shorthand that may not be widely known\n\nUse vocabularies that are broadly used and that themselves follow FAIR principles\nInclude explicit references to other FAIR data\n\nReusability\n\nDescribe your data with rich detail that covers a plurality of relevant attributes\nAttach a clear data usage license so that secondary data users know how they are allowed to use your data\nInclude detailed provenance information about your data\nEnsure that your data meet discipline-specific community standards\n\n\n\n\n\n\n\nDiscussion: Consider Data FAIRness\n\n\n\nConsider the first data chapter of your thesis or dissertation. On a scale of 1-5, how FAIR do you think your data and metadata are? What actions could you take to make your data more FAIR compliant? If it helps, feel free to rate your (meta)data based on each FAIR criterion separately!\nFeel free to use these questions to guide your thinking\n\nHow are the data for that project stored?\nWhat metadata exists to document those data?\nHow easy would it be for someone in your lab group to pick up and use your data?\nHow easy would it be for someone not in your lab group?\n\n\n\n\n\nCARE\nWhile making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the sole tool to use in evaluating how data/code are shared and stored. The Global Indigenous Data Alliance (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. Before making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension.\n\nCARE stands for Collective Benefit, Authority to Control, Responsibility, and Ethics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been–and continue to be–collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings et al. 2023 (linked at the bottom of this page).\nCollective Benefit\n\nDemonstrate how your research and its potential results are relevant and of value to the interests of the community at large and its individual members\nInclude and value local community experts in the research team\nUse classifications and categories in ways defined by Indigenous communities and individuals\nDisaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities\nCompensate community experts throughout the research process (proposal development through to community review of pre-publication manuscripts)\n\nAuthority to Control\n\nEstablish institutional principles or protocoles that explicitly recognize Indigenous Peoples’ rights to and interests in their knowledges/data\nEnsure data collection and distribution are consistent with individual and community consent provisions and that consent is ongoing (including the right to withdraw or refuse)\nEnsure Indigenous communities have access to the (meta)data in usable format\n\nResponsibility\n\nCreate and expand opportunities for community capacity\nRecord the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata\nEnsure review of draft publications before publication\nUse the languages of Indigenous Peoples in the (meta)data\n\nEthics\n\nAccess research using Indigenous ethical frameworks\nUse community-defined review processes with appropriate reviewers for activities delineated in data management plans\nWork to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals\nEngage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#reproducibility-best-practices-summary",
+    "href": "mod_reproducibility.html#reproducibility-best-practices-summary",
+    "title": "Reproducibility Best Practices",
+    "section": "Reproducibility Best Practices Summary",
+    "text": "Reproducibility Best Practices Summary\nMaking sure that your project is reproducible requires a handful of steps before you begin, some actions during the life of the project, and then a few finishing touches when the project nears its conclusion. The following diagram may prove helpful as a coarse roadmap for how these steps might be followed in a general project setting.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#additional-resources",
+    "href": "mod_reproducibility.html#additional-resources",
+    "title": "Reproducibility Best Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nA Large-Scale Study on Research Code Quality and Execution. Trisovic et al., 2022. Scientific Data\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#overview",
+    "href": "mod_facilitation.html#overview",
+    "title": "Inclusive Facilitation",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#learning-objectives",
+    "href": "mod_facilitation.html#learning-objectives",
+    "title": "Inclusive Facilitation",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Phase II -- Execute",
-      "Data Visualization"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-viz.html#module-content",
-    "href": "mod_data-viz.html#module-content",
-    "title": "Data Visualization & Exploration",
+    "objectID": "mod_facilitation.html#module-content",
+    "href": "mod_facilitation.html#module-content",
+    "title": "Inclusive Facilitation",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase II -- Execute",
-      "Data Visualization"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-viz.html#additional-resources",
-    "href": "mod_data-viz.html#additional-resources",
-    "title": "Data Visualization & Exploration",
+    "objectID": "mod_facilitation.html#additional-resources",
+    "href": "mod_facilitation.html#additional-resources",
+    "title": "Inclusive Facilitation",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Phase II -- Execute",
-      "Data Visualization"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
@@ -730,215 +427,6 @@
     "title": "Working with Spatial Data",
     "section": "",
     "text": "After completing this topic you will be able to:\n\nX …"
-  },
-  {
-    "objectID": "mod_reproducibility.html",
-    "href": "mod_reproducibility.html",
-    "title": "Reproducibility Best Practices",
-    "section": "",
-    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#overview",
-    "href": "mod_reproducibility.html#overview",
-    "title": "Reproducibility Best Practices",
-    "section": "",
-    "text": "As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of “reproducibility.” Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. “Reproducibility” is a wide sphere encompassing many different–albeit related–topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#learning-objectives",
-    "href": "mod_reproducibility.html#learning-objectives",
-    "title": "Reproducibility Best Practices",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify core tenets of reproducibility best practices\nCreate robust workflow documentation\nImplement reproducible project organization strategies\nDiscuss methods for improving the reproducibility of your code products\nSummarize FAIR and CARE data principles\nEvaluate the FAIR/CAREness of your work",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#lego-activity",
-    "href": "mod_reproducibility.html#lego-activity",
-    "title": "Reproducibility Best Practices",
-    "section": "Lego Activity",
-    "text": "Lego Activity\nBefore we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO activity was designed by Mary Donaldson and Matt Mahon at the University of Glasgow. The full materials can be accessed here.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#project-organization-documentation",
-    "href": "mod_reproducibility.html#project-organization-documentation",
-    "title": "Reproducibility Best Practices",
-    "section": "Project Organization & Documentation",
-    "text": "Project Organization & Documentation\nMuch of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a project that isn’t reproducible. On the other hand, “bad” code can be made more intelligible when it is placed in a well-documented/organized project!\n\nFundamental Structure\n\nThe simplest way of beginning a reproducible project is adopting a good file organization system. There is no single “best” way of organizing your projects’ files as long as you are consistent. Consistency will make your system–whatever that consists of–understandable to others.\nHere are some rules to keep in mind as you decide how to organize your project:\n\nUse one folder per project\n\nKeeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.\n\nOrganize content with sub-folders\n\nPutting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don’t feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.\n\nCraft informative file names\n\nAn ideal file name should give some information about the file’s contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should be inherently meaningful. This lets you change folder names without fear that files would also need to be re-named.\n\n\n\n\n\n\nDiscussion: Project Structure\n\n\n\nWith a partner discuss (some of) the following questions:\n\nHow do you typically organize your projects’ files?\nWhat benefits do you see of your current approach?\nWhat–if any–limitations to your system have you experienced?\nDo you think your structure would work well in a team environment?\n\nIf not, what changes might you make to better fit that context?\n\n\n\n\n\nNaming Tips\nWe’ve brought up the importance of naming several times already but haven’t actually discussed the specifics of what makes a “good” name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.\n\nNames should be sorted by a computer and human in the same way\n\nComputers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow should be run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to “zero pad” numbers so that all numbers have the same number of digits (e.g., “01” and “10” vs. “1” and “10”).\n\nNames should avoid spaces and special characters\n\nSpaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs. uppercase).\n\nNames should use consistent delimiters\n\nDelimiters are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder “coral_reef_data” which would be more readable than “coralreefdata”.\nYou may also want to use multiple delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.\n\nNames should use “slugs” to connect inputs and outputs\n\nSlugs are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named “02_tidy.R” and all of the data files it creates are named “02_…”. Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.\n\n\n\nOrganizing Example\nThese tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let’s consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.\n\nVersion 1Version 2Version 3Version 4\n\n\n\n\n\n\n\nPositives\n\nAll project files are in one folder\n\n\n\nAreas for Improvement\n\nNo use of sub-folders to divide logically-linked content\nFile names lack key context (e.g., workflow order, inputs vs. outputs, etc.)\nInconsistent use of delimiters\n\n\n\n\n\n\n\n\n\n\n\nPositives\n\nSub-folders used to divide content\nProject documentation included in top level (README and license files)\n\n\n\nAreas for Improvement\n\nFile names still inconsistent\n\nFile names contain different information in different order\nMixed use of delimiters\nMany file names include spaces\n\n\n\n\n\n\n\n\n\n\n\n\nPositives\n\nMost file names contain context\nStandardized use of casing and–within sub-folder–consistent delimiters used\n\n\n\nAreas for Improvement\n\nWorkflow order “guessable” but not explicit\nUnclear which files are inputs / outputs (and of which scripts)\n\n\n\n\n\n\n\n\n\n\n\nPositives\n\nScripts include zero-padded numbers indicating order of operations\nInputs / outputs share zero padded slug with source script\nReport file names machine sorted from least to most recent (top to bottom)\n\n\n\nAreas for Improvement\n\nDepending on sub-folder complexity, could add sub-folder specific README files\nGraph file names still include spaces\n\n\n\n\n\n\n\n\n\nDocumentation\nDocumenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a “README” file in the top-level of your project’s folder system. This file can be formatted however you’d like but generally READMEs should include:\n\nProject overview written in plain language\nBasic table of contents for the primary folders in your project folder\nBrief description of the file naming scheme you’ve adopted for this project.\n\nYour project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.\nFinally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the Version Control module but GitHub offers something called Issues that can be a really effective place to record some of this information.\n\n\n\n\n\n\nActivity: Create a README\n\n\n\nCreate a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.\n\nInclude a 2-4 sentence description of the project objectives / hypotheses\nIdentify and describe (in 1 sentence) the primary sub-folders in the project\nIf your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them\n\nFeel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.\n\n\n\n\nOrganization Recommendations\nIf you integrate any of the concepts we’ve covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you’d like additional recommendations we’ve assembled a non-exhaustive set of additional “best practices” that you may find helpful.\n\nNever Edit Raw Data\nFirst and foremost, it is critical that you never edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a separate file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.\n\n\nSeparate Raw and Processed Data\nIn the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.\n\n\nQuarantine External Outputs\nThis can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#reproducible-coding",
-    "href": "mod_reproducibility.html#reproducible-coding",
-    "title": "Reproducibility Best Practices",
-    "section": "Reproducible Coding",
-    "text": "Reproducible Coding\nNow that you’ve organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project’s worth of R code found that 74% of the associated R files failed to complete without error (Trisovic et al. 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.\n\nWhen your scripts are clear and reproducibly-written you will reap the following benefits:\n\nReturning to your code after having set it down for weeks/months is much simpler\nCollaborating with team members requires less verbal explanation\nSharing methods for external result validation is more straightforward\nIn cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy\n\n\nPackages, Namespacing, and Software Versions\nAn under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script and the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions is not sustainable but recording key information can help users set up the code environment that does work for your project.\n\nLoad Libraries Explicitly\nIt is important to load libraries at the start of every script. In some languages (like Python) this step is required but in others (like R) this step is technically “optional” but disastrous to skip. It is safe to skip including the installation step in your code because the library step should tell code-literate users which packages they need to install.\nFor instance you might begin each script with something like:\n# Load needed libraries\nlibrary(dplyr); library(magrittr); library(ggplot2)\n\n# Get to actual work\n. . .\nIn R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way thus lets everyone reading the code know exactly which packages they will need to have installed.\nIf you are feeling generous you could use the librarian R package to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:\n# Load `librarian` package\nlibrary(librarian)\n\n# Install missing packages and load needed libraries\nshelf(dplyr, magrittr, ggplot2)\n\n# Get to actual work\n. . .\n\n\nFunction Namespacing\nIt is also strongly recommended to “namespace” functions everywhere you use them. In R this is technically optional but it is a really good practice to adopt, particularly for functions that may appear in multiple packages with the same name but do very different operations depending on their source. In R the ‘namespacing operator’ is two colons.\n# Use the `mutate` function from the `dplyr` package\ndplyr::mutate(. . .)\nAn ancillary benefit of namespacing is that namespaced functions don’t need to have their respective libraries loaded. Still good practice to load the library though!\n\n\nPackage Versions\nWhile working on a project you should use the latest version of every needed package. However, as you prepare to publish or otherwise publicize your code, you’ll need to record package versions. R provides the sessionInfo function (from the utils package included in “base” R) which neatly summarizes some high level facets of your code environment. Note that for this method to work you’ll need to actually run the library-loading steps of your scripts.\nFor more in-depth records of package versions and environment preservation–in R–you might also consider the renv package or the packrat package.\n\n\n\nScript Organization\nEvery change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!\nYou may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).\n\n\nFile Paths\nWhen importing inputs or exporting outputs we need to specify “file paths”. These are the set of folders between where your project is ‘looking’ and where the input/output should come from/go. The figure from Trisovic et al. (2022) shows that file path and working directory errors are a substantial barrier to code that can be re-run in clean coding environments. Consider the following ways of specifying file paths from least to most reproducible.\n\nWorstBadBetterBest!\n\n\n\nAbsolute Paths\nThe worst way of specifying a file path is to use the “absolute” file path. This is the path from the root of your computer to a given file. There are many issues here but the primary one is that absolute paths only work for one computer! Given that only one person can even run lines of code that use absolute paths, it’s not really worth specifying the other issues.\n\n\nExample\n# Read in bee community data\nmy_df &lt;- read.csv(file = \"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)/Data/bees.csv\")\n\n\n\n\nManually Setting the Working Directory\nMarginally better than using the absolute path is to set the working directory to some location. This may look neater than the absolute path option but it actually has the same point of failure: Both methods only work for one computer!\n\n\nExample\n# Set working directory\nsetwd(dir = \"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)\")\n\n# Read in bee community data\nmy_df &lt;- read.csv(file = \"Data/bees.csv\")\n\n\n\n\nRelative Paths\nInstead of using absolute paths or manually setting the working directory you can use “relative” file paths! Relative paths assume all project content lives in the same folder.\nThis is a safe assumption because it is the most fundamental tenet of reproducible project organization! The strength of relative paths is actually a serious contributing factor for why it is good practice to use a single folder.\n\n\nExample\n# Read in bee community data\n1my_df &lt;- read.csv(file = \"Data/bees.csv\")\n\n1\n\nParts of file path specific to each user are automatically recognized by the computer\n\n\n\n\n\n\nOperating System-Flexible Relative Paths\nThe “better” example is nice but has a serious limitation: it hard coded the type of slash between file path elements. This means that only computers of the same operating system as the code author could run that line.\nWe can use functions to automatically detect and insert the correct slashes though!\n\n\nExample\n# Read in bee community data\nmy_df &lt;- read.csv(file = file.path(\"Data\", \"bees.csv\"))\n\n\n\n\n\n\nCode Style\nWhen it comes to code style, the same ‘rule of thumb’ applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! That said, there are a few principles worth adopting if you have not already done so.\n\nUse concise and descriptive object names\n\nIt can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.\n\nDon’t be afraid of empty space!\n\nScripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.\n\n\n\nCode Comments\nA “comment” in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so when in doubt: add more comments!\nThere are two major strategies for comments and either or both might make sense for your project.\n\n“What” Comments\nComments describe what the code is doing.\n\nBenefits: allows team members to understand workflow without code literacy\nRisks: rationale for code not explicit\n\n# Remove all pine trees from dataset\nno_pine_df &lt;- dplyr::filter(full_df, genus != \"Pinus\")\n\n\n“Why” Comments\nComments describe rationale and/or context for code.\n\nBenefits: built-in documentation for team decisions\nRisks: assumes everyone can read code\n\n# Cone-bearing plants are not comparable with other plants in dataset\nno_pine_df &lt;- dplyr::filter(full_df, genus != \"Pinus\")\n\n\n\n\n\n\nDiscussion: Comment on Comments\n\n\n\nWith a partner discuss the following questions:\n\nWhen you write comments, do you focus more on the “what” or the “why”?\nWhat would you estimate is the ratio of code to comment lines in your code?\n\n1:1 being every code line has one comment line\n\nIf you have revisited old code, were your comments helpful?\n\nHow could you make them more helpful?\n\nIn what ways do you think you would need to change your commenting style for a team project?\n\n\n\n\n\n\n\n\n\nActivity: Make Comments\n\n\n\nRevisit a script from an old project (ideally one you haven’t worked on recently). Once you’ve opened the script:\n\nScan through the script\n\nCan you identify the main purpose(s) of the code?\n\nIdentify any areas where you’re not sure either (A) what the code is doing or (B) why that section of code exists\n\nAdd comments to these areas to document what they’re up to\n\nShare the commented version of one of these trouble areas with a partner\n\nDo they understand the what and/or why of your code?\nIf not, revise the comments and repeat\n\n\n\n\n\n\n\nConsider Custom Functions\nIn most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.\nInstead of taking this copy/paste approach, you could consider writing a “custom” function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.\n\nFunction Recommendations\nWe have the following ‘rules of thumb’ for custom function use:\n- If a given operation is duplicated 3 or more times within a project, write a custom function\nFunctions written in this case can be extremely specific and–though documentation is always a good idea–can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won’t be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation post hoc.\n- Write functions defensively\nWhen you write custom functions, it is really valuable to take the time to write them defensively. In this context, “defensively” means that you anticipate likely errors and write your own informative/human readable error messages. Let’s consider a simplified version of a function from the ltertools R package for calculating the coefficient of variation (CV).\nThe coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given a non-number you get the following warning message: “In mean.default(x =”…“) : argument is not numeric or logical: returning NA”.\nSomeone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.\ncv &lt;- function(x){\n  \n  # Error out if x is not numeric\n  if(is.numeric(x) != TRUE)\n    stop(\"`x` must be numeric\")\n  \n  # Calculate CV\n  sd(x = x) / mean(x = x)\nThe key to defensive programming is to try to get functions to fail fast and fail informatively as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and–for complex functions–can save a ton of useless processing time when failure is guaranteed at a later step.\n- If a given operation is duplicated 3 or more times across projects, consider creating an R package\nCreating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function’s script for each project that needs the tool.\nHadley Wickham and Jenny Bryan have written a free digital book on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.\nIf you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#fair-care-data-principles",
-    "href": "mod_reproducibility.html#fair-care-data-principles",
-    "title": "Reproducibility Best Practices",
-    "section": "FAIR & CARE Data Principles",
-    "text": "FAIR & CARE Data Principles\nData availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These ‘synthesis data products’ can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.\n\nFAIR\nFAIR is an acronym for Findable Accessible Interpoerable and Reusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take throughout the lifecycle of your project to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is–in some ways–dependent upon how thoroughly you consider these actions.\nConsider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider–even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the ‘actual’ data but for ease of reference we will call both of these resources “data.”\n\nFindability\n\nEnsure that data have a globally unique and persistent identifier\nCompletely fill out all metadata details\nRegister/index data in a searchable resource\n\nAccessibility\n\nStore data in a file format that is open, free, and universally implementable (e.g., CSV rather than MS Excel, etc.)\nEnsure that metadata will be available even if the data they describe are not\n\nInteroperability\n\nUse formal, shared, and broadly applicable language for knowledge representation\n\nThis can mean using full species names rather than codes or shorthand that may not be widely known\n\nUse vocabularies that are broadly used and that themselves follow FAIR principles\nInclude explicit references to other FAIR data\n\nReusability\n\nDescribe your data with rich detail that covers a plurality of relevant attributes\nAttach a clear data usage license so that secondary data users know how they are allowed to use your data\nInclude detailed provenance information about your data\nEnsure that your data meet discipline-specific community standards\n\n\n\n\n\n\n\nDiscussion: Consider Data FAIRness\n\n\n\nConsider the first data chapter of your thesis or dissertation. On a scale of 1-5, how FAIR do you think your data and metadata are? What actions could you take to make your data more FAIR compliant? If it helps, feel free to rate your (meta)data based on each FAIR criterion separately!\nFeel free to use these questions to guide your thinking\n\nHow are the data for that project stored?\nWhat metadata exists to document those data?\nHow easy would it be for someone in your lab group to pick up and use your data?\nHow easy would it be for someone not in your lab group?\n\n\n\n\n\nCARE\nWhile making data and code more FAIR is often a good ideal the philosophy behind those four criteria come from a perspective that emphasizes data sharing as a good in and of itself. This approach can ignore historical context and contemporary power differentials and thus be insufficient as the sole tool to use in evaluating how data/code are shared and stored. The Global Indigenous Data Alliance (GIDA) created the CARE principles with these ethical considerations explicitly built into their tenets. Before making your data widely available and transparent (ideally before even beginning your research), it is crucial to consider this ethical dimension.\n\nCARE stands for Collective Benefit, Authority to Control, Responsibility, and Ethics. Ensuring that your data meet these criteria helps to advance Indigenous data sovereignty and respects those who have been–and continue to be–collecting knowledge about the world around us for millennia. The following actions are adapted from Jennings et al. 2023 (linked at the bottom of this page).\nCollective Benefit\n\nDemonstrate how your research and its potential results are relevant and of value to the interests of the community at large and its individual members\nInclude and value local community experts in the research team\nUse classifications and categories in ways defined by Indigenous communities and individuals\nDisaggregate large geographic scale data to increase relevance for place-specific Indigenous priorities\nCompensate community experts throughout the research process (proposal development through to community review of pre-publication manuscripts)\n\nAuthority to Control\n\nEstablish institutional principles or protocoles that explicitly recognize Indigenous Peoples’ rights to and interests in their knowledges/data\nEnsure data collection and distribution are consistent with individual and community consent provisions and that consent is ongoing (including the right to withdraw or refuse)\nEnsure Indigenous communities have access to the (meta)data in usable format\n\nResponsibility\n\nCreate and expand opportunities for community capacity\nRecord the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata\nEnsure review of draft publications before publication\nUse the languages of Indigenous Peoples in the (meta)data\n\nEthics\n\nAccess research using Indigenous ethical frameworks\nUse community-defined review processes with appropriate reviewers for activities delineated in data management plans\nWork to maximize benefits from the perspectives of Indigenous Peoples by clear and transparent dialogue with communities and individuals\nEngage with community guidelines for the use and reuse of data (including facilitating data removal and/or disposal requests from aggregated datasets)",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#reproducibility-best-practices-summary",
-    "href": "mod_reproducibility.html#reproducibility-best-practices-summary",
-    "title": "Reproducibility Best Practices",
-    "section": "Reproducibility Best Practices Summary",
-    "text": "Reproducibility Best Practices Summary\nMaking sure that your project is reproducible requires a handful of steps before you begin, some actions during the life of the project, and then a few finishing touches when the project nears its conclusion. The following diagram may prove helpful as a coarse roadmap for how these steps might be followed in a general project setting.",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_reproducibility.html#additional-resources",
-    "href": "mod_reproducibility.html#additional-resources",
-    "title": "Reproducibility Best Practices",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nA Large-Scale Study on Research Code Quality and Execution. Trisovic et al., 2022. Scientific Data\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html",
-    "href": "mod_stats.html",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#overview",
-    "href": "mod_stats.html#overview",
-    "title": "Analysis & Modeling",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#learning-objectives",
-    "href": "mod_stats.html#learning-objectives",
-    "title": "Analysis & Modeling",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#module-content",
-    "href": "mod_stats.html#module-content",
-    "title": "Analysis & Modeling",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#additional-resources",
-    "href": "mod_stats.html#additional-resources",
-    "title": "Analysis & Modeling",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase II -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html",
-    "href": "mod_facilitation.html",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#overview",
-    "href": "mod_facilitation.html#overview",
-    "title": "Inclusive Facilitation",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#learning-objectives",
-    "href": "mod_facilitation.html#learning-objectives",
-    "title": "Inclusive Facilitation",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#module-content",
-    "href": "mod_facilitation.html#module-content",
-    "title": "Inclusive Facilitation",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Inclusive Facilitation"
-    ]
-  },
-  {
-    "objectID": "mod_facilitation.html#additional-resources",
-    "href": "mod_facilitation.html#additional-resources",
-    "title": "Inclusive Facilitation",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
-    "crumbs": [
-      "Phase I -- Plan",
-      "Inclusive Facilitation"
-    ]
   },
   {
     "objectID": "topic_interactivity.html#interactivity-learning-objectives",
@@ -962,13 +450,178 @@
     "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites"
   },
   {
+    "objectID": "mod_logic-models.html",
+    "href": "mod_logic-models.html",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#overview",
+    "href": "mod_logic-models.html#overview",
+    "title": "Logic Models",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#learning-objectives",
+    "href": "mod_logic-models.html#learning-objectives",
+    "title": "Logic Models",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#module-content",
+    "href": "mod_logic-models.html#module-content",
+    "title": "Logic Models",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_logic-models.html#additional-resources",
+    "href": "mod_logic-models.html#additional-resources",
+    "title": "Logic Models",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Logic Models"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html",
+    "href": "mod_team-sci.html",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#overview",
+    "href": "mod_team-sci.html#overview",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#learning-objectives",
+    "href": "mod_team-sci.html#learning-objectives",
+    "title": "Team Science Practices",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#module-content",
+    "href": "mod_team-sci.html#module-content",
+    "title": "Team Science Practices",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#additional-resources",
+    "href": "mod_team-sci.html#additional-resources",
+    "title": "Team Science Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#overview",
+    "href": "mod_reports.html#overview",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#learning-objectives",
+    "href": "mod_reports.html#learning-objectives",
+    "title": "Reproducible Reports",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#module-content",
+    "href": "mod_reports.html#module-content",
+    "title": "Reproducible Reports",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#additional-resources",
+    "href": "mod_reports.html#additional-resources",
+    "title": "Reproducible Reports",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Reproducible Reports"
+    ]
+  },
+  {
     "objectID": "mod_credit.html",
     "href": "mod_credit.html",
     "title": "Authorship & Intellectual Credit",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Intellectual Credit"
     ]
   },
@@ -979,7 +632,7 @@
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Intellectual Credit"
     ]
   },
@@ -990,7 +643,7 @@
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Intellectual Credit"
     ]
   },
@@ -1001,7 +654,7 @@
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Intellectual Credit"
     ]
   },
@@ -1012,8 +665,355 @@
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
     "crumbs": [
-      "Phase II -- Execute",
+      "Phase III -- Execute",
       "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html",
+    "href": "mod_spatial.html",
+    "title": "Spatial Data & Interactivity",
+    "section": "",
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#overview",
+    "href": "mod_spatial.html#overview",
+    "title": "Spatial Data & Interactivity",
+    "section": "",
+    "text": "Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#spatial-learning-objectives",
+    "href": "mod_spatial.html#spatial-learning-objectives",
+    "title": "Spatial Data & Interactivity",
+    "section": "Spatial Learning Objectives",
+    "text": "Spatial Learning Objectives\nAfter completing this topic you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#topic-content",
+    "href": "mod_spatial.html#topic-content",
+    "title": "Spatial Data & Interactivity",
+    "section": "Topic Content",
+    "text": "Topic Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#additional-spatial-resources",
+    "href": "mod_spatial.html#additional-spatial-resources",
+    "title": "Spatial Data & Interactivity",
+    "section": "Additional Spatial Resources",
+    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#interactivity",
+    "href": "mod_spatial.html#interactivity",
+    "title": "Spatial Data & Interactivity",
+    "section": "Interactivity",
+    "text": "Interactivity",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#interactivity-learning-objectives",
+    "href": "mod_spatial.html#interactivity-learning-objectives",
+    "title": "Spatial Data & Interactivity",
+    "section": "Interactivity Learning Objectives",
+    "text": "Interactivity Learning Objectives\nAfter completing this topic you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#topic-content-1",
+    "href": "mod_spatial.html#topic-content-1",
+    "title": "Spatial Data & Interactivity",
+    "section": "Topic Content",
+    "text": "Topic Content",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#additional-interactivity-resources",
+    "href": "mod_spatial.html#additional-interactivity-resources",
+    "title": "Spatial Data & Interactivity",
+    "section": "Additional Interactivity Resources",
+    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase IV -- Conclude",
+      "Spatial Data & Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html",
+    "href": "mod_data-viz.html",
+    "title": "Data Visualization & Exploration",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#overview",
+    "href": "mod_data-viz.html#overview",
+    "title": "Data Visualization & Exploration",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#learning-objectives",
+    "href": "mod_data-viz.html#learning-objectives",
+    "title": "Data Visualization & Exploration",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#module-content",
+    "href": "mod_data-viz.html#module-content",
+    "title": "Data Visualization & Exploration",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#additional-resources",
+    "href": "mod_data-viz.html#additional-resources",
+    "title": "Data Visualization & Exploration",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#overview",
+    "href": "mod_stats.html#overview",
+    "title": "Analysis & Modeling",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#learning-objectives",
+    "href": "mod_stats.html#learning-objectives",
+    "title": "Analysis & Modeling",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#module-content",
+    "href": "mod_stats.html#module-content",
+    "title": "Analysis & Modeling",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#additional-resources",
+    "href": "mod_stats.html#additional-resources",
+    "title": "Analysis & Modeling",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#accessing-course-materials",
+    "href": "CONTRIBUTING.html#accessing-course-materials",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#project-management",
+    "href": "CONTRIBUTING.html#project-management",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#style-guide",
+    "href": "CONTRIBUTING.html#style-guide",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#overview",
+    "href": "mod_data-disc.html#overview",
+    "title": "Data Discovery & Management",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#learning-objectives",
+    "href": "mod_data-disc.html#learning-objectives",
+    "title": "Data Discovery & Management",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nX …",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#module-content",
+    "href": "mod_data-disc.html#module-content",
+    "title": "Data Discovery & Management",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
+    "objectID": "mod_data-disc.html#additional-resources",
+    "href": "mod_data-disc.html#additional-resources",
+    "title": "Data Discovery & Management",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
     ]
   }
 ]
