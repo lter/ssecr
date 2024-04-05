@@ -22,7 +22,7 @@ website:
     contents:
       - text: "Course Overview"
         href: index.qmd
-      - section: "Phase I -- Plan"
+      - section: "Phase I -- Prepare"
         contents:
             - text: "Reproducibility"
               href: mod_reproducibility.qmd
@@ -32,14 +32,16 @@ website:
               href: mod_data-disc.qmd
             - text: "Team Science"
               href: mod_team-sci.qmd
+      - section: "Phase II -- Plan"
+        contents:
             - text: "Inclusive Facilitation"
               href: mod_facilitation.qmd
-      - section: "Phase II -- Execute"
-        contents:
             - text: "Data Visualization"
               href: mod_data-viz.qmd
             - text: "Supporting D.E.C. Thinking"
               href: mod_thinking.qmd
+      - section: "Phase III -- Execute"
+        contents:
             - text: "Data Wrangling"
               href: mod_wrangle.qmd
             - text: "Intellectual Credit"
@@ -48,7 +50,7 @@ website:
               href: mod_stats.qmd
             - text: "Project Management"
               href: mod_project-mgmt.qmd
-      - section: "Phase III -- Finish"
+      - section: "Phase IV -- Conclude"
         contents:
             - text: "Logic Models"
               href: mod_logic-models.qmd
