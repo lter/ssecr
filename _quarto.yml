@@ -18,27 +18,11 @@ website:
     background: "light"
     border: true
     alignment: left
-    collapse-level: 1
+    collapse-level: 2
     contents:
       - text: "Course Overview"
         href: index.qmd
-      - section: "Team Science Modules"
-        contents: 
-            - text: "Team Science"
-              href: mod_team-sci.qmd
-            - text: "Inclusive Facilitation"
-              href: mod_facilitation.qmd
-            - text: "Supporting D.E.C. Thinking"
-              href: mod_thinking.qmd
-            - text: "Intellectual Credit"
-              href: mod_credit.qmd
-            - text: "Project Management"
-              href: mod_project-mgmt.qmd
-            - text: "Logic Models"
-              href: mod_logic-models.qmd
-            - text: "Communicating Findings"
-              href: mod_findings.qmd
-      - section: "Quantitative Modules"
+      - section: "Phase I -- Plan"
         contents:
             - text: "Reproducibility"
               href: mod_reproducibility.qmd
@@ -46,14 +30,32 @@ website:
               href: mod_version-control.qmd
             - text: "Data Discovery"
               href: mod_data-disc.qmd
+            - text: "Team Science"
+              href: mod_team-sci.qmd
+            - text: "Inclusive Facilitation"
+              href: mod_facilitation.qmd
+      - section: "Phase II -- Execute"
+        contents:
             - text: "Data Visualization"
               href: mod_data-viz.qmd
+            - text: "Supporting D.E.C. Thinking"
+              href: mod_thinking.qmd
             - text: "Data Wrangling"
               href: mod_wrangle.qmd
+            - text: "Intellectual Credit"
+              href: mod_credit.qmd
             - text: "Analysis & Modeling"
               href: mod_stats.qmd
+            - text: "Project Management"
+              href: mod_project-mgmt.qmd
+      - section: "Phase III -- Finish"
+        contents:
+            - text: "Logic Models"
+              href: mod_logic-models.qmd
             - text: "Spatial Data & Interactivity"
               href: mod_spatial.qmd
+            - text: "Communicating Findings"
+              href: mod_findings.qmd
             - text: "Reproducible Reports"
               href: mod_reports.qmd
   navbar:
