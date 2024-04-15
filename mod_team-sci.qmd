@@ -28,6 +28,7 @@ After completing this module you will be able to:
 
 ### Workshops & Courses
 
+- Amelia Liberatore's [Developing a Successful Team](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p) workshop slides
 - Open Science Synthesis for the Delta Science Program's [Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html)
 - Open Science Synthesis for the Delta Science Program's [Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences)
 
