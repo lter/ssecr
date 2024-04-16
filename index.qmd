@@ -30,3 +30,12 @@ Each three-hour session will include 2 components:
     - Technical skills will build on earlier lessons and are not intended to be stand-alone modules.
 The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.
 
+## Course Policies
+
+### Artificial Intelligence Tools
+
+{{< include policy_ai.qmd >}}
+
+
+
+
