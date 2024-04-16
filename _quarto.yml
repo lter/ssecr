@@ -50,10 +50,12 @@ website:
               href: mod_credit.qmd
             - text: "Analysis & Modeling"
               href: mod_stats.qmd
-      - section: "Phase IV -- Conclude"
+      - section: "Phase IV -- Magnify"
         contents:
             - text: "Next Steps & Proposals"
               href: mod_next-steps.qmd
+      - section: "Phase V -- Share"
+        contents:
             - text: "Communicating Findings"
               href: mod_findings.qmd
             - text: "Reproducible Reports"
