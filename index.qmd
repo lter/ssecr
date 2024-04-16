@@ -17,11 +17,11 @@ If you're interested in joining the course as a student you can see the applicat
 
 The course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. The course starts with an in-person launch to establish cohort cohesion and ensure that any setup issues are resolved. Participants will pitch projects to the group and assemble a team of collaborators.The ideal configuration would be 6 project teams of 4-5 students each. Prior to the start of the course, the Network Office will recruit a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately 4-5 times per year.
 
-Course participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects. 
-
 Applicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants' own work, course mentors will make available a small library of synthesis ideas in search of execution. The in-person kickoff week will focus on cohort-building, pitching projects and assembling project teams, identifying relevant data, and getting set up on servers and collaboration tools.
 
-Participants should expect to participate in one 3-hour virtual session every-other week during the academic year. Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.
+## Course Scheduling
+
+Course participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.
 
 Each three-hour session will include 2 components:
 
@@ -29,6 +29,8 @@ Each three-hour session will include 2 components:
 2. **Instruction (~120 minutes)**: Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently. 
     - Technical skills will build on earlier lessons and are not intended to be stand-alone modules.
 The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.
+
+Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.
 
 ## Course Policies
 
