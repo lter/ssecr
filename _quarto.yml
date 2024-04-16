@@ -24,10 +24,10 @@ website:
         href: index.qmd
       - section: "Phase I -- Prepare"
         contents:
-            - text: "Reproducibility"
-              href: mod_reproducibility.qmd
             - text: "Version Control"
               href: mod_version-control.qmd
+            - text: "Reproducibility"
+              href: mod_reproducibility.qmd
             - text: "Data Discovery"
               href: mod_data-disc.qmd
             - text: "Team Science"
@@ -38,28 +38,32 @@ website:
               href: mod_facilitation.qmd
             - text: "Data Visualization"
               href: mod_data-viz.qmd
-            - text: "Supporting D.E.C. Thinking"
-              href: mod_thinking.qmd
+            - text: "Project Management"
+              href: mod_project-mgmt.qmd
       - section: "Phase III -- Execute"
         contents:
+            - text: "Supporting D.E.C. Thinking"
+              href: mod_thinking.qmd
             - text: "Data Wrangling"
               href: mod_wrangle.qmd
             - text: "Intellectual Credit"
               href: mod_credit.qmd
             - text: "Analysis & Modeling"
               href: mod_stats.qmd
-            - text: "Project Management"
-              href: mod_project-mgmt.qmd
       - section: "Phase IV -- Conclude"
         contents:
-            - text: "Logic Models"
-              href: mod_logic-models.qmd
-            - text: "Spatial Data & Interactivity"
-              href: mod_spatial.qmd
+            - text: "Next Steps & Proposals"
+              href: mod_next-steps.qmd
             - text: "Communicating Findings"
               href: mod_findings.qmd
             - text: "Reproducible Reports"
               href: mod_reports.qmd
+      - section: "Bonus Content"
+        contents:
+            - text: "Spatial Data"
+              href: mod_spatial.qmd
+            - text: "Interactivity"
+              href: mod_interactivity.qmd
   navbar:
     background: primary
     right: 

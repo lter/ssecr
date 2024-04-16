@@ -1,11 +1,35 @@
 ---
-title: "Spatial Data & Interactivity"
+title: "Working with Spatial Data"
 ---
 
 ## Overview
 
-Being able to confidently work with spatial data and use code to create interactive features are both important facets of synthesis work. However, neither fits neatly within a dedicated module and thus we have decided to combine these somewhat disparate topics into a single module.
+Under Construction
 
-{{< include topic_spatial.qmd >}}
+## Learning Objectives
 
-{{< include topic_interactivity.qmd >}}
+After completing this topic you will be able to: 
+
+- <u>Define</u> characteristics of common types of spatial data
+- <u>Manipulate</u> spatial data with R
+- <u>Integrate</u> spatial data with tabular data
+
+## Topic Content
+
+
+
+## Additional Spatial Resources
+
+### Papers & Documents
+
+- 
+
+### Workshops & Courses
+
+- The Carpentries' [Introduction to Geospatial Raster & Vector Data with R](https://datacarpentry.org/r-raster-vector-geospatial/)
+- The Carpentries' [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/index.html)
+- Arctic Data Center's [Spatial and Image Data Using GeoPandas](https://learning.nceas.ucsb.edu/2023-03-arctic/sections/geopandas.html) chapter of their Scalable Computing course
+
+### Websites
+
+- NASA's <u>App</u>lication for <u>E</u>xtracting and <u>E</u>xploring <u>A</u>nalysis <u>R</u>eady <u>S</u>amples [(AppEEARS) Portal](https://appeears.earthdatacloud.nasa.gov/)

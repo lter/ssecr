@@ -1,5 +1,5 @@
 ---
-title: "Logic Models"
+title: "Next Steps & Proposal Writing"
 ---
 
 ## Overview
@@ -10,8 +10,6 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
-- <u>Define</u> common approaches for logic models
-- <u>Identify</u> and make explicit internal logical leaps
 - <u>Identify</u> needed data and target audience(s)
 - <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
 - <u>Write</u> polished, funding-worthy proposals
