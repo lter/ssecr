@@ -58,7 +58,7 @@ website:
               href: mod_findings.qmd
             - text: "Reproducible Reports"
               href: mod_reports.qmd
-      - section: "Bonus Content"
+      - section: "Bonus Modules"
         contents:
             - text: "Spatial Data"
               href: mod_spatial.qmd
