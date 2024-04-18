@@ -10,18 +10,6 @@ Now that we have covered how to find data and use data visualization methods to 
 
 - <u>"Wrangling" = all modifications to data meant to create an analysis-ready 'tidy' data object</u>. This includes quality control, unit conversions, and data 'shape' changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) _also falls into this category!_
 
-If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
-
-```{r install-pkgs}
-#| eval: false
-
-# Note that these lines only need to be run once per computer
-## So you can skip this step if you've *ever* installed these before
-install.packages("ltertools")
-install.packages("lterdatasampler")
-install.packages("psych")
-```
-
 ## Learning Objectives
 
 After completing this module you will be able to: 
@@ -36,6 +24,22 @@ After completing this module you will be able to:
 - <u>Explain</u> benefits and drawbacks of using data shape to streamline code
 - <u>Design</u> a complete data wrangling workflow
 
+## Needed Packages
+
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've installed these before
+install.packages("ltertools")
+install.packages("lterdatasampler")
+install.packages("psych")
+install.packages("supportR")
+install.packages("tidyverse")
+```
+
 ## Harmonizing Data
 
 Data harmonization is an interesting topic in that it is _vital_ for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.
@@ -48,7 +52,7 @@ The column key requires three columns:
 2. "raw_name" -- Name of all raw columns in that file to be synonymized
 3. "tidy_name" -- New name for each raw column that should be carried to the harmonized data
 
-Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the [`ltertools` package vignette](https://lter.github.io/ltertools/articles/ltertools.html). For convenience, we're attaching the visual diagram of this method of harmonization included in the `ltertools` vignette below.
+Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the `ltertools` [package vignette](https://lter.github.io/ltertools/articles/ltertools.html). For convenience, we're attaching the visual diagram of this method of harmonization from the package vignette.
 
 <p align="center">
 <img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
@@ -119,16 +123,58 @@ You may have encountered the phrase "QA/QC" (<u>Q</u>uality <u>A</u>ssurance / <
 
 In synthesis work, QA is only very rarely an option. You'll be working with datasets that have already been collected and attempting to handle any issues _post hoc_ which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be **incredibly** time-consuming so using a programming language (like {{< fa brands r-project >}} R or {{< fa brands python >}} Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.
 
+#### Number Checking
 
-`suppportR::num_check`
+When you read in a dataset and a column that _should be_ numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to 'NA' where a human might be able to deduce the true number each value 'should be.'
 
-#### Regular Expressions & Text Methods
+```{r num-check}
+# Load the supportR package
+library(supportR)
 
-`gsub`
+# Create an example dataset with non-numbers in ideally numeric columns
+faux_df <- data.frame("species" = c("salmon", "bass", "halibut", "eel"),
+                      "count" = c(1, "14x", "_23", 12))
 
-`stringr::str_sub`
+# Check for malformed numbers in column(s) that should be numeric
+bad_nums <- supportR::num_check(data = faux_df, col = "count")
+```
 
+In the above example, "14x" would be coerced to NA if you simply force the column without checking but you could drop the "x" with text replacing methods once you use tools like this one to flag it for your attention.
 
+#### Text Replacement
+
+One of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.
+
+```{r text-replace}
+# Use pattern match/replace to simplify problem entries
+faux_df$count <- gsub(pattern = "x|_", replacement = "", x = faux_df$count)
+
+# Check that they are fixed
+bad_nums <- supportR::num_check(data = faux_df, col = "count")
+```
+
+The vertical line in the `gsub` example above lets us search for (and replace) multiple patterns. Note however that while you can search for many patterns at once, only a single replacement value can be provided with this function.
+
+#### Regular Expressions
+
+You may sometimes want to perform more generic string matching where you don't necessarily know--or want to list--all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. "Regular expressions" are how programmers specify these generic matches and using them can be a nice way of streamlining code.
+
+```{r}
+# Make a test vector
+regex_vec <- c("hello", "123", "goodbye", "456")
+
+# Find all numbers and replace with the letter X
+gsub(pattern = "[[:digit:]]", replacement = "x", x = regex_vec)
+
+# Replace any number of letters with only a single 0
+gsub(pattern = "[[:alpha:]]+", replacement = "0", x = regex_vec)
+```
+
+### Conditionals
+
+`dplyr::case_when`
+
+`ifelse`
 
 ### Custom Functions
 
