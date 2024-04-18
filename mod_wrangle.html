@@ -367,11 +367,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
   <li><a href="#wrangling-data" id="toc-wrangling-data" class="nav-link" data-scroll-target="#wrangling-data">Wrangling Data</a>
   <ul class="collapse">
   <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
   <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control">Quality Control</a></li>
+  <li><a href="#conditionals" id="toc-conditionals" class="nav-link" data-scroll-target="#conditionals">Conditionals</a></li>
   <li><a href="#custom-functions" id="toc-custom-functions" class="nav-link" data-scroll-target="#custom-functions">Custom Functions</a></li>
   <li><a href="#uniting-separating-columns" id="toc-uniting-separating-columns" class="nav-link" data-scroll-target="#uniting-separating-columns">Uniting / Separating Columns</a></li>
   <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data">Joining Data</a></li>
@@ -412,19 +414,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/logistical arenas. To make those definitions explicit:</p>
+<p>Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:</p>
 <ul>
 <li><p><u>“Harmonization” = process of combining separate primary data objects into one object</u>. This includes things like synonymizing columns, or changing data format to support combination. This <em>excludes</em> quality control steps–even those that are undertaken before harmonization begins.</p></li>
 <li><p><u>“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object</u>. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) <em>also falls into this category!</em></p></li>
 </ul>
-<p>If you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've *ever* installed these before</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ltertools"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lterdatasampler"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
@@ -441,6 +435,19 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><u>Design</u> a complete data wrangling workflow</li>
 </ul>
 </section>
+<section id="needed-packages" class="level2">
+<h2 class="anchored" data-anchor-id="needed-packages">Needed Packages</h2>
+<p>If you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've installed these before</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ltertools"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lterdatasampler"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"supportR"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 <section id="harmonizing-data" class="level2">
 <h2 class="anchored" data-anchor-id="harmonizing-data">Harmonizing Data</h2>
 <p>Data harmonization is an interesting topic in that it is <em>vital</em> for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.</p>
@@ -451,7 +458,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li>“raw_name” – Name of all raw columns in that file to be synonymized</li>
 <li>“tidy_name” – New name for each raw column that should be carried to the harmonized data</li>
 </ol>
-<p>Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the <a href="https://lter.github.io/ltertools/articles/ltertools.html"><code>ltertools</code> package vignette</a>. For convenience, we’re attaching the visual diagram of this method of harmonization included in the <code>ltertools</code> vignette below.</p>
+<p>Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the <code>ltertools</code> <a href="https://lter.github.io/ltertools/articles/ltertools.html">package vignette</a>. For convenience, we’re attaching the visual diagram of this method of harmonization from the package vignette.</p>
 <p align="center">
 <img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
 </p>
@@ -545,12 +552,64 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="quality-control">Quality Control</h3>
 <p>You may have encountered the phrase “QA/QC” (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality assurance only encapsulates <em>preventative</em> measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors <em>after</em> data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.</p>
 <p>In synthesis work, QA is only very rarely an option. You’ll be working with datasets that have already been collected and attempting to handle any issues <em>post hoc</em> which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be <strong>incredibly</strong> time-consuming so using a programming language (like <i class="fa-brands fa-r-project" aria-label="r-project"></i> R or <i class="fa-brands fa-python" aria-label="python"></i> Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.</p>
-<p><code>suppportR::num_check</code></p>
-<section id="regular-expressions-text-methods" class="level4">
-<h4 class="anchored" data-anchor-id="regular-expressions-text-methods">Regular Expressions &amp; Text Methods</h4>
-<p><code>gsub</code></p>
-<p><code>stringr::str_sub</code></p>
+<section id="number-checking" class="level4">
+<h4 class="anchored" data-anchor-id="number-checking">Number Checking</h4>
+<p>When you read in a dataset and a column that <em>should be</em> numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to ‘NA’ where a human might be able to deduce the true number each value ‘should be.’</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>faux_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">12</span>))</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> faux_df, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>For 'count', 2 non-numbers identified: '14x' | '_23'</code></pre>
+</div>
+</div>
+<p>In the above example, “14x” would be coerced to NA if you simply force the column without checking but you could drop the “x” with text replacing methods once you use tools like this one to flag it for your attention.</p>
 </section>
+<section id="text-replacement" class="level4">
+<h4 class="anchored" data-anchor-id="text-replacement">Text Replacement</h4>
+<p>One of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>faux_df<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> faux_df<span class="sc">$</span>count)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> faux_df, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>For 'count', no non-numeric values identified.</code></pre>
+</div>
+</div>
+<p>The vertical line in the <code>gsub</code> example above lets us search for (and replace) multiple patterns. Note however that while you can search for many patterns at once, only a single replacement value can be provided with this function.</p>
+</section>
+<section id="regular-expressions" class="level4">
+<h4 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h4>
+<p>You may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "hello"   "xxx"     "goodbye" "xxx"    </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0"   "123" "0"   "456"</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="conditionals" class="level3">
+<h3 class="anchored" data-anchor-id="conditionals">Conditionals</h3>
+<p><code>dplyr::case_when</code></p>
+<p><code>ifelse</code></p>
 </section>
 <section id="custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
