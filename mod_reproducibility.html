@@ -366,11 +366,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#lego-activity" id="toc-lego-activity" class="nav-link" data-scroll-target="#lego-activity">Lego Activity</a></li>
-  <li><a href="#project-organization-documentation" id="toc-project-organization-documentation" class="nav-link" data-scroll-target="#project-organization-documentation">Project Organization &amp; Documentation</a>
+  <li><a href="#project-documentation-organization" id="toc-project-documentation-organization" class="nav-link" data-scroll-target="#project-documentation-organization">Project Documentation &amp; Organization</a>
   <ul class="collapse">
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
   <li><a href="#fundamental-structure" id="toc-fundamental-structure" class="nav-link" data-scroll-target="#fundamental-structure">Fundamental Structure</a></li>
   <li><a href="#organizing-example" id="toc-organizing-example" class="nav-link" data-scroll-target="#organizing-example">Organizing Example</a></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
   <li><a href="#organization-recommendations" id="toc-organization-recommendations" class="nav-link" data-scroll-target="#organization-recommendations">Organization Recommendations</a></li>
   </ul></li>
   <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a>
@@ -441,9 +441,39 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="lego-activity">Lego Activity</h2>
 <p>Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO activity was designed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a> at the University of Glasgow. The full materials can be accessed <a href="https://eprints.gla.ac.uk/196477/">here</a>.</p>
 </section>
-<section id="project-organization-documentation" class="level2">
-<h2 class="anchored" data-anchor-id="project-organization-documentation">Project Organization &amp; Documentation</h2>
+<section id="project-documentation-organization" class="level2">
+<h2 class="anchored" data-anchor-id="project-documentation-organization">Project Documentation &amp; Organization</h2>
 <p>Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a project that isn’t reproducible. On the other hand, “bad” code can be made more intelligible when it is placed in a well-documented/organized project!</p>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<p>Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a “README” file in the top-level of your project’s folder system. This file can be formatted however you’d like but generally READMEs should include:</p>
+<ol type="1">
+<li>Project overview written in plain language</li>
+<li>Basic table of contents for the primary folders in your project folder</li>
+<li>Brief description of the file naming scheme you’ve adopted for this project.</li>
+</ol>
+<p>Your project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.</p>
+<p>Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the <a href="https://lter.github.io/ssecr/mod_version-control.html">Version Control module</a> but GitHub offers something called <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html">Issues</a> that can be a really effective place to record some of this information.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Create a README
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.</p>
+<ul>
+<li>Include a 2-4 sentence description of the project objectives / hypotheses</li>
+<li>Identify and describe (in 1 sentence) the primary sub-folders in the project</li>
+<li>If your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them</li>
+</ul>
+<p>Feel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.</p>
+</div>
+</div>
+</section>
 <section id="fundamental-structure" class="level3">
 <h3 class="anchored" data-anchor-id="fundamental-structure">Fundamental Structure</h3>
 <p><img src="images/comic_xkcd-folders.png" alt="One stick figure looks in despair at anther's computer where many badly named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right"></p>
@@ -604,36 +634,6 @@ Discussion: Project Structure
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="documentation" class="level3">
-<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
-<p>Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a “README” file in the top-level of your project’s folder system. This file can be formatted however you’d like but generally READMEs should include:</p>
-<ol type="1">
-<li>Project overview written in plain language</li>
-<li>Basic table of contents for the primary folders in your project folder</li>
-<li>Brief description of the file naming scheme you’ve adopted for this project.</li>
-</ol>
-<p>Your project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.</p>
-<p>Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the <a href="https://lter.github.io/ssecr/mod_version-control.html">Version Control module</a> but GitHub offers something called <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html">Issues</a> that can be a really effective place to record some of this information.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Activity: Create a README
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Create a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.</p>
-<ul>
-<li>Include a 2-4 sentence description of the project objectives / hypotheses</li>
-<li>Identify and describe (in 1 sentence) the primary sub-folders in the project</li>
-<li>If your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them</li>
-</ul>
-<p>Feel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.</p>
 </div>
 </div>
 </section>
