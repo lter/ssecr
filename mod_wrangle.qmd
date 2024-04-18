@@ -10,6 +10,18 @@ Now that we have covered how to find data and use data visualization methods to 
 
 - <u>"Wrangling" = all modifications to data meant to create an analysis-ready 'tidy' data object</u>. This includes quality control, unit conversions, and data 'shape' changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) _also falls into this category!_
 
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've *ever* installed these before
+install.packages("ltertools")
+install.packages("lterdatasampler")
+install.packages("psych")
+```
+
 ## Learning Objectives
 
 After completing this module you will be able to: 
@@ -44,23 +56,77 @@ Note that any raw names either not included in the column key or that lack a tid
 
 ## Wrangling Data
 
+Data wrangling is a _huge_ subject that covers a wide range of topics. In this part of the module, we'll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you'll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice 'jumping off' point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.
+
+This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module.
+
+This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site.
+
+
+```{r prep}
+#| message: false
+#| warning: false
+
+# Load the lterdatasampler package
+library(lterdatasampler)
+
+# Load the fiddler crab dataset
+data(pie_crab)
+```
+
+### Exploring the Data
+
+Before beginning any code operations, it's important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.
+
+Checking the data structure is one way of getting a lot of this high-level information.
+
+```{r structure}
+# Check dataset structure
+str(pie_crab)
+```
+
+For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you'll need to find that information elsewhere.
+
+```{r summary}
+# Get a simple summary of the data
+summary(pie_crab)
+```
+
+For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.
+
+```{r sort-unique}
+# Look at the sites included in the data
+sort(unique(pie_crab$site))
+```
+
+For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the 'base' packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.
+
+```{r multi-hist}
+#| fig-align: center
+#| fig-width: 4
+#| fig-height: 3
+
+# Load the psych library
+library(psych)
+
+# Get the histogram of crab "size" (carapace width in mm)
+psych::multi.hist(pie_crab$size)
+```
+
 ### Quality Control
 
-`summary`
+You may have encountered the phrase "QA/QC" (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality assurance only encapsulates _preventative_ measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors _after_ data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.
 
-`sort(unique())`
+In synthesis work, QA is only very rarely an option. You'll be working with datasets that have already been collected and attempting to handle any issues _post hoc_ which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be **incredibly** time-consuming so using a programming language (like {{< fa brands r-project >}} R or {{< fa brands python >}} Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.
 
-`psych::multi.hist`
 
 `suppportR::num_check`
 
-### Text Methods
+#### Regular Expressions & Text Methods
 
 `gsub`
 
 `stringr::str_sub`
-
-### Regular Expressions
 
 
 
