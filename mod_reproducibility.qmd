@@ -22,9 +22,34 @@ After completing this module you will be able to:
 
 Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we'll cover today. The LEGO activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).
 
-## Project Organization & Documentation
+## Project Documentation & Organization
 
 Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. "Perfect" code in a project that isn't structured thoughtfully can still result in a project that isn't reproducible. On the other hand, "bad" code can be made more intelligible when it is placed in a well-documented/organized project!
+
+### Documentation
+
+Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include:
+
+1. Project overview written in plain language
+2. Basic table of contents for the primary folders in your project folder
+3. Brief description of the file naming scheme you've adopted for this project.
+
+Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
+
+Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the [Version Control module](https://lter.github.io/ssecr/mod_version-control.html) but GitHub offers something called [Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) that can be a really effective place to record some of this information.
+
+:::{.callout-note icon="false"}
+#### Activity: Create a README
+
+Create a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.
+
+- Include a 2-4 sentence description of the project objectives / hypotheses
+- Identify and describe (in 1 sentence) the primary sub-folders in the project
+- If your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them
+
+Feel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.
+
+:::
 
 ### Fundamental Structure
 
@@ -181,31 +206,6 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 
 :::
 ::::
-
-:::
-
-### Documentation
-
-Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include:
-
-1. Project overview written in plain language
-2. Basic table of contents for the primary folders in your project folder
-3. Brief description of the file naming scheme you've adopted for this project.
-
-Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
-
-Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the [Version Control module](https://lter.github.io/ssecr/mod_version-control.html) but GitHub offers something called [Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) that can be a really effective place to record some of this information.
-
-:::{.callout-note icon="false"}
-#### Activity: Create a README
-
-Create a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.
-
-- Include a 2-4 sentence description of the project objectives / hypotheses
-- Identify and describe (in 1 sentence) the primary sub-folders in the project
-- If your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them
-
-Feel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.
 
 :::
 
