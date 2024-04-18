@@ -159,7 +159,7 @@ The vertical line in the `gsub` example above lets us search for (and replace) m
 
 You may sometimes want to perform more generic string matching where you don't necessarily know--or want to list--all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. "Regular expressions" are how programmers specify these generic matches and using them can be a nice way of streamlining code.
 
-```{r}
+```{r regex}
 # Make a test vector
 regex_vec <- c("hello", "123", "goodbye", "456")
 
