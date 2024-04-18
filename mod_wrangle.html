@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -42,6 +76,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -334,9 +370,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
   <li><a href="#wrangling-data" id="toc-wrangling-data" class="nav-link" data-scroll-target="#wrangling-data">Wrangling Data</a>
   <ul class="collapse">
+  <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
   <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control">Quality Control</a></li>
-  <li><a href="#text-methods" id="toc-text-methods" class="nav-link" data-scroll-target="#text-methods">Text Methods</a></li>
-  <li><a href="#regular-expressions" id="toc-regular-expressions" class="nav-link" data-scroll-target="#regular-expressions">Regular Expressions</a></li>
   <li><a href="#custom-functions" id="toc-custom-functions" class="nav-link" data-scroll-target="#custom-functions">Custom Functions</a></li>
   <li><a href="#uniting-separating-columns" id="toc-uniting-separating-columns" class="nav-link" data-scroll-target="#uniting-separating-columns">Uniting / Separating Columns</a></li>
   <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data">Joining Data</a></li>
@@ -382,6 +417,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><p><u>“Harmonization” = process of combining separate primary data objects into one object</u>. This includes things like synonymizing columns, or changing data format to support combination. This <em>excludes</em> quality control steps–even those that are undertaken before harmonization begins.</p></li>
 <li><p><u>“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object</u>. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) <em>also falls into this category!</em></p></li>
 </ul>
+<p>If you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've *ever* installed these before</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ltertools"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lterdatasampler"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
@@ -389,9 +432,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ul>
 <li><u>Identify</u> typical steps in data harmonization and wrangling workflows</li>
 <li><u>Create</u> a harmonization workflow</li>
-<li></li>
-<li></li>
-<li></li>
+<li><u>Define</u> quality control</li>
+<li><u>Summarize</u> typical operations in a quality control workflow</li>
+<li><u>Use</u> regular expressions to perform flexible text operations</li>
+<li><u>Write</u> custom functions to reduce code duplication</li>
+<li><u>Identify</u> value of and typical obstacles to data ‘joining’</li>
+<li><u>Explain</u> benefits and drawbacks of using data shape to streamline code</li>
+<li><u>Design</u> a complete data wrangling workflow</li>
 </ul>
 </section>
 <section id="harmonizing-data" class="level2">
@@ -411,20 +458,99 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="wrangling-data" class="level2">
 <h2 class="anchored" data-anchor-id="wrangling-data">Wrangling Data</h2>
+<p>Data wrangling is a <em>huge</em> subject that covers a wide range of topics. In this part of the module, we’ll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you’ll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice ‘jumping off’ point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.</p>
+<p>This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don’t have one in mind, you can use the example dataset shown in the code chunks throughout this module.</p>
+<p>This dataset comes from the <a href="https://lter.github.io/lterdatasampler/"><code>lterdatasampler</code> R package</a> and the data are about fiddler crabs (<em>Minuca pugnax</em>) at the <a href="https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter">Plum Island Ecosystems LTER</a> site.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="exploring-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h3>
+<p>Before beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.</p>
+<p>Checking the data structure is one way of getting a lot of this high-level information.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check dataset structure</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Classes 'tbl_df', 'tbl' and 'data.frame':   392 obs. of  9 variables:
+ $ date         : Date, format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num  30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr  "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num  12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num  21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num  6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num  24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num  6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr  "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+</div>
+</div>
+<p>For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information elsewhere.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      date               latitude         site                size      
+ Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  
+ 1st Qu.:2016-07-28   1st Qu.:34.00   Class :character   1st Qu.:12.02  
+ Median :2016-08-01   Median :39.10   Mode  :character   Median :14.44  
+ Mean   :2016-08-02   Mean   :37.69                      Mean   :14.66  
+ 3rd Qu.:2016-08-09   3rd Qu.:41.60                      3rd Qu.:17.34  
+ Max.   :2016-08-13   Max.   :42.70                      Max.   :23.43  
+    air_temp      air_temp_sd      water_temp    water_temp_sd  
+ Min.   :10.29   Min.   :6.391   Min.   :13.98   Min.   :4.838  
+ 1st Qu.:12.05   1st Qu.:8.110   1st Qu.:14.33   1st Qu.:6.567  
+ Median :13.93   Median :8.410   Median :17.50   Median :6.998  
+ Mean   :15.20   Mean   :8.654   Mean   :17.65   Mean   :7.252  
+ 3rd Qu.:18.63   3rd Qu.:9.483   3rd Qu.:20.54   3rd Qu.:7.865  
+ Max.   :21.79   Max.   :9.965   Max.   :24.50   Max.   :9.121  
+     name          
+ Length:392        
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   </code></pre>
+</div>
+</div>
+<p>For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the sites included in the data</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(pie_crab<span class="sc">$</span>site))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "BC"  "CC"  "CT"  "DB"  "GTM" "JC"  "NB"  "NIB" "PIE" "RC"  "SI"  "VCR"
+[13] "ZI" </code></pre>
+</div>
+</div>
+<p>For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the ‘base’ packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the psych library</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the histogram of crab "size" (carapace width in mm)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">multi.hist</span>(pie_crab<span class="sc">$</span>size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mod_wrangle_files/figure-html/multi-hist-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
 <section id="quality-control" class="level3">
 <h3 class="anchored" data-anchor-id="quality-control">Quality Control</h3>
-<p><code>summary</code></p>
-<p><code>sort(unique())</code></p>
-<p><code>psych::multi.hist</code></p>
+<p>You may have encountered the phrase “QA/QC” (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality assurance only encapsulates <em>preventative</em> measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors <em>after</em> data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.</p>
+<p>In synthesis work, QA is only very rarely an option. You’ll be working with datasets that have already been collected and attempting to handle any issues <em>post hoc</em> which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be <strong>incredibly</strong> time-consuming so using a programming language (like <i class="fa-brands fa-r-project" aria-label="r-project"></i> R or <i class="fa-brands fa-python" aria-label="python"></i> Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.</p>
 <p><code>suppportR::num_check</code></p>
-</section>
-<section id="text-methods" class="level3">
-<h3 class="anchored" data-anchor-id="text-methods">Text Methods</h3>
+<section id="regular-expressions-text-methods" class="level4">
+<h4 class="anchored" data-anchor-id="regular-expressions-text-methods">Regular Expressions &amp; Text Methods</h4>
 <p><code>gsub</code></p>
 <p><code>stringr::str_sub</code></p>
 </section>
-<section id="regular-expressions" class="level3">
-<h3 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h3>
 </section>
 <section id="custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
