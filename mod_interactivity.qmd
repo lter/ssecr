@@ -14,7 +14,19 @@ After completing this topic you will be able to:
 - <u>Explain</u> benefits and limitations of interactive approaches to data exploration
 - <u>Create</u> an R Shiny app for interacting with a dataset
 
-## Topic Content
+## Needed Packages
+
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've installed these before
+install.packages("tidyverse")
+```
+
+## Module Content
 
 
 ## Additional Interactivity Resources

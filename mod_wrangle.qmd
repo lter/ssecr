@@ -4,7 +4,7 @@ title: "Data Harmonization & Wrangling"
 
 ## Overview
 
-Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we're adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/logistical arenas. To make those definitions explicit:
+Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we're adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:
 
 - <u>"Harmonization" = process of combining separate primary data objects into one object</u>. This includes things like synonymizing columns, or changing data format to support combination. This _excludes_ quality control steps--even those that are undertaken before harmonization begins.
 

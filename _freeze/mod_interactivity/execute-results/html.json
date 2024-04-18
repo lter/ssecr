@@ -1,0 +1,14 @@
+{
+  "hash": "eff9d81e069fa8b6030d31dfda407b73",
+  "result": {
+    "markdown": "---\ntitle: \"Creating Interactive Apps\"\n---\n\n\n## Overview\n\nUnder Construction\n\n## Learning Objectives\n\nAfter completing this topic you will be able to: \n\n- <u>Define</u> the three fundamental components of an R Shiny app\n- <u>Explain</u> benefits and limitations of interactive approaches to data exploration\n- <u>Create</u> an R Shiny app for interacting with a dataset\n\n## Needed Packages\n\nIf you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\n```\n:::\n\n\n## Module Content\n\n\n## Additional Interactivity Resources\n\n### Papers & Documents\n\n- \n\n### Workshops & Courses\n\n- 2022 All Scientists' Meeting [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop\n\n### Websites\n\n- \n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -16,6 +16,18 @@ After completing this module you will be able to:
 - <u>Define</u> fundamental `ggplot2` vocabulary
 - <u>Create</u> publication-quality graphs with `ggplot2`
 
+## Needed Packages
+
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've installed these before
+install.packages("ggplot2")
+```
+
 ## Module Content
 
 
