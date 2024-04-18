@@ -16,9 +16,13 @@ After completing this module you will be able to:
 
 - <u>Identify</u> typical steps in data harmonization and wrangling workflows
 - <u>Create</u> a harmonization workflow
-- 
-- 
-- 
+- <u>Define</u> quality control
+- <u>Summarize</u> typical operations in a quality control workflow
+- <u>Use</u> regular expressions to perform flexible text operations
+- <u>Write</u> custom functions to reduce code duplication
+- <u>Identify</u> value of and typical obstacles to data 'joining'
+- <u>Explain</u> benefits and drawbacks of using data shape to streamline code
+- <u>Design</u> a complete data wrangling workflow
 
 ## Harmonizing Data
 
