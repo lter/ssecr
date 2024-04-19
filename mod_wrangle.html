@@ -374,10 +374,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
   <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control">Quality Control</a></li>
   <li><a href="#conditionals" id="toc-conditionals" class="nav-link" data-scroll-target="#conditionals">Conditionals</a></li>
-  <li><a href="#custom-functions" id="toc-custom-functions" class="nav-link" data-scroll-target="#custom-functions">Custom Functions</a></li>
   <li><a href="#uniting-separating-columns" id="toc-uniting-separating-columns" class="nav-link" data-scroll-target="#uniting-separating-columns">Uniting / Separating Columns</a></li>
   <li><a href="#joining-data" id="toc-joining-data" class="nav-link" data-scroll-target="#joining-data">Joining Data</a></li>
   <li><a href="#leveraging-data-shape" id="toc-leveraging-data-shape" class="nav-link" data-scroll-target="#leveraging-data-shape">Leveraging Data Shape</a></li>
+  <li><a href="#custom-functions" id="toc-custom-functions" class="nav-link" data-scroll-target="#custom-functions">Custom Functions</a></li>
   </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
@@ -626,17 +626,18 @@ Attaching package: 'psych'</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-13-1"><a href="#annotated-cell-13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new colum with an either/or conditional</span></span>
 <span id="annotated-cell-13-2"><a href="#annotated-cell-13-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-13-3"><a href="#annotated-cell-13-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> <span class="fu">ifelse</span>(<span class="at">test =</span> (size <span class="sc">&gt;=</span> <span class="dv">15</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-3" class="code-annotation-target"><a href="#annotated-cell-13-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> <span class="fu">ifelse</span>(<span class="at">test =</span> (size <span class="sc">&gt;=</span> <span class="dv">15</span>),</span>
 <span id="annotated-cell-13-4"><a href="#annotated-cell-13-4" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">yes =</span> <span class="st">"big"</span>,</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-5" class="code-annotation-target"><a href="#annotated-cell-13-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">no =</span> <span class="st">"small"</span>))</span>
-<span id="annotated-cell-13-6"><a href="#annotated-cell-13-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-13-7"><a href="#annotated-cell-13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Check structure of the resulting data</span></span>
-<span id="annotated-cell-13-8"><a href="#annotated-cell-13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-13-5"><a href="#annotated-cell-13-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">no =</span> <span class="st">"small"</span>),</span>
+<span id="annotated-cell-13-6"><a href="#annotated-cell-13-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">.after =</span> size) </span>
+<span id="annotated-cell-13-7"><a href="#annotated-cell-13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-13-8"><a href="#annotated-cell-13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check structure of the resulting data</span></span>
+<span id="annotated-cell-13-9"><a href="#annotated-cell-13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-13" data-code-lines="5" data-code-annotation="1"><code>mutate</code> makes a new column, <code>ifelse</code> is actually doing the conditional</span>
+<span data-code-cell="annotated-cell-13" data-code-lines="3" data-code-annotation="1"><code>mutate</code> makes a new column, <code>ifelse</code> is actually doing the conditional</span>
 </dd>
 </dl>
 </div>
@@ -646,12 +647,12 @@ Attaching package: 'psych'</code></pre>
  $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
  $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
  $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ size_category: chr [1:392] "small" "small" "small" "small" ...
  $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
  $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
  $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
  $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
- $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...
- $ size_category: chr [1:392] "small" "small" "small" "small" ...</code></pre>
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
 </div>
 </div>
 <p>If you have multiple different conditions you <em>can</em> just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!</p>
@@ -663,10 +664,11 @@ Attaching package: 'psych'</code></pre>
 <span id="annotated-cell-14-5"><a href="#annotated-cell-14-5" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">10</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">15</span> <span class="sc">~</span> <span class="st">"small"</span>,</span>
 <span id="annotated-cell-14-6"><a href="#annotated-cell-14-6" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">15</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"big"</span>,</span>
 <span id="annotated-cell-14-7"><a href="#annotated-cell-14-7" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"huge"</span>,</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="2">2</button><span id="annotated-cell-14-8" class="code-annotation-target"><a href="#annotated-cell-14-8" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"uncategorized"</span>))</span>
-<span id="annotated-cell-14-9"><a href="#annotated-cell-14-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-14-10"><a href="#annotated-cell-14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the results' structure</span></span>
-<span id="annotated-cell-14-11"><a href="#annotated-cell-14-11" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="2">2</button><span id="annotated-cell-14-8" class="code-annotation-target"><a href="#annotated-cell-14-8" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"uncategorized"</span>),</span>
+<span id="annotated-cell-14-9"><a href="#annotated-cell-14-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">.after =</span> size)</span>
+<span id="annotated-cell-14-10"><a href="#annotated-cell-14-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-14-11"><a href="#annotated-cell-14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the results' structure</span></span>
+<span id="annotated-cell-14-12"><a href="#annotated-cell-14-12" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
@@ -685,22 +687,98 @@ Attaching package: 'psych'</code></pre>
  $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
  $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
  $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ size_category: chr [1:392] "small" "small" "small" "small" ...
  $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
  $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
  $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
  $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
- $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...
- $ size_category: chr [1:392] "small" "small" "small" "small" ...</code></pre>
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
 </div>
 </div>
 <p>Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.</p>
 </section>
-<section id="custom-functions" class="level3">
-<h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
-</section>
 <section id="uniting-separating-columns" class="level3">
 <h3 class="anchored" data-anchor-id="uniting-separating-columns">Uniting / Separating Columns</h3>
-<p><code>tidyr::separate_wider_delim</code></p>
+<p>Sometimes one column has multiple pieces of information that you’d like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-15"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-15-1"><a href="#annotated-cell-15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split date into each piece of temporal info</span></span>
+<span id="annotated-cell-15-2"><a href="#annotated-cell-15-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v3 <span class="ot">&lt;-</span> pie_crab_v2 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-15-3"><a href="#annotated-cell-15-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_delim</span>(<span class="at">cols =</span> date, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="1">1</button><span id="annotated-cell-15-4" class="code-annotation-target"><a href="#annotated-cell-15-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">delim =</span> <span class="st">"-"</span>,</span>
+<span id="annotated-cell-15-5"><a href="#annotated-cell-15-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">names =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>, <span class="st">"day"</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="2">2</button><span id="annotated-cell-15-6" class="code-annotation-target"><a href="#annotated-cell-15-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">cols_remove =</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-15-7"><a href="#annotated-cell-15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-15-8"><a href="#annotated-cell-15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that out</span></span>
+<span id="annotated-cell-15-9"><a href="#annotated-cell-15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v3)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-15" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-15" data-code-lines="4" data-code-annotation="1">‘delim’ is short for “delimiter” which we covered in the Reproducibility module</span>
+</dd>
+<dt data-target-cell="annotated-cell-15" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-15" data-code-lines="6" data-code-annotation="2">This argument specifies whether to remove the original column when making the new columns</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [392 × 12] (S3: tbl_df/tbl/data.frame)
+ $ year         : chr [1:392] "2016" "2016" "2016" "2016" ...
+ $ month        : chr [1:392] "07" "07" "07" "07" ...
+ $ day          : chr [1:392] "24" "24" "24" "24" ...
+ $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ size_category: chr [1:392] "small" "small" "small" "small" ...
+ $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+</div>
+</div>
+<p>While breaking apart a column’s contents can be useful, it can also be helpful to combine the contents of several columns!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-16"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-16-1"><a href="#annotated-cell-16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-combine data information back into date</span></span>
+<span id="annotated-cell-16-2"><a href="#annotated-cell-16-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v4 <span class="ot">&lt;-</span> pie_crab_v3 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-16-3"><a href="#annotated-cell-16-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">unite</span>(<span class="at">col =</span> <span class="st">"date"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-16" data-target-annotation="1">1</button><span id="annotated-cell-16-4" class="code-annotation-target"><a href="#annotated-cell-16-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">sep =</span> <span class="st">"/"</span>,</span>
+<span id="annotated-cell-16-5"><a href="#annotated-cell-16-5" aria-hidden="true" tabindex="-1"></a>               year<span class="sc">:</span>day, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-16" data-target-annotation="2">2</button><span id="annotated-cell-16-6" class="code-annotation-target"><a href="#annotated-cell-16-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">remove =</span> <span class="cn">FALSE</span>)</span>
+<span id="annotated-cell-16-7"><a href="#annotated-cell-16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-16-8"><a href="#annotated-cell-16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Structure check</span></span>
+<span id="annotated-cell-16-9"><a href="#annotated-cell-16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v4)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-16" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-16" data-code-lines="4" data-code-annotation="1">This is equivalent to the ‘delim’ argument in the previous function</span>
+</dd>
+<dt data-target-cell="annotated-cell-16" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-16" data-code-lines="6" data-code-annotation="2">Comparable to the ‘cols_remove’ argument in the previous function</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [392 × 13] (S3: tbl_df/tbl/data.frame)
+ $ date         : chr [1:392] "2016/07/24" "2016/07/24" "2016/07/24" "2016/07/24" ...
+ $ year         : chr [1:392] "2016" "2016" "2016" "2016" ...
+ $ month        : chr [1:392] "07" "07" "07" "07" ...
+ $ day          : chr [1:392] "24" "24" "24" "24" ...
+ $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ size_category: chr [1:392] "small" "small" "small" "small" ...
+ $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+</div>
+</div>
+<p>Note in this output how despite re-combining data information the column is listed as a character column! Simply combining or separating data is not always enough so you need to really lean into frequent data structure checks to be sure that your data are structured in the way that you want.</p>
 </section>
 <section id="joining-data" class="level3">
 <h3 class="anchored" data-anchor-id="joining-data">Joining Data</h3>
@@ -715,6 +793,9 @@ Attaching package: 'psych'</code></pre>
 <li>operations on consolidated columns</li>
 <li><code>tidyr::pivot_wider</code></li>
 </ol>
+</section>
+<section id="custom-functions" class="level3">
+<h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
 </section>
 </section>
 <section id="additional-resources" class="level2">
