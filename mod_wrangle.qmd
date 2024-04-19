@@ -1,5 +1,6 @@
 ---
 title: "Data Harmonization & Wrangling"
+code-annotations: hover
 ---
 
 ## Overview
@@ -39,6 +40,16 @@ install.packages("psych")
 install.packages("supportR")
 install.packages("tidyverse")
 ```
+
+We'll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.
+
+```{r libs}
+#| message: false
+
+# Load tidyverse
+library(tidyverse)
+```
+
 
 ## Harmonizing Data
 
@@ -172,9 +183,41 @@ gsub(pattern = "[[:alpha:]]+", replacement = "0", x = regex_vec)
 
 ### Conditionals
 
-`dplyr::case_when`
+Rather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as 'if column X has \[some values\] then column Y should have \[other values\]'. These operations are called <u>conditionals</u> and are an important part of data wrangling.
 
-`ifelse`
+If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let's return to our Plum Island Ecosystems crab dataset for an example.
+
+```{r ifelse}
+# Make a new colum with an either/or conditional
+pie_crab_v2 <- pie_crab %>% 
+  dplyr::mutate(size_category = ifelse(test = (size >= 15),
+                                       yes = "big",
+                                       no = "small")) # <1>
+
+# Check structure of the resulting data
+str(pie_crab_v2)
+```
+1. `mutate` makes a new column, `ifelse` is actually doing the conditional
+
+If you have multiple different conditions you _can_ just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!
+
+```{r case-when}
+# Make a new column with several conditionals
+pie_crab_v2 <- pie_crab %>% 
+  dplyr::mutate(size_category = dplyr::case_when( 
+    size <= 10 ~ "tiny", # <1>
+    size > 10 & size <= 15 ~ "small",
+    size > 15 & size <= 20 ~ "big",
+    size > 20 ~ "huge",
+    TRUE ~ "uncategorized")) # <2>
+
+# Check the results' structure
+str(pie_crab_v2)
+```
+1. Syntax is 'test ~ what to do when true'
+2. This line is a catch-all for any rows that _don't_ meet previous conditions
+
+Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.
 
 ### Custom Functions
 
