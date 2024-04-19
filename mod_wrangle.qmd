@@ -190,9 +190,10 @@ If you only want your conditional to support two outcomes (as in an either/or st
 ```{r ifelse}
 # Make a new colum with an either/or conditional
 pie_crab_v2 <- pie_crab %>% 
-  dplyr::mutate(size_category = ifelse(test = (size >= 15),
+  dplyr::mutate(size_category = ifelse(test = (size >= 15), # <1>
                                        yes = "big",
-                                       no = "small")) # <1>
+                                       no = "small"),
+                .after = size) 
 
 # Check structure of the resulting data
 str(pie_crab_v2)
@@ -209,7 +210,8 @@ pie_crab_v2 <- pie_crab %>%
     size > 10 & size <= 15 ~ "small",
     size > 15 & size <= 20 ~ "big",
     size > 20 ~ "huge",
-    TRUE ~ "uncategorized")) # <2>
+    TRUE ~ "uncategorized"), # <2>
+                .after = size)
 
 # Check the results' structure
 str(pie_crab_v2)
@@ -219,15 +221,41 @@ str(pie_crab_v2)
 
 Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.
 
-### Custom Functions
-
-
-
-
 ### Uniting / Separating Columns
 
+Sometimes one column has multiple pieces of information that you'd like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.
 
-`tidyr::separate_wider_delim`
+```{r separate-wider-delim}
+# Split date into each piece of temporal info
+pie_crab_v3 <- pie_crab_v2 %>% 
+  tidyr::separate_wider_delim(cols = date, 
+                              delim = "-", # <1>
+                              names = c("year", "month", "day"),
+                              cols_remove = TRUE) # <2>
+
+# Check that out
+str(pie_crab_v3)
+```
+1. 'delim' is short for "delimiter" which we covered in the Reproducibility module
+2. This argument specifies whether to remove the original column when making the new columns
+
+While breaking apart a column's contents can be useful, it can also be helpful to combine the contents of several columns!
+
+```{r unite}
+# Re-combine data information back into date
+pie_crab_v4 <- pie_crab_v3 %>% 
+  tidyr::unite(col = "date",
+               sep = "/", # <1>
+               year:day, 
+               remove = FALSE) # <2>
+
+# Structure check
+str(pie_crab_v4)
+```
+1. This is equivalent to the 'delim' argument in the previous function
+2. Comparable to the 'cols_remove' argument in the previous function
+
+Note in this output how despite re-combining data information the column is listed as a character column! Simply combining or separating data is not always enough so you need to really lean into frequent data structure checks to be sure that your data are structured in the way that you want.
 
 ### Joining Data
 
@@ -243,6 +271,10 @@ a.k.a. attaching data by columns
 1. `tidyr::pivot_longer`
 2. operations on consolidated columns
 3. `tidyr::pivot_wider`
+
+
+
+### Custom Functions
 
 
 
