@@ -1,5 +1,6 @@
 ---
 title: "Working with Spatial Data"
+code-annotations: hover
 ---
 
 ## Overview

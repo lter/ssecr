@@ -1,5 +1,6 @@
 ---
 title: "Analysis & Modeling"
+code-annotations: hover
 ---
 
 ## Overview

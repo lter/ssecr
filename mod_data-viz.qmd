@@ -1,5 +1,6 @@
 ---
 title: "Data Visualization & Exploration"
+code-annotations: hover
 ---
 
 ## Overview

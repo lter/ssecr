@@ -1,5 +1,6 @@
 ---
 title: "Creating Interactive Apps"
+code-annotations: hover
 ---
 
 ## Overview
