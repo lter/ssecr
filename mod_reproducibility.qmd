@@ -546,14 +546,14 @@ CARE stands for <u>C</u>ollective Benefit, <u>A</u>uthority to Control, <u>R</u>
 
 **Authority to Control**
 
-- Establish institutional principles or protocoles that explicitly recognize Indigenous Peoples' rights to and interests in their knowledges/data
+- Establish institutional principles or protocols that explicitly recognize Indigenous Peoples' rights to and interests in their knowledges/data
 - Ensure data collection and distribution are consistent with individual and community consent provisions and that consent is _ongoing_ (including the right to withdraw or refuse)
 - Ensure Indigenous communities have access to the (meta)data in usable format
 
 **Responsibility**
 
 - Create and expand opportunities for community capacity
-- Record the Traditional Knowledge and biocultural labels of the Local Contexts Hub in metadata
+- Record the Traditional Knowledge and biocultural labels of the [Local Contexts Hub](https://localcontexts.org/) in metadata
 - Ensure review of draft publications _before_ publication
 - Use the languages of Indigenous Peoples in the (meta)data
 
