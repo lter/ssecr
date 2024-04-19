@@ -447,6 +447,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"supportR"</span>)</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>We’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load tidyverse</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="harmonizing-data" class="level2">
 <h2 class="anchored" data-anchor-id="harmonizing-data">Harmonizing Data</h2>
@@ -469,36 +474,36 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don’t have one in mind, you can use the example dataset shown in the code chunks throughout this module.</p>
 <p>This dataset comes from the <a href="https://lter.github.io/lterdatasampler/"><code>lterdatasampler</code> R package</a> and the data are about fiddler crabs (<em>Minuca pugnax</em>) at the <a href="https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter">Plum Island Ecosystems LTER</a> site.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="exploring-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h3>
 <p>Before beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.</p>
 <p>Checking the data structure is one way of getting a lot of this high-level information.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check dataset structure</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check dataset structure</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Classes 'tbl_df', 'tbl' and 'data.frame':   392 obs. of  9 variables:
- $ date         : Date, format: "2016-07-24" "2016-07-24" ...
- $ latitude     : num  30 30 30 30 30 30 30 30 30 30 ...
- $ site         : chr  "GTM" "GTM" "GTM" "GTM" ...
- $ size         : num  12.4 14.2 14.5 12.9 12.4 ...
- $ air_temp     : num  21.8 21.8 21.8 21.8 21.8 ...
- $ air_temp_sd  : num  6.39 6.39 6.39 6.39 6.39 ...
- $ water_temp   : num  24.5 24.5 24.5 24.5 24.5 ...
- $ water_temp_sd: num  6.12 6.12 6.12 6.12 6.12 ...
- $ name         : chr  "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+<pre><code>tibble [392 × 9] (S3: tbl_df/tbl/data.frame)
+ $ date         : Date[1:392], format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
 </div>
 </div>
 <p>For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information elsewhere.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      date               latitude         site                size      
  Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  
@@ -525,8 +530,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the sites included in the data</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(pie_crab<span class="sc">$</span>site))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the sites included in the data</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(pie_crab<span class="sc">$</span>site))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "BC"  "CC"  "CT"  "DB"  "GTM" "JC"  "NB"  "NIB" "PIE" "RC"  "SI"  "VCR"
 [13] "ZI" </code></pre>
@@ -534,11 +539,19 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the ‘base’ packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the psych library</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the histogram of crab "size" (carapace width in mm)</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">multi.hist</span>(pie_crab<span class="sc">$</span>size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the psych library</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'psych'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:ggplot2':
+
+    %+%, alpha</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the histogram of crab "size" (carapace width in mm)</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">multi.hist</span>(pie_crab<span class="sc">$</span>size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -556,15 +569,15 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h4 class="anchored" data-anchor-id="number-checking">Number Checking</h4>
 <p>When you read in a dataset and a column that <em>should be</em> numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to ‘NA’ where a human might be able to deduce the true number each value ‘should be.’</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>faux_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">12</span>))</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> faux_df, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>faux_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">12</span>))</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> faux_df, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>For 'count', 2 non-numbers identified: '14x' | '_23'</code></pre>
 </div>
@@ -575,11 +588,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h4 class="anchored" data-anchor-id="text-replacement">Text Replacement</h4>
 <p>One of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>faux_df<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> faux_df<span class="sc">$</span>count)</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> faux_df, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>faux_df<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> faux_df<span class="sc">$</span>count)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> faux_df, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>For 'count', no non-numeric values identified.</code></pre>
 </div>
@@ -590,16 +603,16 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h4 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h4>
 <p>You may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hello"   "xxx"     "goodbye" "xxx"    </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "0"   "123" "0"   "456"</code></pre>
 </div>
@@ -608,8 +621,79 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="conditionals" class="level3">
 <h3 class="anchored" data-anchor-id="conditionals">Conditionals</h3>
-<p><code>dplyr::case_when</code></p>
-<p><code>ifelse</code></p>
+<p>Rather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as ‘if column X has [some values] then column Y should have [other values]’. These operations are called <u>conditionals</u> and are an important part of data wrangling.</p>
+<p>If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let’s return to our Plum Island Ecosystems crab dataset for an example.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-13-1"><a href="#annotated-cell-13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new colum with an either/or conditional</span></span>
+<span id="annotated-cell-13-2"><a href="#annotated-cell-13-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-13-3"><a href="#annotated-cell-13-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> <span class="fu">ifelse</span>(<span class="at">test =</span> (size <span class="sc">&gt;=</span> <span class="dv">15</span>),</span>
+<span id="annotated-cell-13-4"><a href="#annotated-cell-13-4" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">yes =</span> <span class="st">"big"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-5" class="code-annotation-target"><a href="#annotated-cell-13-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">no =</span> <span class="st">"small"</span>))</span>
+<span id="annotated-cell-13-6"><a href="#annotated-cell-13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-13-7"><a href="#annotated-cell-13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Check structure of the resulting data</span></span>
+<span id="annotated-cell-13-8"><a href="#annotated-cell-13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-13" data-code-lines="5" data-code-annotation="1"><code>mutate</code> makes a new column, <code>ifelse</code> is actually doing the conditional</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [392 × 10] (S3: tbl_df/tbl/data.frame)
+ $ date         : Date[1:392], format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...
+ $ size_category: chr [1:392] "small" "small" "small" "small" ...</code></pre>
+</div>
+</div>
+<p>If you have multiple different conditions you <em>can</em> just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-14"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-14-1"><a href="#annotated-cell-14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new column with several conditionals</span></span>
+<span id="annotated-cell-14-2"><a href="#annotated-cell-14-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-14-3"><a href="#annotated-cell-14-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> dplyr<span class="sc">::</span><span class="fu">case_when</span>( </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="1">1</button><span id="annotated-cell-14-4" class="code-annotation-target"><a href="#annotated-cell-14-4" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&lt;=</span> <span class="dv">10</span> <span class="sc">~</span> <span class="st">"tiny"</span>,</span>
+<span id="annotated-cell-14-5"><a href="#annotated-cell-14-5" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">10</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">15</span> <span class="sc">~</span> <span class="st">"small"</span>,</span>
+<span id="annotated-cell-14-6"><a href="#annotated-cell-14-6" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">15</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"big"</span>,</span>
+<span id="annotated-cell-14-7"><a href="#annotated-cell-14-7" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"huge"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="2">2</button><span id="annotated-cell-14-8" class="code-annotation-target"><a href="#annotated-cell-14-8" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"uncategorized"</span>))</span>
+<span id="annotated-cell-14-9"><a href="#annotated-cell-14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-14-10"><a href="#annotated-cell-14-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the results' structure</span></span>
+<span id="annotated-cell-14-11"><a href="#annotated-cell-14-11" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-14" data-code-lines="4" data-code-annotation="1">Syntax is ‘test ~ what to do when true’</span>
+</dd>
+<dt data-target-cell="annotated-cell-14" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-14" data-code-lines="8" data-code-annotation="2">This line is a catch-all for any rows that <em>don’t</em> meet previous conditions</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [392 × 10] (S3: tbl_df/tbl/data.frame)
+ $ date         : Date[1:392], format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...
+ $ size_category: chr [1:392] "small" "small" "small" "small" ...</code></pre>
+</div>
+</div>
+<p>Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.</p>
 </section>
 <section id="custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
@@ -1160,25 +1244,64 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       };
     }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
+      const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+      for (let i=0; i<annoteTargets.length; i++) {
+        const annoteTarget = annoteTargets[i];
+        const targetCell = annoteTarget.getAttribute("data-target-cell");
+        const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+        const contentFn = () => {
+          const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          if (content) {
+            const tipContent = content.cloneNode(true);
+            tipContent.classList.add("code-annotation-tip-content");
+            return tipContent.outerHTML;
           }
-        });
+        }
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          onShow: (instance) => {
+            selectCodeLines(instance.reference);
+            instance.reference.classList.add('code-annotation-active');
+            window.tippy.hideAll();
+          },
+          onHide: (instance) => {
+            unselectCodeLines();
+            instance.reference.classList.remove('code-annotation-active');
+          },
+          maxWidth: 300,
+          delay: [50, 0],
+          duration: [200, 0],
+          offset: [5, 10],
+          arrow: true,
+          appendTo: function(el) {
+            return el.parentElement.parentElement.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto',
+          placement: 'right',
+          popperOptions: {
+            modifiers: [
+            {
+              name: 'flip',
+              options: {
+                flipVariations: false, // true by default
+                allowedAutoPlacements: ['right'],
+                fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+              },
+            },
+            {
+              name: 'preventOverflow',
+              options: {
+                mainAxis: false,
+                altAxis: false
+              }
+            }
+            ]        
+          }      
+        };
+        window.tippy(annoteTarget, config); 
       }
   const findCites = (el) => {
     const parentEl = el.parentElement;
