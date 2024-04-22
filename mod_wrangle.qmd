@@ -117,6 +117,7 @@ sort(unique(pie_crab$site))
 For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the 'base' packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.
 
 ```{r multi-hist}
+#| message: false
 #| fig-align: center
 #| fig-width: 4
 #| fig-height: 3
@@ -285,7 +286,7 @@ supportR::diff_check(old = fish_ct$species, new = fish_tax_v2$species)
 
 Now that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:
 
-1. Left/right join
+1. left/right join
 2. full join (a.k.a. outer join)
 3. inner join
 4. anti join
