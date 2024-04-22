@@ -520,7 +520,8 @@ In a script, attempt the following on the PIE crab data:
 
 ### Papers & Documents
 
-- 
+- [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). Elgarby, O. 2019. **Medium**
+- [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). Borer _et al._, 2009. **Ecological Society of America Bulletin**
 
 ### Workshops & Courses
 
@@ -532,4 +533,4 @@ In a script, attempt the following on the PIE crab data:
 
 ### Websites
 
-- 
+- [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/)

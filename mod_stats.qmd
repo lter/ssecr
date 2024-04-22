@@ -37,11 +37,13 @@ install.packages("tidyverse")
 
 ### Papers & Documents
 
+- [Understanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). Spake _et al._, 2023. **Biological Reviews** 
+- [Improving Quantitative Synthesis to Achieve Generality in Ecology](https://www.nature.com/articles/s41559-022-01891-z). Spake _et al._, 2022.**Nature Ecology and Evolution**
 - [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
 
 ### Workshops & Courses
 
-- 
+- Matt Vuorre's [Bayesian Meta-Analysis with R, Stan, and brms](https://mvuorre.github.io/posts/2016-09-29-bayesian-meta-analysis/)
 
 ### Websites
 
