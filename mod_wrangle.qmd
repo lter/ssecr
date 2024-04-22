@@ -402,16 +402,64 @@ crab_df
 
 ### Custom Functions
 
+Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR [Reproducibility module](https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions)) and also can be useful end products of synthesis work in and of themselves. 
 
+If one of your group's outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project's findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.
 
+```{r custom-fxns}
+#| fig-align: center
+#| fig-width: 4
+#| fig-height: 3
 
+# Define custom function
+crab_hist <- function(df, size_cat){
+  
+  # Subset data to the desired category
+  data_sub <- dplyr::filter(.data = df, size_category == size_cat)
+  
+  # Create a histogram
+  p <- psych::multi.hist(x = data_sub$size)
+}
 
+# Invoke function
+crab_hist(df = pie_crab_v4, size_cat = "tiny")
+```
 
+When writing your own functions is can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated
 
+```{r custom-fxns-improved}
+#| fig-align: center
+#| fig-width: 4
+#| fig-height: 3
 
+# Define custom function
+crab_hist <- function(df, size_cat = "small"){ # <1>
+  
+  # Error out if 'df' isn't the right format
+  if(is.data.frame(df) != TRUE) # <2>
+    stop("'df' must be provided as a data frame")
+  
+  # Error out if the data doesn't have the right columns
+  if(all(c("size_category", "size") %in% names(df)) != TRUE)
+    stop("'df' must include a 'size' and 'size_category' column")
+  
+  # Error out for unsupported size category values
+  if(size_cat %in% unique(df$size_category) != TRUE)
+    stop("Specified 'size_cat' not found in provided data")
+  
+  # Subset data to the desired category
+  data_sub <- dplyr::filter(.data = df, size_category == size_cat)
+  
+  # Create a histogram
+  p <- psych::multi.hist(x = data_sub$size)
+}
 
-
-
+# Invoke new-and-improved function
+crab_hist(df = pie_crab_v4) # <3>
+```
+1. The default category is now set to "small"
+2. I recommend phrasing your error checks like this (i.e., 'if \<some condition\> is _not_ true, then \<informative error/warning message\>)
+3. We don't need to specify the 'size_cat' argument because we can rely on the default
 
 ## Additional Resources
 
