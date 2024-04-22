@@ -143,11 +143,11 @@ When you read in a dataset and a column that _should be_ numeric is instead read
 library(supportR)
 
 # Create an example dataset with non-numbers in ideally numeric columns
-faux_df <- data.frame("species" = c("salmon", "bass", "halibut", "eel"),
-                      "count" = c(1, "14x", "_23", 12))
+fish_ct <- data.frame("species" = c("salmon", "bass", "halibut", "moray eel"),
+                      "count" = c(12, "14x", "_23", 1))
 
 # Check for malformed numbers in column(s) that should be numeric
-bad_nums <- supportR::num_check(data = faux_df, col = "count")
+bad_nums <- supportR::num_check(data = fish_ct, col = "count")
 ```
 
 In the above example, "14x" would be coerced to NA if you simply force the column without checking but you could drop the "x" with text replacing methods once you use tools like this one to flag it for your attention.
@@ -158,10 +158,10 @@ One of the simpler ways of handling text issues is just to replace a string with
 
 ```{r text-replace}
 # Use pattern match/replace to simplify problem entries
-faux_df$count <- gsub(pattern = "x|_", replacement = "", x = faux_df$count)
+fish_ct$count <- gsub(pattern = "x|_", replacement = "", x = fish_ct$count)
 
 # Check that they are fixed
-bad_nums <- supportR::num_check(data = faux_df, col = "count")
+bad_nums <- supportR::num_check(data = fish_ct, col = "count")
 ```
 
 The vertical line in the `gsub` example above lets us search for (and replace) multiple patterns. Note however that while you can search for many patterns at once, only a single replacement value can be provided with this function.
@@ -195,8 +195,10 @@ pie_crab_v2 <- pie_crab %>%
                                        no = "small"),
                 .after = size) 
 
-# Check structure of the resulting data
-str(pie_crab_v2)
+# Count the number of crabs in each category
+pie_crab_v2 %>% 
+  dplyr::group_by(size_category) %>% 
+  dplyr::summarize(crab_ct = dplyr::n())
 ```
 1. `mutate` makes a new column, `ifelse` is actually doing the conditional
 
@@ -213,8 +215,10 @@ pie_crab_v2 <- pie_crab %>%
     TRUE ~ "uncategorized"), # <2>
                 .after = size)
 
-# Check the results' structure
-str(pie_crab_v2)
+# Count the number of crabs in each category
+pie_crab_v2 %>% 
+  dplyr::group_by(size_category) %>% 
+  dplyr::summarize(crab_ct = dplyr::n())
 ```
 1. Syntax is 'test ~ what to do when true'
 2. This line is a catch-all for any rows that _don't_ meet previous conditions
@@ -259,11 +263,47 @@ Note in this output how despite re-combining data information the column is list
 
 ### Joining Data
 
-a.k.a. attaching data by columns
+Often the early steps of a synthesis project involve combine the data tables horizontally. You might imagine that you have two groups' data on sea star abundance and--once you've synonymized the column names--you can simply 'stack' the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group's research. You can't simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps "site" and coordinate columns) you can use **joins** to let your computer match these key columns and make sure that only appropriate rows are combined.
 
-`dplyr::left_join`
+Because joins are completely dependent upon the value in both columns being an _exact_ match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.
 
-`supportR::diff_check`
+```{r diff-check}
+# Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe
+fish_tax <- data.frame("species" = c("salmon", "bass", "halibut", "eel"),
+                       "family" = c("Salmonidae", "Serranidae", "Pleuronectidae", "Muraenidae"))
+
+# Check to make sure that the 'species' column matches between both tables
+supportR::diff_check(old = fish_ct$species, new = fish_tax$species) 
+
+# Use text replacement methods to fix that mistake in one table
+fish_tax_v2 <- fish_tax %>% 
+  dplyr::mutate(species = gsub(pattern = "^eel$", replacement = "moray eel", x = species))
+
+# Re-check to make sure that fixed it
+supportR::diff_check(old = fish_ct$species, new = fish_tax_v2$species)
+```
+
+Now that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:
+
+1. Left/right join
+2. full join (a.k.a. outer join)
+3. inner join
+4. anti join
+
+You can learn more about the types of join [here](https://nceas.github.io/scicomp-workshop-tidyverse/join.html) or [here](https://njlyon0.github.io/teach_r-for-biologists/materials/slides_4a.html#/title-slide) but the quick explanation is that <u>the name of the join indicates whether the rows of the "left" and/or the "right" table are retained in the combined table</u>. In synthesis work a left join or full join is most common (where you have your primary data in the left position and some ancillary/supplementary dataset in the right position).
+
+```{r join}
+# Let's combine the fish count and fish taxonomy information
+fish_df <- fish_ct %>% 
+  # Actual join step
+  dplyr::left_join(y = fish_tax_v2, by = "species") %>%  # <1>
+  # Move 'family' column to the left of all other columns
+  dplyr::relocate(family, .before = dplyr::everything())
+
+# Look at the result of that
+fish_df
+```
+1. The 'by' argument accepts a vector of column names found in both data tables
 
 
 ### Leveraging Data Shape
@@ -272,6 +312,8 @@ a.k.a. attaching data by columns
 2. operations on consolidated columns
 3. `tidyr::pivot_wider`
 
+
+### Loops
 
 
 ### Custom Functions
