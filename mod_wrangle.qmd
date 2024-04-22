@@ -305,13 +305,49 @@ fish_df
 ```
 1. The 'by' argument accepts a vector of column names found in both data tables
 
-
 ### Leveraging Data Shape
 
-1. `tidyr::pivot_longer`
-2. operations on consolidated columns
-3. `tidyr::pivot_wider`
+You may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations _dramatically_ more efficient. If you haven't encountered it before, any data table can be said to have one of two 'shapes': either **long** or **wide**. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or "wider" data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or "longer" data tables).
 
+Data shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes "tidy", you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then--when you're finished--reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.
+
+Let's consider an example to help clarify this. We'll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.
+
+```{r shape}
+# Generate a butterfly dataframe
+bfly_v1 <- data.frame("pasture" = c("PNW", "PNW", "RCS", "RCS"),
+                      "monarch" = c("14m", "10f", "7m", "16f"),
+                      "melissa_blue" = c("32m", "2f", "6m", "0f"),
+                      "swallowtail" = c("1m", "3f", "0m", "5f"))
+
+# First we'll reshape this into long format
+bfly_v2 <- bfly_v1 %>% 
+  tidyr::pivot_longer(cols = -pasture, 
+                      names_to = "butterfly_sp", 
+                      values_to = "count_sex")
+
+# Check what that leaves us with
+head(bfly_v2, n = 4)
+
+# Let's separate count from sex to be more usable later
+bfly_v3 <- bfly_v2 %>% 
+  tidyr::separate_wider_regex(cols = count_sex, 
+                              c(count = "[[:digit:]]+", sex = "[[:alpha:]]")) %>% 
+  # Make the 'count' column a real number now
+  dplyr::mutate(count = as.numeric(count))
+
+# Re-check output
+head(bfly_v3, n = 4)
+
+# Reshape back into wide-ish format
+bfly_v4 <- bfly_v3 %>% 
+  tidyr::pivot_wider(names_from = "butterfly_sp", values_from = count)
+
+# Re-re-check output
+head(bfly_v4)
+```
+
+While we absolutely _could_ have used the same function to break apart count and butterfly sex data it would have involved copy/pasting the same information repeatedly. By pivoting to long format first, we can greatly streamline our code. This can also be advantageous for unit conversions, applying data transformations, or checking text column contents among many other possible applications.
 
 ### Loops
 
