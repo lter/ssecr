@@ -75,7 +75,7 @@ Data wrangling is a _huge_ subject that covers a wide range of topics. In this p
 
 This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module.
 
-This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site.
+This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site.
 
 
 ```{r prep}
@@ -128,6 +128,19 @@ library(psych)
 # Get the histogram of crab "size" (carapace width in mm)
 psych::multi.hist(pie_crab$size)
 ```
+
+:::{.callout-warning icon="false"}
+#### Discussion: Data Exploration Tools
+
+With a group of 4-5 others discuss the following questions:
+
+- What tools do you use when exploring new data?
+- Do you already use any of these tools to explore your data?
+    - If you do, why do you use them?
+    - If not, where do you think they might be valuable to include?
+- What value--if any--do you see in including these exploratory efforts in your code workflow?
+
+:::
 
 ### Quality Control
 
@@ -226,6 +239,18 @@ pie_crab_v2 %>%
 
 Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.
 
+:::{.callout-note icon="false"}
+#### Activity: Conditionals
+
+In a script, attempt the following with the PIE crab data:
+
+- Create a column indicating when air temperature is above or below 13° Fahrenheit
+- Create a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile
+    - _Hint:_ consult the `summary` function output!
+
+:::
+
+
 ### Uniting / Separating Columns
 
 Sometimes one column has multiple pieces of information that you'd like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.
@@ -305,6 +330,19 @@ fish_df <- fish_ct %>%
 fish_df
 ```
 1. The 'by' argument accepts a vector of column names found in both data tables
+
+:::{.callout-note icon="false"}
+#### Activity: Separating Columns & Joining Data
+
+In a script, attempt the following with the PIE crab data:
+
+1. Create a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)
+    - Use your judgement on which month(s) should fall into each given PIE's latitude/location
+2. Join your season table to the PIE crab data based on month
+    - _Hint:_ you may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined
+3. Calculate the average size of crabs in each season in order to identify which season correlates with the largest crabs
+
+:::
 
 ### Leveraging Data Shape
 
@@ -461,6 +499,22 @@ crab_hist(df = pie_crab_v4) # <3>
 1. The default category is now set to "small"
 2. I recommend phrasing your error checks like this (i.e., 'if \<some condition\> is _not_ true, then \<informative error/warning message\>)
 3. We don't need to specify the 'size_cat' argument because we can rely on the default
+
+:::{.callout-note icon="false"}
+#### Activity: Custom Functions
+
+In a script, attempt the following on the PIE crab data:
+
+- Write a function that:
+    - (A) calculates the median of the user-supplied column
+    - (B) determines whether each value is above, equal to, or below the median
+    - (C) makes a column indicating the results of step B
+- Use the function on the _standard deviation_ of water temperature
+- Use it again on the standard deviation of air temperature
+- Revisit your function and identify 2-3 likely errors
+- Write custom checks (and error messages) for the set of likely issues you just identified
+
+:::
 
 ## Additional Resources
 
