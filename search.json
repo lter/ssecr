@@ -952,7 +952,7 @@
     "href": "mod_wrangle.html#additional-resources",
     "title": "Data Harmonization & Wrangling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\ncoreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\ncoreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\nOpen Science Synthesis for the Delta Science Program’s Data Munging / QA / QC / Cleaning\n\n\n\nWebsites",
     "crumbs": [
       "Phase III -- Execute",
       "Data Wrangling"
