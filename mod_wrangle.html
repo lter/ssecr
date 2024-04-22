@@ -993,6 +993,79 @@ Attaching package: 'psych'</code></pre>
 </section>
 <section id="custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
+<p>Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR <a href="https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions">Reproducibility module</a>) and also can be useful end products of synthesis work in and of themselves.</p>
+<p>If one of your group’s outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project’s findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, size_cat){</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke function</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4, <span class="at">size_cat =</span> <span class="st">"tiny"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mod_wrangle_files/figure-html/custom-fxns-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>When writing your own functions is can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="annotated-cell-26"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-26-1"><a href="#annotated-cell-26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="1">1</button><span id="annotated-cell-26-2" class="code-annotation-target"><a href="#annotated-cell-26-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, <span class="at">size_cat =</span> <span class="st">"small"</span>){</span>
+<span id="annotated-cell-26-3"><a href="#annotated-cell-26-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-26-4"><a href="#annotated-cell-26-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if 'df' isn't the right format</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="2">2</button><span id="annotated-cell-26-5" class="code-annotation-target"><a href="#annotated-cell-26-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.data.frame</span>(df) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-26-6"><a href="#annotated-cell-26-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"'df' must be provided as a data frame"</span>)</span>
+<span id="annotated-cell-26-7"><a href="#annotated-cell-26-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-26-8"><a href="#annotated-cell-26-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if the data doesn't have the right columns</span></span>
+<span id="annotated-cell-26-9"><a href="#annotated-cell-26-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"size_category"</span>, <span class="st">"size"</span>) <span class="sc">%in%</span> <span class="fu">names</span>(df)) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-26-10"><a href="#annotated-cell-26-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"'df' must include a 'size' and 'size_category' column"</span>)</span>
+<span id="annotated-cell-26-11"><a href="#annotated-cell-26-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-26-12"><a href="#annotated-cell-26-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out for unsupported size category values</span></span>
+<span id="annotated-cell-26-13"><a href="#annotated-cell-26-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(size_cat <span class="sc">%in%</span> <span class="fu">unique</span>(df<span class="sc">$</span>size_category) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-26-14"><a href="#annotated-cell-26-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Specified 'size_cat' not found in provided data"</span>)</span>
+<span id="annotated-cell-26-15"><a href="#annotated-cell-26-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-26-16"><a href="#annotated-cell-26-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
+<span id="annotated-cell-26-17"><a href="#annotated-cell-26-17" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
+<span id="annotated-cell-26-18"><a href="#annotated-cell-26-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-26-19"><a href="#annotated-cell-26-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
+<span id="annotated-cell-26-20"><a href="#annotated-cell-26-20" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
+<span id="annotated-cell-26-21"><a href="#annotated-cell-26-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="annotated-cell-26-22"><a href="#annotated-cell-26-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-26-23"><a href="#annotated-cell-26-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke new-and-improved function</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="3">3</button><span id="annotated-cell-26-24" class="code-annotation-target"><a href="#annotated-cell-26-24" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-26" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-26" data-code-lines="2" data-code-annotation="1">The default category is now set to “small”</span>
+</dd>
+<dt data-target-cell="annotated-cell-26" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-26" data-code-lines="5" data-code-annotation="2">I recommend phrasing your error checks like this (i.e., ’if &lt;some condition&gt; is <em>not</em> true, then &lt;informative error/warning message&gt;)</span>
+</dd>
+<dt data-target-cell="annotated-cell-26" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-26" data-code-lines="24" data-code-annotation="3">We don’t need to specify the ‘size_cat’ argument because we can rely on the default</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mod_wrangle_files/figure-html/custom-fxns-improved-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="additional-resources" class="level2">
