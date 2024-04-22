@@ -362,7 +362,7 @@
     "href": "mod_stats.html#additional-resources",
     "title": "Analysis & Modeling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nDoing Meta-Analysis with R: A Hands-On Guide\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nUnderstanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. Spake et al., 2023. Biological Reviews\nImproving Quantitative Synthesis to Achieve Generality in Ecology. Spake et al., 2022.Nature Ecology and Evolution\nDoing Meta-Analysis with R: A Hands-On Guide\n\n\n\nWorkshops & Courses\n\nMatt Vuorre’s Bayesian Meta-Analysis with R, Stan, and brms\n\n\n\nWebsites",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
@@ -952,7 +952,7 @@
     "href": "mod_wrangle.html#additional-resources",
     "title": "Data Harmonization & Wrangling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\nOpen Science Synthesis for the Delta Science Program’s Data Munging / QA / QC / Cleaning\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nThe Ultimate Guide to Data Cleaning. Elgarby, O. 2019. Medium\nSome Simple Guidelines for Effective Data Management. Borer et al., 2009. Ecological Society of America Bulletin\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\nOpen Science Synthesis for the Delta Science Program’s Data Munging / QA / QC / Cleaning\n\n\n\nWebsites\n\nTen Commandments for Good Data Management",
     "crumbs": [
       "Phase III -- Execute",
       "Data Wrangling"
