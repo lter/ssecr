@@ -351,6 +351,54 @@ While we absolutely _could_ have used the same function to break apart count and
 
 ### Loops
 
+Another way of simplfying repetitive operations is to use a "for loop" (often called simply "loops"). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an "index" object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object's identity will be determined by whatever set of values you define at the top of the loop.
+
+Here's a very bare bones example to demonstrate the fundamentals.
+
+```{r loop-1}
+# Loop across each number between 2 and 4
+for(k in 2:4){ # <1>
+  
+  # Square the number
+  result <- k^2
+  
+  # Message that outside of the loop
+  message(k, " squared is ", result)
+} # <2>
+```
+1. 'k' is our index object in this loop
+2. Note that the operations to iterate across are wrapped in curly braces (`{...}`)
+
+Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let's return to our Plum Island Ecosystems crab dataset for a more nuanced example.
+
+```{r loop-2}
+# Create an empty list
+crab_list <- list()
+
+# Let's loop across size categories of crab
+for(focal_size in unique(pie_crab_v4$size_category)){ # <1>
+  
+  # Subset the data to just this size category
+  focal_df <- pie_crab_v4 %>% 
+    dplyr::filter(size_category == focal_size)
+  
+  # Calculate average and standard deviation of size within this category
+  size_avg <- mean(focal_df$size, na.rm = T) 
+  size_dev <- sd(focal_df$size, na.rm = T) 
+  
+  # Assemble this into a data table and add to our list
+  crab_list[[focal_size]] <- data.frame("size_category" = focal_size,
+                                        "size_mean" = size_avg,
+                                        "size_sd" = size_dev)
+} # Close loop
+
+# Unlist the outputs into a dataframe
+crab_df <- purrr::list_rbind(x = crab_list)
+
+# Check out the resulting data table
+crab_df
+```
+1. Note that this is not the most efficient way of doing group-wise summarization but is--hopefully--a nice demonstration of loops!
 
 ### Custom Functions
 
