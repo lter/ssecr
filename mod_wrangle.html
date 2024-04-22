@@ -848,14 +848,148 @@ Attaching package: 'psych'</code></pre>
 </section>
 <section id="leveraging-data-shape" class="level3">
 <h3 class="anchored" data-anchor-id="leveraging-data-shape">Leveraging Data Shape</h3>
-<ol type="1">
-<li><code>tidyr::pivot_longer</code></li>
-<li>operations on consolidated columns</li>
-<li><code>tidyr::pivot_wider</code></li>
-</ol>
+<p>You may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations <em>dramatically</em> more efficient. If you haven’t encountered it before, any data table can be said to have one of two ‘shapes’: either <strong>long</strong> or <strong>wide</strong>. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or “wider” data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or “longer” data tables).</p>
+<p>Data shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes “tidy”, you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then–when you’re finished–reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.</p>
+<p>Let’s consider an example to help clarify this. We’ll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a butterfly dataframe</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>bfly_v1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"pasture"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"PNW"</span>, <span class="st">"PNW"</span>, <span class="st">"RCS"</span>, <span class="st">"RCS"</span>),</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"monarch"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"14m"</span>, <span class="st">"10f"</span>, <span class="st">"7m"</span>, <span class="st">"16f"</span>),</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"melissa_blue"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"32m"</span>, <span class="st">"2f"</span>, <span class="st">"6m"</span>, <span class="st">"0f"</span>),</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"swallowtail"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"1m"</span>, <span class="st">"3f"</span>, <span class="st">"0m"</span>, <span class="st">"5f"</span>))</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a><span class="co"># First we'll reshape this into long format</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>bfly_v2 <span class="ot">&lt;-</span> bfly_v1 <span class="sc">%&gt;%</span> </span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>pasture, </span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"butterfly_sp"</span>, </span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"count_sex"</span>)</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Check what that leaves us with</span></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v2, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 3
+  pasture butterfly_sp count_sex
+  &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;    
+1 PNW     monarch      14m      
+2 PNW     melissa_blue 32m      
+3 PNW     swallowtail  1m       
+4 PNW     monarch      10f      </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's separate count from sex to be more usable later</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>bfly_v3 <span class="ot">&lt;-</span> bfly_v2 <span class="sc">%&gt;%</span> </span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_regex</span>(<span class="at">cols =</span> count_sex, </span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">c</span>(<span class="at">count =</span> <span class="st">"[[:digit:]]+"</span>, <span class="at">sex =</span> <span class="st">"[[:alpha:]]"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the 'count' column a real number now</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">count =</span> <span class="fu">as.numeric</span>(count))</span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check output</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v3, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 4
+  pasture butterfly_sp count sex  
+  &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;
+1 PNW     monarch         14 m    
+2 PNW     melissa_blue    32 m    
+3 PNW     swallowtail      1 m    
+4 PNW     monarch         10 f    </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape back into wide-ish format</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>bfly_v4 <span class="ot">&lt;-</span> bfly_v3 <span class="sc">%&gt;%</span> </span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"butterfly_sp"</span>, <span class="at">values_from =</span> count)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-re-check output</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+  pasture sex   monarch melissa_blue swallowtail
+  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;
+1 PNW     m          14           32           1
+2 PNW     f          10            2           3
+3 RCS     m           7            6           0
+4 RCS     f          16            0           5</code></pre>
+</div>
+</div>
+<p>While we absolutely <em>could</em> have used the same function to break apart count and butterfly sex data it would have involved copy/pasting the same information repeatedly. By pivoting to long format first, we can greatly streamline our code. This can also be advantageous for unit conversions, applying data transformations, or checking text column contents among many other possible applications.</p>
 </section>
 <section id="loops" class="level3">
 <h3 class="anchored" data-anchor-id="loops">Loops</h3>
+<p>Another way of simplfying repetitive operations is to use a “for loop” (often called simply “loops”). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an “index” object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object’s identity will be determined by whatever set of values you define at the top of the loop.</p>
+<p>Here’s a very bare bones example to demonstrate the fundamentals.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-23"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-23-1"><a href="#annotated-cell-23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across each number between 2 and 4</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="1">1</button><span id="annotated-cell-23-2" class="code-annotation-target"><a href="#annotated-cell-23-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>){</span>
+<span id="annotated-cell-23-3"><a href="#annotated-cell-23-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-23-4"><a href="#annotated-cell-23-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Square the number</span></span>
+<span id="annotated-cell-23-5"><a href="#annotated-cell-23-5" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> k<span class="sc">^</span><span class="dv">2</span></span>
+<span id="annotated-cell-23-6"><a href="#annotated-cell-23-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-23-7"><a href="#annotated-cell-23-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Message that outside of the loop</span></span>
+<span id="annotated-cell-23-8"><a href="#annotated-cell-23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(k, <span class="st">" squared is "</span>, result)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="2">2</button><span id="annotated-cell-23-9" class="code-annotation-target"><a href="#annotated-cell-23-9" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-23" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-23" data-code-lines="2" data-code-annotation="1">‘k’ is our index object in this loop</span>
+</dd>
+<dt data-target-cell="annotated-cell-23" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-23" data-code-lines="9" data-code-annotation="2">Note that the operations to iterate across are wrapped in curly braces (<code>{...}</code>)</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>2 squared is 4</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>3 squared is 9</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>4 squared is 16</code></pre>
+</div>
+</div>
+<p>Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let’s return to our Plum Island Ecosystems crab dataset for a more nuanced example.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-24"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-24-1"><a href="#annotated-cell-24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list</span></span>
+<span id="annotated-cell-24-2"><a href="#annotated-cell-24-2" aria-hidden="true" tabindex="-1"></a>crab_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="annotated-cell-24-3"><a href="#annotated-cell-24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-24-4"><a href="#annotated-cell-24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's loop across size categories of crab</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-24" data-target-annotation="1">1</button><span id="annotated-cell-24-5" class="code-annotation-target"><a href="#annotated-cell-24-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_size <span class="cf">in</span> <span class="fu">unique</span>(pie_crab_v4<span class="sc">$</span>size_category)){</span>
+<span id="annotated-cell-24-6"><a href="#annotated-cell-24-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-24-7"><a href="#annotated-cell-24-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset the data to just this size category</span></span>
+<span id="annotated-cell-24-8"><a href="#annotated-cell-24-8" aria-hidden="true" tabindex="-1"></a>  focal_df <span class="ot">&lt;-</span> pie_crab_v4 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-24-9"><a href="#annotated-cell-24-9" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(size_category <span class="sc">==</span> focal_size)</span>
+<span id="annotated-cell-24-10"><a href="#annotated-cell-24-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-24-11"><a href="#annotated-cell-24-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate average and standard deviation of size within this category</span></span>
+<span id="annotated-cell-24-12"><a href="#annotated-cell-24-12" aria-hidden="true" tabindex="-1"></a>  size_avg <span class="ot">&lt;-</span> <span class="fu">mean</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
+<span id="annotated-cell-24-13"><a href="#annotated-cell-24-13" aria-hidden="true" tabindex="-1"></a>  size_dev <span class="ot">&lt;-</span> <span class="fu">sd</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
+<span id="annotated-cell-24-14"><a href="#annotated-cell-24-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-24-15"><a href="#annotated-cell-24-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble this into a data table and add to our list</span></span>
+<span id="annotated-cell-24-16"><a href="#annotated-cell-24-16" aria-hidden="true" tabindex="-1"></a>  crab_list[[focal_size]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"size_category"</span> <span class="ot">=</span> focal_size,</span>
+<span id="annotated-cell-24-17"><a href="#annotated-cell-24-17" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_mean"</span> <span class="ot">=</span> size_avg,</span>
+<span id="annotated-cell-24-18"><a href="#annotated-cell-24-18" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_sd"</span> <span class="ot">=</span> size_dev)</span>
+<span id="annotated-cell-24-19"><a href="#annotated-cell-24-19" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close loop</span></span>
+<span id="annotated-cell-24-20"><a href="#annotated-cell-24-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-24-21"><a href="#annotated-cell-24-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Unlist the outputs into a dataframe</span></span>
+<span id="annotated-cell-24-22"><a href="#annotated-cell-24-22" aria-hidden="true" tabindex="-1"></a>crab_df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">list_rbind</span>(<span class="at">x =</span> crab_list)</span>
+<span id="annotated-cell-24-23"><a href="#annotated-cell-24-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-24-24"><a href="#annotated-cell-24-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the resulting data table</span></span>
+<span id="annotated-cell-24-25"><a href="#annotated-cell-24-25" aria-hidden="true" tabindex="-1"></a>crab_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-24" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-24" data-code-lines="5" data-code-annotation="1">Note that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  size_category size_mean   size_sd
+1         small 12.624270 1.3827471
+2          tiny  8.876944 0.9112686
+3           big 17.238267 1.3650173
+4          huge 21.196786 0.8276744</code></pre>
+</div>
+</div>
 </section>
 <section id="custom-functions" class="level3">
 <h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
