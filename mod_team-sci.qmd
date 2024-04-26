@@ -23,6 +23,7 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
+- Bates _et al._, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. _Biological Conservation_
 - Farrell _et al._, [Training  Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
 - Hampton & Parker, [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
 
