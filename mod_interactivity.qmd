@@ -40,13 +40,13 @@ install.packages("htmltools")
 install.packages("lterdatasampler")
 ```
 
-We'll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.
+We'll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later as well as the `shiny` package.
 
 ```{r libs}
 #| message: false
 
-# Load tidyverse
-library(tidyverse)
+# Load needed libraries
+library(tidyverse); library(shiny)
 ```
 
 ## Shiny Fundamentals
@@ -76,8 +76,65 @@ If you copy and run the above code, you should see an app that is a blank white 
 
 ## Interactive Apps
 
+Now that we've covered non-reactive apps, let's create an interactive one! It is important to remember that the user interface needs to contain _both_ the inputs the user can make _and_ the outputs determined by those inputs. The server will be responsible for turning the inputs into outputs but if you want your interactive app to actually show the user the interactivity you need to be careful to include the outputs in the UI.
 
+Essentially all Shiny UI functions use the same syntax of `<value class>Input` or `<value class>Output`. So, determining how you want the user to engage with your app is sometimes as straightforward as identifying the class of the value you want them to interact with. <u>Shiny calls these helper functions "widgets".</u>
 
+Let's consider an app that accepts a single number and returns the square root of that number.
+
+```{r reactive-v1}
+# Define the UI ---- 
+reactive_ui <- shiny::fluidPage(
+  
+  # Create input
+  shiny::numericInput(inputId = "num_in", # <1>
+                      label = "Type a number",
+                      value = 16),
+  
+  # Include some plain text for contextualizing the output
+  "Square root is: ", # <2>
+  
+  # Create output
+  shiny::textOutput(outputId = "num_out")
+  
+) # Close UI
+
+# Define server ----
+reactive_server <- function(input, output){
+  
+  # Reactively accept the input and take the square root of it
+  root <- shiny::reactive({ # <3>
+    sqrt(x = input$num_in) # <4>
+  })
+  
+  # Make that value an output of the server/app
+  output$num_out <- shiny::renderText( # <5>
+    expr = root() # <6>
+  ) 
+  
+} # Close server
+
+# Generate the app ----
+shiny::shinyApp(ui = reactive_ui, server = reactive_server)
+```
+1. Note that the argument name is capital "I" but _lowercase_ "d". Typing `inputID` is a common and frustrating source of error for Shiny app developers
+2. Every element of the UI--except the last one--needs to end with a comma
+3. All reactive elements (i.e., those that change as soon as the user changes an input) need to be specified inside of `reactive` with _both_ parentheses and curly braces
+4. The name of this input exactly matches the `inputId` we defined in the UI. That it _is_ an input is defined by our use of the `numericInput` widget
+5. The name of this output exactly matches the `outputId` we told the UI to expect.
+6. Reactive elements essentially become functions in their own right! So, when we want to use them, we need to include empty parentheses next to their name
+
+We included a _lot_ of footnote annotations in that code chunk to help provide context but there are a few small comments that are worthwhile to bring up at this stage.
+
+1. UI outputs and server renders _must_ match
+
+The widget you use in the UI to return an output must correspond to the function used in the server to generate that output. In this example, we use `textOutput` in the UI so in the server we use `renderText`. Essentially all widgets in Shiny use this `<class>Output` versus `render<Class>` syntax which can be a big help to visual checks that your app is written correctly. You will need to be sure that whatever the 'class' is, it is _lowercase_ in the UI but _title case_ in the server (i.e., only first letter capitalized.
+
+2. Use section header format
+
+This app is relatively short but we think effectively hints at how long and convoluted purpose-built Shiny apps can easily become. So, we recommend using section headers in your Shiny app code. You can do this by putting either four hyphens or four hashtags at the end of a comment line (e.g., `# Section 1 ####` or `# My header ----`). Headings defined in this way will appear in the bottom left of the "Source" pane of RStudio next to a light orange hashtag symbol. Clicking the text in that area will open a drop-down menu showing all headings in your current file and clicking one of the other headings will instantly jump you to that heading. This can be _incredibly_ convenient when you're trying to navigate a several hundred line long Shiny app. While rainbow parentheses can be useful for avoiding typos _within a section_, section headers make it much easier to avoid typos _across_ sections.
+
+If you don't use headings already (or your cursor is on a line before the first heading), the relevant bit of the "Source" pane will just say "(Top Level)" and will not have the golden hashtag symbol.
 
 ## Including Data
 
