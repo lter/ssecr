@@ -9,7 +9,7 @@ execute:
 
 Shiny is a popular tool that allows users to build interactive web applications without the normally pre-requisite web development expertise. In addition to Shiny apps being simpler to build for the programmer they are often used to allow visitors to perform coding tasks without ever actually writing code. These are huge advantages because they reduce or eliminate significant technical barriers in developing truly interactive applications.
 
-In synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly "play with" exploratory graphs, or even use it as a data submission portal (as is the case with some <u>R</u>esearch <u>C</u>oordination <u>N</u>etworks or "RCNs").
+In synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly "play with" exploratory graphs, or even to create a data submission portal (as is the case with some <u>R</u>esearch <u>C</u>oordination <u>N</u>etworks or "RCNs").
 
 Note that Shiny can be built in either R or Python 'under the hood' but for the purposes of this module we'll focus on R.
 
@@ -19,7 +19,11 @@ After completing this topic you will be able to:
 
 - <u>Define</u> the three fundamental components of a Shiny app
 - <u>Explain</u> benefits and limitations of interactive approaches to data exploration
-- <u>Create</u> a Shiny app for interacting with a dataset
+- <u>Generate</u> an interactive app with Shiny
+- <u>Use</u> text formatting methods in a Shiny app
+- <u>Explore</u> available Shiny layout options
+- <u>Create</u> a Shiny app
+- <u>Describe</u> (briefly) the purpose of deploying a Shiny app
 
 ## Needed Packages
 
@@ -45,8 +49,27 @@ We'll load the Tidyverse meta-package here to have access to many of its useful 
 library(tidyverse)
 ```
 
-## Module Content
+## Shiny Fundamentals
 
+
+
+## Including Data
+
+
+
+## Text Formatting
+
+
+
+## Layouts
+
+
+
+## Deployment
+
+When Shiny apps are only being used by those in your team, keeping them as a code script works well. However, if you'd like those outside of your team to be able to find your app as they would any other website you'll need to <u>deploy</u> your Shiny app. This process is outside of the scope of this module but is often the end goal of Shiny app development.
+
+Take a look at [Posit's instructions for deployment](https://shiny.posit.co/r/articles/share/deployment-web/) for more details but essentially "deployment" is the process of getting your local app hosted on shinyapps.io which gives it a link that anyone can use to access/run your app on their web browser of choice.
 
 ## Additional Interactivity Resources
 
@@ -56,6 +79,7 @@ library(tidyverse)
 
 ### Workshops & Courses
 
+- Posit's [Welcome to Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html) (for R coders)
 - 2022 All Scientists' Meeting [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop
 
 ### Websites
