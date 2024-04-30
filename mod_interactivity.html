@@ -76,6 +76,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -367,6 +369,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#shiny-fundamentals" id="toc-shiny-fundamentals" class="nav-link" data-scroll-target="#shiny-fundamentals">Shiny Fundamentals</a></li>
+  <li><a href="#interactive-apps" id="toc-interactive-apps" class="nav-link" data-scroll-target="#interactive-apps">Interactive Apps</a></li>
   <li><a href="#including-data" id="toc-including-data" class="nav-link" data-scroll-target="#including-data">Including Data</a></li>
   <li><a href="#text-formatting" id="toc-text-formatting" class="nav-link" data-scroll-target="#text-formatting">Text Formatting</a></li>
   <li><a href="#layouts" id="toc-layouts" class="nav-link" data-scroll-target="#layouts">Layouts</a></li>
@@ -442,6 +445,37 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="shiny-fundamentals" class="level2">
 <h2 class="anchored" data-anchor-id="shiny-fundamentals">Shiny Fundamentals</h2>
+<p>All Shiny apps are composed of three pieces: a <u>u</u>ser <u>i</u>nterface (UI), a server, and a call to the <code>shinyApp</code> function. The user interface includes everything that the user sees and can interact with; note that this includes <em>both</em> inputs and outputs. The server is responsible for all code operations performed on user inputs in order to generate outputs specified in the UI. The server is <em>not</em> available to the user. Finally, the <code>shinyApp</code> function simply binds together the UI and server and creates a living app. The app appears either in your RStudio or in a new tab on a web browser depending on your settings.</p>
+<p>For those of you who write your own functions, you may notice that the syntax of Shiny is <strong>very</strong> similar to the syntax of functions. If you have not already, your quality of life will benefit greatly if you turn on “rainbow parentheses” in RStudio (Tools <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Global Options <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Code <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Display <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> Check “Use rainbow parentheses” box).</p>
+<p>Let’s consider an artificially simple Shiny app so you can get a sense for the fundamental architecture of this tool.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the UI</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-2" class="code-annotation-target"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>basic_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
+<span id="annotated-cell-3-3"><a href="#annotated-cell-3-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Hello there!"</span></span>
+<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the server</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-7" class="code-annotation-target"><a href="#annotated-cell-3-7" aria-hidden="true" tabindex="-1"></a>basic_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){ }</span>
+<span id="annotated-cell-3-8"><a href="#annotated-cell-3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-9"><a href="#annotated-cell-3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the app</span></span>
+<span id="annotated-cell-3-10"><a href="#annotated-cell-3-10" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> basic_ui, <span class="at">server =</span> basic_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="2" data-code-annotation="1">The <code>fluidPage</code> function is important for leaving flexibility in UI layout which we’ll explore later in the module</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="7" data-code-annotation="2">Because this app has no inputs or outputs, it doesn’t need anything in the ‘server’ component (though it still does require an empty server!)</span>
+</dd>
+</dl>
+</div>
+</div>
+<p>If you copy and run the above code, you should see an app that is a blank white page with “Hello there!” written in the top left in plain text. Congratulations, you have now made your first Shiny app! Now, your reason for exploring this module likely involves an app that actually does something but the fundamental structure of all apps–even skeletal apps like this one–is the same. More complicated apps will certainly have more content in the UI and server sections but all Shiny apps will have this tripartite structure.</p>
+</section>
+<section id="interactive-apps" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-apps">Interactive Apps</h2>
 </section>
 <section id="including-data" class="level2">
 <h2 class="anchored" data-anchor-id="including-data">Including Data</h2>

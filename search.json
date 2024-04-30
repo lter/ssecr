@@ -809,7 +809,18 @@
     "href": "mod_interactivity.html#shiny-fundamentals",
     "title": "Creating Interactive Apps",
     "section": "Shiny Fundamentals",
-    "text": "Shiny Fundamentals",
+    "text": "Shiny Fundamentals\nAll Shiny apps are composed of three pieces: a user interface (UI), a server, and a call to the shinyApp function. The user interface includes everything that the user sees and can interact with; note that this includes both inputs and outputs. The server is responsible for all code operations performed on user inputs in order to generate outputs specified in the UI. The server is not available to the user. Finally, the shinyApp function simply binds together the UI and server and creates a living app. The app appears either in your RStudio or in a new tab on a web browser depending on your settings.\nFor those of you who write your own functions, you may notice that the syntax of Shiny is very similar to the syntax of functions. If you have not already, your quality of life will benefit greatly if you turn on “rainbow parentheses” in RStudio (Tools  Global Options  Code  Display  Check “Use rainbow parentheses” box).\nLet’s consider an artificially simple Shiny app so you can get a sense for the fundamental architecture of this tool.\n\n# Define the UI\n1basic_ui &lt;- shiny::fluidPage(\n  \"Hello there!\"\n)\n\n# Define the server\n2basic_server &lt;- function(input, output){ }\n\n# Generate the app\nshiny::shinyApp(ui = basic_ui, server = basic_server)\n\n\n1\n\nThe fluidPage function is important for leaving flexibility in UI layout which we’ll explore later in the module\n\n2\n\nBecause this app has no inputs or outputs, it doesn’t need anything in the ‘server’ component (though it still does require an empty server!)\n\n\n\n\nIf you copy and run the above code, you should see an app that is a blank white page with “Hello there!” written in the top left in plain text. Congratulations, you have now made your first Shiny app! Now, your reason for exploring this module likely involves an app that actually does something but the fundamental structure of all apps–even skeletal apps like this one–is the same. More complicated apps will certainly have more content in the UI and server sections but all Shiny apps will have this tripartite structure.",
+    "crumbs": [
+      "Bonus Modules",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_interactivity.html#interactive-apps",
+    "href": "mod_interactivity.html#interactive-apps",
+    "title": "Creating Interactive Apps",
+    "section": "Interactive Apps",
+    "text": "Interactive Apps",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
