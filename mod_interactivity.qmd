@@ -51,6 +51,32 @@ library(tidyverse)
 
 ## Shiny Fundamentals
 
+All Shiny apps are composed of three pieces: a <u>u</u>ser <u>i</u>nterface (UI), a server, and a call to the `shinyApp` function. The user interface includes everything that the user sees and can interact with; note that this includes _both_ inputs and outputs. The server is responsible for all code operations performed on user inputs in order to generate outputs specified in the UI. The server is _not_ available to the user. Finally, the `shinyApp` function simply binds together the UI and server and creates a living app. The app appears either in your RStudio or in a new tab on a web browser depending on your settings.
+
+For those of you who write your own functions, you may notice that the syntax of Shiny is **very** similar to the syntax of functions. If you have not already, your quality of life will benefit greatly if you turn on "rainbow parentheses" in RStudio (Tools {{< fa arrow-right >}} Global Options {{< fa arrow-right >}} Code {{< fa arrow-right >}} Display {{< fa arrow-right >}} Check "Use rainbow parentheses" box).
+
+Let's consider an artificially simple Shiny app so you can get a sense for the fundamental architecture of this tool.
+
+```{r basic-shiny}
+# Define the UI
+basic_ui <- shiny::fluidPage( # <1>
+  "Hello there!"
+)
+
+# Define the server
+basic_server <- function(input, output){ } # <2>
+
+# Generate the app
+shiny::shinyApp(ui = basic_ui, server = basic_server)
+```
+1. The `fluidPage` function is important for leaving flexibility in UI layout which we'll explore later in the module
+2. Because this app has no inputs or outputs, it doesn't need anything in the 'server' component (though it still does require an empty server!)
+
+If you copy and run the above code, you should see an app that is a blank white page with "Hello there!" written in the top left in plain text. Congratulations, you have now made your first Shiny app! Now, your reason for exploring this module likely involves an app that actually does something but the fundamental structure of all apps--even skeletal apps like this one--is the same. More complicated apps will certainly have more content in the UI and server sections but all Shiny apps will have this tripartite structure.
+
+## Interactive Apps
+
+
 
 
 ## Including Data
