@@ -765,7 +765,7 @@
     "href": "mod_interactivity.html",
     "title": "Creating Interactive Apps",
     "section": "",
-    "text": "Under Construction",
+    "text": "Shiny is a popular tool that allows users to build interactive web applications without the normally pre-requisite web development expertise. In addition to Shiny apps being simpler to build for the programmer they are often used to allow visitors to perform coding tasks without ever actually writing code. These are huge advantages because they reduce or eliminate significant technical barriers in developing truly interactive applications.\nIn synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly “play with” exploratory graphs, or even to create a data submission portal (as is the case with some Research Coordination Networks or “RCNs”).\nNote that Shiny can be built in either R or Python ‘under the hood’ but for the purposes of this module we’ll focus on R.",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
@@ -776,7 +776,7 @@
     "href": "mod_interactivity.html#overview",
     "title": "Creating Interactive Apps",
     "section": "",
-    "text": "Under Construction",
+    "text": "Shiny is a popular tool that allows users to build interactive web applications without the normally pre-requisite web development expertise. In addition to Shiny apps being simpler to build for the programmer they are often used to allow visitors to perform coding tasks without ever actually writing code. These are huge advantages because they reduce or eliminate significant technical barriers in developing truly interactive applications.\nIn synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly “play with” exploratory graphs, or even to create a data submission portal (as is the case with some Research Coordination Networks or “RCNs”).\nNote that Shiny can be built in either R or Python ‘under the hood’ but for the purposes of this module we’ll focus on R.",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
@@ -787,7 +787,7 @@
     "href": "mod_interactivity.html#learning-objectives",
     "title": "Creating Interactive Apps",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine the three fundamental components of an R Shiny app\nExplain benefits and limitations of interactive approaches to data exploration\nCreate an R Shiny app for interacting with a dataset",
+    "text": "Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine the three fundamental components of a Shiny app\nExplain benefits and limitations of interactive approaches to data exploration\nGenerate an interactive app with Shiny\nUse text formatting methods in a Shiny app\nExplore available Shiny layout options\nCreate a Shiny app\nDescribe (briefly) the purpose of deploying a Shiny app",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
@@ -798,18 +798,62 @@
     "href": "mod_interactivity.html#needed-packages",
     "title": "Creating Interactive Apps",
     "section": "Needed Packages",
-    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")",
+    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\ninstall.packages(\"shiny\")\ninstall.packages(\"htmltools\")\ninstall.packages(\"lterdatasampler\")\n\nWe’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.\n\n# Load tidyverse\nlibrary(tidyverse)",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
     ]
   },
   {
-    "objectID": "mod_interactivity.html#module-content",
-    "href": "mod_interactivity.html#module-content",
+    "objectID": "mod_interactivity.html#shiny-fundamentals",
+    "href": "mod_interactivity.html#shiny-fundamentals",
     "title": "Creating Interactive Apps",
-    "section": "Module Content",
-    "text": "Module Content",
+    "section": "Shiny Fundamentals",
+    "text": "Shiny Fundamentals",
+    "crumbs": [
+      "Bonus Modules",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_interactivity.html#including-data",
+    "href": "mod_interactivity.html#including-data",
+    "title": "Creating Interactive Apps",
+    "section": "Including Data",
+    "text": "Including Data",
+    "crumbs": [
+      "Bonus Modules",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_interactivity.html#text-formatting",
+    "href": "mod_interactivity.html#text-formatting",
+    "title": "Creating Interactive Apps",
+    "section": "Text Formatting",
+    "text": "Text Formatting",
+    "crumbs": [
+      "Bonus Modules",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_interactivity.html#layouts",
+    "href": "mod_interactivity.html#layouts",
+    "title": "Creating Interactive Apps",
+    "section": "Layouts",
+    "text": "Layouts",
+    "crumbs": [
+      "Bonus Modules",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_interactivity.html#deployment",
+    "href": "mod_interactivity.html#deployment",
+    "title": "Creating Interactive Apps",
+    "section": "Deployment",
+    "text": "Deployment\nWhen Shiny apps are only being used by those in your team, keeping them as a code script works well. However, if you’d like those outside of your team to be able to find your app as they would any other website you’ll need to deploy your Shiny app. This process is outside of the scope of this module but is often the end goal of Shiny app development.\nTake a look at Posit’s instructions for deployment for more details but essentially “deployment” is the process of getting your local app hosted on shinyapps.io which gives it a link that anyone can use to access/run your app on their web browser of choice.",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
@@ -820,7 +864,7 @@
     "href": "mod_interactivity.html#additional-interactivity-resources",
     "title": "Creating Interactive Apps",
     "section": "Additional Interactivity Resources",
-    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\n2022 All Scientists’ Meeting Shiny Apps for Sharing Science workshop\n\n\n\nWebsites",
+    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nPosit’s Welcome to Shiny (for R coders)\n2022 All Scientists’ Meeting Shiny Apps for Sharing Science workshop\n\n\n\nWebsites\n\nPosit’s Shiny website",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
