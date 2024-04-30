@@ -50,7 +50,6 @@ We'll load the Tidyverse meta-package here to have access to many of its useful 
 library(tidyverse)
 ```
 
-
 ## Harmonizing Data
 
 Data harmonization is an interesting topic in that it is _vital_ for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.
