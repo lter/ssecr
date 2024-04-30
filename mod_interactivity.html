@@ -437,10 +437,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"htmltools"</span>)</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lterdatasampler"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.</p>
+<p>We’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later as well as the <code>shiny</code> package.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load tidyverse</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse); <span class="fu">library</span>(shiny)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="shiny-fundamentals" class="level2">
@@ -476,6 +476,82 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="interactive-apps" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-apps">Interactive Apps</h2>
+<p>Now that we’ve covered non-reactive apps, let’s create an interactive one! It is important to remember that the user interface needs to contain <em>both</em> the inputs the user can make <em>and</em> the outputs determined by those inputs. The server will be responsible for turning the inputs into outputs but if you want your interactive app to actually show the user the interactivity you need to be careful to include the outputs in the UI.</p>
+<p>Essentially all Shiny UI functions use the same syntax of <code>&lt;value class&gt;Input</code> or <code>&lt;value class&gt;Output</code>. So, determining how you want the user to engage with your app is sometimes as straightforward as identifying the class of the value you want them to interact with. <u>Shiny calls these helper functions “widgets”.</u></p>
+<p>Let’s consider an app that accepts a single number and returns the square root of that number.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the UI ---- </span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>reactive_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create input</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-5" class="code-annotation-target"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">numericInput</span>(<span class="at">inputId =</span> <span class="st">"num_in"</span>,</span>
+<span id="annotated-cell-4-6"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a>                      <span class="at">label =</span> <span class="st">"Type a number"</span>,</span>
+<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a>                      <span class="at">value =</span> <span class="dv">16</span>),</span>
+<span id="annotated-cell-4-8"><a href="#annotated-cell-4-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Include some plain text for contextualizing the output</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-10" class="code-annotation-target"><a href="#annotated-cell-4-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Square root is: "</span>,</span>
+<span id="annotated-cell-4-11"><a href="#annotated-cell-4-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-12"><a href="#annotated-cell-4-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create output</span></span>
+<span id="annotated-cell-4-13"><a href="#annotated-cell-4-13" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">textOutput</span>(<span class="at">outputId =</span> <span class="st">"num_out"</span>)</span>
+<span id="annotated-cell-4-14"><a href="#annotated-cell-4-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-15"><a href="#annotated-cell-4-15" aria-hidden="true" tabindex="-1"></a>) <span class="co"># Close UI</span></span>
+<span id="annotated-cell-4-16"><a href="#annotated-cell-4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-17"><a href="#annotated-cell-4-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Define server ----</span></span>
+<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>reactive_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="annotated-cell-4-19"><a href="#annotated-cell-4-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-20"><a href="#annotated-cell-4-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reactively accept the input and take the square root of it</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="3">3</button><span id="annotated-cell-4-21" class="code-annotation-target"><a href="#annotated-cell-4-21" aria-hidden="true" tabindex="-1"></a>  root <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">reactive</span>({</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="4">4</button><span id="annotated-cell-4-22" class="code-annotation-target"><a href="#annotated-cell-4-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sqrt</span>(<span class="at">x =</span> input<span class="sc">$</span>num_in)</span>
+<span id="annotated-cell-4-23"><a href="#annotated-cell-4-23" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="annotated-cell-4-24"><a href="#annotated-cell-4-24" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-25"><a href="#annotated-cell-4-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make that value an output of the server/app</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="5">5</button><span id="annotated-cell-4-26" class="code-annotation-target"><a href="#annotated-cell-4-26" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>num_out <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">renderText</span>(</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="6">6</button><span id="annotated-cell-4-27" class="code-annotation-target"><a href="#annotated-cell-4-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">expr =</span> <span class="fu">root</span>()</span>
+<span id="annotated-cell-4-28"><a href="#annotated-cell-4-28" aria-hidden="true" tabindex="-1"></a>  ) </span>
+<span id="annotated-cell-4-29"><a href="#annotated-cell-4-29" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-30"><a href="#annotated-cell-4-30" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close server</span></span>
+<span id="annotated-cell-4-31"><a href="#annotated-cell-4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-32"><a href="#annotated-cell-4-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the app ----</span></span>
+<span id="annotated-cell-4-33"><a href="#annotated-cell-4-33" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> reactive_ui, <span class="at">server =</span> reactive_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="5" data-code-annotation="1">Note that the argument name is capital “I” but <em>lowercase</em> “d”. Typing <code>inputID</code> is a common and frustrating source of error for Shiny app developers</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="10" data-code-annotation="2">Every element of the UI–except the last one–needs to end with a comma</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="21" data-code-annotation="3">All reactive elements (i.e., those that change as soon as the user changes an input) need to be specified inside of <code>reactive</code> with <em>both</em> parentheses and curly braces</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="22" data-code-annotation="4">The name of this input exactly matches the <code>inputId</code> we defined in the UI. That it <em>is</em> an input is defined by our use of the <code>numericInput</code> widget</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="5">5</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="26" data-code-annotation="5">The name of this output exactly matches the <code>outputId</code> we told the UI to expect.</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="6">6</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="27" data-code-annotation="6">Reactive elements essentially become functions in their own right! So, when we want to use them, we need to include empty parentheses next to their name</span>
+</dd>
+</dl>
+</div>
+</div>
+<p>We included a <em>lot</em> of footnote annotations in that code chunk to help provide context but there are a few small comments that are worthwhile to bring up at this stage.</p>
+<ol type="1">
+<li>UI outputs and server renders <em>must</em> match</li>
+</ol>
+<p>The widget you use in the UI to return an output must correspond to the function used in the server to generate that output. In this example, we use <code>textOutput</code> in the UI so in the server we use <code>renderText</code>. Essentially all widgets in Shiny use this <code>&lt;class&gt;Output</code> versus <code>render&lt;Class&gt;</code> syntax which can be a big help to visual checks that your app is written correctly. You will need to be sure that whatever the ‘class’ is, it is <em>lowercase</em> in the UI but <em>title case</em> in the server (i.e., only first letter capitalized.</p>
+<ol start="2" type="1">
+<li>Use section header format</li>
+</ol>
+<p>This app is relatively short but we think effectively hints at how long and convoluted purpose-built Shiny apps can easily become. So, we recommend using section headers in your Shiny app code. You can do this by putting either four hyphens or four hashtags at the end of a comment line (e.g., <code># Section 1 ####</code> or <code># My header ----</code>). Headings defined in this way will appear in the bottom left of the “Source” pane of RStudio next to a light orange hashtag symbol. Clicking the text in that area will open a drop-down menu showing all headings in your current file and clicking one of the other headings will instantly jump you to that heading. This can be <em>incredibly</em> convenient when you’re trying to navigate a several hundred line long Shiny app. While rainbow parentheses can be useful for avoiding typos <em>within a section</em>, section headers make it much easier to avoid typos <em>across</em> sections.</p>
+<p>If you don’t use headings already (or your cursor is on a line before the first heading), the relevant bit of the “Source” pane will just say “(Top Level)” and will not have the golden hashtag symbol.</p>
 </section>
 <section id="including-data" class="level2">
 <h2 class="anchored" data-anchor-id="including-data">Including Data</h2>
