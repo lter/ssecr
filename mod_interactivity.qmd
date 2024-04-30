@@ -1,19 +1,25 @@
 ---
 title: "Creating Interactive Apps"
 code-annotations: hover
+execute: 
+    eval: false
 ---
 
 ## Overview
 
-Under Construction
+Shiny is a popular tool that allows users to build interactive web applications without the normally pre-requisite web development expertise. In addition to Shiny apps being simpler to build for the programmer they are often used to allow visitors to perform coding tasks without ever actually writing code. These are huge advantages because they reduce or eliminate significant technical barriers in developing truly interactive applications.
+
+In synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly "play with" exploratory graphs, or even use it as a data submission portal (as is the case with some <u>R</u>esearch <u>C</u>oordination <u>N</u>etworks or "RCNs").
+
+Note that Shiny can be built in either R or Python 'under the hood' but for the purposes of this module we'll focus on R.
 
 ## Learning Objectives
 
 After completing this topic you will be able to: 
 
-- <u>Define</u> the three fundamental components of an R Shiny app
+- <u>Define</u> the three fundamental components of a Shiny app
 - <u>Explain</u> benefits and limitations of interactive approaches to data exploration
-- <u>Create</u> an R Shiny app for interacting with a dataset
+- <u>Create</u> a Shiny app for interacting with a dataset
 
 ## Needed Packages
 
@@ -25,6 +31,18 @@ If you'd like to follow along with the code chunks included throughout this modu
 # Note that these lines only need to be run once per computer
 ## So you can skip this step if you've installed these before
 install.packages("tidyverse")
+install.packages("shiny")
+install.packages("htmltools")
+install.packages("lterdatasampler")
+```
+
+We'll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.
+
+```{r libs}
+#| message: false
+
+# Load tidyverse
+library(tidyverse)
 ```
 
 ## Module Content
@@ -42,4 +60,4 @@ install.packages("tidyverse")
 
 ### Websites
 
-- 
+- Posit's [Shiny](https://shiny.posit.co/) website
