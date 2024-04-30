@@ -555,6 +555,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="including-data" class="level2">
 <h2 class="anchored" data-anchor-id="including-data">Including Data</h2>
+<p>You can also use your Shiny app to work with a full data table! When running your app locally, you only need to read in the data as you normally would then run the app. By having read in the data you will ensure the object is in your environment and accessible to the app. However, keep in mind this will only work in “local” (i.e., non-deployed) contexts. See our–admittedly brief–discussion of deployment at the end of this module.</p>
+<p>Let’s explore an example using data about fiddler crabs (<em>Minuca pugnax</em>) at the <a href="https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter">Plum Island Ecosystems (PIE) LTER</a> site from the <a href="https://lter.github.io/lterdatasampler/"><code>lterdatasampler</code> R package</a>. The app we’re about to create will make a graph between any two (numeric) columns.</p>
+<ol type="1">
+<li>Note the loading of the data is done <em>outside</em> of the app! You can have the app load its own data but that is more complicated than this example needs to be.</li>
+<li>To make our life easier in the server we can exclude non-number columns</li>
+<li>See how we’re reactively grabbing both axes?</li>
+<li>We use <code>ggplot2</code> here but could use any plotting function/library</li>
+</ol>
 </section>
 <section id="text-formatting" class="level2">
 <h2 class="anchored" data-anchor-id="text-formatting">Text Formatting</h2>
