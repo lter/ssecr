@@ -128,7 +128,7 @@ We included a _lot_ of footnote annotations in that code chunk to help provide c
 
 1. UI outputs and server renders _must_ match
 
-The widget you use in the UI to return an output must correspond to the function used in the server to generate that output. In this example, we use `textOutput` in the UI so in the server we use `renderText`. Essentially all widgets in Shiny use this `<class>Output` versus `render<Class>` syntax which can be a big help to visual checks that your app is written correctly. You will need to be sure that whatever the 'class' is, it is _lowercase_ in the UI but _title case_ in the server (i.e., only first letter capitalized.
+The widget you use in the UI to return an output must correspond to the function used in the server to generate that output. In this example, we use `textOutput` in the UI so in the server we use `renderText`. Essentially all widgets in Shiny use this `<class>Output` versus `render<Class>` syntax which can be a big help to visual checks that your app is written correctly. You will need to be sure that whatever the 'class' is, it is _lowercase_ in the UI but _title case_ in the server (i.e., only first letter capitalized).
 
 2. Use section header format
 
