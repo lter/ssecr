@@ -557,12 +557,75 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="including-data">Including Data</h2>
 <p>You can also use your Shiny app to work with a full data table! When running your app locally, you only need to read in the data as you normally would then run the app. By having read in the data you will ensure the object is in your environment and accessible to the app. However, keep in mind this will only work in “local” (i.e., non-deployed) contexts. See our–admittedly brief–discussion of deployment at the end of this module.</p>
 <p>Let’s explore an example using data about fiddler crabs (<em>Minuca pugnax</em>) at the <a href="https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter">Plum Island Ecosystems (PIE) LTER</a> site from the <a href="https://lter.github.io/lterdatasampler/"><code>lterdatasampler</code> R package</a>. The app we’re about to create will make a graph between any two (numeric) columns.</p>
-<ol type="1">
-<li>Note the loading of the data is done <em>outside</em> of the app! You can have the app load its own data but that is more complicated than this example needs to be.</li>
-<li>To make our life easier in the server we can exclude non-number columns</li>
-<li>See how we’re reactively grabbing both axes?</li>
-<li>We use <code>ggplot2</code> here but could use any plotting function/library</li>
-</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load fiddler crab data</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span>
+<span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the UI ---- </span></span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>crab_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
+<span id="annotated-cell-5-6"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-7"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Let the user choose which the X axis</span></span>
+<span id="annotated-cell-5-8"><a href="#annotated-cell-5-8" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">selectInput</span>(<span class="at">inputId =</span> <span class="st">"x_vals"</span>,</span>
+<span id="annotated-cell-5-9"><a href="#annotated-cell-5-9" aria-hidden="true" tabindex="-1"></a>              <span class="at">label =</span> <span class="st">"Choose the X-axis"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-10" class="code-annotation-target"><a href="#annotated-cell-5-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">choices =</span> <span class="fu">setdiff</span>(<span class="at">x =</span> <span class="fu">names</span>(pie_crab),</span>
+<span id="annotated-cell-5-11"><a href="#annotated-cell-5-11" aria-hidden="true" tabindex="-1"></a>                                <span class="at">y =</span> <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"site"</span>, <span class="st">"name"</span>)),</span>
+<span id="annotated-cell-5-12"><a href="#annotated-cell-5-12" aria-hidden="true" tabindex="-1"></a>              <span class="at">selected =</span> <span class="st">"latitude"</span>),</span>
+<span id="annotated-cell-5-13"><a href="#annotated-cell-5-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-14"><a href="#annotated-cell-5-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Also the Y axis</span></span>
+<span id="annotated-cell-5-15"><a href="#annotated-cell-5-15" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">selectInput</span>(<span class="at">inputId =</span> <span class="st">"y_vals"</span>,</span>
+<span id="annotated-cell-5-16"><a href="#annotated-cell-5-16" aria-hidden="true" tabindex="-1"></a>              <span class="at">label =</span> <span class="st">"Choose the Y-axis"</span>,</span>
+<span id="annotated-cell-5-17"><a href="#annotated-cell-5-17" aria-hidden="true" tabindex="-1"></a>              <span class="at">choices =</span> <span class="fu">setdiff</span>(<span class="at">x =</span> <span class="fu">names</span>(pie_crab),</span>
+<span id="annotated-cell-5-18"><a href="#annotated-cell-5-18" aria-hidden="true" tabindex="-1"></a>                                <span class="at">y =</span> <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"site"</span>, <span class="st">"name"</span>)),</span>
+<span id="annotated-cell-5-19"><a href="#annotated-cell-5-19" aria-hidden="true" tabindex="-1"></a>              <span class="at">selected =</span> <span class="st">"size"</span>),</span>
+<span id="annotated-cell-5-20"><a href="#annotated-cell-5-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-21"><a href="#annotated-cell-5-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return the desired plot</span></span>
+<span id="annotated-cell-5-22"><a href="#annotated-cell-5-22" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">plotOutput</span>(<span class="at">outputId =</span> <span class="st">"crab_graph"</span>)</span>
+<span id="annotated-cell-5-23"><a href="#annotated-cell-5-23" aria-hidden="true" tabindex="-1"></a>              </span>
+<span id="annotated-cell-5-24"><a href="#annotated-cell-5-24" aria-hidden="true" tabindex="-1"></a>) <span class="co"># Close UI</span></span>
+<span id="annotated-cell-5-25"><a href="#annotated-cell-5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-26"><a href="#annotated-cell-5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the server ----</span></span>
+<span id="annotated-cell-5-27"><a href="#annotated-cell-5-27" aria-hidden="true" tabindex="-1"></a>crab_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="annotated-cell-5-28"><a href="#annotated-cell-5-28" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-29"><a href="#annotated-cell-5-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reactively identify X &amp; Y axess</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3">3</button><span id="annotated-cell-5-30" class="code-annotation-target"><a href="#annotated-cell-5-30" aria-hidden="true" tabindex="-1"></a>  picked_x <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">reactive</span>({ input<span class="sc">$</span>x_vals })</span>
+<span id="annotated-cell-5-31"><a href="#annotated-cell-5-31" aria-hidden="true" tabindex="-1"></a>  picked_y <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">reactive</span>({ input<span class="sc">$</span>y_vals })</span>
+<span id="annotated-cell-5-32"><a href="#annotated-cell-5-32" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-33"><a href="#annotated-cell-5-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create the desired graph</span></span>
+<span id="annotated-cell-5-34"><a href="#annotated-cell-5-34" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">$</span>crab_graph <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">renderPlot</span>(</span>
+<span id="annotated-cell-5-35"><a href="#annotated-cell-5-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="4">4</button><span id="annotated-cell-5-36" class="code-annotation-target"><a href="#annotated-cell-5-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(pie_crab, <span class="fu">aes</span>(<span class="at">x =</span> .data[[<span class="fu">picked_x</span>()]], <span class="at">y =</span> .data[[<span class="fu">picked_y</span>()]])) <span class="sc">+</span></span>
+<span id="annotated-cell-5-37"><a href="#annotated-cell-5-37" aria-hidden="true" tabindex="-1"></a>      <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">fill =</span> .data[[<span class="fu">picked_x</span>()]]), <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="annotated-cell-5-38"><a href="#annotated-cell-5-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">labs</span>(<span class="at">x =</span> stringr<span class="sc">::</span><span class="fu">str_to_title</span>(<span class="fu">picked_x</span>()),</span>
+<span id="annotated-cell-5-39"><a href="#annotated-cell-5-39" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> stringr<span class="sc">::</span><span class="fu">str_to_title</span>(<span class="fu">picked_y</span>())) <span class="sc">+</span></span>
+<span id="annotated-cell-5-40"><a href="#annotated-cell-5-40" aria-hidden="true" tabindex="-1"></a>      <span class="fu">theme_bw</span>()</span>
+<span id="annotated-cell-5-41"><a href="#annotated-cell-5-41" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="annotated-cell-5-42"><a href="#annotated-cell-5-42" aria-hidden="true" tabindex="-1"></a>  ) <span class="co"># Close plot rendering</span></span>
+<span id="annotated-cell-5-43"><a href="#annotated-cell-5-43" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-44"><a href="#annotated-cell-5-44" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close server</span></span>
+<span id="annotated-cell-5-45"><a href="#annotated-cell-5-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-46"><a href="#annotated-cell-5-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the app ----</span></span>
+<span id="annotated-cell-5-47"><a href="#annotated-cell-5-47" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> crab_ui, <span class="at">server =</span> crab_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="2" data-code-annotation="1">Note the loading of the data is done <em>outside</em> of the app! You can have the app load its own data but that is more complicated than this example needs to be.</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="10" data-code-annotation="2">To make our life easier in the server we can exclude non-number columns</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="30" data-code-annotation="3">See how we’re reactively grabbing both axes?</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="36" data-code-annotation="4"><code>ggplot2</code> requires special syntax to specify axes with quoted column names (which is how reactive Shiny elements from that widget are returned)</span>
+</dd>
+</dl>
+</div>
+</div>
 </section>
 <section id="text-formatting" class="level2">
 <h2 class="anchored" data-anchor-id="text-formatting">Text Formatting</h2>
