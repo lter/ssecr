@@ -147,7 +147,7 @@ Let's explore an example using data about fiddler crabs (_Minuca pugnax_) at the
 data(pie_crab) # <1>
 
 # Define the UI ---- 
-crab_ui <- shiny::fluidPage(
+data_ui <- shiny::fluidPage(
   
   # Let the user choose which the X axis
   shiny::selectInput(inputId = "x_vals",
@@ -169,7 +169,7 @@ crab_ui <- shiny::fluidPage(
 ) # Close UI
 
 # Define the server ----
-crab_server <- function(input, output){
+data_server <- function(input, output){
   
   # Reactively identify X & Y axess
   picked_x <- shiny::reactive({ input$x_vals }) # <3>
@@ -189,7 +189,7 @@ crab_server <- function(input, output){
 } # Close server
 
 # Generate the app ----
-shiny::shinyApp(ui = crab_ui, server = crab_server)
+shiny::shinyApp(ui = data_ui, server = data_server)
 ```
 1. Note the loading of the data is done _outside_ of the app! You can have the app load its own data but that is more complicated than this example needs to be.
 2. To make our life easier in the server we can exclude non-number columns
