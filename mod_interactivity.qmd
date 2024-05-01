@@ -82,7 +82,7 @@ Essentially all Shiny UI functions use the same syntax of `<value class>Input` o
 
 Let's consider an app that accepts a single number and returns the square root of that number.
 
-```{r reactive}
+```{r reactive-shiny}
 # Define the UI ---- 
 reactive_ui <- shiny::fluidPage(
   
@@ -142,9 +142,7 @@ You can also use your Shiny app to work with a full data table! When running you
 
 Let's explore an example using data about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/). The app we're about to create will make a graph between any two (numeric) columns.
 
-```{r shiny-with-data}
-#| echo: false
-
+```{r data-shiny}
 # Load fiddler crab data
 data(pie_crab) # <1>
 
@@ -163,7 +161,7 @@ crab_ui <- shiny::fluidPage(
               label = "Choose the Y-axis",
               choices = setdiff(x = names(pie_crab),
                                 y = c("date", "site", "name")),
-              selected = "latitude"),
+              selected = "size"),
   
   # Return the desired plot
   shiny::plotOutput(outputId = "crab_graph")
@@ -181,10 +179,12 @@ crab_server <- function(input, output){
   output$crab_graph <- shiny::renderPlot(
     
     ggplot(pie_crab, aes(x = .data[[picked_x()]], y = .data[[picked_y()]])) + # <4>
-      geom_point() +
+      geom_point(aes(fill = .data[[picked_x()]]), pch = 21, size = 2.5) +
+      labs(x = stringr::str_to_title(picked_x()),
+           y = stringr::str_to_title(picked_y())) +
       theme_bw()
     
-  ) # Close plot creation
+  ) # Close plot rendering
   
 } # Close server
 
@@ -194,7 +194,7 @@ shiny::shinyApp(ui = crab_ui, server = crab_server)
 1. Note the loading of the data is done _outside_ of the app! You can have the app load its own data but that is more complicated than this example needs to be.
 2. To make our life easier in the server we can exclude non-number columns
 3. See how we're reactively grabbing both axes?
-4. We use `ggplot2` here but could use any plotting function/library
+4. `ggplot2` requires special syntax to specify axes with quoted column names (which is how reactive Shiny elements from that widget are returned)
 
 ## Text Formatting
 
