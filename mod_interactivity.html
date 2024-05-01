@@ -562,7 +562,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span>
 <span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the UI ---- </span></span>
-<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>crab_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>data_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
 <span id="annotated-cell-5-6"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="annotated-cell-5-7"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Let the user choose which the X axis</span></span>
 <span id="annotated-cell-5-8"><a href="#annotated-cell-5-8" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">selectInput</span>(<span class="at">inputId =</span> <span class="st">"x_vals"</span>,</span>
@@ -584,7 +584,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="annotated-cell-5-24"><a href="#annotated-cell-5-24" aria-hidden="true" tabindex="-1"></a>) <span class="co"># Close UI</span></span>
 <span id="annotated-cell-5-25"><a href="#annotated-cell-5-25" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-5-26"><a href="#annotated-cell-5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the server ----</span></span>
-<span id="annotated-cell-5-27"><a href="#annotated-cell-5-27" aria-hidden="true" tabindex="-1"></a>crab_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
+<span id="annotated-cell-5-27"><a href="#annotated-cell-5-27" aria-hidden="true" tabindex="-1"></a>data_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){</span>
 <span id="annotated-cell-5-28"><a href="#annotated-cell-5-28" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="annotated-cell-5-29"><a href="#annotated-cell-5-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reactively identify X &amp; Y axess</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3">3</button><span id="annotated-cell-5-30" class="code-annotation-target"><a href="#annotated-cell-5-30" aria-hidden="true" tabindex="-1"></a>  picked_x <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">reactive</span>({ input<span class="sc">$</span>x_vals })</span>
@@ -604,7 +604,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="annotated-cell-5-44"><a href="#annotated-cell-5-44" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close server</span></span>
 <span id="annotated-cell-5-45"><a href="#annotated-cell-5-45" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-5-46"><a href="#annotated-cell-5-46" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the app ----</span></span>
-<span id="annotated-cell-5-47"><a href="#annotated-cell-5-47" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> crab_ui, <span class="at">server =</span> crab_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-5-47"><a href="#annotated-cell-5-47" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> data_ui, <span class="at">server =</span> data_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
