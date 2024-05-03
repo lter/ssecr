@@ -54,7 +54,7 @@ library(tidyverse)
 
 Data harmonization is an interesting topic in that it is _vital_ for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.
 
-For tabular data, we recommend using the [`ltertools` R package](https://lter.github.io/ltertools/) to perform any needed harmonization. This package relies on a "column key" to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key.
+For tabular data, we recommend using the [`ltertools` R package](https://lter.github.io/ltertools/) to perform any needed harmonization. This package relies on a "column key" to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key. If you already have a set of files locally, `ltertools` does offer a `begin_key` function that creates the first two required columns in the column key.
 
 The column key requires three columns:
 
@@ -194,6 +194,8 @@ gsub(pattern = "[[:digit:]]", replacement = "x", x = regex_vec)
 gsub(pattern = "[[:alpha:]]+", replacement = "0", x = regex_vec)
 ```
 
+The [`stringr` package cheatsheet](https://github.com/rstudio/cheatsheets/blob/afaa1fec4c5b9aabfa886218b6ba20317446d378/strings.pdf) has a really nice list of regular expression options that you may find valuable if you want to delve deeper on this topic. Scroll to the second page of the PDF to see the most relevant parts.
+
 ### Conditionals
 
 Rather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as 'if column X has \[some values\] then column Y should have \[other values\]'. These operations are called <u>conditionals</u> and are an important part of data wrangling.
@@ -288,25 +290,30 @@ Note in this output how despite re-combining data information the column is list
 
 ### Joining Data
 
-Often the early steps of a synthesis project involve combine the data tables horizontally. You might imagine that you have two groups' data on sea star abundance and--once you've synonymized the column names--you can simply 'stack' the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group's research. You can't simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps "site" and coordinate columns) you can use **joins** to let your computer match these key columns and make sure that only appropriate rows are combined.
+Often the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups' data on sea star abundance and--once you've synonymized the column names--you can simply 'stack' the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group's research. You can't simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps "site" and coordinate columns) you can use **joins** to let your computer match these key columns and make sure that only appropriate rows are combined.
 
 Because joins are completely dependent upon the value in both columns being an _exact_ match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.
 
-```{r diff-check}
+```{r diff-check-1}
 # Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe
 fish_tax <- data.frame("species" = c("salmon", "bass", "halibut", "eel"),
                        "family" = c("Salmonidae", "Serranidae", "Pleuronectidae", "Muraenidae"))
 
 # Check to make sure that the 'species' column matches between both tables
 supportR::diff_check(old = fish_ct$species, new = fish_tax$species) 
+```
 
+```{r diff-check-2}
 # Use text replacement methods to fix that mistake in one table
 fish_tax_v2 <- fish_tax %>% 
-  dplyr::mutate(species = gsub(pattern = "^eel$", replacement = "moray eel", x = species))
+  dplyr::mutate(species = gsub(pattern = "^eel$", # <1>
+                               replacement = "moray eel", 
+                               x = species))
 
 # Re-check to make sure that fixed it
 supportR::diff_check(old = fish_ct$species, new = fish_tax_v2$species)
 ```
+1. The symbols around "eel" mean that we're only finding/replacing _exact_ matches. It doesn't matter in this context but often replacing a partial match would result in more problems. For example, replacing "eel" with "moray eel" could make "electric eel" into "electric moray eel".
 
 Now that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:
 
@@ -431,12 +438,13 @@ for(focal_size in unique(pie_crab_v4$size_category)){ # <1>
 } # Close loop
 
 # Unlist the outputs into a dataframe
-crab_df <- purrr::list_rbind(x = crab_list)
+crab_df <- purrr::list_rbind(x = crab_list) # <2>
 
 # Check out the resulting data table
 crab_df
 ```
 1. Note that this is not the most efficient way of doing group-wise summarization but is--hopefully--a nice demonstration of loops!
+2. When all elements of your list have the same column names, `list_rbind` efficiently stacks those elements into one longer data table.
 
 ### Custom Functions
 
@@ -463,7 +471,7 @@ crab_hist <- function(df, size_cat){
 crab_hist(df = pie_crab_v4, size_cat = "tiny")
 ```
 
-When writing your own functions is can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated
+When writing your own functions it can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated
 
 ```{r custom-fxns-improved}
 #| fig-align: center
@@ -478,7 +486,7 @@ crab_hist <- function(df, size_cat = "small"){ # <1>
     stop("'df' must be provided as a data frame")
   
   # Error out if the data doesn't have the right columns
-  if(all(c("size_category", "size") %in% names(df)) != TRUE)
+  if(all(c("size_category", "size") %in% names(df)) != TRUE) # <3>
     stop("'df' must include a 'size' and 'size_category' column")
   
   # Error out for unsupported size category values
@@ -493,11 +501,12 @@ crab_hist <- function(df, size_cat = "small"){ # <1>
 }
 
 # Invoke new-and-improved function
-crab_hist(df = pie_crab_v4) # <3>
+crab_hist(df = pie_crab_v4) # <4>
 ```
 1. The default category is now set to "small"
-2. I recommend phrasing your error checks like this (i.e., 'if \<some condition\> is _not_ true, then \<informative error/warning message\>)
-3. We don't need to specify the 'size_cat' argument because we can rely on the default
+2. We recommend phrasing your error checks with this format (i.e., 'if \<some condition\> is _not_ true, then \<informative error/warning message\>)
+3. The `%in%` operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate "or" conditionals
+4. We don't need to specify the 'size_cat' argument because we can rely on the default
 
 :::{.callout-note icon="false"}
 #### Activity: Custom Functions
