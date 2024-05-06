@@ -202,7 +202,80 @@ shiny::shinyApp(ui = data_ui, server = data_server)
 
 ## Layouts
 
+Experimenting with different app layouts can be a fun step in the process of making an app that is as effective as possible! We do recommend that during app development you stick with a very simple user interface because it'll be easier to make sure your inputs and outputs work as desired. Once you are satisfied with those elements you can relatively easily chengs the UI to help guide users through your app.
 
+As implied by that preface, <u>layouts are exclusively an element of the user interface</u>! This is great when you have an app with a complicated server component because you won't need to mess with that at all to get the UI looking perfect. In the examples below, we'll generate a non-interactive app so that we can really emphasize the 'how to' perspective of using different layouts.
+
+### Sidebar
+
+One of the more common Shiny UI choices is to use a sidebar. The sidebar typically takes up about one third of the width of the app while the remaining two thirds is taken up by the main panel. The sidebar can be nice place to put all the user inputs and have the outputs display in the main panel. This format allows for really clear visual separation between where you want the user to interact with the app versus where the results of their choices can be viewed.
+
+```{r layout-sidebar}
+# Define the UI
+sidebar_ui <- shiny::fluidPage(
+  
+  # Define the layout type
+  shiny::sidebarLayout( # <1>
+  
+    # Define what goes in the eponymous sidebar
+    shiny::sidebarPanel(
+      "Hello from the sidebar!"
+      ), # <2>
+    
+    # Define what goes in the main panel
+    shiny::mainPanel(
+      "Hello from the main panel!"
+      ) ) ) # <3>
+
+# Define the server
+basic_server <- function(input, output){ }
+
+# Generate the app
+shiny::shinyApp(ui = sidebar_ui, server = basic_server)
+```
+1. Notice that everything else in the UI is wrapped inside this function. If you want something above/below the sidebar vs. main panel you'll need to put that content outside of this function's parentheses but still in the `fluidPage` parentheses
+2. Be careful not to forget this comma separating the `sidebarPanel` and `mainPanel` functions!
+3. Three closing parentheses are needed to close the UI elements. This is why it's _really_ helpful to use rainbow parentheses in your coding environment!
+
+### Tab Panels
+
+If you feel that your app is better represented in separate pages, tab panels may be a better layout choice! The result of this layout is a series of discrete tabs along the top of your app. If the user clicks one of them they'll be able to look at a separate chunk of your app. Inputs in any tab are available to the app's server and can be outputs in any tab (remember that their is a shared server so it is impossible for it to be otherwise!). Generally it may be a good idea to have inputs and outputs in the same tab so that users can see the interactive app responding to their inputs rather than needing to click back and forth among tabs to see the results of their inputs. For example, you could have an app where users choose what goes on either axis of several graph types and put each graph type on its own tab of the larger Shiny app.
+
+```{r layout-tabs}
+# Define the UI
+tabs_ui <- shiny::fluidPage(
+  
+# Define the layout type
+  shiny::tabsetPanel( # <1>
+  
+    # Define what goes in the first tab
+    shiny::tabPanel(title = "Tab 1",
+                    "Hello from the first tab!"
+                    ), # <2>
+    
+    # And in the second
+    shiny::tabPanel(title = "Tab 2",
+                    "Welcome to the second tab!"
+                    ),
+    
+    # And so on
+    shiny::tabPanel(title = "Tab 3",
+                    "Hello yet again!"
+                    ) ) ) # <3>
+
+# Define the server
+basic_server <- function(input, output){ }
+
+# Generate the app
+shiny::shinyApp(ui = tabs_ui, server = basic_server)
+```
+1. This function is comparable to `sidebarLayout` in that if you want stuff above/below the tab panel area you'll need to be outside of this function's parentheses but still in the `fluidPage` parentheses
+2. Again, just like the `sidebarLayout` subfunctions, you'll need a comma after each UI element except the last one
+3. Here we're closing all of the nested UI functions
+
+### Other Layouts
+
+We just briefly covered two layout options but hopefully this is a nice indication for the kind of flexibility in user interface that you can expect of Shiny apps! For more information, check out Posit's [Shiny Application Layout Guide](https://shiny.posit.co/r/articles/build/layout-guide/). That resource has some really nice examples of these and other layout options that will be well worth checking out as you begin your journey into Shiny.
 
 ## Deployment
 
