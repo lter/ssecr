@@ -372,7 +372,12 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#interactive-apps" id="toc-interactive-apps" class="nav-link" data-scroll-target="#interactive-apps">Interactive Apps</a></li>
   <li><a href="#including-data" id="toc-including-data" class="nav-link" data-scroll-target="#including-data">Including Data</a></li>
   <li><a href="#text-formatting" id="toc-text-formatting" class="nav-link" data-scroll-target="#text-formatting">Text Formatting</a></li>
-  <li><a href="#layouts" id="toc-layouts" class="nav-link" data-scroll-target="#layouts">Layouts</a></li>
+  <li><a href="#layouts" id="toc-layouts" class="nav-link" data-scroll-target="#layouts">Layouts</a>
+  <ul class="collapse">
+  <li><a href="#sidebar" id="toc-sidebar" class="nav-link" data-scroll-target="#sidebar">Sidebar</a></li>
+  <li><a href="#tab-panels" id="toc-tab-panels" class="nav-link" data-scroll-target="#tab-panels">Tab Panels</a></li>
+  <li><a href="#other-layouts" id="toc-other-layouts" class="nav-link" data-scroll-target="#other-layouts">Other Layouts</a></li>
+  </ul></li>
   <li><a href="#deployment" id="toc-deployment" class="nav-link" data-scroll-target="#deployment">Deployment</a></li>
   <li><a href="#additional-interactivity-resources" id="toc-additional-interactivity-resources" class="nav-link" data-scroll-target="#additional-interactivity-resources">Additional Interactivity Resources</a>
   <ul class="collapse">
@@ -632,6 +637,103 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="layouts" class="level2">
 <h2 class="anchored" data-anchor-id="layouts">Layouts</h2>
+<p>Experimenting with different app layouts can be a fun step in the process of making an app that is as effective as possible! We do recommend that during app development you stick with a very simple user interface because it’ll be easier to make sure your inputs and outputs work as desired. Once you are satisfied with those elements you can relatively easily chengs the UI to help guide users through your app.</p>
+<p>As implied by that preface, <u>layouts are exclusively an element of the user interface</u>! This is great when you have an app with a complicated server component because you won’t need to mess with that at all to get the UI looking perfect. In the examples below, we’ll generate a non-interactive app so that we can really emphasize the ‘how to’ perspective of using different layouts.</p>
+<section id="sidebar" class="level3">
+<h3 class="anchored" data-anchor-id="sidebar">Sidebar</h3>
+<p>One of the more common Shiny UI choices is to use a sidebar. The sidebar typically takes up about one third of the width of the app while the remaining two thirds is taken up by the main panel. The sidebar can be nice place to put all the user inputs and have the outputs display in the main panel. This format allows for really clear visual separation between where you want the user to interact with the app versus where the results of their choices can be viewed.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the UI</span></span>
+<span id="annotated-cell-6-2"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>sidebar_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Define the layout type</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-5" class="code-annotation-target"><a href="#annotated-cell-6-5" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">sidebarLayout</span>(</span>
+<span id="annotated-cell-6-6"><a href="#annotated-cell-6-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-6-7"><a href="#annotated-cell-6-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define what goes in the eponymous sidebar</span></span>
+<span id="annotated-cell-6-8"><a href="#annotated-cell-6-8" aria-hidden="true" tabindex="-1"></a>    shiny<span class="sc">::</span><span class="fu">sidebarPanel</span>(</span>
+<span id="annotated-cell-6-9"><a href="#annotated-cell-6-9" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Hello from the sidebar!"</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2">2</button><span id="annotated-cell-6-10" class="code-annotation-target"><a href="#annotated-cell-6-10" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="annotated-cell-6-11"><a href="#annotated-cell-6-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="annotated-cell-6-12"><a href="#annotated-cell-6-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define what goes in the main panel</span></span>
+<span id="annotated-cell-6-13"><a href="#annotated-cell-6-13" aria-hidden="true" tabindex="-1"></a>    shiny<span class="sc">::</span><span class="fu">mainPanel</span>(</span>
+<span id="annotated-cell-6-14"><a href="#annotated-cell-6-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Hello from the main panel!"</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="3">3</button><span id="annotated-cell-6-15" class="code-annotation-target"><a href="#annotated-cell-6-15" aria-hidden="true" tabindex="-1"></a>      ) ) )</span>
+<span id="annotated-cell-6-16"><a href="#annotated-cell-6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-6-17"><a href="#annotated-cell-6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the server</span></span>
+<span id="annotated-cell-6-18"><a href="#annotated-cell-6-18" aria-hidden="true" tabindex="-1"></a>basic_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){ }</span>
+<span id="annotated-cell-6-19"><a href="#annotated-cell-6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-6-20"><a href="#annotated-cell-6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the app</span></span>
+<span id="annotated-cell-6-21"><a href="#annotated-cell-6-21" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> sidebar_ui, <span class="at">server =</span> basic_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="5" data-code-annotation="1">Notice that everything else in the UI is wrapped inside this function. If you want something above/below the sidebar vs.&nbsp;main panel you’ll need to put that content outside of this function’s parentheses but still in the <code>fluidPage</code> parentheses</span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="10" data-code-annotation="2">Be careful not to forget this comma separating the <code>sidebarPanel</code> and <code>mainPanel</code> functions!</span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="15" data-code-annotation="3">Three closing parentheses are needed to close the UI elements. This is why it’s <em>really</em> helpful to use rainbow parentheses in your coding environment!</span>
+</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="tab-panels" class="level3">
+<h3 class="anchored" data-anchor-id="tab-panels">Tab Panels</h3>
+<p>If you feel that your app is better represented in separate pages, tab panels may be a better layout choice! The result of this layout is a series of discrete tabs along the top of your app. If the user clicks one of them they’ll be able to look at a separate chunk of your app. Inputs in any tab are available to the app’s server and can be outputs in any tab (remember that their is a shared server so it is impossible for it to be otherwise!). Generally it may be a good idea to have inputs and outputs in the same tab so that users can see the interactive app responding to their inputs rather than needing to click back and forth among tabs to see the results of their inputs. For example, you could have an app where users choose what goes on either axis of several graph types and put each graph type on its own tab of the larger Shiny app.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the UI</span></span>
+<span id="annotated-cell-7-2"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a>tabs_ui <span class="ot">&lt;-</span> shiny<span class="sc">::</span><span class="fu">fluidPage</span>(</span>
+<span id="annotated-cell-7-3"><a href="#annotated-cell-7-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the layout type</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-5" class="code-annotation-target"><a href="#annotated-cell-7-5" aria-hidden="true" tabindex="-1"></a>  shiny<span class="sc">::</span><span class="fu">tabsetPanel</span>(</span>
+<span id="annotated-cell-7-6"><a href="#annotated-cell-7-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-7-7"><a href="#annotated-cell-7-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Define what goes in the first tab</span></span>
+<span id="annotated-cell-7-8"><a href="#annotated-cell-7-8" aria-hidden="true" tabindex="-1"></a>    shiny<span class="sc">::</span><span class="fu">tabPanel</span>(<span class="at">title =</span> <span class="st">"Tab 1"</span>,</span>
+<span id="annotated-cell-7-9"><a href="#annotated-cell-7-9" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Hello from the first tab!"</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="2">2</button><span id="annotated-cell-7-10" class="code-annotation-target"><a href="#annotated-cell-7-10" aria-hidden="true" tabindex="-1"></a>                    ),</span>
+<span id="annotated-cell-7-11"><a href="#annotated-cell-7-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="annotated-cell-7-12"><a href="#annotated-cell-7-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># And in the second</span></span>
+<span id="annotated-cell-7-13"><a href="#annotated-cell-7-13" aria-hidden="true" tabindex="-1"></a>    shiny<span class="sc">::</span><span class="fu">tabPanel</span>(<span class="at">title =</span> <span class="st">"Tab 2"</span>,</span>
+<span id="annotated-cell-7-14"><a href="#annotated-cell-7-14" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Welcome to the second tab!"</span></span>
+<span id="annotated-cell-7-15"><a href="#annotated-cell-7-15" aria-hidden="true" tabindex="-1"></a>                    ),</span>
+<span id="annotated-cell-7-16"><a href="#annotated-cell-7-16" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="annotated-cell-7-17"><a href="#annotated-cell-7-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># And so on</span></span>
+<span id="annotated-cell-7-18"><a href="#annotated-cell-7-18" aria-hidden="true" tabindex="-1"></a>    shiny<span class="sc">::</span><span class="fu">tabPanel</span>(<span class="at">title =</span> <span class="st">"Tab 3"</span>,</span>
+<span id="annotated-cell-7-19"><a href="#annotated-cell-7-19" aria-hidden="true" tabindex="-1"></a>                    <span class="st">"Hello yet again!"</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="3">3</button><span id="annotated-cell-7-20" class="code-annotation-target"><a href="#annotated-cell-7-20" aria-hidden="true" tabindex="-1"></a>                    ) ) )</span>
+<span id="annotated-cell-7-21"><a href="#annotated-cell-7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-7-22"><a href="#annotated-cell-7-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Define the server</span></span>
+<span id="annotated-cell-7-23"><a href="#annotated-cell-7-23" aria-hidden="true" tabindex="-1"></a>basic_server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output){ }</span>
+<span id="annotated-cell-7-24"><a href="#annotated-cell-7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-7-25"><a href="#annotated-cell-7-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the app</span></span>
+<span id="annotated-cell-7-26"><a href="#annotated-cell-7-26" aria-hidden="true" tabindex="-1"></a>shiny<span class="sc">::</span><span class="fu">shinyApp</span>(<span class="at">ui =</span> tabs_ui, <span class="at">server =</span> basic_server)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="5" data-code-annotation="1">This function is comparable to <code>sidebarLayout</code> in that if you want stuff above/below the tab panel area you’ll need to be outside of this function’s parentheses but still in the <code>fluidPage</code> parentheses</span>
+</dd>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="10" data-code-annotation="2">Again, just like the <code>sidebarLayout</code> subfunctions, you’ll need a comma after each UI element except the last one</span>
+</dd>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="20" data-code-annotation="3">Here we’re closing all of the nested UI functions</span>
+</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="other-layouts" class="level3">
+<h3 class="anchored" data-anchor-id="other-layouts">Other Layouts</h3>
+<p>We just briefly covered two layout options but hopefully this is a nice indication for the kind of flexibility in user interface that you can expect of Shiny apps! For more information, check out Posit’s <a href="https://shiny.posit.co/r/articles/build/layout-guide/">Shiny Application Layout Guide</a>. That resource has some really nice examples of these and other layout options that will be well worth checking out as you begin your journey into Shiny.</p>
+</section>
 </section>
 <section id="deployment" class="level2">
 <h2 class="anchored" data-anchor-id="deployment">Deployment</h2>
