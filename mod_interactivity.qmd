@@ -196,10 +196,6 @@ shiny::shinyApp(ui = data_ui, server = data_server)
 3. See how we're reactively grabbing both axes?
 4. `ggplot2` requires special syntax to specify axes with quoted column names (which is how reactive Shiny elements from that widget are returned)
 
-## Text Formatting
-
-
-
 ## Layouts
 
 Experimenting with different app layouts can be a fun step in the process of making an app that is as effective as possible! We do recommend that during app development you stick with a very simple user interface because it'll be easier to make sure your inputs and outputs work as desired. Once you are satisfied with those elements you can relatively easily chengs the UI to help guide users through your app.
@@ -276,6 +272,12 @@ shiny::shinyApp(ui = tabs_ui, server = basic_server)
 ### Other Layouts
 
 We just briefly covered two layout options but hopefully this is a nice indication for the kind of flexibility in user interface that you can expect of Shiny apps! For more information, check out Posit's [Shiny Application Layout Guide](https://shiny.posit.co/r/articles/build/layout-guide/). That resource has some really nice examples of these and other layout options that will be well worth checking out as you begin your journey into Shiny.
+
+## Text Formatting
+
+
+
+
 
 ## Deployment
 
