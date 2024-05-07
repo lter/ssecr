@@ -143,6 +143,9 @@ You can also use your Shiny app to work with a full data table! When running you
 Let's explore an example using data about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/). The app we're about to create will make a graph between any two (numeric) columns.
 
 ```{r data-shiny}
+# Load lterdatasampler package
+library(lterdatasampler)
+
 # Load fiddler crab data
 data(pie_crab) # <1>
 
@@ -275,9 +278,43 @@ We just briefly covered two layout options but hopefully this is a nice indicati
 
 ## Text Formatting
 
+Beyond making your app have an intuitive layout it can be really helpful to be able to do even simple text formatting to assist your app's users. For instance, you may want to use sub-headings within the same UI layout component but still want to draw a distinction between two sets of inputs. Additionally you may want to emphasize some tips for best results or hyperlink to your group's other products. All of these can be accomplished using text formatting tools that are readily available within Shiny.
 
+```{r text-shiny}
+# Load the `htmltools` library
+library(htmltools)
 
+# Define the UI
+text_ui <- shiny::fluidPage(
+  
+  # Let's make some headings
+  htmltools::h1("This is a Big Heading"), # <1>
+  htmltools::h3("Smaller heading"),
+  htmltools::h5("Even smaller heading!"), 
+  
+  # Now we'll format more text in various (non-heading) ways
+  htmltools::strong("Bold text"),
+  
+  htmltools::br(), # <2>
 
+  htmltools::a(href = "https://lter.github.io/ssecr/mod_interactivity.html",
+               "This text is hyperlinked",
+               target = "_blank"), # <3>
+  
+  htmltools::br(),
+  
+  htmltools::code("This is 'code' text") ) # <4>
+
+# Define the server
+basic_server <- function(input, output){ }
+
+# Generate the app
+shiny::shinyApp(ui = text_ui, server = basic_server)
+```
+1. Headings (of any size) automatically include a line break after the heading text
+2. The `br` function creates a line break
+3. When the `target` argument is set to "_blank" it will open a new tab when users click the hyperlinked text. This is ideal because if a user left your app to visit the new site they would lose all of their inputs
+4. Code text looks `like this`
 
 ## Deployment
 
