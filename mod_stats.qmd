@@ -29,7 +29,15 @@ If you'd like to follow along with the code chunks included throughout this modu
 install.packages("tidyverse")
 ```
 
-## Module Content
+## Mixed-Effects Models
+
+
+
+## Multi-Model Inference
+
+
+
+## Meta-Analysis
 
 
 
