@@ -347,11 +347,33 @@
     ]
   },
   {
-    "objectID": "mod_stats.html#module-content",
-    "href": "mod_stats.html#module-content",
+    "objectID": "mod_stats.html#mixed-effects-models",
+    "href": "mod_stats.html#mixed-effects-models",
     "title": "Analysis & Modeling",
-    "section": "Module Content",
-    "text": "Module Content",
+    "section": "Mixed-Effects Models",
+    "text": "Mixed-Effects Models",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#multi-model-inference",
+    "href": "mod_stats.html#multi-model-inference",
+    "title": "Analysis & Modeling",
+    "section": "Multi-Model Inference",
+    "text": "Multi-Model Inference",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#meta-analysis",
+    "href": "mod_stats.html#meta-analysis",
+    "title": "Analysis & Modeling",
+    "section": "Meta-Analysis",
+    "text": "Meta-Analysis",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
