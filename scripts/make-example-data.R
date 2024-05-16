@@ -49,6 +49,11 @@ for(k in 1:nrow(site_df)){
   # Generate annual data
   for(yr in 2022:2024){
     
+    # Change site modifier by year
+    if(yr == 2022){ site_mod <- site_mod * 1.00 }
+    if(yr == 2023){ site_mod <- site_mod * 1.66 }
+    if(yr == 2024){ site_mod <- site_mod * 0.80 }
+    
     # Generate plot level data
     for(plt in 1:3){
       
@@ -65,11 +70,10 @@ for(k in 1:nrow(site_df)){
       resp <- sample(x = rng_mod, size = reps, replace = T)
       
       # Generate a more involved data frame
-      sim_df <- data.frame("site" = rep(x = site_df[k, ]$site, times = reps),
-                           "road_dist_km" = rep(x = site_df[k, ]$dist, times = reps),
-                           # "plot" = rep(x = paste0(site_df[k, ]$site, "-", plt), 
-                           #              times = reps),
-                           "plot" = rep(x = paste0("plot_", plt), times = reps),
+      sim_df <- data.frame("road_dist_km" = rep(x = site_df[k, ]$dist, times = reps),
+                           "site" = rep(x = site_df[k, ]$site, times = reps),
+                           "plot" = rep(x = paste0("plot_", plt_id), 
+                                        times = reps),
                            "year" = rep(x = yr, times = reps),
                            "tarantula_count" = resp)
       
@@ -84,6 +88,14 @@ for(k in 1:nrow(site_df)){
 spider_df <- sim_list %>% 
   # Unlist to a dataframe
   purrr::list_rbind(x = .) %>% 
+  # Make a 'site-plot' column
+  dplyr::mutate(site_plot = paste(gsub(pattern = "site_", replacement = "", x = site), 
+                                  gsub(pattern = "plot_", replacement = "", x = plot),
+                                  sep = "_"),
+                .after = plot) %>% 
+  # Rename columns to make delimiters consistent
+  dplyr::rename(road.dist_km = road_dist_km,
+                site.plot = site_plot) %>% 
   # Put year in front of everything else
   dplyr::relocate(year, .before = dplyr::everything())
 
@@ -92,8 +104,8 @@ dplyr::glimpse(spider_df)
 
 # Exploratory visuals
 ## Site means work as desired
-ggplot(spider_df, aes(y = tarantula_count, x = reorder(site, -road_dist_km), 
-                      fill = road_dist_km)) +
+ggplot(spider_df, aes(y = tarantula_count, x = stats::reorder(site, -road.dist_km),
+                      fill = road.dist_km)) +
   geom_violin(alpha = 0.5) +
   theme_bw()
 
@@ -101,7 +113,15 @@ ggplot(spider_df, aes(y = tarantula_count, x = reorder(site, -road_dist_km),
 ggplot(spider_df, aes(y = tarantula_count, x = plot, fill = plot)) +
   geom_violin(alpha = 0.5) +
   facet_wrap(site ~ .) +
-  theme_bw()
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 35, hjust = 1))
+
+## Year random effect
+ggplot(spider_df, aes(y = tarantula_count, x = year, fill = as.factor(year))) +
+  geom_violin(alpha = 0.5) +
+  geom_jitter(size = 0.5, width = 0.15) +
+  theme_bw() +
+  theme(legend.position = "top")
 
 # Export locally
 # write.csv(x = spider_df, row.names = F, na = '', file = file.path("data", "tarantulas.csv"))
