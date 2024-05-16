@@ -368,6 +368,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#mixed-effects-models" id="toc-mixed-effects-models" class="nav-link" data-scroll-target="#mixed-effects-models">Mixed-Effects Models</a>
   <ul class="collapse">
+  <li><a href="#random-intercepts" id="toc-random-intercepts" class="nav-link" data-scroll-target="#random-intercepts">Random Intercepts</a></li>
+  <li><a href="#random-slopes" id="toc-random-slopes" class="nav-link" data-scroll-target="#random-slopes">Random Slopes</a></li>
+  <li><a href="#philosophical-note-random-vs.-fixed" id="toc-philosophical-note-random-vs.-fixed" class="nav-link" data-scroll-target="#philosophical-note-random-vs.-fixed">Philosophical Note: Random vs.&nbsp;Fixed</a></li>
   <li><a href="#mixed-effects-case-study" id="toc-mixed-effects-case-study" class="nav-link" data-scroll-target="#mixed-effects-case-study">Mixed-Effects Case Study</a></li>
   </ul></li>
   <li><a href="#multi-model-inference" id="toc-multi-model-inference" class="nav-link" data-scroll-target="#multi-model-inference">Multi-Model Inference</a></li>
@@ -427,19 +430,28 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've installed these before</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"nlme"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lmerTest"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nlme)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="mixed-effects-models" class="level2">
 <h2 class="anchored" data-anchor-id="mixed-effects-models">Mixed-Effects Models</h2>
 <p>In any statistical test there is at least one response variable (a.k.a. “dependent” variable) and some number of explanatory variables (a.k.a. “independent” variables). However, in biology our experiments often involve repeated sampling over time or at the same locations in order to gather enough replicates to do robust analysis. These variables are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.</p>
 <p>In essence we want to use a statistical tool that asks <u>what is the effect of the explanatory variable(s) on the response <em>when the variation due to these non-variable considerations are accounted for</em></u>?’ Such tests are called “mixed-effects models.” This name derives from considering explanatory variables “fixed effects” and these non-explanatory/response variables as “random effects”. Including both fixed and random effects thus creates a model with “mixed effects.”</p>
+<section id="random-intercepts" class="level3">
+<h3 class="anchored" data-anchor-id="random-intercepts">Random Intercepts</h3>
+</section>
+<section id="random-slopes" class="level3">
+<h3 class="anchored" data-anchor-id="random-slopes">Random Slopes</h3>
+</section>
+<section id="philosophical-note-random-vs.-fixed" class="level3">
+<h3 class="anchored" data-anchor-id="philosophical-note-random-vs.-fixed">Philosophical Note: Random vs.&nbsp;Fixed</h3>
+</section>
 <section id="mixed-effects-case-study" class="level3">
 <h3 class="anchored" data-anchor-id="mixed-effects-case-study">Mixed-Effects Case Study</h3>
 <p>Let’s imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas (response variable) will be greater in sites further from the nearest road (explanatory variable). We select ten study sites of varying distances from the nearest road and intensively count our furry friends for several months at three plots within each site. We return to our sites–and their associated plots–and repeat this process each year for three years. We enter our data and perform careful quality control to get it into a tidy format ready for analyis</p>
@@ -450,18 +462,19 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check structure</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(tarantula_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>'data.frame':   450 obs. of  5 variables:
+<pre><code>'data.frame':   450 obs. of  6 variables:
  $ year           : int  2022 2022 2022 2022 2022 2022 2022 2022 2022 2022 ...
+ $ road.dist_km   : num  48.3 48.3 48.3 48.3 48.3 ...
  $ site           : chr  "site_A" "site_A" "site_A" "site_A" ...
- $ road_dist_km   : num  44 44 44 44 44 ...
- $ plot           : chr  "plot_1" "plot_1" "plot_1" "plot_1" ...
- $ tarantula_count: int  88 66 84 97 84 22 27 9 27 18 ...</code></pre>
+ $ plot           : chr  "plot_a" "plot_a" "plot_a" "plot_a" ...
+ $ site.plot      : chr  "A_a" "A_a" "A_a" "A_a" ...
+ $ tarantula_count: int  136 150 145 121 150 107 73 78 83 83 ...</code></pre>
 </div>
 </div>
-<p>Okay, the data look reasonable, but now we want to run some statistical tests and–hopefully–get some endorphine-inducing small <em>p</em> values. If we choose to simply ignore our possible random effects, we could fit a simple linear regression.</p>
+<p>Okay, the data look reasonable, but now we want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em> values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>tarantula_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(tarantula_count <span class="sc">~</span> road_dist_km, <span class="at">data =</span> tarantula_df)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>tarantula_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(tarantula_count <span class="sc">~</span> road.dist_km, <span class="at">data =</span> tarantula_df)</span>
 <span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract summary</span></span>
 <span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tarantula_lm)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -476,41 +489,89 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
-lm(formula = tarantula_count ~ road_dist_km, data = tarantula_df)
+lm(formula = tarantula_count ~ road.dist_km, data = tarantula_df)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--108.648  -51.341    9.083   42.645  100.352 
+-134.608  -47.286    4.002   39.485  189.392 
 
 Coefficients:
              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)    0.3509    11.5675   0.030    0.976    
-road_dist_km   1.6604     0.2244   7.398 6.89e-13 ***
+(Intercept)    0.6664     9.0072   0.074    0.941    
+road.dist_km   2.1936     0.1980  11.078   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 52.9 on 448 degrees of freedom
-Multiple R-squared:  0.1089,    Adjusted R-squared:  0.1069 
-F-statistic: 54.73 on 1 and 448 DF,  p-value: 6.889e-13</code></pre>
+Residual standard error: 65.26 on 448 degrees of freedom
+Multiple R-squared:  0.215, Adjusted R-squared:  0.2133 
+F-statistic: 122.7 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
-<p>Looks like our hypothesis is supported and there does seem to be an effect of human proximity on tarantula populations in our study site. However, from our extensive time in the field we have developed a strong intuition that there might be substantial variation among plots within a given site. We can make a quick exploratory graph to facilitate an ‘eyeball test’ of whether the data show what our intuition suggest.</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tarantula_df, <span class="fu">aes</span>(<span class="at">y =</span> tarantula_count, <span class="at">x =</span> plot, <span class="at">fill =</span> plot)) <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.25</span>, <span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(site <span class="sc">~</span> .) <span class="sc">+</span></span>
-<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-6" class="code-annotation-target"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">35</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Looks like our hypothesis is supported! There does seem to be an effect of human proximity on tarantula populations in our study sites. However, while running this regression we remembered that in the second year of the study a new graduate student joined our lab and helped us in the field. In the first and third years we worked alone (the new graduate student had their own project to work on in the third year of this work).</p>
+<p>There is an argument for including year as a fixed effect in its own right but some back-of-the-envelope checks reveal no significant climatic differences across the region we worked among those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the new model</span></span>
+<span id="annotated-cell-5-2"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>tarantula_mem1 <span class="ot">&lt;-</span> lmerTest<span class="sc">::</span><span class="fu">lmer</span>(tarantula_count <span class="sc">~</span> road.dist_km <span class="sc">+</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-3" class="code-annotation-target"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a>                               (<span class="dv">1</span><span class="sc">|</span>year),</span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a>                             <span class="at">data =</span> tarantula_df)</span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-6"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract summary</span></span>
+<span id="annotated-cell-5-7"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tarantula_mem1)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="2" data-code-annotation="1">Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intutive grasp of the distribution metrics described by each bit of a boxplot</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="3" data-code-annotation="1">This is the syntax for specifying a random intercept (as opposed to the other types of random effect discussed above)</span>
 </dd>
-<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: tarantula_count ~ road.dist_km + (1 | year)
+   Data: tarantula_df
+
+REML criterion at convergence: 4999.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.2853 -0.8263  0.1245  0.6357  2.6641 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ year     (Intercept)  540.1   23.24   
+ Residual             3897.7   62.43   
+Number of obs: 450, groups:  year, 3
+
+Fixed effects:
+             Estimate Std. Error       df t value Pr(&gt;|t|)    
+(Intercept)    0.6664    15.9462   3.6297   0.042    0.969    
+road.dist_km   2.1936     0.1894 446.0000  11.580   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Correlation of Fixed Effects:
+            (Intr)
+road.dst_km -0.508</code></pre>
+</div>
+</div>
+<p>Still significant but while writing that test we realized there’s another non-variable that should probably be made into a random effect: plot! There were three sites within each plot and from our extensive time in the field we have developed a strong intuition that there might be substantial among-plot variation at each site. We can make a quick exploratory graph to facilitate an ‘eyeball test’ of whether the data show what our intuition suggest.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tarantula_df, <span class="fu">aes</span>(<span class="at">y =</span> tarantula_count, <span class="at">x =</span> plot, <span class="at">fill =</span> plot)) <span class="sc">+</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-2" class="code-annotation-target"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.25</span>, <span class="at">size =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(site <span class="sc">~</span> .) <span class="sc">+</span></span>
+<span id="annotated-cell-6-5"><a href="#annotated-cell-6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2">2</button><span id="annotated-cell-6-6" class="code-annotation-target"><a href="#annotated-cell-6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">35</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="6" data-code-annotation="2">This is allowing us to ‘tilt’ the X axis tick labels so they don’t overlap with one another</span>
+<span data-code-cell="annotated-cell-6" data-code-lines="2" data-code-annotation="1">Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intutive grasp of the distribution metrics described by each bit of a boxplot</span>
+</dd>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="6" data-code-annotation="2">This is allowing us to ‘tilt’ the X axis tick labels so they don’t overlap with one another</span>
 </dd>
 </dl>
 </div>
@@ -524,60 +585,53 @@ F-statistic: 54.73 on 1 and 448 DF,  p-value: 6.889e-13</code></pre>
 </div>
 <p>This plot clearly supports our intuition that among-plot variation is dramatic! We <em>could</em> account for this by including plot as a fixed effect but we’ll need to sacrifice a lot of degrees of freedom (think ‘statistical power’) for a variable that we don’t actually care about! Instead, we could include plot as a random effect.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Do some minor needed wrangling</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tarantula_v2 <span class="ot">&lt;-</span> tarantula_df <span class="sc">%&gt;%</span> </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">site_plot =</span> <span class="fu">paste</span>(<span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"site_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> site), </span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                                  <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"plot_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> plot),</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">sep =</span> <span class="st">"_"</span>),</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">.before =</span> site)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check structure</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(tarantula_v2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>'data.frame':   450 obs. of  6 variables:
- $ year           : int  2022 2022 2022 2022 2022 2022 2022 2022 2022 2022 ...
- $ site_plot      : chr  "A_1" "A_1" "A_1" "A_1" ...
- $ site           : chr  "site_A" "site_A" "site_A" "site_A" ...
- $ road_dist_km   : num  44 44 44 44 44 ...
- $ plot           : chr  "plot_1" "plot_1" "plot_1" "plot_1" ...
- $ tarantula_count: int  88 66 84 97 84 22 27 9 27 18 ...</code></pre>
+<div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the new model</span></span>
+<span id="annotated-cell-7-2"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a>tarantula_mem2 <span class="ot">&lt;-</span> lmerTest<span class="sc">::</span><span class="fu">lmer</span>(tarantula_count <span class="sc">~</span> road.dist_km <span class="sc">+</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-3" class="code-annotation-target"><a href="#annotated-cell-7-3" aria-hidden="true" tabindex="-1"></a>                               (<span class="dv">1</span><span class="sc">|</span>year) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">|</span>site.plot),</span>
+<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4" aria-hidden="true" tabindex="-1"></a>                             <span class="at">data =</span> tarantula_df)</span>
+<span id="annotated-cell-7-5"><a href="#annotated-cell-7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-7-6"><a href="#annotated-cell-7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract summary</span></span>
+<span id="annotated-cell-7-7"><a href="#annotated-cell-7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tarantula_mem2)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="3" data-code-annotation="1">Note that we need to use this column as the random effect because <u>plots are not uniquely named across sites</u> (i.e., all sites have plots “a”, “b”, and “c”). Making the random effect just the ‘plot’ column would fail to reflect how plots are nested within each site</span>
+</dd>
+</dl>
 </div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the new model</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>tarantula_mem1 <span class="ot">&lt;-</span> nlme<span class="sc">::</span><span class="fu">lme</span>(tarantula_count <span class="sc">~</span> road_dist_km,</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                            <span class="at">random =</span> <span class="sc">~</span> <span class="dv">1</span><span class="sc">|</span>plot,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                            <span class="at">data =</span> tarantula_v2)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract summary</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tarantula_mem1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Linear mixed-effects model fit by REML
-  Data: tarantula_v2 
-       AIC      BIC    logLik
-  4808.433 4824.852 -2400.217
+<pre><code>Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: tarantula_count ~ road.dist_km + (1 | year) + (1 | site.plot)
+   Data: tarantula_df
+
+REML criterion at convergence: 4079.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.8688 -0.5245 -0.0289  0.6262  3.5882 
 
 Random effects:
- Formula: ~1 | plot
-        (Intercept) Residual
-StdDev:     21.0756 50.01222
+ Groups    Name        Variance Std.Dev.
+ site.plot (Intercept) 3755.9   61.29   
+ year      (Intercept)  563.7   23.74   
+ Residual               360.7   18.99   
+Number of obs: 450, groups:  site.plot, 30; year, 3
 
-Fixed effects:  tarantula_count ~ road_dist_km 
-                 Value Std.Error  DF  t-value p-value
-(Intercept)  0.3508894 16.359889 446 0.021448  0.9829
-road_dist_km 1.6603788  0.212184 446 7.825189  0.0000
- Correlation: 
-             (Intr)
-road_dist_km -0.653
+Fixed effects:
+             Estimate Std. Error      df t value Pr(&gt;|t|)   
+(Intercept)    0.6664    35.6070 27.0358   0.019  0.98521   
+road.dist_km   2.1936     0.7225 28.0003   3.036  0.00513 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Standardized Within-Group Residuals:
-        Min          Q1         Med          Q3         Max 
--1.71902526 -1.04550811  0.05769425  0.89874793  1.74986079 
-
-Number of Observations: 450
-Number of Groups: 3 </code></pre>
+Correlation of Fixed Effects:
+            (Intr)
+road.dst_km -0.867</code></pre>
 </div>
 </div>
+<p>Looks like there is still a significant effect of road distance on tarantula populations but it is weaker than when we don’t account for variation among plots (T values of ~11 versus ~3). Still, this is a result we can be more confident in because we’ve now accounted for all known sources of variation in our data–either by including them as fixed effects or including them as a random effects.</p>
 </section>
 </section>
 <section id="multi-model-inference" class="level2">
