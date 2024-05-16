@@ -49,3 +49,7 @@ docs/
 
 # .DS_Store (Mac file)
 .DS_Store
+
+# Other folders to ignore
+data/
+
