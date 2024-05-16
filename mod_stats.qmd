@@ -31,6 +31,28 @@ install.packages("tidyverse")
 
 ## Mixed-Effects Models
 
+In any statistical test there is at least one response variable (a.k.a. "dependent" variable) and some number of explanatory variables (a.k.a. "independent" variables). However, in biology our experiments often involve repeated sampling over time or at the same locations in order to gather enough replicates to do robust analysis. These variables are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.
+
+In essence we want to use a statistical tool that asks <u>what is the effect of the explanatory variable(s) on the response _when the variation due to these non-variable considerations are accounted for_</u>?' Such tests are called "mixed-effects models." This name derives from considering explanatory variables "fixed effects" and these non-explanatory/response variables as "random effects". Including both fixed and random effects thus creates a model with "mixed effects."
+
+### Mixed-Effects Case Study
+
+Let's imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas (response variable) will be greater in sites further from the nearest road (explanatory variable). We select ten study sites of varying distances from the nearest road and intensively count our furry friends for several months at three plots within each site. We return to our sites--and their associated plots--and repeat this process each year for three years. After entering our data in MS Excel here's what we walk away with.
+
+
+
+With our data in hand we now want to run some statistical tests and--hopefully--get some endorphine-inducing small _p_ values.
+
+If we choose to simply ignore our possible random effects, our model would look something like this:
+
+```
+tarantula_count ~ road_dist_km
+```
+
+
+
+However, from our extensive time in the field we have developed a strong intuition that 
+
 
 
 ## Multi-Model Inference
@@ -47,7 +69,8 @@ install.packages("tidyverse")
 
 - [Understanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). Spake _et al._, 2023. **Biological Reviews** 
 - [Improving Quantitative Synthesis to Achieve Generality in Ecology](https://www.nature.com/articles/s41559-022-01891-z). Spake _et al._, 2022.**Nature Ecology and Evolution**
-- [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/)
+- [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). Harrier _et al._ 2023.
+- [Mixed Effects Models and Extensions in Ecology with R](https://link.springer.com/book/10.1007/978-0-387-87458-6). Zuur _et al._, 2009.
 
 ### Workshops & Courses
 
