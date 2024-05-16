@@ -27,7 +27,7 @@ If you'd like to follow along with the code chunks included throughout this modu
 # Note that these lines only need to be run once per computer
 ## So you can skip this step if you've installed these before
 install.packages("tidyverse")
-install.packages("nlme")
+install.packages("lmerTest")
 ```
 
 We'll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.
@@ -37,7 +37,7 @@ We'll go ahead and load some of these libraries as well to be able to better dem
 
 # Load needed libraries
 library(tidyverse)
-library(nlme)
+library(lmerTest)
 ```
 
 ## Mixed-Effects Models
@@ -45,6 +45,18 @@ library(nlme)
 In any statistical test there is at least one response variable (a.k.a. "dependent" variable) and some number of explanatory variables (a.k.a. "independent" variables). However, in biology our experiments often involve repeated sampling over time or at the same locations in order to gather enough replicates to do robust analysis. These variables are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.
 
 In essence we want to use a statistical tool that asks <u>what is the effect of the explanatory variable(s) on the response _when the variation due to these non-variable considerations are accounted for_</u>?' Such tests are called "mixed-effects models." This name derives from considering explanatory variables "fixed effects" and these non-explanatory/response variables as "random effects". Including both fixed and random effects thus creates a model with "mixed effects."
+
+### Random Intercepts
+
+
+
+### Random Slopes
+
+
+
+### Philosophical Note: Random vs. Fixed
+
+
 
 ### Mixed-Effects Case Study
 
@@ -58,18 +70,18 @@ tarantula_df <- read.csv(file = file.path("data", "tarantulas.csv"))
 str(tarantula_df)
 ```
 
-Okay, the data look reasonable, but now we want to run some statistical tests and--hopefully--get some endorphine-inducing small _p_ values. If we choose to simply ignore our possible random effects, we could fit a simple linear regression.
+Okay, the data look reasonable, but now we want to run some statistical tests and--hopefully--get some endorphine-inducingly small _p_ values. If we choose to simply ignore our possible random effects, we could fit a linear regression.
 
-```{r mem-simple-lm}
+```{r mem-lm}
 # Fit model
-tarantula_lm <- lm(tarantula_count ~ road_dist_km, data = tarantula_df) # <1>
+tarantula_lm <- lm(tarantula_count ~ road.dist_km, data = tarantula_df) # <1>
 
 # Extract summary
 summary(tarantula_lm)
 ```
 1. R syntax for statistical tests is `response ~ explanatory` a.k.a. `Y ~ X`
 
-Looks like our hypothesis is supported and there does seem to be an effect of human proximity on tarantula populations in our study site. However, from our extensive time in the field we have developed a strong intuition that there might be substantial variation among plots within a given site. We can make a quick exploratory graph to facilitate an 'eyeball test' of whether the data show what our intuition suggest.
+Looks like our hypothesis is supported! There does seem to be an effect of human proximity on tarantula populations in our study sites. However, from our extensive time in the field we have developed a strong intuition that there might be substantial variation among plots within a given site. We can make a quick exploratory graph to facilitate an 'eyeball test' of whether the data show what our intuition suggest.
 
 ```{r mem-explore-graph}
 #| fig-align: center
@@ -88,26 +100,29 @@ ggplot(tarantula_df, aes(y = tarantula_count, x = plot, fill = plot)) +
 
 This plot clearly supports our intuition that among-plot variation is dramatic! We _could_ account for this by including plot as a fixed effect but we'll need to sacrifice a lot of degrees of freedom (think 'statistical power') for a variable that we don't actually care about! Instead, we could include plot as a random effect.
 
-```{r mem-mix1-prep}
-# Do some minor needed wrangling
-tarantula_v2 <- tarantula_df %>% 
-  dplyr::mutate(site_plot = paste(gsub(pattern = "site_", replacement = "", x = site), 
-                                  gsub(pattern = "plot_", replacement = "", x = plot),
-                                  sep = "_"),
-                .before = site)
-
-# Re-check structure
-str(tarantula_v2)
-```
-
 ```{r mem-mix1}
 # Fit the new model
-tarantula_mem1 <- nlme::lme(tarantula_count ~ road_dist_km,
-                            random = ~ 1|plot,
-                            data = tarantula_v2)
+tarantula_mem1 <- lmerTest::lmer(tarantula_count ~ road.dist_km + 
+                               (1|site.plot), # <1>
+                             data = tarantula_df)
 
 # Extract summary
 summary(tarantula_mem1)
+```
+1. Note that we need to use this column as the random effect because <u>plots are not uniquely named across sites</u> (i.e., all sites have plots "a", "b", and "c"). Making the random effect just the 'plot' column would fail to reflect how plots are nested within each site
+
+Looks like there is still a significant effect of road distance on tarantula populations but it is weaker than when we don't account for variation among plots (T values of ~11 versus ~3). However, as we implemented a plot-level random effect we realized there is another source of variation in our data that we know about but for which we don't currently account. In the second year of the study a new graduate student joined our lab and helped us in the field. In the first and third years we worked alone (the new graduate student had their own project to work on in the third year of this work).
+
+There is an argument for including year as a fixed effect in its own right but some back-of-the-envelope checks reveal no significant difference in climate across the region we worked among those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze but still do want to account for.
+
+```{r mem-mix2}
+# Fit the new model
+tarantula_mem2 <- lmerTest::lmer(tarantula_count ~ road.dist_km + 
+                               (1|site.plot) + (1|year), 
+                             data = tarantula_df)
+
+# Extract summary
+summary(tarantula_mem2)
 ```
 
 
