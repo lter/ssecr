@@ -24,8 +24,6 @@ rm(list = ls())
 ## ------------------------------------ ##
 # Simulate a tarantula dataset with nested structure
 
-# Let's imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas (response variable) will be greater in sites further from the nearest road (explanatory variable). We select ten study sites of varying distances from the nearest road and intensively count our furry friends for several months at three plots within each site. We return to our sites--and their associated plots--and repeat this process each year for three years. After entering our data in MS Excel here's what we walk away with.
-
 # Generate site-level information
 ( site_df <- data.frame("site" = paste0("site_", LETTERS[1:10]),
                         "dist" = round(rnorm(n = 10, mean = 50, sd = 20), digits = 2)) )
