@@ -1,57 +1,134 @@
 [
   {
-    "objectID": "mod_thinking.html",
-    "href": "mod_thinking.html",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_wrangle.html",
+    "href": "mod_wrangle.html",
+    "title": "Data Harmonization & Wrangling",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
     "crumbs": [
       "Phase III -- Execute",
-      "Supporting D.E.C. Thinking"
+      "Data Wrangling"
     ]
   },
   {
-    "objectID": "mod_thinking.html#overview",
-    "href": "mod_thinking.html#overview",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_wrangle.html#overview",
+    "href": "mod_wrangle.html#overview",
+    "title": "Data Harmonization & Wrangling",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
     "crumbs": [
       "Phase III -- Execute",
-      "Supporting D.E.C. Thinking"
+      "Data Wrangling"
     ]
   },
   {
-    "objectID": "mod_thinking.html#learning-objectives",
-    "href": "mod_thinking.html#learning-objectives",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_wrangle.html#learning-objectives",
+    "href": "mod_wrangle.html#learning-objectives",
+    "title": "Data Harmonization & Wrangling",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDevelop strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify typical steps in data harmonization and wrangling workflows\nCreate a harmonization workflow\nDefine quality control\nSummarize typical operations in a quality control workflow\nUse regular expressions to perform flexible text operations\nWrite custom functions to reduce code duplication\nIdentify value of and typical obstacles to data ‘joining’\nExplain benefits and drawbacks of using data shape to streamline code\nDesign a complete data wrangling workflow",
     "crumbs": [
       "Phase III -- Execute",
-      "Supporting D.E.C. Thinking"
+      "Data Wrangling"
     ]
   },
   {
-    "objectID": "mod_thinking.html#module-content",
-    "href": "mod_thinking.html#module-content",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "section": "Module Content",
-    "text": "Module Content",
+    "objectID": "mod_wrangle.html#needed-packages",
+    "href": "mod_wrangle.html#needed-packages",
+    "title": "Data Harmonization & Wrangling",
+    "section": "Needed Packages",
+    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"ltertools\")\ninstall.packages(\"lterdatasampler\")\ninstall.packages(\"psych\")\ninstall.packages(\"supportR\")\ninstall.packages(\"tidyverse\")\n\nWe’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.\n\n# Load tidyverse\nlibrary(tidyverse)",
     "crumbs": [
       "Phase III -- Execute",
-      "Supporting D.E.C. Thinking"
+      "Data Wrangling"
     ]
   },
   {
-    "objectID": "mod_thinking.html#additional-resources",
-    "href": "mod_thinking.html#additional-resources",
-    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "objectID": "mod_wrangle.html#harmonizing-data",
+    "href": "mod_wrangle.html#harmonizing-data",
+    "title": "Data Harmonization & Wrangling",
+    "section": "Harmonizing Data",
+    "text": "Harmonizing Data\nData harmonization is an interesting topic in that it is vital for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.\nFor tabular data, we recommend using the ltertools R package to perform any needed harmonization. This package relies on a “column key” to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key. If you already have a set of files locally, ltertools does offer a begin_key function that creates the first two required columns in the column key.\nThe column key requires three columns:\n\n“source” – Name of the raw file\n“raw_name” – Name of all raw columns in that file to be synonymized\n“tidy_name” – New name for each raw column that should be carried to the harmonized data\n\nNote that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the ltertools package vignette. For convenience, we’re attaching the visual diagram of this method of harmonization from the package vignette.",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html#wrangling-data",
+    "href": "mod_wrangle.html#wrangling-data",
+    "title": "Data Harmonization & Wrangling",
+    "section": "Wrangling Data",
+    "text": "Wrangling Data\nData wrangling is a huge subject that covers a wide range of topics. In this part of the module, we’ll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you’ll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice ‘jumping off’ point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.\nThis module will use example data to demonstrate these tools but as we work through these topics you should feel free to substitute a dataset of your choosing! If you don’t have one in mind, you can use the example dataset shown in the code chunks throughout this module.\nThis dataset comes from the lterdatasampler R package and the data are about fiddler crabs (Minuca pugnax) at the Plum Island Ecosystems (PIE) LTER site.\n\n# Load the lterdatasampler package\nlibrary(lterdatasampler)\n\n# Load the fiddler crab dataset\ndata(pie_crab)\n\n\nExploring the Data\nBefore beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.\nChecking the data structure is one way of getting a lot of this high-level information.\n\n# Check dataset structure\nstr(pie_crab)\n\ntibble [392 × 9] (S3: tbl_df/tbl/data.frame)\n $ date         : Date[1:392], format: \"2016-07-24\" \"2016-07-24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nFor data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information elsewhere.\n\n# Get a simple summary of the data\nsummary(pie_crab)\n\n      date               latitude         site                size      \n Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  \n 1st Qu.:2016-07-28   1st Qu.:34.00   Class :character   1st Qu.:12.02  \n Median :2016-08-01   Median :39.10   Mode  :character   Median :14.44  \n Mean   :2016-08-02   Mean   :37.69                      Mean   :14.66  \n 3rd Qu.:2016-08-09   3rd Qu.:41.60                      3rd Qu.:17.34  \n Max.   :2016-08-13   Max.   :42.70                      Max.   :23.43  \n    air_temp      air_temp_sd      water_temp    water_temp_sd  \n Min.   :10.29   Min.   :6.391   Min.   :13.98   Min.   :4.838  \n 1st Qu.:12.05   1st Qu.:8.110   1st Qu.:14.33   1st Qu.:6.567  \n Median :13.93   Median :8.410   Median :17.50   Median :6.998  \n Mean   :15.20   Mean   :8.654   Mean   :17.65   Mean   :7.252  \n 3rd Qu.:18.63   3rd Qu.:9.483   3rd Qu.:20.54   3rd Qu.:7.865  \n Max.   :21.79   Max.   :9.965   Max.   :24.50   Max.   :9.121  \n     name          \n Length:392        \n Class :character  \n Mode  :character  \n                   \n                   \n                   \n\n\nFor text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.\n\n# Look at the sites included in the data\nsort(unique(pie_crab$site))\n\n [1] \"BC\"  \"CC\"  \"CT\"  \"DB\"  \"GTM\" \"JC\"  \"NB\"  \"NIB\" \"PIE\" \"RC\"  \"SI\"  \"VCR\"\n[13] \"ZI\" \n\n\nFor those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the ‘base’ packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.\n\n# Load the psych library\nlibrary(psych)\n\n# Get the histogram of crab \"size\" (carapace width in mm)\npsych::multi.hist(pie_crab$size)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion: Data Exploration Tools\n\n\n\nWith a group of 4-5 others discuss the following questions:\n\nWhat tools do you use when exploring new data?\nDo you already use any of these tools to explore your data?\n\nIf you do, why do you use them?\nIf not, where do you think they might be valuable to include?\n\nWhat value–if any–do you see in including these exploratory efforts in your code workflow?\n\n\n\n\n\nQuality Control\nYou may have encountered the phrase “QA/QC” (Quality Assurance / Quality Control) in relation to data cleaning. Technically, quality assurance only encapsulates preventative measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors after data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.\nIn synthesis work, QA is only very rarely an option. You’ll be working with datasets that have already been collected and attempting to handle any issues post hoc which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be incredibly time-consuming so using a programming language (like  R or  Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.\n\nNumber Checking\nWhen you read in a dataset and a column that should be numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to ‘NA’ where a human might be able to deduce the true number each value ‘should be.’\n\n# Load the supportR package\nlibrary(supportR)\n\n# Create an example dataset with non-numbers in ideally numeric columns\nfish_ct &lt;- data.frame(\"species\" = c(\"salmon\", \"bass\", \"halibut\", \"moray eel\"),\n                      \"count\" = c(12, \"14x\", \"_23\", 1))\n\n# Check for malformed numbers in column(s) that should be numeric\nbad_nums &lt;- supportR::num_check(data = fish_ct, col = \"count\")\n\nFor 'count', 2 non-numbers identified: '14x' | '_23'\n\n\nIn the above example, “14x” would be coerced to NA if you simply force the column without checking but you could drop the “x” with text replacing methods once you use tools like this one to flag it for your attention.\n\n\nText Replacement\nOne of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.\n\n# Use pattern match/replace to simplify problem entries\nfish_ct$count &lt;- gsub(pattern = \"x|_\", replacement = \"\", x = fish_ct$count)\n\n# Check that they are fixed\nbad_nums &lt;- supportR::num_check(data = fish_ct, col = \"count\")\n\nFor 'count', no non-numeric values identified.\n\n\nThe vertical line in the gsub example above lets us search for (and replace) multiple patterns. Note however that while you can search for many patterns at once, only a single replacement value can be provided with this function.\n\n\nRegular Expressions\nYou may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.\n\n# Make a test vector\nregex_vec &lt;- c(\"hello\", \"123\", \"goodbye\", \"456\")\n\n# Find all numbers and replace with the letter X\ngsub(pattern = \"[[:digit:]]\", replacement = \"x\", x = regex_vec)\n\n[1] \"hello\"   \"xxx\"     \"goodbye\" \"xxx\"    \n\n# Replace any number of letters with only a single 0\ngsub(pattern = \"[[:alpha:]]+\", replacement = \"0\", x = regex_vec)\n\n[1] \"0\"   \"123\" \"0\"   \"456\"\n\n\nThe stringr package cheatsheet has a really nice list of regular expression options that you may find valuable if you want to delve deeper on this topic. Scroll to the second page of the PDF to see the most relevant parts.\n\n\n\nConditionals\nRather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as ‘if column X has [some values] then column Y should have [other values]’. These operations are called conditionals and are an important part of data wrangling.\nIf you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let’s return to our Plum Island Ecosystems crab dataset for an example.\n\n# Make a new colum with an either/or conditional\npie_crab_v2 &lt;- pie_crab %&gt;% \n1  dplyr::mutate(size_category = ifelse(test = (size &gt;= 15),\n                                       yes = \"big\",\n                                       no = \"small\"),\n                .after = size) \n\n# Count the number of crabs in each category\npie_crab_v2 %&gt;% \n  dplyr::group_by(size_category) %&gt;% \n  dplyr::summarize(crab_ct = dplyr::n())\n\n\n1\n\nmutate makes a new column, ifelse is actually doing the conditional\n\n\n\n\n# A tibble: 2 × 2\n  size_category crab_ct\n  &lt;chr&gt;           &lt;int&gt;\n1 big               179\n2 small             213\n\n\nIf you have multiple different conditions you can just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!\n\n# Make a new column with several conditionals\npie_crab_v2 &lt;- pie_crab %&gt;% \n  dplyr::mutate(size_category = dplyr::case_when( \n1    size &lt;= 10 ~ \"tiny\",\n    size &gt; 10 & size &lt;= 15 ~ \"small\",\n    size &gt; 15 & size &lt;= 20 ~ \"big\",\n    size &gt; 20 ~ \"huge\",\n2    TRUE ~ \"uncategorized\"),\n                .after = size)\n\n# Count the number of crabs in each category\npie_crab_v2 %&gt;% \n  dplyr::group_by(size_category) %&gt;% \n  dplyr::summarize(crab_ct = dplyr::n())\n\n\n1\n\nSyntax is ‘test ~ what to do when true’\n\n2\n\nThis line is a catch-all for any rows that don’t meet previous conditions\n\n\n\n\n# A tibble: 4 × 2\n  size_category crab_ct\n  &lt;chr&gt;           &lt;int&gt;\n1 big               150\n2 huge               28\n3 small             178\n4 tiny               36\n\n\nNote that you can use functions like this one when you do have an either/or conditional if you prefer this format.\n\n\n\n\n\n\nActivity: Conditionals\n\n\n\nIn a script, attempt the following with the PIE crab data:\n\nCreate a column indicating when air temperature is above or below 13° Fahrenheit\nCreate a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile\n\nHint: consult the summary function output!\n\n\n\n\n\n\nUniting / Separating Columns\nSometimes one column has multiple pieces of information that you’d like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.\n\n# Split date into each piece of temporal info\npie_crab_v3 &lt;- pie_crab_v2 %&gt;% \n  tidyr::separate_wider_delim(cols = date, \n1                              delim = \"-\",\n                              names = c(\"year\", \"month\", \"day\"),\n2                              cols_remove = TRUE)\n\n# Check that out\nstr(pie_crab_v3)\n\n\n1\n\n‘delim’ is short for “delimiter” which we covered in the Reproducibility module\n\n2\n\nThis argument specifies whether to remove the original column when making the new columns\n\n\n\n\ntibble [392 × 12] (S3: tbl_df/tbl/data.frame)\n $ year         : chr [1:392] \"2016\" \"2016\" \"2016\" \"2016\" ...\n $ month        : chr [1:392] \"07\" \"07\" \"07\" \"07\" ...\n $ day          : chr [1:392] \"24\" \"24\" \"24\" \"24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ size_category: chr [1:392] \"small\" \"small\" \"small\" \"small\" ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nWhile breaking apart a column’s contents can be useful, it can also be helpful to combine the contents of several columns!\n\n# Re-combine data information back into date\npie_crab_v4 &lt;- pie_crab_v3 %&gt;% \n  tidyr::unite(col = \"date\",\n1               sep = \"/\",\n               year:day, \n2               remove = FALSE)\n\n# Structure check\nstr(pie_crab_v4)\n\n\n1\n\nThis is equivalent to the ‘delim’ argument in the previous function\n\n2\n\nComparable to the ‘cols_remove’ argument in the previous function\n\n\n\n\ntibble [392 × 13] (S3: tbl_df/tbl/data.frame)\n $ date         : chr [1:392] \"2016/07/24\" \"2016/07/24\" \"2016/07/24\" \"2016/07/24\" ...\n $ year         : chr [1:392] \"2016\" \"2016\" \"2016\" \"2016\" ...\n $ month        : chr [1:392] \"07\" \"07\" \"07\" \"07\" ...\n $ day          : chr [1:392] \"24\" \"24\" \"24\" \"24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ size_category: chr [1:392] \"small\" \"small\" \"small\" \"small\" ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nNote in this output how despite re-combining data information the column is listed as a character column! Simply combining or separating data is not always enough so you need to really lean into frequent data structure checks to be sure that your data are structured in the way that you want.\n\n\nJoining Data\nOften the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups’ data on sea star abundance and–once you’ve synonymized the column names–you can simply ‘stack’ the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group’s research. You can’t simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps “site” and coordinate columns) you can use joins to let your computer match these key columns and make sure that only appropriate rows are combined.\nBecause joins are completely dependent upon the value in both columns being an exact match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.\n\n# Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe\nfish_tax &lt;- data.frame(\"species\" = c(\"salmon\", \"bass\", \"halibut\", \"eel\"),\n                       \"family\" = c(\"Salmonidae\", \"Serranidae\", \"Pleuronectidae\", \"Muraenidae\"))\n\n# Check to make sure that the 'species' column matches between both tables\nsupportR::diff_check(old = fish_ct$species, new = fish_tax$species) \n\nFollowing element(s) found in old object but not new: \n\n\n[1] \"moray eel\"\n\n\nFollowing element(s) found in new object but not old: \n\n\n[1] \"eel\"\n\n\n\n# Use text replacement methods to fix that mistake in one table\nfish_tax_v2 &lt;- fish_tax %&gt;% \n1  dplyr::mutate(species = gsub(pattern = \"^eel$\",\n                               replacement = \"moray eel\", \n                               x = species))\n\n# Re-check to make sure that fixed it\nsupportR::diff_check(old = fish_ct$species, new = fish_tax_v2$species)\n\n\n1\n\nThe symbols around “eel” mean that we’re only finding/replacing exact matches. It doesn’t matter in this context but often replacing a partial match would result in more problems. For example, replacing “eel” with “moray eel” could make “electric eel” into “electric moray eel”.\n\n\n\n\nAll elements of old object found in new\n\n\nAll elements of new object found in old\n\n\nNow that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:\n\nleft/right join\nfull join (a.k.a. outer join)\ninner join\nanti join\n\nYou can learn more about the types of join here or here but the quick explanation is that the name of the join indicates whether the rows of the “left” and/or the “right” table are retained in the combined table. In synthesis work a left join or full join is most common (where you have your primary data in the left position and some ancillary/supplementary dataset in the right position).\n\n# Let's combine the fish count and fish taxonomy information\nfish_df &lt;- fish_ct %&gt;% \n  # Actual join step\n1  dplyr::left_join(y = fish_tax_v2, by = \"species\") %&gt;%\n  # Move 'family' column to the left of all other columns\n  dplyr::relocate(family, .before = dplyr::everything())\n\n# Look at the result of that\nfish_df\n\n\n1\n\nThe ‘by’ argument accepts a vector of column names found in both data tables\n\n\n\n\n          family   species count\n1     Salmonidae    salmon    12\n2     Serranidae      bass    14\n3 Pleuronectidae   halibut    23\n4     Muraenidae moray eel     1\n\n\n\n\n\n\n\n\nActivity: Separating Columns & Joining Data\n\n\n\nIn a script, attempt the following with the PIE crab data:\n\nCreate a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)\n\nUse your judgement on which month(s) should fall into each given PIE’s latitude/location\n\nJoin your season table to the PIE crab data based on month\n\nHint: you may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined\n\nCalculate the average size of crabs in each season in order to identify which season correlates with the largest crabs\n\n\n\n\n\nLeveraging Data Shape\nYou may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations dramatically more efficient. If you haven’t encountered it before, any data table can be said to have one of two ‘shapes’: either long or wide. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or “wider” data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or “longer” data tables).\nData shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes “tidy”, you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then–when you’re finished–reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.\nLet’s consider an example to help clarify this. We’ll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.\n\n# Generate a butterfly dataframe\nbfly_v1 &lt;- data.frame(\"pasture\" = c(\"PNW\", \"PNW\", \"RCS\", \"RCS\"),\n                      \"monarch\" = c(\"14m\", \"10f\", \"7m\", \"16f\"),\n                      \"melissa_blue\" = c(\"32m\", \"2f\", \"6m\", \"0f\"),\n                      \"swallowtail\" = c(\"1m\", \"3f\", \"0m\", \"5f\"))\n\n# First we'll reshape this into long format\nbfly_v2 &lt;- bfly_v1 %&gt;% \n  tidyr::pivot_longer(cols = -pasture, \n                      names_to = \"butterfly_sp\", \n                      values_to = \"count_sex\")\n\n# Check what that leaves us with\nhead(bfly_v2, n = 4)\n\n# A tibble: 4 × 3\n  pasture butterfly_sp count_sex\n  &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;    \n1 PNW     monarch      14m      \n2 PNW     melissa_blue 32m      \n3 PNW     swallowtail  1m       \n4 PNW     monarch      10f      \n\n# Let's separate count from sex to be more usable later\nbfly_v3 &lt;- bfly_v2 %&gt;% \n  tidyr::separate_wider_regex(cols = count_sex, \n                              c(count = \"[[:digit:]]+\", sex = \"[[:alpha:]]\")) %&gt;% \n  # Make the 'count' column a real number now\n  dplyr::mutate(count = as.numeric(count))\n\n# Re-check output\nhead(bfly_v3, n = 4)\n\n# A tibble: 4 × 4\n  pasture butterfly_sp count sex  \n  &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;\n1 PNW     monarch         14 m    \n2 PNW     melissa_blue    32 m    \n3 PNW     swallowtail      1 m    \n4 PNW     monarch         10 f    \n\n# Reshape back into wide-ish format\nbfly_v4 &lt;- bfly_v3 %&gt;% \n  tidyr::pivot_wider(names_from = \"butterfly_sp\", values_from = count)\n\n# Re-re-check output\nhead(bfly_v4)\n\n# A tibble: 4 × 5\n  pasture sex   monarch melissa_blue swallowtail\n  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;\n1 PNW     m          14           32           1\n2 PNW     f          10            2           3\n3 RCS     m           7            6           0\n4 RCS     f          16            0           5\n\n\nWhile we absolutely could have used the same function to break apart count and butterfly sex data it would have involved copy/pasting the same information repeatedly. By pivoting to long format first, we can greatly streamline our code. This can also be advantageous for unit conversions, applying data transformations, or checking text column contents among many other possible applications.\n\n\nLoops\nAnother way of simplfying repetitive operations is to use a “for loop” (often called simply “loops”). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an “index” object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object’s identity will be determined by whatever set of values you define at the top of the loop.\nHere’s a very bare bones example to demonstrate the fundamentals.\n\n# Loop across each number between 2 and 4\n1for(k in 2:4){\n  \n  # Square the number\n  result &lt;- k^2\n  \n  # Message that outside of the loop\n  message(k, \" squared is \", result)\n2}\n\n\n1\n\n‘k’ is our index object in this loop\n\n2\n\nNote that the operations to iterate across are wrapped in curly braces ({...})\n\n\n\n\n2 squared is 4\n\n\n3 squared is 9\n\n\n4 squared is 16\n\n\nOnce you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let’s return to our Plum Island Ecosystems crab dataset for a more nuanced example.\n\n# Create an empty list\ncrab_list &lt;- list()\n\n# Let's loop across size categories of crab\n1for(focal_size in unique(pie_crab_v4$size_category)){\n  \n  # Subset the data to just this size category\n  focal_df &lt;- pie_crab_v4 %&gt;% \n    dplyr::filter(size_category == focal_size)\n  \n  # Calculate average and standard deviation of size within this category\n  size_avg &lt;- mean(focal_df$size, na.rm = T) \n  size_dev &lt;- sd(focal_df$size, na.rm = T) \n  \n  # Assemble this into a data table and add to our list\n  crab_list[[focal_size]] &lt;- data.frame(\"size_category\" = focal_size,\n                                        \"size_mean\" = size_avg,\n                                        \"size_sd\" = size_dev)\n} # Close loop\n\n# Unlist the outputs into a dataframe\n2crab_df &lt;- purrr::list_rbind(x = crab_list)\n\n# Check out the resulting data table\ncrab_df\n\n\n1\n\nNote that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!\n\n2\n\nWhen all elements of your list have the same column names, list_rbind efficiently stacks those elements into one longer data table.\n\n\n\n\n  size_category size_mean   size_sd\n1         small 12.624270 1.3827471\n2          tiny  8.876944 0.9112686\n3           big 17.238267 1.3650173\n4          huge 21.196786 0.8276744\n\n\n\n\nCustom Functions\nFinally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR Reproducibility module) and also can be useful end products of synthesis work in and of themselves.\nIf one of your group’s outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project’s findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.\n\n# Define custom function\ncrab_hist &lt;- function(df, size_cat){\n  \n  # Subset data to the desired category\n  data_sub &lt;- dplyr::filter(.data = df, size_category == size_cat)\n  \n  # Create a histogram\n  p &lt;- psych::multi.hist(x = data_sub$size)\n}\n\n# Invoke function\ncrab_hist(df = pie_crab_v4, size_cat = \"tiny\")\n\n\n\n\n\n\n\n\nWhen writing your own functions it can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated\n\n# Define custom function\n1crab_hist &lt;- function(df, size_cat = \"small\"){\n  \n  # Error out if 'df' isn't the right format\n2  if(is.data.frame(df) != TRUE)\n    stop(\"'df' must be provided as a data frame\")\n  \n  # Error out if the data doesn't have the right columns\n3  if(all(c(\"size_category\", \"size\") %in% names(df)) != TRUE)\n    stop(\"'df' must include a 'size' and 'size_category' column\")\n  \n  # Error out for unsupported size category values\n  if(size_cat %in% unique(df$size_category) != TRUE)\n    stop(\"Specified 'size_cat' not found in provided data\")\n  \n  # Subset data to the desired category\n  data_sub &lt;- dplyr::filter(.data = df, size_category == size_cat)\n  \n  # Create a histogram\n  p &lt;- psych::multi.hist(x = data_sub$size)\n}\n\n# Invoke new-and-improved function\n4crab_hist(df = pie_crab_v4)\n\n\n1\n\nThe default category is now set to “small”\n\n2\n\nWe recommend phrasing your error checks with this format (i.e., ’if &lt;some condition&gt; is not true, then &lt;informative error/warning message&gt;)\n\n3\n\nThe %in% operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate “or” conditionals\n\n4\n\nWe don’t need to specify the ‘size_cat’ argument because we can rely on the default\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity: Custom Functions\n\n\n\nIn a script, attempt the following on the PIE crab data:\n\nWrite a function that:\n\n\ncalculates the median of the user-supplied column\n\n\ndetermines whether each value is above, equal to, or below the median\n\n\nmakes a column indicating the results of step B\n\n\nUse the function on the standard deviation of water temperature\nUse it again on the standard deviation of air temperature\nRevisit your function and identify 2-3 likely errors\nWrite custom checks (and error messages) for the set of likely issues you just identified",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_wrangle.html#additional-resources",
+    "href": "mod_wrangle.html#additional-resources",
+    "title": "Data Harmonization & Wrangling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
+    "text": "Additional Resources\n\nPapers & Documents\n\nThe Ultimate Guide to Data Cleaning. Elgarby, O. 2019. Medium\nSome Simple Guidelines for Effective Data Management. Borer et al., 2009. Ecological Society of America Bulletin\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\nOpen Science Synthesis for the Delta Science Program’s Data Munging / QA / QC / Cleaning\n\n\n\nWebsites\n\nTen Commandments for Good Data Management",
     "crumbs": [
       "Phase III -- Execute",
-      "Supporting D.E.C. Thinking"
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html",
+    "href": "mod_version-control.html",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#overview",
+    "href": "mod_version-control.html#overview",
+    "title": "Version Control",
+    "section": "",
+    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#learning-objectives",
+    "href": "mod_version-control.html#learning-objectives",
+    "title": "Version Control",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#module-content",
+    "href": "mod_version-control.html#module-content",
+    "title": "Version Control",
+    "section": "Module Content",
+    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
+    "objectID": "mod_version-control.html#additional-resources",
+    "href": "mod_version-control.html#additional-resources",
+    "title": "Version Control",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
     ]
   },
   {
@@ -110,130 +187,113 @@
     ]
   },
   {
-    "objectID": "CONTRIBUTING.html",
-    "href": "CONTRIBUTING.html",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#accessing-course-materials",
-    "href": "CONTRIBUTING.html#accessing-course-materials",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
-  },
-  {
-    "objectID": "CONTRIBUTING.html#project-management",
-    "href": "CONTRIBUTING.html#project-management",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
-  },
-  {
-    "objectID": "CONTRIBUTING.html#style-guide",
-    "href": "CONTRIBUTING.html#style-guide",
-    "title": "SSECR Contributing Guidelines",
-    "section": "",
-    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
-  },
-  {
-    "objectID": "mod_data-disc.html",
-    "href": "mod_data-disc.html",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html",
+    "href": "mod_facilitation.html",
+    "title": "Inclusive Facilitation",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-disc.html#overview",
-    "href": "mod_data-disc.html#overview",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html#overview",
+    "href": "mod_facilitation.html#overview",
+    "title": "Inclusive Facilitation",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-disc.html#learning-objectives",
-    "href": "mod_data-disc.html#learning-objectives",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html#learning-objectives",
+    "href": "mod_facilitation.html#learning-objectives",
+    "title": "Inclusive Facilitation",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nExplore common data repositories\nUse Google search operators to more effectively perform general searches\nDefine fundamental properties of effective data management plans\nCreate a data management plan\nDescribe best practices for documenting data for archiving",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe benefits of encouraging full, thoughtful, engaged participation\nIdentify methods for ensuring equitable access to participation in a team setting\nIdentify one activity that privileges each thinking style",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-disc.html#module-content",
-    "href": "mod_data-disc.html#module-content",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html#module-content",
+    "href": "mod_facilitation.html#module-content",
+    "title": "Inclusive Facilitation",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_data-disc.html#additional-resources",
-    "href": "mod_data-disc.html#additional-resources",
-    "title": "Data Discovery & Management",
+    "objectID": "mod_facilitation.html#additional-resources",
+    "href": "mod_facilitation.html#additional-resources",
+    "title": "Inclusive Facilitation",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nThe British Ecological Society’s Better Science Guides – Data Management Guide\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Data Management Essentials lesson\nOpen Science Synthesis for the Delta Science Program’s Data Management Essentials and the FAIR & CARE Principles\nOpen Science Synthesis for the Delta Science Program’s Writing Data Management Plans\nNCEAS Scientific Computing team’s Data Acquisition instructions\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer",
+    "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Data Discovery"
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
     ]
   },
   {
-    "objectID": "mod_team-sci.html",
-    "href": "mod_team-sci.html",
-    "title": "Team Science Practices",
+    "objectID": "mod_credit.html",
+    "href": "mod_credit.html",
+    "title": "Authorship & Intellectual Credit",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
+      "Phase III -- Execute",
+      "Intellectual Credit"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#overview",
-    "href": "mod_team-sci.html#overview",
-    "title": "Team Science Practices",
+    "objectID": "mod_credit.html#overview",
+    "href": "mod_credit.html#overview",
+    "title": "Authorship & Intellectual Credit",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
+      "Phase III -- Execute",
+      "Intellectual Credit"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#learning-objectives",
-    "href": "mod_team-sci.html#learning-objectives",
-    "title": "Team Science Practices",
+    "objectID": "mod_credit.html#learning-objectives",
+    "href": "mod_credit.html#learning-objectives",
+    "title": "Authorship & Intellectual Credit",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nInterpret and enact current best practices in team science\nIdentify different interaction styles and the effect they have on group dynamics\nIdentify benefits (and potential costs of) diverse teams\nDescribe ways to mitigate costs of diverse teams\nExplain methods for improving the experience of virtual participants on hybrid teams ## Module Content",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine types of intellectual contributions to a synthesis project\nDescribe some common frameworks for equitable authorship decisions\nExplain benefits (or avoided costs) of making authorship decisions both collaboratively and transparently\nCreate a draft intellectual credit plan for your team",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
+      "Phase III -- Execute",
+      "Intellectual Credit"
     ]
   },
   {
-    "objectID": "mod_team-sci.html#additional-resources",
-    "href": "mod_team-sci.html#additional-resources",
-    "title": "Team Science Practices",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nBates et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nFarrell et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton & Parker, Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nAmelia Liberatore’s Developing a Successful Team workshop slides\nOpen Science Synthesis for the Delta Science Program’s Team Science for Synthesis\nOpen Science Synthesis for the Delta Science Program’s Thinking Preferences\n\n\n\nWebsites",
+    "objectID": "mod_credit.html#module-content",
+    "href": "mod_credit.html#module-content",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Module Content",
+    "text": "Module Content",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Team Science"
+      "Phase III -- Execute",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#additional-resources",
+    "href": "mod_credit.html#additional-resources",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nDahlin et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nAllen et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Intellectual Credit"
     ]
   },
   {
@@ -303,91 +363,58 @@
     ]
   },
   {
-    "objectID": "mod_stats.html",
-    "href": "mod_stats.html",
-    "title": "Analysis & Modeling",
+    "objectID": "mod_findings.html",
+    "href": "mod_findings.html",
+    "title": "Communicating Findings",
     "section": "",
-    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than the others. One half of the module will use a “flipped approach” where project teams will share their proposed analyses with one another. The other half of the module will be dedicated to analyses that are more common in–or exclusive to–synthesis research.",
+    "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
+      "Phase V -- Share",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_stats.html#overview",
-    "href": "mod_stats.html#overview",
-    "title": "Analysis & Modeling",
+    "objectID": "mod_findings.html#overview",
+    "href": "mod_findings.html#overview",
+    "title": "Communicating Findings",
     "section": "",
-    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than the others. One half of the module will use a “flipped approach” where project teams will share their proposed analyses with one another. The other half of the module will be dedicated to analyses that are more common in–or exclusive to–synthesis research.",
+    "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
+      "Phase V -- Share",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_stats.html#learning-objectives",
-    "href": "mod_stats.html#learning-objectives",
-    "title": "Analysis & Modeling",
+    "objectID": "mod_findings.html#learning-objectives",
+    "href": "mod_findings.html#learning-objectives",
+    "title": "Communicating Findings",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe proposed analytical methods to an interested audience of mixed prior experience\nExplain nuance in interpretation of results of proposed analyses\nCompare and contrast interpretation of results in synthesis work versus primary research\nIdentify statistical tests common in synthesis research\nPerform some synthesis-specific analyses",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine elements of (in)effective communication\nIdentify relevant audiences for a particular work\nDetermine audience motivations and interest\nTranslate communication into various formats based on efficacy with target group",
     "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
+      "Phase V -- Share",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_stats.html#needed-packages",
-    "href": "mod_stats.html#needed-packages",
-    "title": "Analysis & Modeling",
-    "section": "Needed Packages",
-    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")",
+    "objectID": "mod_findings.html#module-content",
+    "href": "mod_findings.html#module-content",
+    "title": "Communicating Findings",
+    "section": "Module Content",
+    "text": "Module Content",
     "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
+      "Phase V -- Share",
+      "Communicating Findings"
     ]
   },
   {
-    "objectID": "mod_stats.html#mixed-effects-models",
-    "href": "mod_stats.html#mixed-effects-models",
-    "title": "Analysis & Modeling",
-    "section": "Mixed-Effects Models",
-    "text": "Mixed-Effects Models",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#multi-model-inference",
-    "href": "mod_stats.html#multi-model-inference",
-    "title": "Analysis & Modeling",
-    "section": "Multi-Model Inference",
-    "text": "Multi-Model Inference",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#meta-analysis",
-    "href": "mod_stats.html#meta-analysis",
-    "title": "Analysis & Modeling",
-    "section": "Meta-Analysis",
-    "text": "Meta-Analysis",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
-    ]
-  },
-  {
-    "objectID": "mod_stats.html#additional-resources",
-    "href": "mod_stats.html#additional-resources",
-    "title": "Analysis & Modeling",
+    "objectID": "mod_findings.html#additional-resources",
+    "href": "mod_findings.html#additional-resources",
+    "title": "Communicating Findings",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nUnderstanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. Spake et al., 2023. Biological Reviews\nImproving Quantitative Synthesis to Achieve Generality in Ecology. Spake et al., 2022.Nature Ecology and Evolution\nDoing Meta-Analysis with R: A Hands-On Guide\n\n\n\nWorkshops & Courses\n\nMatt Vuorre’s Bayesian Meta-Analysis with R, Stan, and brms\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nOpen Science Synthesis for the Delta Science Program’s Communicating Your Science\n\n\n\nWebsites\n\nCompass’ The Message Box",
     "crumbs": [
-      "Phase III -- Execute",
-      "Analysis & Modeling"
+      "Phase V -- Share",
+      "Communicating Findings"
     ]
   },
   {
@@ -490,113 +517,268 @@
     ]
   },
   {
-    "objectID": "mod_facilitation.html",
-    "href": "mod_facilitation.html",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_thinking.html",
+    "href": "mod_thinking.html",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase II -- Plan",
-      "Inclusive Facilitation"
+      "Phase III -- Execute",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_facilitation.html#overview",
-    "href": "mod_facilitation.html#overview",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_thinking.html#overview",
+    "href": "mod_thinking.html#overview",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase II -- Plan",
-      "Inclusive Facilitation"
+      "Phase III -- Execute",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_facilitation.html#learning-objectives",
-    "href": "mod_facilitation.html#learning-objectives",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_thinking.html#learning-objectives",
+    "href": "mod_thinking.html#learning-objectives",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe benefits of encouraging full, thoughtful, engaged participation\nIdentify methods for ensuring equitable access to participation in a team setting\nIdentify one activity that privileges each thinking style",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDevelop strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting",
     "crumbs": [
-      "Phase II -- Plan",
-      "Inclusive Facilitation"
+      "Phase III -- Execute",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_facilitation.html#module-content",
-    "href": "mod_facilitation.html#module-content",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_thinking.html#module-content",
+    "href": "mod_thinking.html#module-content",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase II -- Plan",
-      "Inclusive Facilitation"
+      "Phase III -- Execute",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_facilitation.html#additional-resources",
-    "href": "mod_facilitation.html#additional-resources",
-    "title": "Inclusive Facilitation",
+    "objectID": "mod_thinking.html#additional-resources",
+    "href": "mod_thinking.html#additional-resources",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
     "crumbs": [
-      "Phase II -- Plan",
-      "Inclusive Facilitation"
+      "Phase III -- Execute",
+      "Supporting D.E.C. Thinking"
     ]
   },
   {
-    "objectID": "mod_version-control.html",
-    "href": "mod_version-control.html",
-    "title": "Version Control",
+    "objectID": "mod_stats.html",
+    "href": "mod_stats.html",
+    "title": "Analysis & Modeling",
     "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than the others. One half of the module will use a “flipped approach” where project teams will share their proposed analyses with one another. The other half of the module will be dedicated to analyses that are more common in–or exclusive to–synthesis research. Content produced by project teams during the flipped half may be linked in the Additional Resources section at the bottom of this module at the discretion of each team. Otherwise the content of this module will focus only on the non-flipped content.",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
+      "Phase III -- Execute",
+      "Analysis & Modeling"
     ]
   },
   {
-    "objectID": "mod_version-control.html#overview",
-    "href": "mod_version-control.html#overview",
-    "title": "Version Control",
+    "objectID": "mod_stats.html#overview",
+    "href": "mod_stats.html#overview",
+    "title": "Analysis & Modeling",
     "section": "",
-    "text": "Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (NCEAS) has a Scientific Computing Team that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.",
+    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than the others. One half of the module will use a “flipped approach” where project teams will share their proposed analyses with one another. The other half of the module will be dedicated to analyses that are more common in–or exclusive to–synthesis research. Content produced by project teams during the flipped half may be linked in the Additional Resources section at the bottom of this module at the discretion of each team. Otherwise the content of this module will focus only on the non-flipped content.",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
+      "Phase III -- Execute",
+      "Analysis & Modeling"
     ]
   },
   {
-    "objectID": "mod_version-control.html#learning-objectives",
-    "href": "mod_version-control.html#learning-objectives",
-    "title": "Version Control",
+    "objectID": "mod_stats.html#learning-objectives",
+    "href": "mod_stats.html#learning-objectives",
+    "title": "Analysis & Modeling",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe how version control facilitates code collaboration\nNavigate GitHub via a web browser\nCreate and edit a repository through GitHub\nDefine fundamental git vocabulary\nSketch the RStudio-to-GitHub order of operations\nUse RStudio, Git, and GitHub to collaborate with version control",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe proposed analytical methods to an interested audience of mixed prior experience\nExplain nuance in interpretation of results of proposed analyses\nCompare and contrast interpretation of results in synthesis work versus primary research\nIdentify statistical tests common in synthesis research\nPerform some synthesis-specific analyses",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
+      "Phase III -- Execute",
+      "Analysis & Modeling"
     ]
   },
   {
-    "objectID": "mod_version-control.html#module-content",
-    "href": "mod_version-control.html#module-content",
-    "title": "Version Control",
-    "section": "Module Content",
-    "text": "Module Content\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "objectID": "mod_stats.html#needed-packages",
+    "href": "mod_stats.html#needed-packages",
+    "title": "Analysis & Modeling",
+    "section": "Needed Packages",
+    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")",
     "crumbs": [
-      "Phase I -- Prepare",
-      "Version Control"
+      "Phase III -- Execute",
+      "Analysis & Modeling"
     ]
   },
   {
-    "objectID": "mod_version-control.html#additional-resources",
-    "href": "mod_version-control.html#additional-resources",
-    "title": "Version Control",
+    "objectID": "mod_stats.html#mixed-effects-models",
+    "href": "mod_stats.html#mixed-effects-models",
+    "title": "Analysis & Modeling",
+    "section": "Mixed-Effects Models",
+    "text": "Mixed-Effects Models",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#multi-model-inference",
+    "href": "mod_stats.html#multi-model-inference",
+    "title": "Analysis & Modeling",
+    "section": "Multi-Model Inference",
+    "text": "Multi-Model Inference",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#meta-analysis",
+    "href": "mod_stats.html#meta-analysis",
+    "title": "Analysis & Modeling",
+    "section": "Meta-Analysis",
+    "text": "Meta-Analysis",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#additional-resources",
+    "href": "mod_stats.html#additional-resources",
+    "title": "Analysis & Modeling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNot Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. Pereira Braga et al., 2023. Methods in Ecology and Evolution\nGit Cheat Sheet. GitHub\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "text": "Additional Resources\n\nPapers & Documents\n\nUnderstanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. Spake et al., 2023. Biological Reviews\nImproving Quantitative Synthesis to Achieve Generality in Ecology. Spake et al., 2022.Nature Ecology and Evolution\nDoing Meta-Analysis with R: A Hands-On Guide\n\n\n\nWorkshops & Courses\n\nMatt Vuorre’s Bayesian Meta-Analysis with R, Stan, and brms\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "CONTRIBUTING.html",
+    "href": "CONTRIBUTING.html",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable.\n\n\n\n\n\nIndividual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion\n\n\n\n\n\nAs much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#accessing-course-materials",
+    "href": "CONTRIBUTING.html#accessing-course-materials",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "We are using a GitHub Team (see here for more information on GitHub Teams) to simplify access protocols to SSECR GitHub materials.\nContact Marty Downs and/or Nick Lyon to be added to the SSECR GitHub Team. This will give you write-level access to (A) the SSECR GitHub repository and (B) the SSECR GitHub Project that we’re using for task management.\n\n\n\nContact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared Drive is named “LTER-Grad-Course”.\n\n\n\nCommunicating via email is fine though we also have a channel (#lter-grad-course) in NCEAS’ Slack organization if that is preferable."
+  },
+  {
+    "objectID": "CONTRIBUTING.html#project-management",
+    "href": "CONTRIBUTING.html#project-management",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "Individual tasks should be tracked as GitHub Issues\n\nBe sure that each task is SMART (i.e., specific, measurable, achievable, relevant, and time-bound)\n\nPlease use the issue template\n\nWhen you select “New Issue” you will be prompted to use this template automatically\n\nTry to document task progress within the dedicated issue for that task (for posterity)\nStrategic planning (i.e., project management across tasks) should use the SSECR GitHub Project\n\nTask lifecycle can be tracked by dragging an issue’s “card” among columns that correspond to major steps in task completion"
+  },
+  {
+    "objectID": "CONTRIBUTING.html#style-guide",
+    "href": "CONTRIBUTING.html#style-guide",
+    "title": "SSECR Contributing Guidelines",
+    "section": "",
+    "text": "As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository."
+  },
+  {
+    "objectID": "mod_team-sci.html",
+    "href": "mod_team-sci.html",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
     "crumbs": [
       "Phase I -- Prepare",
-      "Version Control"
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#overview",
+    "href": "mod_team-sci.html#overview",
+    "title": "Team Science Practices",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#learning-objectives",
+    "href": "mod_team-sci.html#learning-objectives",
+    "title": "Team Science Practices",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nInterpret and enact current best practices in team science\nIdentify different interaction styles and the effect they have on group dynamics\nIdentify benefits (and potential costs of) diverse teams\nDescribe ways to mitigate costs of diverse teams\nExplain methods for improving the experience of virtual participants on hybrid teams ## Module Content",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "mod_team-sci.html#additional-resources",
+    "href": "mod_team-sci.html#additional-resources",
+    "title": "Team Science Practices",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\nBates et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nFarrell et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton & Parker, Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nAmelia Liberatore’s Developing a Successful Team workshop slides\nOpen Science Synthesis for the Delta Science Program’s Team Science for Synthesis\nOpen Science Synthesis for the Delta Science Program’s Thinking Preferences\n\n\n\nWebsites",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Team Science"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the LTER Network page for the course.\nIf you’re interested in joining the course as a student you can see the application here. If instead you’re interested in joining as a team project mentor you can find more information–and apply–here.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-priorities",
+    "href": "index.html#course-priorities",
+    "title": "Course Overview",
+    "section": "Course Priorities",
+    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis projects\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Course Overview",
+    "section": "Course Description",
+    "text": "Course Description\nThe course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. The course starts with an in-person launch to establish cohort cohesion and ensure that any setup issues are resolved. Participants will pitch projects to the group and assemble a team of collaborators.The ideal configuration would be 6 project teams of 4-5 students each. Prior to the start of the course, the Network Office will recruit a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately 4-5 times per year.\nApplicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants’ own work, course mentors will make available a small library of synthesis ideas in search of execution. The in-person kickoff week will focus on cohort-building, pitching projects and assembling project teams, identifying relevant data, and getting set up on servers and collaboration tools.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-scheduling",
+    "href": "index.html#course-scheduling",
+    "title": "Course Overview",
+    "section": "Course Scheduling",
+    "text": "Course Scheduling\nCourse participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.\nEach three-hour session will include 2 components:\n\nInspiration (~60 minutes): Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.\nInstruction (~120 minutes): Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently.\n\nTechnical skills will build on earlier lessons and are not intended to be stand-alone modules. The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.\n\n\nProject groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-policies",
+    "href": "index.html#course-policies",
+    "title": "Course Overview",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nArtificial Intelligence Tools\nArtificial intelligence (AI) tools are increasingly well-known and widely discussed in the context of data science. AI products can increase the efficiency of code writing and are becoming a common part of the data science landscape. For the purposes of this course, we strongly recommend that you do not use AI tools. There is an under-discussed ethical consideration to the use and training of these tools in addition to their known practical limitations. However, the main reason we suggest you not use them for this class though is that leaning too heavily upon AI tools is likely to negatively impact your learning and skill acquisition.\nYou may have prior experience with some of the quantitative skills this course aims to teach but others are likely new to you. During the first steps of learning any new skill, it can be really helpful to struggle a bit in solving problems. Your efforts now will help refine your troubleshooting skills and will likely make it easier to remember how you solved a given problem the next time it arises. Over-use of AI tools can short circuit this pathway to mastery. Once you have become a proficient coder, you will be better able to identify and avoid any distortions or assumptions introduced by relying on AI.\nAI Resources\n\nPratim Ray, P. ChatGPT: A comprehensive review on background, applications, key challenges, bias, ethics, limitations and future scope. 2023. Internet of Things and Cyber-Physical Systems\nTrust, T. ChatGPT & Education Slide Deck. 2023. National Teaching Repository\nCsik, S. Teach Me How to Google. University of California, Santa Barbara (UCSB) Master of Environmental Data Science (MEDS) Program.",
+    "crumbs": [
+      "Course Overview"
     ]
   },
   {
@@ -605,6 +787,61 @@
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
     "text": "Artificial intelligence (AI) tools are increasingly well-known and widely discussed in the context of data science. AI products can increase the efficiency of code writing and are becoming a common part of the data science landscape. For the purposes of this course, we strongly recommend that you do not use AI tools. There is an under-discussed ethical consideration to the use and training of these tools in addition to their known practical limitations. However, the main reason we suggest you not use them for this class though is that leaning too heavily upon AI tools is likely to negatively impact your learning and skill acquisition.\nYou may have prior experience with some of the quantitative skills this course aims to teach but others are likely new to you. During the first steps of learning any new skill, it can be really helpful to struggle a bit in solving problems. Your efforts now will help refine your troubleshooting skills and will likely make it easier to remember how you solved a given problem the next time it arises. Over-use of AI tools can short circuit this pathway to mastery. Once you have become a proficient coder, you will be better able to identify and avoid any distortions or assumptions introduced by relying on AI.\nAI Resources\n\nPratim Ray, P. ChatGPT: A comprehensive review on background, applications, key challenges, bias, ethics, limitations and future scope. 2023. Internet of Things and Cyber-Physical Systems\nTrust, T. ChatGPT & Education Slide Deck. 2023. National Teaching Repository\nCsik, S. Teach Me How to Google. University of California, Santa Barbara (UCSB) Master of Environmental Data Science (MEDS) Program."
+  },
+  {
+    "objectID": "mod_reports.html",
+    "href": "mod_reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#overview",
+    "href": "mod_reports.html#overview",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Under Construction, stay tuned!",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#learning-objectives",
+    "href": "mod_reports.html#learning-objectives",
+    "title": "Reproducible Reports",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify the three fundamental elements of R Markdown / Quarto documents\nUse Markdown syntax to accomplish text styling\nCreate reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings\nMake a (small) Quarto website\nDeploy a website and/or report through GitHub Pages",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#module-content",
+    "href": "mod_reports.html#module-content",
+    "title": "Reproducible Reports",
+    "section": "Module Content",
+    "text": "Module Content",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#additional-resources",
+    "href": "mod_reports.html#additional-resources",
+    "title": "Reproducible Reports",
+    "section": "Additional Resources",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Literature Analysis with Quarto session\nOSS Reproducible Papers with R Markdown\nUCSB’s Master of Environmental Data Science (MEDS) Creating your Personal Website using Quarto lesson\n\n\n\nWebsites\n\nPosit’s Welcome to Quarto",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
   },
   {
     "objectID": "mod_next-steps.html",
@@ -725,61 +962,6 @@
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html",
-    "href": "mod_findings.html",
-    "title": "Communicating Findings",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase V -- Share",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#overview",
-    "href": "mod_findings.html#overview",
-    "title": "Communicating Findings",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase V -- Share",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#learning-objectives",
-    "href": "mod_findings.html#learning-objectives",
-    "title": "Communicating Findings",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine elements of (in)effective communication\nIdentify relevant audiences for a particular work\nDetermine audience motivations and interest\nTranslate communication into various formats based on efficacy with target group",
-    "crumbs": [
-      "Phase V -- Share",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#module-content",
-    "href": "mod_findings.html#module-content",
-    "title": "Communicating Findings",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase V -- Share",
-      "Communicating Findings"
-    ]
-  },
-  {
-    "objectID": "mod_findings.html#additional-resources",
-    "href": "mod_findings.html#additional-resources",
-    "title": "Communicating Findings",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nOpen Science Synthesis for the Delta Science Program’s Communicating Your Science\n\n\n\nWebsites\n\nCompass’ The Message Box",
-    "crumbs": [
-      "Phase V -- Share",
-      "Communicating Findings"
     ]
   },
   {
@@ -904,240 +1086,58 @@
     ]
   },
   {
-    "objectID": "mod_credit.html",
-    "href": "mod_credit.html",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-disc.html",
+    "href": "mod_data-disc.html",
+    "title": "Data Discovery & Management",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
-      "Intellectual Credit"
+      "Phase I -- Prepare",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_credit.html#overview",
-    "href": "mod_credit.html#overview",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-disc.html#overview",
+    "href": "mod_data-disc.html#overview",
+    "title": "Data Discovery & Management",
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
-      "Intellectual Credit"
+      "Phase I -- Prepare",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_credit.html#learning-objectives",
-    "href": "mod_credit.html#learning-objectives",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-disc.html#learning-objectives",
+    "href": "mod_data-disc.html#learning-objectives",
+    "title": "Data Discovery & Management",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine types of intellectual contributions to a synthesis project\nDescribe some common frameworks for equitable authorship decisions\nExplain benefits (or avoided costs) of making authorship decisions both collaboratively and transparently\nCreate a draft intellectual credit plan for your team",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nExplore common data repositories\nUse Google search operators to more effectively perform general searches\nDefine fundamental properties of effective data management plans\nCreate a data management plan\nDescribe best practices for documenting data for archiving",
     "crumbs": [
-      "Phase III -- Execute",
-      "Intellectual Credit"
+      "Phase I -- Prepare",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_credit.html#module-content",
-    "href": "mod_credit.html#module-content",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-disc.html#module-content",
+    "href": "mod_data-disc.html#module-content",
+    "title": "Data Discovery & Management",
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase III -- Execute",
-      "Intellectual Credit"
+      "Phase I -- Prepare",
+      "Data Discovery"
     ]
   },
   {
-    "objectID": "mod_credit.html#additional-resources",
-    "href": "mod_credit.html#additional-resources",
-    "title": "Authorship & Intellectual Credit",
+    "objectID": "mod_data-disc.html#additional-resources",
+    "href": "mod_data-disc.html#additional-resources",
+    "title": "Data Discovery & Management",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nDahlin et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nAllen et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
+    "text": "Additional Resources\n\nPapers & Documents\n\nThe British Ecological Society’s Better Science Guides – Data Management Guide\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Data Management Essentials lesson\nOpen Science Synthesis for the Delta Science Program’s Data Management Essentials and the FAIR & CARE Principles\nOpen Science Synthesis for the Delta Science Program’s Writing Data Management Plans\nNCEAS Scientific Computing team’s Data Acquisition instructions\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer",
     "crumbs": [
-      "Phase III -- Execute",
-      "Intellectual Credit"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html",
-    "href": "mod_wrangle.html",
-    "title": "Data Harmonization & Wrangling",
-    "section": "",
-    "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#overview",
-    "href": "mod_wrangle.html#overview",
-    "title": "Data Harmonization & Wrangling",
-    "section": "",
-    "text": "Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we’re adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:\n\n“Harmonization” = process of combining separate primary data objects into one object. This includes things like synonymizing columns, or changing data format to support combination. This excludes quality control steps–even those that are undertaken before harmonization begins.\n“Wrangling” = all modifications to data meant to create an analysis-ready ‘tidy’ data object. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) also falls into this category!",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#learning-objectives",
-    "href": "mod_wrangle.html#learning-objectives",
-    "title": "Data Harmonization & Wrangling",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify typical steps in data harmonization and wrangling workflows\nCreate a harmonization workflow\nDefine quality control\nSummarize typical operations in a quality control workflow\nUse regular expressions to perform flexible text operations\nWrite custom functions to reduce code duplication\nIdentify value of and typical obstacles to data ‘joining’\nExplain benefits and drawbacks of using data shape to streamline code\nDesign a complete data wrangling workflow",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#needed-packages",
-    "href": "mod_wrangle.html#needed-packages",
-    "title": "Data Harmonization & Wrangling",
-    "section": "Needed Packages",
-    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"ltertools\")\ninstall.packages(\"lterdatasampler\")\ninstall.packages(\"psych\")\ninstall.packages(\"supportR\")\ninstall.packages(\"tidyverse\")\n\nWe’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.\n\n# Load tidyverse\nlibrary(tidyverse)",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#harmonizing-data",
-    "href": "mod_wrangle.html#harmonizing-data",
-    "title": "Data Harmonization & Wrangling",
-    "section": "Harmonizing Data",
-    "text": "Harmonizing Data\nData harmonization is an interesting topic in that it is vital for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.\nFor tabular data, we recommend using the ltertools R package to perform any needed harmonization. This package relies on a “column key” to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key. If you already have a set of files locally, ltertools does offer a begin_key function that creates the first two required columns in the column key.\nThe column key requires three columns:\n\n“source” – Name of the raw file\n“raw_name” – Name of all raw columns in that file to be synonymized\n“tidy_name” – New name for each raw column that should be carried to the harmonized data\n\nNote that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the ltertools package vignette. For convenience, we’re attaching the visual diagram of this method of harmonization from the package vignette.",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#wrangling-data",
-    "href": "mod_wrangle.html#wrangling-data",
-    "title": "Data Harmonization & Wrangling",
-    "section": "Wrangling Data",
-    "text": "Wrangling Data\nData wrangling is a huge subject that covers a wide range of topics. In this part of the module, we’ll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you’ll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice ‘jumping off’ point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.\nThis module will use example data to demonstrate these tools but as we work through these topics you should feel free to substitute a dataset of your choosing! If you don’t have one in mind, you can use the example dataset shown in the code chunks throughout this module.\nThis dataset comes from the lterdatasampler R package and the data are about fiddler crabs (Minuca pugnax) at the Plum Island Ecosystems (PIE) LTER site.\n\n# Load the lterdatasampler package\nlibrary(lterdatasampler)\n\n# Load the fiddler crab dataset\ndata(pie_crab)\n\n\nExploring the Data\nBefore beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.\nChecking the data structure is one way of getting a lot of this high-level information.\n\n# Check dataset structure\nstr(pie_crab)\n\ntibble [392 × 9] (S3: tbl_df/tbl/data.frame)\n $ date         : Date[1:392], format: \"2016-07-24\" \"2016-07-24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nFor data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information elsewhere.\n\n# Get a simple summary of the data\nsummary(pie_crab)\n\n      date               latitude         site                size      \n Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  \n 1st Qu.:2016-07-28   1st Qu.:34.00   Class :character   1st Qu.:12.02  \n Median :2016-08-01   Median :39.10   Mode  :character   Median :14.44  \n Mean   :2016-08-02   Mean   :37.69                      Mean   :14.66  \n 3rd Qu.:2016-08-09   3rd Qu.:41.60                      3rd Qu.:17.34  \n Max.   :2016-08-13   Max.   :42.70                      Max.   :23.43  \n    air_temp      air_temp_sd      water_temp    water_temp_sd  \n Min.   :10.29   Min.   :6.391   Min.   :13.98   Min.   :4.838  \n 1st Qu.:12.05   1st Qu.:8.110   1st Qu.:14.33   1st Qu.:6.567  \n Median :13.93   Median :8.410   Median :17.50   Median :6.998  \n Mean   :15.20   Mean   :8.654   Mean   :17.65   Mean   :7.252  \n 3rd Qu.:18.63   3rd Qu.:9.483   3rd Qu.:20.54   3rd Qu.:7.865  \n Max.   :21.79   Max.   :9.965   Max.   :24.50   Max.   :9.121  \n     name          \n Length:392        \n Class :character  \n Mode  :character  \n                   \n                   \n                   \n\n\nFor text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.\n\n# Look at the sites included in the data\nsort(unique(pie_crab$site))\n\n [1] \"BC\"  \"CC\"  \"CT\"  \"DB\"  \"GTM\" \"JC\"  \"NB\"  \"NIB\" \"PIE\" \"RC\"  \"SI\"  \"VCR\"\n[13] \"ZI\" \n\n\nFor those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the ‘base’ packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.\n\n# Load the psych library\nlibrary(psych)\n\n# Get the histogram of crab \"size\" (carapace width in mm)\npsych::multi.hist(pie_crab$size)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion: Data Exploration Tools\n\n\n\nWith a group of 4-5 others discuss the following questions:\n\nWhat tools do you use when exploring new data?\nDo you already use any of these tools to explore your data?\n\nIf you do, why do you use them?\nIf not, where do you think they might be valuable to include?\n\nWhat value–if any–do you see in including these exploratory efforts in your code workflow?\n\n\n\n\n\nQuality Control\nYou may have encountered the phrase “QA/QC” (Quality Assurance / Quality Control) in relation to data cleaning. Technically, quality assurance only encapsulates preventative measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors after data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.\nIn synthesis work, QA is only very rarely an option. You’ll be working with datasets that have already been collected and attempting to handle any issues post hoc which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be incredibly time-consuming so using a programming language (like  R or  Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.\n\nNumber Checking\nWhen you read in a dataset and a column that should be numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to ‘NA’ where a human might be able to deduce the true number each value ‘should be.’\n\n# Load the supportR package\nlibrary(supportR)\n\n# Create an example dataset with non-numbers in ideally numeric columns\nfish_ct &lt;- data.frame(\"species\" = c(\"salmon\", \"bass\", \"halibut\", \"moray eel\"),\n                      \"count\" = c(12, \"14x\", \"_23\", 1))\n\n# Check for malformed numbers in column(s) that should be numeric\nbad_nums &lt;- supportR::num_check(data = fish_ct, col = \"count\")\n\nFor 'count', 2 non-numbers identified: '14x' | '_23'\n\n\nIn the above example, “14x” would be coerced to NA if you simply force the column without checking but you could drop the “x” with text replacing methods once you use tools like this one to flag it for your attention.\n\n\nText Replacement\nOne of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.\n\n# Use pattern match/replace to simplify problem entries\nfish_ct$count &lt;- gsub(pattern = \"x|_\", replacement = \"\", x = fish_ct$count)\n\n# Check that they are fixed\nbad_nums &lt;- supportR::num_check(data = fish_ct, col = \"count\")\n\nFor 'count', no non-numeric values identified.\n\n\nThe vertical line in the gsub example above lets us search for (and replace) multiple patterns. Note however that while you can search for many patterns at once, only a single replacement value can be provided with this function.\n\n\nRegular Expressions\nYou may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.\n\n# Make a test vector\nregex_vec &lt;- c(\"hello\", \"123\", \"goodbye\", \"456\")\n\n# Find all numbers and replace with the letter X\ngsub(pattern = \"[[:digit:]]\", replacement = \"x\", x = regex_vec)\n\n[1] \"hello\"   \"xxx\"     \"goodbye\" \"xxx\"    \n\n# Replace any number of letters with only a single 0\ngsub(pattern = \"[[:alpha:]]+\", replacement = \"0\", x = regex_vec)\n\n[1] \"0\"   \"123\" \"0\"   \"456\"\n\n\nThe stringr package cheatsheet has a really nice list of regular expression options that you may find valuable if you want to delve deeper on this topic. Scroll to the second page of the PDF to see the most relevant parts.\n\n\n\nConditionals\nRather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as ‘if column X has [some values] then column Y should have [other values]’. These operations are called conditionals and are an important part of data wrangling.\nIf you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let’s return to our Plum Island Ecosystems crab dataset for an example.\n\n# Make a new colum with an either/or conditional\npie_crab_v2 &lt;- pie_crab %&gt;% \n1  dplyr::mutate(size_category = ifelse(test = (size &gt;= 15),\n                                       yes = \"big\",\n                                       no = \"small\"),\n                .after = size) \n\n# Count the number of crabs in each category\npie_crab_v2 %&gt;% \n  dplyr::group_by(size_category) %&gt;% \n  dplyr::summarize(crab_ct = dplyr::n())\n\n\n1\n\nmutate makes a new column, ifelse is actually doing the conditional\n\n\n\n\n# A tibble: 2 × 2\n  size_category crab_ct\n  &lt;chr&gt;           &lt;int&gt;\n1 big               179\n2 small             213\n\n\nIf you have multiple different conditions you can just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!\n\n# Make a new column with several conditionals\npie_crab_v2 &lt;- pie_crab %&gt;% \n  dplyr::mutate(size_category = dplyr::case_when( \n1    size &lt;= 10 ~ \"tiny\",\n    size &gt; 10 & size &lt;= 15 ~ \"small\",\n    size &gt; 15 & size &lt;= 20 ~ \"big\",\n    size &gt; 20 ~ \"huge\",\n2    TRUE ~ \"uncategorized\"),\n                .after = size)\n\n# Count the number of crabs in each category\npie_crab_v2 %&gt;% \n  dplyr::group_by(size_category) %&gt;% \n  dplyr::summarize(crab_ct = dplyr::n())\n\n\n1\n\nSyntax is ‘test ~ what to do when true’\n\n2\n\nThis line is a catch-all for any rows that don’t meet previous conditions\n\n\n\n\n# A tibble: 4 × 2\n  size_category crab_ct\n  &lt;chr&gt;           &lt;int&gt;\n1 big               150\n2 huge               28\n3 small             178\n4 tiny               36\n\n\nNote that you can use functions like this one when you do have an either/or conditional if you prefer this format.\n\n\n\n\n\n\nActivity: Conditionals\n\n\n\nIn a script, attempt the following with the PIE crab data:\n\nCreate a column indicating when air temperature is above or below 13° Fahrenheit\nCreate a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile\n\nHint: consult the summary function output!\n\n\n\n\n\n\nUniting / Separating Columns\nSometimes one column has multiple pieces of information that you’d like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.\n\n# Split date into each piece of temporal info\npie_crab_v3 &lt;- pie_crab_v2 %&gt;% \n  tidyr::separate_wider_delim(cols = date, \n1                              delim = \"-\",\n                              names = c(\"year\", \"month\", \"day\"),\n2                              cols_remove = TRUE)\n\n# Check that out\nstr(pie_crab_v3)\n\n\n1\n\n‘delim’ is short for “delimiter” which we covered in the Reproducibility module\n\n2\n\nThis argument specifies whether to remove the original column when making the new columns\n\n\n\n\ntibble [392 × 12] (S3: tbl_df/tbl/data.frame)\n $ year         : chr [1:392] \"2016\" \"2016\" \"2016\" \"2016\" ...\n $ month        : chr [1:392] \"07\" \"07\" \"07\" \"07\" ...\n $ day          : chr [1:392] \"24\" \"24\" \"24\" \"24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ size_category: chr [1:392] \"small\" \"small\" \"small\" \"small\" ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nWhile breaking apart a column’s contents can be useful, it can also be helpful to combine the contents of several columns!\n\n# Re-combine data information back into date\npie_crab_v4 &lt;- pie_crab_v3 %&gt;% \n  tidyr::unite(col = \"date\",\n1               sep = \"/\",\n               year:day, \n2               remove = FALSE)\n\n# Structure check\nstr(pie_crab_v4)\n\n\n1\n\nThis is equivalent to the ‘delim’ argument in the previous function\n\n2\n\nComparable to the ‘cols_remove’ argument in the previous function\n\n\n\n\ntibble [392 × 13] (S3: tbl_df/tbl/data.frame)\n $ date         : chr [1:392] \"2016/07/24\" \"2016/07/24\" \"2016/07/24\" \"2016/07/24\" ...\n $ year         : chr [1:392] \"2016\" \"2016\" \"2016\" \"2016\" ...\n $ month        : chr [1:392] \"07\" \"07\" \"07\" \"07\" ...\n $ day          : chr [1:392] \"24\" \"24\" \"24\" \"24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ size_category: chr [1:392] \"small\" \"small\" \"small\" \"small\" ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nNote in this output how despite re-combining data information the column is listed as a character column! Simply combining or separating data is not always enough so you need to really lean into frequent data structure checks to be sure that your data are structured in the way that you want.\n\n\nJoining Data\nOften the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups’ data on sea star abundance and–once you’ve synonymized the column names–you can simply ‘stack’ the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group’s research. You can’t simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps “site” and coordinate columns) you can use joins to let your computer match these key columns and make sure that only appropriate rows are combined.\nBecause joins are completely dependent upon the value in both columns being an exact match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.\n\n# Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe\nfish_tax &lt;- data.frame(\"species\" = c(\"salmon\", \"bass\", \"halibut\", \"eel\"),\n                       \"family\" = c(\"Salmonidae\", \"Serranidae\", \"Pleuronectidae\", \"Muraenidae\"))\n\n# Check to make sure that the 'species' column matches between both tables\nsupportR::diff_check(old = fish_ct$species, new = fish_tax$species) \n\nFollowing element(s) found in old object but not new: \n\n\n[1] \"moray eel\"\n\n\nFollowing element(s) found in new object but not old: \n\n\n[1] \"eel\"\n\n\n\n# Use text replacement methods to fix that mistake in one table\nfish_tax_v2 &lt;- fish_tax %&gt;% \n1  dplyr::mutate(species = gsub(pattern = \"^eel$\",\n                               replacement = \"moray eel\", \n                               x = species))\n\n# Re-check to make sure that fixed it\nsupportR::diff_check(old = fish_ct$species, new = fish_tax_v2$species)\n\n\n1\n\nThe symbols around “eel” mean that we’re only finding/replacing exact matches. It doesn’t matter in this context but often replacing a partial match would result in more problems. For example, replacing “eel” with “moray eel” could make “electric eel” into “electric moray eel”.\n\n\n\n\nAll elements of old object found in new\n\n\nAll elements of new object found in old\n\n\nNow that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:\n\nleft/right join\nfull join (a.k.a. outer join)\ninner join\nanti join\n\nYou can learn more about the types of join here or here but the quick explanation is that the name of the join indicates whether the rows of the “left” and/or the “right” table are retained in the combined table. In synthesis work a left join or full join is most common (where you have your primary data in the left position and some ancillary/supplementary dataset in the right position).\n\n# Let's combine the fish count and fish taxonomy information\nfish_df &lt;- fish_ct %&gt;% \n  # Actual join step\n1  dplyr::left_join(y = fish_tax_v2, by = \"species\") %&gt;%\n  # Move 'family' column to the left of all other columns\n  dplyr::relocate(family, .before = dplyr::everything())\n\n# Look at the result of that\nfish_df\n\n\n1\n\nThe ‘by’ argument accepts a vector of column names found in both data tables\n\n\n\n\n          family   species count\n1     Salmonidae    salmon    12\n2     Serranidae      bass    14\n3 Pleuronectidae   halibut    23\n4     Muraenidae moray eel     1\n\n\n\n\n\n\n\n\nActivity: Separating Columns & Joining Data\n\n\n\nIn a script, attempt the following with the PIE crab data:\n\nCreate a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)\n\nUse your judgement on which month(s) should fall into each given PIE’s latitude/location\n\nJoin your season table to the PIE crab data based on month\n\nHint: you may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined\n\nCalculate the average size of crabs in each season in order to identify which season correlates with the largest crabs\n\n\n\n\n\nLeveraging Data Shape\nYou may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations dramatically more efficient. If you haven’t encountered it before, any data table can be said to have one of two ‘shapes’: either long or wide. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or “wider” data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or “longer” data tables).\nData shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes “tidy”, you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then–when you’re finished–reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.\nLet’s consider an example to help clarify this. We’ll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.\n\n# Generate a butterfly dataframe\nbfly_v1 &lt;- data.frame(\"pasture\" = c(\"PNW\", \"PNW\", \"RCS\", \"RCS\"),\n                      \"monarch\" = c(\"14m\", \"10f\", \"7m\", \"16f\"),\n                      \"melissa_blue\" = c(\"32m\", \"2f\", \"6m\", \"0f\"),\n                      \"swallowtail\" = c(\"1m\", \"3f\", \"0m\", \"5f\"))\n\n# First we'll reshape this into long format\nbfly_v2 &lt;- bfly_v1 %&gt;% \n  tidyr::pivot_longer(cols = -pasture, \n                      names_to = \"butterfly_sp\", \n                      values_to = \"count_sex\")\n\n# Check what that leaves us with\nhead(bfly_v2, n = 4)\n\n# A tibble: 4 × 3\n  pasture butterfly_sp count_sex\n  &lt;chr&gt;   &lt;chr&gt;        &lt;chr&gt;    \n1 PNW     monarch      14m      \n2 PNW     melissa_blue 32m      \n3 PNW     swallowtail  1m       \n4 PNW     monarch      10f      \n\n# Let's separate count from sex to be more usable later\nbfly_v3 &lt;- bfly_v2 %&gt;% \n  tidyr::separate_wider_regex(cols = count_sex, \n                              c(count = \"[[:digit:]]+\", sex = \"[[:alpha:]]\")) %&gt;% \n  # Make the 'count' column a real number now\n  dplyr::mutate(count = as.numeric(count))\n\n# Re-check output\nhead(bfly_v3, n = 4)\n\n# A tibble: 4 × 4\n  pasture butterfly_sp count sex  \n  &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;\n1 PNW     monarch         14 m    \n2 PNW     melissa_blue    32 m    \n3 PNW     swallowtail      1 m    \n4 PNW     monarch         10 f    \n\n# Reshape back into wide-ish format\nbfly_v4 &lt;- bfly_v3 %&gt;% \n  tidyr::pivot_wider(names_from = \"butterfly_sp\", values_from = count)\n\n# Re-re-check output\nhead(bfly_v4)\n\n# A tibble: 4 × 5\n  pasture sex   monarch melissa_blue swallowtail\n  &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt;        &lt;dbl&gt;       &lt;dbl&gt;\n1 PNW     m          14           32           1\n2 PNW     f          10            2           3\n3 RCS     m           7            6           0\n4 RCS     f          16            0           5\n\n\nWhile we absolutely could have used the same function to break apart count and butterfly sex data it would have involved copy/pasting the same information repeatedly. By pivoting to long format first, we can greatly streamline our code. This can also be advantageous for unit conversions, applying data transformations, or checking text column contents among many other possible applications.\n\n\nLoops\nAnother way of simplfying repetitive operations is to use a “for loop” (often called simply “loops”). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an “index” object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object’s identity will be determined by whatever set of values you define at the top of the loop.\nHere’s a very bare bones example to demonstrate the fundamentals.\n\n# Loop across each number between 2 and 4\n1for(k in 2:4){\n  \n  # Square the number\n  result &lt;- k^2\n  \n  # Message that outside of the loop\n  message(k, \" squared is \", result)\n2}\n\n\n1\n\n‘k’ is our index object in this loop\n\n2\n\nNote that the operations to iterate across are wrapped in curly braces ({...})\n\n\n\n\n2 squared is 4\n\n\n3 squared is 9\n\n\n4 squared is 16\n\n\nOnce you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let’s return to our Plum Island Ecosystems crab dataset for a more nuanced example.\n\n# Create an empty list\ncrab_list &lt;- list()\n\n# Let's loop across size categories of crab\n1for(focal_size in unique(pie_crab_v4$size_category)){\n  \n  # Subset the data to just this size category\n  focal_df &lt;- pie_crab_v4 %&gt;% \n    dplyr::filter(size_category == focal_size)\n  \n  # Calculate average and standard deviation of size within this category\n  size_avg &lt;- mean(focal_df$size, na.rm = T) \n  size_dev &lt;- sd(focal_df$size, na.rm = T) \n  \n  # Assemble this into a data table and add to our list\n  crab_list[[focal_size]] &lt;- data.frame(\"size_category\" = focal_size,\n                                        \"size_mean\" = size_avg,\n                                        \"size_sd\" = size_dev)\n} # Close loop\n\n# Unlist the outputs into a dataframe\n2crab_df &lt;- purrr::list_rbind(x = crab_list)\n\n# Check out the resulting data table\ncrab_df\n\n\n1\n\nNote that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!\n\n2\n\nWhen all elements of your list have the same column names, list_rbind efficiently stacks those elements into one longer data table.\n\n\n\n\n  size_category size_mean   size_sd\n1         small 12.624270 1.3827471\n2          tiny  8.876944 0.9112686\n3           big 17.238267 1.3650173\n4          huge 21.196786 0.8276744\n\n\n\n\nCustom Functions\nFinally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR Reproducibility module) and also can be useful end products of synthesis work in and of themselves.\nIf one of your group’s outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project’s findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.\n\n# Define custom function\ncrab_hist &lt;- function(df, size_cat){\n  \n  # Subset data to the desired category\n  data_sub &lt;- dplyr::filter(.data = df, size_category == size_cat)\n  \n  # Create a histogram\n  p &lt;- psych::multi.hist(x = data_sub$size)\n}\n\n# Invoke function\ncrab_hist(df = pie_crab_v4, size_cat = \"tiny\")\n\n\n\n\n\n\n\n\nWhen writing your own functions it can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated\n\n# Define custom function\n1crab_hist &lt;- function(df, size_cat = \"small\"){\n  \n  # Error out if 'df' isn't the right format\n2  if(is.data.frame(df) != TRUE)\n    stop(\"'df' must be provided as a data frame\")\n  \n  # Error out if the data doesn't have the right columns\n3  if(all(c(\"size_category\", \"size\") %in% names(df)) != TRUE)\n    stop(\"'df' must include a 'size' and 'size_category' column\")\n  \n  # Error out for unsupported size category values\n  if(size_cat %in% unique(df$size_category) != TRUE)\n    stop(\"Specified 'size_cat' not found in provided data\")\n  \n  # Subset data to the desired category\n  data_sub &lt;- dplyr::filter(.data = df, size_category == size_cat)\n  \n  # Create a histogram\n  p &lt;- psych::multi.hist(x = data_sub$size)\n}\n\n# Invoke new-and-improved function\n4crab_hist(df = pie_crab_v4)\n\n\n1\n\nThe default category is now set to “small”\n\n2\n\nWe recommend phrasing your error checks with this format (i.e., ’if &lt;some condition&gt; is not true, then &lt;informative error/warning message&gt;)\n\n3\n\nThe %in% operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate “or” conditionals\n\n4\n\nWe don’t need to specify the ‘size_cat’ argument because we can rely on the default\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nActivity: Custom Functions\n\n\n\nIn a script, attempt the following on the PIE crab data:\n\nWrite a function that:\n\n\ncalculates the median of the user-supplied column\n\n\ndetermines whether each value is above, equal to, or below the median\n\n\nmakes a column indicating the results of step B\n\n\nUse the function on the standard deviation of water temperature\nUse it again on the standard deviation of air temperature\nRevisit your function and identify 2-3 likely errors\nWrite custom checks (and error messages) for the set of likely issues you just identified",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "mod_wrangle.html#additional-resources",
-    "href": "mod_wrangle.html#additional-resources",
-    "title": "Data Harmonization & Wrangling",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nThe Ultimate Guide to Data Cleaning. Elgarby, O. 2019. Medium\nSome Simple Guidelines for Effective Data Management. Borer et al., 2009. Ecological Society of America Bulletin\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\nOpen Science Synthesis for the Delta Science Program’s Data Munging / QA / QC / Cleaning\n\n\n\nWebsites\n\nTen Commandments for Good Data Management",
-    "crumbs": [
-      "Phase III -- Execute",
-      "Data Wrangling"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the LTER Network page for the course.\nIf you’re interested in joining the course as a student you can see the application here. If instead you’re interested in joining as a team project mentor you can find more information–and apply–here.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-priorities",
-    "href": "index.html#course-priorities",
-    "title": "Course Overview",
-    "section": "Course Priorities",
-    "text": "Course Priorities\n\nSurface and test new synthesis ideas for feasibility\nPrepare more graduate students to be effective participants in/leaders of the synthesis projects\nConnect LTER graduate students across sites\nDevelop intergenerational linkages around synthesis research",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Course Overview",
-    "section": "Course Description",
-    "text": "Course Description\nThe course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. The course starts with an in-person launch to establish cohort cohesion and ensure that any setup issues are resolved. Participants will pitch projects to the group and assemble a team of collaborators.The ideal configuration would be 6 project teams of 4-5 students each. Prior to the start of the course, the Network Office will recruit a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately 4-5 times per year.\nApplicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants’ own work, course mentors will make available a small library of synthesis ideas in search of execution. The in-person kickoff week will focus on cohort-building, pitching projects and assembling project teams, identifying relevant data, and getting set up on servers and collaboration tools.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-scheduling",
-    "href": "index.html#course-scheduling",
-    "title": "Course Overview",
-    "section": "Course Scheduling",
-    "text": "Course Scheduling\nCourse participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.\nEach three-hour session will include 2 components:\n\nInspiration (~60 minutes): Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.\nInstruction (~120 minutes): Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently.\n\nTechnical skills will build on earlier lessons and are not intended to be stand-alone modules. The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.\n\n\nProject groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#course-policies",
-    "href": "index.html#course-policies",
-    "title": "Course Overview",
-    "section": "Course Policies",
-    "text": "Course Policies\n\nArtificial Intelligence Tools\nArtificial intelligence (AI) tools are increasingly well-known and widely discussed in the context of data science. AI products can increase the efficiency of code writing and are becoming a common part of the data science landscape. For the purposes of this course, we strongly recommend that you do not use AI tools. There is an under-discussed ethical consideration to the use and training of these tools in addition to their known practical limitations. However, the main reason we suggest you not use them for this class though is that leaning too heavily upon AI tools is likely to negatively impact your learning and skill acquisition.\nYou may have prior experience with some of the quantitative skills this course aims to teach but others are likely new to you. During the first steps of learning any new skill, it can be really helpful to struggle a bit in solving problems. Your efforts now will help refine your troubleshooting skills and will likely make it easier to remember how you solved a given problem the next time it arises. Over-use of AI tools can short circuit this pathway to mastery. Once you have become a proficient coder, you will be better able to identify and avoid any distortions or assumptions introduced by relying on AI.\nAI Resources\n\nPratim Ray, P. ChatGPT: A comprehensive review on background, applications, key challenges, bias, ethics, limitations and future scope. 2023. Internet of Things and Cyber-Physical Systems\nTrust, T. ChatGPT & Education Slide Deck. 2023. National Teaching Repository\nCsik, S. Teach Me How to Google. University of California, Santa Barbara (UCSB) Master of Environmental Data Science (MEDS) Program.",
-    "crumbs": [
-      "Course Overview"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html",
-    "href": "mod_reports.html",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase V -- Share",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#overview",
-    "href": "mod_reports.html#overview",
-    "title": "Reproducible Reports",
-    "section": "",
-    "text": "Under Construction, stay tuned!",
-    "crumbs": [
-      "Phase V -- Share",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#learning-objectives",
-    "href": "mod_reports.html#learning-objectives",
-    "title": "Reproducible Reports",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify the three fundamental elements of R Markdown / Quarto documents\nUse Markdown syntax to accomplish text styling\nCreate reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings\nMake a (small) Quarto website\nDeploy a website and/or report through GitHub Pages",
-    "crumbs": [
-      "Phase V -- Share",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#module-content",
-    "href": "mod_reports.html#module-content",
-    "title": "Reproducible Reports",
-    "section": "Module Content",
-    "text": "Module Content",
-    "crumbs": [
-      "Phase V -- Share",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#additional-resources",
-    "href": "mod_reports.html#additional-resources",
-    "title": "Reproducible Reports",
-    "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Literature Analysis with Quarto session\nOSS Reproducible Papers with R Markdown\nUCSB’s Master of Environmental Data Science (MEDS) Creating your Personal Website using Quarto lesson\n\n\n\nWebsites\n\nPosit’s Welcome to Quarto",
-    "crumbs": [
-      "Phase V -- Share",
-      "Reproducible Reports"
+      "Phase I -- Prepare",
+      "Data Discovery"
     ]
   }
 ]
