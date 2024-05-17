@@ -96,7 +96,7 @@ format:
     theme:
        light: theme_lter-light.scss
        dark: theme_lter-dark.scss
-    mainfont: Lato
+    mainfont: Open Sans
     toc: true
     link-external-newwindow: true
     link-external-icon: false
