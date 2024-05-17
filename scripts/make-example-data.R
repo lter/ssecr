@@ -26,7 +26,8 @@ rm(list = ls())
 
 # Generate site-level information
 ( site_df <- data.frame("site" = paste0("site_", LETTERS[1:10]),
-                        "dist" = round(rnorm(n = 10, mean = 50, sd = 20), digits = 2)) )
+                        "dist" = rep(round(rnorm(n = 5, mean = 50, sd = 20), digits = 2),
+                                     times = 2)) )
 
 # Define plot-level replicate counts
 reps <- 5
@@ -50,8 +51,8 @@ for(k in 1:nrow(site_df)){
   for(yr in 2022:2024){
     
     # Change site modifier by year
-    if(yr == 2022){ site_mod <- site_mod * 1.00 }
-    if(yr == 2023){ site_mod <- site_mod * 1.66 }
+    if(yr == 2022){ site_mod <- site_mod * 1.10 }
+    if(yr == 2023){ site_mod <- site_mod * 1.95 }
     if(yr == 2024){ site_mod <- site_mod * 0.80 }
     
     # Generate plot level data
