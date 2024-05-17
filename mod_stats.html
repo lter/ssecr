@@ -368,8 +368,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#mixed-effects-models" id="toc-mixed-effects-models" class="nav-link" data-scroll-target="#mixed-effects-models">Mixed-Effects Models</a>
   <ul class="collapse">
-  <li><a href="#random-intercepts" id="toc-random-intercepts" class="nav-link" data-scroll-target="#random-intercepts">Random Intercepts</a></li>
-  <li><a href="#random-slopes" id="toc-random-slopes" class="nav-link" data-scroll-target="#random-slopes">Random Slopes</a></li>
+  <li><a href="#types-of-random-effect" id="toc-types-of-random-effect" class="nav-link" data-scroll-target="#types-of-random-effect">Types of Random Effect</a></li>
+  <li><a href="#nested-random-effects" id="toc-nested-random-effects" class="nav-link" data-scroll-target="#nested-random-effects">Nested Random Effects</a></li>
   <li><a href="#philosophical-note-random-vs.-fixed" id="toc-philosophical-note-random-vs.-fixed" class="nav-link" data-scroll-target="#philosophical-note-random-vs.-fixed">Philosophical Note: Random vs.&nbsp;Fixed</a></li>
   <li><a href="#mixed-effects-case-study" id="toc-mixed-effects-case-study" class="nav-link" data-scroll-target="#mixed-effects-case-study">Mixed-Effects Case Study</a></li>
   </ul></li>
@@ -441,16 +441,85 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="mixed-effects-models" class="level2">
 <h2 class="anchored" data-anchor-id="mixed-effects-models">Mixed-Effects Models</h2>
-<p>In any statistical test there is at least one response variable (a.k.a. “dependent” variable) and some number of explanatory variables (a.k.a. “independent” variables). However, in biology our experiments often involve repeated sampling over time or at the same locations in order to gather enough replicates to do robust analysis. These variables are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.</p>
-<p>In essence we want to use a statistical tool that asks <u>what is the effect of the explanatory variable(s) on the response <em>when the variation due to these non-variable considerations is accounted for</em></u>?’ Such tests are called “mixed-effects models.” This name derives from considering explanatory variables “fixed effects” and these non-explanatory/response variables as “random effects”. Including both fixed and random effects thus creates a model with “mixed effects.”</p>
-<section id="random-intercepts" class="level3">
-<h3 class="anchored" data-anchor-id="random-intercepts">Random Intercepts</h3>
+<p>In any statistical test there is at least one response variable (a.k.a. “dependent” variable) and some number of explanatory variables (a.k.a. “independent” variables). However, in biology our experiments often involve repeated sampling over time or at the same locations. These variables (time or site) are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.</p>
+<p>In essence we want to use a statistical tool that asks ‘what is the effect of the explanatory variable(s) on the response <em>when the variation due to these non-variable considerations is accounted for</em>?’ Such tests are called <strong>mixed-effects models</strong>. This name derives from considering explanatory variables “fixed effects” and non-explanatory/response variables as “random effects”. Including both fixed and random effects thus creates a model with “mixed effects.”</p>
+<section id="types-of-random-effect" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-random-effect">Types of Random Effect</h3>
+<p>There are a few types of random effects but we can limit our conversation here to just two: random intercepts and random slopes.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Random Intercepts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Random Slopes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Random intercepts should be used when you expect that the average response differs among levels of that variable but <u>not</u> in a way that changes the relationship between each level of this variable and the other variables (either fixed or random). In statistical terms you want to allow the intercept to change with levels of this variable.</p>
+<p>For example, let’s imagine that we are studying the effect of different organic farming practices on beneficial insect populations. We build relationships with several organic farmers willing to let us conduct this research on their properties and sample the insect communities at each farm over the course of a summer. However, we know that each farm is surrounded by a different habitat type that affects the composition of the local insect community. It is reasonable to expect that even farms where ‘the same’ management method is used are likely to differ because of this difference in landscape context.</p>
+<p>In cases like this, we don’t want to include a term for ‘site’ as a fixed effect but we do want to account for those differences so that our assessment of the significance of our explanatory variables isn’t limited by the variation due to site.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Random slopes should be used when you expect that the average response differs among levels of that variable in a way that <u>does</u> change with other variables.</p>
+<p>For example, let’s imagine that we are studying the effect of temperature on avian malaria rates in songbirds. We identify several sites–along a gradient of daytime temperature ranges–where our species of interest can be found, capture them, and measure malaria infection rates. However, unbeknownst to us at the start of our study, our study sites have varying populations of dragonflies which affects local mosquito populations and malaria transmission/infection rates. If we revisit our sites repeatedly for several years is is reasonable to expect that this difference among sites likely affects the <em>relationship between</em> daytime temperatures and songbird malaria rates.</p>
+<p>By including site as a random slope in this context, we can account for this effect and still analyze our explanatory variables of interest. Note that random slopes are <em>very</em> “data hungry” so you may not be able to use them without very high replication in your study design.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="random-slopes" class="level3">
-<h3 class="anchored" data-anchor-id="random-slopes">Random Slopes</h3>
+<section id="nested-random-effects" class="level3">
+<h3 class="anchored" data-anchor-id="nested-random-effects">Nested Random Effects</h3>
+<p>To further complicate matters, we can use nested random effects as well. These can be either random intercepts or random slopes though they are more commonly seen with random intercepts. A nested random effect accounts for the effect of one random variable that <em>is itself affected by another variable!</em> A classic example of this is when a study design uses two (or more) levels of spatial nestedness in their experimentall design.</p>
+<p>For instance, let’s imagine we were conducting a global study of marine plankton biodiversity. To gether these data we took several cruises (scientific not–exclusively–pleasure) at different places around the world and during each cruise we followed a set of transects. In each transect we did several plankton tows and quantified the diversity of each tow. We can reasonably assume the following:</p>
+<ol type="1">
+<li>Each cruise differs from each other cruise (due to any number of climatic/ecological factors)
+<ul>
+<li>But cruises within the same part of the world are still likely to have similar planktonic communities</li>
+</ul></li>
+<li>Within each cruise, each transect differs from the others (again, due to unpreventable factors)
+<ul>
+<li>But transects within the same cruise are still likely to be more similar to one another than to transects in different cruises (even other ones in the same region!)</li>
+</ul></li>
+<li>Within each transect, each plankton tow differs from one another!
+<ul>
+<li>But again, more similar to other tows in the same transect than other tows in different transects/cruises</li>
+</ul></li>
+</ol>
+<p>If we put these assumptions together we realize we want to account for the variation of cruise, transect, and tow <u>while still retaining the nestedness of the similarity among samples</u>. A nested random effect where transect is nested inside of cruise and tow is nested inside of transect would capture this effectively!</p>
 </section>
 <section id="philosophical-note-random-vs.-fixed" class="level3">
 <h3 class="anchored" data-anchor-id="philosophical-note-random-vs.-fixed">Philosophical Note: Random vs.&nbsp;Fixed</h3>
+<p>Deciding whether a given variable should be a fixed or random effect can be tough. You’ll likely need to rely on your scientific intuition about which feels more appropriate and then be prepared to defend that decision to your committee and/or “reviewer #2”. It may prove helpful though to consider whether you ‘care’ about the effect of that variable.</p>
+<p>If your hypothesis includes that variable than it should likely be a fixed effect. If the variable is just a facet of your experimental design but isn’t something you’re necessarily interested in testing, then it should likely be a random effect. And, once you’ve made your decision, it is totally okay to change your mind and tweak the structure of your model!</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discussion: Random versus Fixed Effects
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With a small group, decide whether you think the terms in the examples below should be fixed effects or random effects:</p>
+<ul>
+<li>You study small mammal populations in urban settings
+<ul>
+<li>Should ‘proportion green space’ be a fixed effect or a random effect?</li>
+</ul></li>
+<li>You are part of a team studying leopard seal feeding behavior
+<ul>
+<li>What type of effect should ‘observer’ be?</li>
+</ul></li>
+<li>You study the gut microbiota of a particular beetle species
+<ul>
+<li>Should ‘beetle sex’ be a fixed or a random effect?</li>
+<li>What about beetle life stage (e.g., larva versus adult)?</li>
+<li>What about the region of the gut from which the samples were taken?</li>
+</ul></li>
+<li>You study vascular plant chemical defenses against herbivory
+<ul>
+<li>Should phylogeny (i.e., evolutionary relatedness) be a fixed or random effect?</li>
+<li>What about feeding guild of the herbivore?</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </section>
 <section id="mixed-effects-case-study" class="level3">
 <h3 class="anchored" data-anchor-id="mixed-effects-case-study">Mixed-Effects Case Study</h3>
