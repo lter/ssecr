@@ -42,21 +42,70 @@ library(lmerTest)
 
 ## Mixed-Effects Models
 
-In any statistical test there is at least one response variable (a.k.a. "dependent" variable) and some number of explanatory variables (a.k.a. "independent" variables). However, in biology our experiments often involve repeated sampling over time or at the same locations in order to gather enough replicates to do robust analysis. These variables are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.
+In any statistical test there is at least one response variable (a.k.a. "dependent" variable) and some number of explanatory variables (a.k.a. "independent" variables). However, in biology our experiments often involve repeated sampling over time or at the same locations. These variables (time or site) are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.
 
-In essence we want to use a statistical tool that asks <u>what is the effect of the explanatory variable(s) on the response _when the variation due to these non-variable considerations is accounted for_</u>?' Such tests are called "mixed-effects models." This name derives from considering explanatory variables "fixed effects" and these non-explanatory/response variables as "random effects". Including both fixed and random effects thus creates a model with "mixed effects."
+In essence we want to use a statistical tool that asks 'what is the effect of the explanatory variable(s) on the response _when the variation due to these non-variable considerations is accounted for_?' Such tests are called **mixed-effects models**. This name derives from considering explanatory variables "fixed effects" and non-explanatory/response variables as "random effects". Including both fixed and random effects thus creates a model with "mixed effects."
 
-### Random Intercepts
+### Types of Random Effect
 
+There are a few types of random effects but we can limit our conversation here to just two: random intercepts and random slopes.
 
+:::{.panel-tabset}
+#### Random Intercepts
 
-### Random Slopes
+Random intercepts should be used when you expect that the average response differs among levels of that variable but <u>not</u> in a way that changes the relationship between each level of this variable and the other variables (either fixed or random). In statistical terms you want to allow the intercept to change with levels of this variable.
 
+For example, let's imagine that we are studying the effect of different organic farming practices on beneficial insect populations. We build relationships with several organic farmers willing to let us conduct this research on their properties and sample the insect communities at each farm over the course of a summer. However, we know that each farm is surrounded by a different habitat type that affects the composition of the local insect community. It is reasonable to expect that even farms where 'the same' management method is used are likely to differ because of this difference in landscape context.
 
+In cases like this, we don't want to include a term for 'site' as a fixed effect but we do want to account for those differences so that our assessment of the significance of our explanatory variables isn't limited by the variation due to site.
+
+#### Random Slopes
+
+Random slopes should be used when you expect that the average response differs among levels of that variable in a way that <u>does</u> change with other variables.
+
+For example, let's imagine that we are studying the effect of temperature on avian malaria rates in songbirds. We identify several sites--along a gradient of daytime temperature ranges--where our species of interest can be found, capture them, and measure malaria infection rates. However, unbeknownst to us at the start of our study, our study sites have varying populations of dragonflies which affects local mosquito populations and malaria transmission/infection rates. If we revisit our sites repeatedly for several years is is reasonable to expect that this difference among sites likely affects the _relationship between_ daytime temperatures and songbird malaria rates.
+
+By including site as a random slope in this context, we can account for this effect and still analyze our explanatory variables of interest. Note that random slopes are _very_ "data hungry" so you may not be able to use them without very high replication in your study design.
+:::
+
+### Nested Random Effects
+
+To further complicate matters, we can use nested random effects as well. These can be either random intercepts or random slopes though they are more commonly seen with random intercepts. A nested random effect accounts for the effect of one random variable that _is itself affected by another variable!_ A classic example of this is when a study design uses two (or more) levels of spatial nestedness in their experimentall design.
+
+For instance, let's imagine we were conducting a global study of marine plankton biodiversity. To gether these data we took several cruises (scientific not--exclusively--pleasure) at different places around the world and during each cruise we followed a set of transects. In each transect we did several plankton tows and quantified the diversity of each tow. We can reasonably assume the following:
+
+1. Each cruise differs from each other cruise (due to any number of climatic/ecological factors)
+    - But cruises within the same part of the world are still likely to have similar planktonic communities
+2. Within each cruise, each transect differs from the others (again, due to unpreventable factors)
+    - But transects within the same cruise are still likely to be more similar to one another than to transects in different cruises (even other ones in the same region!)
+3. Within each transect, each plankton tow differs from one another!
+    - But again, more similar to other tows in the same transect than other tows in different transects/cruises
+
+If we put these assumptions together we realize we want to account for the variation of cruise, transect, and tow <u>while still retaining the nestedness of the similarity among samples</u>. A nested random effect where transect is nested inside of cruise and tow is nested inside of transect would capture this effectively!
 
 ### Philosophical Note: Random vs. Fixed
 
+Deciding whether a given variable should be a fixed or random effect can be tough. You'll likely need to rely on your scientific intuition about which feels more appropriate and then be prepared to defend that decision to your committee and/or "reviewer \#2". It may prove helpful though to consider whether you 'care' about the effect of that variable. 
 
+If your hypothesis includes that variable than it should likely be a fixed effect. If the variable is just a facet of your experimental design but isn't something you're necessarily interested in testing, then it should likely be a random effect. And, once you've made your decision, it is totally okay to change your mind and tweak the structure of your model!
+
+:::{.callout-warning icon="false"}
+#### Discussion: Random versus Fixed Effects
+
+With a small group, decide whether you think the terms in the examples below should be fixed effects or random effects:
+
+- You study small mammal populations in urban settings
+    - Should 'proportion green space' be a fixed effect or a random effect?
+- You are part of a team studying leopard seal feeding behavior
+    - What type of effect should 'observer' be?
+- You study the gut microbiota of a particular beetle species
+    - Should 'beetle sex' be a fixed or a random effect?
+    - What about beetle life stage (e.g., larva versus adult)?
+    - What about the region of the gut from which the samples were taken?
+- You study vascular plant chemical defenses against herbivory
+    - Should phylogeny (i.e., evolutionary relatedness) be a fixed or random effect?
+    - What about feeding guild of the herbivore?
+:::
 
 ### Mixed-Effects Case Study
 
