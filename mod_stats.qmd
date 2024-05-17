@@ -109,7 +109,7 @@ With a small group, decide whether you think the terms in the examples below sho
 
 ### Mixed-Effects Case Study
 
-Let's imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas (response variable) will be greater in sites further from the nearest road (explanatory variable). We select ten study sites of varying distances from the nearest road and intensively count our furry friends for several months at three plots within each site. We return to our sites--and their associated plots--and repeat this process each year for three years. We enter our data and perform careful quality control to get it into a tidy format ready for analyis
+Let's imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas will be greater in sites further from the nearest road. We select ten study sites of varying distances from the nearest road and intensively count our furry friends at three plots within each site for several months. We return to our sites--and their associated plots--and repeat this process each year for three years. In the second year we have help from a new member of our lab but in the third year we're back to working alone (they had their own project to handle by then). We enter our data and perform careful quality control to get it into a tidy format ready for analyis.
 
 ```{r mem-data}
 # Read in data
@@ -119,7 +119,7 @@ tarantula_df <- read.csv(file = file.path("data", "tarantulas.csv"))
 str(tarantula_df)
 ```
 
-Okay, the data look reasonable, but now we want to run some statistical tests and--hopefully--get some endorphine-inducingly small _p_ values. If we choose to simply ignore our possible random effects, we could fit a linear regression.
+With our data in hand, we now want to run some statistical tests and--hopefully--get some endorphine-inducingly small _p_ values. If we choose to simply ignore our possible random effects, we could fit a linear regression.
 
 ```{r mem-lm}
 # Fit model
@@ -130,9 +130,9 @@ summary(tarantula_lm)
 ```
 1. R syntax for statistical tests is `response ~ explanatory` a.k.a. `Y ~ X`
 
-Looks like our hypothesis is supported! There does seem to be an effect of human proximity on tarantula populations in our study sites. However, while running this regression we remembered that in the second year of the study a new graduate student joined our lab and helped us in the field. In the first and third years we worked alone (the new graduate student had their own project to work on in the third year of this work).
+This naive test seems to support our hypothesis. However, sampling effort differed between the three study years. Not only was there a second person in the second year but we can also reasonably expect that by the third year in this system we had greatly improved our tarantula-finding skills. So, a random effect of year is definitely justified. We are not concerned that the different study years will affect the relationship between tarantula populations and road distance though so a random intercept is fine.
 
-There is an argument for including year as a fixed effect in its own right but some back-of-the-envelope checks reveal no significant climatic differences across the region we worked among those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze.
+There could be an argument for including year as a fixed effect in its own right but some preliminary investigations reveal no significant climatic differences across the region we worked in those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze.
 
 ```{r mem-mix1}
 # Fit the new model
@@ -143,9 +143,11 @@ tarantula_mem1 <- lmerTest::lmer(tarantula_count ~ road.dist_km +
 # Extract summary
 summary(tarantula_mem1)
 ```
-1. This is the syntax for specifying a random intercept (as opposed to the other types of random effect discussed above)
+1. This is the syntax for specifying a random intercept (random slope variables should be before the `|` where `1` goes for a random intercept)
 
-Still significant but while writing that test we realized there's another non-variable that should probably be made into a random effect: plot! There were three sites within each plot and from our extensive time in the field we have developed a strong intuition that there might be substantial among-plot variation at each site. We can make a quick exploratory graph to facilitate an 'eyeball test' of whether the data show what our intuition suggest.
+By including that random effect we actually get a slightly stronger effect of road distance (T value of ~12 without versus ~13 with). This is because our new random effect accounts for some of the 'noise' between study years. That actually gives us a better picture of the relationship between our response and explanatory variables.
+
+Now that we're already using a mixed-effects model, we have little excuse not to account for the other potential random effect: plot! Remember that there were three plots within each site and from our extensive time in the field we have developed a strong intuition that there might be substantial among-plot variation at each site. We can make a quick exploratory graph to facilitate an 'eyeball test' of whether the data show what our intuition suggest.
 
 ```{r mem-explore-graph}
 #| fig-align: center
@@ -161,9 +163,9 @@ ggplot(tarantula_df, aes(y = tarantula_count, x = plot, fill = plot)) +
 1. Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intutive grasp of the distribution metrics described by each bit of a boxplot
 2. This is allowing us to 'tilt' the X axis tick labels so they don't overlap with one another
 
-This plot clearly supports our intuition that among-plot variation is dramatic! We _could_ account for this by including plot as a fixed effect but we'll need to sacrifice a lot of degrees of freedom (think 'statistical power') for a variable that we don't actually care about! Instead, we could include plot as a random effect.
+This graph clearly supports our intuition that among-plot variation is dramatic! We _could_ account for this by including plot as a fixed effect but we'll need to sacrifice a lot of degrees of freedom (can be thought of as "statistical power") for a variable that we don't actually care about. Instead, we could include plot as another random effect.
 
-```{r mem-mix2}
+```{r mem-mix3}
 # Fit the new model
 tarantula_mem2 <- lmerTest::lmer(tarantula_count ~ road.dist_km + 
                                (1|year) + (1|site.plot), # <1>
@@ -174,7 +176,21 @@ summary(tarantula_mem2)
 ```
 1. Note that we need to use this column as the random effect because <u>plots are not uniquely named across sites</u> (i.e., all sites have plots "a", "b", and "c"). Making the random effect just the 'plot' column would fail to reflect how plots are nested within each site
 
-Looks like there is still a significant effect of road distance on tarantula populations but it is weaker than when we don't account for variation among plots (T values of ~11 versus ~3). Still, this is a result we can be more confident in because we've now accounted for all known sources of variation in our data--either by including them as fixed effects or including them as a random effects.
+This test reveals that while there is a significant relationship between road distance and tarantula population but the effect is not nearly as strong as it was when we let plot-level variation be ignored. This is likely due to high (or low) average populations in a single plot skewing the site-level average. Still, this is a result we can be more confident in because we've now accounted for all known sources of variation in our data--either by including them as fixed effects or including them as a random effects.
+
+We can create one more graph of our tidy data and use some aesthetic settings to make sure the nested structure of the data is clear to those looking at our work. Note that you could also use predicted values from the model itself though that choice is--arguably--a matter of personal preference.
+
+```{r mem-final-graph}
+#| fig-align: center
+#| fig-width: 7
+#| fig-height: 6
+
+ggplot(tarantula_df, aes(y = tarantula_count, x = road.dist_km)) +
+  geom_point(aes(color = plot, shape = as.factor(year)), size = 2, alpha = 0.5) +
+  geom_smooth(method = "lm", formula = "y ~ x", se = T, color = "black") +
+  labs(y = "Tarantula Abundance", x = "Distance to Nearest Road (km)") +
+  theme_bw()
+```
 
 ## Multi-Model Inference
 

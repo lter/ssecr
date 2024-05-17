@@ -26,8 +26,7 @@ rm(list = ls())
 
 # Generate site-level information
 ( site_df <- data.frame("site" = paste0("site_", LETTERS[1:10]),
-                        "dist" = rep(round(rnorm(n = 5, mean = 50, sd = 20), digits = 2),
-                                     times = 2)) )
+                        "dist" = round(rnorm(n = 10, mean = 50, sd = 20), digits = 2)) )
 
 # Define plot-level replicate counts
 reps <- 5
