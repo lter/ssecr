@@ -523,7 +523,7 @@ Discussion: Random versus Fixed Effects
 </section>
 <section id="mixed-effects-case-study" class="level3">
 <h3 class="anchored" data-anchor-id="mixed-effects-case-study">Mixed-Effects Case Study</h3>
-<p>Let’s imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas (response variable) will be greater in sites further from the nearest road (explanatory variable). We select ten study sites of varying distances from the nearest road and intensively count our furry friends for several months at three plots within each site. We return to our sites–and their associated plots–and repeat this process each year for three years. We enter our data and perform careful quality control to get it into a tidy format ready for analyis</p>
+<p>Let’s imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas will be greater in sites further from the nearest road. We select ten study sites of varying distances from the nearest road and intensively count our furry friends at three plots within each site for several months. We return to our sites–and their associated plots–and repeat this process each year for three years. In the second year we have help from a new member of our lab but in the third year we’re back to working alone (they had their own project to handle by then). We enter our data and perform careful quality control to get it into a tidy format ready for analyis.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in data</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tarantula_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"tarantulas.csv"</span>))</span>
@@ -533,14 +533,14 @@ Discussion: Random versus Fixed Effects
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   450 obs. of  6 variables:
  $ year           : int  2022 2022 2022 2022 2022 2022 2022 2022 2022 2022 ...
- $ road.dist_km   : num  48.3 48.3 48.3 48.3 48.3 ...
+ $ road.dist_km   : num  26.9 26.9 26.9 26.9 26.9 ...
  $ site           : chr  "site_A" "site_A" "site_A" "site_A" ...
  $ plot           : chr  "plot_a" "plot_a" "plot_a" "plot_a" ...
  $ site.plot      : chr  "A_a" "A_a" "A_a" "A_a" ...
- $ tarantula_count: int  136 150 145 121 150 107 73 78 83 83 ...</code></pre>
+ $ tarantula_count: int  12 18 18 9 18 51 45 60 45 63 ...</code></pre>
 </div>
 </div>
-<p>Okay, the data look reasonable, but now we want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em> values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
+<p>With our data in hand, we now want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em> values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>tarantula_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(tarantula_count <span class="sc">~</span> road.dist_km, <span class="at">data =</span> tarantula_df)</span>
@@ -562,22 +562,22 @@ lm(formula = tarantula_count ~ road.dist_km, data = tarantula_df)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--134.608  -47.286    4.002   39.485  189.392 
+-180.360  -67.508    3.415   60.415  273.640 
 
 Coefficients:
              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)    0.6664     9.0072   0.074    0.941    
-road.dist_km   2.1936     0.1980  11.078   &lt;2e-16 ***
+(Intercept)    4.3262    13.1676   0.329    0.743    
+road.dist_km   2.6306     0.2745   9.582   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 65.26 on 448 degrees of freedom
-Multiple R-squared:  0.215, Adjusted R-squared:  0.2133 
-F-statistic: 122.7 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 90.55 on 448 degrees of freedom
+Multiple R-squared:  0.1701,    Adjusted R-squared:  0.1682 
+F-statistic: 91.82 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
-<p>Looks like our hypothesis is supported! There does seem to be an effect of human proximity on tarantula populations in our study sites. However, while running this regression we remembered that in the second year of the study a new graduate student joined our lab and helped us in the field. In the first and third years we worked alone (the new graduate student had their own project to work on in the third year of this work).</p>
-<p>There is an argument for including year as a fixed effect in its own right but some back-of-the-envelope checks reveal no significant climatic differences across the region we worked among those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze.</p>
+<p>This naive test seems to support our hypothesis. However, sampling effort differed between the three study years. Not only was there a second person in the second year but we can also reasonably expect that by the third year in this system we had greatly improved our tarantula-finding skills. So, a random effect of year is definitely justified. We are not concerned that the different study years will affect the relationship between tarantula populations and road distance though so a random intercept is fine.</p>
+<p>There could be an argument for including year as a fixed effect in its own right but some preliminary investigations reveal no significant climatic differences across the region we worked in those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the new model</span></span>
 <span id="annotated-cell-5-2"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>tarantula_mem1 <span class="ot">&lt;-</span> lmerTest<span class="sc">::</span><span class="fu">lmer</span>(tarantula_count <span class="sc">~</span> road.dist_km <span class="sc">+</span> </span>
@@ -590,7 +590,7 @@ F-statistic: 122.7 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="3" data-code-annotation="1">This is the syntax for specifying a random intercept (as opposed to the other types of random effect discussed above)</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="3" data-code-annotation="1">This is the syntax for specifying a random intercept (random slope variables should be before the <code>|</code> where <code>1</code> goes for a random intercept)</span>
 </dd>
 </dl>
 </div>
@@ -600,31 +600,32 @@ lmerModLmerTest]
 Formula: tarantula_count ~ road.dist_km + (1 | year)
    Data: tarantula_df
 
-REML criterion at convergence: 4999.4
+REML criterion at convergence: 5272.9
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.2853 -0.8263  0.1245  0.6357  2.6641 
+-2.5660 -0.8039  0.1522  0.6220  2.7981 
 
 Random effects:
  Groups   Name        Variance Std.Dev.
- year     (Intercept)  540.1   23.24   
- Residual             3897.7   62.43   
+ year     (Intercept) 1548     39.34   
+ Residual             7163     84.64   
 Number of obs: 450, groups:  year, 3
 
 Fixed effects:
              Estimate Std. Error       df t value Pr(&gt;|t|)    
-(Intercept)    0.6664    15.9462   3.6297   0.042    0.969    
-road.dist_km   2.1936     0.1894 446.0000  11.580   &lt;2e-16 ***
+(Intercept)    4.3262    25.8335   3.1485   0.167    0.877    
+road.dist_km   2.6306     0.2566 446.0000  10.252   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-road.dst_km -0.508</code></pre>
+road.dst_km -0.451</code></pre>
 </div>
 </div>
-<p>Still significant but while writing that test we realized there’s another non-variable that should probably be made into a random effect: plot! There were three sites within each plot and from our extensive time in the field we have developed a strong intuition that there might be substantial among-plot variation at each site. We can make a quick exploratory graph to facilitate an ‘eyeball test’ of whether the data show what our intuition suggest.</p>
+<p>By including that random effect we actually get a slightly stronger effect of road distance (T value of ~12 without versus ~13 with). This is because our new random effect accounts for some of the ‘noise’ between study years. That actually gives us a better picture of the relationship between our response and explanatory variables.</p>
+<p>Now that we’re already using a mixed-effects model, we have little excuse not to account for the other potential random effect: plot! Remember that there were three plots within each site and from our extensive time in the field we have developed a strong intuition that there might be substantial among-plot variation at each site. We can make a quick exploratory graph to facilitate an ‘eyeball test’ of whether the data show what our intuition suggest.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tarantula_df, <span class="fu">aes</span>(<span class="at">y =</span> tarantula_count, <span class="at">x =</span> plot, <span class="at">fill =</span> plot)) <span class="sc">+</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-2" class="code-annotation-target"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
@@ -652,7 +653,7 @@ road.dst_km -0.508</code></pre>
 </div>
 </div>
 </div>
-<p>This plot clearly supports our intuition that among-plot variation is dramatic! We <em>could</em> account for this by including plot as a fixed effect but we’ll need to sacrifice a lot of degrees of freedom (think ‘statistical power’) for a variable that we don’t actually care about! Instead, we could include plot as a random effect.</p>
+<p>This graph clearly supports our intuition that among-plot variation is dramatic! We <em>could</em> account for this by including plot as a fixed effect but we’ll need to sacrifice a lot of degrees of freedom (can be thought of as “statistical power”) for a variable that we don’t actually care about. Instead, we could include plot as another random effect.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit the new model</span></span>
 <span id="annotated-cell-7-2"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a>tarantula_mem2 <span class="ot">&lt;-</span> lmerTest<span class="sc">::</span><span class="fu">lmer</span>(tarantula_count <span class="sc">~</span> road.dist_km <span class="sc">+</span> </span>
@@ -675,32 +676,47 @@ lmerModLmerTest]
 Formula: tarantula_count ~ road.dist_km + (1 | year) + (1 | site.plot)
    Data: tarantula_df
 
-REML criterion at convergence: 4079.5
+REML criterion at convergence: 4471.1
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.8688 -0.5245 -0.0289  0.6262  3.5882 
+-3.2684 -0.5698 -0.0689  0.5857  3.3902 
 
 Random effects:
  Groups    Name        Variance Std.Dev.
- site.plot (Intercept) 3755.9   61.29   
- year      (Intercept)  563.7   23.74   
- Residual               360.7   18.99   
+ site.plot (Intercept) 6671.0   81.68   
+ year      (Intercept) 1589.6   39.87   
+ Residual               881.2   29.69   
 Number of obs: 450, groups:  site.plot, 30; year, 3
 
 Fixed effects:
-             Estimate Std. Error      df t value Pr(&gt;|t|)   
-(Intercept)    0.6664    35.6070 27.0358   0.019  0.98521   
-road.dist_km   2.1936     0.7225 28.0003   3.036  0.00513 **
+             Estimate Std. Error      df t value Pr(&gt;|t|)  
+(Intercept)    4.3262    51.6178 23.3405   0.084   0.9339  
+road.dist_km   2.6306     0.9633 28.0001   2.731   0.0108 *
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-road.dst_km -0.867</code></pre>
+road.dst_km -0.847</code></pre>
 </div>
 </div>
-<p>Looks like there is still a significant effect of road distance on tarantula populations but it is weaker than when we don’t account for variation among plots (T values of ~11 versus ~3). Still, this is a result we can be more confident in because we’ve now accounted for all known sources of variation in our data–either by including them as fixed effects or including them as a random effects.</p>
+<p>This test reveals that while there is a significant relationship between road distance and tarantula population but the effect is not nearly as strong as it was when we let plot-level variation be ignored. This is likely due to high (or low) average populations in a single plot skewing the site-level average. Still, this is a result we can be more confident in because we’ve now accounted for all known sources of variation in our data–either by including them as fixed effects or including them as a random effects.</p>
+<p>We can create one more graph of our tidy data and use some aesthetic settings to make sure the nested structure of the data is clear to those looking at our work. Note that you could also use predicted values from the model itself though that choice is–arguably–a matter of personal preference.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(tarantula_df, <span class="fu">aes</span>(<span class="at">y =</span> tarantula_count, <span class="at">x =</span> road.dist_km)) <span class="sc">+</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> plot, <span class="at">shape =</span> <span class="fu">as.factor</span>(year)), <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">formula =</span> <span class="st">"y ~ x"</span>, <span class="at">se =</span> T, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Tarantula Abundance"</span>, <span class="at">x =</span> <span class="st">"Distance to Nearest Road (km)"</span>) <span class="sc">+</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mod_stats_files/figure-html/mem-final-graph-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="multi-model-inference" class="level2">
