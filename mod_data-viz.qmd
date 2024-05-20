@@ -26,7 +26,18 @@ If you'd like to follow along with the code chunks included throughout this modu
 
 # Note that these lines only need to be run once per computer
 ## So you can skip this step if you've installed these before
-install.packages("ggplot2")
+install.packages("tidyverse")
+install.packages("cowplot")
+```
+
+We'll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.
+
+```{r libs}
+#| message: false
+
+# Load needed libraries
+library(tidyverse)
+library(cowplot)
 ```
 
 ## Module Content
