@@ -528,8 +528,9 @@ In a script, attempt the following on the PIE crab data:
 
 ### Papers & Documents
 
+- [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/bg-19-3505-2022.html). Todd-Brown, K.E.O. _et al._, 2022. **Biogeosciences**
 - [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). Elgarby, O. 2019. **Medium**
-- [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). Borer _et al._, 2009. **Ecological Society of America Bulletin**
+- [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). Borer, E. _et al._, 2009. **Ecological Society of America Bulletin**
 
 ### Workshops & Courses
 
