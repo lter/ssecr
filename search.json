@@ -936,7 +936,7 @@
     "href": "mod_data-viz.html#needed-packages",
     "title": "Data Visualization & Exploration",
     "section": "Needed Packages",
-    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"ggplot2\")",
+    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\ninstall.packages(\"cowplot\")\n\nWe’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.\n\n# Load needed libraries\nlibrary(tidyverse)\nlibrary(cowplot)",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
