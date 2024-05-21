@@ -11,11 +11,11 @@ Under Construction, stay tuned!
 
 After completing this module you will be able to: 
 
+- <u>Define</u> fundamental `ggplot2` vocabulary
+- <u>Create</u> publication-quality graphs with `ggplot2`
 - <u>Identify</u> appropriate graph types for given data type/distribution
 - <u>Explain</u> how visualization can be a tool for quality control
 - <u>Use</u> data visualization as an exploratory tool
-- <u>Define</u> fundamental `ggplot2` vocabulary
-- <u>Create</u> publication-quality graphs with `ggplot2`
 
 ## Needed Packages
 
@@ -27,6 +27,8 @@ If you'd like to follow along with the code chunks included throughout this modu
 # Note that these lines only need to be run once per computer
 ## So you can skip this step if you've installed these before
 install.packages("tidyverse")
+install.packages("lterdatasampler")
+install.packages("supportR")
 install.packages("cowplot")
 ```
 
@@ -37,10 +39,86 @@ We'll go ahead and load some of these libraries as well to be able to better dem
 
 # Load needed libraries
 library(tidyverse)
-library(cowplot)
 ```
 
-## Module Content
+## `ggplot2` Fundamentals
+
+You may already be familiar with the `ggplot2` package in R but if you are not, it is a popular graphing library based on [The Grammar of Graphics](https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447). Every ggplot is composed of four elements:
+
+1. A 'core' `ggplot` function call
+2. Aesthetics
+3. Geometries
+4. Theme
+
+Note that the theme component may only be implied because there is a default theme that applies unless otherwise specified. These elements may become more tactile if we consider an example graph so let's do so. To begin, we'll load the Plum Island Ecosystems fiddler crab dataset we've used in other modules.
+
+```{r data-prep}
+#| message: false
+#| warning: false
+
+# Load the lterdatasampler package
+library(lterdatasampler)
+
+# Load the fiddler crab dataset
+data(pie_crab)
+
+# Check its structure
+str(pie_crab)
+```
+
+With a dataset in hand, let's make a scatterplot of crab size against latitude. We can make it more appealing by coloring the points by site and tweaking some theme elements.
+
+```{r gg-1}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot(data = pie_crab, mapping = aes(x = latitude, y = size)) +
+  geom_boxplot(mapping = aes(fill = site)) +
+  geom_point(mapping = aes(fill = site),
+             pch = 21, size = 2, alpha = 0.5) + # <1>
+  theme(legend.title = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = "black"))
+```
+1. Because we defined the data and X/Y aesthetics in the `ggplot()` function call, our point geometry assumes those mappings and we don't need to re-specify.
+
+If desired, we can also add multiple data objects to the same plot! Let's calculate some summary statistics of crab size to include that in our plot.
+
+```{r gg-2-prep}
+# Load the supportR library
+library(supportR)
+
+# Summarize crab size within latitude groups
+crab_summary <- supportR::summary_table(data = pie_crab, groups = c("site", "latitude"),
+                                        response = "size", drop_na = TRUE)
+
+# Check the structure
+str(crab_summary)
+```
+
+We can now tweak our graph to use this data object in addition to the original, unsummarized crab data.
+
+```{r gg-2}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot() + # <1>
+  geom_point(pie_crab, mapping = aes(x = latitude, y = size, fill = site),
+             pch = 21, size = 2, alpha = 0.2) +
+  geom_errorbar(crab_summary, mapping = aes(x = latitude,
+                ymax = mean + std_error,
+                ymin = mean - std_error)) +
+  geom_point(crab_summary, mapping = aes(x = latitude, y = mean, fill = site),
+             pch = 23, size = 3) + 
+  theme(legend.title = element_blank(),
+        panel.background = element_blank(),
+        axis.line = element_line(color = "black"))
+```
+1. If you want multiple data objects in the same `ggplot2` graph you need to leave this top level `ggplot()` call _empty!_ Otherwise you'll get weird errors with aesthetics later in the graph
+
+## Streamlining Graph Aesthetics
 
 
 
