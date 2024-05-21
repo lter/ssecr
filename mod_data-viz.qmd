@@ -5,17 +5,17 @@ code-annotations: hover
 
 ## Overview
 
-Under Construction, stay tuned!
+Data visualization is a fundamental part of working with data. Visualization can be only used in the final stages of a project to make figures for publication but it can also be hugely valuable for quality control and hypothesis development processes. This module focuses on the fundamentals of graph creation in an effort to empower you to apply those methods in the various contexts where you might find visualization to be helpful.
 
 ## Learning Objectives
 
 After completing this module you will be able to: 
 
 - <u>Define</u> fundamental `ggplot2` vocabulary
-- <u>Create</u> publication-quality graphs with `ggplot2`
 - <u>Identify</u> appropriate graph types for given data type/distribution
 - <u>Explain</u> how visualization can be a tool for quality control
 - <u>Use</u> data visualization as an exploratory tool
+- <u>Create</u> publication-quality graphs
 
 ## Needed Packages
 
@@ -41,7 +41,9 @@ We'll go ahead and load some of these libraries as well to be able to better dem
 library(tidyverse)
 ```
 
-## `ggplot2` Fundamentals
+## Graphing with `ggplot2`
+
+### `ggplot2` Fundamentals
 
 You may already be familiar with the `ggplot2` package in R but if you are not, it is a popular graphing library based on [The Grammar of Graphics](https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447). Every ggplot is composed of four elements:
 
@@ -50,7 +52,10 @@ You may already be familiar with the `ggplot2` package in R but if you are not, 
 3. Geometries
 4. Theme
 
-Note that the theme component may only be implied because there is a default theme that applies unless otherwise specified. These elements may become more tactile if we consider an example graph so let's do so. To begin, we'll load the Plum Island Ecosystems fiddler crab dataset we've used in other modules.
+Note that the theme component may be implicit in some graphs because there is a suite of default theme elements that applies unless otherwise specified. 
+
+This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module. This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site.
+
 
 ```{r data-prep}
 #| message: false
@@ -66,26 +71,59 @@ data(pie_crab)
 str(pie_crab)
 ```
 
-With a dataset in hand, let's make a scatterplot of crab size against latitude. We can make it more appealing by coloring the points by site and tweaking some theme elements.
+With a dataset in hand, let's make a scatterplot of crab size on the Y-axis with latitude on the X. We'll forgo doing anything to the theme elements at this point to focus on the other three elements.
 
 ```{r gg-1}
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
 
-ggplot(data = pie_crab, mapping = aes(x = latitude, y = size)) +
-  geom_boxplot(mapping = aes(fill = site)) +
-  geom_point(mapping = aes(fill = site),
-             pch = 21, size = 2, alpha = 0.5) + # <1>
-  theme(legend.title = element_blank(),
+ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) + # <1>
+  geom_point(pch = 21, size = 2, alpha = 0.5) # <2>
+```
+1. We're defining both the data and the X/Y aesthetics in this top-level bit of the plot. Also, note that each line ends with a plus sign
+2. Because we defined the data and aesthetics in the `ggplot()` function call above, this geometry can assume those mappings without re-specificying
+
+We can improve on this graph by tweaking theme elements to make it use fewer of the default settings.
+
+```{r gg-2}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) +
+  geom_point(pch = 21, size = 2, alpha = 0.5) +
+  theme(legend.title = element_blank(), # <1>
         panel.background = element_blank(),
         axis.line = element_line(color = "black"))
 ```
-1. Because we defined the data and X/Y aesthetics in the `ggplot()` function call, our point geometry assumes those mappings and we don't need to re-specify.
+1. All theme elements require these `element_...` helper functions. `element_blank` removes theme elements but otherwise you'll need to use the helper function that corresponds to the type of theme element (e.g., `element_text` for theme elements affecting graph text)
 
-If desired, we can also add multiple data objects to the same plot! Let's calculate some summary statistics of crab size to include that in our plot.
+### Multiple Geometries
 
-```{r gg-2-prep}
+We can further modify `ggplot2` graphs by adding _multiple_ geometries if you find it valuable to do so. Note however that <u>geometry order matters</u>! Geometries added later will be "in front of" those added earlier. Also, adding too much data to a plot will begin to make it difficult for others to understand the central take-away of the graph so you may want to be careful about the level of information density in each graph. Let's add boxplots behind the points to characterize the distribution of points more quantitatively.
+
+```{r gg-3}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) +
+  geom_boxplot(pch = 21) + # <1>
+  geom_point(pch = 21, size = 2, alpha = 0.5) +
+  theme(legend.title = element_blank(), 
+        panel.background = element_blank(),
+        axis.line = element_line(color = "black"))
+```
+1. By putting the boxplot geometry first we ensure that it doesn't cover up the points that overlap with the 'box' part of each boxplot
+
+### Multiple Data Objects
+
+`ggplot2` also supports adding more than one data object to the same graph! While this module doesn't cover map creation, maps are a common example of a graph with more than one data object. Another common use would be to include both the full dataset and some summarized facet of it in the same plot.
+
+Let's calculate some summary statistics of crab size to include that in our plot.
+
+```{r gg-4-prep}
 # Load the supportR library
 library(supportR)
 
@@ -97,19 +135,20 @@ crab_summary <- supportR::summary_table(data = pie_crab, groups = c("site", "lat
 str(crab_summary)
 ```
 
-We can now tweak our graph to use this data object in addition to the original, unsummarized crab data.
+With this data object in-hand, we can make a graph that includes both this and the original, unsummarized crab data. To better focus on the 'multiple data objects' bit of this example we'll pare down on the actual graph code.
 
-```{r gg-2}
+```{r gg-4}
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
 
 ggplot() + # <1>
   geom_point(pie_crab, mapping = aes(x = latitude, y = size, fill = site),
-             pch = 21, size = 2, alpha = 0.2) +
-  geom_errorbar(crab_summary, mapping = aes(x = latitude,
-                ymax = mean + std_error,
-                ymin = mean - std_error)) +
+             pch = 21, size = 2, alpha = 0.2) + 
+  geom_errorbar(crab_summary, mapping = aes(x = latitude, # <2>
+                                            ymax = mean + std_error,
+                                            ymin = mean - std_error),
+                width = 0.2) +
   geom_point(crab_summary, mapping = aes(x = latitude, y = mean, fill = site),
              pch = 23, size = 3) + 
   theme(legend.title = element_blank(),
@@ -117,10 +156,35 @@ ggplot() + # <1>
         axis.line = element_line(color = "black"))
 ```
 1. If you want multiple data objects in the same `ggplot2` graph you need to leave this top level `ggplot()` call _empty!_ Otherwise you'll get weird errors with aesthetics later in the graph
+2. This geometry adds the error bars and it's important that we add it before the summarized data points themselves if we want the error bars to be 'behind' their respective points
 
 ## Streamlining Graph Aesthetics
 
+Synthesis projects often generate an entire network of inter-related papers. Ensuring that all graphs across papers from a given team have a similar "feel" is a nice way of implying a certain standard of robustness for all of your group's projects. However, copy/pasting the theme elements of your graphs can (A) be cumbersome to do even once and (B) needs to be re-done every time you make a change anywhere. Fortunately, there is a better way!
 
+`ggplot2` supports adding theme elements to an object that can then be reused as needed elsewhere. This is the same theory behind wrapping repeated operations into custom functions.
+
+```{r std-theme}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+# Define core theme elements
+theme_synthesis <- theme(legend.position = "none",
+                         panel.background = element_blank(),
+                         axis.line = element_line(color = "black"),
+                         axis.text = element_text(size = 13)) # <1>
+
+# Create a graph
+ggplot(pie_crab, aes(y = water_temp, x = air_temp, color = size, size = size)) +
+  geom_point() +
+  theme_synthesis +
+  theme(legend.position = "right") # <2>
+```
+1. This theme element controls the text on the tick marks. `axis.title` controls the text in the _labels_ of the axes
+2. As a bonus, subsequent uses of `theme()` will replace defaults defined in your earlier theme object. So, you can design a set of theme elements that are _usually_ appropriate and then easily change just some of them as needed
+
+## Multi-Panel Graphs
 
 ## Additional Resources
 

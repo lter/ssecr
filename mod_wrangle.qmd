@@ -72,10 +72,7 @@ Note that any raw names either not included in the column key or that lack a tid
 
 Data wrangling is a _huge_ subject that covers a wide range of topics. In this part of the module, we'll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you'll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice 'jumping off' point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.
 
-This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module.
-
-This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site.
-
+To begin, we'll load the Plum Island Ecosystems fiddler crab dataset we've used in other modules.
 
 ```{r prep}
 #| message: false
