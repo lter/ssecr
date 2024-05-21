@@ -925,7 +925,7 @@
     "href": "mod_data-viz.html#learning-objectives",
     "title": "Data Visualization & Exploration",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify appropriate graph types for given data type/distribution\nExplain how visualization can be a tool for quality control\nUse data visualization as an exploratory tool\nDefine fundamental ggplot2 vocabulary\nCreate publication-quality graphs with ggplot2",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine fundamental ggplot2 vocabulary\nCreate publication-quality graphs with ggplot2\nIdentify appropriate graph types for given data type/distribution\nExplain how visualization can be a tool for quality control\nUse data visualization as an exploratory tool",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
@@ -936,18 +936,29 @@
     "href": "mod_data-viz.html#needed-packages",
     "title": "Data Visualization & Exploration",
     "section": "Needed Packages",
-    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\ninstall.packages(\"cowplot\")\n\nWe’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.\n\n# Load needed libraries\nlibrary(tidyverse)\nlibrary(cowplot)",
+    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\ninstall.packages(\"lterdatasampler\")\ninstall.packages(\"supportR\")\ninstall.packages(\"cowplot\")\n\nWe’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.\n\n# Load needed libraries\nlibrary(tidyverse)",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
     ]
   },
   {
-    "objectID": "mod_data-viz.html#module-content",
-    "href": "mod_data-viz.html#module-content",
+    "objectID": "mod_data-viz.html#ggplot2-fundamentals",
+    "href": "mod_data-viz.html#ggplot2-fundamentals",
     "title": "Data Visualization & Exploration",
-    "section": "Module Content",
-    "text": "Module Content",
+    "section": "ggplot2 Fundamentals",
+    "text": "ggplot2 Fundamentals\nYou may already be familiar with the ggplot2 package in R but if you are not, it is a popular graphing library based on The Grammar of Graphics. Every ggplot is composed of four elements:\n\nA ‘core’ ggplot function call\nAesthetics\nGeometries\nTheme\n\nNote that the theme component may only be implied because there is a default theme that applies unless otherwise specified. These elements may become more tactile if we consider an example graph so let’s do so. To begin, we’ll load the Plum Island Ecosystems fiddler crab dataset we’ve used in other modules.\n\n# Load the lterdatasampler package\nlibrary(lterdatasampler)\n\n# Load the fiddler crab dataset\ndata(pie_crab)\n\n# Check its structure\nstr(pie_crab)\n\ntibble [392 × 9] (S3: tbl_df/tbl/data.frame)\n $ date         : Date[1:392], format: \"2016-07-24\" \"2016-07-24\" ...\n $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...\n $ site         : chr [1:392] \"GTM\" \"GTM\" \"GTM\" \"GTM\" ...\n $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...\n $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...\n $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...\n $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...\n $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...\n $ name         : chr [1:392] \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" \"Guana Tolomoto Matanzas NERR\" ...\n\n\nWith a dataset in hand, let’s make a scatterplot of crab size against latitude. We can make it more appealing by coloring the points by site and tweaking some theme elements.\n\nggplot(data = pie_crab, mapping = aes(x = latitude, y = size)) +\n  geom_boxplot(mapping = aes(fill = site)) +\n  geom_point(mapping = aes(fill = site),\n1             pch = 21, size = 2, alpha = 0.5) +\n  theme(legend.title = element_blank(),\n        panel.background = element_blank(),\n        axis.line = element_line(color = \"black\"))\n\n\n1\n\nBecause we defined the data and X/Y aesthetics in the ggplot() function call, our point geometry assumes those mappings and we don’t need to re-specify.\n\n\n\n\n\n\n\n\n\n\n\nIf desired, we can also add multiple data objects to the same plot! Let’s calculate some summary statistics of crab size to include that in our plot.\n\n# Load the supportR library\nlibrary(supportR)\n\n# Summarize crab size within latitude groups\ncrab_summary &lt;- supportR::summary_table(data = pie_crab, groups = c(\"site\", \"latitude\"),\n                                        response = \"size\", drop_na = TRUE)\n\n# Check the structure\nstr(crab_summary)\n\n'data.frame':   13 obs. of  6 variables:\n $ site       : chr  \"BC\" \"CC\" \"CT\" \"DB\" ...\n $ latitude   : num  42.2 41.9 41.3 39.1 30 39.6 41.6 33.3 42.7 34.7 ...\n $ mean       : num  16.2 16.8 14.7 15.6 12.4 ...\n $ std_dev    : num  4.81 2.05 2.36 2.12 1.8 2.72 2.29 2.42 2.3 2.34 ...\n $ sample_size: int  37 27 33 30 28 30 29 30 28 25 ...\n $ std_error  : num  0.79 0.39 0.41 0.39 0.34 0.5 0.43 0.44 0.43 0.47 ...\n\n\nWe can now tweak our graph to use this data object in addition to the original, unsummarized crab data.\n\n1ggplot() +\n  geom_point(pie_crab, mapping = aes(x = latitude, y = size, fill = site),\n             pch = 21, size = 2, alpha = 0.2) +\n  geom_errorbar(crab_summary, mapping = aes(x = latitude,\n                ymax = mean + std_error,\n                ymin = mean - std_error)) +\n  geom_point(crab_summary, mapping = aes(x = latitude, y = mean, fill = site),\n             pch = 23, size = 3) + \n  theme(legend.title = element_blank(),\n        panel.background = element_blank(),\n        axis.line = element_line(color = \"black\"))\n\n\n1\n\nIf you want multiple data objects in the same ggplot2 graph you need to leave this top level ggplot() call empty! Otherwise you’ll get weird errors with aesthetics later in the graph",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#streamlining-graph-aesthetics",
+    "href": "mod_data-viz.html#streamlining-graph-aesthetics",
+    "title": "Data Visualization & Exploration",
+    "section": "Streamlining Graph Aesthetics",
+    "text": "Streamlining Graph Aesthetics",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"

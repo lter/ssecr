@@ -366,7 +366,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
-  <li><a href="#module-content" id="toc-module-content" class="nav-link" data-scroll-target="#module-content">Module Content</a></li>
+  <li><a href="#ggplot2-fundamentals" id="toc-ggplot2-fundamentals" class="nav-link" data-scroll-target="#ggplot2-fundamentals"><code>ggplot2</code> Fundamentals</a></li>
+  <li><a href="#streamlining-graph-aesthetics" id="toc-streamlining-graph-aesthetics" class="nav-link" data-scroll-target="#streamlining-graph-aesthetics">Streamlining Graph Aesthetics</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -408,11 +409,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>After completing this module you will be able to:</p>
 <ul>
+<li><u>Define</u> fundamental <code>ggplot2</code> vocabulary</li>
+<li><u>Create</u> publication-quality graphs with <code>ggplot2</code></li>
 <li><u>Identify</u> appropriate graph types for given data type/distribution</li>
 <li><u>Explain</u> how visualization can be a tool for quality control</li>
 <li><u>Use</u> data visualization as an exploratory tool</li>
-<li><u>Define</u> fundamental <code>ggplot2</code> vocabulary</li>
-<li><u>Create</u> publication-quality graphs with <code>ggplot2</code></li>
 </ul>
 </section>
 <section id="needed-packages" class="level2">
@@ -422,17 +423,126 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've installed these before</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"cowplot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lterdatasampler"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"supportR"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"cowplot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="module-content" class="level2">
-<h2 class="anchored" data-anchor-id="module-content">Module Content</h2>
+<section id="ggplot2-fundamentals" class="level2">
+<h2 class="anchored" data-anchor-id="ggplot2-fundamentals"><code>ggplot2</code> Fundamentals</h2>
+<p>You may already be familiar with the <code>ggplot2</code> package in R but if you are not, it is a popular graphing library based on <a href="https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447">The Grammar of Graphics</a>. Every ggplot is composed of four elements:</p>
+<ol type="1">
+<li>A ‘core’ <code>ggplot</code> function call</li>
+<li>Aesthetics</li>
+<li>Geometries</li>
+<li>Theme</li>
+</ol>
+<p>Note that the theme component may only be implied because there is a default theme that applies unless otherwise specified. These elements may become more tactile if we consider an example graph so let’s do so. To begin, we’ll load the Plum Island Ecosystems fiddler crab dataset we’ve used in other modules.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Check its structure</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [392 × 9] (S3: tbl_df/tbl/data.frame)
+ $ date         : Date[1:392], format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+</div>
+</div>
+<p>With a dataset in hand, let’s make a scatterplot of crab size against latitude. We can make it more appealing by coloring the points by site and tweaking some theme elements.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size)) <span class="sc">+</span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">fill =</span> site)) <span class="sc">+</span></span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">fill =</span> site),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-4" class="code-annotation-target"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
+<span id="annotated-cell-4-6"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"black"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="4" data-code-annotation="1">Because we defined the data and X/Y aesthetics in the <code>ggplot()</code> function call, our point geometry assumes those mappings and we don’t need to re-specify.</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mod_data-viz_files/figure-html/gg-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If desired, we can also add multiple data objects to the same plot! Let’s calculate some summary statistics of crab size to include that in our plot.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR library</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize crab size within latitude groups</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>crab_summary <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">summary_table</span>(<span class="at">data =</span> pie_crab, <span class="at">groups =</span> <span class="fu">c</span>(<span class="st">"site"</span>, <span class="st">"latitude"</span>),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">response =</span> <span class="st">"size"</span>, <span class="at">drop_na =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(crab_summary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   13 obs. of  6 variables:
+ $ site       : chr  "BC" "CC" "CT" "DB" ...
+ $ latitude   : num  42.2 41.9 41.3 39.1 30 39.6 41.6 33.3 42.7 34.7 ...
+ $ mean       : num  16.2 16.8 14.7 15.6 12.4 ...
+ $ std_dev    : num  4.81 2.05 2.36 2.12 1.8 2.72 2.29 2.42 2.3 2.34 ...
+ $ sample_size: int  37 27 33 30 28 30 29 30 28 25 ...
+ $ std_error  : num  0.79 0.39 0.41 0.39 0.34 0.5 0.43 0.44 0.43 0.47 ...</code></pre>
+</div>
+</div>
+<p>We can now tweak our graph to use this data object in addition to the original, unsummarized crab data.</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-1" class="code-annotation-target"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-6-2"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size, <span class="at">fill =</span> site),</span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(crab_summary, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude,</span>
+<span id="annotated-cell-6-5"><a href="#annotated-cell-6-5" aria-hidden="true" tabindex="-1"></a>                <span class="at">ymax =</span> mean <span class="sc">+</span> std_error,</span>
+<span id="annotated-cell-6-6"><a href="#annotated-cell-6-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">ymin =</span> mean <span class="sc">-</span> std_error)) <span class="sc">+</span></span>
+<span id="annotated-cell-6-7"><a href="#annotated-cell-6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(crab_summary, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> mean, <span class="at">fill =</span> site),</span>
+<span id="annotated-cell-6-8"><a href="#annotated-cell-6-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">pch =</span> <span class="dv">23</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span> </span>
+<span id="annotated-cell-6-9"><a href="#annotated-cell-6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
+<span id="annotated-cell-6-10"><a href="#annotated-cell-6-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
+<span id="annotated-cell-6-11"><a href="#annotated-cell-6-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"black"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-lines="1" data-code-annotation="1">If you want multiple data objects in the same <code>ggplot2</code> graph you need to leave this top level <code>ggplot()</code> call <em>empty!</em> Otherwise you’ll get weird errors with aesthetics later in the graph</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mod_data-viz_files/figure-html/gg-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="streamlining-graph-aesthetics" class="level2">
+<h2 class="anchored" data-anchor-id="streamlining-graph-aesthetics">Streamlining Graph Aesthetics</h2>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
