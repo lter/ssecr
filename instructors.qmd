@@ -1,0 +1,20 @@
+---
+title: "SSECR Design Team"
+---
+
+## SSECR Design Team
+
+- Marty Downs (_she/her_) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-2833-956X) 
+- Nick J Lyon (_they/them)_ -- {{< fa user >}} [Website](https://njlyon0.github.io/) -- {{< fa brands github >}} [GitHub](https://github.com/njlyon0) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-3905-1078)
+- Carrie Kappel (_/_) -- {{< fa user >}} [Website](https://legacyworksgroup.com/team-content/carrie-kappel)
+
+### Other Contributors
+
+- Ingrid Slette (_she/her_)
+- Li Kui (_/_)
+
+## Supporting Organizations
+
+- [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/) (NCEAS)
+- [Long Term Ecological Research (LTER) Network Office](https://lternet.edu/) (LNO)
+- [National Science Foundation](https://www.nsf.gov/) (NSF)
