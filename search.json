@@ -510,7 +510,7 @@
     "href": "mod_reproducibility.html#additional-resources",
     "title": "Reproducibility Best Practices",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nA Large-Scale Study on Research Code Quality and Execution. Trisovic et al., 2022. Scientific Data\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
+    "text": "Additional Resources\n\nPapers & Documents\n\nA Large-Scale Study on Research Code Quality and Execution. Trisovic et al., 2022. Scientific Data\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nDocumenting Things: Openly for Future Us. Lowndes et al., 2023.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
     "crumbs": [
       "Phase I -- Prepare",
       "Reproducibility"
@@ -725,7 +725,7 @@
     "href": "mod_team-sci.html#additional-resources",
     "title": "Team Science Practices",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nBates et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nFarrell et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton & Parker, Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nAmelia Liberatore’s Developing a Successful Team workshop slides\nOpen Science Synthesis for the Delta Science Program’s Team Science for Synthesis\nOpen Science Synthesis for the Delta Science Program’s Thinking Preferences\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nBates et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nPeterson, D.M., et al., Team Science: A Syllabus for Success on Big Projects. 2023. Ecology and Evolution\nGaynor, K.M., et al., Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams. 2022. PLoS Computational Biology\nDeutsch, L., et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\nFarrell et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton & Parker, Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nAmelia Liberatore’s Developing a Successful Team workshop slides\nOpen Science Synthesis for the Delta Science Program’s Team Science for Synthesis\nOpen Science Synthesis for the Delta Science Program’s Thinking Preferences\n\n\n\nWebsites",
     "crumbs": [
       "Phase I -- Prepare",
       "Team Science"
@@ -925,7 +925,7 @@
     "href": "mod_data-viz.html#learning-objectives",
     "title": "Data Visualization & Exploration",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine fundamental ggplot2 vocabulary\nIdentify appropriate graph types for given data type/distribution\nExplain how visualization can be a tool for quality control\nUse data visualization as an exploratory tool\nCreate publication-quality graphs",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine fundamental ggplot2 vocabulary\nIdentify appropriate graph types for given data type/distribution\nDiscuss differences between presentation- and publication-quality graphs\nExplain how your graphs can be made more accessible",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
@@ -970,6 +970,17 @@
     "title": "Data Visualization & Exploration",
     "section": "Multi-Panel Graphs",
     "text": "Multi-Panel Graphs",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#accessibility-considerations",
+    "href": "mod_data-viz.html#accessibility-considerations",
+    "title": "Data Visualization & Exploration",
+    "section": "Accessibility Considerations",
+    "text": "Accessibility Considerations\n\nColor Choice\n\n\nMultiple Modalities\n\n\nPresentation vs. Publication",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
