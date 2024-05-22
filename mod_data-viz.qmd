@@ -13,9 +13,8 @@ After completing this module you will be able to:
 
 - <u>Define</u> fundamental `ggplot2` vocabulary
 - <u>Identify</u> appropriate graph types for given data type/distribution
-- <u>Explain</u> how visualization can be a tool for quality control
-- <u>Use</u> data visualization as an exploratory tool
-- <u>Create</u> publication-quality graphs
+- <u>Discuss</u> differences between presentation- and publication-quality graphs
+- <u>Explain</u> how your graphs can be made more accessible
 
 ## Needed Packages
 
@@ -185,6 +184,21 @@ ggplot(pie_crab, aes(y = water_temp, x = air_temp, color = size, size = size)) +
 2. As a bonus, subsequent uses of `theme()` will replace defaults defined in your earlier theme object. So, you can design a set of theme elements that are _usually_ appropriate and then easily change just some of them as needed
 
 ## Multi-Panel Graphs
+
+
+
+## Accessibility Considerations
+
+### Color Choice
+
+
+
+### Multiple Modalities
+
+
+
+### Presentation vs. Publication
+
 
 ## Additional Resources
 
