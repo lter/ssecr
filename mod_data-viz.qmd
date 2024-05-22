@@ -185,7 +185,35 @@ ggplot(pie_crab, aes(y = water_temp, x = air_temp, color = size, size = size)) +
 
 ## Multi-Panel Graphs
 
+It is sometimes the case that you want to make a single graph file that has multiple panels. For many of us, we might default to creating the separate graphs that we want, exporting them, and then using software like Microsoft PowerPoint to stitch those panels into the single image we had in mind from the start. However, as all of us who have used this method know, this is hugely cumbersome when your advisor/committee/reviewers ask for edits and you now have to redo all of the manual work behind your multi-panel graph. 
 
+Fortunately, there are two nice entirely scripted alternatives that you might consider: **Faceted graphs** and **Plot grids**. See below for more information on both.
+
+:::{.panel-tabset}
+### Facets
+
+In a _faceted_ graph, <u>every panel of the graph has the same aesthetics</u>. These are often used when you want to show the relationship between two (or more) variables but separated by some other variable. In synthesis work, you might show the relationship between your core response and explanatory variables but facet by the original study. This would leave you with one panel per study where each would show the relationship only at that particular study.
+
+Let's check out an example.
+
+```{r facet-1}
+#| fig-align: center
+#| fig-width: 6
+#| fig-height: 6
+
+ggplot(pie_crab, aes(x = date, y = size, color = site))+
+  geom_point(size = 2) +
+  facet_wrap(. ~ site) + # <1>
+  theme_bw() +
+  theme(legend.position = "none") # <2>
+```
+1. This is a `ggplot2` function that assumes you want panels laid out in a regular grid. There are other `facet_...` alternatives that let you specify row versus column arrangement. You could also facet by multiple variables by putting something to the left of the tilde
+2. We can remove the legend because the site names are in the facet titles in the gray boxes
+
+### Plot Grids
+
+
+:::
 
 ## Accessibility Considerations
 
