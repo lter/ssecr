@@ -592,6 +592,7 @@ Making sure that your project is reproducible requires a handful of steps before
 ### Websites
 
 - [Coding Tips](https://nceas.github.io/scicomp.github.io/best_practices.html). NCEAS Scientific Computing Team, 2024.
+- [Documenting Things: Openly for Future Us](https://openscapes.github.io/documenting-things/#/title-slide). Lowndes _et al.,_ 2023.
 - [Team Coding: 5 Essentials](https://nceas.github.io/scicomp.github.io/onboard-scaffold_team_coding.html). NCEAS Scientific Computing Team, 2024.
 - Advanced R (1st ed.) [Style Guide](http://adv-r.had.co.nz/Style.html). Wickham
 - PEP 8 [Style Guide for Python Code](https://peps.python.org/pep-0008/). van Rossum _et al._ 2013.
