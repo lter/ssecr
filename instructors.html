@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Synthesis Skills for Early Career Researchers - Version Control</title>
+<title>Synthesis Skills for Early Career Researchers - SSECR Design Team</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,7 +84,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -100,7 +102,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./instructors.html"> 
+    <a class="nav-link active" href="./instructors.html" aria-current="page"> 
 <span class="menu-text">Instructors</span></a>
   </li>  
   <li class="nav-item compact">
@@ -115,209 +117,21 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mod_version-control.html">Phase I – Prepare</a></li><li class="breadcrumb-item"><a href="./mod_version-control.html">Version Control</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Course Overview</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Phase I – Prepare</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_version-control.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Version Control</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_reproducibility.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducibility</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_data-disc.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Discovery</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_team-sci.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Team Science</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Phase II – Plan</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_facilitation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Inclusive Facilitation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_data-viz.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Visualization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_project-mgmt.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project Management</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Phase III – Execute</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_thinking.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Supporting D.E.C. Thinking</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_wrangle.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Wrangling</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_credit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Intellectual Credit</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_stats.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analysis &amp; Modeling</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
- <span class="menu-text">Phase IV – Magnify</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_next-steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Next Steps &amp; Proposals</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
- <span class="menu-text">Phase V – Share</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_findings.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Communicating Findings</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_reports.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible Reports</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
- <span class="menu-text">Bonus Modules</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_spatial.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Spatial Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./mod_interactivity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Interactivity</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#module-content" id="toc-module-content" class="nav-link" data-scroll-target="#module-content">Module Content</a></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
+  <li><a href="#ssecr-design-team" id="toc-ssecr-design-team" class="nav-link active" data-scroll-target="#ssecr-design-team">SSECR Design Team</a>
   <ul class="collapse">
-  <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
-  <li><a href="#workshops-courses" id="toc-workshops-courses" class="nav-link" data-scroll-target="#workshops-courses">Workshops &amp; Courses</a></li>
+  <li><a href="#other-contributors" id="toc-other-contributors" class="nav-link" data-scroll-target="#other-contributors">Other Contributors</a></li>
   </ul></li>
+  <li><a href="#supporting-organizations" id="toc-supporting-organizations" class="nav-link" data-scroll-target="#supporting-organizations">Supporting Organizations</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -326,9 +140,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mod_version-control.html">Phase I – Prepare</a></li><li class="breadcrumb-item"><a href="./mod_version-control.html">Version Control</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Version Control</h1>
+<h1 class="title">SSECR Design Team</h1>
 </div>
 
 
@@ -345,45 +159,30 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code “scripts”) that lends itself remarkably well to coding in groups. The National Center for Ecological Analysis and Synthesis (<a href="https://www.nceas.ucsb.edu/">NCEAS</a>) has a <a href="https://nceas.github.io/scicomp.github.io/">Scientific Computing Team</a> that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than reinvent these materials for the purposes of SSECR, we will work through parts of these workshop materials.</p>
-</section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p>After completing this module you will be able to:</p>
+<section id="ssecr-design-team" class="level2">
+<h2 class="anchored" data-anchor-id="ssecr-design-team">SSECR Design Team</h2>
 <ul>
-<li><u>Describe</u> how version control facilitates code collaboration</li>
-<li><u>Navigate</u> GitHub via a web browser</li>
-<li><u>Create</u> and edit a repository through GitHub</li>
-<li><u>Define</u> fundamental git vocabulary</li>
-<li><u>Sketch</u> the RStudio-to-GitHub order of operations</li>
-<li><u>Use</u> RStudio, Git, and GitHub to collaborate with version control</li>
+<li>Marty Downs (<em>she/her</em>) – <i class="fa-brands fa-orcid" aria-label="orcid"></i> <a href="https://orcid.org/0000-0003-2833-956X">ORCID</a></li>
+<li>Nick J Lyon (<em>they/them)</em> – <i class="fa-solid fa-user" aria-label="user"></i> <a href="https://njlyon0.github.io/">Website</a> – <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/njlyon0">GitHub</a> – <i class="fa-brands fa-orcid" aria-label="orcid"></i> <a href="https://orcid.org/0000-0003-3905-1078">ORCID</a></li>
+<li>Carrie Kappel (<em>/</em>) – <i class="fa-solid fa-user" aria-label="user"></i> <a href="https://legacyworksgroup.com/team-content/carrie-kappel">Website</a></li>
+</ul>
+<section id="other-contributors" class="level3">
+<h3 class="anchored" data-anchor-id="other-contributors">Other Contributors</h3>
+<ul>
+<li>Ingrid Slette (<em>she/her</em>)</li>
+<li>Li Kui (<em>/</em>)</li>
 </ul>
 </section>
-<section id="module-content" class="level2">
-<h2 class="anchored" data-anchor-id="module-content">Module Content</h2>
-<p>The workshop materials we will be working through live <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/">here</a> but for convenience we have also embedded the workshop directly into the SSECR course website (see below).</p>
-<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="550" width="900" style="border: 1px solid #2e3846;"></iframe>
 </section>
-<section id="additional-resources" class="level2">
-<h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
-<section id="papers-documents" class="level3">
-<h3 class="anchored" data-anchor-id="papers-documents">Papers &amp; Documents</h3>
+<section id="supporting-organizations" class="level2">
+<h2 class="anchored" data-anchor-id="supporting-organizations">Supporting Organizations</h2>
 <ul>
-<li><a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108">Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution</a>. Pereira Braga <em>et al.</em>, 2023. <strong>Methods in Ecology and Evolution</strong></li>
-<li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheat Sheet</a>. GitHub</li>
-</ul>
-</section>
-<section id="workshops-courses" class="level3">
-<h3 class="anchored" data-anchor-id="workshops-courses">Workshops &amp; Courses</h3>
-<ul>
-<li><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a>. Bryan <em>et al.</em>, 2024.</li>
-<li>coreR Course, <a href="https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html">Chapter 6: Intro to Git and GitHub</a>. NCEAS Learning Hub, 2023.</li>
+<li><a href="https://www.nceas.ucsb.edu/">National Center for Ecological Analysis and Synthesis</a> (NCEAS)</li>
+<li><a href="https://lternet.edu/">Long Term Ecological Research (LTER) Network Office</a> (LNO)</li>
+<li><a href="https://www.nsf.gov/">National Science Foundation</a> (NSF)</li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
