@@ -252,22 +252,138 @@ cowplot::plot_grid(crab_p1, crab_p2, labels = "AUTO", nrow = 1) # <4>
 
 ## Accessibility Considerations
 
+After you've made the graphs you need, it is good practice to revisit them with to ensure that they are as accessible as possible. You can of course also do this during the graph construction process but it is sometimes less onerous to tackle as a penultimate step in the figure creation process. There are many facets to accessibility and we've tried to cover just a few of them below.
+
 ### Color Choice
 
+One of the more well-known facets of accessibility in data visualization is choosing colors that are "colorblind safe". Such palettes still create distinctive colors for those with various forms of color blindness (e.g., deuteranomoly, protanomaly, etc.). The classic red-green heatmap for instance is very colorblind unsafe in that people with some forms of colorblindness cannot distinguish between those colors (hence the rise of the yellow-blue heatmap in recent years). Unforunately, the `ggplot2` default rainbow palette--while nice for exploratory purposes--_is not_ colorlbind sfae.
 
+Some websites (such as [colorbewer2.org](https://colorbrewer2.org/#type=sequential&scheme=YlGnBu&n=9)) include a simple checkbox for colorblindness safety which automatically limits the listed options to those that are colorblind safe. Alternately, you could use a browser plug-in (such as [Let's get color blind](https://chromewebstore.google.com/detail/lets-get-color-blind/bkdgdianpkfahpkmphgehigalpighjck) on Google Chrome) to simulate colorblindness on a particular page.
+
+One extreme approach you could take is to dodge this issue entirely and format your graphs such that color either isn't used at all or only conveys information that is also conveyed in another graph aesthetic. We don't necessarily recommend this as color--when the palette is chosen correctly--can be a really nice way of making information-dense graphs more informative and easily-navigable by viewers.
 
 ### Multiple Modalities
 
+Related to the color conversation is the value of mapping multiple aesthetics to the same variable. By presenting information in multiple ways--even if that seems redundant--you enable a wider audience to gain an intuitive sense of what you're trying to display.
 
+```{r multi-modal}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, 
+                                      fill = site, shape = site)) + # <1>
+  geom_jitter(size = 2, width = 0.1, alpha = 0.6) +  
+  scale_shape_manual(values = c(21:25, 21:25, 21:23)) + # <2>
+  theme_bw() +
+  theme(legend.title = element_blank())
+```
+1. In this graph we're mapping both the fill and shape aesthetics to site
+2. This is a little cumbersome but there are only five 'fill-able' shapes in R so we need to reuse some of them to have a unique one for each site. Using fill-able shapes is nice because you get a crisp black border around each point. See `?pch` for all available shapes
+
+In the above graph, even though the rainbow palette is not ideal for reasons mentioned earlier, it is now much easier to tell the difference between sites with similar colors. For instance, "NB", "NIB", and "PIE" are all shades of light blue/teal. Now that they have unique shapes it is dramatically easier to look at the graph and identify which points correspond to which site.
 
 ### Presentation vs. Publication
 
+One final element of accessibility to consider is the difference between a '_presentation_-quality' graph and a '_publication_-quality' one. While it may be tempting to create a single version of a given graph and use it in both contexts that is likely to be less effective in helping you to get your point across than making small tweaks to two separate versions of what is otherwise the same graph.
+
+:::{.panel-tabset}
+### Presentation-Focused
+
+**Do:**
+
+- Increase size of text/points **greatly**
+    - If possible, sit in the back row of the room where you'll present and look at your graphs from there
+- _Consider_ adding graph elements that highlight certain graph regions
+- Present summarized data (increases focus on big-picture trends and avoids discussion of minutiae)
+- Map multiple aesthetics to the same variables
+
+**Don't:**
+
+- Use technical language / jargon
+- Include _unnecessary_ background elements
+- Use multi-panel graphs (either faceted or plot grid)
+    - If you have multiple graph panels, put each on its own slide!
+
+```{r talk-graph}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot(crab_summary, aes(x = latitude, y = mean, 
+                         shape = reorder(site, latitude), # <1>
+                         fill = reorder(site, latitude))) +
+  geom_vline(xintercept = 36.5, color = "black", linetype = 1) +
+  geom_vline(xintercept = 41.5, color = "black", linetype = 2) + # <2>
+  geom_errorbar(mapping = aes(ymax = mean + std_error, ymin = mean - std_error),
+                width = 0.2) +
+  geom_point(size = 4) + 
+  scale_shape_manual(values = c(21:25, 21:25, 21:23)) +
+  labs(x = "Latitude", y = "Mean Crab Size (mm)") + # <3>
+  theme(legend.title = element_blank(),
+        axis.line = element_line(color = "black"),
+        panel.background = element_blank(),
+        axis.title = element_text(size = 17),
+        axis.text = element_text(size = 15))
+```
+1. We can use the `reorder` function to make the order of sites in the legend (from top to bottom) match the order of sites in the graph (from left to right)
+2. Adding vertical lines at particular parts in the graph can make comparisons within the same graph easier
+3. `labs` lets us customize the title and label text of a graph
+
+### Publication-Focused
+
+**Do:**
+
+- Increase size of text/points **slightly**
+    - You want to be legible but you can more safely assume that many readers will be able to increase the zoom of their browser window if needed
+- Present un-summarized data (with or without summarized points included)
+    - Many reviewers will want to get a sense for the "real" data so you should include unsummarized values wherever possible
+- Use multi-panel graphs
+    - If multiple graphs "tell a story" together, then they should be included in the same file!
+- Map multiple aesthetics to the same variables
+- If publishing in a journal available in print, check to make sure your graph still makes sense in grayscale
+    - There are nice browser plug-ins (like [Grayscale the Web](https://chromewebstore.google.com/detail/grayscale-the-web-save-si/mblmpdpfppogibmoobibfannckeeleag) for Google Chrome) for this too
+
+**Don't:**
+
+- Include _unnecessary_ background elements
+- Add graph elements that highlight certain graph regions
+    - You can--and should--lean more heavily on the text of your publication to discuss particular areas of a graph
+
+```{r pub-graph}
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+ggplot() +
+  geom_point(pie_crab, mapping = aes(x = latitude, y = size,
+                                     color = reorder(site, latitude)),
+             pch = 19, size = 1, alpha = 0.3) +
+  geom_errorbar(crab_summary, mapping = aes(x = latitude, y = mean, 
+                                  ymax = mean + std_error, 
+                                  ymin = mean - std_error),
+                width = 0.2) +
+  geom_point(crab_summary, mapping = aes(x = latitude, y = mean, 
+                           shape = reorder(site, latitude),
+                           fill = reorder(site, latitude)),
+            size = 4) +
+  scale_shape_manual(values = c(21:25, 21:25, 21:23)) +
+  labs(x = "Latitude", y = "Mean Crab Carapace Width (mm)") + # <1>
+  theme(legend.title = element_blank(),
+        axis.line = element_line(color = "black"),
+        panel.background = element_blank(),
+        axis.title = element_text(size = 15),
+        axis.text = element_text(size = 13))
+```
+1. Here we are using a reasonable amount of technical language
+
+:::
 
 ## Additional Resources
 
 ### Papers & Documents
 
-- 
+- NCEAS [Colorblind Safe Color Schemes](https://www.nceas.ucsb.edu/sites/default/files/2022-06/Colorblind%20Safe%20Color%20Schemes.pdf) reference document
 
 ### Workshops & Courses
 
