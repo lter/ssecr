@@ -1,0 +1,31 @@
+---
+title: "Template"
+---
+
+This page is meant to make it simpler to copy/paste certain page elements among module files.
+
+
+:::{.callout-note icon="false"}
+#### Activity: ACTIVITY NAME
+
+In a script, attempt the following:
+
+- X
+    - _Hint:_ hint text!
+
+:::
+
+
+
+:::{.callout-warning icon="false"}
+#### Discussion: DISCUSSION NAME
+
+With a partner/group discuss (some of) the following questions:
+
+- ?
+- ?
+- ?
+
+:::
+
+
