@@ -116,6 +116,18 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) +
 ```
 1. By putting the boxplot geometry first we ensure that it doesn't cover up the points that overlap with the 'box' part of each boxplot
 
+:::{.callout-note icon="false"}
+#### Activity: Graph Creation (P1)
+
+In a script, attempt the following with one of either yours or your group's datasets:
+
+- Make a graph using `ggplot2`
+    - Include at least one geometry
+    - Include at least one aesthetic (beyond X/Y axes)
+    - Modify at least one theme element from the default
+
+:::
+
 ### Multiple Data Objects
 
 `ggplot2` also supports adding more than one data object to the same graph! While this module doesn't cover map creation, maps are a common example of a graph with more than one data object. Another common use would be to include both the full dataset and some summarized facet of it in the same plot.
@@ -157,6 +169,16 @@ ggplot() + # <1>
 1. If you want multiple data objects in the same `ggplot2` graph you need to leave this top level `ggplot()` call _empty!_ Otherwise you'll get weird errors with aesthetics later in the graph
 2. This geometry adds the error bars and it's important that we add it before the summarized data points themselves if we want the error bars to be 'behind' their respective points
 
+:::{.callout-note icon="false"}
+#### Activity: Graph Creation (P2)
+
+In a script, attempt the following:
+
+- Add a second data object to the graph you made in the preceding activity
+    - _Hint:_ If your first graph is unsummarized, add a summarized version (or vice versa)
+
+:::
+
 ## Streamlining Graph Aesthetics
 
 Synthesis projects often generate an entire network of inter-related papers. Ensuring that all graphs across papers from a given team have a similar "feel" is a nice way of implying a certain standard of robustness for all of your group's projects. However, copy/pasting the theme elements of your graphs can (A) be cumbersome to do even once and (B) needs to be re-done every time you make a change anywhere. Fortunately, there is a better way!
@@ -182,6 +204,17 @@ ggplot(pie_crab, aes(y = water_temp, x = air_temp, color = size, size = size)) +
 ```
 1. This theme element controls the text on the tick marks. `axis.title` controls the text in the _labels_ of the axes
 2. As a bonus, subsequent uses of `theme()` will replace defaults defined in your earlier theme object. So, you can design a set of theme elements that are _usually_ appropriate and then easily change just some of them as needed
+
+:::{.callout-note icon="false"}
+#### Activity: Graph Creation (P3)
+
+In a script, attempt the following:
+
+- Remove all theme edits from the graph you made in the preceding activity and assign them to a separate object
+    - Then add that object to your graph
+- Make a second (different) graph and add your consolidated theme object to that graph as well
+
+:::
 
 ## Multi-Panel Graphs
 
@@ -250,6 +283,15 @@ cowplot::plot_grid(crab_p1, crab_p2, labels = "AUTO", nrow = 1) # <4>
 4. The `labels = "AUTO"` argument means that each panel of the plot grid gets the next sequential capital letter. You could also substitute that for a vector with labels of your choosing
 :::
 
+:::{.callout-note icon="false"}
+#### Activity: Graph Creation (P4)
+
+In a script, attempt the following:
+
+- Assemble the two graphs you made in the preceding two activities into the appropriate type of multi-panel graph
+
+:::
+
 ## Accessibility Considerations
 
 After you've made the graphs you need, it is good practice to revisit them with to ensure that they are as accessible as possible. You can of course also do this during the graph construction process but it is sometimes less onerous to tackle as a penultimate step in the figure creation process. There are many facets to accessibility and we've tried to cover just a few of them below.
@@ -282,6 +324,19 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size,
 2. This is a little cumbersome but there are only five 'fill-able' shapes in R so we need to reuse some of them to have a unique one for each site. Using fill-able shapes is nice because you get a crisp black border around each point. See `?pch` for all available shapes
 
 In the above graph, even though the rainbow palette is not ideal for reasons mentioned earlier, it is now much easier to tell the difference between sites with similar colors. For instance, "NB", "NIB", and "PIE" are all shades of light blue/teal. Now that they have unique shapes it is dramatically easier to look at the graph and identify which points correspond to which site.
+
+
+:::{.callout-warning icon="false"}
+#### Discussion: Graph Accessibility
+
+With a group discuss (some of) the following questions:
+
+- What are other facets of accessibility that you think are important to consider when making data visualizations?
+- What changes do you make to your graphs to increase accessibility?
+    - What changes _could_ you make going forward?
+
+:::
+
 
 ### Presentation vs. Publication
 
