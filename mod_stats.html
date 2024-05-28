@@ -347,6 +347,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
+  <li><a href="#hypothesis-framing-aside" id="toc-hypothesis-framing-aside" class="nav-link" data-scroll-target="#hypothesis-framing-aside">Hypothesis Framing Aside</a></li>
   <li><a href="#mixed-effects-models" id="toc-mixed-effects-models" class="nav-link" data-scroll-target="#mixed-effects-models">Mixed-Effects Models</a>
   <ul class="collapse">
   <li><a href="#types-of-random-effect" id="toc-types-of-random-effect" class="nav-link" data-scroll-target="#types-of-random-effect">Types of Random Effect</a></li>
@@ -354,7 +355,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#philosophical-note-random-vs.-fixed" id="toc-philosophical-note-random-vs.-fixed" class="nav-link" data-scroll-target="#philosophical-note-random-vs.-fixed">Philosophical Note: Random vs.&nbsp;Fixed</a></li>
   <li><a href="#mixed-effects-case-study" id="toc-mixed-effects-case-study" class="nav-link" data-scroll-target="#mixed-effects-case-study">Mixed-Effects Case Study</a></li>
   </ul></li>
-  <li><a href="#multi-model-inference" id="toc-multi-model-inference" class="nav-link" data-scroll-target="#multi-model-inference">Multi-Model Inference</a></li>
+  <li><a href="#multi-model-inference-1" id="toc-multi-model-inference-1" class="nav-link" data-scroll-target="#multi-model-inference-1">Multi-Model Inference</a></li>
   <li><a href="#meta-analysis" id="toc-meta-analysis" class="nav-link" data-scroll-target="#meta-analysis">Meta-Analysis</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
@@ -399,8 +400,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ul>
 <li><u>Describe</u> proposed analytical methods to an interested audience of mixed prior experience</li>
 <li><u>Explain</u> nuance in interpretation of results of proposed analyses</li>
-<li><u>Compare</u> and contrast interpretation of results in synthesis work versus primary research</li>
-<li><u>Identify</u> statistical tests common in synthesis research</li>
+<li><u>Identify</u> some statistical tests common in synthesis research</li>
 <li><u>Perform</u> some synthesis-specific analyses</li>
 </ul>
 </section>
@@ -420,6 +420,26 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
+<section id="hypothesis-framing-aside" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-framing-aside">Hypothesis Framing Aside</h2>
+<p>Before we dive in, we should discuss two of the ways in which you can frame your hypothesis and the differences in interpretation and appropriate statistical tool(s) that follow from that choice. We’ll restrict our conversation here to <strong>two alternate modes of thinking about your hypothesis: frequentist statistics versus multi-model inference.</strong></p>
+<p>Note that this is something of a false dichotomy as tools from both worlds can be/are frequently used to complement one another. However, many graduate students are trained by instructors with strong feelings about one method <em>in opposition to</em> the other so it is worthwhile to consider these two paths separately even if you wind up using components of both in your own work.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Frequentist Inference</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Multi-Model Inference</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Hypotheses here are a question of <u>whether a variable has a “significant” effect on another</u>. “Significant” has a very precise meaning in this context that has to do with <em>p</em>-values. Fundamentally, these methods focus on whether the observed relationship in the data is likely to be observed by chance alone or not. Strong effects are less likely–though not impossible–to be observed due to random chance.</p>
+<p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that X affects Y’ then frequentist inference may be a more appropriate methodology.</p>
+<p>For the purposes of SSECR, <strong>our discussion of frequentist inference will focus on <u>mixed-effect models</u></strong>.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Hyoptheses here are a question of <u>which variables explain the <em>most</em> variation in the data</u>. Methods in this framing are unconcerned–or at least less concerned than in frequentist inference–with the probability associated with a particular variable. Intead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data <em>even when that best model does not necessarily explain much of that variation in absolute terms</em>.</p>
+<p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that models including X explain more of the variation in Y than those that do not’ then multi-model inference may be a more appropriate methodology.</p>
+<p>For the purposes of SSECR, <strong>our discussion of multi-model inference will focus on <u>comparing model strengths with AIC</u></strong>.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="mixed-effects-models" class="level2">
 <h2 class="anchored" data-anchor-id="mixed-effects-models">Mixed-Effects Models</h2>
 <p>In any statistical test there is at least one response variable (a.k.a. “dependent” variable) and some number of explanatory variables (a.k.a. “independent” variables). However, in biology our experiments often involve repeated sampling over time or at the same locations. These variables (time or site) are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.</p>
@@ -428,14 +448,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="types-of-random-effect">Types of Random Effect</h3>
 <p>There are a few types of random effects but we can limit our conversation here to just two: random intercepts and random slopes.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Random Intercepts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Random Slopes</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Random Intercepts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Random Slopes</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Random intercepts should be used when you expect that the average response differs among levels of that variable but <u>not</u> in a way that changes the relationship between each level of this variable and the other variables (either fixed or random). In statistical terms you want to allow the intercept to change with levels of this variable.</p>
 <p>For example, let’s imagine that we are studying the effect of different organic farming practices on beneficial insect populations. We build relationships with several organic farmers willing to let us conduct this research on their properties and sample the insect communities at each farm over the course of a summer. However, we know that each farm is surrounded by a different habitat type that affects the composition of the local insect community. It is reasonable to expect that even farms where ‘the same’ management method is used are likely to differ because of this difference in landscape context.</p>
 <p>In cases like this, we don’t want to include a term for ‘site’ as a fixed effect but we do want to account for those differences so that our assessment of the significance of our explanatory variables isn’t limited by the variation due to site.</p>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Random slopes should be used when you expect that the average response differs among levels of that variable in a way that <u>does</u> change with other variables.</p>
 <p>For example, let’s imagine that we are studying the effect of temperature on avian malaria rates in songbirds. We identify several sites–along a gradient of daytime temperature ranges–where our species of interest can be found, capture them, and measure malaria infection rates. However, unbeknownst to us at the start of our study, our study sites have varying populations of dragonflies which affects local mosquito populations and malaria transmission/infection rates. If we revisit our sites repeatedly for several years is is reasonable to expect that this difference among sites likely affects the <em>relationship between</em> daytime temperatures and songbird malaria rates.</p>
 <p>By including site as a random slope in this context, we can account for this effect and still analyze our explanatory variables of interest. Note that random slopes are <em>very</em> “data hungry” so you may not be able to use them without very high replication in your study design.</p>
@@ -521,7 +541,7 @@ Discussion: Random versus Fixed Effects
  $ tarantula_count: int  12 18 18 9 18 51 45 60 45 63 ...</code></pre>
 </div>
 </div>
-<p>With our data in hand, we now want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em> values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
+<p>With our data in hand, we now want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em>-values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>tarantula_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(tarantula_count <span class="sc">~</span> road.dist_km, <span class="at">data =</span> tarantula_df)</span>
@@ -700,8 +720,8 @@ road.dst_km -0.847</code></pre>
 </div>
 </section>
 </section>
-<section id="multi-model-inference" class="level2">
-<h2 class="anchored" data-anchor-id="multi-model-inference">Multi-Model Inference</h2>
+<section id="multi-model-inference-1" class="level2">
+<h2 class="anchored" data-anchor-id="multi-model-inference-1">Multi-Model Inference</h2>
 </section>
 <section id="meta-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="meta-analysis">Meta-Analysis</h2>
