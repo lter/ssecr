@@ -13,8 +13,7 @@ After completing this module you will be able to:
 
 - <u>Describe</u> proposed analytical methods to an interested audience of mixed prior experience
 - <u>Explain</u> nuance in interpretation of results of proposed analyses
-- <u>Compare</u> and contrast interpretation of results in synthesis work versus primary research
-- <u>Identify</u> statistical tests common in synthesis research
+- <u>Identify</u> some statistical tests common in synthesis research
 - <u>Perform</u> some synthesis-specific analyses
 
 ## Needed Packages
