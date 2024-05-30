@@ -355,7 +355,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#philosophical-note-random-vs.-fixed" id="toc-philosophical-note-random-vs.-fixed" class="nav-link" data-scroll-target="#philosophical-note-random-vs.-fixed">Philosophical Note: Random vs.&nbsp;Fixed</a></li>
   <li><a href="#mixed-effects-case-study" id="toc-mixed-effects-case-study" class="nav-link" data-scroll-target="#mixed-effects-case-study">Mixed-Effects Case Study</a></li>
   </ul></li>
-  <li><a href="#multi-model-inference-1" id="toc-multi-model-inference-1" class="nav-link" data-scroll-target="#multi-model-inference-1">Multi-Model Inference</a></li>
+  <li><a href="#multi-model-inference-1" id="toc-multi-model-inference-1" class="nav-link" data-scroll-target="#multi-model-inference-1">Multi-Model Inference</a>
+  <ul class="collapse">
+  <li><a href="#philosophical-note-model-weights-model-averaging" id="toc-philosophical-note-model-weights-model-averaging" class="nav-link" data-scroll-target="#philosophical-note-model-weights-model-averaging">Philosophical Note: Model Weights &amp; Model Averaging</a></li>
+  <li><a href="#aic-case-study" id="toc-aic-case-study" class="nav-link" data-scroll-target="#aic-case-study">AIC Case Study</a></li>
+  </ul></li>
   <li><a href="#meta-analysis" id="toc-meta-analysis" class="nav-link" data-scroll-target="#meta-analysis">Meta-Analysis</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
@@ -723,8 +727,21 @@ road.dst_km -0.847</code></pre>
 <section id="multi-model-inference-1" class="level2">
 <h2 class="anchored" data-anchor-id="multi-model-inference-1">Multi-Model Inference</h2>
 <p>Regardless of your choice of statistical test, multi-model inference may be an appropriate method to use to assess your hypothesis. As stated earlier, this frames your research question as a case of which variables <em>best</em> explain the data rather than the likelihood of the observed effect relating to any variable in particular.</p>
-<p>To begin, it can be helpful to write out all possible “candidate models”. For instance, let’s say that you measured some response variable (Y) and several potential explanatory variables (X, W, and Z).</p>
-<p>Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!</p>
+<p>To begin, it can be helpful to write out all possible “candidate models”. For instance, let’s say that you measured some response variable (Y) and several potential explanatory variables (X, W, and Z). We would then fit the following candidate models:</p>
+<ol type="1">
+<li>X alone explains the most variation in Y</li>
+<li>W alone explains the most variation in Y</li>
+<li>Z alone explains the most variation in Y</li>
+<li>X, W, and Z together explain the most variation in Y</li>
+</ol>
+<p>We might also fit other candidate models for pairs of X, W, and Z but for the sake of simplicity in this hypothetical we’ll skip those. Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!</p>
+<p>Once we’ve fit all of our models and assigned them to objects, we can use the <code>AIC</code> function included in base R to compare the AIC score of each model. “AIC” stands for <u>A</u>kaike (<em>AH-kuh-ee-kay</em>) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model’s explanatory power. The lowest AIC best explains the data and models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data. Technically any difference in AIC indicates model improvement but many scientists use a rule of thumb of a difference of 2. So, if two models have AIC scores that differ by less than 2, you can safely say that they have comparable explanatory power. That is definitely a semi-arbitrary threshold but so is the 0.05 threshold for <em>p</em>-value “significance”.</p>
+<section id="philosophical-note-model-weights-model-averaging" class="level3">
+<h3 class="anchored" data-anchor-id="philosophical-note-model-weights-model-averaging">Philosophical Note: Model Weights &amp; Model Averaging</h3>
+</section>
+<section id="aic-case-study" class="level3">
+<h3 class="anchored" data-anchor-id="aic-case-study">AIC Case Study</h3>
+</section>
 </section>
 <section id="meta-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="meta-analysis">Meta-Analysis</h2>
