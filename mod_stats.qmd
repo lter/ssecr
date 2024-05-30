@@ -220,12 +220,26 @@ ggplot(tarantula_df, aes(y = tarantula_count, x = road.dist_km)) +
 
 Regardless of your choice of statistical test, multi-model inference may be an appropriate method to use to assess your hypothesis. As stated earlier, this frames your research question as a case of which variables _best_ explain the data rather than the likelihood of the observed effect relating to any variable in particular. 
 
-To begin, it can be helpful to write out all possible "candidate models". For instance, let's say that you measured some response variable (Y) and several potential explanatory variables (X, W, and Z).
+To begin, it can be helpful to write out all possible "candidate models". For instance, let's say that you measured some response variable (Y) and several potential explanatory variables (X, W, and Z). We would then fit the following candidate models:
+
+1. X alone explains the most variation in Y
+2. W alone explains the most variation in Y
+3. Z alone explains the most variation in Y
+4. X, W, and Z together explain the most variation in Y
+
+We might also fit other candidate models for pairs of X, W, and Z but for the sake of simplicity in this hypothetical we'll skip those. Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!
+
+Once we've fit all of our models and assigned them to objects, we can use the `AIC` function included in base R to compare the AIC score of each model. "AIC" stands for <u>A</u>kaike (_AH-kuh-ee-kay_) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model's explanatory power. The lowest AIC best explains the data and models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data. Technically any difference in AIC indicates model improvement but many scientists use a rule of thumb of a difference of 2. So, if two models have AIC scores that differ by less than 2, you can safely say that they have comparable explanatory power. That is definitely a semi-arbitrary threshold but so is the 0.05 threshold for _p_-value "significance".
+
+### Philosophical Note: Model Weights & Model Averaging
 
 
 
 
-Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!
+### AIC Case Study
+
+
+
 
 ## Meta-Analysis
 
