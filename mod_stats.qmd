@@ -191,7 +191,7 @@ ggplot(tarantula_df, aes(y = tarantula_count, x = plot, fill = plot)) +
 
 This graph clearly supports our intuition that among-plot variation is dramatic! We _could_ account for this by including plot as a fixed effect but we'll need to sacrifice a lot of degrees of freedom (can be thought of as "statistical power") for a variable that we don't actually care about. Instead, we could include plot as another random effect.
 
-```{r mem-mix3}
+```{r mem-mix2}
 # Fit the new model
 tarantula_mem2 <- lmerTest::lmer(tarantula_count ~ road.dist_km + 
                                (1|year) + (1|site.plot), # <1>
@@ -237,8 +237,59 @@ The model with the _lowest_ AIC best explains the data. Technically any differen
 
 ### AIC Case Study
 
+Let's check out an example using AIC to compare the strengths of several models. Rather than using simulated data--as we did earlier in the mixed-effect model section--we'll use some real penguin data included in the `palmerpenguins` package.
 
+This dataset includes annual data on three penguin species spread across several islands. The sex of the penguins was also recorded in addition to the length of their flippers, body mass, and bill length and depth.
 
+For the purposes of this example, our research question is as follows: **what factors best explain penguin body mass?**
+
+```{r mmi-data}
+# Load the penguins data from the `palmerpenguins` package
+data(penguins)
+
+# Make a version where no NAs are allowed
+peng_complete <- penguins[complete.cases(penguins), ] # <1>
+
+# Check the structure of it
+dplyr::glimpse(peng_complete)
+```
+1. This is a base R way of keeping only rows that have _no_ `NA` values in any column. It is better to identify and handle `NA`s more carefully but for this context we just want to have the same number of observations in each model
+
+With our data in hand and research question in mind, we can fit several candidate models that our scientific intuition and the published literature support as probable then compare them with AIC.
+
+```{r aic-fits}
+# Species and sex
+mod_spp <- lm(body_mass_g ~ species + sex, data = peng_complete)
+
+# Island alone
+mod_isl <- lm(body_mass_g ~ island, data = peng_complete)
+
+# Combination of species and island
+mod_eco <- lm(body_mass_g ~ island + species + sex, data = peng_complete)
+
+# Body characteristics alone
+mod_phys <- lm(body_mass_g ~ flipper_length_mm + bill_length_mm + bill_depth_mm,
+               data = peng_complete)
+
+# Global model
+mod_sink <- lm(body_mass_g ~ island + species + sex + # <1>
+               flipper_length_mm + bill_length_mm + bill_depth_mm,
+               data = peng_complete)
+```
+1. We've named the global model "sink" because of the American idiom "everything but the kitchen sink." It is used in cases where everything that can be included has been
+
+Once we've fit all of these models, we can use the `AIC` function from base R (technically from the `stats` package included in base R).
+
+```{r aic-evaluate}
+# Compare models
+AIC(mod_spp, mod_isl, mod_eco, mod_phys, mod_sink) %>% 
+  dplyr::arrange(AIC) # <1>
+```
+1. Unfortunately, the `AIC` function doesn't sort by AIC score automatically so we're using the `arrange` function to make it easier for us to rank models by their AIC scores
+
+Interestingly, it looks like the best model (i.e., the one that explains most of the data) is the global model that included most of the available variables. As stated earlier, it is not always the case that the model with the most parameters has the lowest AIC so we can be confident this is a "real" result. The difference between that one and the next (incidentally the model where only species and sex are included as explanatory variables) is much larger than 2 so we can be confident that the global model is much better than the next best.
+
+With this result your interpretation would be that penguin body mass is better explained by a combination of species, sex, physical characteristics of the individual penguin, and the penguin's home island than it is by any of the other candidate models. In a publication you'd likely want to report this entire AIC table (either parenthetically or in a table) so that reviewers could evaluate your logic.
 
 ## Meta-Analysis
 
