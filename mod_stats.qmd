@@ -291,21 +291,6 @@ Interestingly, it looks like the best model (i.e., the one that explains most of
 
 With this result your interpretation would be that penguin body mass is better explained by a combination of species, sex, physical characteristics of the individual penguin, and the penguin's home island than it is by any of the other candidate models. In a publication you'd likely want to report this entire AIC table (either parenthetically or in a table) so that reviewers could evaluate your logic.
 
-### AIC Note: Relativity
-
-It is crucial to keep in mind that **AIC is a _relative_ measure**. A model's AIC score only exists in relation to the other models to which it is compared. It is inappropriate to compare an AIC score of a model to that of a model for which AIC was calculated separately.
-
-Let's make a quick example to demonstrate this. We'll calculate the AIC scores for the species versus global model and--_separately_--for the island model versus the global model.
-
-```{r aic-relativity}
-# First comparison
-AIC(mod_spp, mod_sink)
-
-# Second comparison
-AIC(mod_isl, mod_sink)
-```
-
-
 ## Meta-Analysis
 
 
