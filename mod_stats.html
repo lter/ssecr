@@ -357,7 +357,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   </ul></li>
   <li><a href="#multi-model-inference-1" id="toc-multi-model-inference-1" class="nav-link" data-scroll-target="#multi-model-inference-1">Multi-Model Inference</a>
   <ul class="collapse">
-  <li><a href="#philosophical-note-model-weights-model-averaging" id="toc-philosophical-note-model-weights-model-averaging" class="nav-link" data-scroll-target="#philosophical-note-model-weights-model-averaging">Philosophical Note: Model Weights &amp; Model Averaging</a></li>
   <li><a href="#aic-case-study" id="toc-aic-case-study" class="nav-link" data-scroll-target="#aic-case-study">AIC Case Study</a></li>
   </ul></li>
   <li><a href="#meta-analysis" id="toc-meta-analysis" class="nav-link" data-scroll-target="#meta-analysis">Meta-Analysis</a></li>
@@ -415,13 +414,15 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've installed these before</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lmerTest"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lmerTest"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lmerTest)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="hypothesis-framing-aside" class="level2">
@@ -735,12 +736,95 @@ road.dst_km -0.847</code></pre>
 <li>X, W, and Z together explain the most variation in Y</li>
 </ol>
 <p>We might also fit other candidate models for pairs of X, W, and Z but for the sake of simplicity in this hypothetical we’ll skip those. Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!</p>
-<p>Once we’ve fit all of our models and assigned them to objects, we can use the <code>AIC</code> function included in base R to compare the AIC score of each model. “AIC” stands for <u>A</u>kaike (<em>AH-kuh-ee-kay</em>) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model’s explanatory power. The lowest AIC best explains the data and models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data. Technically any difference in AIC indicates model improvement but many scientists use a rule of thumb of a difference of 2. So, if two models have AIC scores that differ by less than 2, you can safely say that they have comparable explanatory power. That is definitely a semi-arbitrary threshold but so is the 0.05 threshold for <em>p</em>-value “significance”.</p>
-<section id="philosophical-note-model-weights-model-averaging" class="level3">
-<h3 class="anchored" data-anchor-id="philosophical-note-model-weights-model-averaging">Philosophical Note: Model Weights &amp; Model Averaging</h3>
-</section>
+<p>Once we’ve fit all of our models and assigned them to objects, we can use the <code>AIC</code> function included in base R to compare the AIC score of each model. “AIC” stands for <u>A</u>kaike (<em>AH-kuh-ee-kay</em>) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model’s explanatory power. Models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data.</p>
+<p>The model with the <em>lowest</em> AIC best explains the data. Technically any difference in AIC indicates model improvement but many scientists use a rule of thumb of a difference of 2. So, if two models have AIC scores that differ by less than 2, you can safely say that they have comparable explanatory power. That is definitely a semi-arbitrary threshold but so is the 0.05 threshold for <em>p</em>-value “significance”.</p>
 <section id="aic-case-study" class="level3">
 <h3 class="anchored" data-anchor-id="aic-case-study">AIC Case Study</h3>
+<p>Let’s check out an example using AIC to compare the strengths of several models. Rather than using simulated data–as we did earlier in the mixed-effect model section–we’ll use some real penguin data included in the <code>palmerpenguins</code> package.</p>
+<p>This dataset includes annual data on three penguin species spread across several islands. The sex of the penguins was also recorded in addition to the length of their flippers, body mass, and bill length and depth.</p>
+<p>For the purposes of this example, our research question is as follows: <strong>what factors best explain penguin body mass?</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-9-1"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the penguins data from the `palmerpenguins` package</span></span>
+<span id="annotated-cell-9-2"><a href="#annotated-cell-9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(penguins)</span>
+<span id="annotated-cell-9-3"><a href="#annotated-cell-9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-9-4"><a href="#annotated-cell-9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a version where no NAs are allowed</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-5" class="code-annotation-target"><a href="#annotated-cell-9-5" aria-hidden="true" tabindex="-1"></a>peng_complete <span class="ot">&lt;-</span> penguins[<span class="fu">complete.cases</span>(penguins), ]</span>
+<span id="annotated-cell-9-6"><a href="#annotated-cell-9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-9-7"><a href="#annotated-cell-9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure of it</span></span>
+<span id="annotated-cell-9-8"><a href="#annotated-cell-9-8" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(peng_complete)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-9" data-code-lines="5" data-code-annotation="1">This is a base R way of keeping only rows that have <em>no</em> <code>NA</code> values in any column. It is better to identify and handle <code>NA</code>s more carefully but for this context we just want to have the same number of observations in each model</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 333
+Columns: 8
+$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, 36.7, 39.3, 38.9, 39.2, 41.1, 38.6…
+$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, 19.3, 20.6, 17.8, 19.6, 17.6, 21.2…
+$ flipper_length_mm &lt;int&gt; 181, 186, 195, 193, 190, 181, 195, 182, 191, 198, 18…
+$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, 3450, 3650, 3625, 4675, 3200, 3800…
+$ sex               &lt;fct&gt; male, female, female, female, male, female, male, fe…
+$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
+</div>
+</div>
+<p>With our data in hand and research question in mind, we can fit several candidate models that our scientific intuition and the published literature support as probable then compare them with AIC.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-10"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-10-1"><a href="#annotated-cell-10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Species and sex</span></span>
+<span id="annotated-cell-10-2"><a href="#annotated-cell-10-2" aria-hidden="true" tabindex="-1"></a>mod_spp <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> species <span class="sc">+</span> sex, <span class="at">data =</span> peng_complete)</span>
+<span id="annotated-cell-10-3"><a href="#annotated-cell-10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-10-4"><a href="#annotated-cell-10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Island alone</span></span>
+<span id="annotated-cell-10-5"><a href="#annotated-cell-10-5" aria-hidden="true" tabindex="-1"></a>mod_isl <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> island, <span class="at">data =</span> peng_complete)</span>
+<span id="annotated-cell-10-6"><a href="#annotated-cell-10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-10-7"><a href="#annotated-cell-10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Combination of species and island</span></span>
+<span id="annotated-cell-10-8"><a href="#annotated-cell-10-8" aria-hidden="true" tabindex="-1"></a>mod_eco <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> island <span class="sc">+</span> species <span class="sc">+</span> sex, <span class="at">data =</span> peng_complete)</span>
+<span id="annotated-cell-10-9"><a href="#annotated-cell-10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-10-10"><a href="#annotated-cell-10-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Body characteristics alone</span></span>
+<span id="annotated-cell-10-11"><a href="#annotated-cell-10-11" aria-hidden="true" tabindex="-1"></a>mod_phys <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> flipper_length_mm <span class="sc">+</span> bill_length_mm <span class="sc">+</span> bill_depth_mm,</span>
+<span id="annotated-cell-10-12"><a href="#annotated-cell-10-12" aria-hidden="true" tabindex="-1"></a>               <span class="at">data =</span> peng_complete)</span>
+<span id="annotated-cell-10-13"><a href="#annotated-cell-10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-10-14"><a href="#annotated-cell-10-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Global model</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-10" data-target-annotation="1">1</button><span id="annotated-cell-10-15" class="code-annotation-target"><a href="#annotated-cell-10-15" aria-hidden="true" tabindex="-1"></a>mod_sink <span class="ot">&lt;-</span> <span class="fu">lm</span>(body_mass_g <span class="sc">~</span> island <span class="sc">+</span> species <span class="sc">+</span> sex <span class="sc">+</span></span>
+<span id="annotated-cell-10-16"><a href="#annotated-cell-10-16" aria-hidden="true" tabindex="-1"></a>               flipper_length_mm <span class="sc">+</span> bill_length_mm <span class="sc">+</span> bill_depth_mm,</span>
+<span id="annotated-cell-10-17"><a href="#annotated-cell-10-17" aria-hidden="true" tabindex="-1"></a>               <span class="at">data =</span> peng_complete)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-10" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-10" data-code-lines="15" data-code-annotation="1">We’ve named the global model “sink” because of the American idiom “everything but the kitchen sink.” It is used in cases where everything that can be included has been</span>
+</dd>
+</dl>
+</div>
+</div>
+<p>Once we’ve fit all of these models, we can use the <code>AIC</code> function from base R (technically from the <code>stats</code> package included in base R).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-11"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-11-1"><a href="#annotated-cell-11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare models</span></span>
+<span id="annotated-cell-11-2"><a href="#annotated-cell-11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">AIC</span>(mod_spp, mod_isl, mod_eco, mod_phys, mod_sink) <span class="sc">%&gt;%</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="1">1</button><span id="annotated-cell-11-3" class="code-annotation-target"><a href="#annotated-cell-11-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(AIC)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-11" data-code-lines="3" data-code-annotation="1">Unfortunately, the <code>AIC</code> function doesn’t sort by AIC score automatically so we’re using the <code>arrange</code> function to make it easier for us to rank models by their AIC scores</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         df      AIC
+mod_sink 10 4727.242
+mod_spp   5 4785.594
+mod_eco   7 4789.480
+mod_phys  5 4929.554
+mod_isl   4 5244.224</code></pre>
+</div>
+</div>
+<p>Interestingly, it looks like the best model (i.e., the one that explains most of the data) is the global model that included most of the available variables. As stated earlier, it is not always the case that the model with the most parameters has the lowest AIC so we can be confident this is a “real” result. The difference between that one and the next (incidentally the model where only species and sex are included as explanatory variables) is much larger than 2 so we can be confident that the global model is much better than the next best.</p>
+<p>With this result your interpretation would be that penguin body mass is better explained by a combination of species, sex, physical characteristics of the individual penguin, and the penguin’s home island than it is by any of the other candidate models. In a publication you’d likely want to report this entire AIC table (either parenthetically or in a table) so that reviewers could evaluate your logic.</p>
 </section>
 </section>
 <section id="meta-analysis" class="level2">
