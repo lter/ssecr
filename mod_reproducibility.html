@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -283,7 +283,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./mod_next-steps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Next Steps &amp; Proposals</span></a>
+ <span class="menu-text">Next Steps</span></a>
   </div>
 </li>
       </ul>
@@ -464,6 +464,7 @@ Activity: Create a README
 <li><strong>Use one folder per project</strong></li>
 </ol>
 <p>Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.</p>
+<p>Note that <u>how you define “projct” may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.</p>
 <ol start="2" type="1">
 <li><strong>Organize content with sub-folders</strong></li>
 </ol>
@@ -658,7 +659,7 @@ Discussion: Project Structure
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get to actual work</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>. . .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way thus lets everyone reading the code know exactly which packages they will need to have installed.</p>
+<p>In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way cuts down on the number of lines while still being precise about which packages are needed in the script.</p>
 <p>If you are feeling generous you could use the <a href="https://cran.r-project.org/web/packages/librarian/index.html"><code>librarian</code> R package</a> to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load `librarian` package</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(librarian)</span>
