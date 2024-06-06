@@ -52,7 +52,7 @@ website:
               href: mod_stats.qmd
       - section: "Phase IV -- Magnify"
         contents:
-            - text: "Next Steps & Proposals"
+            - text: "Next Steps"
               href: mod_next-steps.qmd
       - section: "Phase V -- Share"
         contents:

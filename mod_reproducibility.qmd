@@ -63,6 +63,8 @@ Here are some rules to keep in mind as you decide how to organize your project:
 
 Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.
 
+Note that <u>how you define "projct" may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.
+
 2. **Organize content with sub-folders**
 
 Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don't feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.
@@ -256,7 +258,7 @@ library(dplyr); library(magrittr); library(ggplot2)
 . . .
 ```
 
-In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way thus lets everyone reading the code know exactly which packages they will need to have installed.
+In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way cuts down on the number of lines while still being precise about which packages are needed in the script.
 
 If you are feeling generous you could use the [`librarian` R package](https://cran.r-project.org/web/packages/librarian/index.html) to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:
 

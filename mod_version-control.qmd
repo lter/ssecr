@@ -17,20 +17,70 @@ After completing this module you will be able to:
 - <u>Sketch</u> the RStudio-to-GitHub order of operations
 - <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
 
-## Module Content
+## NCEAS SciComp Workshop Materials
 
 The workshop materials we will be working through live [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
 
  ```{=html}
-<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="550" width="900" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
 ```
+
+## Collaborating with Git
+
+It is important to remember that while Git is a phenomenal tool for collaboration, it is _not_ Google Docs! <u>You can work together but you cannot work simultaneously in the same files</u>. Working at the same time is how merge conflicts happen which can be a huge pain to untangle after the fact. Fortunately, avoiding merge conflicts is relatively simple! Here are a few strategies for avoiding conflicts.
+
+:::{.panel-tabset}
+## Separate Scripts
+
+At it's simplest, you can make a separate script for each group member and have each of you work _exclusively_ in your own script. If no one ever works in your script you will never have a merge conflict even if you are working in your script at the same time as someone else is working in theirs.
+
+You can do this by all working on separate scripts that are trying to do the same thing or you can delegate a particular script in the workflow to a single person (e.g., one person is the only one allowed to edit the 'data wrangling' script, another is the only one allowed to edit the 'analysis' script, etc.)
+
+**Recommendation: Worth Discussing!**
+
+## Work in Shifts
+
+You might also decide to work together on the same scripts and just stagger the time that you are doing stuff so that all of your changes are made, committed, and pushed before the next person begins work. This is a particularly nice option if you have people in different time zones because someone in Maine can work on code likely before another team member living in Oregon has even woken up much less started working on code.
+
+For this to work _you will need to communicate extensively with the rest of your team_ so that you are absolutely sure that you won't start working before someone else has finished their edits.
+
+**Recommendation: Worth Discussing!**
+
+## Work in Forks
+
+GitHub does offer a "fork" feature where people can make a copy of a given repository that they then 'own'. Forks are connected to the source repository and you can open a pull request to get the edits from one fork into the source repository.
+
+This may sound like a perfect fit for collaboration but in reality it introduces significant hurdles! Consider the following:
+
+1. It is difficult to know where the "best" version of the code lives
+
+It is equally likely for the primary code version to be in any group member's fork (or the original fork). So if you want to re-run a set of analyses you'll need to hunt down which fork the current script lives in rather than consulting a single repository in which you all work together.
+
+2. You essentially gaurantee significant merge conflicts
+
+If everyone is working independently and submitting pull requests to merge back into the main repository you all but ensure that people will make different edits that GitHub then doesn't know how to resolve. The pull request will tell you that there are merge conflicts but you still need to fix them yourself--and now that fixing effort must be done in someone else's fork of the repository.
+
+3. It's not the intended use of GitHub forks
+
+Forks are intended for when you want to take a set of code and then "go your own way" with that code base. While there is a mechanism for contributing those edits back to the main repository it's really better used when you never intend to do a pull request and thus don't have to worry about eventual merge conflicts. A good example here is you might attend a workshop and decide to offer a similar workshop yourself. You could then fork the original workshop's repository to serve as a starting point for your version and save yourself from unnecessary labor. It would be bizarre for you to suggest that your workshop should _replace_ the original one even if did begin with that content.
+
+**Recommendation: Don't Do This**
+
+## Single Code Author
+
+You may be tempted to just delegate all code editing to a single person in the group. While this strategy does guarantee that there will never be a merge conflict it is also deeply inequitable as it places an unfair share of the labor of the project on one person.
+
+Practically-speaking this also encourages an atmosphere where only one person can even _read_ your group's code. This makes it difficult for other group members to contribute and ultimately may cause your group to 'miss out on' novel insights.
+
+**Recommendation: Don't Do This**
+:::
 
 ## Additional Resources
 
 ### Papers & Documents
 
-- [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). Pereira Braga _et al._, 2023. **Methods in Ecology and Evolution**
-- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). GitHub
+- Pereira Braga _et al._, [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
+- GitHub, [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
 
 ### Workshops & Courses
 

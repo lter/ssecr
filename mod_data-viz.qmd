@@ -434,6 +434,16 @@ ggplot() +
 
 :::
 
+## Ordination
+
+If you are working with multivariate data (i.e., data where multiple columns are all response variables collectively) you may find ordination helpful. Ordination is the general term for many types of multivariate visualization but typically is used to refer to visualizing a distance or dissimiliarity measure of the data. Such measures collapse all of those columns of response variables into fewer (typically two) index values that are easier to visualize. Common examples of this include <u>P</u>rincipal <u>C</u>omponents <u>A</u>nalysis (PCA), <u>N</u>on-<u>M</u>etric <u>M</u>ultidimensional <u>S</u>caling (NMS / NMDS), or <u>P</u>rincipal <u>Co</u>ordinates <u>A</u>nalysis (PCoA / "metric multidimensional scaling").
+
+## Maps
+
+You may find it valuable to create a map as an additional way of visualizing data. Many synthesis groups do this--particularly when there is a strong spatial component to the research questions and/or hypotheses.
+
+Check out the [bonus spatial data module](https://lter.github.io/ssecr/mod_spatial.html) for more information on map-making if this is of interest!
+
 ## Additional Resources
 
 ### Papers & Documents
