@@ -356,7 +356,7 @@
     "href": "mod_data-viz.html#ordination",
     "title": "Data Visualization & Exploration",
     "section": "Ordination",
-    "text": "Ordination\nIf you are working with multivariate data (i.e., data where multiple columns are all response variables collectively) you may find ordination helpful. Ordination is the general term for many types of multivariate visualization but typically is used to refer to visualizing a distance or dissimiliarity measure of the data. Such measures collapse all of those columns of response variables into fewer (typically two) index values that are easier to visualize. Common examples of this include Principal Components Analysis (PCA), Non-Metric Multidimensional Scaling (NMS / NMDS), or Principal Coordinates Analysis (PCoA / “metric multidimensional scaling”).",
+    "text": "Ordination\nIf you are working with multivariate data (i.e., data where multiple columns are all response variables collectively) you may find ordination helpful. Ordination is the general term for many types of multivariate visualization but typically is used to refer to visualizing a distance or dissimiliarity measure of the data. Such measures collapse all of those columns of response variables into fewer (typically two) index values that are easier to visualize. Common examples of this include Principal Components Analysis (PCA), Nonmetric Multidimensional Scaling (NMS / NMDS), or Principal Coordinates Analysis (PCoA / “metric multidimensional scaling”).",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
