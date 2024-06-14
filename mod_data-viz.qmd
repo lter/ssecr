@@ -468,10 +468,44 @@ str(lichen_df[1:5])
 
 ### Metric Ordination
 
+Metric ordinations are typically used when you are concerned with retaining quantitative differences among particular points, _even after you've collapsed many response variables into just one or two_. For example, this is a common approach if you have a table of traits and want to compare the whole set of traits among groups while still being able to interpret the effect of a particular effect on the whole.
 
+Two of the more common methods for metric ordination are <u>P</u>rincipal <u>C</u>omponents <u>A</u>nalysis (PCA), and <u>P</u>rincipal <u>Co</u>ordinates <u>A</u>nalysis (PCoA / "metric multidimensional scaling"). The primary difference is that PCA works on the data directly while PCoA works on a distance matrix of the data. We'll use PCoA in this example because it is closer analog to the non-metric ordination discussed in the other tab. **If the holistic difference among groups is of interest,** (rather than metric point-to-point comparisons), **consider a non-metric ordination approach.**
 
+In order to perform a PCoA ordination we first need to get a distance matrix of our response variables and then we can actually do the PCoA step. The distance matrix can be calculated with the `vegdist` function from the `vegan` package and the `pcoa` function in the `ape` package can do the actual PCoA.
 
-Common examples of this include <u>P</u>rincipal <u>C</u>omponents <u>A</u>nalysis (PCA), , or <u>P</u>rincipal <u>Co</u>ordinates <u>A</u>nalysis (PCoA / "metric multidimensional scaling").
+```{r pcoa-prep}
+#| message: false
+#| output: false
+
+# Load needed libraries
+library(vegan); library(ape)
+
+# Get distance matrix
+lichen_dist <- vegan::vegdist(x = lichen_df[-1], method = "kulczynski") # <1>
+
+# Do PCoA
+pcoa_points <- ape::pcoa(D = lichen_dist)
+```
+1. The `method` argument requires a distance/dissimilarity measure. Note that **if you use a non-metric measure** (e.g., Bray Curtis, etc.) **you lose many of the advantages conferred by using a metric ordination approach**.
+
+With that in hand, we can make our ordination! While you could make this step-by-step on your own, we'll use the `ordination` function from the `supportR` package for convenience. This function automatically uses colorblind safe colors for up to 10 groups and has some useful base plot defaults (as well as including ellipses around the standard deviation of the centorid of all groups).
+
+```{r pcoa-ord}
+#| fig-align: center
+#| fig-width: 7
+#| fig-height: 5
+
+# Load the library
+library(supportR)
+
+# Make the ordination
+supportR::ordination(mod = pcoa_points, grps = lichen_df$treatment, 
+                     x = "topleft", legend = c("A", "B")) #<1>
+```
+1. This function allows several base plot arguments to be supplied to alter non-critical plot elements (e.g., legend position, point size, etc.)
+
+The percentages included in parentheses on either axis label are the percent of the total variation in the data explained by each axis on its own. Use this information in combination with what the graph looks like to determine how different the groups truly are.
 
 
 ### Non-Metric Ordination
@@ -493,12 +527,15 @@ In order to perform an NMS ordination we'll first need to calculate a dissimilar
 #| message: false
 #| output: false
 
+# Load needed libraries
+library(vegan)
+
 # Get dissimilarity matrix
 dissim_mat <- vegan::metaMDS(comm = lichen_df[-1], distance = "bray", k = 2,
                              autotransform = F, expand = F, try = 50)
 ```
 
-With that in hand, we can make our ordination! While you could make this step-by-step on your own, we'll use the `ordination` function from the `supportR` package for convenience. This function automatically uses colorblind safe colors for up to 10 groups and has some useful base plot defaults (as well as including ellipses around the standard deviation of the centorid of all groups)
+With that in hand, we can make our ordination! While you could make this step-by-step on your own, we'll use the `ordination` function from the `supportR` package for convenience. This function automatically uses colorblind safe colors for up to 10 groups and has some useful base plot defaults (as well as including ellipses around the standard deviation of the centorid of all groups).
 
 ```{r nms-ord}
 #| fig-align: center
