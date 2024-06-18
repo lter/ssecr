@@ -1095,7 +1095,7 @@
     "href": "mod_spatial.html#additional-spatial-resources",
     "title": "Working with Spatial Data",
     "section": "Additional Spatial Resources",
-    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\nJason Flower’s (UC Santa Barbara) Introduction to rasters with terra\n\n\n\nWebsites\n\nNASA’s Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) Portal",
+    "text": "Additional Spatial Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\nJason Flower’s (UC Santa Barbara) Introduction to rasters with terra\nKing, R. Spatial Data Visualization workshop\n\n\n\nWebsites\n\nNASA’s Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) Portal",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
