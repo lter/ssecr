@@ -55,6 +55,7 @@ install.packages("tidyverse")
 - The Carpentries' [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/index.html)
 - Arctic Data Center's [Spatial and Image Data Using GeoPandas](https://learning.nceas.ucsb.edu/2023-03-arctic/sections/geopandas.html) chapter of their Scalable Computing course
 - Jason Flower's (UC Santa Barbara) [Introduction to rasters with `terra`](https://jflowernet.github.io/intro-terra-ecodatascience/)
+- King, R. [Spatial Data Visualization](https://github.com/king0708/spatial-data-viz) workshop
 
 ### Websites
 
