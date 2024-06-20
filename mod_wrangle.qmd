@@ -142,7 +142,26 @@ With a group of 4-5 others discuss the following questions:
 
 You may have encountered the phrase "QA/QC" (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality assurance only encapsulates _preventative_ measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors _after_ data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.
 
-In synthesis work, QA is only very rarely an option. You'll be working with datasets that have already been collected and attempting to handle any issues _post hoc_ which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be **incredibly** time-consuming so using a programming language (like {{< fa brands r-project >}} R or {{< fa brands python >}} Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.
+In synthesis work, QA is only very rarely an option. You'll be working with datasets that have already been collected and attempting to handle any issues _post hoc_ which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be **incredibly** time-consuming so using a programming language (like R or Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.
+
+#### QC Considerations
+
+The datasets you gather for your synthesis project will likely have a multitude of issues you'll need to resolve before the data are ready for visualization or analysis. Some of these issues may be clearly identified in that datasets' metadata or apply to all datasets but it is good practice to make a thorough QC effort as early as is feasible. Keep the following data issues and/or checks in mind as we cover code tools that may be useful in this context later in the module.
+
+- Verify taxonomic classificiations against authorities
+    - [ITIS](https://www.itis.gov/), [GBIF](https://www.gbif.org/), and [WoRMS](https://www.marinespecies.org/) are all examples of taxonomic authorities
+    - Note that many of these authorities have R or Python libraries that can make this verification step scripted rather than dependent on manual searches
+- Handle missing data
+    - Some datasets will use a code to indicate missing values (likely identified in their metadata) while others will just have empty cells
+- Check for unreasonable values / outliers
+    - Can use conditionals to create "flags" for these values or just filter them out
+- Check geographic coordinates' reasonability
+    - E.g., western hemisphere coordinates may lack the minus sign
+- Check date formatting
+    - I.e., if all sampling is done in the first week of each month it can be difficult to say whether a given date is formatted as MM/DD/YY or DD/MM/YY
+- Consider spatial and temporal granularity among datasets
+    - You may need to aggregate data from separate studies in different ways to ensure that the data are directly comparable across all of the data you gather
+- Handle duplicate data / rows
 
 #### Number Checking
 
@@ -247,7 +266,6 @@ In a script, attempt the following with the PIE crab data:
     - _Hint:_ consult the `summary` function output!
 
 :::
-
 
 ### Uniting / Separating Columns
 
