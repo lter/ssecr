@@ -36,16 +36,16 @@ website:
         contents:
             - text: "Inclusive Facilitation"
               href: mod_facilitation.qmd
-            - text: "Data Visualization"
-              href: mod_data-viz.qmd
+            - text: "Data Wrangling"
+              href: mod_wrangle.qmd
             - text: "Project Management"
               href: mod_project-mgmt.qmd
       - section: "Phase III -- Execute"
         contents:
             - text: "Supporting D.E.C. Thinking"
               href: mod_thinking.qmd
-            - text: "Data Wrangling"
-              href: mod_wrangle.qmd
+            - text: "Data Visualization"
+              href: mod_data-viz.qmd
             - text: "Intellectual Credit"
               href: mod_credit.qmd
             - text: "Analysis & Modeling"
@@ -69,6 +69,10 @@ website:
   navbar:
     background: primary
     right: 
+      - text: "Projects"
+        menu:
+            - text: "Milestones"
+              href: proj_milestones.qmd
       - text: "Instructors"
         href: instructors.qmd
       - icon: github
