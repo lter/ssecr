@@ -311,10 +311,7 @@ In order to calculate these effect sizes you'll need to extract the following in
     - Typically standard deviation
 3. The sample size of the response
 
-### Extracting Study Results
-
-
-
+Once you have that information, you can calculate effect sizes for the various groups in each study. Note that the importance of this information to meta-analyses should also highlight <u>how vital it is that you report this information in your own research</u>! Doing so will enable future meta-analyses to include your study and increase the scientific impact of your work as well as its professional benefits to you.
 
 ### Calculating Effect Sizes
 
