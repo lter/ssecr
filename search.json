@@ -815,7 +815,7 @@
     "href": "mod_stats.html#additional-resources",
     "title": "Analysis & Modeling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nUnderstanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. Spake et al., 2023. Biological Reviews\nImproving Quantitative Synthesis to Achieve Generality in Ecology. Spake et al., 2022.Nature Ecology and Evolution\nDoing Meta-Analysis with R: A Hands-On Guide. Harrier et al. 2023.\nMixed Effects Models and Extensions in Ecology with R. Zuur et al., 2009.\n\n\n\nWorkshops & Courses\n\nMatt Vuorre’s Bayesian Meta-Analysis with R, Stan, and brms\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nUnderstanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. Spake et al., 2023. Biological Reviews\nImproving Quantitative Synthesis to Achieve Generality in Ecology. Spake et al., 2022.Nature Ecology and Evolution\nDoing Meta-Analysis with R: A Hands-On Guide. Harrier et al. 2023.\nMixed Effects Models and Extensions in Ecology with R. Zuur et al., 2009.\n\n\n\nWorkshops & Courses\n\nMatt Vuorre’s Bayesian Meta-Analysis with R, Stan, and brms\n\n\n\nWebsites\n\nBayesian Meta-Analysis in brms-II. Solomon Kurz, A., 2022.\nMeta-Analysis with R slide deck. Viechtbauer, W., 2022.\nThe metafor Package: A Meta-Analysis Package for R. Viechtbauer, W., 2021.\nBayesian Meta-Analysis in brms. Solomon Kurz, A., 2018.",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
