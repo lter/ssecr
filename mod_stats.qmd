@@ -348,4 +348,7 @@ After you've calculated all relevant effect sizes--using your chosen flavor of e
 
 ### Websites
 
-- 
+- [Bayesian Meta-Analysis in brms-II](https://solomonkurz.netlify.app/blog/2020-10-16-bayesian-meta-analysis-in-brms-ii/). Solomon Kurz, A., 2022.
+- [Meta-Analysis with R](https://github.com/wviechtb/workshop_2022_ma_esmarconf/blob/master/workshop_meta-analysis.pdf) slide deck. Viechtbauer, W., 2022.
+- [The `metafor` Package: A Meta-Analysis Package for R](https://www.metafor-project.org/doku.php/tips:rma_vs_lm_lme_lmer?s%5B%5D=lme4). Viechtbauer, W., 2021.
+- [Bayesian Meta-Analysis in brms](https://solomonkurz.netlify.app/blog/bayesian-meta-analysis/). Solomon Kurz, A., 2018.
