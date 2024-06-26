@@ -33,6 +33,7 @@ If you'd like to follow along with the code chunks included throughout this modu
 install.packages("tidyverse")
 install.packages("lmerTest")
 install.packages("palmerpenguins")
+install.packages("esc")
 ```
 
 We'll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.
@@ -313,16 +314,24 @@ In order to calculate these effect sizes you'll need to extract the following in
 
 Once you have that information, you can calculate effect sizes for the various groups in each study. Note that the importance of this information to meta-analyses should also highlight <u>how vital it is that you report this information in your own research</u>! Doing so will enable future meta-analyses to include your study and increase the scientific impact of your work as well as its professional benefits to you.
 
-### Calculating Effect Sizes
+One such effect size is Cohen's _d_ and is a reasonable effect size for quantifying the difference in means between two groups. In order to perform this calculation you simply need the mean, standard deviation, and sample size for two groups. Let's check out an example to demonstrate.
 
+```{r meta-cohen-d}
+# Load needed library
+library(esc)
 
+# Calculate Cohen's d
+calc_effect <- esc::esc_mean_sd(grp1m = 50, grp2m = 60, 
+                                grp1sd = 10, grp2sd = 10, 
+                                grp1n = 50, grp2n = 50)
 
+# Check out output
+calc_effect
+```
 
-### Performing Meta-Analysis
+Note that Cohen's _d_ is just one effect size available to you and others may be more appropriate in certain contexts. Just like any other metric, which effect size you choose is a mix of your scientific intution and appropriateness for the content of your data. For a deeper dive into the breadth of effect size considerations available to you, see [the relevant chapter](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/effects.html#effects) of the _Doing Meta-Analysis in R_ online book.
 
-
-
-
+After you've calculated all relevant effect sizes--using your chosen flavor of effect size--the "actual" meta-analysis is nearly finished. Simply create a graph of the effect sizes with error bars indicating confidence intervals (included by default in most effect size functions). Where the error bars overlap among studies, there is no significant difference between those effect sizes. Conversely, where the error bars _do not_ overlap among studies the effect sizes do significantly differ indicating that the studies results' differ for the data used to calculate the effect size.
 
 ## Additional Resources
 
