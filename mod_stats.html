@@ -370,11 +370,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#aic-case-study" id="toc-aic-case-study" class="nav-link" data-scroll-target="#aic-case-study">AIC Case Study</a></li>
   </ul></li>
-  <li><a href="#meta-analysis" id="toc-meta-analysis" class="nav-link" data-scroll-target="#meta-analysis">Meta-Analysis</a>
-  <ul class="collapse">
-  <li><a href="#calculating-effect-sizes" id="toc-calculating-effect-sizes" class="nav-link" data-scroll-target="#calculating-effect-sizes">Calculating Effect Sizes</a></li>
-  <li><a href="#performing-meta-analysis" id="toc-performing-meta-analysis" class="nav-link" data-scroll-target="#performing-meta-analysis">Performing Meta-Analysis</a></li>
-  </ul></li>
+  <li><a href="#meta-analysis" id="toc-meta-analysis" class="nav-link" data-scroll-target="#meta-analysis">Meta-Analysis</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -435,7 +431,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've installed these before</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lmerTest"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"esc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We’ll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.</p>
 <div class="cell">
@@ -865,12 +862,33 @@ mod_isl   4 5244.224</code></pre>
 <li>The sample size of the response</li>
 </ol>
 <p>Once you have that information, you can calculate effect sizes for the various groups in each study. Note that the importance of this information to meta-analyses should also highlight <u>how vital it is that you report this information in your own research</u>! Doing so will enable future meta-analyses to include your study and increase the scientific impact of your work as well as its professional benefits to you.</p>
-<section id="calculating-effect-sizes" class="level3">
-<h3 class="anchored" data-anchor-id="calculating-effect-sizes">Calculating Effect Sizes</h3>
-</section>
-<section id="performing-meta-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="performing-meta-analysis">Performing Meta-Analysis</h3>
-</section>
+<p>One such effect size is Cohen’s <em>d</em> and is a reasonable effect size for quantifying the difference in means between two groups. In order to perform this calculation you simply need the mean, standard deviation, and sample size for two groups. Let’s check out an example to demonstrate.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed library</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(esc)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate Cohen's d</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>calc_effect <span class="ot">&lt;-</span> esc<span class="sc">::</span><span class="fu">esc_mean_sd</span>(<span class="at">grp1m =</span> <span class="dv">50</span>, <span class="at">grp2m =</span> <span class="dv">60</span>, </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>                                <span class="at">grp1sd =</span> <span class="dv">10</span>, <span class="at">grp2sd =</span> <span class="dv">10</span>, </span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>                                <span class="at">grp1n =</span> <span class="dv">50</span>, <span class="at">grp2n =</span> <span class="dv">50</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out output</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>calc_effect</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Effect Size Calculation for Meta Analysis
+
+     Conversion: mean and sd to effect size d
+    Effect Size:  -1.0000
+ Standard Error:   0.2121
+       Variance:   0.0450
+       Lower CI:  -1.4158
+       Upper CI:  -0.5842
+         Weight:  22.2222</code></pre>
+</div>
+</div>
+<p>Note that Cohen’s <em>d</em> is just one effect size available to you and others may be more appropriate in certain contexts. Just like any other metric, which effect size you choose is a mix of your scientific intution and appropriateness for the content of your data. For a deeper dive into the breadth of effect size considerations available to you, see <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/effects.html#effects">the relevant chapter</a> of the <em>Doing Meta-Analysis in R</em> online book.</p>
+<p>After you’ve calculated all relevant effect sizes–using your chosen flavor of effect size–the “actual” meta-analysis is nearly finished. Simply create a graph of the effect sizes with error bars indicating confidence intervals (included by default in most effect size functions). Where the error bars overlap among studies, there is no significant difference between those effect sizes. Conversely, where the error bars <em>do not</em> overlap among studies the effect sizes do significantly differ indicating that the studies results’ differ for the data used to calculate the effect size.</p>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
