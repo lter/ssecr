@@ -7,7 +7,7 @@
 # Create example dataset with simulated "random" effects
 
 ## ------------------------------------ ##
-          # Housekeeping ----
+           # Housekeeping ----
 ## ------------------------------------ ##
 # Load needed libraries
 ## install.packages("librarian")

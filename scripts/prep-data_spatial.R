@@ -1,27 +1,30 @@
-## -------------------------------------- ##
-        # Spatial Module Prep Work
-## -------------------------------------- ##
-# Author(s): Nick J Lyon
+## ------------------------------------------------ ##
+            # Data Prep - Spatial Data
+## ------------------------------------------------ ##
+# Script author(s): Nick J Lyon
 
-# Purpose:
-## Prepare data for the spatial modules
+## Purpose:
+# Prepare raster/vector data for course
 
-## ----------------------- ##
-    # Housekeeping ----
-## ----------------------- ##
-
+## ------------------------------------ ##
+            # Housekeeping ----
+## ------------------------------------ ##
 # Load needed libraries
-librarian::shelf(sf, terra)
+## install.packages("librarian")
+librarian::shelf(tidyverse, sf, terra, googledrive)
 
-# Create the 'data' folder if it doesn't exist
-dir.create(path = file.path("data"), showWarnings = F)
+# Make a folder for storing this data
+dir.create(path = file.path("data"), showWarnings = FALSE)
+
+# Authorize R to work with Google Drive
+googledrive::drive_auth()
 
 # Clear environment
 rm(list = ls())
 
-## ----------------------- ##
-  # Vector Data Prep ----
-## ----------------------- ##
+## ------------------------------------ ##
+          # Vector Data Prep ----
+## ------------------------------------ ##
 
 # Identify path to `sf` North Carolina vector data
 sf_file <- system.file(file.path("shape", "nc.shp"), package = "sf")
@@ -36,19 +39,24 @@ sf_wgs84 <- sf::st_transform(x = sf_obj, crs = 4326)
 plot(sf_wgs84["AREA"], axes = T)
 
 # Export locally to a more easily accessible directory
-sf::st_write(obj = sf_wgs84, dsn = file.path("data", "nc.shp"), delete_layer = T)
+sf::st_write(obj = sf_wgs84, dsn = file.path("data", "nc_borders.shp"), delete_layer = T)
 
-## ----------------------- ##
-  # Raster Data Prep ----
-## ----------------------- ##
+## ------------------------------------ ##
+          # Raster Data Prep ----
+## ------------------------------------ ##
 
 # Data source info:
 ## NASA Shuttle Radar Topography Mission Global 3 arc second
 ## https://lpdaac.usgs.gov/products/srtmgl3v003/
 
-# Download note:
-## Downloaded and placed in "data" folder manually
-## Used NASA's AppEEARS portal for doing the downloading
+# Identify folder in SSECR Shared Drive
+raster_drive <- googledrive::as_id("https://drive.google.com/drive/u/0/folders/1CBC-nFVVJoydMjnd88_sJU2D92HIZ31V")
+
+# Find and download the data
+googledrive::drive_ls(path = raster_drive) %>% 
+  dplyr::filter(name == "SRTMGL3_NC.003_SRTMGL3_DEM_doy2000042_aid0001.tif") %>% 
+  googledrive::drive_download(file = .$id, overwrite = T,
+                              path = file.path("data", .$name))
 
 # Load data
 rast_raw <- terra::rast(x = file.path("data", "SRTMGL3_NC.003_SRTMGL3_DEM_doy2000042_aid0001.tif"))
@@ -61,6 +69,6 @@ terra::plot(rast_crop)
 
 # Export locally
 terra::writeRaster(x = rast_crop, overwrite = T,
-                   filename = file.path("data", "elevation.tif"))
+                   filename = file.path("data", "nc_elevation.tif"))
 
 # End ----
