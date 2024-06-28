@@ -380,7 +380,7 @@
     "href": "mod_spatial.html",
     "title": "Working with Spatial Data",
     "section": "",
-    "text": "Under Construction",
+    "text": "Synthesis projects often have need of spatial datasets. At its simplest, it can be helpful to have a map of the original project locations including in the synthesis dataset. In more complex instances you want to extract spatial data within a certain area of sampling locations. Regardless of ‘why’ you’re using spatial data, it may come up during your primary or synthesis work and thus deserves consideration in this course’s materials. There are many modes of working with spatial data, and not all of these tools require coding literacy but for consistency with the rest of the modules this module will focus on scripted approaches to interacting with spatial data.",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
@@ -391,7 +391,7 @@
     "href": "mod_spatial.html#overview",
     "title": "Working with Spatial Data",
     "section": "",
-    "text": "Under Construction",
+    "text": "Synthesis projects often have need of spatial datasets. At its simplest, it can be helpful to have a map of the original project locations including in the synthesis dataset. In more complex instances you want to extract spatial data within a certain area of sampling locations. Regardless of ‘why’ you’re using spatial data, it may come up during your primary or synthesis work and thus deserves consideration in this course’s materials. There are many modes of working with spatial data, and not all of these tools require coding literacy but for consistency with the rest of the modules this module will focus on scripted approaches to interacting with spatial data.",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
@@ -402,7 +402,7 @@
     "href": "mod_spatial.html#learning-objectives",
     "title": "Working with Spatial Data",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine characteristics of common types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data",
+    "text": "Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine the difference between the two major types of spatial data\nManipulate spatial data with R\nIntegrate spatial data with tabular data",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
@@ -413,18 +413,18 @@
     "href": "mod_spatial.html#needed-packages",
     "title": "Working with Spatial Data",
     "section": "Needed Packages",
-    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")",
+    "text": "Needed Packages\nIf you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:\n\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\ninstall.packages(\"sf\")\ninstall.packages(\"terra\")",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
     ]
   },
   {
-    "objectID": "mod_spatial.html#raster-versus-vector-data",
-    "href": "mod_spatial.html#raster-versus-vector-data",
+    "objectID": "mod_spatial.html#types-of-spatial-data",
+    "href": "mod_spatial.html#types-of-spatial-data",
     "title": "Working with Spatial Data",
-    "section": "Raster versus Vector Data",
-    "text": "Raster versus Vector Data",
+    "section": "Types of Spatial Data",
+    "text": "Types of Spatial Data\nThere are two main types of spatial data: vector and raster. You may have cause to work either or both so we’ll describe both (and the packages they require) in the tabs below.\n\nVector DataRaster Data\n\n\nData stored as polygons / shapes\n\n\nData stored as pixels",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
@@ -435,7 +435,7 @@
     "href": "mod_spatial.html#coordinate-reference-systems",
     "title": "Working with Spatial Data",
     "section": "Coordinate Reference Systems",
-    "text": "Coordinate Reference Systems",
+    "text": "Coordinate Reference Systems\nA fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved–or at least clarified–by the use of Coordinate Reference Systems (a.k.a. “CRS”). The CRS defines the following information:",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
