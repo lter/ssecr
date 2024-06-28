@@ -5,13 +5,13 @@ code-annotations: hover
 
 ## Overview
 
-Under Construction
+Synthesis projects often have need of spatial datasets. At its simplest, it can be helpful to have a map of the original project locations including in the synthesis dataset. In more complex instances you want to extract spatial data within a certain area of sampling locations. Regardless of 'why' you're using spatial data, it may come up during your primary or synthesis work and thus deserves consideration in this course's materials. There are _many_ modes of working with spatial data, and not all of these tools require coding literacy but for consistency with the rest of the modules **this module will focus on _scripted_ approaches to interacting with spatial data**.
 
 ## Learning Objectives
 
 After completing this topic you will be able to: 
 
-- <u>Define</u> characteristics of common types of spatial data
+- <u>Define</u> the difference between the two major types of spatial data
 - <u>Manipulate</u> spatial data with R
 - <u>Integrate</u> spatial data with tabular data
 
@@ -25,21 +25,42 @@ If you'd like to follow along with the code chunks included throughout this modu
 # Note that these lines only need to be run once per computer
 ## So you can skip this step if you've installed these before
 install.packages("tidyverse")
+install.packages("sf")
+install.packages("terra")
 ```
 
-## Raster versus Vector Data
+## Types of Spatial Data
+
+There are two main types of spatial data: vector and raster. You may have cause to work either or both so we'll describe both (and the packages they require) in the tabs below.
+
+:::{.panel-tabset}
+### Vector Data
+
+Data stored as polygons / shapes
 
 
+### Raster Data
+
+Data stored as pixels
+
+:::
 
 ## Coordinate Reference Systems
 
+A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved--or at least clarified--by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. "CRS"). The CRS defines the following information:
+
+- 
 
 
 ## Making Maps
 
 
 
+
+
 ## Extracting Spatial Data
+
+
 
 
 
