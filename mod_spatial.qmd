@@ -3,6 +3,16 @@ title: "Working with Spatial Data"
 code-annotations: hover
 ---
 
+```{r design-team-note}
+#| include: false
+
+# !!! NOTE TO SSECR DESIGN TEAM !!!
+
+# This module uses raster and vector data that *are not widely available*
+# You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module
+# Reach out to Nick Lyon if questions exist
+```
+
 ## Overview
 
 Synthesis projects often have need of spatial datasets. At its simplest, it can be helpful to have a map of the original project locations including in the synthesis dataset. In more complex instances you want to extract spatial data within a certain area of sampling locations. Regardless of 'why' you're using spatial data, it may come up during your primary or synthesis work and thus deserves consideration in this course's materials. There are _many_ modes of working with spatial data, and not all of these tools require coding literacy but for consistency with the rest of the modules **this module will focus on _scripted_ approaches to interacting with spatial data**.
