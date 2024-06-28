@@ -427,19 +427,51 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Data stored as polygons / shapes</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed library</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Data stored as pixels</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed library</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </div>
 </div>
 </section>
 <section id="coordinate-reference-systems" class="level2">
 <h2 class="anchored" data-anchor-id="coordinate-reference-systems">Coordinate Reference Systems</h2>
-<p>A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved–or at least clarified–by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. “CRS”). The CRS defines the following information:</p>
+<p>A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved–or at least clarified–by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. “CRS”). All spatial data have a CRS that is explicitly identified in the data and/or the metadata because the data <em>are not interpretable</em> without knowing which CRS is used.</p>
+<p>The CRS defines the following information:</p>
+<ol type="1">
+<li><strong>Datum</strong> – model for shape of the Earth including the starting coordinate pair and angular units that together define any particular point on the planet
 <ul>
-<li></li>
-</ul>
+<li>Note that there can be global datums that work for any region of the world and local datums that only work for a particular area</li>
+</ul></li>
+<li><strong>Projection</strong> – math for the transformation to get from a round planet to a flat map</li>
+<li><strong>Additional parameters</strong> – any other information necessary to support the projection
+<ul>
+<li>E.g., the coordinates at the center of the map</li>
+</ul></li>
+</ol>
+<p>Some people use the analogy of peeling a citrus fruit and flattening the peel to describe the components of a CRS. The datum is the choice between a lemon or a grapefruit (i.e., the shape of the not-quite-spherical object) while the projection is the instructions for taking the complete peel and flattening it.</p>
+<p>You can check and transform the CRS in any scripted language that allows the loading of spatial data though the specifics do differ between the two types of spatial data we introduced earlier.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Vector CRS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Raster CRS</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><code>sf::st_crs</code></p>
+<p><code>sf::st_transform</code></p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><code>terra::crs</code></p>
+<p><code>terra::project</code></p>
+</div>
+</div>
+</div>
 </section>
 <section id="making-maps" class="level2">
 <h2 class="anchored" data-anchor-id="making-maps">Making Maps</h2>

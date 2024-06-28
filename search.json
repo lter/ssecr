@@ -424,7 +424,7 @@
     "href": "mod_spatial.html#types-of-spatial-data",
     "title": "Working with Spatial Data",
     "section": "Types of Spatial Data",
-    "text": "Types of Spatial Data\nThere are two main types of spatial data: vector and raster. You may have cause to work either or both so we’ll describe both (and the packages they require) in the tabs below.\n\nVector DataRaster Data\n\n\nData stored as polygons / shapes\n\n\nData stored as pixels",
+    "text": "Types of Spatial Data\nThere are two main types of spatial data: vector and raster. You may have cause to work either or both so we’ll describe both (and the packages they require) in the tabs below.\n\nVector DataRaster Data\n\n\nData stored as polygons / shapes\n\n# Load needed library\nlibrary(sf)\n\n\n\nData stored as pixels\n\n# Load needed library\nlibrary(terra)",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
@@ -435,7 +435,7 @@
     "href": "mod_spatial.html#coordinate-reference-systems",
     "title": "Working with Spatial Data",
     "section": "Coordinate Reference Systems",
-    "text": "Coordinate Reference Systems\nA fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved–or at least clarified–by the use of Coordinate Reference Systems (a.k.a. “CRS”). The CRS defines the following information:",
+    "text": "Coordinate Reference Systems\nA fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved–or at least clarified–by the use of Coordinate Reference Systems (a.k.a. “CRS”). All spatial data have a CRS that is explicitly identified in the data and/or the metadata because the data are not interpretable without knowing which CRS is used.\nThe CRS defines the following information:\n\nDatum – model for shape of the Earth including the starting coordinate pair and angular units that together define any particular point on the planet\n\nNote that there can be global datums that work for any region of the world and local datums that only work for a particular area\n\nProjection – math for the transformation to get from a round planet to a flat map\nAdditional parameters – any other information necessary to support the projection\n\nE.g., the coordinates at the center of the map\n\n\nSome people use the analogy of peeling a citrus fruit and flattening the peel to describe the components of a CRS. The datum is the choice between a lemon or a grapefruit (i.e., the shape of the not-quite-spherical object) while the projection is the instructions for taking the complete peel and flattening it.\nYou can check and transform the CRS in any scripted language that allows the loading of spatial data though the specifics do differ between the two types of spatial data we introduced earlier.\n\nVector CRSRaster CRS\n\n\nsf::st_crs\nsf::st_transform\n\n\nterra::crs\nterra::project",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
