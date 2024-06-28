@@ -38,19 +38,83 @@ There are two main types of spatial data: vector and raster. You may have cause 
 
 Data stored as polygons / shapes
 
+```{r data-vector}
+#| message: false
+
+# Load needed library
+library(sf)
+
+```
 
 ### Raster Data
 
 Data stored as pixels
 
+
+```{r data-raster}
+#| message: false
+
+# Load needed library
+library(terra)
+
+```
+
 :::
 
 ## Coordinate Reference Systems
 
-A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved--or at least clarified--by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. "CRS"). The CRS defines the following information:
+A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved--or at least clarified--by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. "CRS"). All spatial data have a CRS that is explicitly identified in the data and/or the metadata because the data _are not interpretable_ without knowing which CRS is used.
 
-- 
 
+The CRS defines the following information:
+
+1. **Datum** -- model for shape of the Earth including the starting coordinate pair and angular units that together define any particular point on the planet
+    - Note that there can be global datums that work for any region of the world and local datums that only work for a particular area
+2. **Projection** -- math for the transformation to get from a round planet to a flat map
+3. **Additional parameters** -- any other information necessary to support the projection
+    - E.g., the coordinates at the center of the map
+
+Some people use the analogy of peeling a citrus fruit and flattening the peel to describe the components of a CRS. The datum is the choice between a lemon or a grapefruit (i.e., the shape of the not-quite-spherical object) while the projection is the instructions for taking the complete peel and flattening it.
+
+You can check and transform the CRS in any scripted language that allows the loading of spatial data though the specifics do differ between the two types of spatial data we introduced earlier.
+
+:::{.panel-tabset}
+### Vector CRS
+
+
+`sf::st_crs`
+
+```{r crs-check-vector}
+
+
+```
+
+
+`sf::st_transform`
+
+```{r crs-transform-vector}
+
+
+```
+
+### Raster CRS
+
+`terra::crs`
+
+```{r crs-check-raster}
+
+
+```
+
+
+`terra::project`
+
+```{r crs-transform-raster}
+
+
+```
+
+:::
 
 ## Making Maps
 
