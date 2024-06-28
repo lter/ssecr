@@ -1,13 +1,13 @@
 ## ------------------------------------------------ ##
-                  # Make Example Data
+        # Data Prep - Mixed-Effects Models
 ## ------------------------------------------------ ##
 # Script author(s): Nick J Lyon
 
 ## Purpose:
-# Create example datasets that exactly meet our needs in a given module/topic
+# Create example dataset with simulated "random" effects
 
 ## ------------------------------------ ##
-# Housekeeping ----
+          # Housekeeping ----
 ## ------------------------------------ ##
 # Load needed libraries
 ## install.packages("librarian")
@@ -20,7 +20,7 @@ dir.create(path = file.path("data"), showWarnings = FALSE)
 rm(list = ls())
 
 ## ------------------------------------ ##
-  # Stats - Mixed-Effect Case Study ----
+            # Simulate Data ----
 ## ------------------------------------ ##
 # Simulate a tarantula dataset with nested structure
 
