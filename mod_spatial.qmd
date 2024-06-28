@@ -41,32 +41,73 @@ install.packages("terra")
 
 ## Types of Spatial Data
 
-There are two main types of spatial data: vector and raster. You may have cause to work either or both so we'll describe both (and the packages they require) in the tabs below.
+There are two main types of spatial data: vector and raster. Both types (and the packages they require) are described in the tabs below.
 
 :::{.panel-tabset}
 ### Vector Data
 
-Data stored as polygons / shapes
+Vector data are stored as polygons. Essentially vector data are a set of points and--sometimes--the lines between them that define the edges of a shape. They may store additional data that is retained in a semi-tabular format that relates to the polygon(s) but isn't directly stored in them.
 
-```{r data-vector}
+Common vector data types include shape files or GeoJSONs.
+
+```{r read-vector}
 #| message: false
+#| output: false
 
 # Load needed library
 library(sf)
 
+# Read in shapefile
+nc_poly <- sf::st_read(dsn = file.path("data", "nc_borders.shp")) #<1>
+```
+1. Note that even though we're only specifying the ".shp" file in this function you _must_ also have the associated files in that same folder. In this case that includes a ".dbf", ".prj", and ".shx", though in other contexts you may have others.
+
+Once you have read in the shapefile, you can check its structure as you would any other data object. Note that the object has both the 'data.frame' class and the 'sf' ("simple features") class. In this case, the shapefile relates to counties in North Carolina and some associated demographic data in those counties.
+
+```{r str-vector}
+# Check structure
+str(nc_poly)
+```
+
+If desired, we could make a simple R base plot-style map. In this case we'll do it based on just the county areas so that the polygons are filled with a color corresponding to how large the county is.
+
+```{r plot-vector}
+#| fig-align: center
+
+# Make a graph
+plot(nc_poly["AREA"], axes = T)
 ```
 
 ### Raster Data
 
-Data stored as pixels
+Raster data are stored as values in pixels. The resolution (i.e., size of the pixels) may differ among rasters but in all cases the data are stored at a per-pixel level.
 
+Common raster data types include GeoTIFFs (.tif) and NetCDF (.nc) files.
 
-```{r data-raster}
+```{r read-raster}
 #| message: false
 
 # Load needed library
 library(terra)
 
+# Read in raster
+nc_pixel <- terra::rast(x = file.path("data", "nc_elevation.tif"))
+```
+
+Once you've read in the raster file you can check it's structure as you would any other object but the resulting output is much less informative than for other object classes.
+
+```{r str-raster}
+# Check structure
+str(nc_pixel)
+```
+
+Regardless, now that we have the raster loaded we can make a simple graph to check out what sort of data is stored in it. In this case, each pixel is 3 arcseconds on each side (~0.0002° latitude/longitude) and contains the elevation (in meters) of that pixel.
+
+```{r plot-raster}
+#| fig-align: center
+
+# Make a graph
+terra::plot(nc_pixel)
 ```
 
 :::
