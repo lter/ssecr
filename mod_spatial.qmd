@@ -39,6 +39,7 @@ install.packages("tidyverse")
 install.packages("sf")
 install.packages("terra")
 install.packages("maps")
+install.packages("exactextractr")
 ```
 
 ## Types of Spatial Data
@@ -245,9 +246,48 @@ From here we can make additional `ggplot2`-style modifications as/if needed. Thi
 
 ## Extracting Spatial Data
 
+By far the most common spatial operation that LNO-funded synthesis working groups want to perform is extraction of some spatial covariate data within their region of interest. "Extraction" here includes (1) the actual gathering of values from the desired area, (2) summarization of those values, and (3) attaching those summarized values to an existing tabular dataset for further analysis/visualization. As with any coding task there are many ways of accomplishing this end but we'll focus on one method in the following code chunks: extraction in R via the `exactextractr` package.
 
+This package expects that you'll want to extract raster data within a the borders described in some type of vector data. If you want the values in all the pixels of a GeoTIFF that fall inside the boundary defined by a shapefile, tools in this package will be helpful.
 
+We'll begin by making a simpler version of our North Carolina vector data. This ensures that the extraction is as fast as possible for demonstrative purposes while still being replicable for you.
 
+```{r extract-prep}
+# Simplify the vector data
+nc_poly_simp <- nc_poly %>% 
+  dplyr::filter(NAME %in% c("Wake", "Swain")) %>% 
+  dplyr::select(NAME, AREA)
+
+# Check structure to demonstrate simplicity
+dplyr::glimpse(nc_poly_simp) # <1>
+```
+1. Note that even though we used `select` to remove all but one column, the geometry information is retained!
+
+Now let's use this simplified object and extract elevation for our counties of interest (normally we'd likely do this for all counties but the process is the same).
+
+```{r extract-actual}
+#| message: false
+
+# Load needed libraries
+library(exactextractr)
+library(purrr)
+
+# Perform extraction
+extracted_df <- exactextractr::exact_extract(x = nc_pixel, y = nc_poly_simp, # <1>
+                                             include_cols = c("NAME", "AREA"), # <2>
+                                             progress = F) %>% # <3>
+  # Collapse to a dataframe
+  purrr::list_rbind(x = .) # <4>
+
+# Check structure
+dplyr::glimpse(extracted_df)
+```
+1. Note that functions like this one <u>assume that both spatial data objects use the same CRS</u>. We checked that earlier so we're good but remember to include that check _every_ time you do something like this!
+2. All column names specified here from the vector data (see the `y` argument) will be retained in the output. Otherwise only the extracted value and coverage fraction are included.
+3. This argument controls whether a progress bar is included. _Extremely_ useful when you have many polygons / the extraction takes a long time!
+4. The default output of this function is a list with one dataframe of extracted values per polygon in your vector data so we'll unlist to a dataframe for ease of future operations
+
+In the above output we can see that it has extracted the elevation of _every pixel_ within each of our counties of interest and provided us with the percentage of that pixel that is covered by the polygon (i.e., by the shapefile). We can now summarize this however we'd like and--eventually--join it back onto the county data via the column(s) we specified should be retained from the original vector data.
 
 ## Additional Resources
 
