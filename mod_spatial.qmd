@@ -38,6 +38,7 @@ If you'd like to follow along with the code chunks included throughout this modu
 install.packages("tidyverse")
 install.packages("sf")
 install.packages("terra")
+install.packages("maps")
 ```
 
 ## Types of Spatial Data
@@ -178,9 +179,69 @@ terra::crs(nc_pixel_nad83)
 
 ## Making Maps
 
+Now that we've covered the main types of spatial data as well as how to check the CRS (and transform if needed) we're ready to make maps! For consistency with other modules on data visualization, we'll use `ggplot2` to make our maps but note that base R also supports map making and there are many useful tutorials elsewhere on making maps in that framework.
 
+The `maps` package includes some useful national and US state borders so we'll begin by preparing an object that combines both sets of borders.
 
+```{r map-borders}
+# Load library
+library(maps)
 
+# Make 'borders' object
+borders <- sf::st_as_sf(maps::map(database = "world", plot = F, fill = T)) %>%
+  dplyr::bind_rows(sf::st_as_sf(maps::map(database = "state", plot = F, fill = T)))
+```
+
+Note that the simplest way of making a map that includes a raster is to coerce that raster into a dataframe. To do this we will translate each pixel's geographic coordinates into X and Y values.
+
+```{r map-raster-df}
+nc_pixel_df <- as.data.frame(nc_pixel, xy = T) %>% 
+    # Rename the 'actual' data layer more clearly
+    dplyr::rename(elevation_m = SRTMGL3_NC.003_SRTMGL3_DEM_doy2000042_aid0001)
+```
+
+With the borders object and our modified raster in hand, we can now make a map that includes useful context for state/nation borders. Synthesis projects often cover a larger geographic extent than primary projects so this is particularly useful in ways it might not be for primary research.
+
+```{r map-raster-ACTUAL}
+#| include: false
+#| eval: false
+
+# Load library
+library(ggplot2)
+
+# Make map
+raster_map <- ggplot(borders) +
+  geom_sf(fill = "gray95") +
+  coord_sf(xlim = c(-70, -90), ylim = c(30, 40), expand = F) +
+  geom_tile(data = nc_pixel_df, aes(x = x, y = y, fill = elevation_m)) +
+  labs(x = "Longitude", y = "Latitude")
+
+# Export it
+ggsave(filename = file.path("images", "spatial_raster-map-demo.png"),
+       plot = raster_map, width = 8, height = 4, units = "in")
+```
+
+```{r map-raster}
+#| eval: false
+
+# Load library
+library(ggplot2)
+
+# Make map
+ggplot(borders) +
+  geom_sf(fill = "gray95") + # <1>
+  coord_sf(xlim = c(-70, -90), ylim = c(30, 40), expand = F) + # <2>
+  geom_tile(data = nc_pixel_df, aes(x = x, y = y, fill = elevation_m)) +
+  labs(x = "Longitude", y = "Latitude")
+```
+1. This line is filling our nation polygons with a pale gray (helps to differentiate from ocean)
+2. Here we set the map extent so that we're only getting our region of interest
+
+<p align="center">
+<img src="images/spatial_raster-map-demo.png" alt="ggplot2-style map of the southeastern US where North Carolina is colored based on the per-pixel elevation" width="80%">
+</p>
+
+From here we can make additional `ggplot2`-style modifications as/if needed. This variant of map-making supports adding tabular data objects as well (though they would require separate geometries). Many of the LTER Network Office-funded groups that make maps include points for specific study locations along with a raster layer for an environmental / land cover characteristic that is particularly relevant to their research question and/or hypotheses.
 
 ## Extracting Spatial Data
 
@@ -188,7 +249,7 @@ terra::crs(nc_pixel_nad83)
 
 
 
-## Additional Spatial Resources
+## Additional Resources
 
 ### Papers & Documents
 
