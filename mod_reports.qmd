@@ -2,24 +2,46 @@
 title: "Reproducible Reports"
 ---
 
-
 ## Overview
 
-Under Construction, stay tuned!
+At this point in the course, we anticipate that you're likely approaching the end of your team's synthesis project (see our suggested [milestones](https://lter.github.io/ssecr/proj_milestones.html) page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you've been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage _both_ your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a <u>primarily technical</u> lens, so please consult the [communicating findings](https://lter.github.io/ssecr/mod_findings.html) module for the team science perspective.
 
 ## Learning Objectives
 
 After completing this module you will be able to: 
 
-- <u>Identify</u> the three fundamental elements of R Markdown / Quarto documents
+- <u>Describe</u> contexts where RMarkdown/Quarto documents are useful
+- <u>Identify</u> the three fundamental elements of RMarkdown/Quarto documents
 - <u>Use</u> Markdown syntax to accomplish text styling
 - <u>Create</u> reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings
 - <u>Make</u> a (small) Quarto website
 - <u>Deploy</u> a website and/or report through GitHub Pages
 
-## Module Content
+## Purpose & Value
 
 
+### Script vs. Markdown Decision
+
+See [here](https://nceas.github.io/scicomp.github.io/best_practices.html#r-scripts-versus-r-markdowns) for more information.
+
+
+## Report Structure
+
+1. YAML
+2. Plain (markdown format) text
+3. Embedded code chunks
+
+
+## Markdown Syntax
+
+
+
+## Applications
+
+- Static PDF/HTML files
+- Full manuscripts
+- Deployed website
+    - Incl. GitHub Pages/Actions?
 
 ## Additional Resources
 
@@ -29,10 +51,11 @@ After completing this module you will be able to:
 
 ### Workshops & Courses
 
-- NCEAS coreR [Literature Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html) session
-- OSS [Reproducible Papers with R Markdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html)
+- NCEAS coreR [Literate Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html) session
+- OSS [Reproducible Papers with RMarkdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html)
 - UCSB's Master of Environmental Data Science (MEDS) [Creating your Personal Website using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/) lesson
 
 ### Websites
 
+- Markdown Guide: [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 - Posit's [Welcome to Quarto](https://quarto.org/)
