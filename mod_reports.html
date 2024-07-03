@@ -323,7 +323,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#module-content" id="toc-module-content" class="nav-link" data-scroll-target="#module-content">Module Content</a></li>
+  <li><a href="#purpose-value" id="toc-purpose-value" class="nav-link" data-scroll-target="#purpose-value">Purpose &amp; Value</a>
+  <ul class="collapse">
+  <li><a href="#script-vs.-markdown-decision" id="toc-script-vs.-markdown-decision" class="nav-link" data-scroll-target="#script-vs.-markdown-decision">Script vs.&nbsp;Markdown Decision</a></li>
+  </ul></li>
+  <li><a href="#report-structure" id="toc-report-structure" class="nav-link" data-scroll-target="#report-structure">Report Structure</a></li>
+  <li><a href="#markdown-syntax" id="toc-markdown-syntax" class="nav-link" data-scroll-target="#markdown-syntax">Markdown Syntax</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -359,21 +365,48 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>Under Construction, stay tuned!</p>
+<p>At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested <a href="https://lter.github.io/ssecr/proj_milestones.html">milestones</a> page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage <em>both</em> your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a <u>primarily technical</u> lens, so please consult the <a href="https://lter.github.io/ssecr/mod_findings.html">communicating findings</a> module for the team science perspective.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>After completing this module you will be able to:</p>
 <ul>
-<li><u>Identify</u> the three fundamental elements of R Markdown / Quarto documents</li>
+<li><u>Describe</u> contexts where RMarkdown/Quarto documents are useful</li>
+<li><u>Identify</u> the three fundamental elements of RMarkdown/Quarto documents</li>
 <li><u>Use</u> Markdown syntax to accomplish text styling</li>
 <li><u>Create</u> reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings</li>
 <li><u>Make</u> a (small) Quarto website</li>
 <li><u>Deploy</u> a website and/or report through GitHub Pages</li>
 </ul>
 </section>
-<section id="module-content" class="level2">
-<h2 class="anchored" data-anchor-id="module-content">Module Content</h2>
+<section id="purpose-value" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-value">Purpose &amp; Value</h2>
+<section id="script-vs.-markdown-decision" class="level3">
+<h3 class="anchored" data-anchor-id="script-vs.-markdown-decision">Script vs.&nbsp;Markdown Decision</h3>
+<p>See <a href="https://nceas.github.io/scicomp.github.io/best_practices.html#r-scripts-versus-r-markdowns">here</a> for more information.</p>
+</section>
+</section>
+<section id="report-structure" class="level2">
+<h2 class="anchored" data-anchor-id="report-structure">Report Structure</h2>
+<ol type="1">
+<li>YAML</li>
+<li>Plain (markdown format) text</li>
+<li>Embedded code chunks</li>
+</ol>
+</section>
+<section id="markdown-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-syntax">Markdown Syntax</h2>
+</section>
+<section id="applications" class="level2">
+<h2 class="anchored" data-anchor-id="applications">Applications</h2>
+<ul>
+<li>Static PDF/HTML files</li>
+<li>Full manuscripts</li>
+<li>Deployed website
+<ul>
+<li>Incl. GitHub Pages/Actions?</li>
+</ul></li>
+</ul>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
@@ -386,14 +419,15 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="workshops-courses" class="level3">
 <h3 class="anchored" data-anchor-id="workshops-courses">Workshops &amp; Courses</h3>
 <ul>
-<li>NCEAS coreR <a href="https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html">Literature Analysis with Quarto</a> session</li>
-<li>OSS <a href="https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html">Reproducible Papers with R Markdown</a></li>
+<li>NCEAS coreR <a href="https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html">Literate Analysis with Quarto</a> session</li>
+<li>OSS <a href="https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html">Reproducible Papers with RMarkdown</a></li>
 <li>UCSB’s Master of Environmental Data Science (MEDS) <a href="https://ucsb-meds.github.io/creating-quarto-websites/">Creating your Personal Website using Quarto</a> lesson</li>
 </ul>
 </section>
 <section id="websites" class="level3">
 <h3 class="anchored" data-anchor-id="websites">Websites</h3>
 <ul>
+<li>Markdown Guide: <a href="https://www.markdownguide.org/basic-syntax/">Basic Syntax</a></li>
 <li>Posit’s <a href="https://quarto.org/">Welcome to Quarto</a></li>
 </ul>
 

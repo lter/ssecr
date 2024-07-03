@@ -268,7 +268,7 @@
     "href": "mod_reports.html",
     "title": "Reproducible Reports",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -279,7 +279,7 @@
     "href": "mod_reports.html#overview",
     "title": "Reproducible Reports",
     "section": "",
-    "text": "Under Construction, stay tuned!",
+    "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -290,18 +290,51 @@
     "href": "mod_reports.html#learning-objectives",
     "title": "Reproducible Reports",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify the three fundamental elements of R Markdown / Quarto documents\nUse Markdown syntax to accomplish text styling\nCreate reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings\nMake a (small) Quarto website\nDeploy a website and/or report through GitHub Pages",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe contexts where RMarkdown/Quarto documents are useful\nIdentify the three fundamental elements of RMarkdown/Quarto documents\nUse Markdown syntax to accomplish text styling\nCreate reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings\nMake a (small) Quarto website\nDeploy a website and/or report through GitHub Pages",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
     ]
   },
   {
-    "objectID": "mod_reports.html#module-content",
-    "href": "mod_reports.html#module-content",
+    "objectID": "mod_reports.html#purpose-value",
+    "href": "mod_reports.html#purpose-value",
     "title": "Reproducible Reports",
-    "section": "Module Content",
-    "text": "Module Content",
+    "section": "Purpose & Value",
+    "text": "Purpose & Value\n\nScript vs. Markdown Decision\nSee here for more information.",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#report-structure",
+    "href": "mod_reports.html#report-structure",
+    "title": "Reproducible Reports",
+    "section": "Report Structure",
+    "text": "Report Structure\n\nYAML\nPlain (markdown format) text\nEmbedded code chunks",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#markdown-syntax",
+    "href": "mod_reports.html#markdown-syntax",
+    "title": "Reproducible Reports",
+    "section": "Markdown Syntax",
+    "text": "Markdown Syntax",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#applications",
+    "href": "mod_reports.html#applications",
+    "title": "Reproducible Reports",
+    "section": "Applications",
+    "text": "Applications\n\nStatic PDF/HTML files\nFull manuscripts\nDeployed website\n\nIncl. GitHub Pages/Actions?",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -312,7 +345,7 @@
     "href": "mod_reports.html#additional-resources",
     "title": "Reproducible Reports",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Literature Analysis with Quarto session\nOSS Reproducible Papers with R Markdown\nUCSB’s Master of Environmental Data Science (MEDS) Creating your Personal Website using Quarto lesson\n\n\n\nWebsites\n\nPosit’s Welcome to Quarto",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Literate Analysis with Quarto session\nOSS Reproducible Papers with RMarkdown\nUCSB’s Master of Environmental Data Science (MEDS) Creating your Personal Website using Quarto lesson\n\n\n\nWebsites\n\nMarkdown Guide: Basic Syntax\nPosit’s Welcome to Quarto",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -330,7 +363,7 @@
     "href": "index.html",
     "title": "Course Overview",
     "section": "",
-    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the LTER Network page for the course.\nIf you’re interested in joining the course as a student you can see the application here. If instead you’re interested in joining as a team project mentor you can find more information–and apply–here.",
+    "text": "Synthesis Skills for Early Career Researchers (SSECR; [SEE-ker]) is a newly-designed course organized by the Long Term Ecological Research (LTER) Network. This course aims to address the need for more comprehensive interpersonal and data skills in ecology. You can find more information on SSECR at the LTER Network page for the course.\nIf instead you’re interested in joining as a team project mentor you can find more information–and apply–here.",
     "crumbs": [
       "Course Overview"
     ]
