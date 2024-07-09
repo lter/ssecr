@@ -268,7 +268,7 @@
     "href": "mod_reports.html",
     "title": "Reproducible Reports",
     "section": "",
-    "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
+    "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. “Computational notebooks” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills.\nThis module focuses on the structure and content of these notebooks from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -279,7 +279,7 @@
     "href": "mod_reports.html#overview",
     "title": "Reproducible Reports",
     "section": "",
-    "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
+    "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. “Computational notebooks” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills.\nThis module focuses on the structure and content of these notebooks from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -290,29 +290,18 @@
     "href": "mod_reports.html#learning-objectives",
     "title": "Reproducible Reports",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe contexts where RMarkdown/Quarto documents are useful\nIdentify the three fundamental elements of RMarkdown/Quarto documents\nUse Markdown syntax to accomplish text styling\nCreate reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings\nMake a (small) Quarto website\nDeploy a website and/or report through GitHub Pages",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe contexts where computational notebooks are useful\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
     ]
   },
   {
-    "objectID": "mod_reports.html#purpose-value",
-    "href": "mod_reports.html#purpose-value",
+    "objectID": "mod_reports.html#notebook-structure-value",
+    "href": "mod_reports.html#notebook-structure-value",
     "title": "Reproducible Reports",
-    "section": "Purpose & Value",
-    "text": "Purpose & Value\n\nScript vs. Markdown Decision\nSee here for more information.",
-    "crumbs": [
-      "Phase V -- Share",
-      "Reproducible Reports"
-    ]
-  },
-  {
-    "objectID": "mod_reports.html#report-structure",
-    "href": "mod_reports.html#report-structure",
-    "title": "Reproducible Reports",
-    "section": "Report Structure",
-    "text": "Report Structure\n\nYAML\nPlain (markdown format) text\nEmbedded code chunks",
+    "section": "Notebook Structure & Value",
+    "text": "Notebook Structure & Value\nFiles that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add–and format–plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is intended to be interpretable without any prior coding experience. The plain text can be formatted with Markdown syntax (we’ll discuss that in greater depth later) but even unformatted text outside of code chunks is visually ‘easier on the eyes’ than comment lines in scripts.\nAnother shared facet of notebook interfaces is that they are meant to be “rendered” (a.k.a. “knit”) to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other output options. These rendered files can then be shared (and opened) outside of coding platforms and thus make their content even more accessible to non-coders.\nIn synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. Creating reports with embedded code can enable these collaborators to engage more fully than they might otherwise be able to if there was essentially a minimum threshold of coding literacy required in order to contribute. These reports can also be useful documentation of past coding decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.\n\nStructural Elements\nTypically, these notebooks have three structural components:\n\nYAML\n\nPronounced ‘YEAH-mull’\n\nPlain text\n\nPossibly formatted with Markdown syntax\n\nEmbedded code chunks\n\n\nYAMLPlain TextCode Chunks\n\n\nThe YAML (Yet Another Markup Language) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It can also be used to define the top-level title, author, and date information. Finally, it can change the default options for code chunks throughout the document (more on code chunk options elsewhere).\nDifferent notebook file types will specify the YAML differently but in both Quarto documents and R Markdown files, the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:\n---\ntitle: \"Reproducible Reports\"\noutput: html_document\n---\n\n\n\n\n\n\n\n\n\n\n\nScript vs. Report Decision\nSee here for more information.",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"

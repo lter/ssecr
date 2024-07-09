@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.53">
+<meta name="generator" content="quarto-1.5.54">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -323,11 +357,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#purpose-value" id="toc-purpose-value" class="nav-link" data-scroll-target="#purpose-value">Purpose &amp; Value</a>
+  <li><a href="#notebook-structure-value" id="toc-notebook-structure-value" class="nav-link" data-scroll-target="#notebook-structure-value">Notebook Structure &amp; Value</a>
   <ul class="collapse">
-  <li><a href="#script-vs.-markdown-decision" id="toc-script-vs.-markdown-decision" class="nav-link" data-scroll-target="#script-vs.-markdown-decision">Script vs.&nbsp;Markdown Decision</a></li>
+  <li><a href="#structural-elements" id="toc-structural-elements" class="nav-link" data-scroll-target="#structural-elements">Structural Elements</a></li>
+  <li><a href="#script-vs.-report-decision" id="toc-script-vs.-report-decision" class="nav-link" data-scroll-target="#script-vs.-report-decision">Script vs.&nbsp;Report Decision</a></li>
   </ul></li>
-  <li><a href="#report-structure" id="toc-report-structure" class="nav-link" data-scroll-target="#report-structure">Report Structure</a></li>
   <li><a href="#markdown-syntax" id="toc-markdown-syntax" class="nav-link" data-scroll-target="#markdown-syntax">Markdown Syntax</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
@@ -365,34 +399,65 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested <a href="https://lter.github.io/ssecr/proj_milestones.html">milestones</a> page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. Reproducible reports (e.g., RMarkdown files, Quarto documents, etc.) can be an effective way of documenting your results in a format that allows you to leverage <em>both</em> your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a <u>primarily technical</u> lens, so please consult the <a href="https://lter.github.io/ssecr/mod_findings.html">communicating findings</a> module for the team science perspective.</p>
+<p>At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested <a href="https://lter.github.io/ssecr/proj_milestones.html">milestones page</a> for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. “<strong>Computational notebooks</strong>” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage <em>both</em> your technical skills and your scientific communication skills.</p>
+<p>This module focuses on the structure and content of these notebooks from a <u>primarily technical</u> lens, so please consult the <a href="https://lter.github.io/ssecr/mod_findings.html">communicating findings</a> module for the team science perspective.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>After completing this module you will be able to:</p>
 <ul>
-<li><u>Describe</u> contexts where RMarkdown/Quarto documents are useful</li>
-<li><u>Identify</u> the three fundamental elements of RMarkdown/Quarto documents</li>
+<li><u>Describe</u> contexts where computational notebooks are useful</li>
+<li><u>Identify</u> the three fundamental elements of a typical notebook</li>
 <li><u>Use</u> Markdown syntax to accomplish text styling</li>
-<li><u>Create</u> reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and primary findings</li>
-<li><u>Make</u> a (small) Quarto website</li>
-<li><u>Deploy</u> a website and/or report through GitHub Pages</li>
+<li><u>Create</u> notebooks that include a blend of plain text and embedded code chunks</li>
+<li><u>Make</u> a Quarto website</li>
+<li><u>Define</u> the purpose of GitHub Actions</li>
+<li><u>Deploy</u> a notebook with GitHub Pages</li>
 </ul>
 </section>
-<section id="purpose-value" class="level2">
-<h2 class="anchored" data-anchor-id="purpose-value">Purpose &amp; Value</h2>
-<section id="script-vs.-markdown-decision" class="level3">
-<h3 class="anchored" data-anchor-id="script-vs.-markdown-decision">Script vs.&nbsp;Markdown Decision</h3>
-<p>See <a href="https://nceas.github.io/scicomp.github.io/best_practices.html#r-scripts-versus-r-markdowns">here</a> for more information.</p>
-</section>
-</section>
-<section id="report-structure" class="level2">
-<h2 class="anchored" data-anchor-id="report-structure">Report Structure</h2>
+<section id="notebook-structure-value" class="level2">
+<h2 class="anchored" data-anchor-id="notebook-structure-value">Notebook Structure &amp; Value</h2>
+<p>Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add–and format–plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is <strong>intended to be interpretable without any prior coding experience</strong>. The plain text can be formatted with Markdown syntax (we’ll discuss that in greater depth later) but even unformatted text outside of code chunks is visually ‘easier on the eyes’ than comment lines in scripts.</p>
+<p>Another shared facet of notebook interfaces is that they are meant to be “rendered” (a.k.a. “knit”) to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other output options. These rendered files can then be shared (and opened) outside of coding platforms and thus make their content even more accessible to non-coders.</p>
+<p>In synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. <u>Creating reports with embedded code can enable these collaborators to engage more fully than they might otherwise be able to if there was essentially a minimum threshold of coding literacy required in order to contribute</u>. These reports can also be useful documentation of past coding decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.</p>
+<section id="structural-elements" class="level3">
+<h3 class="anchored" data-anchor-id="structural-elements">Structural Elements</h3>
+<p>Typically, these notebooks have three structural components:</p>
 <ol type="1">
-<li>YAML</li>
-<li>Plain (markdown format) text</li>
+<li>YAML
+<ul>
+<li>Pronounced ‘<em>YEAH-mull</em>’</li>
+</ul></li>
+<li>Plain text
+<ul>
+<li>Possibly formatted with Markdown syntax</li>
+</ul></li>
 <li>Embedded code chunks</li>
 </ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">YAML</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Plain Text</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Code Chunks</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The YAML (<u>Y</u>et <u>A</u>nother <u>M</u>arkup <u>L</u>anguage) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It can also be used to define the top-level title, author, and date information. Finally, it can change the default options for code chunks throughout the document (more on code chunk options elsewhere).</p>
+<p>Different notebook file types will specify the YAML differently but in both Quarto documents and R Markdown files, the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> <span class="st">"Reproducible Reports"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">output:</span> html_document</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+
+</div>
+</div>
+</div>
+</section>
+<section id="script-vs.-report-decision" class="level3">
+<h3 class="anchored" data-anchor-id="script-vs.-report-decision">Script vs.&nbsp;Report Decision</h3>
+<p>See <a href="https://nceas.github.io/scicomp.github.io/best_practices.html#r-scripts-versus-r-markdowns">here</a> for more information.</p>
+</section>
 </section>
 <section id="markdown-syntax" class="level2">
 <h2 class="anchored" data-anchor-id="markdown-syntax">Markdown Syntax</h2>
