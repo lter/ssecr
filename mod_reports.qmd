@@ -4,31 +4,33 @@ title: "Reproducible Reports"
 
 ## Overview
 
-At this point in the course, we anticipate that you're likely approaching the end of your team's synthesis project (see our suggested [milestones](https://lter.github.io/ssecr/proj_milestones.html) page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you've been doing for the last several months. Reproducible reports (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be an effective way of documenting your results in a format that allows you to leverage _both_ your technical skills and your scientific communication skills. This module focuses on the structure and content of these reports from a <u>primarily technical</u> lens, so please consult the [communicating findings](https://lter.github.io/ssecr/mod_findings.html) module for the team science perspective.
+At this point in the course, we anticipate that you're likely approaching the end of your team's synthesis project (see our suggested [milestones page](https://lter.github.io/ssecr/proj_milestones.html) for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you've been doing for the last several months. "**Computational notebooks**" (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage _both_ your technical skills and your scientific communication skills.
+
+This module focuses on the structure and content of these notebooks from a <u>primarily technical</u> lens, so please consult the [communicating findings](https://lter.github.io/ssecr/mod_findings.html) module for the team science perspective.
 
 ## Learning Objectives
 
 After completing this module you will be able to: 
 
-- <u>Describe</u> contexts where reproducible reports are useful
-- <u>Identify</u> the three fundamental elements of a Quarto document
+- <u>Describe</u> contexts where computational notebooks are useful
+- <u>Identify</u> the three fundamental elements of a typical notebook
 - <u>Use</u> Markdown syntax to accomplish text styling
-- <u>Create</u> reports that use a blend of plain text and embedded code to effectively communicate rationale, methodologies, and/or primary findings
-- <u>Make</u> a (small) Quarto website
-- <u>Deploy</u> a website and/or report through GitHub Pages
-- <u>Explain</u> the purpose of GitHub Actions
+- <u>Create</u> notebooks that include a blend of plain text and embedded code chunks
+- <u>Make</u> a Quarto website
+- <u>Define</u> the purpose of GitHub Actions
+- <u>Deploy</u> a notebook with GitHub Pages
 
-## Report Structure & Value
+## Notebook Structure & Value
 
-Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of such files include Quarto documents, Jupyter Notebooks, and R Markdown files but regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add--and format--plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is **intended to be interpretable without any prior coding experience**. The plain text can be formatted with Markdown syntax (we'll discuss that in greater depth later) but even unformatted text outside of code chunks is visually easier on the eyes than comment lines in scripts.
+Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add--and format--plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is **intended to be interpretable without any prior coding experience**. The plain text can be formatted with Markdown syntax (we'll discuss that in greater depth later) but even unformatted text outside of code chunks is visually 'easier on the eyes' than comment lines in scripts.
 
-Another shared facet of this type of file is that they are meant to be "rendered" (a.k.a. "knit") to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other options. These rendered files can then be shared (and opened) outside of code platforms and thus make their content even more accessible to non-coders.
+Another shared facet of notebook interfaces is that they are meant to be "rendered" (a.k.a. "knit") to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other output options. These rendered files can then be shared (and opened) outside of coding platforms and thus make their content even more accessible to non-coders.
 
-In synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. <u>Creating reports with embedded code can enable these collaborators to engage more fully than they might be able to if there was essentially a minimum threshold of coding literacy required to contributing</u>. These reports can also be useful documentation of past code decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.
+In synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. <u>Creating reports with embedded code can enable these collaborators to engage more fully than they might otherwise be able to if there was essentially a minimum threshold of coding literacy required in order to contribute</u>. These reports can also be useful documentation of past coding decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.
 
 ### Structural Elements
 
-Fundamentally, these report files have three structural components:
+Typically, these notebooks have three structural components:
 
 1. YAML
     - Pronounced '_YEAH-mull_'
@@ -40,9 +42,9 @@ Fundamentally, these report files have three structural components:
 
 #### YAML
 
-The YAML (<u>Y</u>et <u>A</u>nother <u>M</u>arkup <u>L</u>anguage) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It may also set the top-level title, author, and date information. It may also change the default options for code chunks throughout the document (more on code chunk options elsewhere).
+The YAML (<u>Y</u>et <u>A</u>nother <u>M</u>arkup <u>L</u>anguage) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It can also be used to define the top-level title, author, and date information. Finally, it can change the default options for code chunks throughout the document (more on code chunk options elsewhere).
 
-Different report file types will specify the YAML differently but in both Quarto documents and R Markdown files the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:
+Different notebook file types will specify the YAML differently but in both Quarto documents and R Markdown files, the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:
 
 ```{.bash}
 ---
