@@ -1,5 +1,6 @@
 ---
 title: "Reproducible Reports"
+code-annotations: hover
 ---
 
 ## Overview
@@ -53,21 +54,53 @@ output: html_document
 ---
 ```
 
-#### Plain Text
+#### Markdown Text
 
+The text outside of the YAML and code chunks is plain text that accepts Markdown syntax to accomplish text format tweaks. Dedicated text-formatting software (e.g., Microsoft Word, Gmail, etc.) provides buttons and hot keys for these sorts of format alterations but many programming IDEs do not provide such user interface elements.[^1] Markdown syntax is used to support this same functionality.
+
+Some fundamental Markdown options include:
+
+- \*\*bold text\*\* {{< fa arrow-right >}} **bold text**
+- \_italic text\_ {{< fa arrow-right >}} _italic text_
+- \`code text\` {{< fa arrow-right >}} `code text`
+- \[hyperlinked text\]\(https://lter.github.io/ssecr/mod_reports.html\) {{< fa arrow-right >}} [hyperlinked text](https://lter.github.io/ssecr/mod_reports.html)
+
+For a more complete glossary of fundamental Markdown syntax options see [here](https://www.markdownguide.org/basic-syntax/). You may also want to explore [the 'back end' of this course's website](https://github.com/lter/ssecr) as _every_ page is built using computational notebook files.
+
+[^1]: Note that with the addition of the "Visual" tab in RStudio there are button options for many text format changes. Markdown syntax is still useful to know for general knowledge reasons though! 
 
 #### Code Chunks
 
+The code chunks embedded in notebooks are essentially a fragmented script containing runable code. These chunks may contain code and/or comments and share an environment with one another when rendered (i.e., if you load a particular library in one chunk you'll be able to use functions from that library in subsequent chunks). When used in concert with the Markdown text in a given notebook the code chunks can be used to effectively demonstrate a workflow while providing as much human-readable context as is desired.
+
+In Quarto documents, code chunks look like this[^2]:
+
+```{.bash}
+\```{r demo-chunk}
+#| echo: true # <1>
+
+# Round pi to 2 digits #<2>
+round(x = pi, digits = 2)
+\```
+```
+1. You may specify chunk-specific options using this syntax (i.e., `#| option_name: option_setting`). Options you want to apply to _all_ chunks across a notebook should be specified once in the YAML and can exclude the leading `#|` bit of the format.
+2. If your Markdown text provides sufficient context you may exclude comments in code chunks but opinions differ on which is "more" appropriate
+
+```{r demo-chunk}
+#| echo: false
+# Round pi to 2 digits
+round(x = pi, digits = 2)
+```
+
+[^2]: Normally code chunks start and end with three backticks (\`\`\`) but to embed this code chunk example we need to "escape" the first backtick (using a backslash) so that the notebook interprets it correctly.
+
 :::
+
+
 
 ### Script vs. Report Decision
 
 See [here](https://nceas.github.io/scicomp.github.io/best_practices.html#r-scripts-versus-r-markdowns) for more information.
-
-
-
-
-## Markdown Syntax
 
 
 
@@ -76,7 +109,9 @@ See [here](https://nceas.github.io/scicomp.github.io/best_practices.html#r-scrip
 - Static PDF/HTML files
 - Full manuscripts
 - Deployed website
-    - Incl. GitHub Pages/Actions?
+
+## Deployment & GitHub
+
 
 ## Additional Resources
 
