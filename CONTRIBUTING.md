@@ -1,5 +1,22 @@
 # SSECR Contributing Guidelines
 
+## Editing Course Materials
+
+There are three options for editing the course materials:
+
+1. Send materials to Nick Lyon for integration into the website
+2. Work directly in GitHub
+    - only available if the page(s) you're editing <u>do not</u> have code chunks
+3. Connect GitHub to your preferred code software (e.g., RStudio, VS Code, etc.) and push local changes to GitHub
+
+### Avoiding Conflicts
+
+If either option 2 or 3 sounds like a good fit for you, we need to be careful we do not cause merge conflicts! Please make a post in the `#lter-grad-course` channel of the NCEAS Slack organization for _both_ when you start working on the website _and_ when you're finished.
+
+If you're working in a developer environment (i.e., option 3 above), please pull regularly so that you are editing the most up-to-date materials. 
+
+At this point, we are **not** using GitHub branches and/or forks so please just work directly in the 'main' branch.
+
 ## Accessing Course Materials
 
 ### GitHub
@@ -14,12 +31,12 @@ Contact Marty Downs and/or Nick Lyon for access to the Google Drive. The Shared 
 
 ### Communication
 
-Communicating via email is fine though we also have a channel (`#lter-grad-course`) in [NCEAS](https://www.nceas.ucsb.edu/)' Slack organization if that is preferable.
+Communicating via email is fine though we also have the `#lter-grad-course` channel in [NCEAS](https://www.nceas.ucsb.edu/)' Slack organization if that is preferable.
 
 ## Project Management
 
 - Individual tasks should be tracked as [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart)
-    - Be sure that each task is **SMART** (i.e., specific, measurable, achievable, relevant, and time-bound)
+    - Be sure that each task is **S.M.A.R.T.** (i.e., specific, measurable, achievable, relevant, and time-bound)
 - **Please use the issue template**
     - When you select "New Issue" you will be prompted to use this template automatically
 - Try to document task progress within the dedicated issue for that task (for posterity)
