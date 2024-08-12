@@ -23,6 +23,7 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
+- Puebla _et al._ [Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. _PLoS Computational Biology_
 - Dahlin _et al._, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. _Frontiers in Ecology and the Environment_
 - Allen _et al._, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. _Learned Publishing_
 
