@@ -43,6 +43,9 @@ $code-color: $lter-green-2; // inline code text color
 
 /*-- scss:rules --*/
 
+// Code chunk ouput
+pre code:not(.sourceCode) { background-color: $gray-0; }
+
 // Active tabset panel (tab then tab content)
 .nav-tabs .nav-link.active { 
   background-color: #FFF; 
