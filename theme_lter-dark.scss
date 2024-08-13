@@ -28,7 +28,7 @@ $navbar-bg: $lter-blue-2; // navbar
 $navbar-fg: $cream; // navbar foreground elements
 $sidebar-bg: $lter-green-3; // sidebar
 $sidebar-fg: $cream; // sidebar foreground elements
-$navbar-hl: $lter-green-1; // highlight color when on a page
+$navbar-hl: $lter-green-3; // highlight color when on a page
 $body-bg: $black; // page background
 $body-color: $cream; // page text
 $footer-bg: $lter-blue-2; // footer
@@ -39,3 +39,21 @@ $link-color: $lter-tan; // hyperlinks
 $code-bg: $gray-3; // inline code background color
 $code-block-bg: $gray-3; // code block background color
 $code-color: $lter-green-1; // inline code text color
+
+/*-- scss:rules --*/
+
+// Active tabset panel (tab then tab content)
+.nav-tabs .nav-link.active { 
+  background-color: $gray-3; 
+  color: $black;
+}
+.tab-content { background-color: $gray-3; }
+
+// Navbar dropdown elements
+.dropdown-menu{
+  --bs-dropdown-link-hover-color: #f4f3ee;
+  --bs-dropdown-link-hover-bg: #97AE3F;
+}
+
+// Underline URLs
+.reveal .slide a { text-decoration: underline; }
