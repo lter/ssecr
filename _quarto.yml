@@ -90,8 +90,8 @@ format:
     code-line-numbers: false
     code-copy: hover
     theme:
-       light: theme_lter-light.scss
-       dark: theme_lter-dark.scss
+       light: _extensions/lter/lter_scss-theme/theme_lter-edu-light.scss
+       dark: _extensions/lter/lter_scss-theme/theme_lter-edu-dark.scss
     mainfont: Open Sans
     toc: true
     link-external-newwindow: true
