@@ -17,12 +17,12 @@ After completing this module you will be able to:
 - <u>Sketch</u> the RStudio-to-GitHub order of operations
 - <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
 
-## NCEAS SciComp Workshop Materials
+## LTER SciComp Workshop Materials
 
-The workshop materials we will be working through live [here](https://nceas.github.io/scicomp-workshop-collaborative-coding/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
+The workshop materials we will be working through live [here](https://lter.github.io/workshop-github/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
 
  ```{=html}
-<iframe src="https://nceas.github.io/scicomp-workshop-collaborative-coding/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
+<iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
 ```
 
 ## Collaborating with Git
