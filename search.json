@@ -531,11 +531,11 @@
     ]
   },
   {
-    "objectID": "mod_version-control.html#nceas-scicomp-workshop-materials",
-    "href": "mod_version-control.html#nceas-scicomp-workshop-materials",
+    "objectID": "mod_version-control.html#lter-scicomp-workshop-materials",
+    "href": "mod_version-control.html#lter-scicomp-workshop-materials",
     "title": "Version Control",
-    "section": "NCEAS SciComp Workshop Materials",
-    "text": "NCEAS SciComp Workshop Materials\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
+    "section": "LTER SciComp Workshop Materials",
+    "text": "LTER SciComp Workshop Materials\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).",
     "crumbs": [
       "Phase I -- Prepare",
       "Version Control"
