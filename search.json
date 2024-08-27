@@ -26,7 +26,7 @@
     "href": "mod_data-disc.html#learning-objectives",
     "title": "Data Discovery & Management",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nExplore common data repositories\nUse Google search operators to more effectively perform general searches\nDefine fundamental properties of effective data management plans\nCreate a data management plan\nDescribe best practices for documenting data for archiving",
+    "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify repositories “known for” a particular type of data\nExplain how to effectively search for data outside of specialized repositories\nCreate a data inventory for identified data that allows for easy re-finding of those data products\nPlan how to download data in a reproducibly scripted way\nExplain how to handle different data formats (e.g., tabular, spatial, non-standard, etc.)\nPerform checks of the fundamental structure of a dataset",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
@@ -1021,14 +1021,14 @@
     "href": "instructors.html",
     "title": "SSECR Design Team",
     "section": "",
-    "text": "Marty Downs (she/her) –  ORCID\nNick J Lyon (they/them) –  Website –  GitHub –  ORCID\nCarrie Kappel (she/her) –  Website\n\n\n\nPeople listed in this section are listed alphabetically by first name.\n\nAngel Chen (she/her) –  Website –  GitHub –  ORCID\nIngrid Slette (she/her)\nLi Kui (she/her) –  GitHub –  ORCID\nSarah Elmendorf (she/her) –  Website –  GitHub –  ORCID"
+    "text": "Materials like this can only be the product of a strong team lending their unique wisdom and expertise over an extended period of time. We are overjoyed to get to work with the folx identified below and could not ask for better collaborators. We’ve separated out people in our core ‘design team’ from those who provided feedback on a smaller scale but everyone listed on this page was absolutely invaluable to this effort.\nIcon legend:  = ORCID |  = website |  = GitHub |  = publications\n\n\n\nMarty Downs (she/her) – \nNick J Lyon (they/them) –   \nCarrie Kappel (she/her) – \nLi Kui (she/her) –  \nSarah Elmendorf (she/her) –   \nGregory Maurer (he/him) –   \n\n\n\n\n\nAngel Chen (she/her) –   \nIngrid Slette (she/her)"
   },
   {
-    "objectID": "instructors.html#module-designers",
-    "href": "instructors.html#module-designers",
+    "objectID": "instructors.html#overview",
+    "href": "instructors.html#overview",
     "title": "SSECR Design Team",
     "section": "",
-    "text": "Marty Downs (she/her) –  ORCID\nNick J Lyon (they/them) –  Website –  GitHub –  ORCID\nCarrie Kappel (she/her) –  Website\n\n\n\nPeople listed in this section are listed alphabetically by first name.\n\nAngel Chen (she/her) –  Website –  GitHub –  ORCID\nIngrid Slette (she/her)\nLi Kui (she/her) –  GitHub –  ORCID\nSarah Elmendorf (she/her) –  Website –  GitHub –  ORCID"
+    "text": "Materials like this can only be the product of a strong team lending their unique wisdom and expertise over an extended period of time. We are overjoyed to get to work with the folx identified below and could not ask for better collaborators. We’ve separated out people in our core ‘design team’ from those who provided feedback on a smaller scale but everyone listed on this page was absolutely invaluable to this effort.\nIcon legend:  = ORCID |  = website |  = GitHub |  = publications\n\n\n\nMarty Downs (she/her) – \nNick J Lyon (they/them) –   \nCarrie Kappel (she/her) – \nLi Kui (she/her) –  \nSarah Elmendorf (she/her) –   \nGregory Maurer (he/him) –   \n\n\n\n\n\nAngel Chen (she/her) –   \nIngrid Slette (she/her)"
   },
   {
     "objectID": "instructors.html#supporting-organizations",
