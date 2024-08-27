@@ -2,23 +2,28 @@
 title: "SSECR Design Team"
 ---
 
-## Module Designers
+## Overview
 
-- Marty Downs (_she/her_) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-2833-956X) 
-- Nick J Lyon (_they/them)_ -- {{< fa user >}} [Website](https://njlyon0.github.io/) -- {{< fa brands github >}} [GitHub](https://github.com/njlyon0) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-3905-1078)
-- Carrie Kappel (_she/her_) -- {{< fa user >}} [Website](https://legacyworksgroup.com/team-content/carrie-kappel)
+Materials like this can only be the product of a strong team lending their unique wisdom and expertise over an extended period of time. We are overjoyed to get to work with the folx identified below and could not ask for better collaborators. We've separated out people in our core 'design team' from those who provided feedback on a smaller scale but everyone listed on this page was absolutely invaluable to this effort.
+
+_Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{< fa brands github >}} = GitHub | {{< fa brands google scholar >}} = publications_
+
+### Design Team
+
+- **Marty Downs** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X) 
+- **Nick J Lyon** (_they/them)_ -- [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
+- **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel)
+- **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907)
+- **Sarah Elmendorf** (_she/her_) -- [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1085-8521)
+- **Gregory Maurer** (_he/him_) -- [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
 
 ### Other Contributors
 
-People listed in this section are listed alphabetically by first name.
-
-- Angel Chen (_she/her_) -- {{< fa user >}} [Website](https://angelchen7.github.io/) -- {{< fa brands github >}} [GitHub](https://github.com/angelchen7/) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-3515-6710)
-- Ingrid Slette (_she/her_)
-- Li Kui (_she/her_) -- {{< fa brands github >}} [GitHub](https://github.com/lkuiucsb) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0002-5894-4907)
-- Sarah Elmendorf (_she/her_) -- {{< fa user >}} [Website](https://www.colorado.edu/instaar/sarah-elmendorf) -- {{< fa brands github >}} [GitHub](https://github.com/scelmendorf/) -- {{< fa brands orcid >}} [ORCID](https://orcid.org/0000-0003-1085-8521)
+- **Angel Chen** (_she/her_) -- [{{< fa globe >}}](https://angelchen7.github.io/) [{{< fa brands github >}}](https://github.com/angelchen7/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3515-6710)
+- **Ingrid Slette** (_she/her_)
 
 ## Supporting Organizations
 
-- [National Center for Ecological Analysis and Synthesis](https://www.nceas.ucsb.edu/) (NCEAS)
-- [Long Term Ecological Research (LTER) Network Office](https://lternet.edu/) (LNO)
-- [National Science Foundation](https://www.nsf.gov/) (NSF)
+- National Center for Ecological Analysis and Synthesis ([NCEAS](https://www.nceas.ucsb.edu/))
+- Long Term Ecological Research (LTER) Network Office ([LNO](https://lternet.edu/))
+- National Science Foundation ([NSF](https://www.nsf.gov/))
