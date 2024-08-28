@@ -45,4 +45,6 @@ Communicating via email is fine though we also have the `#lter-grad-course` chan
 
 ## Style Guide
 
+If you are directly contributing to the website, please try to use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) syntax in your commit messages so it is easy for others to identify the purpose and scope of changes made in each commit.
+
 As much as possible, use snake case (i.e., all_lowercase_separated_by_underscores). When in doubt, try to maintain consistency with the naming convention and internal structure of other files in the same directory/repository.
