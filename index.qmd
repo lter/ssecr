@@ -32,6 +32,31 @@ The course will include social and leadership skills required to bring a synthes
 
 Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.
 
+### 2024 Schedule
+
+| **Date** | **Module** | **Primary Instructor(s)** |
+|:---:|:----------------------------|:---:|
+| 9/5/24 | Version Control | [Nick Lyon](https://njlyon0.github.io/); [Angel Chen](https://angelchen7.github.io/) |
+| 9/16-20/24 | Reproducibility Best Practices | [Nick Lyon](https://njlyon0.github.io/) |
+| 10/3/24 | Data Discovery & Management | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 10/17/24 | Team Sciences Practices | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 10/31/24 | Inclusive Facilitation | [Carrie Kappel](https://legacyworksgroup.com/team-content/carrie-kappel) |
+| 11/14/24 | Data Visualization & Exploration | [Sarah Elmendorf](https://www.colorado.edu/instaar/sarah-elmendorf) |
+| 12/5/24 | Project Management | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 12/19/24 | Supporting Divergent, Emergent, and Convergent Thinking | [Carrie Kappel](https://legacyworksgroup.com/team-content/carrie-kappel) |
+| 1/16/25 | Data Wrangling | [Nick Lyon](https://njlyon0.github.io/) |
+| 1/30/25 | Authorship & Intellectual Credit | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 2/13/25 | Analysis & Modeling | [Nick Lyon](https://njlyon0.github.io/) |
+| 2/27/25 | Next Steps & Logic Models | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 3/13/25 | Communicating Findings | [Gabriel de la Rosa](https://www.gabrieldelarosa.com/) |
+| 3/27/25 | Reproducible Reports | [Nick Lyon](https://njlyon0.github.io/) |
+| 4/10/25 | _Optional Module_ | TBD |
+| 4/24/25 | _Optional Prep_ | TBD |
+| 5/8/25 | _Optional Prep_ | TBD |
+| 5/22/25 | **Final Project Symposium** | _SSECR Participants!_ |
+
+
+
 ## Course Policies
 
 ### Attendance
