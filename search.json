@@ -48,7 +48,7 @@
     "href": "mod_data-disc.html#additional-resources",
     "title": "Data Discovery & Management",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nThe British Ecological Society’s Better Science Guides – Data Management Guide\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Data Management Essentials lesson\nOpen Science Synthesis for the Delta Science Program’s Data Management Essentials and the FAIR & CARE Principles\nOpen Science Synthesis for the Delta Science Program’s Writing Data Management Plans\nNCEAS Scientific Computing team’s Data Acquisition instructions\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer",
+    "text": "Additional Resources\n\nPapers & Documents\n\nBritish Ecological Society (BES). Better Science Guides: Data Management Guide. 2024.\n\n\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Data Acquisition Guide for TRY and AppEEARS. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Data Management Essentials. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Writing Data Management Plans. 2023.\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
@@ -89,7 +89,7 @@
     "href": "index.html#course-scheduling",
     "title": "Course Overview",
     "section": "Course Scheduling",
-    "text": "Course Scheduling\nCourse participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.\nEach three-hour session will include 2 components:\n\nInspiration (~60 minutes): Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.\nInstruction (~120 minutes): Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently.\n\nTechnical skills will build on earlier lessons and are not intended to be stand-alone modules. The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.\n\n\nProject groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.",
+    "text": "Course Scheduling\nCourse participants meet for three hours, weekly, at the same time each week. Sessions alternate between hands-on instruction in technical and soft skills that are relevant for inclusive synthesis and team work on the chosen group projects.\nEach three-hour session will include 2 components:\n\nInspiration (~60 minutes): Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.\nInstruction (~120 minutes): Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently.\n\nTechnical skills will build on earlier lessons and are not intended to be stand-alone modules. The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.\n\n\nProject groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.\n\n2024 Schedule\n\n\n\nDate\nModule\nPrimary Instructor(s)\n\n\n\n\n9/5/24\nVersion Control\nNick Lyon; Angel Chen\n\n\n9/16-20/24\nReproducibility Best Practices\nNick Lyon\n\n\n10/3/24\nData Discovery & Management\nMarty Downs\n\n\n10/17/24\nTeam Sciences Practices\nMarty Downs\n\n\n10/31/24\nInclusive Facilitation\nCarrie Kappel\n\n\n11/14/24\nData Visualization & Exploration\nSarah Elmendorf\n\n\n12/5/24\nProject Management\nMarty Downs\n\n\n12/19/24\nSupporting Divergent, Emergent, and Convergent Thinking\nCarrie Kappel\n\n\n1/16/25\nData Wrangling\nNick Lyon\n\n\n1/30/25\nAuthorship & Intellectual Credit\nMarty Downs\n\n\n2/13/25\nAnalysis & Modeling\nNick Lyon\n\n\n2/27/25\nNext Steps & Logic Models\nMarty Downs\n\n\n3/13/25\nCommunicating Findings\nGabriel de la Rosa\n\n\n3/27/25\nReproducible Reports\nNick Lyon\n\n\n4/10/25\nOptional Module\nTBD\n\n\n4/24/25\nOptional Prep\nTBD\n\n\n5/8/25\nOptional Prep\nTBD\n\n\n5/22/25\nFinal Project Symposium\nSSECR Participants!",
     "crumbs": [
       "Course Overview"
     ]
@@ -239,7 +239,7 @@
     "href": "mod_spatial.html#additional-resources",
     "title": "Working with Spatial Data",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries’ Introduction to Geospatial Raster & Vector Data with R\nThe Carpentries’ Introduction to R for Geospatial Data\nArctic Data Center’s Spatial and Image Data Using GeoPandas chapter of their Scalable Computing course\nJason Flower’s (UC Santa Barbara) Introduction to rasters with terra\nKing, R. Spatial Data Visualization workshop\n\n\n\nWebsites\n\nNASA’s Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) Portal",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nThe Carpentries. Introduction to Geospatial Raster and Vector Data with R. 2024.\nThe Carpentries. Introduction to R for Geospatial Data. 2024.\nKing, R. Spatial Data Visualization. 2024.\nFlower, J. Introduction to Rasters with terra. 2024.\nClark, S.J., et al. Spatial and Image Data Using GeoPandas. 2023.\n\n\n\nWebsites\n\nNASA. AppEEARS Portal",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
@@ -338,7 +338,7 @@
     "href": "mod_stats.html#additional-resources",
     "title": "Analysis & Modeling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nUnderstanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. Spake et al., 2023. Biological Reviews\nImproving Quantitative Synthesis to Achieve Generality in Ecology. Spake et al., 2022.Nature Ecology and Evolution\nDoing Meta-Analysis with R: A Hands-On Guide. Harrier et al. 2023.\nMixed Effects Models and Extensions in Ecology with R. Zuur et al., 2009.\n\n\n\nWorkshops & Courses\n\nMatt Vuorre’s Bayesian Meta-Analysis with R, Stan, and brms\n\n\n\nWebsites\n\nBayesian Meta-Analysis in brms-II. Solomon Kurz, A., 2022.\nMeta-Analysis with R slide deck. Viechtbauer, W., 2022.\nThe metafor Package: A Meta-Analysis Package for R. Viechtbauer, W., 2021.\nBayesian Meta-Analysis in brms. Solomon Kurz, A., 2018.",
+    "text": "Additional Resources\n\nPapers & Documents\n\nSpake, R. et al. Understanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions. 2023. Biological Reviews\nSpake, R. et al. Improving Quantitative Synthesis to Achieve Generality in Ecology. 2022. Nature Ecology and Evolution\nHarrier, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2021.\nZuur, A.F. et al. Mixed Effects Models and Extensions in Ecology with R. 2009.\n\n\n\nWorkshops & Courses\n\nVuorre, M. Bayesian Meta-Analysis with R, Stan, and brms. 2016.\n\n\n\nWebsites\n\nKurz, A. S. Bayesian Meta-Analysis in brms-II. 2022.\nViechtbauer, W. Meta-Analysis with R. 2022.\nViechtbauer, W. The metafor Package: A Meta-Analysis Package for R. 2021.\nKurz, A. S. Bayesian Meta-Analysis in brms. 2020.",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
@@ -393,7 +393,7 @@
     "href": "mod_facilitation.html#additional-resources",
     "title": "Inclusive Facilitation",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
+    "text": "Additional Resources\n\nPapers & Documents\n\nKaner, S. Facilitator’s Guide to Participatory Decision-Making (Revised). 2014.\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures: Including and Uleashing Everyone",
     "crumbs": [
       "Phase II -- Plan",
       "Inclusive Facilitation"
@@ -491,7 +491,7 @@
     "href": "mod_wrangle.html#additional-resources",
     "title": "Data Harmonization & Wrangling",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nReviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. Todd-Brown, K.E.O. et al., 2022. Biogeosciences\nThe Ultimate Guide to Data Cleaning. Elgarby, O. 2019. Medium\nSome Simple Guidelines for Effective Data Management. Borer, E. et al., 2009. Ecological Society of America Bulletin\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 4: Manipulating, Analyzing, and Exporting Data with tidyverse. The Carpentries\nCoding in the Tidyverse. NCEAS Scientific Computing Team, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 8: Cleaning & Wrangling Data. NCEAS Learning Hub, 2023.\nNCEAS Learning Hub’s coreR Course, Chapter 16: Writing Functions & Packages. NCEAS Learning Hub, 2023.\nOpen Science Synthesis for the Delta Science Program’s Data Munging / QA / QC / Cleaning\n\n\n\nWebsites\n\nTen Commandments for Good Data Management",
+    "text": "Additional Resources\n\nPapers & Documents\n\nTodd-Brown, K.E.O. et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nElgarby, O. The Ultimate Guide to Data Cleaning. 2019. Medium\nBorer, E. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin\n\n\n\nWorkshops & Courses\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Working with Data. 2024.\nLTER Scientific Computing Team. Coding in the Tidyverse. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub coreR: Cleaning & Wrangling Data. 2023.\nNCEAS Learning Hub coreR: Writing Functions & Packages. 2023.\nDelta Science Program Data Munging / QA / QC / Cleaning. 2019.\n\n\n\nWebsites\n\nFox, J. Ten Commandments for Good Data Management. 2016. Dynamic Ecology",
     "crumbs": [
       "Phase III -- Execute",
       "Data Wrangling"
@@ -557,7 +557,7 @@
     "href": "mod_version-control.html#additional-resources",
     "title": "Version Control",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nPereira Braga et al., Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. 2023. Methods in Ecology and Evolution\nGitHub, Git Cheat Sheet. 2023.\n\n\n\nWorkshops & Courses\n\nHappy Git and GitHub for the useR. Bryan et al., 2024.\ncoreR Course, Chapter 6: Intro to Git and GitHub. NCEAS Learning Hub, 2023.",
+    "text": "Additional Resources\n\nPapers & Documents\n\nPereira Braga, P.H. et al. Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. 2023. Methods in Ecology and Evolution\nGitHub. Git Cheat Sheet. 2023.\n\n\n\nWorkshops & Courses\n\nBryan J. et al. Happy Git and GitHub for the useR. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Intro to Git and GitHub. 2023.",
     "crumbs": [
       "Phase I -- Prepare",
       "Version Control"
@@ -612,7 +612,7 @@
     "href": "mod_project-mgmt.html#additional-resources",
     "title": "Project Management & Logic Models",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS Scientific Computing team’s Collaborative Coding with GitHub workshop project management modules\n\nGitHub Issues\nGitHub Projects\n\nOpen Science Synthesis for the Delta Science Program’s Logic Models and Synthesis Development\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Issues. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Milestones. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Projects. 2024.\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Logic Models and Synthesis Development. 2021.\n\n\n\nWebsites",
     "crumbs": [
       "Phase II -- Plan",
       "Project Management"
@@ -689,7 +689,7 @@
     "href": "mod_reports.html#additional-resources",
     "title": "Reproducible Reports",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS coreR Literate Analysis with Quarto session\nOSS Reproducible Papers with RMarkdown\nUCSB’s Master of Environmental Data Science (MEDS) Creating your Personal Website using Quarto lesson\n\n\n\nWebsites\n\nMarkdown Guide: Basic Syntax\nPosit’s Welcome to Quarto",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nCsik, S. Creating Your Personal Website Using Quarto. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Literate Analysis with Quarto. 2023.\nMecum, B. Reproducible Papers with RMarkdown. 2019.\n\n\n\nWebsites\n\nThe Markdown Guide: Basic Syntax.\nPosit. Welcome to Quarto",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -712,13 +712,6 @@
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
     "text": "You provided a name when you first applied to be a part of the course but we will gladly honor your request to be addressed by an alternate name. We will also use whichever pronouns you identify with. Please advise us of your pronouns and/or chosen name early in the course so that we can ensure that we treat you respectfully throughout the course."
-  },
-  {
-    "objectID": "mod_template.html",
-    "href": "mod_template.html",
-    "title": "Template",
-    "section": "",
-    "text": "This page is meant to make it simpler to copy/paste certain page elements among module files.\n\n\n\n\n\n\nActivity: ACTIVITY NAME\n\n\n\nIn a script, attempt the following:\n\nX\n\nHint: hint text!\n\n\n\n\n\n\n\n\n\n\nDiscussion: DISCUSSION NAME\n\n\n\nWith a partner/group discuss (some of) the following questions:\n\n?\n?\n?"
   },
   {
     "objectID": "mod_findings.html",
@@ -791,7 +784,7 @@
     "href": "mod_findings.html#additional-resources",
     "title": "Communicating Findings",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nOpen Science Synthesis for the Delta Science Program’s Communicating Your Science\n\n\n\nWebsites\n\nCompass’ The Message Box",
+    "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Communicating Your Science. 2023.\n\n\n\nWebsites\n\nCOMPASS. The Message Box",
     "crumbs": [
       "Phase V -- Share",
       "Communicating Findings"
@@ -897,7 +890,7 @@
     "href": "mod_reproducibility.html#additional-resources",
     "title": "Reproducibility Best Practices",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nA Large-Scale Study on Research Code Quality and Execution. Trisovic et al., 2022. Scientific Data\nApplying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. Jennings et al., 2023. Nature Ecology & Evolution\nGuides to Better Science - Reproducible Code. The British Ecological Society, 2024.\nFAIR Teaching Handbook. Englehardt et al., 2024.\nR Packages (2nd ed.). Wickham & Bryan.\n\n\n\nWorkshops & Courses\n\nData Analysis and Visualization in R for Ecologists, Episode 1: Before We Start. The Carpentries\nIntroduction to R for Geospatial Data, Episode 2: Project Management with RStudio. The Carpentries\ncoreR Course, Chapter 5: FAIR and CARE Principles. National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.\ncoreR Course, Chapter 18: Reproducibility & Provenance. NCEAS Learning Hub, 2023.\n\n\n\nWebsites\n\nCoding Tips. NCEAS Scientific Computing Team, 2024.\nDocumenting Things: Openly for Future Us. Lowndes et al., 2023.\nTeam Coding: 5 Essentials. NCEAS Scientific Computing Team, 2024.\nAdvanced R (1st ed.) Style Guide. Wickham\nPEP 8 Style Guide for Python Code. van Rossum et al. 2013.\nGoogle Style Guides",
+    "text": "Additional Resources\n\nPapers & Documents\n\nBritish Ecological Society (BES). Better Science Guides: Reproducible Code. 2024.\nEnglehardt, C. et al. FAIR Teaching Handbook. 2024.\nJennings, L. et al. Applying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. 2023. Nature Ecology & Evolution\nWickham, H. & Bryan, J. R Packages (2nd ed.). 2023.\nTrisovic, A. et al. A Large-Scale Study on Research Code Quality and Execution. 2022. Scientific Data\n\n\n\nWorkshops & Courses\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Before We Start. 2024.\nThe Carpentries. Introduction to R for Geospatial Data: Project Management with RStudio. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: FAIR and CARE Principles. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Reproducibility & Provenance. 2023.\n\n\n\nWebsites\n\nGoogle. Style Guide. 2024.\nLTER Scientific Computing Team. Team Coding: 5 Essentials. 2024.\nLowndes, J.S. et al. Documenting Things: Openly for Future Us. 2023. posit::conf(2023)\nWickham, H. Advanced R: Style Guide. (1st ed.). 2019.\nvan Rossum, G. et al. PEP 8: Style Guide for Python Code. 2013. Python Enhancement Proposals",
     "crumbs": [
       "Phase I -- Prepare",
       "Reproducibility"
@@ -959,7 +952,7 @@
     "href": "mod_thinking.html#additional-resources",
     "title": "Supporting Divergent, Emergent, and Convergent Thinking",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nFacilitator’s Guide to Participatory Decision-Making by Sam Kaner\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures website",
+    "text": "Additional Resources\n\nPapers & Documents\n\nKaner, S. Facilitator’s Guide to Participatory Decision-Making. 2014.\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures: Including and Uleashing Everyone",
     "crumbs": [
       "Phase III -- Execute",
       "Supporting D.E.C. Thinking"
@@ -1010,7 +1003,7 @@
     "href": "mod_team-sci.html#additional-resources",
     "title": "Team Science Practices",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nBates et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nPeterson, D.M., et al., Team Science: A Syllabus for Success on Big Projects. 2023. Ecology and Evolution\nGaynor, K.M., et al., Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams. 2022. PLoS Computational Biology\nDeutsch, L., et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\nFarrell et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton & Parker, Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nAmelia Liberatore’s Developing a Successful Team workshop slides\nOpen Science Synthesis for the Delta Science Program’s Team Science for Synthesis\nOpen Science Synthesis for the Delta Science Program’s Thinking Preferences\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nBates, A.E. et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nPeterson, D.M., et al., Team Science: A Syllabus for Success on Big Projects. 2023. Ecology and Evolution\nGaynor, K.M., et al., Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams. 2022. PLoS Computational Biology\nDeutsch, L., et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\nFarrell, K.J. et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nHampton, S.E. & Parker, J.N. Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\n\n\n\nWorkshops & Courses\n\nLiberatore, A. Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. Open Science Synthesis: Team Science for Synthesis. 2023.\nDelta Stewardship Council. Open Science Synthesis: Thinking Preferences. 2021.\n\n\n\nWebsites",
     "crumbs": [
       "Phase I -- Prepare",
       "Team Science"
@@ -1086,7 +1079,7 @@
     "href": "mod_credit.html#additional-resources",
     "title": "Authorship & Intellectual Credit",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nPuebla et al. Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure. 2024. PLoS Computational Biology\nDahlin et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nAllen et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
+    "text": "Additional Resources\n\nPapers & Documents\n\nPuebla, I. et al. Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure. 2024. PLoS Computational Biology\nDahlin, K.M. et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nAllen, L. et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
@@ -1207,7 +1200,7 @@
     "href": "mod_data-viz.html#additional-resources",
     "title": "Data Visualization & Exploration",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNCEAS Colorblind Safe Color Schemes reference document\n\n\n\nWorkshops & Courses\n\nNCEAS Scientific Computing team’s Coding in the Tidyverse workshop ggplot2 module\nThe Carpentries’ Data Analysis and Visualization in R for Ecologists ggplot2 episode\n\n\n\nWebsites",
+    "text": "Additional Resources\n\nPapers & Documents\n\nNational Center for Ecological Analysis and Synthesis (NCEAS). Colorblind Safe Color Schemes. 2022.\n\n\n\nWorkshops & Courses\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Data Visualization with ggplot2. 2024.\nThe Carpentries. Data Analysis and Visualization in Python for Ecologists: Making Plots with plotnine. 2024.\nLTER Scientific Computing Team. Coding in the Tidyverse: ‘Visualize’ Module. 2023.\n\n\n\nWebsites",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
@@ -1328,7 +1321,7 @@
     "href": "mod_interactivity.html#additional-interactivity-resources",
     "title": "Creating Interactive Apps",
     "section": "Additional Interactivity Resources",
-    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nPosit’s Welcome to Shiny (for R coders)\n2022 All Scientists’ Meeting Shiny Apps for Sharing Science workshop\n\n\n\nWebsites\n\nPosit’s Shiny website",
+    "text": "Additional Interactivity Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nPosit. Welcome to Shiny. 2024.\nLyon, N.J., et al. Shiny Apps for Sharing Science. 2022.\n\n\n\nWebsites",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
@@ -1383,7 +1376,7 @@
     "href": "mod_next-steps.html#additional-resources",
     "title": "Next Steps & Logic Models",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nDeutsch et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nShabanov, I. (@Artifexx) X post on logic models",
+    "text": "Additional Resources\n\nPapers & Documents\n\nDeutsch L., et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nShabanov, I. (@Artifexx) Tweet on logic models. 2024.",
     "crumbs": [
       "Phase IV -- Magnify",
       "Next Steps"
