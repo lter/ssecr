@@ -578,24 +578,23 @@ Making sure that your project is reproducible requires a handful of steps before
 
 ### Papers & Documents
 
-- [A Large-Scale Study on Research Code Quality and Execution](https://www.nature.com/articles/s41597-022-01143-6). Trisovic _et al._, 2022. **Scientific Data**
-- [Applying the 'CARE Principles for Indigenous Data Governance' to Ecology and Biodiversity Research](https://www.nature.com/articles/s41559-023-02161-2). Jennings _et al._, 2023. **Nature Ecology & Evolution**
-- [Guides to Better Science - Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). The British Ecological Society, 2024.
-- [FAIR Teaching Handbook](https://fairsfair.gitbook.io/fair-teaching-handbook/). Englehardt _et al._, 2024.
-- [R Packages](https://r-pkgs.org/) (2nd ed.). Wickham & Bryan.
+- British Ecological Society (BES). [Better Science Guides: Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
+- Englehardt, C. _et al._ [FAIR Teaching Handbook](https://fairsfair.gitbook.io/fair-teaching-handbook/). **2024**.
+- Jennings, L. _et al._ [Applying the 'CARE Principles for Indigenous Data Governance' to Ecology and Biodiversity Research](https://www.nature.com/articles/s41559-023-02161-2). **2023**. _Nature Ecology & Evolution_
+- Wickham, H. & Bryan, J. [R Packages](https://r-pkgs.org/) (2nd ed.). **2023**.
+- Trisovic, A. _et al._ [A Large-Scale Study on Research Code Quality and Execution](https://www.nature.com/articles/s41597-022-01143-6). **2022**. _Scientific Data_
 
 ### Workshops & Courses
 
-- Data Analysis and Visualization in R for Ecologists, [Episode 1: Before We Start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html). The Carpentries
-- Introduction to R for Geospatial Data, [Episode 2: Project Management with RStudio](https://datacarpentry.org/r-intro-geospatial/02-project-intro.html). The Carpentries
-- coreR Course, [Chapter 5: FAIR and CARE Principles](https://learning.nceas.ucsb.edu/2023-10-coreR/session_05.html). National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub, 2023.
-- coreR Course, [Chapter 18: Reproducibility & Provenance](https://learning.nceas.ucsb.edu/2023-10-coreR/session_18.html). NCEAS Learning Hub, 2023.
+- The Carpentries. [Data Analysis and Visualization in R for Ecologists: Before We Start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html). **2024**.
+- The Carpentries. [Introduction to R for Geospatial Data: Project Management with RStudio](https://datacarpentry.org/r-intro-geospatial/02-project-intro.html). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: FAIR and CARE Principles](https://learning.nceas.ucsb.edu/2023-10-coreR/session_05.html). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Reproducibility & Provenance](https://learning.nceas.ucsb.edu/2023-10-coreR/session_18.html). **2023**.
 
 ### Websites
 
-- [Coding Tips](https://nceas.github.io/scicomp.github.io/best_practices.html). NCEAS Scientific Computing Team, 2024.
-- [Documenting Things: Openly for Future Us](https://openscapes.github.io/documenting-things/#/title-slide). Lowndes _et al.,_ 2023.
-- [Team Coding: 5 Essentials](https://nceas.github.io/scicomp.github.io/onboard-scaffold_team_coding.html). NCEAS Scientific Computing Team, 2024.
-- Advanced R (1st ed.) [Style Guide](http://adv-r.had.co.nz/Style.html). Wickham
-- PEP 8 [Style Guide for Python Code](https://peps.python.org/pep-0008/). van Rossum _et al._ 2013.
-- [Google Style Guides](https://google.github.io/styleguide/)
+- Google. [Style Guide](http://adv-r.had.co.nz/Style.html). **2024**.
+- LTER Scientific Computing Team. [Team Coding: 5 Essentials](https://lter.github.io/scicomp/wg_team-coding.html). **2024**.
+- Lowndes, J.S. _et al._ [Documenting Things: Openly for Future Us](https://openscapes.github.io/documenting-things/#/title-slide). **2023**. _posit::conf(2023)_
+- Wickham, H. [Advanced R: Style Guide](http://adv-r.had.co.nz/Style.html). (1st ed.). **2019**.
+- van Rossum, G. _et al._ [PEP 8: Style Guide for Python Code](https://peps.python.org/pep-0008/). **2013**. _Python Enhancement Proposals_

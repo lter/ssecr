@@ -25,14 +25,14 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
-- The British Ecological Society's [Better Science Guides](https://www.britishecologicalsociety.org/publications/better-science/) -- Data Management Guide
+- British Ecological Society (BES). [Better Science Guides: Data Management Guide ](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
 
 ### Workshops & Courses
 
-- NCEAS coreR [Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html) lesson
-- Open Science Synthesis for the Delta Science Program's [Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html)
-- Open Science Synthesis for the Delta Science Program's [Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html)
-- NCEAS Scientific Computing team's [Data Acquisition](https://nceas.github.io/scicomp.github.io/data-acquisition.html) instructions
+- LTER Scientific Computing Team. [Data Acquisition Guide for TRY and AppEEARS](https://lter.github.io/scicomp/internal_get-data.html). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html). **2023**.
 
 ### Websites
 

@@ -330,9 +330,9 @@ Take a look at [Posit's instructions for deployment](https://shiny.posit.co/r/ar
 
 ### Workshops & Courses
 
-- Posit's [Welcome to Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html) (for R coders)
-- 2022 All Scientists' Meeting [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/) workshop
+- Posit. [Welcome to Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html). **2024**.
+- Lyon, N.J., _et al._ [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/). **2022**.
 
 ### Websites
 
-- Posit's [Shiny](https://shiny.posit.co/) website
+- 

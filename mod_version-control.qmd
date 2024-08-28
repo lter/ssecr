@@ -79,10 +79,10 @@ Practically-speaking this also encourages an atmosphere where only one person ca
 
 ### Papers & Documents
 
-- Pereira Braga _et al._, [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
-- GitHub, [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
+- Pereira Braga, P.H. _et al._ [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
+- GitHub. [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
 
 ### Workshops & Courses
 
-- [Happy Git and GitHub for the useR](https://happygitwithr.com/). Bryan _et al._, 2024.
-- coreR Course, [Chapter 6: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). NCEAS Learning Hub, 2023.
+- Bryan J. _et al._ [Happy Git and GitHub for the useR](https://happygitwithr.com/). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). **2023**.

@@ -297,12 +297,12 @@ In the above output we can see that it has extracted the elevation of _every pix
 
 ### Workshops & Courses
 
-- The Carpentries' [Introduction to Geospatial Raster & Vector Data with R](https://datacarpentry.org/r-raster-vector-geospatial/)
-- The Carpentries' [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/index.html)
-- Arctic Data Center's [Spatial and Image Data Using GeoPandas](https://learning.nceas.ucsb.edu/2023-03-arctic/sections/geopandas.html) chapter of their Scalable Computing course
-- Jason Flower's (UC Santa Barbara) [Introduction to rasters with `terra`](https://jflowernet.github.io/intro-terra-ecodatascience/)
-- King, R. [Spatial Data Visualization](https://github.com/king0708/spatial-data-viz) workshop
+- The Carpentries. [Introduction to Geospatial Raster and Vector Data with R](https://datacarpentry.org/r-raster-vector-geospatial/). **2024**.
+- The Carpentries. [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/index.html). **2024**.
+- King, R. [Spatial Data Visualization](https://github.com/king0708/spatial-data-viz). **2024**.
+- Flower, J. [Introduction to Rasters with `terra`](https://jflowernet.github.io/intro-terra-ecodatascience/). **2024**.
+- Clark, S.J., _et al._ [Spatial and Image Data Using GeoPandas](https://learning.nceas.ucsb.edu/2023-03-arctic/sections/geopandas.html). **2023**.
 
 ### Websites
 
-- NASA's <u>App</u>lication for <u>E</u>xtracting and <u>E</u>xploring <u>A</u>nalysis <u>R</u>eady <u>S</u>amples [(AppEEARS) Portal](https://appeears.earthdatacloud.nasa.gov/)
+- NASA. [AppEEARS Portal](https://appeears.earthdatacloud.nasa.gov/)

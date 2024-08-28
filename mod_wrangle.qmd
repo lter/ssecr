@@ -543,18 +543,19 @@ In a script, attempt the following on the PIE crab data:
 
 ### Papers & Documents
 
-- [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/bg-19-3505-2022.html). Todd-Brown, K.E.O. _et al._, 2022. **Biogeosciences**
-- [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). Elgarby, O. 2019. **Medium**
-- [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). Borer, E. _et al._, 2009. **Ecological Society of America Bulletin**
+- Todd-Brown, K.E.O. _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/bg-19-3505-2022.html). **2022**. _Biogeosciences_
+- Elgarby, O. [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). **2019**. _Medium_
+- Borer, E. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
 
 ### Workshops & Courses
 
-- Data Analysis and Visualization in R for Ecologists, [Episode 4: Manipulating, Analyzing, and Exporting Data with `tidyverse`](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html). The Carpentries
-- [Coding in the Tidyverse](https://nceas.github.io/scicomp-workshop-tidyverse/). NCEAS Scientific Computing Team, 2023.
-- NCEAS Learning Hub's coreR Course, [Chapter 8: Cleaning & Wrangling Data](https://learning.nceas.ucsb.edu/2023-10-coreR/session_08.html). NCEAS Learning Hub, 2023.
-- NCEAS Learning Hub's coreR Course, [Chapter 16: Writing Functions & Packages](https://learning.nceas.ucsb.edu/2023-10-coreR/session_16.html). NCEAS Learning Hub, 2023.
-- Open Science Synthesis for the Delta Science Program's [Data Munging / QA / QC / Cleaning](https://nceas.github.io/oss-lessons/data-munging-qa-qc-cleaning/data-munging-qa-qc-cleaning.html)
+
+- The Carpentries. [Data Analysis and Visualization in R for Ecologists: Working with Data](https://datacarpentry.org/R-ecology-lesson/working-with-data.html). **2024**.
+- LTER Scientific Computing Team. [Coding in the Tidyverse](https://lter.github.io/workshop-tidyverse/). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub [coreR: Cleaning & Wrangling Data](https://learning.nceas.ucsb.edu/2023-10-coreR/session_08.html). **2023**.
+- NCEAS Learning Hub [coreR: Writing Functions & Packages](https://learning.nceas.ucsb.edu/2023-10-coreR/session_16.html). **2023**.
+- Delta Science Program [Data Munging / QA / QC / Cleaning](https://nceas.github.io/oss-lessons/data-munging-qa-qc-cleaning/data-munging-qa-qc-cleaning.html). **2019**.
 
 ### Websites
 
-- [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/)
+- Fox, J. [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. _Dynamic Ecology_

@@ -121,11 +121,10 @@ See [here](https://nceas.github.io/scicomp.github.io/best_practices.html#r-scrip
 
 ### Workshops & Courses
 
-- NCEAS coreR [Literate Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html) session
-- OSS [Reproducible Papers with RMarkdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html)
-- UCSB's Master of Environmental Data Science (MEDS) [Creating your Personal Website using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/) lesson
+- Csik, S. [Creating Your Personal Website Using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Literate Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html). **2023**.
+- Mecum, B. [Reproducible Papers with RMarkdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html). **2019**.
 
 ### Websites
-
-- Markdown Guide: [Basic Syntax](https://www.markdownguide.org/basic-syntax/)
-- Posit's [Welcome to Quarto](https://quarto.org/)
+- [The Markdown Guide: Basic Syntax](https://www.markdownguide.org/basic-syntax/).
+- Posit. [Welcome to Quarto](https://quarto.org/)

@@ -23,18 +23,18 @@ After completing this module you will be able to:
 
 ### Papers & Documents
 
-- Bates _et al._, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. _Biological Conservation_
+- Bates, A.E. _et al._, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. _Biological Conservation_
 - Peterson, D.M., _et al._, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). **2023**. _Ecology and Evolution_
 - Gaynor, K.M., _et al._, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). **2022**. _PLoS Computational Biology_
 - Deutsch, L., _et al._, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. _Environmental Science & Policy_
-- Farrell _et al._, [Training  Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
-- Hampton & Parker, [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
+- Farrell, K.J. _et al._, [Training  Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
+- Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
 
 ### Workshops & Courses
 
-- Amelia Liberatore's [Developing a Successful Team](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p) workshop slides
-- Open Science Synthesis for the Delta Science Program's [Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html)
-- Open Science Synthesis for the Delta Science Program's [Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences)
+- Liberatore, A. [Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html). **2023**.
+- Delta Stewardship Council. [Open Science Synthesis: Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences). **2021**.
 
 ### Websites
 

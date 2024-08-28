@@ -27,10 +27,10 @@ After completing this module you will be able to:
 
 ### Workshops & Courses
 
-- NCEAS Scientific Computing team's Collaborative Coding with GitHub workshop project management modules
-    - [GitHub Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html)
-    - [GitHub Projects](https://nceas.github.io/scicomp-workshop-collaborative-coding/projects.html)
-- Open Science Synthesis for the Delta Science Program's [Logic Models and Synthesis Development](https://learning.nceas.ucsb.edu/2021-09-delta/session-8-hands-on-logic-models-and-synthesis-development.html)
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Issues](https://lter.github.io/workshop-github/issues.html). **2024**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Milestones](https://lter.github.io/workshop-github/milestones.html). **2024**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Projects](https://lter.github.io/workshop-github/projects.html). **2024**.
+- NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Logic Models and Synthesis Development](https://learning.nceas.ucsb.edu/2021-09-delta/session-8-hands-on-logic-models-and-synthesis-development.html). **2021**.
 
 ### Websites
 
