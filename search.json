@@ -168,7 +168,7 @@
     "href": "mod_data-disc.html#module-content",
     "title": "Data Discovery & Management",
     "section": "Module Content",
-    "text": "Module Content",
+    "text": "Module Content\n\nPanel Discussion\n\nGreg Maurer, Environmental Data Initiative\nEric Sokol, National Ecological Observatory Network\nNicole Kaplan, Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
@@ -179,7 +179,7 @@
     "href": "mod_data-disc.html#additional-resources",
     "title": "Data Discovery & Management",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nBritish Ecological Society (BES). Better Science Guides: Data Management Guide. 2024.\n\n\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Data Acquisition Guide for TRY and AppEEARS. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Data Management Essentials. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Writing Data Management Plans. 2023.\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer",
+    "text": "Additional Resources\n\nPapers & Documents\n\nBritish Ecological Society (BES). Better Science Guides: Data Management Guide. 2024.\n\n\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Data Acquisition Guide for TRY and AppEEARS. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Data Management Essentials. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Writing Data Management Plans. 2023.\n\n\n\nWebsites\n\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer\nGlobal Biodiversity Information Facility (GBIF) Data Portal\niDigBio Digitized Specimen Portal\nLTAR Data Dashboards and Visualizations\nLTAR Group Data within the Ag Data Commons, the digital repository of the National Agricultural Library",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
