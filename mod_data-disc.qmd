@@ -18,8 +18,10 @@ After completing this module you will be able to:
 - <u>Perform</u> checks of the fundamental structure of a dataset
 
 ## Module Content
-
-
+### Panel Discussion
+- Greg Maurer, Environmental Data Initiative
+- Eric Sokol, National Ecological Observatory Network
+- Nicole Kaplan, Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service       
 
 ## Additional Resources
 
@@ -39,3 +41,7 @@ After completing this module you will be able to:
 - Environmental Data Initiative (EDI) [Data Portal](https://portal.edirepository.org/nis/advancedSearch.jsp)
 - DataONE [Data Catalog](https://search.dataone.org/data)
 - Ocean Observatories Initiative (OOI) [Data Explorer](https://dataexplorer.oceanobservatories.org/)
+- Global Biodiversity Information Facility (GBIF) [Data Portal](https://www.gbif.org/)
+- iDigBio Digitized [Specimen Portal](https://www.idigbio.org/portal)
+- [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
+- [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
