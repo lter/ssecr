@@ -367,6 +367,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   </ul></li>
   <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a>
   <ul class="collapse">
+  <li><a href="#code-and-the-stages-of-data" id="toc-code-and-the-stages-of-data" class="nav-link" data-scroll-target="#code-and-the-stages-of-data">Code and the Stages of Data</a></li>
   <li><a href="#packages-namespacing-and-software-versions" id="toc-packages-namespacing-and-software-versions" class="nav-link" data-scroll-target="#packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</a></li>
   <li><a href="#script-organization" id="toc-script-organization" class="nav-link" data-scroll-target="#script-organization">Script Organization</a></li>
   <li><a href="#file-paths" id="toc-file-paths" class="nav-link" data-scroll-target="#file-paths">File Paths</a></li>
@@ -658,6 +659,18 @@ Discussion: Project Structure
 <li>Sharing methods for external result validation is more straightforward</li>
 <li>In cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy</li>
 </ol>
+<section id="code-and-the-stages-of-data" class="level3">
+<h3 class="anchored" data-anchor-id="code-and-the-stages-of-data">Code and the Stages of Data</h3>
+<p>You’ll likely need a number of scripts to accomplish the different stages of preparing a synthesized dataset. All of these scripts together are often called a “workflow.” Each script will meet a specific need and its outputs will be the inputs of the next script. These intermediary data products are sometimes useful in and of themselves and tend to occur and predictable points that exist in most code workflows.</p>
+<p>Raw data will be parsed into cleaned data–often using idiosyncratic or dataset-specific scripts–which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially <em>many</em> scripts, <strong>coding reproducibly is vital to making this workflow intuitive and easy to maintain.</strong></p>
+<p>You don’t necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new teammembers, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!</p>
+<p align="center">
+<img src="images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%">
+</p><figcaption>
+Diagram of data stages from raw data to published products. Credit: Li Kui
+</figcaption>
+<p></p>
+</section>
 <section id="packages-namespacing-and-software-versions" class="level3">
 <h3 class="anchored" data-anchor-id="packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</h3>
 <p>An under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script <em>and</em> the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions <strong>is not sustainable</strong> but recording key information can help users set up the code environment that does work for your project.</p>
