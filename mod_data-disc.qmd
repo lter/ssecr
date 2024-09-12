@@ -19,9 +19,10 @@ After completing this module you will be able to:
 
 ## Module Content
 ### Panel Discussion
-- Greg Maurer, Environmental Data Initiative
-- Eric Sokol, National Ecological Observatory Network
-- Nicole Kaplan, Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service       
+- [Dr. Greg Maurer](https://greg.pronghorns.net/index.html), Environmental Data Initiative and Jornada LTER
+- [Dr. Eric Sokol](https://www.neonscience.org/person/eric-sokol), Staff Scientist, Quantitative Ecology, National Ecological Observatory Network
+- [Dr. Nicole Kaplan](https://www.ars.usda.gov/people-locations/person?person-id=51562), Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service
+- [Dr. Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel), Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US)
 
 ## Additional Resources
 
