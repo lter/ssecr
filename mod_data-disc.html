@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -42,6 +76,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -323,10 +359,17 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#module-content" id="toc-module-content" class="nav-link" data-scroll-target="#module-content">Module Content</a>
+  <li><a href="#panel-discussion" id="toc-panel-discussion" class="nav-link" data-scroll-target="#panel-discussion">Panel Discussion</a>
   <ul class="collapse">
-  <li><a href="#panel-discussion" id="toc-panel-discussion" class="nav-link" data-scroll-target="#panel-discussion">Panel Discussion</a></li>
+  <li><a href="#pre-prepared-questions" id="toc-pre-prepared-questions" class="nav-link" data-scroll-target="#pre-prepared-questions">Pre-Prepared Questions</a></li>
   </ul></li>
+  <li><a href="#data-repositories" id="toc-data-repositories" class="nav-link" data-scroll-target="#data-repositories">Data Repositories</a></li>
+  <li><a href="#general-data-searches" id="toc-general-data-searches" class="nav-link" data-scroll-target="#general-data-searches">General Data Searches</a>
+  <ul class="collapse">
+  <li><a href="#search-operators" id="toc-search-operators" class="nav-link" data-scroll-target="#search-operators">Search Operators</a></li>
+  <li><a href="#data-inventory-value" id="toc-data-inventory-value" class="nav-link" data-scroll-target="#data-inventory-value">Data Inventory Value</a></li>
+  </ul></li>
+  <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data">Downloading Data</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -376,17 +419,457 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><u>Perform</u> checks of the fundamental structure of a dataset</li>
 </ul>
 </section>
-<section id="module-content" class="level2">
-<h2 class="anchored" data-anchor-id="module-content">Module Content</h2>
-<section id="panel-discussion" class="level3">
-<h3 class="anchored" data-anchor-id="panel-discussion">Panel Discussion</h3>
+<section id="panel-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="panel-discussion">Panel Discussion</h2>
+<p>To motivate this module and provide some beneficial context, we’re beginning with a conversation with a panel composed of people who work at various organizations with a focus on data management and production. See the tabs below for each year’s panelists and links to their professional sites.</p>
+<p>Panelists will briefly introduce themselves and describe their roles. They will then speak to the kinds of data available at their organization and the strengths, limitations, and quirks of those data products from a synthesis lens. Individuals not associated with data repositories will instead share their experience working with specific types of data. Time allowing, panelists will talk about their experiences working at their organizations more broadly.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Panelists</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ul>
-<li><a href="https://greg.pronghorns.net/index.html">Dr.&nbsp;Greg Maurer</a>, Environmental Data Initiative and Jornada LTER</li>
-<li><a href="https://www.neonscience.org/person/eric-sokol">Dr.&nbsp;Eric Sokol</a>, Staff Scientist, Quantitative Ecology, National Ecological Observatory Network</li>
-<li><a href="https://www.ars.usda.gov/people-locations/person?person-id=51562">Dr.&nbsp;Nicole Kaplan</a>, Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service</li>
-<li><a href="https://www.usgs.gov/staff-profiles/stephen-k-formel">Dr.&nbsp;Steve Formel</a>, Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US)</li>
+<li>Dr.&nbsp;<a href="https://greg.pronghorns.net/index.html">Greg Maurer</a>, Environmental Data Initiative (EDI) and Jornada LTER</li>
+<li>Dr.&nbsp;<a href="https://www.neonscience.org/person/eric-sokol">Eric Sokol</a>, Staff Scientist, Quantitative Ecology, National Ecological Observatory Network (NEON)</li>
+<li>Dr.&nbsp;<a href="https://www.ars.usda.gov/people-locations/person?person-id=51562">Nicole Kaplan</a>, Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service (USDA-ARS)</li>
+<li>Dr.&nbsp;<a href="https://www.usgs.gov/staff-profiles/stephen-k-formel">Steve Formel</a>, Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US)</li>
+</ul>
+</div>
+</div>
+</div>
+<section id="pre-prepared-questions" class="level3">
+<h3 class="anchored" data-anchor-id="pre-prepared-questions">Pre-Prepared Questions</h3>
+<ul>
+<li>What policies are in place to ensure responsible use of your data?</li>
+<li>What challenges (technical and scientific) do you see in integrating data across platforms and organizations?</li>
+<li>Are you aware of any open sources of code useful for downloading, wrangling, or analyzing data in your repository?</li>
+<li>How can young scientists and data professionals contribute to the work being done by your organizations?</li>
 </ul>
 </section>
+</section>
+<section id="data-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="data-repositories">Data Repositories</h2>
+<p>There are <em>a lot</em> of specialized data repositories out there. These organizations are either primarily dedicated to storing and managing data or those operations constitute a substantive proportion of their efforts. In synthesis work, you may already have some datasets in-hand at the outset but it likely that <strong>you will need to find more data to test your hypotheses</strong>. Data repositories are a great way of finding/accessing data that are relevant to your questions.</p>
+<p>You’ll become familiar with many of these when you need a particular type of data and go searching for it but to help speed you along, see the list below for a non-exhaustive set of some that have proved useful to other synthesis projects in the past. They are in alphabetical order. If the “<i class="fa-brands fa-r-project" aria-label="r-project"></i> Package” column contains the GitHub logo (<i class="fa-brands fa-github" aria-label="github"></i>) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>Name</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+<th style="text-align: center;"><i class="fa-brands fa-r-project" aria-label="r-project"></i> <strong>Package</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://ameriflux.lbl.gov/data/data-policy/">AmeriFlux</a></td>
+<td style="text-align: left;">Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/amerifluxr/index.html"><code>amerifluxr</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a href="https://www.dataone.org/">DataONE</a></td>
+<td style="text-align: left;">Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/dataone/index.html"><code>dataone</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://edirepository.org/">EDI</a></td>
+<td style="text-align: left;">Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/EDIutils/index.html"><code>EDIutils</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a href="https://ess-dive.lbl.gov/">EES-DIVE</a></td>
+<td style="text-align: left;">The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems.</td>
+<td style="text-align: center;">–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://www.gbif.org/">GBIF</a></td>
+<td style="text-align: left;">The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rgbif/index.html"><code>rgbif</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a href="https://earthengine.google.com/">Google Earth Engine</a></td>
+<td style="text-align: left;">Google Earth Engine is a cloud-based geospatial analysis platform that provides access to vast amounts of satellite imagery and environmental data for monitoring and understanding changes in the Earth’s surface.</td>
+<td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/r-spatial/rgee"><code>rgee</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://planetarycomputer.microsoft.com/">Microsoft Planetary Computer</a></td>
+<td style="text-align: left;">The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research.</td>
+<td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/brazil-data-cube/rstac"><code>rstac</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a href="https://data.nasa.gov/">NASA</a></td>
+<td style="text-align: left;">Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via <a href="https://appeears.earthdatacloud.nasa.gov/">AppEEARS</a>.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/nasadata/index.html"><code>nasadata</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></td>
+<td style="text-align: left;">Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rentrez/index.html"><code>rentrez</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a href="https://data.neonscience.org/">NEON</a></td>
+<td style="text-align: left;">Provides ecological data from U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/neonUtilities/index.html"><code>neonUtilities</code></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://data.noaa.gov/onestop/">NOAA</a></td>
+<td style="text-align: left;">Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends.</td>
+<td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/NOAA-Big-Data-Program/EpiNOAA-R"><code>EpiNOAA-R</code></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><a href="https://opentraits.org/datasets.html">Open Traits Network</a></td>
+<td style="text-align: left;">While not a repository <em>per se</em>, the Open Traits Network has compiled an extensive lists of repositories for trait data. Check out their repository inventory for trait data</td>
+<td style="text-align: center;">–</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><a href="https://www.usgs.gov/products/data/all-data">USGS</a></td>
+<td style="text-align: left;">Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments.</td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/dataRetrieval/index.html"><code>dataRetrieval</code></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="general-data-searches" class="level2">
+<h2 class="anchored" data-anchor-id="general-data-searches">General Data Searches</h2>
+<p>If you don’t find what you’re looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, <a href="https://www.google.com">Google</a> is a suprisingly good resource for finding data and–for those familiar with Google Scholar for peer reviewed literature-specific Googling–there is a dataset-specific variant of Google called <a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>.</p>
+<section id="search-operators" class="level3">
+<h3 class="anchored" data-anchor-id="search-operators">Search Operators</h3>
+<p>Virtually all search engines support “operators” to create more effective queries (i.e., search parameters). If you don’t use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you’re looking for very specific criteria in candidate datasets.</p>
+<p>See the tabs below for some useful operators that might help narrow your dataset search even when using more general platforms.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Quotes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Wildcard</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Plus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">OR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Minus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Site</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">File Type</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false">In Title</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-9" role="tab" aria-controls="tabset-2-9" aria-selected="false">In URL</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Use quotation marks (<code>""</code>) to <strong>search for an exact phrase</strong>. This is particularly useful when you need specific data points or exact wording.</p>
+<p>Example: <code>"reef biodiversity"</code></p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Use an asterisk (<code>*</code>) to <strong>search using a placeholder for any word or phrase in the query</strong>. This is useful for finding variations of a term.</p>
+<p>Example: <code>Pinus * data</code></p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Use a plus sign (<code>+</code>) to <strong>search using more than one query <em>at the same time</em></strong>. This is useful when you need combinations of criteria to be met.</p>
+<p>Example: <code>bat + cactus</code></p>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<p>Use the ‘or’ operator (<code>OR</code>) operator to <strong>search for either one term <em>or</em> another</strong>. It broadens your search to include multiple terms.</p>
+<p>Example: <code>"prairie pollinator" OR "grassland pollinator"</code></p>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<p>Use a minus sign (<code>-</code>; a.k.a. “hyphen”) to <strong>exclude certain words from your search</strong>. Useful to filter out irrelevant results.</p>
+<p>Example: <code>marine biodiversity data -fishery</code></p>
+</div>
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<p>Use the site operator (<code>site:</code>) to <strong>search within a specific website or domain</strong>. This is helpful when you’re looking for data from a particular source.</p>
+<p>Example: <code>site:.gov bird data</code></p>
+</div>
+<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
+<p>Use the file type operator (<code>filetype:</code>) to <strong>search for data with a specific file extension</strong>. Useful to make sure the data you find is already in a format you can intteract with.</p>
+<p>Example: <code>filetype:tif precipitation data</code></p>
+</div>
+<div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
+<p>Use the ‘in title’ operator (<code>intitle:</code>) to <strong>search for pages that have a specific word in the title</strong>. This can narrow down your results to more relevant pages.</p>
+<p>Example: <code>intitle:"lithology"</code></p>
+</div>
+<div id="tabset-2-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-9-tab">
+<p>Use the ‘in URL’ operator (<code>inurl:</code>) to <strong>search for pages that have a specific word in the URL</strong>. This can help locate data repositories or specific datasets.</p>
+<p>Example: <code>inurl:data soil chemistry</code></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Data Inventory
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Part 1</strong> (~25 min)</p>
+<p>In your project groups:</p>
+<ul>
+<li>Review your data inventory Google Sheet and discuss your motivation for including the datasets you chose</li>
+<li>Self-assign one dataset to each group member
+<ul>
+<li>Later each of you will download your assigned dataset</li>
+</ul></li>
+<li>Discuss what information your group needs to know whether each of these datasets is useful to your project</li>
+<li>Once you’ve identified that information, begin filling out the second sheet of the data inventory Google Sheet</li>
+</ul>
+<p><strong>Part 2</strong> (~10 min)</p>
+<ul>
+<li>Exchange data inventory tables with a different project group</li>
+<li>Self-assign one dataset of the other group’s data inventory to each member of your group
+<ul>
+<li><em>Be sure to choose from the more detailed second sheet!</em></li>
+</ul></li>
+<li>Try to find the <em>exact</em> data file to which you were assigned</li>
+<li>Do you agree with the information entered in the data inventory?</li>
+<li>Is there any information you think should be in the data inventory that wasn’t?</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discussion: Data Inventory
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Return to the main room and let’s discuss (some of) the following questions:</p>
+<ul>
+<li>Which elements of the data inventory table made it easier or more difficult to find the data?</li>
+<li>What challenges did you encounter while searching for the datasets?</li>
+<li>What is your plan for downloading the data?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="data-inventory-value" class="level3">
+<h3 class="anchored" data-anchor-id="data-inventory-value">Data Inventory Value</h3>
+<p>Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:</p>
+<ul>
+<li>Well-documented datasets make it easier for researchers to find and access specific data for reproducible research</li>
+<li>Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment</li>
+<li>Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)</li>
+<li>When you need to generate metadata for your own synthesis data product you’ll already have much of the information you need</li>
+</ul>
+</section>
+</section>
+<section id="downloading-data" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-data">Downloading Data</h2>
+<p>Once you’ve found data, filled out your data inventory, and decided which datasets you actually want, it’s time to download some of them! There are several methods you can use and it’s possible that each won’t work in all cases so it’s important to be at least somewhat familiar with several of these tools.</p>
+<p>Most of these methods will work regardless of the format of the data (i.e., its file extension) but the format of the data will be important when you want to ‘read in’ the data and begin to work with it.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Data Download
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In your project groups:</p>
+<ul>
+<li>Assign one member to each of the five data download methods indicated below</li>
+<li>You will shortly be assigned to different breakout groups by chosen download method
+<ul>
+<li>Discuss with your group how you will code without causing merge conflicts</li>
+<li><em>Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!</em></li>
+</ul></li>
+</ul>
+<p>In data download groups:</p>
+<ul>
+<li>Write a script <strong>for your group</strong> to download data using your chosen method</li>
+<li>Feel free to download a dataset from your inventory
+<ul>
+<li>If no datasets in your group’s inventory need the download method you chose, try to run the example code included below</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<p>Below are some example code chunks for five methods of downloading data in a scripted way. There will be contexts where only a <u>G</u>raphical <u>U</u>ser <u>I</u>nterface (“GUI”; [GOO-ee]) is available but the details of that method of downloading are usually specific to the portal you’re accessing so we won’t include an artificial general case.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Data Entity URL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">R Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Batch Download</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">API Call</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Command Line</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Sometimes you might have a URL directly to a particular dataset (usually one hosted by a data repository). If you copy/paste this URL into your browser the download would automatically begin. However, we want to make our workflows entirely scripted (or close to it) so see the example below for how to download data via a data entity URL.</p>
+<p>The dataset we download below is one collected at the Santa Barbara Coastal (SBC) LTER on <a href="https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sbc.77.10">California spiny lobster (<em>Panulirus interruptus</em>) populations</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-2" class="code-annotation-target"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span></span>
+<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
+<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-1" data-code-lines="2" data-code-annotation="1">You can typically find this URL in the repository where you found the dataset</span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>If you’re quite lucky, the data you want might be stored in a repository that developed (and maintains!) an <i class="fa-brands fa-r-project" aria-label="r-project"></i> R package. These packages may or may not be on CRAN (packages can often also be found on GitHub or Bioconductor). Typically these packages have a short “vignette” that demonstrates how their functions should be used.</p>
+<p>Consider the following example adapted from the <code>dataone</code> <a href="https://cran.rstudio.com/web/packages/dataone/vignettes/v04-download-data.html">package vignette</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(dataone)</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># DataONE requires "coordinating nodes" so make one</span></span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a>cn <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">CNode</span>()</span>
+<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a reference to a node based on its identifier</span></span>
+<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">getMNode</span>(<span class="at">x =</span> cn, <span class="st">"urn:node:KNB"</span>)</span>
+<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a query</span></span>
+<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12" aria-hidden="true" tabindex="-1"></a>query_list <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">q =</span> <span class="st">"id:Blandy.77.1"</span>, <span class="at">fl =</span> <span class="st">"resourceMap"</span>)</span>
+<span id="annotated-cell-2-13"><a href="#annotated-cell-2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-14"><a href="#annotated-cell-2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Use it to search DataONE</span></span>
+<span id="annotated-cell-2-15"><a href="#annotated-cell-2-15" aria-hidden="true" tabindex="-1"></a>query_result <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">query</span>(<span class="at">x =</span> cn, <span class="at">solrQuery =</span> query_list, <span class="at">as =</span> <span class="st">"data.frame"</span>)</span>
+<span id="annotated-cell-2-16"><a href="#annotated-cell-2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-17"><a href="#annotated-cell-2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify package ID</span></span>
+<span id="annotated-cell-2-18"><a href="#annotated-cell-2-18" aria-hidden="true" tabindex="-1"></a>pkg_id <span class="ot">&lt;-</span> query_result[<span class="dv">1</span>, <span class="dv">1</span>]</span>
+<span id="annotated-cell-2-19"><a href="#annotated-cell-2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-20"><a href="#annotated-cell-2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the data</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-21" class="code-annotation-target"><a href="#annotated-cell-2-21" aria-hidden="true" tabindex="-1"></a>temp_file_name <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">getPackage</span>(<span class="at">x =</span> mn, <span class="at">id =</span> pkg_id)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="21" data-code-annotation="1"><code>dataone</code> downloads data to a “temporary directory” and returns the name of the file/path. You’ll need that to read in the data so <strong>be sure to assign it to an object!</strong></span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>You may want to download several data files hosted in the same repository online for different spatial/temporal replicates. You <em>could</em> try to use the data entity URL or an associated <i class="fa-brands fa-r-project" aria-label="r-project"></i> package (if one exists) or you could write code to do a “batch download” where you’d just download each file using a piece of code that repeats itself as much as needed.</p>
+<p>The dataset we demonstrate downloading below is <a href="https://www1.ncdc.noaa.gov/pub/data/gsod/">NOAA weather station data</a>. Specifically it is the <u>I</u>ntegrated <u>S</u>urface <u>D</u>ata (ISD).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the start/end years for which you want to download data</span></span>
+<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>target_years <span class="ot">&lt;-</span> <span class="dv">2000</span><span class="sc">:</span><span class="dv">2005</span></span>
+<span id="annotated-cell-3-3"><a href="#annotated-cell-3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across years</span></span>
+<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_year <span class="cf">in</span> target_years){</span>
+<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Message a progress note</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-8" class="code-annotation-target"><a href="#annotated-cell-3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Downloading data for "</span>, focal_year)</span>
+<span id="annotated-cell-3-9"><a href="#annotated-cell-3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-10"><a href="#annotated-cell-3-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble the URL manually</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-11" class="code-annotation-target"><a href="#annotated-cell-3-11" aria-hidden="true" tabindex="-1"></a>  focal_url <span class="ot">&lt;-</span> <span class="fu">paste0</span>( <span class="st">"https://www1.ncdc.noaa.gov/pub/data/gsod/"</span>, focal_year, <span class="st">"/gsod_"</span>, focal_year, <span class="st">".tar"</span>)</span>
+<span id="annotated-cell-3-12"><a href="#annotated-cell-3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-13"><a href="#annotated-cell-3-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble your preferred file name once it's downloaded</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="3">3</button><span id="annotated-cell-3-14" class="code-annotation-target"><a href="#annotated-cell-3-14" aria-hidden="true" tabindex="-1"></a>  focal_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"gsod_"</span>, focal_year, <span class="st">".tar"</span>)</span>
+<span id="annotated-cell-3-15"><a href="#annotated-cell-3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-16"><a href="#annotated-cell-3-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Download the data</span></span>
+<span id="annotated-cell-3-17"><a href="#annotated-cell-3-17" aria-hidden="true" tabindex="-1"></a>  utils<span class="sc">::</span><span class="fu">download.file</span>(<span class="at">url =</span> focal_url, <span class="at">destfile =</span> focal_file, <span class="at">method =</span> <span class="st">"curl"</span>)</span>
+<span id="annotated-cell-3-18"><a href="#annotated-cell-3-18" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="8" data-code-annotation="1">This message isn’t required but can be nice! Downloading data can take a <em>long</em> time so including a progress message can re-assure you that your R session hasn’t crashed</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="11" data-code-annotation="2">To create a working URL you’ll likely need to click an example data file URL and try to <em>exactly</em> mimic its format</span>
+</dd>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-3" data-code-lines="14" data-code-annotation="3">This step again isn’t required but can let you exert a useful level of control over the naming convention of your data file(s)</span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<p>In slightly more complicated contexts, you’ll need to make a request via an <u>A</u>pplication <u>P</u>rogramming <u>I</u>nterface (“API”). As the name might suggest, these platforms serve as a bridge between some application and code. Using such a method to download data is a–relatively–frequent occurrence in synthesis work.</p>
+<p>Here we’ll demonstrate an API call for NOAA’s <a href="https://tidesandcurrents.noaa.gov/">Tides and Currents</a> data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(httr, jsonlite)</span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a 'custom function' to fetch desired data</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-6" class="code-annotation-target"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a>fetch_tide <span class="ot">&lt;-</span> <span class="cf">function</span>(station_id, <span class="at">product =</span> <span class="st">"predictions"</span>, <span class="at">datum =</span> <span class="st">"MLLW"</span>, <span class="at">time_zone =</span> <span class="st">"lst_ldt"</span>, <span class="at">units =</span> <span class="st">"english"</span>, <span class="at">interval =</span> <span class="st">"h"</span>, <span class="at">format =</span> <span class="st">"json"</span>){</span>
+<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-8" class="code-annotation-target"><a href="#annotated-cell-4-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Custom error flags</span></span>
+<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-10"><a href="#annotated-cell-4-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get a few key dates (relative to today)</span></span>
+<span id="annotated-cell-4-11"><a href="#annotated-cell-4-11" aria-hidden="true" tabindex="-1"></a>  yesterday <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>() <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="annotated-cell-4-12"><a href="#annotated-cell-4-12" aria-hidden="true" tabindex="-1"></a>  two_days_from_now <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>() <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="annotated-cell-4-13"><a href="#annotated-cell-4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-14"><a href="#annotated-cell-4-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Adjust begin/end dates</span></span>
+<span id="annotated-cell-4-15"><a href="#annotated-cell-4-15" aria-hidden="true" tabindex="-1"></a>  begin_date <span class="ot">&lt;-</span> <span class="fu">format</span>(yesterday, <span class="st">"%Y%m%d"</span>)</span>
+<span id="annotated-cell-4-16"><a href="#annotated-cell-4-16" aria-hidden="true" tabindex="-1"></a>  end_date <span class="ot">&lt;-</span> <span class="fu">format</span>(two_days_from_now, <span class="st">"%Y%m%d"</span>)</span>
+<span id="annotated-cell-4-17"><a href="#annotated-cell-4-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Construct the API URL</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="3">3</button><span id="annotated-cell-4-19" class="code-annotation-target"><a href="#annotated-cell-4-19" aria-hidden="true" tabindex="-1"></a>  tide_url <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="annotated-cell-4-20"><a href="#annotated-cell-4-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?"</span>,</span>
+<span id="annotated-cell-4-21"><a href="#annotated-cell-4-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"product="</span>, product,</span>
+<span id="annotated-cell-4-22"><a href="#annotated-cell-4-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;application=NOS.COOPS.TAC.WL"</span>,</span>
+<span id="annotated-cell-4-23"><a href="#annotated-cell-4-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;begin_date="</span>, begin_date,</span>
+<span id="annotated-cell-4-24"><a href="#annotated-cell-4-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;end_date="</span>, end_date,</span>
+<span id="annotated-cell-4-25"><a href="#annotated-cell-4-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;datum="</span>, datum,</span>
+<span id="annotated-cell-4-26"><a href="#annotated-cell-4-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;station="</span>, station_id,</span>
+<span id="annotated-cell-4-27"><a href="#annotated-cell-4-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;time_zone="</span>, time_zone,</span>
+<span id="annotated-cell-4-28"><a href="#annotated-cell-4-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;units="</span>, units,</span>
+<span id="annotated-cell-4-29"><a href="#annotated-cell-4-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;interval="</span>, interval,</span>
+<span id="annotated-cell-4-30"><a href="#annotated-cell-4-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;format="</span>, format)</span>
+<span id="annotated-cell-4-31"><a href="#annotated-cell-4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-32"><a href="#annotated-cell-4-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the API request</span></span>
+<span id="annotated-cell-4-33"><a href="#annotated-cell-4-33" aria-hidden="true" tabindex="-1"></a>  response <span class="ot">&lt;-</span> httr<span class="sc">::</span><span class="fu">GET</span>(<span class="at">url =</span> tide_url)</span>
+<span id="annotated-cell-4-34"><a href="#annotated-cell-4-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-4-35"><a href="#annotated-cell-4-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># If the request is successful...</span></span>
+<span id="annotated-cell-4-36"><a href="#annotated-cell-4-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(httr<span class="sc">::</span><span class="fu">status_code</span>(response) <span class="sc">==</span> <span class="dv">200</span>){</span>
+<span id="annotated-cell-4-37"><a href="#annotated-cell-4-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="annotated-cell-4-38"><a href="#annotated-cell-4-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parse the JSON response</span></span>
+<span id="annotated-cell-4-39"><a href="#annotated-cell-4-39" aria-hidden="true" tabindex="-1"></a>    tide_data <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(httr<span class="sc">::</span><span class="fu">content</span>(response, <span class="st">"text"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>))</span>
+<span id="annotated-cell-4-40"><a href="#annotated-cell-4-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-41"><a href="#annotated-cell-4-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># And return it</span></span>
+<span id="annotated-cell-4-42"><a href="#annotated-cell-4-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(tide_data)</span>
+<span id="annotated-cell-4-43"><a href="#annotated-cell-4-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-44"><a href="#annotated-cell-4-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Otherwise...</span></span>
+<span id="annotated-cell-4-45"><a href="#annotated-cell-4-45" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="annotated-cell-4-46"><a href="#annotated-cell-4-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-47"><a href="#annotated-cell-4-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Pass the error message back to the user</span></span>
+<span id="annotated-cell-4-48"><a href="#annotated-cell-4-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"Failed to fetch tide data</span><span class="sc">\n</span><span class="st">Status code: "</span>, httr<span class="sc">::</span><span class="fu">status_code</span>(response))</span>
+<span id="annotated-cell-4-49"><a href="#annotated-cell-4-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-50"><a href="#annotated-cell-4-50" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="annotated-cell-4-51"><a href="#annotated-cell-4-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="annotated-cell-4-52"><a href="#annotated-cell-4-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-53"><a href="#annotated-cell-4-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke the function</span></span>
+<span id="annotated-cell-4-54"><a href="#annotated-cell-4-54" aria-hidden="true" tabindex="-1"></a>tide_df <span class="ot">&lt;-</span> <span class="fu">fetch_tide</span>(<span class="at">station_id =</span> <span class="st">"9411340"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="6" data-code-annotation="1">When you do need to make an API call, a custom function is a great way of standardizing your entries. This way you only need to figure out how to do the call once and from then on you can lean on the (likely more familiar) syntax of the language in which you wrote the function!</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="8" data-code-annotation="2">We’re excluding error checks for simplicity’s sake but <strong>you will want to code informative error checks</strong>. Basically you want to consider inputs to the function that would break it and pre-emptively stop the function (with an informative message) when those malformed inputs are received</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="19" data-code-annotation="3">Just like the batch download, we need to assemble the URL that the API is expecting</span>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<p>While many ecologists are trained in programming languages like R or Python, some operations require the <u>C</u>ommand <u>L</u>ine <u>I</u>nterface (“CLI”; a.k.a. “shell”, “bash”, “terminal”, etc.). <strong>Don’t worry if you’re new to this language!</strong> There are a lot of good resources for learning the fundamentals, including The Carpentries’ workshop “<a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a>”.</p>
+<p>Below we demonstrate download via command line for <a href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form">ERA5 dataa</a>. This is the fifth generation <u>E</u>uropean <u>C</u>entre for <u>M</u>edium-range <u>W</u>eather <u>F</u>orecasts (ECMWF) re-analysis for global climate and weather for the past 8 decades.</p>
+<blockquote class="blockquote">
+<p>Step 1: Generate a list of file names and put them in a TXT file named “list.txt”</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0805_v003-2023m0807t093718.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0806_v003-2023m0809t092629.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0807_v003-2023m0809t092635.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0808_v003-2023m0810t092721.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote class="blockquote">
+<p>Step 2: Launch the command line window</p>
+</blockquote>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--content-disposition</span> <span class="at">-i</span> list.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
@@ -932,25 +1415,64 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       };
     }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
+      const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+      for (let i=0; i<annoteTargets.length; i++) {
+        const annoteTarget = annoteTargets[i];
+        const targetCell = annoteTarget.getAttribute("data-target-cell");
+        const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+        const contentFn = () => {
+          const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          if (content) {
+            const tipContent = content.cloneNode(true);
+            tipContent.classList.add("code-annotation-tip-content");
+            return tipContent.outerHTML;
           }
-        });
+        }
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          onShow: (instance) => {
+            selectCodeLines(instance.reference);
+            instance.reference.classList.add('code-annotation-active');
+            window.tippy.hideAll();
+          },
+          onHide: (instance) => {
+            unselectCodeLines();
+            instance.reference.classList.remove('code-annotation-active');
+          },
+          maxWidth: 300,
+          delay: [50, 0],
+          duration: [200, 0],
+          offset: [5, 10],
+          arrow: true,
+          appendTo: function(el) {
+            return el.parentElement.parentElement.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto',
+          placement: 'right',
+          popperOptions: {
+            modifiers: [
+            {
+              name: 'flip',
+              options: {
+                flipVariations: false, // true by default
+                allowedAutoPlacements: ['right'],
+                fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+              },
+            },
+            {
+              name: 'preventOverflow',
+              options: {
+                mainAxis: false,
+                altAxis: false
+              }
+            }
+            ]        
+          }      
+        };
+        window.tippy(annoteTarget, config); 
       }
   const findCites = (el) => {
     const parentEl = el.parentElement;
