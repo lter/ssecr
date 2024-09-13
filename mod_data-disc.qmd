@@ -1,5 +1,7 @@
 ---
 title: "Data Discovery & Management"
+code-annotations: hover
+code-overflow: wrap
 ---
 
 ## Overview
@@ -175,10 +177,211 @@ Documenting potential datasets (and their metadata) thoroughly in a data invento
 - Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
 - When you need to generate metadata for your own synthesis data product you'll already have much of the information you need
 
+## Downloading Data
 
+Once you've found data, filled out your data inventory, and decided which datasets you actually want, it's time to download some of them! There are several methods you can use and it's possible that each won't work in all cases so it's important to be at least somewhat familiar with several of these tools.
 
+Most of these methods will work regardless of the format of the data (i.e., its file extension) but the format of the data will be important when you want to 'read in' the data and begin to work with it.
 
+:::{.callout-note icon="false"}
+#### Activity: Data Download
 
+In your project groups:
+
+- Assign one member to each of the five data download methods indicated below
+- You will shortly be assigned to different breakout groups by chosen download method
+    - Discuss with your group how you will code without causing merge conflicts
+    - _Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!_
+
+In data download groups:
+
+- Write a script **for your group** to download data using your chosen method
+- Feel free to download a dataset from your inventory
+    - If no datasets in your group's inventory need the download method you chose, try to run the example code included below
+
+:::
+
+Below are some example code chunks for five methods of downloading data in a scripted way. There will be contexts where only a <u>G</u>raphical <u>U</u>ser <u>I</u>nterface ("GUI"; \[GOO-ee\]) is available but the details of that method of downloading are usually specific to the portal you're accessing so we won't include an artificial general case.
+
+:::{.panel-tabset}
+
+### Data Entity URL
+
+Sometimes you might have a URL directly to a particular dataset (usually one hosted by a data repository). If you copy/paste this URL into your browser the download would automatically begin. However, we want to make our workflows entirely scripted (or close to it) so see the example below for how to download data via a data entity URL.
+
+The dataset we download below is one collected at the Santa Barbara Coastal (SBC) LTER on [California spiny lobster (_Panulirus interruptus_) populations](https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sbc.77.10).
+
+```{r download-entity-url}
+#| eval: false
+
+# Define URL as an object
+dt_url <- "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6" #<1>
+
+# Read it into R
+lobster_df <- read.csv(file = dt_url)
+```
+1. You can typically find this URL in the repository where you found the dataset
+
+### R Package
+
+If you're quite lucky, the data you want might be stored in a repository that developed (and maintains!) an {{< fa brands r-project >}} R package. These packages may or may not be on CRAN (packages can often also be found on GitHub or Bioconductor). Typically these packages have a short "vignette" that demonstrates how their functions should be used.
+
+Consider the following example adapted from the `dataone` [package vignette](https://cran.rstudio.com/web/packages/dataone/vignettes/v04-download-data.html).
+
+```{r download-r-pkg}
+#| eval: false
+
+# Load needed packages
+## install.packages("librarian")
+librarian::shelf(dataone)
+
+# DataONE requires "coordinating nodes" so make one
+cn <- dataone::CNode()
+
+# Get a reference to a node based on its identifier
+mn <- dataone::getMNode(x = cn, "urn:node:KNB")
+
+# Generate a query
+query_list <- list(q = "id:Blandy.77.1", fl = "resourceMap")
+
+# Use it to search DataONE
+query_result <- dataone::query(x = cn, solrQuery = query_list, as = "data.frame")
+
+# Identify package ID
+pkg_id <- query_result[1, 1]
+
+# Download the data
+temp_file_name <- dataone::getPackage(x = mn, id = pkg_id) # <1>
+```
+1. `dataone` downloads data to a "temporary directory" and returns the name of the file/path. You'll need that to read in the data so **be sure to assign it to an object!**
+
+### Batch Download
+
+You may want to download several data files hosted in the same repository online for different spatial/temporal replicates. You _could_ try to use the data entity URL or an associated {{< fa brands r-project >}} package (if one exists) or you could write code to do a "batch download" where you'd just download each file using a piece of code that repeats itself as much as needed.
+
+The dataset we demonstrate downloading below is [NOAA weather station data](https://www1.ncdc.noaa.gov/pub/data/gsod/). Specifically it is the <u>I</u>ntegrated <u>S</u>urface <u>D</u>ata (ISD).
+
+```{r download-batch}
+#| eval: false
+
+# Specify the start/end years for which you want to download data
+target_years <- 2000:2005
+
+# Loop across years
+for(focal_year in target_years){
+
+  # Message a progress note
+  message("Downloading data for ", focal_year) # <1>
+
+  # Assemble the URL manually
+  focal_url <- paste0( "https://www1.ncdc.noaa.gov/pub/data/gsod/", focal_year, "/gsod_", focal_year, ".tar") # <2>
+
+  # Assemble your preferred file name once it's downloaded
+  focal_file <- paste0("gsod_", focal_year, ".tar") # <3>
+
+  # Download the data
+  utils::download.file(url = focal_url, destfile = focal_file, method = "curl")
+}
+```
+1. This message isn't required but can be nice! Downloading data can take a _long_ time so including a progress message can re-assure you that your R session hasn't crashed
+2. To create a working URL you'll likely need to click an example data file URL and try to _exactly_ mimic its format
+3. This step again isn't required but can let you exert a useful level of control over the naming convention of your data file(s)
+
+### API Call
+
+In slightly more complicated contexts, you'll need to make a request via an <u>A</u>pplication <u>P</u>rogramming <u>I</u>nterface ("API"). As the name might suggest, these platforms serve as a bridge between some application and code. Using such a method to download data is a--relatively--frequent occurrence in synthesis work.
+
+Here we'll demonstrate an API call for NOAA's [Tides and Currents](https://tidesandcurrents.noaa.gov/) data.
+
+```{r download-api}
+#| eval: false
+
+# Load needed packages
+## install.packages("librarian")
+librarian::shelf(httr, jsonlite)
+
+# Define a 'custom function' to fetch desired data
+fetch_tide <- function(station_id, product = "predictions", datum = "MLLW", time_zone = "lst_ldt", units = "english", interval = "h", format = "json"){ # <1>
+
+  # Custom error flags # <2>
+
+  # Get a few key dates (relative to today)
+  yesterday <- Sys.Date() - 1
+  two_days_from_now <- Sys.Date() + 2
+
+  # Adjust begin/end dates
+  begin_date <- format(yesterday, "%Y%m%d")
+  end_date <- format(two_days_from_now, "%Y%m%d")
+  
+  # Construct the API URL
+  tide_url <- paste0( # <3>
+    "https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?",
+    "product=", product,
+    "&application=NOS.COOPS.TAC.WL",
+    "&begin_date=", begin_date,
+    "&end_date=", end_date,
+    "&datum=", datum,
+    "&station=", station_id,
+    "&time_zone=", time_zone,
+    "&units=", units,
+    "&interval=", interval,
+    "&format=", format)
+
+  # Make the API request
+  response <- httr::GET(url = tide_url)
+  
+  # If the request is successful...
+  if(httr::status_code(response) == 200){
+    
+    # Parse the JSON response
+    tide_data <- jsonlite::fromJSON(httr::content(response, "text", encoding = "UTF-8"))
+
+    # And return it
+    return(tide_data)
+
+  # Otherwise...
+  } else {
+
+  # Pass the error message back to the user
+  stop("Failed to fetch tide data\nStatus code: ", httr::status_code(response))
+
+  }
+}
+
+# Invoke the function
+tide_df <- fetch_tide(station_id = "9411340")
+```
+1. When you do need to make an API call, a custom function is a great way of standardizing your entries. This way you only need to figure out how to do the call once and from then on you can lean on the (likely more familiar) syntax of the language in which you wrote the function!
+2. We're excluding error checks for simplicity's sake but **you will want to code informative error checks**. Basically you want to consider inputs to the function that would break it and pre-emptively stop the function (with an informative message) when those malformed inputs are received
+3. Just like the batch download, we need to assemble the URL that the API is expecting
+
+### Command Line
+
+While many ecologists are trained in programming languages like R or Python, some operations require the <u>C</u>ommand <u>L</u>ine <u>I</u>nterface ("CLI"; a.k.a. "shell", "bash", "terminal", etc.). **Don't worry if you're new to this language!** There are a lot of good resources for learning the fundamentals, including The Carpentries' workshop "[The Unix Shell](https://swcarpentry.github.io/shell-novice/)".
+
+Below we demonstrate download via command line for [ERA5 dataa](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form). This is the fifth generation <u>E</u>uropean <u>C</u>entre for <u>M</u>edium-range <u>W</u>eather <u>F</u>orecasts (ECMWF) re-analysis for global climate and weather for the past 8 decades.
+
+> Step 1: Generate a list of file names and put them in a TXT file named "list.txt"
+
+```{bash download-cli-1}
+#| eval: false
+https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
+https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0805_v003-2023m0807t093718.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
+https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0806_v003-2023m0809t092629.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
+https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0807_v003-2023m0809t092635.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
+https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0808_v003-2023m0810t092721.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
+https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
+```
+
+> Step 2: Launch the command line window
+
+```{bash download-cli-2}
+#| eval: false
+wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-session-cookies --user=XXX --password=XXX
+--content-disposition -i list.txt
+```
+
+:::
 
 
 
