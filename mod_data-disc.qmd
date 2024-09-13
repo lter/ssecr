@@ -131,6 +131,59 @@ Example: `inurl:data soil chemistry`
 
 :::
 
+:::{.callout-note icon="false"}
+#### Activity: Data Inventory
+
+**Part 1** (~25 min)
+
+In your project groups: 
+
+- Review your data inventory Google Sheet and discuss your motivation for including the datasets you chose
+- Self-assign one dataset to each group member
+    - Later each of you will download your assigned dataset
+- Discuss what information your group needs to know whether each of these datasets is useful to your project
+- Once you've identified that information, begin filling out the second sheet of the data inventory Google Sheet
+
+**Part 2** (~10 min)
+
+- Exchange data inventory tables with a different project group
+- Self-assign one dataset of the other group's data inventory to each member of your group
+    - _Be sure to choose from the more detailed second sheet!_
+- Try to find the _exact_ data file to which you were assigned
+- Do you agree with the information entered in the data inventory?
+- Is there any information you think should be in the data inventory that wasn't?
+
+:::
+
+:::{.callout-warning icon="false"}
+#### Discussion: Data Inventory
+
+Return to the main room and let's discuss (some of) the following questions:
+
+- Which elements of the data inventory table made it easier or more difficult to find the data?
+- What challenges did you encounter while searching for the datasets?
+- What is your plan for downloading the data?
+
+:::
+
+### Data Inventory Value
+
+Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
+
+- Well-documented datasets make it easier for researchers to find and access specific data for reproducible research
+- Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment 
+- Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
+- When you need to generate metadata for your own synthesis data product you'll already have much of the information you need
+
+
+
+
+
+
+
+
+
+
 ## Additional Resources
 
 ### Papers & Documents
