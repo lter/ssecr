@@ -47,23 +47,23 @@ Panelists will briefly introduce themselves and describe their roles. They will 
 
 There are _a lot_ of specialized data repositories out there. These organizations are either primarily dedicated to storing and managing data or those operations constitute a substantive proportion of their efforts. In synthesis work, you may already have some datasets in-hand at the outset but it likely that **you will need to find more data to test your hypotheses**. Data repositories are a great way of finding/accessing data that are relevant to your questions.
 
-You'll become familiar with many of these when you need a particular type of data and go searching for it but to help speed you along, see the list below for a non-exhaustive set of some that have proved useful to other synthesis projects in the past. If the "{{< fa brands r-project >}} Package" column contains the GitHub logo ({{< fa brands github >}}) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).
+You'll become familiar with many of these when you need a particular type of data and go searching for it but to help speed you along, see the list below for a non-exhaustive set of some that have proved useful to other synthesis projects in the past. They are in alphabetical order. If the "{{< fa brands r-project >}} Package" column contains the GitHub logo ({{< fa brands github >}}) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).
 
 | **Name** | **Description** | {{< fa brands r-project >}} **Package** |
 |:---:|:---|:---:|
-| [DataONE](https://www.dataone.org/)  | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research. | [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html) |
-| [NASA](https://data.nasa.gov/) | Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via [AppEEARS](https://appeears.earthdatacloud.nasa.gov/). | [`nasadata`](https://cran.r-project.org/web/packages/nasadata/index.html) |
-| [NOAA](https://data.noaa.gov/onestop/) | Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends. | {{< fa brands github >}} [`EpiNOAA-R`](https://github.com/NOAA-Big-Data-Program/EpiNOAA-R) |
-| [NEON](https://data.neonscience.org/) | Provides ecological data from U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research. | [`neonUtilities`](https://cran.r-project.org/web/packages/neonUtilities/index.html) |
-| [USGS](https://www.usgs.gov/products/data/all-data) | Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments. | [`dataRetrieval`](https://cran.r-project.org/web/packages/dataRetrieval/index.html) |
-| [GBIF](https://www.gbif.org/) | The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation. | [`rgbif`](https://cran.r-project.org/web/packages/rgbif/index.html) |
 | [AmeriFlux](https://ameriflux.lbl.gov/data/data-policy/) | Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research. | [`amerifluxr`](https://cran.r-project.org/web/packages/amerifluxr/index.html) |
-| [NCBI](https://www.ncbi.nlm.nih.gov/) | Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research. | [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) |
+| [DataONE](https://www.dataone.org/)  | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research. | [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html) |
 | [EDI](https://edirepository.org/) | Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems. | [`EDIutils`](https://cran.r-project.org/web/packages/EDIutils/index.html) |
 | [EES-DIVE](https://ess-dive.lbl.gov/) | The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems. | -- |
-| [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) | The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research. | {{< fa brands github >}} [`rstac`](https://github.com/brazil-data-cube/rstac) |
+| [GBIF](https://www.gbif.org/) | The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation. | [`rgbif`](https://cran.r-project.org/web/packages/rgbif/index.html) |
 | [Google Earth Engine](https://earthengine.google.com/) | Google Earth Engine is a cloud-based geospatial analysis platform that provides access to vast amounts of satellite imagery and environmental data for monitoring and understanding changes in the Earth's surface. | {{< fa brands github >}} [`rgee`](https://github.com/r-spatial/rgee) |
+| [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) | The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research. | {{< fa brands github >}} [`rstac`](https://github.com/brazil-data-cube/rstac) |
+| [NASA](https://data.nasa.gov/) | Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via [AppEEARS](https://appeears.earthdatacloud.nasa.gov/). | [`nasadata`](https://cran.r-project.org/web/packages/nasadata/index.html) |
+| [NCBI](https://www.ncbi.nlm.nih.gov/) | Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research. | [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) |
+| [NEON](https://data.neonscience.org/) | Provides ecological data from U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research. | [`neonUtilities`](https://cran.r-project.org/web/packages/neonUtilities/index.html) |
+| [NOAA](https://data.noaa.gov/onestop/) | Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends. | {{< fa brands github >}} [`EpiNOAA-R`](https://github.com/NOAA-Big-Data-Program/EpiNOAA-R) |
 | [Open Traits Network](https://opentraits.org/datasets.html) | While not a repository _per se_, the Open Traits Network has compiled an extensive lists of repositories for trait data. Check out their repository inventory for trait data | -- |
+| [USGS](https://www.usgs.gov/products/data/all-data) | Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments. | [`dataRetrieval`](https://cran.r-project.org/web/packages/dataRetrieval/index.html) |
 
 ## General Data Searches
 
@@ -382,10 +382,6 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
 ```
 
 :::
-
-
-
-
 
 ## Additional Resources
 
