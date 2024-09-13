@@ -24,6 +24,7 @@ After completing this module you will be able to:
 ### Papers & Documents
 
 - Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+- Woodley, L., Pratt, K., & East, J. (2021). [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). Zenodo.
 
 ### Workshops & Courses
 
