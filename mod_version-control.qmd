@@ -38,7 +38,7 @@ You can do this by all working on separate scripts that are trying to do the sam
 
 **Recommendation: Worth Discussing!**
 
-## Work in Shifts
+## Separate Shifts
 
 You might also decide to work together on the same scripts and just stagger the time that you are doing stuff so that all of your changes are made, committed, and pushed before the next person begins work. This is a particularly nice option if you have people in different time zones because someone in Maine can work on code likely before another team member living in Oregon has even woken up much less started working on code.
 
@@ -46,7 +46,7 @@ For this to work _you will need to communicate extensively with the rest of your
 
 **Recommendation: Worth Discussing!**
 
-## Work in Forks
+## Forks
 
 GitHub does offer a "fork" feature where people can make a copy of a given repository that they then 'own'. Forks are connected to the source repository and you can open a pull request to get the edits from one fork into the source repository.
 
@@ -66,7 +66,7 @@ Forks are intended for when you want to take a set of code and then "go your own
 
 **Recommendation: Don't Do This**
 
-## Work in Branches
+## Branches
 
 GitHub also offers a "branch" feature which is similar to forks in some ways. Branches create parallel workspaces within a single repository as opposed to forks that create a copy of a repository under a different user.
 
@@ -74,7 +74,7 @@ These have the same hurdles as forks so check out the first two points in the "W
 
 **Recommendation: Don't Do This**
 
-## Single Code Author
+## Single Author
 
 You may be tempted to just delegate all code editing to a single person in the group. While this strategy does guarantee that there will never be a merge conflict it is also deeply inequitable as it places an unfair share of the labor of the project on one person.
 
