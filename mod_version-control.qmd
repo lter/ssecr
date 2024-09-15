@@ -66,6 +66,14 @@ Forks are intended for when you want to take a set of code and then "go your own
 
 **Recommendation: Don't Do This**
 
+## Work in Branches
+
+GitHub also offers a "branch" feature which is similar to forks in some ways. Branches create parallel workspaces within a single repository as opposed to forks that create a copy of a repository under a different user.
+
+These have the same hurdles as forks so check out the first two points in the "Work in Forks" tab. Also, just like forks, this isn't how branches were meant to be used either! Branches exist so that you can leave some version of the code untouched while simultaneously developing some improvement in a branch. That way the user experiences a seamless upgrade while still allowing you to have a messy development period. Branches _are not_ intended for multiple people to be working on the same things at the same time and merge conflicts are the likely outcome of using branches in this way.
+
+**Recommendation: Don't Do This**
+
 ## Single Code Author
 
 You may be tempted to just delegate all code editing to a single person in the group. While this strategy does guarantee that there will never be a merge conflict it is also deeply inequitable as it places an unfair share of the labor of the project on one person.
