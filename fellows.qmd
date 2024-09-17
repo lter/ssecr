@@ -1,0 +1,14 @@
+---
+title: "Synthesis Fellows"
+---
+
+We have been overjoyed to work with a wide variety of early career researchers. They represent a breadth of disciplines and ecosystems but are united by being bright, creative, passionate scientists. To ensure they receive appropriate credit for their contributions to this course we've invited participants to have their GitHub profiles linked to the course website on this page. This is an opt-in model and as such there may be synthesis fellows who are not listed here but were valued members of the course community.
+
+:::{.panel-tabset}
+
+### 2024 Cohort
+
+**X** -- {{< fa brands github >}} [xxx]()
+
+
+:::

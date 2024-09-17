@@ -73,6 +73,8 @@ website:
         menu:
             - text: "Milestones"
               href: proj_milestones.qmd
+      - text: "Fellows"
+        href: fellows.qmd
       - text: "Instructors"
         href: instructors.qmd
       - icon: github
