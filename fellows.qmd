@@ -18,7 +18,8 @@ _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{<
 - **Evald Maceno** -- [{{< fa brands github >}}](https://github.com/Emaceno79) [{{< fa brands orcid >}}](https://orcid.org/0009-0001-2873-4466)
 - **Francis A. Chaves** -- [{{< fa brands github >}}](https://github.com/Francis-Chaves) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0013-6755)
 - **Guopeng Liang** -- [{{< fa brands github >}}](https://github.com/guopeng-liang) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5514-785X)
-- **James W. Sturges** -- [{{< fa brands github >}}](https://github.com/jwsturges1) [{{< fa brands orcid >}}](https://orcid.org/my-orcid?orcid=0009-0005-1321-0466)
+- **James W. Sturges** -- [{{< fa brands github >}}](https://github.com/jwsturges1) [{{< fa brands orcid >}}](https://orcid.org/0009-0005-1321-0466)
+- **Jeremy A. Collings** -- [{{< fa brands github >}}](https://github.com/jeremyacollings) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0263-7171) [{{< fa globe >}}](https://jeremycollings.com/)
 - **Joey Kreiger Lodge** -- [{{< fa brands github >}}](https://github.com/joeykriegerlodge) [{{< fa brands orcid >}}]() [{{< fa globe >}}]()
 - **Jonathan Gewirtzman** -- [{{< fa brands github >}}](https://github.com/jgewirtzman) [{{< fa globe >}}](https://www.jongewirtzman.com/)
 - **Julianna J. Renzi** -- [{{< fa brands github >}}](https://github.com/juliannajollyrenzi)
@@ -31,6 +32,7 @@ _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{<
 - **Richard J. Brokaw** -- [{{< fa brands github >}}](https://github.com/rbrokaw) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-8504-0049)
 - **Sierra B. Perez** -- [{{< fa brands github >}}](https://github.com/sbperez) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7279-3201)
 - **Smriti Pehim Limbu** -- [{{< fa brands github >}}](https://github.com/Smritipehimlimbu) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-9086-7895)
+- **Taylor A. Walker** -- [{{< fa brands github >}}](https://github.com/twalker1999) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-2174-9569)
 - **Yiyang Xu** -- [{{< fa brands github >}}](https://github.com/Ian-Yiyang) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7279-3201)
 
 :::
