@@ -35,4 +35,9 @@ _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{<
 - **Taylor A. Walker** -- [{{< fa brands github >}}](https://github.com/twalker1999) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-2174-9569)
 - **Yiyang Xu** -- [{{< fa brands github >}}](https://github.com/Ian-Yiyang) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7279-3201)
 
+<p align="center">
+<img src="images/image_2024-ssecr-fellows.jpg" alt="Group photo of 2024 LTER Synthesis Fellows" width="90%" height="110%"/>
+</p>
+
+
 :::
