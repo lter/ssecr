@@ -1,107 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lter.github.io/ssecr/mod_team-sci.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_version-control.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/proj_milestones.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_data-disc.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_credit.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/index.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/fellows.html</loc>
-    <lastmod>2024-09-18T18:23:48.216Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_interactivity.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_wrangle.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/policy_attendance.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
     <loc>https://lter.github.io/ssecr/policy_conduct.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_spatial.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_facilitation.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_stats.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_reproducibility.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/policy_ai.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/CONTRIBUTING.html</loc>
-    <lastmod>2024-09-18T18:23:48.192Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lter.github.io/ssecr/mod_project-mgmt.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/ssecr/policy_pronouns.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
   </url>
   <url>
-    <loc>https://lter.github.io/ssecr/mod_findings.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
+    <loc>https://lter.github.io/ssecr/mod_data-disc.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
   </url>
   <url>
-    <loc>https://lter.github.io/ssecr/mod_thinking.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
+    <loc>https://lter.github.io/ssecr/mod_spatial.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
   </url>
   <url>
-    <loc>https://lter.github.io/ssecr/mod_next-steps.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
+    <loc>https://lter.github.io/ssecr/mod_interactivity.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/ssecr/policy_usability.html</loc>
-    <lastmod>2024-09-18T18:23:48.240Z</lastmod>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_thinking.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/ssecr/mod_reports.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
   </url>
   <url>
-    <loc>https://lter.github.io/ssecr/mod_data-viz.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
+    <loc>https://lter.github.io/ssecr/mod_team-sci.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_stats.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_reproducibility.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_project-mgmt.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_credit.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/fellows.html</loc>
+    <lastmod>2024-09-19T21:18:45.920Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_findings.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/proj_milestones.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_wrangle.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
   </url>
   <url>
     <loc>https://lter.github.io/ssecr/instructors.html</loc>
-    <lastmod>2024-09-18T18:23:48.236Z</lastmod>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/index.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/policy_ai.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_facilitation.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_next-steps.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_version-control.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/mod_data-viz.html</loc>
+    <lastmod>2024-09-19T21:18:45.940Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/policy_attendance.html</loc>
+    <lastmod>2024-09-19T21:18:45.941Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lter.github.io/ssecr/CONTRIBUTING.html</loc>
+    <lastmod>2024-09-19T21:18:45.895Z</lastmod>
   </url>
 </urlset>
