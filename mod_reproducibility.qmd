@@ -250,7 +250,7 @@ You don't necessarily need to follow all of the guidelines described below but i
 
 <p align="center">
 <img src="images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%"/>
-<figcaption>Diagram of data stages from raw data to published products. Credit: Li Kui</figcaption>
+<figcaption>Diagram of data stages from raw data to published products. Credit: Margaret O'Brian & Li Kui</figcaption>
 </p>
 
 ### Packages, Namespacing, and Software Versions
