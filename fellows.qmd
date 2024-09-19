@@ -12,20 +12,21 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 
 ### 2024 Cohort
 
-| <u>Altman-Kurosaki - Limbu</u> | <u>Lodge - Xu</u> |
+| <u>Altman-Kurosaki - Lodge</u> | <u>Lloreda - Xu</u> |
 |:---:|:---:|
-| _Noam T. Altman-Kurosaki_ -- [{{< fa brands github >}}](github.com/naltmank) | _Joey Kreiger Lodge_ -- [{{< fa brands github >}}](https://github.com/joeykriegerlodge) |
-| _Abigail Borgmeier_ -- [{{< fa brands github >}}](https://github.com/aeborgmeier) [{{< fa brands orcid >}}](https://orcid.org/0009-0003-7244-6255) | _Carla López-Lloreda_ -- [{{< fa brands github >}}](https://github.com/carlalopezll) |
-| _Richard J. Brokaw_ -- [{{< fa brands github >}}](https://github.com/rbrokaw) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-8504-0049) | _Evald Maceno_ -- [{{< fa brands github >}}](https://github.com/Emaceno79) [{{< fa brands orcid >}}](https://orcid.org/0009-0001-2873-4466) |
-| _Ashley N. Bulseco_ -- [{{< fa brands github >}}](https://github.com/abulseco) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5322-3070) | _L. McKinley Nevins_ -- [{{< fa brands github >}}](https://github.com/lmnevins) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-6340-5900) |
+| _Noam T. Altman-Kurosaki_ -- [{{< fa brands github >}}](https://github.com/naltmank) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5175-3334) | _Carla López Lloreda_ -- [{{< fa brands github >}}](https://github.com/carlalopezll) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7983-1741) |
+| _Abigail Borgmeier_ -- [{{< fa brands github >}}](https://github.com/aeborgmeier) [{{< fa brands orcid >}}](https://orcid.org/0009-0003-7244-6255) | _Evald Maceno_ -- [{{< fa brands github >}}](https://github.com/Emaceno79) [{{< fa brands orcid >}}](https://orcid.org/0009-0001-2873-4466) |
+| _Richard J. Brokaw_ -- [{{< fa brands github >}}](https://github.com/rbrokaw) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-8504-0049) | _L. McKinley Nevins_ -- [{{< fa brands github >}}](https://github.com/lmnevins) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-6340-5900) |
+| _Ashley N. Bulseco_ -- [{{< fa brands github >}}](https://github.com/abulseco) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5322-3070) | _Pooja Panwar_ -- [{{< fa brands github >}}](https://github.com/ppanwar11) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-2795-5996) |
 | _Allison Case_ -- [{{< fa brands github >}}](https://github.com/allie-case) | _Sierra B. Perez_ -- [{{< fa brands github >}}](https://github.com/sbperez) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7279-3201) |
-| _Francis A. Chaves_ -- [{{< fa brands github >}}](https://github.com/Francis-Chaves) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0013-6755) | _Julianna J. Renzi_ -- [{{< fa brands github >}}](https://github.com/juliannajollyrenzi) |
-| _Jeremy A. Collings_ -- [{{< fa brands github >}}](https://github.com/jeremyacollings) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0263-7171) [{{< fa globe >}}](https://jeremycollings.com/) | _Kelsey J. Solomon_ -- [{{< fa brands github >}}](https://github.com/kjsolomon) |
+| _Francis A. Chaves_ -- [{{< fa brands github >}}](https://github.com/Francis-Chaves) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0013-6755) | _Julianna J. Renzi_ -- [{{< fa brands github >}}](https://github.com/juliannajollyrenzi) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-6187-8656) |
+| _Jeremy A. Collings_ -- [{{< fa brands github >}}](https://github.com/jeremyacollings) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0263-7171) [{{< fa globe >}}](https://jeremycollings.com/) | _Kelsey J. Solomon_ -- [{{< fa brands github >}}](https://github.com/kjsolomon) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3646-4291) |
 | _Shu Han Gan_ -- [{{< fa brands github >}}](https://github.com/moricandia) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-8699-3669) | _James W. Sturges_ -- [{{< fa brands github >}}](https://github.com/jwsturges1) [{{< fa brands orcid >}}](https://orcid.org/0009-0005-1321-0466) |
 | _Jonathan Gewirtzman_ -- [{{< fa brands github >}}](https://github.com/jgewirtzman) [{{< fa globe >}}](https://www.jongewirtzman.com/) | _Taylor A. Walker_ -- [{{< fa brands github >}}](https://github.com/twalker1999) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-2174-9569) |
 | _Katherine A. Hulting_ -- [{{< fa brands github >}}](https://github.com/hultingk) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1434-267X) | _Junna Wang_ -- [{{< fa brands github >}}](https://github.com/jnawang) |
-| _Guopeng Liang_ -- [{{< fa brands github >}}](https://github.com/guopeng-liang) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5514-785X) | _Bethany L. Williams_ -- [{{< fa brands github >}}](https://github.com/bethany-williams) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0899-5132) |
+| _Guopeng Liang_ -- [{{< fa brands github >}}](https://github.com/guopeng-liang) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5514-785X) | _Bethany L. Williams_ -- [{{< fa brands github >}}](https://github.com/bethany-williams) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0899-5132) [{{< fa globe >}}](https://blw9786.wixsite.com/bethany-williams--ph) |
 | _Smriti Pehim Limbu_ -- [{{< fa brands github >}}](https://github.com/Smritipehimlimbu) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-9086-7895) | _Yiyang Xu_ -- [{{< fa brands github >}}](https://github.com/Ian-Yiyang) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7279-3201) |
+| _Joey Krieger Lodge_ -- [{{< fa brands github >}}](https://github.com/joeykriegerlodge) | -- |
 
 <br>
 
