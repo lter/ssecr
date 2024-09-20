@@ -1,0 +1,43 @@
+---
+title: "Project Teams"
+---
+
+## Overview
+
+As stated elsewhere in the course page, one of the primary facets of the course is the creation of teams of Synthesis Fellows. These teams collaboratively identify synthesis questions and pursue them throughout the 9-month run of the course. See below for brief descriptions of each project team.
+
+Team members are listed in reverse alphabetical order by last name and their LTER site affilitation is indicated in parentheses.
+
+## 2024 Teams
+
+### Carbon Cycling Responses Across Spatiotemporal Scales
+
+<u>Team Members</u>: **Yiyang Xu** (Plum Island Ecosystems; Virginia Coast Reserve), **Taylor Walker** (Moorea Coral Reef), **Carla López Lloreda** (Luquillo), **Guopeng Liang** (Cedar Creek), **Jon Gewirtzman** (Harvard Forest; Florida Coastal Everglades), **Julie Gan** (Arctic), **Ricky Brokaw** (Santa Barbara Coastal)
+
+ {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-c-cycling**](https://github.com/lter/ssecr-c-cycling)
+
+<u>Project Question(s)</u>: How does carbon cycling respond to environmental change (in experimental manipulations and to natural disturbances)? How does the duration of the disturbance influence how we model carbon cycling projections in the future across ecosystems? Further, what are the mechanisms driving these responses?
+
+### Above-Belowground Coupling
+
+<u>Team Members</u>: **Smriti Pehim Limbu** (Konza Prairie), **McKinley Nevins** (Andrews Forest), **Francis Chaves Rodriguez** (Konza Prairie), **Ashley Bulseco** (Plum Island Ecosystems), **Abigail Borgmeier** (McMurdo Dry Valleys; Sevilleta)
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-above-belowground-coupling**](https://github.com/lter/ssecr-above-belowground-coupling)
+
+<u>Project Question(s)</u>: Are above and belowground communities synchronous or decoupled in response to temperature and precipitation variability?
+
+### Diversity-Stability Relationships
+
+<u>Team Members</u>: **Junna Wang** (Harvard Forest), **James Sturges** (Florida Coastal Everglades), **Kelsey Solomon** (Florida Coastal Everglades; Coweeta), **Julianna Renzi** (Moorea Coral Reef), **Pooja Panwar** (Hubbard Brook), **Katherine Hulting** (Kellogg Biological Station), **Noam Altman-Kurosaki** (Moorea Coral Reef)
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-diversity-stability**](https://github.com/lter/ssecr-diversity-stability)
+
+<u>Project Question(s)</u>: How does the strength and direction of diversity-stability relationships vary (1) among ecosystems and (2) between ecosystem-level and community-level stability?
+
+### Effects of Environmental Drivers Across Ecological Scales
+
+<u>Team Members</u>: **Bethany Williams**, **Sierra Perez** (Kellogg Biological Station; Cedar Creek), **Evald Maceno** (Luquillo), **Joey Krieger Lodge** (Niwot Ridge), **Jeremy Collings** (Andrews Forest), **Allison Case**
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-driver-scales**](https://github.com/lter/ssecr-driver-scales)
+
+<u>Project Question(s)</u>: Are the effects of environmental drivers consistent across ecological scales?

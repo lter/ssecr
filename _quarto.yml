@@ -71,6 +71,8 @@ website:
     right: 
       - text: "Projects"
         menu:
+            - text: "Teams"
+              href: proj_teams.qmd
             - text: "Milestones"
               href: proj_milestones.qmd
       - text: "Fellows"
