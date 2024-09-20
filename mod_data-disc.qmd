@@ -361,7 +361,7 @@ While many ecologists are trained in programming languages like R or Python, som
 
 Below we demonstrate download via command line for NASA [OMI/Aura Sulfur Dioxide (SO2)](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3). The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis. 
 
-> Step 1: Generate a list of file names with specified target area and temporal coverage using "subset/Get Data" tab on the right hand side of [data page](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3).  Then, download the links list in a TXT file named "list.txt". See example below.
+> Step 1: Generate a list of file names with specified target area and temporal coverage using "subset/Get Data" tab on the right hand side of the data page.  Then, download the links list in a TXT file named "list.txt". 
 
 ```{bash download-cli-1}
 #| eval: false
