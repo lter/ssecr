@@ -359,9 +359,9 @@ tide_df <- fetch_tide(station_id = "9411340")
 
 While many ecologists are trained in programming languages like R or Python, some operations require the <u>C</u>ommand <u>L</u>ine <u>I</u>nterface ("CLI"; a.k.a. "shell", "bash", "terminal", etc.). **Don't worry if you're new to this language!** There are a lot of good resources for learning the fundamentals, including The Carpentries' workshop "[The Unix Shell](https://swcarpentry.github.io/shell-novice/)".
 
-Below we demonstrate download via command line for [ERA5 dataa](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form). This is the fifth generation <u>E</u>uropean <u>C</u>entre for <u>M</u>edium-range <u>W</u>eather <u>F</u>orecasts (ECMWF) re-analysis for global climate and weather for the past 8 decades.
+Below we demonstrate download via command line for NASA [OMI/Aura Sulfur Dioxide (SO2)](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3). The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis. 
 
-> Step 1: Generate a list of file names and put them in a TXT file named "list.txt"
+> Step 1: Generate a list of file names with specified target area and temporal coverage using "subset/Get Data" tab on the right hand side of [data page](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3).  Then, download the links list in a TXT file named "list.txt". See example below.
 
 ```{bash download-cli-1}
 #| eval: false
@@ -373,7 +373,7 @@ https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMS
 https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
 ```
 
-> Step 2: Launch the command line window
+> Step 2: Launch the command line window and run the wget command. Replace the user name and password in the code using your EarthData login information.
 
 ```{bash download-cli-2}
 #| eval: false
@@ -405,3 +405,4 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
 - iDigBio Digitized [Specimen Portal](https://www.idigbio.org/portal)
 - [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
 - [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
+- [Data Is Plural] (https://www.data-is-plural.com/) and its [data list] (https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0) for exploring the cool datasets in various domains
