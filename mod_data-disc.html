@@ -852,9 +852,9 @@ Activity: Data Download
 </div>
 <div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
 <p>While many ecologists are trained in programming languages like R or Python, some operations require the <u>C</u>ommand <u>L</u>ine <u>I</u>nterface (“CLI”; a.k.a. “shell”, “bash”, “terminal”, etc.). <strong>Don’t worry if you’re new to this language!</strong> There are a lot of good resources for learning the fundamentals, including The Carpentries’ workshop “<a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a>”.</p>
-<p>Below we demonstrate download via command line for <a href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=form">ERA5 dataa</a>. This is the fifth generation <u>E</u>uropean <u>C</u>entre for <u>M</u>edium-range <u>W</u>eather <u>F</u>orecasts (ECMWF) re-analysis for global climate and weather for the past 8 decades.</p>
+<p>Below we demonstrate download via command line for NASA <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">OMI/Aura Sulfur Dioxide (SO2)</a>. The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis.</p>
 <blockquote class="blockquote">
-<p>Step 1: Generate a list of file names and put them in a TXT file named “list.txt”</p>
+<p>Step 1: Generate a list of file names with specified target area and temporal coverage using “subset/Get Data” tab on the right hand side of the data page. Then, download the links list in a TXT file named “list.txt”.</p>
 </blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
@@ -865,7 +865,7 @@ Activity: Data Download
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote class="blockquote">
-<p>Step 2: Launch the command line window</p>
+<p>Step 2: Launch the command line window and run the wget command. Replace the user name and password in the code using your EarthData login information.</p>
 </blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
@@ -902,6 +902,7 @@ Activity: Data Download
 <li>iDigBio Digitized <a href="https://www.idigbio.org/portal">Specimen Portal</a></li>
 <li><a href="https://ltar.ars.usda.gov/data/data-dashboards/">LTAR Data Dashboards and Visualizations</a></li>
 <li><a href="https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups">LTAR Group Data</a> within the Ag Data Commons, the digital repository of the National Agricultural Library</li>
+<li><a href="https://www.data-is-plural.com/">Data Is Plural</a> and its <a href="https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0">data list</a> for exploring the cool datasets in various domains</li>
 </ul>
 
 
