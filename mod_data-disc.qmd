@@ -15,8 +15,7 @@ After completing this module you will be able to:
 -   <u>Identify</u> repositories "known for" a particular type of data
 -   <u>Explain</u> how to effectively search for data outside of specialized repositories
 -   <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
--   <u>Plan</u> how to download data in a reproducibly scripted way
--   <u>Explain</u> how to handle different data formats (e.g., tabular, spatial, non-standard, etc.)
+-   <u>Plan</u> how to download data in a reproducible way
 -   <u>Perform</u> checks of the fundamental structure of a dataset
 
 ## Panel Discussion
@@ -48,7 +47,7 @@ There are *a lot* of specialized data repositories out there. These organization
 You'll become familiar with many of these when you need a particular type of data and go searching for it but to help speed you along, see the list below for a non-exhaustive set of some that have proved useful to other synthesis projects in the past. They are in alphabetical order. If the "{{< fa brands r-project >}} Package" column contains the GitHub logo ({{< fa brands github >}}) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).
 
 |                                 **Name**                                 | **Description**                                                                                                                                                                                                                                               |                          {{< fa brands r-project >}} **Package**                           |
-|:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------:|
+|:------------------------:|:--------------------|:------------------------:|
 |         [AmeriFlux](https://ameriflux.lbl.gov/data/data-policy/)         | Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research.                                                                                                                      |       [`amerifluxr`](https://cran.r-project.org/web/packages/amerifluxr/index.html)        |
 |                   [DataONE](https://www.dataone.org/)                    | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research.                                                                                                                                  |          [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html)           |
 |                    [EDI](https://edirepository.org/)                     | Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems.                                                                                      |         [`EDIutils`](https://cran.r-project.org/web/packages/EDIutils/index.html)          |
@@ -136,16 +135,17 @@ Example: `inurl:data soil chemistry`
 
 In your project groups:
 
--   Review your data inventory Google Sheet and discuss your motivation for including the datasets you chose
--   Self-assign one dataset to each group member
-    -   Later each of you will download your assigned dataset
--   Discuss what information your group needs to know whether each of these datasets is useful to your project
--   Once you've identified that information, begin filling out the second sheet of the data inventory Google Sheet
+-   Review your data inventory Google Sheet and discuss why you chose the datasets included.
+-   Decide on a number of datasets equal to the number of group members. Each group member will self-assign one dataset.
+    - *Later, each person will download their assigned dataset*
+-   Discuss what key information is needed to determine if each dataset is useful for your project.
+-   Once you've identified the necessary information, start completing the second sheet of your data inventory Google Sheet.
+    - *This sheet is more detailed and will be shared with another group later*
 
 **Part 2** (\~10 min)
 
--   Exchange data inventory tables with a different project group
--   Self-assign one dataset of the other group's data inventory to each member of your group
+-   Swap data inventory tables with another project group.
+-   Each group member self-assigns one dataset from the other group’s inventory.
     -   *Be sure to choose from the more detailed second sheet!*
 -   Try to find the *exact* data file to which you were assigned
 -   Do you agree with the information entered in the data inventory?
@@ -180,17 +180,12 @@ Most of these methods will work regardless of the format of the data (i.e., its 
 ::: {.callout-note icon="false"}
 #### Activity: Data Download
 
-In your project groups:
 
--   Assign one member to each of the five data download methods indicated below
--   You will shortly be assigned to different breakout groups by chosen download method
-    -   Discuss with your group how you will code without causing merge conflicts
+-   Each member work on the data that you have been assigned. 
+-   Discuss with your group how to collaborate on coding without creating merge conflicts
     -   *Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!*
-
-In data download groups:
-
 -   Write a script **for your group** to download data using your chosen method
--   Feel free to download a dataset from your inventory
+-   Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
     -   If no datasets in your group's inventory need the download method you chose, try to run the example code included below
 :::
 
@@ -357,7 +352,7 @@ While many ecologists are trained in programming languages like R or Python, som
 
 Below we demonstrate download via command line for NASA [OMI/Aura Sulfur Dioxide (SO2)](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3). The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis.
 
-> Step 1: Generate a list of file names with specified target area and temporal coverage using "subset/Get Data" tab on the right hand side of the data page. Then, download the links list in a TXT file named "list.txt".
+> Step 1: Using the "subset/Get Data" tab on the right-hand side of the [data page](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3), generate a list of file names for your specified target area and time period. Download the list of links as a TXT file named "list.txt". Be sure to document the target area and temporal coverage you selected in your data inventory table.
 
 ```{bash download-cli-1}
 #| eval: false
@@ -369,14 +364,49 @@ https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMS
 https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
 ```
 
-> Step 2: Launch the command line window and run the wget command. Replace the user name and password in the code using your EarthData login information.
+> Step 2: Open a command line window and execute the wget command. Replace the placeholder for username and password with your EarthData login credentials.
 
 ```{bash download-cli-2}
 #| eval: false
 wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-session-cookies --user=XXX --password=XXX
 --content-disposition -i list.txt
 ```
+
+> If you run into any issue, here are step-to-step guild on [how to work with wget and curl specifically to the GES DISC data system](https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl).
+
 :::
+
+### Data format and structure
+
+CSV and TXT are common formats for storing data. In addition, other formats frequently used in research include NetCDF, HDF5, Matlab, and Rdata/rds, as well as spatial related datasets, such as geotiff, shapefiles and raster files (see spatial module for details).
+
+In the R environment, data structure is commonly check using a few functions listed below. 
+
+```{r data-check}
+#| eval: false
+
+library(dplyr)
+
+# Define URL as an object
+dt_url <- "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6" 
+
+# Read it into R
+lobster_df <- read.csv(file = dt_url,na=-99999)
+
+# Check the structure of the data
+head(lobster_df)
+
+summary(lobster_df)
+
+str(lobster_df)
+
+glimpse(lobster_df)
+
+anyNA(lobster_df)
+
+```
+
+
 
 ## Additional Resources
 
