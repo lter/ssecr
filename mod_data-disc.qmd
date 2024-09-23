@@ -372,15 +372,16 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
 --content-disposition -i list.txt
 ```
 
-> If you run into any issue, here are step-to-step guild on [how to work with wget and curl specifically to the GES DISC data system](https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl).
+> If you encounter any issues, follow this step-by-step guide on [using wget and curl specifically with the GES DISC data system](https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl).
 
 :::
 
 ### Data format and structure
 
-CSV and TXT are common formats for storing data. In addition, other formats frequently used in research include NetCDF, HDF5, Matlab, and Rdata/rds, as well as spatial related datasets, such as geotiff, shapefiles and raster files (see spatial module for details).
 
-In the R environment, data structure is commonly check using a few functions listed below. 
+CSV and TXT are common formats for data storage. Additionally, formats like NetCDF, HDF5, Matlab, and Rdata/rds are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the spatial module for more details).
+
+In the R environment, data structures are typically checked using the following functions.
 
 ```{r data-check}
 #| eval: false
