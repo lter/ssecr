@@ -85,8 +85,8 @@ website:
     center: "Copyright 2024, LTER Network"
     background: secondary
   margin-footer: |
-    <img src="images/logo_nceas.png" width = "40%">
-    <img src="images/logo_lter.png" width = "34%">
+    ![NCEAS Logo](images/logo_nceas.png){ width=40% }
+    ![LTER Logo](images/logo_lter.png){ width=34% }
 
 format:
   html:
