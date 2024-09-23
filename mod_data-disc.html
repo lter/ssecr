@@ -377,7 +377,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#search-operators" id="toc-search-operators" class="nav-link" data-scroll-target="#search-operators">Search Operators</a></li>
   <li><a href="#data-inventory-value" id="toc-data-inventory-value" class="nav-link" data-scroll-target="#data-inventory-value">Data Inventory Value</a></li>
   </ul></li>
-  <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data">Downloading Data</a></li>
+  <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data">Downloading Data</a>
+  <ul class="collapse">
+  <li><a href="#data-format-and-structure" id="toc-data-format-and-structure" class="nav-link" data-scroll-target="#data-format-and-structure">Data format and structure</a></li>
+  </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -422,8 +425,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><u>Identify</u> repositories “known for” a particular type of data</li>
 <li><u>Explain</u> how to effectively search for data outside of specialized repositories</li>
 <li><u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products</li>
-<li><u>Plan</u> how to download data in a reproducibly scripted way</li>
-<li><u>Explain</u> how to handle different data formats (e.g., tabular, spatial, non-standard, etc.)</li>
+<li><u>Plan</u> how to download data in a reproducible way</li>
 <li><u>Perform</u> checks of the fundamental structure of a dataset</li>
 </ul>
 </section>
@@ -596,18 +598,21 @@ Activity: Data Inventory
 <p><strong>Part 1</strong> (~25 min)</p>
 <p>In your project groups:</p>
 <ul>
-<li>Review your data inventory Google Sheet and discuss your motivation for including the datasets you chose</li>
-<li>Self-assign one dataset to each group member
+<li>Review your data inventory Google Sheet and discuss why you chose the datasets included.</li>
+<li>Decide on a number of datasets equal to the number of group members. Each group member will self-assign one dataset.
 <ul>
-<li>Later each of you will download your assigned dataset</li>
+<li><em>Later, each person will download their assigned dataset</em></li>
 </ul></li>
-<li>Discuss what information your group needs to know whether each of these datasets is useful to your project</li>
-<li>Once you’ve identified that information, begin filling out the second sheet of the data inventory Google Sheet</li>
+<li>Discuss what key information is needed to determine if each dataset is useful for your project.</li>
+<li>Once you’ve identified the necessary information, start completing the second sheet of your data inventory Google Sheet.
+<ul>
+<li><em>This sheet is more detailed and will be shared with another group later</em></li>
+</ul></li>
 </ul>
 <p><strong>Part 2</strong> (~10 min)</p>
 <ul>
-<li>Exchange data inventory tables with a different project group</li>
-<li>Self-assign one dataset of the other group’s data inventory to each member of your group
+<li>Swap data inventory tables with another project group.</li>
+<li>Each group member self-assigns one dataset from the other group’s inventory.
 <ul>
 <li><em>Be sure to choose from the more detailed second sheet!</em></li>
 </ul></li>
@@ -661,19 +666,14 @@ Activity: Data Download
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In your project groups:</p>
 <ul>
-<li>Assign one member to each of the five data download methods indicated below</li>
-<li>You will shortly be assigned to different breakout groups by chosen download method
+<li>Each member work on the data that you have been assigned.</li>
+<li>Discuss with your group how to collaborate on coding without creating merge conflicts
 <ul>
-<li>Discuss with your group how you will code without causing merge conflicts</li>
 <li><em>Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!</em></li>
 </ul></li>
-</ul>
-<p>In data download groups:</p>
-<ul>
 <li>Write a script <strong>for your group</strong> to download data using your chosen method</li>
-<li>Feel free to download a dataset from your inventory
+<li>Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach.
 <ul>
 <li>If no datasets in your group’s inventory need the download method you chose, try to run the example code included below</li>
 </ul></li>
@@ -688,16 +688,16 @@ Activity: Data Download
 <p>Sometimes you might have a URL directly to a particular dataset (usually one hosted by a data repository). If you copy/paste this URL into your browser the download would automatically begin. However, we want to make our workflows entirely scripted (or close to it) so see the example below for how to download data via a data entity URL.</p>
 <p>The dataset we download below is one collected at the Santa Barbara Coastal (SBC) LTER on <a href="https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sbc.77.10">California spiny lobster (<em>Panulirus interruptus</em>) populations</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-2" class="code-annotation-target"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span></span>
-<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-1-4"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
-<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span></span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="2" data-code-annotation="1">You can typically find this URL in the repository where you found the dataset</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="1">You can typically find this URL in the repository where you found the dataset</span>
 </dd>
 </dl>
 </div>
@@ -707,32 +707,32 @@ Activity: Data Download
 <p>If you’re quite lucky, the data you want might be stored in a repository that developed (and maintains!) an <i class="fa-brands fa-r-project" aria-label="r-project"></i> R package. These packages may or may not be on CRAN (packages can often also be found on GitHub or Bioconductor). Typically these packages have a short “vignette” that demonstrates how their functions should be used.</p>
 <p>Consider the following example adapted from the <code>dataone</code> <a href="https://cran.rstudio.com/web/packages/dataone/vignettes/v04-download-data.html">package vignette</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
-<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
-<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(dataone)</span>
-<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># DataONE requires "coordinating nodes" so make one</span></span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a>cn <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">CNode</span>()</span>
-<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a reference to a node based on its identifier</span></span>
-<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">getMNode</span>(<span class="at">x =</span> cn, <span class="st">"urn:node:KNB"</span>)</span>
-<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a query</span></span>
-<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12" aria-hidden="true" tabindex="-1"></a>query_list <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">q =</span> <span class="st">"id:Blandy.77.1"</span>, <span class="at">fl =</span> <span class="st">"resourceMap"</span>)</span>
-<span id="annotated-cell-2-13"><a href="#annotated-cell-2-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-14"><a href="#annotated-cell-2-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Use it to search DataONE</span></span>
-<span id="annotated-cell-2-15"><a href="#annotated-cell-2-15" aria-hidden="true" tabindex="-1"></a>query_result <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">query</span>(<span class="at">x =</span> cn, <span class="at">solrQuery =</span> query_list, <span class="at">as =</span> <span class="st">"data.frame"</span>)</span>
-<span id="annotated-cell-2-16"><a href="#annotated-cell-2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-17"><a href="#annotated-cell-2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify package ID</span></span>
-<span id="annotated-cell-2-18"><a href="#annotated-cell-2-18" aria-hidden="true" tabindex="-1"></a>pkg_id <span class="ot">&lt;-</span> query_result[<span class="dv">1</span>, <span class="dv">1</span>]</span>
-<span id="annotated-cell-2-19"><a href="#annotated-cell-2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-20"><a href="#annotated-cell-2-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the data</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-21" class="code-annotation-target"><a href="#annotated-cell-2-21" aria-hidden="true" tabindex="-1"></a>temp_file_name <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">getPackage</span>(<span class="at">x =</span> mn, <span class="at">id =</span> pkg_id)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
+<span id="annotated-cell-3-3"><a href="#annotated-cell-3-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(dataone)</span>
+<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># DataONE requires "coordinating nodes" so make one</span></span>
+<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6" aria-hidden="true" tabindex="-1"></a>cn <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">CNode</span>()</span>
+<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-8"><a href="#annotated-cell-3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a reference to a node based on its identifier</span></span>
+<span id="annotated-cell-3-9"><a href="#annotated-cell-3-9" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">getMNode</span>(<span class="at">x =</span> cn, <span class="st">"urn:node:KNB"</span>)</span>
+<span id="annotated-cell-3-10"><a href="#annotated-cell-3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-11"><a href="#annotated-cell-3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a query</span></span>
+<span id="annotated-cell-3-12"><a href="#annotated-cell-3-12" aria-hidden="true" tabindex="-1"></a>query_list <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">q =</span> <span class="st">"id:Blandy.77.1"</span>, <span class="at">fl =</span> <span class="st">"resourceMap"</span>)</span>
+<span id="annotated-cell-3-13"><a href="#annotated-cell-3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-14"><a href="#annotated-cell-3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Use it to search DataONE</span></span>
+<span id="annotated-cell-3-15"><a href="#annotated-cell-3-15" aria-hidden="true" tabindex="-1"></a>query_result <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">query</span>(<span class="at">x =</span> cn, <span class="at">solrQuery =</span> query_list, <span class="at">as =</span> <span class="st">"data.frame"</span>)</span>
+<span id="annotated-cell-3-16"><a href="#annotated-cell-3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-17"><a href="#annotated-cell-3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify package ID</span></span>
+<span id="annotated-cell-3-18"><a href="#annotated-cell-3-18" aria-hidden="true" tabindex="-1"></a>pkg_id <span class="ot">&lt;-</span> query_result[<span class="dv">1</span>, <span class="dv">1</span>]</span>
+<span id="annotated-cell-3-19"><a href="#annotated-cell-3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-20"><a href="#annotated-cell-3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Download the data</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-21" class="code-annotation-target"><a href="#annotated-cell-3-21" aria-hidden="true" tabindex="-1"></a>temp_file_name <span class="ot">&lt;-</span> dataone<span class="sc">::</span><span class="fu">getPackage</span>(<span class="at">x =</span> mn, <span class="at">id =</span> pkg_id)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="21" data-code-annotation="1"><code>dataone</code> downloads data to a “temporary directory” and returns the name of the file/path. You’ll need that to read in the data so <strong>be sure to assign it to an object!</strong></span>
+<span data-code-cell="annotated-cell-3" data-code-lines="21" data-code-annotation="1"><code>dataone</code> downloads data to a “temporary directory” and returns the name of the file/path. You’ll need that to read in the data so <strong>be sure to assign it to an object!</strong></span>
 </dd>
 </dl>
 </div>
@@ -742,37 +742,37 @@ Activity: Data Download
 <p>You may want to download several data files hosted in the same repository online for different spatial/temporal replicates. You <em>could</em> try to use the data entity URL or an associated <i class="fa-brands fa-r-project" aria-label="r-project"></i> package (if one exists) or you could write code to do a “batch download” where you’d just download each file using a piece of code that repeats itself as much as needed.</p>
 <p>The dataset we demonstrate downloading below is <a href="https://www1.ncdc.noaa.gov/pub/data/gsod/">NOAA weather station data</a>. Specifically it is the <u>I</u>ntegrated <u>S</u>urface <u>D</u>ata (ISD).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the start/end years for which you want to download data</span></span>
-<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>target_years <span class="ot">&lt;-</span> <span class="dv">2000</span><span class="sc">:</span><span class="dv">2005</span></span>
-<span id="annotated-cell-3-3"><a href="#annotated-cell-3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across years</span></span>
-<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_year <span class="cf">in</span> target_years){</span>
-<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Message a progress note</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-8" class="code-annotation-target"><a href="#annotated-cell-3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Downloading data for "</span>, focal_year)</span>
-<span id="annotated-cell-3-9"><a href="#annotated-cell-3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-3-10"><a href="#annotated-cell-3-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble the URL manually</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="2">2</button><span id="annotated-cell-3-11" class="code-annotation-target"><a href="#annotated-cell-3-11" aria-hidden="true" tabindex="-1"></a>  focal_url <span class="ot">&lt;-</span> <span class="fu">paste0</span>( <span class="st">"https://www1.ncdc.noaa.gov/pub/data/gsod/"</span>, focal_year, <span class="st">"/gsod_"</span>, focal_year, <span class="st">".tar"</span>)</span>
-<span id="annotated-cell-3-12"><a href="#annotated-cell-3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-3-13"><a href="#annotated-cell-3-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble your preferred file name once it's downloaded</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="3">3</button><span id="annotated-cell-3-14" class="code-annotation-target"><a href="#annotated-cell-3-14" aria-hidden="true" tabindex="-1"></a>  focal_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"gsod_"</span>, focal_year, <span class="st">".tar"</span>)</span>
-<span id="annotated-cell-3-15"><a href="#annotated-cell-3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-3-16"><a href="#annotated-cell-3-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Download the data</span></span>
-<span id="annotated-cell-3-17"><a href="#annotated-cell-3-17" aria-hidden="true" tabindex="-1"></a>  utils<span class="sc">::</span><span class="fu">download.file</span>(<span class="at">url =</span> focal_url, <span class="at">destfile =</span> focal_file, <span class="at">method =</span> <span class="st">"curl"</span>)</span>
-<span id="annotated-cell-3-18"><a href="#annotated-cell-3-18" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the start/end years for which you want to download data</span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>target_years <span class="ot">&lt;-</span> <span class="dv">2000</span><span class="sc">:</span><span class="dv">2005</span></span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across years</span></span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_year <span class="cf">in</span> target_years){</span>
+<span id="annotated-cell-4-6"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Message a progress note</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-8" class="code-annotation-target"><a href="#annotated-cell-4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Downloading data for "</span>, focal_year)</span>
+<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-10"><a href="#annotated-cell-4-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble the URL manually</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-11" class="code-annotation-target"><a href="#annotated-cell-4-11" aria-hidden="true" tabindex="-1"></a>  focal_url <span class="ot">&lt;-</span> <span class="fu">paste0</span>( <span class="st">"https://www1.ncdc.noaa.gov/pub/data/gsod/"</span>, focal_year, <span class="st">"/gsod_"</span>, focal_year, <span class="st">".tar"</span>)</span>
+<span id="annotated-cell-4-12"><a href="#annotated-cell-4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-13"><a href="#annotated-cell-4-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble your preferred file name once it's downloaded</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="3">3</button><span id="annotated-cell-4-14" class="code-annotation-target"><a href="#annotated-cell-4-14" aria-hidden="true" tabindex="-1"></a>  focal_file <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"gsod_"</span>, focal_year, <span class="st">".tar"</span>)</span>
+<span id="annotated-cell-4-15"><a href="#annotated-cell-4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-16"><a href="#annotated-cell-4-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Download the data</span></span>
+<span id="annotated-cell-4-17"><a href="#annotated-cell-4-17" aria-hidden="true" tabindex="-1"></a>  utils<span class="sc">::</span><span class="fu">download.file</span>(<span class="at">url =</span> focal_url, <span class="at">destfile =</span> focal_file, <span class="at">method =</span> <span class="st">"curl"</span>)</span>
+<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="8" data-code-annotation="1">This message isn’t required but can be nice! Downloading data can take a <em>long</em> time so including a progress message can re-assure you that your R session hasn’t crashed</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="8" data-code-annotation="1">This message isn’t required but can be nice! Downloading data can take a <em>long</em> time so including a progress message can re-assure you that your R session hasn’t crashed</span>
 </dd>
-<dt data-target-cell="annotated-cell-3" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="11" data-code-annotation="2">To create a working URL you’ll likely need to click an example data file URL and try to <em>exactly</em> mimic its format</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="11" data-code-annotation="2">To create a working URL you’ll likely need to click an example data file URL and try to <em>exactly</em> mimic its format</span>
 </dd>
-<dt data-target-cell="annotated-cell-3" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="14" data-code-annotation="3">This step again isn’t required but can let you exert a useful level of control over the naming convention of your data file(s)</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="14" data-code-annotation="3">This step again isn’t required but can let you exert a useful level of control over the naming convention of your data file(s)</span>
 </dd>
 </dl>
 </div>
@@ -782,73 +782,73 @@ Activity: Data Download
 <p>In slightly more complicated contexts, you’ll need to make a request via an <u>A</u>pplication <u>P</u>rogramming <u>I</u>nterface (“API”). As the name might suggest, these platforms serve as a bridge between some application and code. Using such a method to download data is a–relatively–frequent occurrence in synthesis work.</p>
 <p>Here we’ll demonstrate an API call for NOAA’s <a href="https://tidesandcurrents.noaa.gov/">Tides and Currents</a> data.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
-<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
-<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(httr, jsonlite)</span>
-<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a 'custom function' to fetch desired data</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-6" class="code-annotation-target"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a>fetch_tide <span class="ot">&lt;-</span> <span class="cf">function</span>(station_id, <span class="at">product =</span> <span class="st">"predictions"</span>, <span class="at">datum =</span> <span class="st">"MLLW"</span>, <span class="at">time_zone =</span> <span class="st">"lst_ldt"</span>, <span class="at">units =</span> <span class="st">"english"</span>, <span class="at">interval =</span> <span class="st">"h"</span>, <span class="at">format =</span> <span class="st">"json"</span>){</span>
-<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2">2</button><span id="annotated-cell-4-8" class="code-annotation-target"><a href="#annotated-cell-4-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Custom error flags</span></span>
-<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-10"><a href="#annotated-cell-4-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get a few key dates (relative to today)</span></span>
-<span id="annotated-cell-4-11"><a href="#annotated-cell-4-11" aria-hidden="true" tabindex="-1"></a>  yesterday <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>() <span class="sc">-</span> <span class="dv">1</span></span>
-<span id="annotated-cell-4-12"><a href="#annotated-cell-4-12" aria-hidden="true" tabindex="-1"></a>  two_days_from_now <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>() <span class="sc">+</span> <span class="dv">2</span></span>
-<span id="annotated-cell-4-13"><a href="#annotated-cell-4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-14"><a href="#annotated-cell-4-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Adjust begin/end dates</span></span>
-<span id="annotated-cell-4-15"><a href="#annotated-cell-4-15" aria-hidden="true" tabindex="-1"></a>  begin_date <span class="ot">&lt;-</span> <span class="fu">format</span>(yesterday, <span class="st">"%Y%m%d"</span>)</span>
-<span id="annotated-cell-4-16"><a href="#annotated-cell-4-16" aria-hidden="true" tabindex="-1"></a>  end_date <span class="ot">&lt;-</span> <span class="fu">format</span>(two_days_from_now, <span class="st">"%Y%m%d"</span>)</span>
-<span id="annotated-cell-4-17"><a href="#annotated-cell-4-17" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Construct the API URL</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="3">3</button><span id="annotated-cell-4-19" class="code-annotation-target"><a href="#annotated-cell-4-19" aria-hidden="true" tabindex="-1"></a>  tide_url <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
-<span id="annotated-cell-4-20"><a href="#annotated-cell-4-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?"</span>,</span>
-<span id="annotated-cell-4-21"><a href="#annotated-cell-4-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"product="</span>, product,</span>
-<span id="annotated-cell-4-22"><a href="#annotated-cell-4-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;application=NOS.COOPS.TAC.WL"</span>,</span>
-<span id="annotated-cell-4-23"><a href="#annotated-cell-4-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;begin_date="</span>, begin_date,</span>
-<span id="annotated-cell-4-24"><a href="#annotated-cell-4-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;end_date="</span>, end_date,</span>
-<span id="annotated-cell-4-25"><a href="#annotated-cell-4-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;datum="</span>, datum,</span>
-<span id="annotated-cell-4-26"><a href="#annotated-cell-4-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;station="</span>, station_id,</span>
-<span id="annotated-cell-4-27"><a href="#annotated-cell-4-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;time_zone="</span>, time_zone,</span>
-<span id="annotated-cell-4-28"><a href="#annotated-cell-4-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;units="</span>, units,</span>
-<span id="annotated-cell-4-29"><a href="#annotated-cell-4-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;interval="</span>, interval,</span>
-<span id="annotated-cell-4-30"><a href="#annotated-cell-4-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;format="</span>, format)</span>
-<span id="annotated-cell-4-31"><a href="#annotated-cell-4-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-32"><a href="#annotated-cell-4-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the API request</span></span>
-<span id="annotated-cell-4-33"><a href="#annotated-cell-4-33" aria-hidden="true" tabindex="-1"></a>  response <span class="ot">&lt;-</span> httr<span class="sc">::</span><span class="fu">GET</span>(<span class="at">url =</span> tide_url)</span>
-<span id="annotated-cell-4-34"><a href="#annotated-cell-4-34" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-4-35"><a href="#annotated-cell-4-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># If the request is successful...</span></span>
-<span id="annotated-cell-4-36"><a href="#annotated-cell-4-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(httr<span class="sc">::</span><span class="fu">status_code</span>(response) <span class="sc">==</span> <span class="dv">200</span>){</span>
-<span id="annotated-cell-4-37"><a href="#annotated-cell-4-37" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="annotated-cell-4-38"><a href="#annotated-cell-4-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parse the JSON response</span></span>
-<span id="annotated-cell-4-39"><a href="#annotated-cell-4-39" aria-hidden="true" tabindex="-1"></a>    tide_data <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(httr<span class="sc">::</span><span class="fu">content</span>(response, <span class="st">"text"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>))</span>
-<span id="annotated-cell-4-40"><a href="#annotated-cell-4-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-41"><a href="#annotated-cell-4-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># And return it</span></span>
-<span id="annotated-cell-4-42"><a href="#annotated-cell-4-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(tide_data)</span>
-<span id="annotated-cell-4-43"><a href="#annotated-cell-4-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-44"><a href="#annotated-cell-4-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Otherwise...</span></span>
-<span id="annotated-cell-4-45"><a href="#annotated-cell-4-45" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="annotated-cell-4-46"><a href="#annotated-cell-4-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-47"><a href="#annotated-cell-4-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Pass the error message back to the user</span></span>
-<span id="annotated-cell-4-48"><a href="#annotated-cell-4-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"Failed to fetch tide data</span><span class="sc">\n</span><span class="st">Status code: "</span>, httr<span class="sc">::</span><span class="fu">status_code</span>(response))</span>
-<span id="annotated-cell-4-49"><a href="#annotated-cell-4-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-50"><a href="#annotated-cell-4-50" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="annotated-cell-4-51"><a href="#annotated-cell-4-51" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="annotated-cell-4-52"><a href="#annotated-cell-4-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-4-53"><a href="#annotated-cell-4-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke the function</span></span>
-<span id="annotated-cell-4-54"><a href="#annotated-cell-4-54" aria-hidden="true" tabindex="-1"></a>tide_df <span class="ot">&lt;-</span> <span class="fu">fetch_tide</span>(<span class="at">station_id =</span> <span class="st">"9411340"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<span id="annotated-cell-5-2"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
+<span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(httr, jsonlite)</span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a 'custom function' to fetch desired data</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-6" class="code-annotation-target"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a>fetch_tide <span class="ot">&lt;-</span> <span class="cf">function</span>(station_id, <span class="at">product =</span> <span class="st">"predictions"</span>, <span class="at">datum =</span> <span class="st">"MLLW"</span>, <span class="at">time_zone =</span> <span class="st">"lst_ldt"</span>, <span class="at">units =</span> <span class="st">"english"</span>, <span class="at">interval =</span> <span class="st">"h"</span>, <span class="at">format =</span> <span class="st">"json"</span>){</span>
+<span id="annotated-cell-5-7"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-8" class="code-annotation-target"><a href="#annotated-cell-5-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Custom error flags</span></span>
+<span id="annotated-cell-5-9"><a href="#annotated-cell-5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-10"><a href="#annotated-cell-5-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get a few key dates (relative to today)</span></span>
+<span id="annotated-cell-5-11"><a href="#annotated-cell-5-11" aria-hidden="true" tabindex="-1"></a>  yesterday <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>() <span class="sc">-</span> <span class="dv">1</span></span>
+<span id="annotated-cell-5-12"><a href="#annotated-cell-5-12" aria-hidden="true" tabindex="-1"></a>  two_days_from_now <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>() <span class="sc">+</span> <span class="dv">2</span></span>
+<span id="annotated-cell-5-13"><a href="#annotated-cell-5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-14"><a href="#annotated-cell-5-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Adjust begin/end dates</span></span>
+<span id="annotated-cell-5-15"><a href="#annotated-cell-5-15" aria-hidden="true" tabindex="-1"></a>  begin_date <span class="ot">&lt;-</span> <span class="fu">format</span>(yesterday, <span class="st">"%Y%m%d"</span>)</span>
+<span id="annotated-cell-5-16"><a href="#annotated-cell-5-16" aria-hidden="true" tabindex="-1"></a>  end_date <span class="ot">&lt;-</span> <span class="fu">format</span>(two_days_from_now, <span class="st">"%Y%m%d"</span>)</span>
+<span id="annotated-cell-5-17"><a href="#annotated-cell-5-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-18"><a href="#annotated-cell-5-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Construct the API URL</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3">3</button><span id="annotated-cell-5-19" class="code-annotation-target"><a href="#annotated-cell-5-19" aria-hidden="true" tabindex="-1"></a>  tide_url <span class="ot">&lt;-</span> <span class="fu">paste0</span>(</span>
+<span id="annotated-cell-5-20"><a href="#annotated-cell-5-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?"</span>,</span>
+<span id="annotated-cell-5-21"><a href="#annotated-cell-5-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"product="</span>, product,</span>
+<span id="annotated-cell-5-22"><a href="#annotated-cell-5-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;application=NOS.COOPS.TAC.WL"</span>,</span>
+<span id="annotated-cell-5-23"><a href="#annotated-cell-5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;begin_date="</span>, begin_date,</span>
+<span id="annotated-cell-5-24"><a href="#annotated-cell-5-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;end_date="</span>, end_date,</span>
+<span id="annotated-cell-5-25"><a href="#annotated-cell-5-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;datum="</span>, datum,</span>
+<span id="annotated-cell-5-26"><a href="#annotated-cell-5-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;station="</span>, station_id,</span>
+<span id="annotated-cell-5-27"><a href="#annotated-cell-5-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;time_zone="</span>, time_zone,</span>
+<span id="annotated-cell-5-28"><a href="#annotated-cell-5-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;units="</span>, units,</span>
+<span id="annotated-cell-5-29"><a href="#annotated-cell-5-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;interval="</span>, interval,</span>
+<span id="annotated-cell-5-30"><a href="#annotated-cell-5-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">"&amp;format="</span>, format)</span>
+<span id="annotated-cell-5-31"><a href="#annotated-cell-5-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-32"><a href="#annotated-cell-5-32" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the API request</span></span>
+<span id="annotated-cell-5-33"><a href="#annotated-cell-5-33" aria-hidden="true" tabindex="-1"></a>  response <span class="ot">&lt;-</span> httr<span class="sc">::</span><span class="fu">GET</span>(<span class="at">url =</span> tide_url)</span>
+<span id="annotated-cell-5-34"><a href="#annotated-cell-5-34" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-5-35"><a href="#annotated-cell-5-35" aria-hidden="true" tabindex="-1"></a>  <span class="co"># If the request is successful...</span></span>
+<span id="annotated-cell-5-36"><a href="#annotated-cell-5-36" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(httr<span class="sc">::</span><span class="fu">status_code</span>(response) <span class="sc">==</span> <span class="dv">200</span>){</span>
+<span id="annotated-cell-5-37"><a href="#annotated-cell-5-37" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="annotated-cell-5-38"><a href="#annotated-cell-5-38" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Parse the JSON response</span></span>
+<span id="annotated-cell-5-39"><a href="#annotated-cell-5-39" aria-hidden="true" tabindex="-1"></a>    tide_data <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(httr<span class="sc">::</span><span class="fu">content</span>(response, <span class="st">"text"</span>, <span class="at">encoding =</span> <span class="st">"UTF-8"</span>))</span>
+<span id="annotated-cell-5-40"><a href="#annotated-cell-5-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-41"><a href="#annotated-cell-5-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># And return it</span></span>
+<span id="annotated-cell-5-42"><a href="#annotated-cell-5-42" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(tide_data)</span>
+<span id="annotated-cell-5-43"><a href="#annotated-cell-5-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-44"><a href="#annotated-cell-5-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Otherwise...</span></span>
+<span id="annotated-cell-5-45"><a href="#annotated-cell-5-45" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="annotated-cell-5-46"><a href="#annotated-cell-5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-47"><a href="#annotated-cell-5-47" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Pass the error message back to the user</span></span>
+<span id="annotated-cell-5-48"><a href="#annotated-cell-5-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stop</span>(<span class="st">"Failed to fetch tide data</span><span class="sc">\n</span><span class="st">Status code: "</span>, httr<span class="sc">::</span><span class="fu">status_code</span>(response))</span>
+<span id="annotated-cell-5-49"><a href="#annotated-cell-5-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-50"><a href="#annotated-cell-5-50" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="annotated-cell-5-51"><a href="#annotated-cell-5-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="annotated-cell-5-52"><a href="#annotated-cell-5-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-53"><a href="#annotated-cell-5-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke the function</span></span>
+<span id="annotated-cell-5-54"><a href="#annotated-cell-5-54" aria-hidden="true" tabindex="-1"></a>tide_df <span class="ot">&lt;-</span> <span class="fu">fetch_tide</span>(<span class="at">station_id =</span> <span class="st">"9411340"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="6" data-code-annotation="1">When you do need to make an API call, a custom function is a great way of standardizing your entries. This way you only need to figure out how to do the call once and from then on you can lean on the (likely more familiar) syntax of the language in which you wrote the function!</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="6" data-code-annotation="1">When you do need to make an API call, a custom function is a great way of standardizing your entries. This way you only need to figure out how to do the call once and from then on you can lean on the (likely more familiar) syntax of the language in which you wrote the function!</span>
 </dd>
-<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="8" data-code-annotation="2">We’re excluding error checks for simplicity’s sake but <strong>you will want to code informative error checks</strong>. Basically you want to consider inputs to the function that would break it and pre-emptively stop the function (with an informative message) when those malformed inputs are received</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="8" data-code-annotation="2">We’re excluding error checks for simplicity’s sake but <strong>you will want to code informative error checks</strong>. Basically you want to consider inputs to the function that would break it and pre-emptively stop the function (with an informative message) when those malformed inputs are received</span>
 </dd>
-<dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="19" data-code-annotation="3">Just like the batch download, we need to assemble the URL that the API is expecting</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="19" data-code-annotation="3">Just like the batch download, we need to assemble the URL that the API is expecting</span>
 </dd>
 </dl>
 </div>
@@ -858,7 +858,7 @@ Activity: Data Download
 <p>While many ecologists are trained in programming languages like R or Python, some operations require the <u>C</u>ommand <u>L</u>ine <u>I</u>nterface (“CLI”; a.k.a. “shell”, “bash”, “terminal”, etc.). <strong>Don’t worry if you’re new to this language!</strong> There are a lot of good resources for learning the fundamentals, including The Carpentries’ workshop “<a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a>”.</p>
 <p>Below we demonstrate download via command line for NASA <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">OMI/Aura Sulfur Dioxide (SO2)</a>. The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis.</p>
 <blockquote class="blockquote">
-<p>Step 1: Generate a list of file names with specified target area and temporal coverage using “subset/Get Data” tab on the right hand side of the data page. Then, download the links list in a TXT file named “list.txt”.</p>
+<p>Step 1: Using the “subset/Get Data” tab on the right-hand side of the <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">data page</a>, generate a list of file names for your specified target area and time period. Download the list of links as a TXT file named “list.txt”. Be sure to document the target area and temporal coverage you selected in your data inventory table.</p>
 </blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
@@ -869,15 +869,43 @@ Activity: Data Download
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote class="blockquote">
-<p>Step 2: Launch the command line window and run the wget command. Replace the user name and password in the code using your EarthData login information.</p>
+<p>Step 2: Open a command line window and execute the wget command. Replace the placeholder for username and password with your EarthData login credentials.</p>
 </blockquote>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--content-disposition</span> <span class="at">-i</span> list.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<blockquote class="blockquote">
+<p>If you run into any issue, here are step-to-step guild on <a href="https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl">how to work with wget and curl specifically to the GES DISC data system</a>.</p>
+</blockquote>
 </div>
 </div>
 </div>
+<section id="data-format-and-structure" class="level3">
+<h3 class="anchored" data-anchor-id="data-format-and-structure">Data format and structure</h3>
+<p>CSV and TXT are common formats for storing data. In addition, other formats frequently used in research include NetCDF, HDF5, Matlab, and Rdata/rds, as well as spatial related datasets, such as geotiff, shapefiles and raster files (see spatial module for details).</p>
+<p>In the R environment, data structure is commonly check using a few functions listed below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url,<span class="at">na=</span><span class="sc">-</span><span class="dv">99999</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure of the data</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(lobster_df)</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lobster_df)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(lobster_df)</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(lobster_df)</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(lobster_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
