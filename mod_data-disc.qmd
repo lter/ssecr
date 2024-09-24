@@ -212,37 +212,29 @@ lobster_df <- read.csv(file = dt_url)
 
 ### R Package
 
-If you're quite lucky, the data you want might be stored in a repository that developed (and maintains!) an {{< fa brands r-project >}} R package. These packages may or may not be on CRAN (packages can often also be found on GitHub or Bioconductor). Typically these packages have a short "vignette" that demonstrates how their functions should be used.
+If you're quite lucky, the data you want might be stored in a repository that developed (and maintains!) an {{< fa brands r-project >}} R package. These packages may or may not be on CRAN (packages can often also be found on GitHub or Bioconductor). Typically these packages have a "vignette" that demonstrates how their functions should be used.
 
-Consider the following example adapted from the `dataone` [package vignette](https://cran.rstudio.com/web/packages/dataone/vignettes/v04-download-data.html).
+Consider the following example adapted from the USGS `dataRetrieval` [package vignette](https://cran.r-project.org/web/packages/dataRetrieval/vignettes/dataRetrieval.html). Visit [USGS National Water Dashboard interactive map](https://dashboard.waterdata.usgs.gov/app/nwd/en/) to find site numbers and check data availability.
 
 ```{r download-r-pkg}
 #| eval: false
 
 # Load needed packages
 ## install.packages("librarian")
-librarian::shelf(dataone)
+librarian::shelf(dataRetrieval)
 
-# DataONE requires "coordinating nodes" so make one
-cn <- dataone::CNode()
+# Set up the parameters for the Santa Ynez River site
+siteNumber <- "11133000"  # USGS site number for Santa Ynez River at Narrows
+parameterCd <- "00060"    # Parameter code for discharge (cubic feet per second)
+startDate <- "2024-01-01" # Start date
+endDate <- "2024-01-31"   # End date
 
-# Get a reference to a node based on its identifier
-mn <- dataone::getMNode(x = cn, "urn:node:KNB")
+# Retrieve daily discharge data
+dischargeData <- readNWISdv(siteNumber, parameterCd, startDate, endDate)
 
-# Generate a query
-query_list <- list(q = "id:Blandy.77.1", fl = "resourceMap")
-
-# Use it to search DataONE
-query_result <- dataone::query(x = cn, solrQuery = query_list, as = "data.frame")
-
-# Identify package ID
-pkg_id <- query_result[1, 1]
-
-# Download the data
-temp_file_name <- dataone::getPackage(x = mn, id = pkg_id) # <1>
+# View the first few rows of the data
+head(dischargeData)
 ```
-
-1.  `dataone` downloads data to a "temporary directory" and returns the name of the file/path. You'll need that to read in the data so **be sure to assign it to an object!**
 
 ### Batch Download
 
