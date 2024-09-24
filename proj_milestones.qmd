@@ -4,9 +4,49 @@ title: "Project Milestones"
 
 ## Overview
 
-This page is meant to provide the project teams with rough progress estimates in relation to the course's instructional modules. Your group may at times be ahead of these milestones or behind at others so please use this resource as general guidance rather than specific timing requirements.
+This page is meant to provide the project teams with rough progress estimates in relation to the course's instructional modules. Your group may at times be ahead of these milestones or behind at others so **please use this resource as general guidance rather than specific timing requirements.**
 
 ## Milestones
 
+### Months 1-2 (Sep./Oct.)
 
-Under construction; check back later!
+- Literature review well underway and/or complete
+- Good progress finding data (50-75% known needed data found)
+- Collaboratively identified ground rules, communication and coordination plan, and project roles
+
+### Month 3 (Nov.)
+
+- Draft a plan for your analyses
+    - Looking for sufficient detail that you can articulate what harmonized data might be needed
+- Largely finished finding data
+- Exploratory visualization
+
+### Month 4 (Dec.)
+
+- Strong progress harmonizing your data
+- Internal project status check-in and team dynamics assessment
+
+### Month 5 (Jan.) 
+
+- Finish harmonizing data
+- Revize planned analyses
+    - Harmonizing the data will help inform what questions you want to (or are able to) ask
+
+### Month 6 (Feb.)
+
+- Run and interpret preliminary analyses
+- Consider drafting an 'extended figures document' that summarizes key messages and includes rough draft figures)
+- Create an intellectual credit argeement as a team
+
+### Month 7 (Mar.)
+
+- Draft outline for the product that your team aims to create
+- Begin generating publication-quality figures
+- Prepare datasets for publication (if relevant)
+    - Consider FAIR and CARE data practices (see [Reproducibility](https://lter.github.io/ssecr/mod_reproducibility.html) module)
+
+### Month 8-9 (Apr./May)
+
+- Draft publishable dataset
+- Team product ready to report on (internally) to SSECR fellows & instructors
+- Intellectual credit contributions table completed
