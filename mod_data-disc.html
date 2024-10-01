@@ -370,6 +370,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#panel-discussion" id="toc-panel-discussion" class="nav-link" data-scroll-target="#panel-discussion">Panel Discussion</a></li>
   <li><a href="#data-repositories" id="toc-data-repositories" class="nav-link" data-scroll-target="#data-repositories">Data Repositories</a></li>
   <li><a href="#general-data-searches" id="toc-general-data-searches" class="nav-link" data-scroll-target="#general-data-searches">General Data Searches</a></li>
+  <li><a href="#data-inventory-value" id="toc-data-inventory-value" class="nav-link" data-scroll-target="#data-inventory-value">Data Inventory Value</a></li>
   <li><a href="#downloading-data" id="toc-downloading-data" class="nav-link" data-scroll-target="#downloading-data">Downloading Data</a></li>
   <li><a href="#data-format-and-structure" id="toc-data-format-and-structure" class="nav-link" data-scroll-target="#data-format-and-structure">Data format and structure</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
@@ -576,16 +577,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Data Inventory Value
-</div>
-</div>
-<div class="callout-body-container callout-body">
+</section>
+</section>
+<section id="data-inventory-value" class="level2">
+<h2 class="anchored" data-anchor-id="data-inventory-value">Data Inventory Value</h2>
 <p>Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:</p>
 <ul>
 <li>Well-documented datasets make it easier for researchers to find and access specific data for reproducible research</li>
@@ -593,8 +588,16 @@ Data Inventory Value
 <li>Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)</li>
 <li>When you need to generate metadata for your own synthesis data product you’ll already have much of the information you need</li>
 </ul>
-<section id="activity-data-inventory" class="level4">
-<h4 class="anchored" data-anchor-id="activity-data-inventory">Activity: Data Inventory</h4>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Data Inventory
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p><strong>Part 1</strong> (~25 min)</p>
 <p>In your project groups:</p>
 <ul>
@@ -620,7 +623,6 @@ Data Inventory Value
 <li>Do you agree with the information entered in the data inventory?</li>
 <li>Is there any information you think should be in the data inventory that wasn’t?</li>
 </ul>
-</section>
 </div>
 </div>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
@@ -641,7 +643,6 @@ Discussion: Data Inventory
 </ul>
 </div>
 </div>
-</section>
 </section>
 <section id="downloading-data" class="level2">
 <h2 class="anchored" data-anchor-id="downloading-data">Downloading Data</h2>
@@ -840,7 +841,7 @@ Discussion: Data Inventory
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Activity: Data Download
+Activity: Data Download (~25 mins)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -853,7 +854,7 @@ Activity: Data Download
 <li>Write a script <strong>for your group</strong> to download data using your chosen method</li>
 <li>Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach.
 <ul>
-<li>If no datasets in your group’s inventory need the download method you chose, try to run the example code included below</li>
+<li>If no datasets in your group’s inventory need the download method you chose, try to run the example codes provided</li>
 </ul></li>
 </ul>
 </div>
@@ -864,24 +865,26 @@ Activity: Data Download
 <p>CSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the spatial module for more details).</p>
 <p>In the R environment, data structure are typically checked using the following functions.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span> </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url,<span class="at">na=</span><span class="sc">-</span><span class="dv">99999</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure of the data</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(lobster_df)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lobster_df)</span>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(tidyverse)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url,<span class="at">na=</span><span class="sc">-</span><span class="dv">99999</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure of the data</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(lobster_df)</span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(lobster_df)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lobster_df)</span>
 <span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(lobster_df)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(lobster_df)</span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(lobster_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(lobster_df)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(lobster_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="additional-resources" class="level2">
