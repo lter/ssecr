@@ -33,7 +33,7 @@ Panelists will briefly introduce themselves and describe their roles. They will 
 -   Dr. [Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel), Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US)
 :::
 
-### Pre-Prepared Questions
+#### Pre-Prepared Questions
 
 -   What policies are in place to ensure responsible use of your data?
 -   What challenges (technical and scientific) do you see in integrating data across platforms and organizations?
@@ -66,7 +66,7 @@ You'll become familiar with many of these when you need a particular type of dat
 
 If you don't find what you're looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, [Google](https://www.google.com) is a suprisingly good resource for finding data and--for those familiar with Google Scholar for peer reviewed literature-specific Googling--there is a dataset-specific variant of Google called [Google Dataset Search](https://datasetsearch.research.google.com/).
 
-### Search Operators
+#### Search Operators
 
 Virtually all search engines support "operators" to create more effective queries (i.e., search parameters). If you don't use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you're looking for very specific criteria in candidate datasets.
 
@@ -129,6 +129,15 @@ Example: `inurl:data soil chemistry`
 :::
 
 ::: {.callout-note icon="false"}
+## Data Inventory Value
+
+Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
+
+-   Well-documented datasets make it easier for researchers to find and access specific data for reproducible research
+-   Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
+-   Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
+-   When you need to generate metadata for your own synthesis data product you'll already have much of the information you need
+
 #### Activity: Data Inventory
 
 **Part 1** (\~25 min)
@@ -139,8 +148,8 @@ In your project groups:
 -   Decide on a number of datasets equal to the number of group members. Each group member will self-assign one dataset.
     - *Later, each person will download their assigned dataset*
 -   Discuss what key information is needed to determine if each dataset is useful for your project.
--   Once you've identified the necessary information, start completing the second sheet of your data inventory Google Sheet.
-    - *This sheet is more detailed and will be shared with another group later*
+-   Once you've identified the necessary information, start completing the detailed data inventory Google Sheet (tab separated by project groups).
+    - *This sheet will be shared with another group later*
 
 **Part 2** (\~10 min)
 
@@ -162,32 +171,12 @@ Return to the main room and let's discuss (some of) the following questions:
 -   What is your plan for downloading the data?
 :::
 
-### Data Inventory Value
-
-Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
-
--   Well-documented datasets make it easier for researchers to find and access specific data for reproducible research
--   Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
--   Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
--   When you need to generate metadata for your own synthesis data product you'll already have much of the information you need
 
 ## Downloading Data
 
 Once you've found data, filled out your data inventory, and decided which datasets you actually want, it's time to download some of them! There are several methods you can use and it's possible that each won't work in all cases so it's important to be at least somewhat familiar with several of these tools.
 
 Most of these methods will work regardless of the format of the data (i.e., its file extension) but the format of the data will be important when you want to 'read in' the data and begin to work with it.
-
-::: {.callout-note icon="false"}
-#### Activity: Data Download
-
-
--   Each member work on the data that you have been assigned. 
--   Discuss with your group how to collaborate on coding without creating merge conflicts
-    -   *Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!*
--   Write a script **for your group** to download data using your chosen method
--   Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
-    -   If no datasets in your group's inventory need the download method you chose, try to run the example code included below
-:::
 
 Below are some example code chunks for five methods of downloading data in a scripted way. There will be contexts where only a <u>G</u>raphical <u>U</u>ser <u>I</u>nterface ("GUI"; \[GOO-ee\]) is available but the details of that method of downloading are usually specific to the portal you're accessing so we won't include an artificial general case.
 
@@ -368,7 +357,19 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
 
 :::
 
-### Data format and structure
+::: {.callout-note icon="false"}
+#### Activity: Data Download
+
+
+-   Each member work on the data that you have been assigned. 
+-   Discuss with your group how to collaborate on coding without creating merge conflicts
+    -   *Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!*
+-   Write a script **for your group** to download data using your chosen method
+-   Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
+    -   If no datasets in your group's inventory need the download method you chose, try to run the example code included below
+:::
+
+## Data format and structure
 
 CSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the spatial module for more details).
 
