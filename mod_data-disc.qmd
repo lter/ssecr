@@ -128,7 +128,7 @@ Use the 'in URL' operator (`inurl:`) to **search for pages that have a specific 
 Example: `inurl:data soil chemistry`
 :::
 
-::: {.callout-note icon="false"}
+
 ## Data Inventory Value
 
 Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
@@ -138,6 +138,7 @@ Documenting potential datasets (and their metadata) thoroughly in a data invento
 -   Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
 -   When you need to generate metadata for your own synthesis data product you'll already have much of the information you need
 
+::: {.callout-note icon="false"}
 #### Activity: Data Inventory
 
 **Part 1** (\~25 min)
@@ -358,7 +359,7 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
 :::
 
 ::: {.callout-note icon="false"}
-#### Activity: Data Download
+#### Activity: Data Download (~25 mins)
 
 
 -   Each member work on the data that you have been assigned. 
@@ -366,7 +367,7 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
     -   *Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!*
 -   Write a script **for your group** to download data using your chosen method
 -   Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
-    -   If no datasets in your group's inventory need the download method you chose, try to run the example code included below
+    -   If no datasets in your group's inventory need the download method you chose, try to run the example codes provided
 :::
 
 ## Data format and structure
@@ -378,7 +379,9 @@ In the R environment, data structure are typically checked using the following f
 ```{r data-check}
 #| eval: false
 
-library(dplyr)
+# Load needed packages
+## install.packages("librarian")
+librarian::shelf(tidyverse)
 
 # Define URL as an object
 dt_url <- "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6" 
