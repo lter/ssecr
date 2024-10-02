@@ -894,7 +894,7 @@
     "href": "mod_stats.html",
     "title": "Analysis & Modeling",
     "section": "",
-    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module by splitting it into two halves.\n\nFirst half: a “flipped approach” where project teams will share their proposed analyses with one another\nSecond half: typical instructional module dedicated to analyses that are more common in–or exclusive to–synthesis research.\n\nContent produced by project teams during the flipped half may be linked in the ‘Additional Resources’ section at the bottom of this module at the discretion of each team. Otherwise the content of this module will focus only on the non-flipped content.",
+    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than other modules. This module uses a “flipped approach” where project teams will share and discuss their proposed analyses with one another.\nThat said, one of our goals for these course materials is that they be a valuable resource to those who are not formally enrolled in the course and this flipped approach could result in a lack of information on a critical topic. To reduce this risk, we have created a typical instructional module dedicated to analyses that are more common in–or exclusive to–synthesis research that we hope is helpful.",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
@@ -905,7 +905,7 @@
     "href": "mod_stats.html#overview",
     "title": "Analysis & Modeling",
     "section": "",
-    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module by splitting it into two halves.\n\nFirst half: a “flipped approach” where project teams will share their proposed analyses with one another\nSecond half: typical instructional module dedicated to analyses that are more common in–or exclusive to–synthesis research.\n\nContent produced by project teams during the flipped half may be linked in the ‘Additional Resources’ section at the bottom of this module at the discretion of each team. Otherwise the content of this module will focus only on the non-flipped content.",
+    "text": "Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we’ll be approaching this module in a different way than other modules. This module uses a “flipped approach” where project teams will share and discuss their proposed analyses with one another.\nThat said, one of our goals for these course materials is that they be a valuable resource to those who are not formally enrolled in the course and this flipped approach could result in a lack of information on a critical topic. To reduce this risk, we have created a typical instructional module dedicated to analyses that are more common in–or exclusive to–synthesis research that we hope is helpful.",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
@@ -917,6 +917,17 @@
     "title": "Analysis & Modeling",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe proposed analytical methods to an interested audience of mixed prior experience\nExplain nuance in interpretation of results of proposed analyses\nIdentify some statistical tests common in synthesis research\nPerform some synthesis-specific analyses",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#team-presentations-of-proposed-methods",
+    "href": "mod_stats.html#team-presentations-of-proposed-methods",
+    "title": "Analysis & Modeling",
+    "section": "Team Presentations of Proposed Methods",
+    "text": "Team Presentations of Proposed Methods\nContent produced by project teams during the presentation component of this module may be included in the tab panels below or in the ‘Additional Resources’ section at the bottom of this module at the discretion of each team.\n\n2024 Methods\n\n\nFor more information on project teams, see here.",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
