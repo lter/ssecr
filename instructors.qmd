@@ -10,9 +10,9 @@ _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{<
 
 ### Design Team
 
-- **Marty Downs** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X) 
-- **Nick J Lyon** (_they/them)_ -- [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
-- **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel)
+- Lead: **Marty Downs** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X) 
+- Lead: **Nick J Lyon** (_they/them)_ -- [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
+- Lead: **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel)
 - **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907)
 - **Sarah Elmendorf** (_she/her_) -- [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1085-8521)
 - **Gregory Maurer** (_he/him_) -- [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
