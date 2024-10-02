@@ -349,6 +349,7 @@ After you've calculated all relevant effect sizes--using your chosen flavor of e
 
 - Spake, R. _et al._ [Understanding 'It Depends' in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). **2023**. _Biological Reviews_
 - Spake, R. _et al._ [Improving Quantitative Synthesis to Achieve Generality in Ecology](https://www.nature.com/articles/s41559-022-01891-z). **2022**. _Nature Ecology and Evolution_
+- Tredennick, A.T. _et al._ [A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3336). **2021**. _Ecology_
 - Harrier, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2021**.
 - Zuur, A.F. _et al._ [Mixed Effects Models and Extensions in Ecology with R](https://link.springer.com/book/10.1007/978-0-387-87458-6). **2009**.
 
