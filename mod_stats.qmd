@@ -5,12 +5,9 @@ code-annotations: hover
 
 ## Overview
 
-Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module by splitting it into two halves.
+Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module in a different way than other modules. **This module uses a "flipped approach" where project teams will share and discuss their proposed analyses with one another.**
 
-1. First half: a "flipped approach" where project teams will share their proposed analyses with one another
-2. Second half: typical instructional module dedicated to **analyses that are more common in--or exclusive to--synthesis research**. 
-
-Content produced by project teams during the flipped half may be linked in the '[Additional Resources](https://lter.github.io/ssecr/mod_stats.html#additional-resources)' section at the bottom of this module at the discretion of each team. Otherwise the content of this module will focus only on the non-flipped content.
+That said, one of our goals for these course materials is that they be a valuable resource to those who are not formally enrolled in the course and this flipped approach could result in a lack of information on a critical topic. To reduce this risk, we have created a typical instructional module dedicated to <u>analyses that are more common in--or exclusive to--synthesis research</u> that we hope is helpful.
 
 ## Learning Objectives
 
@@ -20,6 +17,19 @@ After completing this module you will be able to:
 - <u>Explain</u> nuance in interpretation of results of proposed analyses
 - <u>Identify</u> some statistical tests common in synthesis research
 - <u>Perform</u> some synthesis-specific analyses
+
+## Team Presentations of Proposed Methods
+
+Content produced by project teams during the presentation component of this module may be included in the tab panels below or in the '[Additional Resources](https://lter.github.io/ssecr/mod_stats.html#additional-resources)' section at the bottom of this module _at the discretion of each team._
+
+::: panel-tabset
+### 2024 Methods
+
+For more information on project teams, see [here](https://lter.github.io/ssecr/proj_teams.html).
+
+
+:::
+
 
 ## Needed Packages
 
