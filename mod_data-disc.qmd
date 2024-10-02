@@ -388,15 +388,19 @@ dt_url <- "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823f
 # Read it into R
 lobster_df <- read.csv(file = dt_url,na=-99999)
 
-# Check the structure of the data
+# Displays the first few rows of the dataset to provide a quick overview.
 head(lobster_df)
 
+#Provides a summary of the dataset, including basic statistics for each variable.
 summary(lobster_df)
 
+# Displays the structure of the dataset, including data types and a preview of the data.
 str(lobster_df)
 
+#Offers a transposed, compact overview of the dataset's structure, data types, and values.
 glimpse(lobster_df)
 
+#Checks if there are any missing values (NA) in the dataset.
 anyNA(lobster_df)
 
 ```
