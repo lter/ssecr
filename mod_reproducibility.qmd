@@ -374,8 +374,20 @@ We can use functions to automatically detect and insert the correct slashes thou
 my_df <- read.csv(file = file.path("Data", "bees.csv"))
 ```
 
-
 ::::
+
+#### File Path Exception
+
+Generally, the labels of the above tab panels are correct (i.e., it is better to use OS-agnostic relative paths). However, there is an important possible exception: <u>how do you handle file paths when the data _can't_ live in the project folder?</u> A common example of this is when data are stored in a cloud-based system (e.g., Dropbox, Box, etc.) and accessed via a "synced" folder in each local computer. Downloading files is thus unnecessary but the only way to import data from or export outputs to this folder is to specify an absolute file path unique to each user (even though the folders inside the main synced folder are shared among users).
+
+The LTER Scientific Computing team (members [here](https://lter.github.io/scicomp/staff.html)) has created a [nice tutorial](https://lter.github.io/scicomp/tutorial_json.html) on this topic but to summarize you should take the following steps:
+
+1. Store user-specific information in a JSON file
+    - Consider using `ltertools::make_json`
+2. Tell Git to ignore that file
+3. Write scripts to read this file and access user-specific information from it
+
+Following these steps allows you to use absolute paths to the synced folder while enabling relative paths everywhere else. Because the user-specific information is stored in a file ignored by Git you also don't have to comment/uncomment your absolute path (or commit that 'change').
 
 ### Code Style
 

@@ -29,6 +29,7 @@ After completing this module you will be able to:
 - Deutsch, L., _et al._, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. _Environmental Science & Policy_
 - Farrell, K.J. _et al._, [Training  Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
 - Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
+- Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.240181212). **2024** _PNAS_
 
 ### Workshops & Courses
 
@@ -38,4 +39,4 @@ After completing this module you will be able to:
 
 ### Websites
 
-- 
+- Lahr, Heather [How to effectively engage teams in interdisciplinary collaborations](How to effectively engage teams in interdisciplinary collaborations). **2024**

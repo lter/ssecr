@@ -5,12 +5,9 @@ code-annotations: hover
 
 ## Overview
 
-Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module by splitting it into two halves.
+Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module in a different way than other modules. **This module uses a "flipped approach" where project teams will share and discuss their proposed analyses with one another.**
 
-1. First half: a "flipped approach" where project teams will share their proposed analyses with one another
-2. Second half: typical instructional module dedicated to **analyses that are more common in--or exclusive to--synthesis research**. 
-
-Content produced by project teams during the flipped half may be linked in the '[Additional Resources](https://lter.github.io/ssecr/mod_stats.html#additional-resources)' section at the bottom of this module at the discretion of each team. Otherwise the content of this module will focus only on the non-flipped content.
+That said, one of our goals for these course materials is that they be a valuable resource to those who are not formally enrolled in the course and this flipped approach could result in a lack of information on a critical topic. To reduce this risk, we have created a typical instructional module dedicated to <u>analyses that are more common in--or exclusive to--synthesis research</u> that we hope is helpful.
 
 ## Learning Objectives
 
@@ -20,6 +17,19 @@ After completing this module you will be able to:
 - <u>Explain</u> nuance in interpretation of results of proposed analyses
 - <u>Identify</u> some statistical tests common in synthesis research
 - <u>Perform</u> some synthesis-specific analyses
+
+## Team Presentations of Proposed Methods
+
+Content produced by project teams during the presentation component of this module may be included in the tab panels below or in the '[Additional Resources](https://lter.github.io/ssecr/mod_stats.html#additional-resources)' section at the bottom of this module _at the discretion of each team._
+
+::: panel-tabset
+### 2024 Methods
+
+For more information on project teams, see [here](https://lter.github.io/ssecr/proj_teams.html).
+
+
+:::
+
 
 ## Needed Packages
 
@@ -339,6 +349,7 @@ After you've calculated all relevant effect sizes--using your chosen flavor of e
 
 - Spake, R. _et al._ [Understanding 'It Depends' in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). **2023**. _Biological Reviews_
 - Spake, R. _et al._ [Improving Quantitative Synthesis to Achieve Generality in Ecology](https://www.nature.com/articles/s41559-022-01891-z). **2022**. _Nature Ecology and Evolution_
+- Tredennick, A.T. _et al._ [A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3336). **2021**. _Ecology_
 - Harrier, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2021**.
 - Zuur, A.F. _et al._ [Mixed Effects Models and Extensions in Ecology with R](https://link.springer.com/book/10.1007/978-0-387-87458-6). **2009**.
 
