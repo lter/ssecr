@@ -373,43 +373,40 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
     -   If no datasets in your group's inventory need the download method you chose, try to run the example codes provided
 :::
 
-## Data format and structure
+## Data Format and Structure
 
-CSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the spatial module for more details).
+CSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the [spatial module](https://lter.github.io/ssecr/mod_spatial.html) for more details).
 
-In the R environment, data structure are typically checked using the following functions. 
+In R, information about data's structure can be retrieved in a variety of ways. We'll go ahead and load the `dplyr` package as well to be able to include one Tidyverse option for evaluating structure.
 
 ```{r data-check}
 #| eval: false
 
-# Load needed packages
-## install.packages("librarian")
-librarian::shelf(tidyverse)
+# Load needed libraries
+library(dplyr)
 
 # Define URL as an object
-dt_url <- "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6" 
+dt_url <- "https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"
 
 # Read it into R
-lobster_df <- read.csv(file = dt_url,na=-99999)
+lobster_df <- read.csv(file = dt_url)
 
-# Displays the first few rows of the dataset to provide a quick overview.
+# Displays the first few rows of the dataset to provide a quick overview
 head(lobster_df)
 
-#Provides a summary of the dataset, including basic statistics for each variable.
+#Provides a summary of the dataset, including basic statistics for each variable
 summary(lobster_df)
 
-# Displays the structure of the dataset, including data types and a preview of the data.
+# Displays the structure of the dataset, including data types and a preview of the data
 str(lobster_df)
 
-#Offers a transposed, compact overview of the dataset's structure, data types, and values.
-glimpse(lobster_df)
+# Offers a transposed, compact overview of the dataset's structure, data types, and values
+dplyr::glimpse(lobster_df) #<1>
 
-#Checks if there are any missing values (NA) in the dataset.
+# Checks if there are any missing values (NA) in the dataset
 anyNA(lobster_df)
-
 ```
-
-
+1. This is the Tidyverse equivalent of `str`. The information looks different because the data are coerced into a "tibble" behind the scenes
 
 ## Additional Resources
 
