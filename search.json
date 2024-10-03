@@ -47,6 +47,17 @@
     ]
   },
   {
+    "objectID": "mod_data-disc.html#preparation",
+    "href": "mod_data-disc.html#preparation",
+    "title": "Data Discovery & Management",
+    "section": "Preparation",
+    "text": "Preparation\nEach Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the first sheet of the “data-inventory” Google Sheet.",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Data Discovery"
+    ]
+  },
+  {
     "objectID": "mod_data-disc.html#panel-discussion",
     "href": "mod_data-disc.html#panel-discussion",
     "title": "Data Discovery & Management",
@@ -105,8 +116,8 @@
     "objectID": "mod_data-disc.html#data-format-and-structure",
     "href": "mod_data-disc.html#data-format-and-structure",
     "title": "Data Discovery & Management",
-    "section": "Data format and structure",
-    "text": "Data format and structure\nCSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the spatial module for more details).\nIn the R environment, data structure are typically checked using the following functions.\n\n# Load needed packages\n## install.packages(\"librarian\")\nlibrarian::shelf(tidyverse)\n\n# Define URL as an object\ndt_url &lt;- \"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6\" \n\n# Read it into R\nlobster_df &lt;- read.csv(file = dt_url,na=-99999)\n\n# Displays the first few rows of the dataset to provide a quick overview.\nhead(lobster_df)\n\n#Provides a summary of the dataset, including basic statistics for each variable.\nsummary(lobster_df)\n\n# Displays the structure of the dataset, including data types and a preview of the data.\nstr(lobster_df)\n\n#Offers a transposed, compact overview of the dataset's structure, data types, and values.\nglimpse(lobster_df)\n\n#Checks if there are any missing values (NA) in the dataset.\nanyNA(lobster_df)",
+    "section": "Data Format and Structure",
+    "text": "Data Format and Structure\nCSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the spatial module for more details).\nIn R, information about data’s structure can be retrieved in a variety of ways. We’ll go ahead and load the dplyr package as well to be able to include one Tidyverse option for evaluating structure.\n\n# Load needed libraries\nlibrary(dplyr)\n\n# Define URL as an object\ndt_url &lt;- \"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6\"\n\n# Read it into R\nlobster_df &lt;- read.csv(file = dt_url)\n\n# Displays the first few rows of the dataset to provide a quick overview\nhead(lobster_df)\n\n#Provides a summary of the dataset, including basic statistics for each variable\nsummary(lobster_df)\n\n# Displays the structure of the dataset, including data types and a preview of the data\nstr(lobster_df)\n\n# Offers a transposed, compact overview of the dataset's structure, data types, and values\n1dplyr::glimpse(lobster_df)\n\n# Checks if there are any missing values (NA) in the dataset\nanyNA(lobster_df)\n\n\n1\n\nThis is the Tidyverse equivalent of str. The information looks different because the data are coerced into a “tibble” behind the scenes",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
@@ -151,6 +162,17 @@
     "title": "Data Visualization & Exploration",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine fundamental ggplot2 vocabulary\nIdentify appropriate graph types for given data type/distribution\nDiscuss differences between presentation- and publication-quality graphs\nExplain how your graphs can be made more accessible",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Data Visualization"
+    ]
+  },
+  {
+    "objectID": "mod_data-viz.html#preparation",
+    "href": "mod_data-viz.html#preparation",
+    "title": "Data Visualization & Exploration",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
@@ -278,6 +300,17 @@
     ]
   },
   {
+    "objectID": "mod_version-control.html#preparation",
+    "href": "mod_version-control.html#preparation",
+    "title": "Version Control",
+    "section": "Preparation",
+    "text": "Preparation\nComplete the “Workshop Preparation” steps identified in the linked workshop (see below).",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Version Control"
+    ]
+  },
+  {
     "objectID": "mod_version-control.html#lter-scicomp-workshop-materials",
     "href": "mod_version-control.html#lter-scicomp-workshop-materials",
     "title": "Version Control",
@@ -344,6 +377,17 @@
     ]
   },
   {
+    "objectID": "mod_next-steps.html#preparation",
+    "href": "mod_next-steps.html#preparation",
+    "title": "Next Steps & Logic Models",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
+    "crumbs": [
+      "Phase IV -- Magnify",
+      "Next Steps"
+    ]
+  },
+  {
     "objectID": "mod_next-steps.html#module-content",
     "href": "mod_next-steps.html#module-content",
     "title": "Next Steps & Logic Models",
@@ -393,6 +437,17 @@
     "title": "Inclusive Facilitation",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe benefits of encouraging full, thoughtful, engaged participation\nIdentify methods for ensuring equitable access to participation in a team setting\nIdentify one activity that privileges each thinking style",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Inclusive Facilitation"
+    ]
+  },
+  {
+    "objectID": "mod_facilitation.html#preparation",
+    "href": "mod_facilitation.html#preparation",
+    "title": "Inclusive Facilitation",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
     "crumbs": [
       "Phase II -- Plan",
       "Inclusive Facilitation"
@@ -532,6 +587,17 @@
     ]
   },
   {
+    "objectID": "mod_wrangle.html#preparation",
+    "href": "mod_wrangle.html#preparation",
+    "title": "Data Harmonization & Wrangling",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Data Wrangling"
+    ]
+  },
+  {
     "objectID": "mod_wrangle.html#needed-packages",
     "href": "mod_wrangle.html#needed-packages",
     "title": "Data Harmonization & Wrangling",
@@ -630,6 +696,17 @@
     ]
   },
   {
+    "objectID": "mod_findings.html#preparation",
+    "href": "mod_findings.html#preparation",
+    "title": "Communicating Findings",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
+    "crumbs": [
+      "Phase V -- Share",
+      "Communicating Findings"
+    ]
+  },
+  {
     "objectID": "mod_findings.html#effective-communication",
     "href": "mod_findings.html#effective-communication",
     "title": "Communicating Findings",
@@ -714,6 +791,17 @@
     ]
   },
   {
+    "objectID": "mod_credit.html#preparation",
+    "href": "mod_credit.html#preparation",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Intellectual Credit"
+    ]
+  },
+  {
     "objectID": "mod_credit.html#module-content",
     "href": "mod_credit.html#module-content",
     "title": "Authorship & Intellectual Credit",
@@ -769,6 +857,17 @@
     ]
   },
   {
+    "objectID": "mod_project-mgmt.html#preparation",
+    "href": "mod_project-mgmt.html#preparation",
+    "title": "Project Management & Logic Models",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
+    "crumbs": [
+      "Phase II -- Plan",
+      "Project Management"
+    ]
+  },
+  {
     "objectID": "mod_project-mgmt.html#module-content",
     "href": "mod_project-mgmt.html#module-content",
     "title": "Project Management & Logic Models",
@@ -818,6 +917,17 @@
     "title": "Reproducibility Best Practices",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nIdentify core tenets of reproducibility best practices\nCreate robust workflow documentation\nImplement reproducible project organization strategies\nDiscuss methods for improving the reproducibility of your code products\nSummarize FAIR and CARE data principles\nEvaluate the FAIR/CAREness of your work",
+    "crumbs": [
+      "Phase I -- Prepare",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "mod_reproducibility.html#preparation",
+    "href": "mod_reproducibility.html#preparation",
+    "title": "Reproducibility Best Practices",
+    "section": "Preparation",
+    "text": "Preparation\nThere is no suggested preparatory work for this module.",
     "crumbs": [
       "Phase I -- Prepare",
       "Reproducibility"
@@ -917,6 +1027,17 @@
     "title": "Analysis & Modeling",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe proposed analytical methods to an interested audience of mixed prior experience\nExplain nuance in interpretation of results of proposed analyses\nIdentify some statistical tests common in synthesis research\nPerform some synthesis-specific analyses",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Analysis & Modeling"
+    ]
+  },
+  {
+    "objectID": "mod_stats.html#preparation",
+    "href": "mod_stats.html#preparation",
+    "title": "Analysis & Modeling",
+    "section": "Preparation",
+    "text": "Preparation\nEach project group should:\n\nPrepare a presentation (15-30 min) on their (A) synthesis question, (B) the data they are using to address that question, and (C) their proposed analytical methods\n\nThe presentation modality (e.g., slide deck, website, etc.) is up to the group!",
     "crumbs": [
       "Phase III -- Execute",
       "Analysis & Modeling"
@@ -1037,7 +1158,7 @@
     "href": "mod_team-sci.html#preparation",
     "title": "Team Science Practices",
     "section": "Preparation",
-    "text": "Preparation\n\nEach project group should plan to provide a project summary and update on recent progress and any questions/issues that are arising\nIf the group has not yet created their own set of ground rules, they should complete that task before this session.",
+    "text": "Preparation\nEach project group should:\n\nPlan on providing a project summary and update on recent progress and any questions/issues that are arising\nFinish their internal ground rules (if not already complete)",
     "crumbs": [
       "Phase I -- Prepare",
       "Team Science"
@@ -1093,6 +1214,17 @@
     "title": "Reproducible Reports",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe contexts where computational notebooks are useful\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages",
+    "crumbs": [
+      "Phase V -- Share",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "mod_reports.html#preparation",
+    "href": "mod_reports.html#preparation",
+    "title": "Reproducible Reports",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
     "crumbs": [
       "Phase V -- Share",
       "Reproducible Reports"
@@ -1187,6 +1319,17 @@
     ]
   },
   {
+    "objectID": "mod_thinking.html#preparation",
+    "href": "mod_thinking.html#preparation",
+    "title": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "section": "Preparation",
+    "text": "Preparation\nTBD (To Be Determined)",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Supporting D.E.C. Thinking"
+    ]
+  },
+  {
     "objectID": "mod_thinking.html#module-content",
     "href": "mod_thinking.html#module-content",
     "title": "Supporting Divergent, Emergent, and Convergent Thinking",
@@ -1243,6 +1386,17 @@
     "title": "Creating Interactive Apps",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine the three fundamental components of a Shiny app\nExplain benefits and limitations of interactive approaches to data exploration\nGenerate an interactive app with Shiny\nUse text formatting methods in a Shiny app\nExplore available Shiny layout options\nCreate a Shiny app\nDescribe (briefly) the purpose of deploying a Shiny app",
+    "crumbs": [
+      "Bonus Modules",
+      "Interactivity"
+    ]
+  },
+  {
+    "objectID": "mod_interactivity.html#preparation",
+    "href": "mod_interactivity.html#preparation",
+    "title": "Creating Interactive Apps",
+    "section": "Preparation",
+    "text": "Preparation\nThis is a “bonus” module and thus was created for asynchronous learners. There is no suggested preparatory work.",
     "crumbs": [
       "Bonus Modules",
       "Interactivity"
@@ -1364,6 +1518,17 @@
     "title": "Working with Spatial Data",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this topic you will be able to:\n\nDefine the difference between the two major types of spatial data\nManipulate spatial data with R\nCreate maps using spatial data\nIntegrate spatial data with tabular data",
+    "crumbs": [
+      "Bonus Modules",
+      "Spatial Data"
+    ]
+  },
+  {
+    "objectID": "mod_spatial.html#preparation",
+    "href": "mod_spatial.html#preparation",
+    "title": "Working with Spatial Data",
+    "section": "Preparation",
+    "text": "Preparation\nThis is a “bonus” module and thus was created for asynchronous learners. There is no suggested preparatory work.",
     "crumbs": [
       "Bonus Modules",
       "Spatial Data"
