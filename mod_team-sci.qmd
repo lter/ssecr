@@ -4,7 +4,7 @@ title: "Team Science Practices"
 
 ## Overview
 
-Under Construction, stay tuned!
+In this module, we'll dive into some of the literature underlying our recommended team science practices (the science of team science). We'll also explore some of the more common types of conflicts that arise in synthesis work and ways to anticipate, prevent (when possible), and resolve those conflicts. 
 
 ## Learning Objectives
 
@@ -23,6 +23,7 @@ After completing this module you will be able to:
 
 ## Module Content
 
+Under Construction, stay tuned!
 
 ## Additional Resources
 
