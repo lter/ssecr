@@ -26,6 +26,10 @@ After completing this topic you will be able to:
 - <u>Create</u> maps using spatial data
 - <u>Integrate</u> spatial data with tabular data
 
+## Preparation
+
+This is a "bonus" module and thus was created for asynchronous learners. There is no suggested preparatory work.
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:

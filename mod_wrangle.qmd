@@ -25,6 +25,10 @@ After completing this module you will be able to:
 - <u>Explain</u> benefits and drawbacks of using data shape to streamline code
 - <u>Design</u> a complete data wrangling workflow
 
+## Preparation
+
+TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:

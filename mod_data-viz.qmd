@@ -16,6 +16,10 @@ After completing this module you will be able to:
 - <u>Discuss</u> differences between presentation- and publication-quality graphs
 - <u>Explain</u> how your graphs can be made more accessible
 
+## Preparation
+
+TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:

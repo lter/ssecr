@@ -18,6 +18,10 @@ After completing this module you will be able to:
 - <u>Summarize</u> FAIR and CARE data principles
 - <u>Evaluate</u> the FAIR/CAREness of your work
 
+## Preparation
+
+There is no suggested preparatory work for this module.
+
 ## Lego Activity
 
 Before we dive into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we'll cover today. The LEGO activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).

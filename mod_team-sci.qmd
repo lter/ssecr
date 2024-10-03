@@ -18,8 +18,10 @@ After completing this module you will be able to:
 
 ## Preparation
 
-- Each project group should plan to provide a project summary and update on recent progress and any questions/issues that are arising
-- If the group has not yet created their own set of ground rules, they should complete that task before this session.
+Each project group should:
+
+- Plan on providing a project summary and update on recent progress and any questions/issues that are arising
+- Finish their internal ground rules (if not already complete)
 
 ## Module Content
 

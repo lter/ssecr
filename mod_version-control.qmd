@@ -17,6 +17,10 @@ After completing this module you will be able to:
 - <u>Sketch</u> the RStudio-to-GitHub order of operations
 - <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
 
+## Preparation
+
+Complete the ["Workshop Preparation" steps](https://lter.github.io/workshop-github/#workshop-preparation) identified in the linked workshop (see below).
+
 ## LTER SciComp Workshop Materials
 
 The workshop materials we will be working through live [here](https://lter.github.io/workshop-github/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).

@@ -25,6 +25,10 @@ After completing this topic you will be able to:
 - <u>Create</u> a Shiny app
 - <u>Describe</u> (briefly) the purpose of deploying a Shiny app
 
+## Preparation
+
+This is a "bonus" module and thus was created for asynchronous learners. There is no suggested preparatory work.
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:

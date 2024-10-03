@@ -18,6 +18,10 @@ After completing this module you will be able to:
 -   <u>Plan</u> how to download data in a reproducible way
 -   <u>Perform</u> checks of the fundamental structure of a dataset
 
+## Preparation
+
+Each Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the first sheet of the "data-inventory" Google Sheet.
+
 ## Panel Discussion
 
 To motivate this module and provide some beneficial context, we're beginning with a conversation with a panel composed of people who work at various organizations with a focus on data management and production. See the tabs below for each year's panelists and links to their professional sites.
