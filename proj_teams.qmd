@@ -24,7 +24,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Smriti Pehim Limbu** (Konza Prairie), **McKinley Nevins** (Andrews Forest), **Francis Chaves Rodriguez** (Konza Prairie), **Ashley Bulseco** (Plum Island Ecosystems), **Abigail Borgmeier** (McMurdo Dry Valleys; Sevilleta)
 
-<u>Science Mentor(s)</u>: **TBD**
+<u>Science Mentor(s)</u>: **Serita Frey** (Harvard Forest), **Meghan Avolio** (Konza Prairie)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-above-belowground-coupling**](https://github.com/lter/ssecr-above-belowground-coupling)
 
