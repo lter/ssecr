@@ -14,7 +14,8 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Yiyang Xu** (Plum Island Ecosystems; Virginia Coast Reserve), **Taylor Walker** (Moorea Coral Reef), **Carla López Lloreda** (Luquillo), **Guopeng Liang** (Cedar Creek), **Jon Gewirtzman** (Harvard Forest; Florida Coastal Everglades), **Julie Gan** (Arctic), **Ricky Brokaw** (Santa Barbara Coastal)
 
-<u>Science Mentor(s)</u>: **TBD**
+<u>Science Mentor(s)</u>: **Will Wieder** (Niwot Ridge), **Marci Litvak** (Sevilleta)
+
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-c-cycling**](https://github.com/lter/ssecr-c-cycling)
 
