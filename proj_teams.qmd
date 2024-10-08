@@ -35,7 +35,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Junna Wang** (Harvard Forest), **James Sturges** (Florida Coastal Everglades), **Kelsey Solomon** (Florida Coastal Everglades; Coweeta), **Julianna Renzi** (Moorea Coral Reef), **Pooja Panwar** (Hubbard Brook), **Katherine Hulting** (Kellogg Biological Station), **Noam Altman-Kurosaki** (Moorea Coral Reef)
 
-<u>Science Mentor(s)</u>: **Forest Isbell** (Cedar Creek), **Laura Dee**
+<u>Science Mentor(s)</u>: **Forest Isbell** (Cedar Creek), **Laura Dee** (Niwot Ridge)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-diversity-stability**](https://github.com/lter/ssecr-diversity-stability)
 
