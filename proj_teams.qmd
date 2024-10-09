@@ -45,7 +45,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Bethany Williams**, **Sierra Perez** (Kellogg Biological Station; Cedar Creek), **Evald Maceno** (Luquillo), **Joey Krieger Lodge** (Niwot Ridge), **Jeremy Collings** (Andrews Forest), **Allison Case**
 
-<u>Science Mentor(s)</u>: **Nancy Emery** (Niwot Ridge), **Joan Dudney**
+<u>Science Mentor(s)</u>: **[Nancy Emery](https://emery-lab.org/)** (Niwot Ridge), **Joan Dudney**
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-driver-scales**](https://github.com/lter/ssecr-driver-scales)
 
