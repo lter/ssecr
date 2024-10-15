@@ -98,25 +98,90 @@ Satisfaction Triangle
 *  Identify areas of agreement and disagreement. State preferences and requests clearly. Together, prioritize what to address first.
 *  Focus on the future with positive intent. Work together to find a solution. Keep communication open. Tend relationships.
 
+## Scenarios
+
+For the following set of scenarios, you will be randomly assigned to one of three breakout groups for a 20-minute discussion. After you join the group:
+
+1. Briefly introduce yourselves 
+1. Navigate to the [notes document](https://docs.google.com/document/d/1fjmJpvHCef0pEv4KcqxCXTBA9DtPyxc5_dWWBmy3aKc/edit) in the cohort folder.
+1. Choose a notetaker, a reporter (may be the same as the notetaker or not), and a timekeeper (to keep the group moving through the questions). 
+1. A volunteer reads the scenario out loud for the group
+1. Take a minute or so to think quietly
+1. Discuss
+  1. Try to articulate the emotional aspects, the procedural aspects, and the structural aspects of the conflict from each participant's point of view.
+  1. What interventions might have prevented , or could now resolve, the conflict?
+
+:::panel-tabset
+
+## Overcommitment
+
+Alix, a postdoc in the lab of Dr. Chambers, a well-known hydrologist, enjoys data analysis and offers to assemble and clean the group’s data using MatLab. Although only one other person in the group uses MatLab, Alix seems confident that the program is well-suited for what they need to do and that they can devote enough time to do the work.
+
+That winter, Alix’s father is diagnosed with cancer and Alix starts taking him to chemo treatments. They are already half-way through the analysis and it would take weeks for someone else to start over. They hate to let the group down and say that they will be able to work on data while waiting around in doctors’ offices. But as Winter drags into Spring and nothing has happened, the group gets frustrated.
+
+Terry starts working on the data in R, but struggles to make sense of Alix’s notes. By Fall, their one year of funding runs out and they have nothing to show for it.
+
+**Discussion questions:**
+
+*  Where is Alex in the satisfaction traingle? Where are the other group members?
+*  Identify at least three points at which someone could have intervened to change this outcome
+*  Who and how?
+*  Why might they have chosen not to?
+*  What practices could make it easier for them to take action? 
+
+## Authorship
+
+A synthesis group is attempting to connect data on municipal services with wildlife sightings at the urban-wildlands interface. Maria, a PhD student in sociology, is mainly focused on collecting municipal data. During a whole group discussion on where the group might find additional data sources for wildlife observations, she mentions a paper she had seen recently on scraping data from social media. 
+
+Later that week,  when the wildlife subgroup meets, they get excited about finding wildlife sightings through NextDoor and began pursuing the idea. It works out better than they could have hoped and James, an assistant professor in computer science who is preparing his tenure package, spearheads a paper on their use of the technique. At the next full group meeting, he mentions that it is ready to be submitted. 
+
+Maria would have appreciated the chance to work with James and is disappointed and angry that no one mentioned the paper to her. 
+
+**Discussion questions:**
+
+*  Where is Maria on the satisfaction traingle? Where is James?
+*  What should Maria do now?
+*  What is James’ responsibility? 
+*  How might the group have avoided the situation in the first place?
+
+## Research Approach
+
+Arturo, a climate scientist with a large lab, brings two postdocs and a grad student to the first working group meeting of the causes of harmful algal blooms working group.  In deciding which scenarios to evaluate, Arturo posits that temperature, rainfall, and growing degree-days will be the primary drivers and offers to assign one to each of his lab members.
+
+Jasmine, an assistant professor in agronomy with a heavy teaching load,  thinks that fertilizer rate and timing of application will be major drivers. She has time to find relevant datasets, but can’t commit to doing the analysis and doesn’t have students to assign to it. 
+
+**Discussion questions**
+
+*  Where is Jasmine on the satisfaction traingle? What about Arturo's postdoc?
+*  How should the group go about allocating effort?
+*  Is it fair to ask one of Arturo’s postdocs to work outside their field? Why might they want (or not want) to do that?
+*  Should they try to invite another agronomist to the group?
+
+:::
+
+### Group Discussion
+
+Each group describes their analysis of the situation and a proposed solution/intervention. Discuss commonalities and any ideas/proposals for updating group ground rules or process plan.
 
 
 ## Additional Resources
 
 ### Papers & Documents
 
--  Abbasi, A., and A. Jaafari. 2013. Research impact and scholars’ geographical diversity. Journal of Informetrics 7:683–692.
--   Bates, A.E. *et al.*, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. *Biological Conservation*
--  Graffius, Scott M. (2023, January 14). Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update. Available at: https://www.exceptional-pmo.com.
--  Hong, L., & Page, S. E. (2024). Individual selection criteria for optimal team composition. THEORY AND DECISION, 96(4), 607–626. https://doi.org/10.1007/s11238-023-09960-w
--   Peterson, D.M., *et al.*, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). **2023**. *Ecology and Evolution*
--   Gaynor, K.M., *et al.*, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). **2022**. *PLoS Computational Biology*
--   Deutsch, L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. *Environmental Science & Policy*
--   Farrell, K.J. *et al.*, [Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. *Frontiers in Ecology and the Environment*
--   Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. *BioScience*
--  Lee, You-Na, John P. Walsh, Jian Wang. [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). **2015** Research Policy Volume 44, Issue 3, Pages 684-697. doi: 10.1016/j.respol.2014.10.007
--   Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). **2024** *PNAS*
--  Tuckman, B. W. Developmental Sequence in Small Groups. Psychological Bulletin, **1965.** 63: 384-399.
--  Tuckman, B. W., & Jensen, M. A. C. Stages of Small-Group Development Revisited. Group and Organizational Studies **1977** 2 (4): 419-427.
+-  Abbasi, A., and A. Jaafari. [Research impact and scholars’ geographical diversity](https://doi.org/10.1016/j.joi.2013.04.004). Journal of Informetrics. **2013**
+-   Bates, A.E. *et al.*, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). Biological Conservation. **2024**. 
+-   Deutsch, L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). Environmental Science & Policy. **2021**. 
+-  Folger, J.P., Poole, M.S., & Stutman, R.K. (2017). [Working Through Conflict: Strategies for Relationships, Groups, and Organizations (8th ed.)](https://doi.org/10.4324/9781315296296). Routledge. **2017**
+-   Farrell, K.J. *et al.*, [Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). Frontiers in Ecology and the Environment. **2021**
+-   Gaynor, K.M., *et al.*, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). PLoS Computational Biology. **2022** 
+-  Graffius, Scott M. [Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update](https://www.exceptional-pmo.com). **2023**
+-   Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). BioScience. **2011** 
+-  Hong, L., & Page, S. E. [Individual selection criteria for optimal team composition](https://doi.org/10.1007/s11238-023-09960-w). Theory and Decision. **2024** 
+-  Lee, You-Na, John P. Walsh, Jian Wang. [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). Research Policy. **2015**
+-   Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). PNAS. **2024** 
+-   Peterson, D.M., *et al.*, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). Ecology and Evolution. **2023**
+-  Tuckman, B. W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). Psychological Bulletin **1965.**
+-  Tuckman, B. W., & Jensen, M. A. C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). Group and Organizational Studies **1977**
 
 ### Workshops & Courses
 
