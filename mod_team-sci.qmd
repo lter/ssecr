@@ -4,31 +4,30 @@ title: "Team Science Practices"
 
 ## Overview
 
-In this module, we'll dive into some of the literature underlying our recommended team science practices (the science of team science). We'll also explore some of the more common types of conflicts that arise in synthesis work and ways to anticipate, prevent (when possible), and resolve those conflicts. 
+In this module, we'll dive into some of the literature underlying our recommended team science practices (the science of team science). We'll also explore some of the more common types of conflicts that arise in synthesis work and ways to anticipate, prevent (when possible), and resolve those conflicts.
 
 ## Learning Objectives
 
-After completing this module you will be able to: 
+After completing this module you will be able to:
 
-- <u>Interpret</u> and enact current best practices in team science
-- <u>Identify</u> different interaction styles and the effect they have on group dynamics
-- <u>Identify</u> benefits (and potential costs of) diverse teams
-- <u>Describe</u> ways to mitigate costs of diverse teams
-- <u>Explain</u> methods for improving the experience of virtual participants on hybrid teams 
+-   <u>Interpret</u> and enact current best practices in team science
+-   <u>Identify</u> different interaction styles and the effect they have on group dynamics
+-   <u>Identify</u> benefits (and potential costs of) diverse teams
+-   <u>Describe</u> ways to mitigate costs of diverse teams
+-   <u>Explain</u> methods for improving the experience of virtual participants on hybrid teams
 
 ## Preparation
 
 Each project group should:
 
-- Plan on providing a project summary and update on recent progress and any questions/issues that are arising
-- Finish their internal ground rules (if not already complete)
+-   Plan on providing a 3-5 minute project summary and update on recent progress and any questions/issues that are arising
+-   Finish their internal ground rules (if not already complete)
 
 ## Panel Discussion
 
-We'll begin this session's discussion with a conversation among participants in a recent synthesis group that tackled a particularly broad disciplinary stretch. The [Synthesizing population and community synchrony to understand drivers of ecological stability across LTER sites](https://lternet.edu/working-groups/synthesizing-population-and-community-synchrony-to-understand-drivers-of-ecological-stability-across-lter-sites/) brought together mathematicians, modelers, and empiricists to apply novel analytical strategies to understanding the impact of population fluctuations. 
+We'll begin this session's discussion with a conversation among participants in a recent synthesis group that tackled a particularly broad disciplinary stretch. The [Synthesizing population and community synchrony to understand drivers of ecological stability across LTER sites](https://lternet.edu/working-groups/synthesizing-population-and-community-synchrony-to-understand-drivers-of-ecological-stability-across-lter-sites/) brought together mathematicians, modelers, and empiricists to apply novel analytical strategies to understanding the impact of population fluctuations.
 
 Panelists will briefly introduce themselves and their experience with the synthesis group, which encountered a variety of challenges in their work. Ultimately, they produced several effective and well-received papers, but they had to introduce some innovations in working group approach to get there.
-
 
 ::: panel-tabset
 ### 2024 Panelists
@@ -40,26 +39,72 @@ Panelists will briefly introduce themselves and their experience with the synthe
 
 ## Module Content
 
-Under Construction, stay tuned!
+###  Science of Team Science
+
+Research in management, organizational behavior, and psychology  has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000’s–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of “science of team science” or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al. 2008).
+
+A National Academies study on the Science of Team Science (NRC 2015) assembled the existing evidence base and launched a flurry of research into how team composition, coordination, support, and organizational context could improve outcomes for science teams. A new National Academies study on the Research and Application in Team Science is currently in progress. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience. 
+
+###  Teams have a predictable trajectory
+
+Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent pattern in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.
+
+<figure >
+<img src="images/phases_of_team_development.jpg" alt="graphic, laying out the 5 phases: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance" width="90%" align="center">
+<figcaption background-color="white"></figcaption>
+</figure>
+
+Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.  
+
+
+###  Benefits of Diverse Teams
+
+
+![Novelty peaks at a team size of about 6 authors (examinining only authors from a single private uinversity. From: Lee et al. 2014](images/Lee_et_al_2014.jpg){style="width: 50%; float: right; padding: 15px"}
+
+There is pretty good evidence that collaborative teams produce research that is more novel and has higher impact than work produced by individuals or smaller more homogeneous groups (Lee at al. 2015, Hong and Page 2024). Wooley et al (2010) found evidence for a “collective intelligence” in teams, which is not strongly correlated with the average or maximum individual intelligence of group members but is correlated with the average social sensitivity of group members, the equality in distribution of conversational turn-taking, and the proportion of females in the group.
+
+Similarly, in a study of 6.6 million medical research papers, Yang et al. found that mixed gender teams consistently produced more novel and more impactful products. In another bibliographic analysis Abbasi and Jaafari (2013) found that inter-institute and inter-university collaborations resulted in higher-impact publications. Interestingly, the result was much weaker for international collaborations. 
+
+![Mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes.  Mixed-gender teams are also more likely to publish an upper-tail paper than same-gender teams by as much as 14.6%, depending on team sizes. Yang et al. 2022, PNAS DOI: 10.1073/pnas.2200841119](images/yang-et-al-pnas.png){style="width: 50%; float: right; padding: 15px"}
+It seems reasonable to expect that the effects of cultural and economic diversity would be similar, but those factors remain harder to parse at this scale. The true _impact_ of science is also elusive, as the excitement of tackling a bigger, more challenging problem or the social utility of generalizable findings goes well beyond citation counts and impact factors. 
+
+###  A more nuanced view emerges
+
+Collaborative science may be more exciting, novel, and impactful than solo or small-team science, but it is rarely faster. The paradox of synthesis is that the factors that slow progress may be _exactly_ the factors that generate new insight.
+
+![](images/go-far.png){style="width: 50%; float: right; padding: 20"}
+
+[Additional content coming soon...]{style="color: red"}
+
+
+
+
 
 ## Additional Resources
 
 ### Papers & Documents
 
-- Bates, A.E. _et al._, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. _Biological Conservation_
-- Peterson, D.M., _et al._, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). **2023**. _Ecology and Evolution_
-- Gaynor, K.M., _et al._, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). **2022**. _PLoS Computational Biology_
-- Deutsch, L., _et al._, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. _Environmental Science & Policy_
-- Farrell, K.J. _et al._, [Training  Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
-- Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
-- Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). **2024** _PNAS_
+-  Abbasi, A., and A. Jaafari. 2013. Research impact and scholars’ geographical diversity. Journal of Informetrics 7:683–692.
+-   Bates, A.E. *et al.*, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. *Biological Conservation*
+-  Graffius, Scott M. (2023, January 14). Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update. Available at: https://www.exceptional-pmo.com.
+-  Hong, L., & Page, S. E. (2024). Individual selection criteria for optimal team composition. THEORY AND DECISION, 96(4), 607–626. https://doi.org/10.1007/s11238-023-09960-w
+-   Peterson, D.M., *et al.*, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). **2023**. *Ecology and Evolution*
+-   Gaynor, K.M., *et al.*, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). **2022**. *PLoS Computational Biology*
+-   Deutsch, L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. *Environmental Science & Policy*
+-   Farrell, K.J. *et al.*, [Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. *Frontiers in Ecology and the Environment*
+-   Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. *BioScience*
+-  Lee, You-Na, John P. Walsh, Jian Wang. [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). **2015** Research Policy Volume 44, Issue 3, Pages 684-697. doi: 10.1016/j.respol.2014.10.007
+-   Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). **2024** *PNAS*
+-  Tuckman, B. W. Developmental Sequence in Small Groups. Psychological Bulletin, **1965.** 63: 384-399.
+-  Tuckman, B. W., & Jensen, M. A. C. Stages of Small-Group Development Revisited. Group and Organizational Studies **1977** 2 (4): 419-427.
 
 ### Workshops & Courses
 
-- Liberatore, A. [Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p). **2024**.
-- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html). **2023**.
-- Delta Stewardship Council. [Open Science Synthesis: Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences). **2021**.
+-   Liberatore, A. [Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p). **2024**.
+-   National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html). **2023**.
+-   Delta Stewardship Council. [Open Science Synthesis: Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences). **2021**.
 
 ### Websites
 
-- Lahr, Heather [How to effectively engage teams in interdisciplinary collaborations](https://emlab.ucsb.edu/blog/how-effectively-engage-teams-interdisciplinary-collaborations). **2024**
+-   Lahr, Heather [How to effectively engage teams in interdisciplinary collaborations](https://emlab.ucsb.edu/blog/how-effectively-engage-teams-interdisciplinary-collaborations). **2024**
