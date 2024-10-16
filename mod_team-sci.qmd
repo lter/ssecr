@@ -43,11 +43,11 @@ Panelists will briefly introduce themselves and their experience with the synthe
 
 Research in management, organizational behavior, and psychology  has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000’s–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of “science of team science” or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al. 2008).
 
-A National Academies study on the Science of Team Science (NRC 2015) assembled the existing evidence base and launched a flurry of research into how team composition, coordination, support, and organizational context could improve outcomes for science teams. A new National Academies study on the Research and Application in Team Science is currently in progress. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience. 
+A National Academies study on the *Science of Team Science* (NRC 2015) assembled the existing evidence base and launched a flurry of research into how team composition, coordination, support, and organizational context could improve outcomes for science teams. A new National Academies study on *Research and Application in Team Science* is currently in progress. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience. 
 
 ###  Teams have a predictable trajectory
 
-Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent pattern in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.
+Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent patterns in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.
 
 <figure >
 <img src="images/phases_of_team_development.jpg" alt="graphic, laying out the 5 phases: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance" width="90%" align="center">
@@ -56,24 +56,86 @@ Creating a team is not just a matter of putting a bunch of people in a room toge
 
 Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.  
 
+###  Instrumental Benefits of Diverse Teams
 
-###  Benefits of Diverse Teams
-
-
-![Novelty peaks at a team size of about 6 authors (examinining only authors from a single private uinversity. From: Lee et al. 2014](images/Lee_et_al_2014.jpg){style="width: 50%; float: right; padding: 15px"}
+::::{.columns}
+:::{.column width="60%"}
 
 There is pretty good evidence that collaborative teams produce research that is more novel and has higher impact than work produced by individuals or smaller more homogeneous groups (Lee at al. 2015, Hong and Page 2024). Wooley et al (2010) found evidence for a “collective intelligence” in teams, which is not strongly correlated with the average or maximum individual intelligence of group members but is correlated with the average social sensitivity of group members, the equality in distribution of conversational turn-taking, and the proportion of females in the group.
 
 Similarly, in a study of 6.6 million medical research papers, Yang et al. found that mixed gender teams consistently produced more novel and more impactful products. In another bibliographic analysis Abbasi and Jaafari (2013) found that inter-institute and inter-university collaborations resulted in higher-impact publications. Interestingly, the result was much weaker for international collaborations. 
 
-![Mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes.  Mixed-gender teams are also more likely to publish an upper-tail paper than same-gender teams by as much as 14.6%, depending on team sizes. Yang et al. 2022, PNAS DOI: 10.1073/pnas.2200841119](images/yang-et-al-pnas.png){style="width: 50%; float: right; padding: 15px"}
-It seems reasonable to expect that the effects of cultural and economic diversity would be similar, but those factors remain harder to parse at this scale. The true _impact_ of science is also elusive, as the excitement of tackling a bigger, more challenging problem or the social utility of generalizable findings goes well beyond citation counts and impact factors. 
+:::
+:::{.column width="40%"}
+
+![Novelty peaks at a team size of about 6 authors (examinining only authors from a single private uinversity. From: Lee et al. 2014](images/Lee_et_al_2014.jpg){style="padding: 15px"}
+
+:::
+:::{.column width="100%"}
+
+![Mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes.  Mixed-gender teams are also more likely to publish an upper-tail paper than same-gender teams by as much as 14.6%, depending on team sizes.](images/yang-et-al-pnas.png){style="width: 90%; align: center; padding: 15px"}
+:::
+::::
+
+![](images/go-far.png){style="width: 50%; float: right; padding: 20px"}
+It seems reasonable to expect that the effects of cultural and economic diversity on teams would be similar to that of gender diversity, but those factors remain harder to parse at this scale. In any case, the bump in creativity or publishing impact is only a happy side effect of assembling a diverse team. The real reason to do so is that it allows us to tackle bigger questions, makes our findings more relevant, our science  more fun, and our world more fair. What it **does not do** (at least in our experience) is make the process faster!
 
 ###  A more nuanced view emerges
 
-Collaborative science may be more exciting, novel, and impactful than solo or small-team science, but it is rarely faster. The paradox of synthesis is that the factors that slow progress may be _exactly_ the factors that generate new insight.
+The paradox of team science is that the very factors that slow progress may be _exactly_ the factors that generate new insight -- Milliken and Martins' (1996) double-edged sword. The pressing question became not "**Does** diversity impove team performance?" but "**When** does diversity improve team performance?" 
 
-![](images/go-far.png){style="width: 50%; float: right; padding: 20"}
+
+**What mechanisms are responsible for the diversity effect?**
+(Pieterse et al. 2013,  van Knippenberg and Hoever 2017)
+
+::: {.callout-note icon="information" collapse="true"}
+
+#### Information Elaboration
+
+The categorization-elaboration model (CEM, van Knippenberg et al. 2004) proposed that information elaboration—-that is, the exchange, discussion, and integration of task-relevant information and perspectives, was responsible for many of the benefits attributed to diverse groups. But later researchers found there were a few necessary conditions for cognitive elaboration to take place and for groups to reap the benefits. Only when team members brought a *learning goal orientation* to their work and when they remained open to revising their original ideas (Nederveen Pieterse 2013) did diversity improve team performance.
+
+:::
+
+*  Avoiding ‘groupthink’
+*  Better information elaboration ()
+
+    * 
+*  Checking assumptions
+*  Metacognition
+*  Enhanced group scanning ability and consideration of alternative solutions
+*  Better task completion and more efficient use of resources
+
+
+**What practices support those mechanisms?** 
+
+*  Learning goal orientation
+*  Openness to revising assumptions and world views
+*  Cognitive elaboration (spelling out your assumptions and mental models)
+*  Metacognition (check reference)
+*  Effective coordination
+*  Participants are able to contribute in the manner and at the times that they are best
+
+**Influencing factors**
+
+*  What kinds of diversity?
+    *  Disciplinary 
+    *  Technical/scientific/organizational/interpersonal skills
+    *  Gender
+    *  Racial/ethnic background
+    *  Sectoral
+
+*  Cognitive trust (The rational belief that group members can and will deliver on their portion of the work)
+    *  Articulate your coordination practices
+    *  Where will you keep data? How will you communicate? How often will you meet? What’s your authorship model? Do these work for slow and fast processors? Introverts and extroverts?
+
+*  Affective Trust (The belief (usually grounded in common experience) that group members have your best interests in mind)
+    *  Spend social time together - meals, activities when in-person, but also, don’t skimp on icebreakers and check-ins when virtual
+    *  Pay attention to mutual respect and speaking time
+    *  Consider assigning a vibes-keeper
+    *  Allowing time/space for cognitive elaboration
+    *  Spend time early to talk through various perspectives on the question that may be present in the group
+    *  Be willing to look foolish. Ask the “dumb” questions. That’s how unarticulated assumptions get surfaced.
+
 
 [Additional content coming soon...]{style="color: red"}
 
@@ -179,6 +241,8 @@ Each group describes their analysis of the situation and a proposed solution/int
 -  Hong, L., & Page, S. E. [Individual selection criteria for optimal team composition](https://doi.org/10.1007/s11238-023-09960-w). Theory and Decision. **2024** 
 -  Lee, You-Na, John P. Walsh, Jian Wang. [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). Research Policy. **2015**
 -   Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). PNAS. **2024** 
+-  Lotrecchiano, Gaetano R., Deborah DiazGranados, Jennifer Sprecher, Wayne T. McCormack, Damayanthi Ranwala, Kevin Wooten, Daniel Lackland, Heather Billings, and Allan R. Brasier. [Individual and team competencies in translational teams](https://doi.org/10.1017/cts.2020.551). Journal of Clinical and Translational Science. **2021**  
+-  Milliken, Frances J. and Luis L. Martins. [Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups](https://www.jstor.org/stable/258667). The Academy of Management Review. **1996**
 -   Peterson, D.M., *et al.*, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). Ecology and Evolution. **2023**
 -  Tuckman, B. W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). Psychological Bulletin **1965.**
 -  Tuckman, B. W., & Jensen, M. A. C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). Group and Organizational Studies **1977**
