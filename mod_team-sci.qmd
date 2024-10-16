@@ -82,62 +82,69 @@ It seems reasonable to expect that the effects of cultural and economic diversit
 
 ###  A more nuanced view emerges
 
-The paradox of team science is that the very factors that slow progress may be _exactly_ the factors that generate new insight -- Milliken and Martins' (1996) double-edged sword. The pressing question became not "**Does** diversity impove team performance?" but "**When** does diversity improve team performance?" 
+The paradox of team science is that the very factors that slow progress may be _exactly_ the factors that generate new insight -- Milliken and Martins' (1996) double-edged sword. The pressing question becomes not: "**Does** diversity impove team performance?" but rather: "**How and when** does diversity improve team performance?" 
 
 
 **What mechanisms are responsible for the diversity effect?**
-(Pieterse et al. 2013,  van Knippenberg and Hoever 2017)
 
-::: {.callout-note icon="information" collapse="true"}
+::: {.callout-note icon="false" collapse="true"}
 
-#### Information Elaboration
+#### {{< fa circle-info >}}   Information Elaboration
 
 The categorization-elaboration model (CEM, van Knippenberg et al. 2004) proposed that information elaboration—-that is, the exchange, discussion, and integration of task-relevant information and perspectives, was responsible for many of the benefits attributed to diverse groups. But later researchers found there were a few necessary conditions for cognitive elaboration to take place and for groups to reap the benefits. Only when team members brought a *learning goal orientation* to their work and when they remained open to revising their original ideas (Nederveen Pieterse 2013) did diversity improve team performance.
 
 :::
 
-*  Avoiding ‘groupthink’
-*  Better information elaboration ()
+::: {.callout-caution icon="false" collapse="true"}
 
-    * 
-*  Checking assumptions
-*  Metacognition
-*  Enhanced group scanning ability and consideration of alternative solutions
-*  Better task completion and more efficient use of resources
+#### {{< fa people-group >}}   Avoiding ‘groupthink’
 
+We are all familiar with the "we've always done it this way" effect that can happen when a group of people have been working together for a while. By introducing people from new fields, laboratories, or cultures, that complacent thinking is disrupted. Often, the very act of justifying *why* we do something the way we do can invite a rethinking and improvement.
 
-**What practices support those mechanisms?** 
+:::
 
-*  Learning goal orientation
-*  Openness to revising assumptions and world views
-*  Cognitive elaboration (spelling out your assumptions and mental models)
-*  Metacognition (check reference)
-*  Effective coordination
-*  Participants are able to contribute in the manner and at the times that they are best
+::: {.callout-warning icon="false" collapse="true"}
 
-**Influencing factors**
+####  {{< fa yin-yang >}}   Metacognition
 
-*  What kinds of diversity?
-    *  Disciplinary 
-    *  Technical/scientific/organizational/interpersonal skills
-    *  Gender
-    *  Racial/ethnic background
-    *  Sectoral
+Metacognition, or "thinking about thinking" requires individuals to reflect and articulate their process for acheiving new knowledge. What information goes in?  Is information missing? How should it be analyzed and interpreted? Are those conclusions justified? 
 
-*  Cognitive trust (The rational belief that group members can and will deliver on their portion of the work)
-    *  Articulate your coordination practices
-    *  Where will you keep data? How will you communicate? How often will you meet? What’s your authorship model? Do these work for slow and fast processors? Introverts and extroverts?
+:::
 
-*  Affective Trust (The belief (usually grounded in common experience) that group members have your best interests in mind)
+::: {.callout-important icon="false" collapse="true"}
+
+#### {{< fa binoculars >}}   Enhanced group scanning ability and consideration of alternative solutions
+
+A science team may include members from different research disciplines, sectors, geographies or cultures. Along each of those axes, team members will have different personal networks and be more (or less) familiar with different literatures, models, communities, tools, and solutions. Collectively, the group has a much broader range of information to draw on...but only if group members feel empowered to contribute. 
+
+:::
+
+::: {.callout-tip icon="false" collapse="true"}
+
+#### {{< fa list-check >}}   Better task completion and more efficient use of resources
+
+"Many hands make light work" the saying goes. Think of a meta-analysis where 10 group members can each read 30 papers instead of 1 individual reading 300 papers. Dividing the workload *can* speed up the process, but only if there is an efficiant way to manage dividing the work and then bringing the results back together again. Similarly, relying on a few skilled coders can be much more efficient than each individual writing their own code, but unless the group has a mechanism for getting broad input on key decisions, they will lose the value created by bringing together a larger group. 
+
+:::
+
+**What conditions and practices support those mechanisms?** 
+
+In order for the above mechanisms to operate, teams need to cultivate conditions that encourage all members to contribute at the times and in the ways that they are most skilled and effective. These include:   
+
+*  Cultivate a **learning goal orientation** rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al. 2013). 
+*  Remain open to **revising assumptions and world views**. When divergent positions are met only with resistance, groupthink gains the upper hand.
+*  **Cognitive trust** is the rational belief that group members can and will deliver on their portion of the work. When it isn't present, group members tend to pull back on their own contributions. Good coordination supports cognitive trust by providing clarity and accountability about who agreed to do what work and whether they delivered. It ensures that contributions can be appropiately credited and that work isn't unnecessarily duplicated. Effective coordination and facilitation make space for *all* group members to engage. 
+    * **Fast and slow processors** can be accommodated by making space for written as well as verbal contributions and allowing "thinking time" before expecting a response.
+    *  **Visual, auditory and kinesthetic learners** take in information (and are more or less fluent) in different formats. Try to provide key information (and allow input) in more than one format.
+    *  Those with **caregiving responsibilities** may have unpredictable availability and shorter periods of concentrated effort. A task management system (such as GitHub Projects or Trello) that breaks down tasks into manageable chunks and provides necessary contexts can help them contribute without as much task-switching cost.
+    *  Stratgies for managing different **geographies** include virtual meetings, pulsed contributing times, and asynchronous editing of shared documents.
+
+*  **Affective trust** is the belief (usually grounded in common experience) that group members have your best interests in mind. Some strategies for building it include:
     *  Spend social time together - meals, activities when in-person, but also, don’t skimp on icebreakers and check-ins when virtual
-    *  Pay attention to mutual respect and speaking time
-    *  Consider assigning a vibes-keeper
-    *  Allowing time/space for cognitive elaboration
+    *  Pay attention to mutual respect and speaking time. Explicitly acknowledge and credit new ideas as they come up.
+    *  Consider assigning a vibes-keeper to track when the group becomes impatient, offended, or disengaged.
     *  Spend time early to talk through various perspectives on the question that may be present in the group
-    *  Be willing to look foolish. Ask the “dumb” questions. That’s how unarticulated assumptions get surfaced.
-
-
-[Additional content coming soon...]{style="color: red"}
+    *  Be willing to look foolish. Ask the “dumb” questions that surface unquestioned assumptions. When some (leaders especially) make themselves vulnerable, it provides safety for others to do so.
 
 ## Navigating Conflict
 
