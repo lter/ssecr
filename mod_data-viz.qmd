@@ -18,7 +18,12 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+Each Synthesis Fellow should:
+
+- Select one dataset your group has identified
+    - Make sure it is a table (e.g., CSV, MS Excel, TXT, etc.)
+    - Multiple group members may select the same dataset if they want
+- Download this file
 
 ## Needed Packages
 
