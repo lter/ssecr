@@ -136,9 +136,14 @@ In order for the above mechanisms to operate, teams need to cultivate conditions
 
 :::
 
+### All contribute some; none contribute all
+
+![Lotrecchiano et al. Figure 1. Overlapping and intersecting competencies across the domains. Colors define the primary domain for each competency.](images/translational-team-competencies_fig1-sm.png){style="width: 90%; align: center"}
+
 ## Navigating Conflict
 
-![](images/conflict-definition.png){Style="width: 50%; float: right"}
+![](images/conflict-definition.png){style="width:50%; float:right"}
+
 All those diverse perspectives will inevitably lead to some degree of conflict, which can be stressful and intimidating. But identifying the components of a conflict and understanding what is at stake for each party can reveal unexpected solutions. In any event, ignoring conflict will only make it more difficult to resolve later. Expect and plan for conflict with the following approaches.
 
 *  Develop working agreements (code of conduct + principles)
@@ -183,8 +188,8 @@ Terry starts working on the data in R, but struggles to make sense of Alix’s n
 
 **Discussion questions:**
 
-*  Where is Alex in the satisfaction traingle? Where are the other group members?
-*  Identify at least three points at which someone could have intervened to change this outcome
+*  Which sides of the satisfaction triangle are the different players in this scenario inhabiting? What needs are in conflict?
+*  Identify at least three points at which someone could have intervened to change this outcome and better satisfy the needs of each party
 *  Who and how?
 *  Why might they have chosen not to?
 *  What practices could make it easier for them to take action? 
@@ -193,7 +198,7 @@ Terry starts working on the data in R, but struggles to make sense of Alix’s n
 
 A synthesis group is attempting to connect data on municipal services with wildlife sightings at the urban-wildlands interface. Maria, a PhD student in sociology, is mainly focused on collecting municipal data. During a whole group discussion on where the group might find additional data sources for wildlife observations, she mentions a paper she had seen recently on scraping data from social media. 
 
-Later that week,  when the wildlife subgroup meets, they get excited about finding wildlife sightings through NextDoor and began pursuing the idea. It works out better than they could have hoped and James, an assistant professor in computer science who is preparing his tenure package, spearheads a paper on their use of the technique. At the next full group meeting, he mentions that it is ready to be submitted. 
+Later that week,  when the wildlife subgroup meets, they get excited about finding wildlife sightings through NextDoor and begin pursuing the idea. It works out better than they could have hoped and James, an assistant professor in computer science who is preparing his tenure package, spearheads a paper on their use of the technique. At the next full group meeting, he mentions that it is ready to be submitted. 
 
 Maria would have appreciated the chance to work with James and is disappointed and angry that no one mentioned the paper to her. 
 
@@ -201,49 +206,59 @@ Maria would have appreciated the chance to work with James and is disappointed a
 
 *  Where is Maria on the satisfaction traingle? Where is James?
 *  What should Maria do now?
-*  What is James’ responsibility? 
+*  What procedural, emotional, and substantive needs might each player have in this situation? How might they balance those needs in seeking a solution?
 *  How might the group have avoided the situation in the first place?
 
 ## Research Approach
 
-Arturo, a climate scientist with a large lab, brings two postdocs and a grad student to the first working group meeting of the causes of harmful algal blooms working group.  In deciding which scenarios to evaluate, Arturo posits that temperature, rainfall, and growing degree-days will be the primary drivers and offers to assign one to each of his lab members.
+Arturo, a senior climate scientist with a large lab, brings two postdocs and a grad student to the first working group meeting of the *Causes of Harmful Algal Blooms* working group.  In deciding which scenarios to evaluate, Arturo posits that temperature, rainfall, and growing degree-days will be the primary drivers and offers to assign one to each of his lab members. Arturo is motivated to participate in the working group because it builds on his prior research on climatic influences on HABs. He and his lab members see the working group as a great learning opportunity for early career researchers.
 
-Jasmine, an assistant professor in agronomy with a heavy teaching load,  thinks that fertilizer rate and timing of application will be major drivers. She has time to find relevant datasets, but can’t commit to doing the analysis and doesn’t have students to assign to it. 
+Jasmine, an assistant professor in agronomy with a heavy teaching load, thinks that fertilizer rate and timing of application will be major drivers. Jasmine is highly motivated to play a leadership role in the working group and needs publications to advance her career, but her time is limited. She has time to find relevant datasets, but can’t commit to doing the analysis and doesn’t have students or postdocs to assign to the project. Looking at the role of coastal agriculture on HABs is central to why she said yes to joining the group.
+
 
 **Discussion questions**
 
-*  Where is Jasmine on the satisfaction traingle? What about Arturo's postdoc?
-*  How should the group go about allocating effort?
+*  What needs have each of the players in this conflict expressed?
+*  How should the group go about allocating effort n order to tackle the research project and meet those needs?
 *  Is it fair to ask one of Arturo’s postdocs to work outside their field? Why might they want (or not want) to do that?
-*  Should they try to invite another agronomist to the group?
+*  What other solutions might they consider?
 
 :::
 
-### Group Discussion
+### Whole Group Discussion
 
-Each group describes their analysis of the situation and a proposed solution/intervention. Discuss commonalities and any ideas/proposals for updating group ground rules or process plan.
+Each group describes their analysis of their assigned situation and a proposed solution/intervention. Discuss commonalities and any ideas/proposals for updating group ground rules or process plan.
+
+### References
+
+-  Abbasi, A., and A. Jaafari. [Research impact and scholars’ geographical diversity](https://doi.org/10.1016/j.joi.2013.04.004). Journal of Informetrics. **2013**
+-  Graffius, Scott M. [Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update](https://www.exceptional-pmo.com). **2023**
+- Fiore et al. [Interdisciplinarity as Teamwork: How the Science of Teams Can Inform Team Science](https://doi.org/10.1177/1046496408317797). Small Group Research. **2008**
+-  Hong, L., & Page, S. E. [Individual selection criteria for optimal team composition](https://doi.org/10.1007/s11238-023-09960-w). Theory and Decision. **2024** 
+-  Lee, You-Na, John P. Walsh, Jian Wang. [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). Research Policy. **2015**
+-  Lotrecchiano, Gaetano R., Deborah DiazGranados, Jennifer Sprecher, Wayne T. McCormack, Damayanthi Ranwala, Kevin Wooten, Daniel Lackland, Heather Billings, and Allan R. Brasier. [Individual and team competencies in translational teams](https://doi.org/10.1017/cts.2020.551). Journal of Clinical and Translational Science. **2021**  
+-  Milliken, Frances J. and Luis L. Martins. [Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups](https://www.jstor.org/stable/258667). The Academy of Management Review. **1996**
+-  Nederveen Pieterse, A., D. van Knippenberg, and D. van Dierendonck. [Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation](https://doi.org/10.5465/amj.2010.0992). Academy of Management Journal. **2013**
+- Stokols, D., S. Misra, R. P. Moser, K. L. Hall, and B. K. Taylor. [The Ecology of Team Science: Understanding Contextual Influences on Transdisciplinary Collaboration](https://doi.org/10.1016/j.amepre.2008.05.003). American Journal of Preventive Medicine *35:S96–S115.**2008**
+-  Tuckman, B. W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). Psychological Bulletin **1965.**
+-  Tuckman, B. W., & Jensen, M. A. C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). Group and Organizational Studies **1977**
+- van Knippenberg, D., De Dreu, C. K. W., & Homan, A. C. [Work Group Diversity and Group Performance: An Integrative Model and Research Agenda](https://doi.org/10.1037/0021-9010.89.6.1008). Journal of Applied Psychology **2004** 
+-  Woolley, A. W., C. F. Chabris, A. Pentland, N. Hashmi, and T. W. Malone. [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). Science *330:686–688.**2010**
+- Yang, Y., T. Y. Tian, T. K. Woodruff, B. F. Jones, and B. Uzzi.  [Gender-diverse teams produce more novel and higher-impact scientific ideas](https://doi.org/10.1073/pnas.220084111). PNAS. **2022**
 
 
 ## Additional Resources
 
 ### Papers & Documents
 
--  Abbasi, A., and A. Jaafari. [Research impact and scholars’ geographical diversity](https://doi.org/10.1016/j.joi.2013.04.004). Journal of Informetrics. **2013**
 -   Bates, A.E. *et al.*, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). Biological Conservation. **2024**. 
 -   Deutsch, L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). Environmental Science & Policy. **2021**. 
 -  Folger, J.P., Poole, M.S., & Stutman, R.K. (2017). [Working Through Conflict: Strategies for Relationships, Groups, and Organizations (8th ed.)](https://doi.org/10.4324/9781315296296). Routledge. **2017**
 -   Farrell, K.J. *et al.*, [Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). Frontiers in Ecology and the Environment. **2021**
 -   Gaynor, K.M., *et al.*, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). PLoS Computational Biology. **2022** 
--  Graffius, Scott M. [Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update](https://www.exceptional-pmo.com). **2023**
 -   Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). BioScience. **2011** 
--  Hong, L., & Page, S. E. [Individual selection criteria for optimal team composition](https://doi.org/10.1007/s11238-023-09960-w). Theory and Decision. **2024** 
--  Lee, You-Na, John P. Walsh, Jian Wang. [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). Research Policy. **2015**
 -   Lowman, H. et al., [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). PNAS. **2024** 
--  Lotrecchiano, Gaetano R., Deborah DiazGranados, Jennifer Sprecher, Wayne T. McCormack, Damayanthi Ranwala, Kevin Wooten, Daniel Lackland, Heather Billings, and Allan R. Brasier. [Individual and team competencies in translational teams](https://doi.org/10.1017/cts.2020.551). Journal of Clinical and Translational Science. **2021**  
--  Milliken, Frances J. and Luis L. Martins. [Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups](https://www.jstor.org/stable/258667). The Academy of Management Review. **1996**
 -   Peterson, D.M., *et al.*, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). Ecology and Evolution. **2023**
--  Tuckman, B. W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). Psychological Bulletin **1965.**
--  Tuckman, B. W., & Jensen, M. A. C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). Group and Organizational Studies **1977**
 
 ### Workshops & Courses
 
