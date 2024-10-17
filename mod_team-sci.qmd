@@ -168,7 +168,7 @@ In spite of your best efforts, conflicts will still arise. The satisfaction tria
 For the following set of scenarios, you will be randomly assigned to one of three breakout groups for a 20-minute discussion. After you join the group:
 
 1. Briefly introduce yourselves 
-1. Navigate to the [notes document](https://docs.google.com/document/d/1fjmJpvHCef0pEv4KcqxCXTBA9DtPyxc5_dWWBmy3aKc/edit) in the cohort folder.
+1. Navigate to the [notes document](https://docs.google.com/document/d/1ctancqRacgM75UDYrXvi1lvJmHxAyWE19ie4GAYhRBU/edit) in the cohort folder.
 1. Choose a notetaker, a reporter (may be the same as the notetaker or not), and a timekeeper (to keep the group moving through the questions). 
 1. A volunteer reads the scenario out loud for the group
 1. Take a minute or so to think quietly
