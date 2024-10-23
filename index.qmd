@@ -32,14 +32,16 @@ The course will include social and leadership skills required to bring a synthes
 
 Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.
 
+:::{.panel-tabset}
+
 ### 2024 Schedule
 
 | **Date** | **Module** | **Primary Instructor(s)** |
 |:---:|:----------------------------|:---:|
 | 9/5/24 | Version Control | [Nick Lyon](https://njlyon0.github.io/); [Angel Chen](https://angelchen7.github.io/) |
 | 9/16-20/24 | Reproducibility Best Practices | [Nick Lyon](https://njlyon0.github.io/) |
-| 10/3/24 | Data Discovery & Management | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
-| 10/17/24 | Team Sciences Practices | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 10/3/24 | Data Discovery & Management | [Li Kui](https://orcid.org/0000-0002-5894-4907); [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 10/17/24 | Team Sciences Practices | [Marty Downs](https://orcid.org/0000-0003-2833-956X); [Carrie Kappel](https://legacyworksgroup.com/team-content/carrie-kappel) |
 | 10/31/24 | Inclusive Facilitation | [Carrie Kappel](https://legacyworksgroup.com/team-content/carrie-kappel) |
 | 11/14/24 | Data Visualization & Exploration | [Sarah Elmendorf](https://www.colorado.edu/instaar/sarah-elmendorf); [Nick Lyon](https://njlyon0.github.io/) |
 | 12/5/24 | Project Management | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
@@ -55,7 +57,7 @@ Project groups will also meet at a time of their own choosing to work on project
 | 5/8/25 | _Optional Prep_ | TBD |
 | 5/22/25 | **Final Project Symposium** | _SSECR Participants!_ |
 
-
+:::
 
 ## Course Policies
 
