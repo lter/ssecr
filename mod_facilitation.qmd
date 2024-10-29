@@ -137,7 +137,7 @@ As we learned earlier in the course, people have different thinking preferences 
 <img src="images/figure_thinking-style-expects.png" alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="70%"/>
 </p>
 
-## Meeting Design
+## Designing Meetings for All Thinking Styles
 
 ::: {.callout-note icon="false"}
 #### Activity: Meeting Design + Facilitation Likes & Dislikes
@@ -158,15 +158,15 @@ Now consider the expectations and preferences of the other thinking styles noted
 
 ### Tool Highlight: Collaborative Whiteboards
 
-**Collaborative whiteboards** are useful tools for capturing ideas from a group during virtual meetings. They range from simple (EasyRetro, Zoom's whiteboard function) to complex (Mural, miro). Benefits include simultaneous input, the ability to organize information into discrete, movable chunks, and the visual nature of the output.
+**Collaborative whiteboards** are useful tools for capturing ideas from a group during virtual meetings. They range from simple (EasyRetro, Zoom's whiteboard function) to complex (Mural, miro). Benefits include simultaneous input, the ability to organize information into discrete, movable chunks, and the visual (and lasting) nature of the output.
 
 ## Ensuring Equitable Access to Participation
 
-To tap diverse perspectives and catalyze productivity and creative problem-solving, we need to design meetings (and projects) so <u>everyone</u> can participate fully, rather than just a few. When tackling complex challenges, voices from the edge are often critical to uncovering new insights and innovative approaches. Democratizing participation doesn't have to be all about controlling the dominant voices in a group; with careful planning and some simple tools, you can design any conversation so that everyone can contribute.
+To tap diverse perspectives and catalyze productivity and creative problem-solving, we need to design meetings (and projects) so <u>everyone</u> can participate fully, rather than just a few. When tackling complex challenges, voices from the edge are often critical to uncovering new insights and approaches. Democratizing participation doesn't have to be all about controlling the dominant voices in a group; with careful planning and some simple tools, you can design any conversation so that everyone can contribute.
 
 A few simple techniques can help:
  
-1. Mix up the format, e.g., combining silent reflection, round robin, breakout groups, plenary, and/or liberating structures (more on these below)
+1. Mix up the format, e.g., combining silent reflection, round robin, breakout groups, plenary, and/or "liberating structures" (more on these below)
 2. Offer different channels for information sharing - verbal, nonverbal, written, visual, informal, formal
 3. Track and stack who wants to speak 
 4. Invite, amplify, and credit "quieter" voices 
@@ -186,7 +186,7 @@ Good meeting design starts with understanding your purpose and objectives, as we
 
 A good rule of thumb is to allow 2-3x as much time to plan a meeting as its duration. 
 
-<p align="center"
+<p align="center">
 <img src="images/figure_meeting-design-questions.png" alt="Figure separating meeting planning into 'why, what, how, and who' facets" width="95%"/>
 </p>
 
