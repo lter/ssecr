@@ -298,8 +298,8 @@ Whole group discussion (10 mins)
 
 ### Papers & Documents
 
-- Khuri et al., [Inclusive Practice Glossary for Facilitators] (https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
-- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration] (https://doi.org/10.1057/s41599-022-01217-1). **2022**.
+- Khuri et al., [Inclusive Practice Glossary for Facilitators](https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
+- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
 - Woodley, L. _et al._, [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). **2021**.
 - Tarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. **2021**.
 - Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
@@ -315,4 +315,4 @@ Whole group discussion (10 mins)
 
 - [Liberating Structures: Including and Unleashing Everyone](https://www.liberatingstructures.com/)
 - [Gamestorming](https://gamestorming.com/)
-- [SciTS and Team Science Resources] (https://www.inscits.org/scits-a-team-science-resources) compiled by INSciTS, the International Network for the Science of Team Science
+- [SciTS and Team Science Resources](https://www.inscits.org/scits-a-team-science-resources) compiled by INSciTS, the International Network for the Science of Team Science
