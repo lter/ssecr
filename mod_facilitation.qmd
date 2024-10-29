@@ -124,7 +124,7 @@ Dialogue is a collaborative effort to understand and learn from each other. Deba
 
 :::
 
-## Diversity in Thinking Styles
+## Designing Meetings for All Thinking Styles
 
 As we learned earlier in the course, people have different thinking preferences which influence what they expect and enjoy in group processes (see Ned Herrmann's Whole Brain Model below).
 
@@ -136,8 +136,6 @@ As we learned earlier in the course, people have different thinking preferences 
 <p align="center">
 <img src="images/figure_thinking-style-expects.png" alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="70%"/>
 </p>
-
-## Designing Meetings for All Thinking Styles
 
 ::: {.callout-note icon="false"}
 #### Activity: Meeting Design + Facilitation Likes & Dislikes
@@ -190,7 +188,7 @@ A good rule of thumb is to allow 2-3x as much time to plan a meeting as its dura
 <img src="images/figure_meeting-design-questions.png" alt="Figure separating meeting planning into 'why, what, how, and who' facets" width="95%"/>
 </p>
 
-## Sharing the Load of Effective Meeting Facilitation
+## Roles
 
 It's very difficult to both facilitate a conversation and engage fully in it as a participant. If you add taking notes on top of that, it's sure to become overwhelming. So recruit some help. The number of roles you need to fill will depend on the size of the group and the complexity of the process. Share and rotate duties over time:
 
@@ -205,11 +203,9 @@ It's very difficult to both facilitate a conversation and engage fully in it as 
 
 As you get to know your team members, you can start to match people to these different roles based on their skills and recruit them to help.
 
-## Limitations of Conventional Meeting Structures
+## Alternatives to Conventional Meeting Structures
 
 Differences in thinking and learning styles, disciplinary background, power, and other dimensions of diversity mean that there's no such thing as a one-size-fits-all approach for participatory processes. Nonetheless, we tend to default to a small set of traditional ways of sharing information and engaging people when we meet. These conventional structures are often either too limiting (presentations, status reports, and managed discussions) or too free-form and disorganized (open discussions and brainstorms) to effectively tap the wisdom of the group (Lipmanowicz and McCandless, 2014). To support the engagement of all participants, we need to break out of those traditional ways of meeting.
-
-## Microstructures for Democratizing Participation
 
 Books and websites like Liberating Structures, Gamestorming, and the Facilitator's Guide to Participatory Decisionmaking offer dozens of alternative group processes (see Resources). Known as microstructures or knowledge games, these simple, fun activities are designed to include everyone, distribute control, and unleash creativity. One or more activities can be matched to your intended outcomes and arranged in a sequence to advance the team toward your overall goal. Liberating Structures offers a [matching matrix](https://www.liberatingstructures.com/matching-matrix) to help you identify microstructures that could fit your needs and an app you can use to browse and assemble strings of activities. [Gamestorming](https://gamestorming.com/) organizes their activities into categories (e.g. games for opening, games for decision-making) for exploration.
 
@@ -234,7 +230,7 @@ Here are a few microstructures that work well for small group virtual meetings. 
 <img src="images/figure_project-impact-vs-feasibility.png" alt="Graph of impact versus feasibility where both axes range from low to high and the plot area is divided into four equal sections" width="70%"/>
 </p>
 
-## Techniques for Harvesting Content
+## Harvesting Content
 
 As you go, and definitely before your meeting is over, engage your team in synthesizing and capturing the information that has been discussed. This helps you to deepen understanding, document your workflow and decisions, and pick up easily next time. Use a consistent system - like a running notes document linked in the calendar item. Graphics or drawings can be a valuable complement to oral and written content in making thinking visible.
 
