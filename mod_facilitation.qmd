@@ -82,7 +82,7 @@ Finally, when the time comes for decision making, effective facilitation can ens
 
 ## Moving from Debate to Dialogue
 
-Dialogue is a collaborative effort to understand and learn from each other. Debate, on the other hand, is an oppositional effort to convince the other side that you are right. Inclusive facilitation aims to support dialogue and skillful discussion. Dialogue allows groups to recognize the limits on their own and others' individual perspectives and to strive for more coherent thought. Dialogue becomes a container for collective thinking and exploration - a process that can take teams in directions not imagined or planned. In dialogue, all views are treated as equally valid, and different views are presented as a means toward discovering a new view. Participants listen to understand one another, not to win. Complex issues are explored and shared meaning is created. When it comes time to make a decision, skillful discussion is required. Both are critical to the collaborative process, and the more artfully a group can move between these two forms of discourse (and out of less productive debate and polite discussion) according to what is needed, the more effective the group will be.
+Dialogue is a collaborative effort to understand and learn from each other. Debate, on the other hand, is an oppositional effort to convince the other side that you are right. Inclusive facilitation aims to support dialogue and skillful discussion. Dialogue allows groups to recognize the limits on their own and others' individual perspectives and to strive for more coherent thought. Dialogue becomes a container for collective thinking and exploration - a process that can take teams in directions not imagined or planned. In dialogue, all views are treated as equally valid, and different views are presented as a means toward discovering a new view. Participants listen to understand one another, not to win. Complex issues are explored and shared meaning is created. When it comes time to make a decision, skillful discussion is required. Both skillful discussion and dialogue are critical to the collaborative process, and the more artfully a group can move between these two forms of discourse (and out of less productive debate and polite discussion) according to what is needed, the more effective the group will be.
 
 :::{.panel-tabset}
 
@@ -137,10 +137,10 @@ Each action in a group conversation can be coded into one of these four action m
 
 :::{.panel-tabset}
 
-#### Stuck in Serial Moves
+#### Serial Moves
 Lots of idea generation; may feel like a barrage; no clear thread, decision, or follow through
 
-**What to Do**
+#### What to Do
 Any of the other modes can help here, since move is the only mode being engaged.
 
 Add a **follow** to give momentum to a particular move and steer the conversation in that direction, e.g., “Can we go back to the idea that Jose put on the table? That felt like a topic that could really use our attention. Shall we focus there?”
@@ -149,41 +149,65 @@ Offer an effective **oppose** - “We’ve heard a lot of different ideas. I’d
 
 Use a **bystand** to bring awareness to and dirsupt the dynamic - “Hey gang, we’re 20 minutes into our call and we’ve put a lot of different topics on the table. Where do we want to focus ourselves so we can walk away with some clear next steps?”
 
-#### Stuck in Courteous Compliance / Polite Discussion
-Moves are followed with little discussion or resistance
+:::
 
-**What to Do**
+:::{.panel-tabset}
+
+#### Polite Discussion
+Moves are followed with little discussion or resistance; also known as Courteous Compliance
+
+#### What to Do
 Prompt an effective **oppose**: 
+
 - Who sees it differently? 
 - What’s at risk here? 
 - What other angles should we consider?
 
 Invite a **bystand**:
+
 - Where is the group right now? 
 - What are you noticing? 
 - Is there an elephant in the room that needs to be named?
 
+:::
+
+:::{panel-tabset}
+
 #### Stuck in Point-Counterpoint / Debate
 Individuals are locked in a back and forth where each move is met with resistance / opposition
 
-**What to Do**
-Invite a **follow** (or a more effective **oppose**) - What do you like about the proposal on the table? What do you agree with that we could build upon?
+#### What to Do**
+Invite a **follow** (or a more effective **oppose**): 
 
-Invite a **bystand** - In addition to the two viewpoints on the table, I’d love to hear from some other perspectives. What are you noticing? What might we be missing?
+- What do you like about the proposal on the table? 
+- What do you agree with that we could build upon?
 
+Invite a **bystand**:
+
+- In addition to the two viewpoints on the table, I’d love to hear from some other perspectives. 
+- What are you noticing? 
+- What might we be missing?
+
+:::
+
+:::{panel-tabset}
 #### Stuck in Covert Opposition
 On the surface, moves are followed, and the conversation appears harmonious, but below the surface, people have unspoken reservations. Opposition tends to be expressed outside the bounds of the conversation or harbored as resentment.
 
 Uneven power dynamics are often behind this pattern - group members defer to the moves of those with more power or seniority.
 
-*What to Do*
+#### What to Do
 Invite those with more power to experiment with **following** or **bystanding** to open up space for other players to make a **move**.
 
-Prompt a transparent **oppose** - Who sees it differently? What’s at risk here? Are there some cons to the proposed idea?
+Prompt a transparent **oppose**: 
+
+- Who sees it differently? 
+- What’s at risk here? 
+- Are there some cons to the proposed idea?
 
 If others aren’t comfortable, you can offer an **oppose**, e.g., by suggesting the limits of the proposed **move** be tested across different scenarios.
 
-Offer a **bystand** - I want to offer a reflection from another team I was part of. On that team, we kept having meetings where it seemed like everyone was in agreement, but then we would leave, and over and over again there’d be little follow through and more than a little grousing. People’s real opinions were only coming out in side conversations outside of the meeting. We lost a lot of time and forward momentum because people didn’t feel like they could air their concerns in the larger group. Do you see that happening here? Does anyone have a suggestion for how to make this a safer space to critically discuss ideas?
+Offer a **bystand**, e.g., "I want to offer a reflection from another team I was part of. On that team, we kept having meetings where it seemed like everyone was in agreement, but then we would leave, and over and over again there’d be little follow through and more than a little grousing. People’s real opinions were only coming out in side conversations outside of the meeting. We lost a lot of time and forward momentum because people didn’t feel like they could air their concerns in the larger group. Do you see that happening here? Does anyone have a suggestion for how to make this a safer space to critically discuss ideas?"
 
 :::
 
@@ -323,9 +347,8 @@ On your own:
 
 In your project team:
 
-- Identify a facilitator, timekeeper, reporter for this breakout session
-- Decide whether you want one notetaker or shared notetaking
 - Decide as a group which upcoming meeting you want to focus on
+- Identify a facilitator, timekeeper, reporter for TODAY's breakout session (not the meeting)
 - Use round robin or silent google doc'ing to hear everyone's answers to the prompt
 - Plan your next meeting together (resources: EasyRetro board, tools highlighted above)
     - Agree on the meeting purpose
