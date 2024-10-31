@@ -140,7 +140,7 @@ Based on over 30 years of observation and study of face-to-face communication in
 Each action in a group conversation can be coded into one of these four action modes. Most of us have one of these modes that we feel most comfortable in and tend to default to in a group. The most effective conversations involve good listening and the skillful use of all four modes. Common “stuck” patterns emerge when groups are not deploying all four actions.
 
 <p align="center">
-<img src="images/figure_stuck-communication-patterns.png" alt="Four common patterns of "stuck" communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition." width="95%"/>
+<img src="images/figure_stuck-communication-patterns.png" alt="Four common patterns of 'stuck' communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition." width="95%"/>
 </p>
 
 :::{.panel-tabset}
