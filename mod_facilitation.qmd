@@ -133,7 +133,15 @@ Based on over 30 years of observation and study of face-to-face communication in
 - **Oppose** - Challenge or disagree with the idea, action, or suggested direction
 - **Bystand** - Notice and articulate what’s happening in the conversation, add a neutral perspective
 
+<p align="center">
+<img src="images/figure_four-player-model.png" alt="Figure of four modes of communication, arrayed on two axes - Move versus Oppose on the axis of Advocacy and Follow vs. Bystand on the axis of Inquiry." width="95%"/>
+</p>
+
 Each action in a group conversation can be coded into one of these four action modes. Most of us have one of these modes that we feel most comfortable in and tend to default to in a group. The most effective conversations involve good listening and the skillful use of all four modes. Common “stuck” patterns emerge when groups are not deploying all four actions.
+
+<p align="center">
+<img src="images/figure_stuck-communication-patterns.png" alt="Four common patterns of "stuck" communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition." width="95%"/>
+</p>
 
 :::{.panel-tabset}
 
