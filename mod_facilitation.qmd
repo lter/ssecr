@@ -171,12 +171,12 @@ Invite a **bystand**:
 
 :::
 
-:::{panel-tabset}
+:::{.panel-tabset}
 
 #### Stuck in Point-Counterpoint / Debate
 Individuals are locked in a back and forth where each move is met with resistance / opposition
 
-#### What to Do**
+#### What to Do
 Invite a **follow** (or a more effective **oppose**): 
 
 - What do you like about the proposal on the table? 
@@ -190,7 +190,7 @@ Invite a **bystand**:
 
 :::
 
-:::{panel-tabset}
+:::{.panel-tabset}
 
 #### Stuck in Covert Opposition
 On the surface, moves are followed, and the conversation appears harmonious, but below the surface, people have unspoken reservations. Opposition tends to be expressed outside the bounds of the conversation or harbored as resentment.
