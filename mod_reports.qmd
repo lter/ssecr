@@ -104,7 +104,7 @@ round(x = pi, digits = 2)
 
 ### Script vs. Report Decision
 
-See [here](https://nceas.github.io/scicomp.github.io/best_practices.html#r-scripts-versus-r-markdowns) for more information.
+See [here](https://lter.github.io/scicomp/tip_notebook-vs-script.html) for more information.
 
 
 
