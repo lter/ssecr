@@ -1,0 +1,50 @@
+---
+title: "Multivariate Visualization"
+---
+
+## Overview
+
+Under construction; check back later!
+
+## Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Define</u> some common multivariate visualization methods
+
+## Preparation
+
+This is a "bonus" module and thus was created for asynchronous learners. There is no suggested preparatory work.
+
+## Needed Packages
+
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've installed these before
+install.packages("supportR")
+install.packages("vegan")
+install.packages("ape")
+```
+
+
+
+
+
+
+## Additional Resources
+
+### Papers & Documents
+
+- 
+
+### Workshops & Courses
+
+- 
+
+### Websites
+
+- 

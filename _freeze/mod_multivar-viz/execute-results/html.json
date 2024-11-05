@@ -1,0 +1,15 @@
+{
+  "hash": "0bc0e207e313f03f37ddcbe894e95f95",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Multivariate Visualization\"\n---\n\n\n\n## Overview\n\nUnder construction; check back later!\n\n## Learning Objectives\n\nAfter completing this module you will be able to: \n\n- <u>Define</u> some common multivariate visualization methods\n\n## Preparation\n\nThis is a \"bonus\" module and thus was created for asynchronous learners. There is no suggested preparatory work.\n\n## Needed Packages\n\nIf you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"supportR\")\ninstall.packages(\"vegan\")\ninstall.packages(\"ape\")\n```\n:::\n\n\n\n\n\n\n\n\n## Additional Resources\n\n### Papers & Documents\n\n- \n\n### Workshops & Courses\n\n- \n\n### Websites\n\n- \n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -66,6 +66,8 @@ website:
               href: mod_spatial.qmd
             - text: "Interactivity"
               href: mod_interactivity.qmd
+            - text: "Multivariate Visualization"
+              href: mod_multivar-viz.qmd
   navbar:
     background: primary
     right: 
