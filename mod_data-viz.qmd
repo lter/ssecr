@@ -25,6 +25,20 @@ Each Synthesis Fellow should:
     - Multiple group members may select the same dataset if they want
 - Download this file
 
+## Networking Session
+
+We'll have two guests to kick off today's class. Each has been involved in synthesis as an early career researcher and each uses visualization in different ways to assess, clarify, and communicate their data and analyses.
+
+:::{.panel-tabset}
+
+### 2024 Guests
+
+-  [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University, DroughtNet Coordinator
+
+-  [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department. Kyle's research utilizes remote sensing (e.g. satellite, aerial, and UAV imagery) to document ecological change over large space and time scales.
+
+:::
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
