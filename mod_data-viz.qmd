@@ -538,7 +538,9 @@ You may find it valuable to create a map as an additional way of visualizing dat
 
 ### Papers & Documents
 
+- Chang, W. _et al._, [`ggplot2`: Elegant Graphics for Data Analysis](https://ggplot2-book.org/). 3^rd^ edition. **2023**.
 - National Center for Ecological Analysis and Synthesis (NCEAS). [Colorblind Safe Color Schemes](https://www.nceas.ucsb.edu/sites/default/files/2022-06/Colorblind%20Safe%20Color%20Schemes.pdf). **2022**.
+- Wilke, C.O. [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/). **2020**.
 
 ### Workshops & Courses
 
@@ -548,4 +550,4 @@ You may find it valuable to create a map as an additional way of visualizing dat
 
 ### Websites
 
-- 
+- [The R Graph Gallery](https://r-graph-gallery.com/)
