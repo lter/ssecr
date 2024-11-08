@@ -11,6 +11,7 @@ Data visualization is a fundamental part of working with data. Visualization can
 
 After completing this module you will be able to: 
 
+- <u>Explain</u> how data visualization can be used to explore data
 - <u>Define</u> fundamental `ggplot2` vocabulary
 - <u>Identify</u> appropriate graph types for given data type/distribution
 - <u>Discuss</u> differences between presentation- and publication-quality graphs
@@ -18,12 +19,16 @@ After completing this module you will be able to:
 
 ## Preparation
 
-Each Synthesis Fellow should:
+1. Each Synthesis fellow should downlaod one data file identified for your group's project
+2. _If you are a Mac user_, install [XQuartz](https://www.xquartz.org/)
+3. _If you are an R user_, run the following code:
 
-- Select one dataset your group has identified
-    - Make sure it is a table (e.g., CSV, MS Excel, TXT, etc.)
-    - Multiple group members may select the same dataset if they want
-- Download this file
+```{r install-pkgs}
+#| eval: false
+
+install.packages("librarian")
+librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)
+```
 
 ## Networking Session
 
@@ -33,35 +38,11 @@ We'll have two guests to kick off today's class. Each has been involved in synth
 
 ### 2024 Guests
 
--  [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University, DroughtNet Coordinator
+-  [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator
 
--  [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department. Kyle's research utilizes remote sensing (e.g. satellite, aerial, and UAV imagery) to document ecological change over large space and time scales.
+-  [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department
 
 :::
-
-## Needed Packages
-
-If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
-
-```{r install-pkgs}
-#| eval: false
-
-# Note that these lines only need to be run once per computer
-## So you can skip this step if you've installed these before
-install.packages("tidyverse")
-install.packages("lterdatasampler")
-install.packages("supportR")
-install.packages("cowplot")
-```
-
-We'll go ahead and load some of these libraries as well to be able to better demonstrate these concepts.
-
-```{r libs}
-#| message: false
-
-# Load needed libraries
-library(tidyverse)
-```
 
 ## Graphing with `ggplot2`
 
@@ -83,8 +64,8 @@ This module will use example data to demonstrate these tools but as we work thro
 #| message: false
 #| warning: false
 
-# Load the lterdatasampler package
-library(lterdatasampler)
+# Load needed libraries
+library(tidyverse); library(lterdatasampler)
 
 # Load the fiddler crab dataset
 data(pie_crab)
