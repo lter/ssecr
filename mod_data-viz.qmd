@@ -143,7 +143,7 @@ You may already be familiar with the `ggplot2` package in R but if you are not, 
 
 Note that the theme component may be implicit in some graphs because there is a suite of default theme elements that applies unless otherwise specified. 
 
-This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module. This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.ecosystems.mbl.edu/welcome-plum-island-ecosystems-lter) site.
+This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module. This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.mbl.edu/) site.
 
 
 ```{r data-prep}
@@ -523,6 +523,21 @@ ggplot() +
         axis.text = element_text(size = 13))
 ```
 1. Here we are using a reasonable amount of technical language
+
+### Other Considerations
+
+Some other factors you might consider _regardless of where the graphs will be embedded_ include:
+
+- **White Background**. Ensure figures have a plain, white background for clarity and compatibility with journal formats.
+- **High Resolution**. Use a resolution of at least 300 dpi for print quality. Journals often specify the minimum dpi required.
+- **Bounding Box and Borders**. Add a bounding box or border if it enhances clarity, but avoid excessive framing unless necessary to separate elements clearly.
+- **Clear Axis Labels**. Label axes with clear, concise descriptions, including units of measurement (e.g., "Temperature (°C)"). Use readable font sizes that remain legible when scaled.
+- **Consistent Font Style and Size**. Use a uniform font style (e.g., Arial, Helvetica) across all figures and a size that is readable but not overwhelming (typically 8–12 points).
+- **Color Scheme**. Choose a color palette that remains clear in both color and grayscale. Use distinct colors for different categories or groups, and avoid colors that may be difficult for colorblind readers to differentiate (e.g., red-green combinations).
+- **Legend Placement**. Place legends within the figure space if possible, ensuring they don’t overlap data or distract from the main content. Keep legends concise.
+- **Minimal Gridlines**. Use minimal and subtle gridlines for reference, but avoid heavy or cluttered lines that may distract from the data.
+- **Error Bars and Statistical Indicators**. Add error bars, confidence intervals, or statistical significance markers as needed to represent variability and support interpretation.
+- **Descriptive Figure Caption**. Include a detailed caption that summarizes the figure’s purpose, data source, and any essential methods or abbreviations. Captions should be self-contained to ensure figures are understandable independently.
 
 :::
 
