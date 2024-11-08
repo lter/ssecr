@@ -5,10 +5,6 @@ code-annotations: hover
 
 ## Overview
 
-
-“ ” ‘’
-
-
 Data visualization is a fundamental part of working with data. Visualization can be only used in the final stages of a project to make figures for publication but it can also be hugely valuable for quality control and hypothesis development processes. This module focuses on the fundamentals of graph creation in an effort to empower you to apply those methods in the various contexts where you might find visualization to be helpful.
 
 ## Learning Objectives
@@ -42,9 +38,9 @@ We'll have two guests to kick off today's class. Each has been involved in synth
 
 ### 2024 Guests
 
--  [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator
+- [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator
 
--  [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department
+- [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department
 
 :::
 
@@ -52,7 +48,7 @@ We'll have two guests to kick off today's class. Each has been involved in synth
 
 Exploratory data visualization is an important part of any scientific project. Before launching into analysis it is valuable to make some simple plots to scan the contents. These plots may reveal any number of issues, such as typos, sensor calibration problems or differences in the protocol over time.
 
-These “fitness for use” visualizations are even more critical for synthesis projects. In synthesis, we are often repurposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group's question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of  ‘warts’ that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g. spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process (see the [Data Wrangling module](https://lter.github.io/ssecr/mod_wrangle.html)). Others may come as a surprise.
+These "fitness for use" visualizations are even more critical for synthesis projects. In synthesis, we are often repurposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group's question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of 'warts' that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g. spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process (see the [Data Wrangling module](https://lter.github.io/ssecr/mod_wrangle.html)). Others may come as a surprise.
 
 During the early stages of a synthesis project, you will want to gain skill to quickly scan through large volumes of data. The figures you make will typically be for internal use only, and therefore have low emphasis on aesthetics.
 
@@ -63,11 +59,11 @@ Specific applications of exploratory data visualization include identifying:
 1. Dataset coverage (temporal, spatial, taxonomic)
     - For example, the metadata might indicate a dataset covers the period 2010-2020. That could mean one data point in 2010 and one in 2020! This may not be useful for a time-series analysis.
 2. Errors in metadata 
-    - Do the units “make sense” with the figure? Typos in metadata do occur, so if you find yourself with elephants weighing only a few grams, it may be necessary to reach out to the dataset contact.
+    - Do the units "make sense" with the figure? Typos in metadata do occur, so if you find yourself with elephants weighing only a few grams, it may be necessary to reach out to the dataset contact.
 3. Differences in methodology
     - Do the data from sequential years, replicate sites, different providers generally fall into the same ranges or is there sensor drift or changes in protocols that need to be addressed?
     - A risk of synthesis projects is that you may find you are comparing apples to oranges across datasets, as the individual datasets included in your project were likely not collected in a coordinated fashion.
-    - A benefit of synthesis projects is you will typically have large volumes of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a ‘typical’ location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be addressed in the data harmonization process. 
+    - A benefit of synthesis projects is you will typically have large volumes of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a 'typical' location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be addressed in the data harmonization process. 
 
 In the data exploration stage you may find:
 
@@ -83,7 +79,7 @@ These steps are an important precursor to the data harmonization stage, where yo
 :::{.callout-note icon="false"}
 #### Activity: Data Sleuth
 
-In this activity, you’ll play the role of data detective. You will have many potential datasets to look through. It is important to do it correctly, but you likely won’t need or want to develop boutique code to examine each dataset, especially since some may be discarded after an initial pass.
+In this activity, you'll play the role of data detective. You will have many potential datasets to look through. It is important to do it correctly, but you likely won't need or want to develop boutique code to examine each dataset, especially since some may be discarded after an initial pass.
 
 ::::{.panel-tabset}
 ##### `summarytools` Package
@@ -534,10 +530,10 @@ Some other factors you might consider _regardless of where the graphs will be em
 - **Clear Axis Labels**. Label axes with clear, concise descriptions, including units of measurement (e.g., "Temperature (°C)"). Use readable font sizes that remain legible when scaled.
 - **Consistent Font Style and Size**. Use a uniform font style (e.g., Arial, Helvetica) across all figures and a size that is readable but not overwhelming (typically 8–12 points).
 - **Color Scheme**. Choose a color palette that remains clear in both color and grayscale. Use distinct colors for different categories or groups, and avoid colors that may be difficult for colorblind readers to differentiate (e.g., red-green combinations).
-- **Legend Placement**. Place legends within the figure space if possible, ensuring they don’t overlap data or distract from the main content. Keep legends concise.
+- **Legend Placement**. Place legends within the figure space if possible, ensuring they don't overlap data or distract from the main content. Keep legends concise.
 - **Minimal Gridlines**. Use minimal and subtle gridlines for reference, but avoid heavy or cluttered lines that may distract from the data.
 - **Error Bars and Statistical Indicators**. Add error bars, confidence intervals, or statistical significance markers as needed to represent variability and support interpretation.
-- **Descriptive Figure Caption**. Include a detailed caption that summarizes the figure’s purpose, data source, and any essential methods or abbreviations. Captions should be self-contained to ensure figures are understandable independently.
+- **Descriptive Figure Caption**. Include a detailed caption that summarizes the figure's purpose, data source, and any essential methods or abbreviations. Captions should be self-contained to ensure figures are understandable independently.
 
 :::
 
