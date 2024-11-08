@@ -152,7 +152,11 @@ If the stress is less than 0.15 it is generally considered a good representation
 
 ### Papers & Documents
 
-- 
+- Abdi, H. & Williams, L.J., [Principal Coponent Analysis](https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.101). WIREs Computational Statistics. **2010**.
+- Ramette, A., [Multivariate Analyses in Microbial Ecology](https://pubmed.ncbi.nlm.nih.gov/17892477/). FEMS Microbial Ecology. **2007**.
+- Jackson, D.A., [Stopping Rules in Principal Components Analysis: A Comparison of Heuristical and Statistical Approaches](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939574). Ecology. **1993**.
+- Clarke, K.R., [Non-Parametric Multivariate Analyses of Changes in Community Structure](https://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.1993.tb00438.x). Australian Journal of Ecology. **1993**.
+- Kenkel, N.C. & Oroloci, L., [Applying Metric and Nonmetric Multidimensional Scaling to Ecological Studies: Some New Results](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939814). Ecology. **1986**.
 
 ### Workshops & Courses
 
