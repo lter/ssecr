@@ -41,14 +41,12 @@ vignettes/*.pdf
 # R project file
 *.Rproj
 
-# Secret Quarto directory
-/.quarto/
-
-# ignore rendering folder since we have github actions
-docs/
-
 # .DS_Store (Mac file)
 .DS_Store
 
-# Other folders to ignore
+# Secret Quarto directory
+/.quarto/
+
+# Folders
+docs/
 data/
