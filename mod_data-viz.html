@@ -372,6 +372,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#networking-session" id="toc-networking-session" class="nav-link" data-scroll-target="#networking-session">Networking Session</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#graphing-with-ggplot2" id="toc-graphing-with-ggplot2" class="nav-link" data-scroll-target="#graphing-with-ggplot2">Graphing with <code>ggplot2</code></a>
   <ul class="collapse">
@@ -447,6 +448,21 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </ul></li>
 <li>Download this file</li>
 </ul>
+</section>
+<section id="networking-session" class="level2">
+<h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
+<p>We’ll have two guests to kick off today’s class. Each has been involved in synthesis as an early career researcher and each uses visualization in different ways to assess, clarify, and communicate their data and analyses.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li><p><a href="https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124">Tim Ohlert</a>, Postdoctoral Researcher, Colorado State University, DroughtNet Coordinator</p></li>
+<li><p><a href="https://www.ioes.ucla.edu/person/kyle-cavanaugh/">Kyle Cavanaugh</a>, Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department. Kyle’s research utilizes remote sensing (e.g.&nbsp;satellite, aerial, and UAV imagery) to document ecological change over large space and time scales.</p></li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="needed-packages" class="level2">
 <h2 class="anchored" data-anchor-id="needed-packages">Needed Packages</h2>
@@ -737,9 +753,9 @@ Activity: Graph Creation (P3)
 <p>It is sometimes the case that you want to make a single graph file that has multiple panels. For many of us, we might default to creating the separate graphs that we want, exporting them, and then using software like Microsoft PowerPoint to stitch those panels into the single image we had in mind from the start. However, as all of us who have used this method know, this is hugely cumbersome when your advisor/committee/reviewers ask for edits and you now have to redo all of the manual work behind your multi-panel graph.</p>
 <p>Fortunately, there are two nice entirely scripted alternatives that you might consider: <strong>Faceted graphs</strong> and <strong>Plot grids</strong>. See below for more information on both.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Facets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Plot Grids</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Facets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Plot Grids</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>In a faceted graph, <u>every panel of the graph has the same aesthetics</u>. These are often used when you want to show the relationship between two (or more) variables but separated by some other variable. In synthesis work, you might show the relationship between your core response and explanatory variables but facet by the original study. This would leave you with one panel per study where each would show the relationship only at that particular study.</p>
 <p>Let’s check out an example.</p>
 <div class="cell" data-layout-align="center">
@@ -769,7 +785,7 @@ Activity: Graph Creation (P3)
 </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>In a plot grid, <u>each panel is completely independent of all others</u>. These are often used in publications where you want to highlight several <em>different</em> relationships that have some thematic connection. In synthesis work, your hypotheses may be more complicated than in primary research and such a plot grid would then be necessary to put all visual evidence for a hypothesis in the same location. On a practical note, plot grids are also a common way of circumventing figure number limits enforced by journals.</p>
 <p>Let’s check out an example that relies on the <code>cowplot</code> library.</p>
 <div class="cell" data-layout-align="center">
@@ -907,9 +923,9 @@ Discussion: Graph Accessibility
 <h3 class="anchored" data-anchor-id="presentation-vs.-publication">Presentation vs.&nbsp;Publication</h3>
 <p>One final element of accessibility to consider is the difference between a ‘<em>presentation</em>-quality’ graph and a ‘<em>publication</em>-quality’ one. While it may be tempting to create a single version of a given graph and use it in both contexts that is likely to be less effective in helping you to get your point across than making small tweaks to two separate versions of what is otherwise the same graph.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Presentation-Focused</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Publication-Focused</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Presentation-Focused</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Publication-Focused</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p><strong>Do:</strong></p>
 <ul>
 <li>Increase size of text/points <strong>greatly</strong>
@@ -970,7 +986,7 @@ Discussion: Graph Accessibility
 </div>
 </div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p><strong>Do:</strong></p>
 <ul>
 <li>Increase size of text/points <strong>slightly</strong>
