@@ -6,3 +6,4 @@ It is periodically useful to have 'background scripts' for doing operations that
 
 - `prep-data_mixed-effects` -- simulates data with a random effect structure. Used in the statistics module
 - `prep-data_spatial` -- prepares existing vector and raster data to be used for the course. Used in the spatial module
+- `prep-data_data-viz-bonus-demo` -- prepares a species abundance dataframe. Used in the data visualization module
