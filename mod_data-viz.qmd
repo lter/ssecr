@@ -19,7 +19,7 @@ After completing this module you will be able to:
 
 ## Preparation
 
-1. Each Synthesis fellow should downlaod one data file identified for your group's project
+1. Each Synthesis fellow should download one data file identified for your group's project
 2. _If you are a Mac user_, install [XQuartz](https://www.xquartz.org/)
 3. _If you are an R user_, run the following code:
 
