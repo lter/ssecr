@@ -443,7 +443,7 @@
     "href": "mod_data-viz.html#preparation",
     "title": "Data Visualization & Exploration",
     "section": "Preparation",
-    "text": "Preparation\n\nEach Synthesis fellow should downlaod one data file identified for your group’s project\nIf you are a Mac user, install XQuartz\nIf you are an R user, run the following code:\n\n\ninstall.packages(\"librarian\")\nlibrarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)",
+    "text": "Preparation\n\nEach Synthesis fellow should download one data file identified for your group’s project\nIf you are a Mac user, install XQuartz\nIf you are an R user, run the following code:\n\n\ninstall.packages(\"librarian\")\nlibrarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)",
     "crumbs": [
       "Phase II -- Plan",
       "Data Visualization"
