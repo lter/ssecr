@@ -583,7 +583,8 @@ It can be helpful to visualize all numeric variables in your dataset, grouped by
 
 ```{r demo_all-num-vars_data}
 # Read in data
-green_biochem <- read.csv(file = file.path("data", "green-lakes_water-chem-zooplank.csv")) # <1>
+green_biochem <- read.csv(file = file.path("data", "green-lakes_water-chem-zooplank.csv")) %>%  # <1>
+  dplyr::mutate(date = as.Date(date))
 
 # Check structure
 str(green_biochem)
