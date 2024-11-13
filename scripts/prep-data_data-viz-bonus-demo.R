@@ -11,7 +11,7 @@
 ## ------------------------------------ ##
 # Load needed libraries
 ## install.packages("librarian")
-librarian::shelf(tidyverse, RColorBrewer)
+librarian::shelf(tidyverse)
 
 # Make a folder for storing this data
 dir.create(path = file.path("data"), showWarnings = FALSE)
@@ -20,7 +20,22 @@ dir.create(path = file.path("data"), showWarnings = FALSE)
 rm(list = ls())
 
 ## ------------------------------------ ##
-# Simulate Data ----
+# Download Green Lakes Chem/Zooplankton Data ----
+## ------------------------------------ ##
+
+# This code demo uses the following dataset:
+## Citation: Johnson, P. and K. Loria. 2019. Lake water quality, chemistry and zooplankton composition for 16 lakes surrounding the Green Lakes Valley, 2016 ver 1. Environmental Data Initiative. https://doi.org/10.6073/pasta/cd8b0f9e4d985a945135c60773c94fea
+## Link: https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-nwt.12.1
+
+# Read it in directly from EDI
+water_df <- read.csv("https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/12/1/2619d9d5c07fa2822883df2ea17ffd52")
+
+# Export it locally for easier subsequent access
+write.csv(x = water_df, na = '', row.names = F,
+          file = file.path("data", "green-lakes_water-chem-zooplank.csv"))
+
+## ------------------------------------ ##
+# Simulate Taxon Data ----
 ## ------------------------------------ ##
 
 # Set random seed for reproducibility
@@ -41,12 +56,16 @@ random_walk <- function(n, start = 10, sd = 2) {
   # Return the result
   return(walk) }
 
+# Define what will become some columns
+years <- seq(2010, 2020)
+plots <- seq(1, 10)
+taxa <- paste0("Taxon_", toupper(letters[1:10]))
+
 # Generate synthetic random walk counts for each combination of plot and taxon
-datafile <- expand_grid(
+datafile <- tidyr::expand_grid(
   year = years,
   plot = plots,
-  taxon = taxa
-) %>%
+  taxon = taxa ) %>%
   # Random walk series
   dplyr::group_by(plot, taxon) %>%
   dplyr::mutate(count = random_walk(n = length(year), start = 10, sd = 3)) %>%  
@@ -56,6 +75,10 @@ datafile <- expand_grid(
                                yes = "Taxon_2", no = taxon)) %>%
   # Change into a typical "presence only" survey
   dplyr::filter(count != 0) 
+
+# Export this file locally
+write.csv(x = datafile, na = '', row.names = F,
+          file.path("data", "simulated-taxa-df.csv"))
 
 # Define the primary key over which taxa counts should be summed
 pKey <- c("year", "plot", "taxon")
@@ -69,7 +92,7 @@ totals <- datafile %>%
 # 2. Expand the data to include zero counts for taxa not hit in a particular year but otherwise present
 zeros <- totals %>%
   # Create all combinations of 'taxon', 'plot', and 'year'
-  expand(nesting(taxon, plot), year) 
+  tidyr::expand(tidyr::nesting(taxon, plot), year) 
 
 withzeros <- totals %>%
   dplyr::select(plot, taxon) %>%
@@ -90,52 +113,23 @@ withzeros <- totals %>%
 withzeros <- withzeros %>%
   dplyr::arrange(taxon)
 
-# Export locally
-# write.csv(x = withzeros, row.names = F, na = '', file = file.path("data", "spp_abun.csv"))
+# Export this file locally
+write.csv(x = withzeros, na = '', row.names = F,
+          file.path("data", "simulated-taxa-df_with-zeros.csv"))
 
 ## ------------------------------------ ##
-# Graph Code ----
+# Download Green Lakes Streamflow Data ----
 ## ------------------------------------ ##
 
-# NOTE:
-## Once we can get the above code to work/produce a data file we should move this to the end of the visualization module
-## Until then, leaving code here for posterity/version control purposes
-## Should be easier to run/debug in script format
+# This code demo uses the following dataset:
+## Caine, N., J. Morse, and Niwot Ridge LTER. 2024. Streamflow for Green Lake 4, 1981 - ongoing. ver 18. Environmental Data Initiative. https://doi.org/10.6073/pasta/d9a922df7747ce82ee1dd5c22026c07a
+## Link: https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-nwt.105.18
 
-# # 4. Create the plot of species counts over time with zeros filled in
-# pdf("counts_by_taxon_with_zeros.pdf", width = 9, height = 5) # Start a PDF output
-# 
-# # Loop over groups of taxa, plotting up to 6 taxa at a time
-# for (i in seq(1, length(unique(withzeros$taxon)), 6)) {
-#   
-#   df <- withzeros %>%
-#     # Select up to 6 taxa at a time
-#     dplyr::filter(taxon %in% unique(withzeros$taxon)[i:(i + 5)]) %>% 
-#     # Convert 'plot' to a factor for coloring
-#     dplyr::mutate(plot = factor(plot)) 
-#   
-#   # Determine the number of unique plots (colors)
-#   colourCount <- length(unique(df$plot)) 
-#   
-#   # Define a color palette
-#   getPalette <- grDevices::colorRampPalette(RColorBrewer::brewer.pal(n = 9, name = "Set1")) 
-#   
-#   # Generate the plot using ggplot
-#   print(
-#     ggplot(df, aes(x = year, y = n, group = plot, color = plot)) +
-#       geom_line() +
-#       # Facet by 'taxon', 2 rows of plots
-#       facet_wrap(~ taxon, nrow = 2) +
-#       # Apply custom color palette
-#       scale_color_manual(values = getPalette(colourCount)) 
-#   )
-# }
-# 
-# dev.off() # Close the PDF output
-# 
-# # 5. View your plots! Can you spot instance of pseudoturnover where certain taxa
-# # "disappear" in the same years that another taxon with similar morphology
-# # "appears"? Are levels of interannual fluctuations realistic for your system?
-# 
+# Read it in directly from EDI
+streamflow_df <- read.csv("https://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-nwt.105.18&entityid=3f04604569c43a28142630c784abd99d")
+
+# Export it locally for easier subsequent access
+write.csv(x = streamflow_df, na = '', row.names = F,
+          file = file.path("data", "green-lakes_streamflow.csv"))
 
 # End ----
