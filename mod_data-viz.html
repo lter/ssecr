@@ -1216,7 +1216,7 @@ Discussion: Graph Accessibility
  $ PAR        : num  1472 872 690 530 328 ...</code></pre>
 </div>
 </div>
-<p>Once we have the data, we can programmatically identify all columns that R knows to be numeric.</p>
+<p>Once we have the data file, we can programmatically identify all columns that R knows to be numeric.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-20"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-20-1"><a href="#annotated-cell-20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># determine which columns are numeric in green_biochem</span></span>
 <span id="annotated-cell-20-2"><a href="#annotated-cell-20-2" aria-hidden="true" tabindex="-1"></a>numcols <span class="ot">&lt;-</span> green_biochem <span class="sc">%&gt;%</span></span>
@@ -1243,7 +1243,7 @@ Discussion: Graph Accessibility
  [6] "pH"          "sat"         "secchi"      "std_conduct" "temp"       </code></pre>
 </div>
 </div>
-<p>Now that we have our data and a vector of numeric column names, we can generate a multi-page PDF of scatterplots where each page is specific to a numeric variable and each graph panel within a given page reflects a site-by-date combination.</p>
+<p>Now that we have our data and a vector of numeric column names, we can generate a multi-page PDF of scatterplots where each page is specific to a numeric variable and each graph panel within a given page reflects the time series at each site.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-21"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-21-1"><a href="#annotated-cell-21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Open PDF 'device'</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-21" data-target-annotation="1">1</button><span id="annotated-cell-21-2" class="code-annotation-target"><a href="#annotated-cell-21-2" aria-hidden="true" tabindex="-1"></a>grDevices<span class="sc">::</span><span class="fu">pdf</span>(<span class="at">file =</span> <span class="fu">file.path</span>(<span class="st">"qc_all_numeric.pdf"</span>))</span>
@@ -1311,21 +1311,22 @@ Discussion: Graph Accessibility
 <p>First, we’ll define units of sampling (year, plot and taxon) and ‘pad out’ the zeros. In this example, we have only added zeroes for taxa-plot-year combinations where that taxa is present in at least one year at a given plot. Again, this zero-padding is prerequisite to the visualization but not necessarily part of it so see ~lines 84-117 of the <a href="https://github.com/lter/ssecr/blob/main/scripts/prep-data_data-viz-demo.R">prep script</a> if that process is of interest.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-25"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-25-1"><a href="#annotated-cell-25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in data</span></span>
-<span id="annotated-cell-25-2"><a href="#annotated-cell-25-2" aria-hidden="true" tabindex="-1"></a>withzeros <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"simulated-taxa-df_with-zeros.csv"</span>))</span>
-<span id="annotated-cell-25-3"><a href="#annotated-cell-25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-25-4"><a href="#annotated-cell-25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check structure</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="1">1</button><span id="annotated-cell-25-5" class="code-annotation-target"><a href="#annotated-cell-25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(withzeros)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-25-2"><a href="#annotated-cell-25-2" aria-hidden="true" tabindex="-1"></a>withzeros <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"simulated-taxa-df_with-zeros.csv"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-25-3"><a href="#annotated-cell-25-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">plot =</span> <span class="fu">factor</span>(plot))</span>
+<span id="annotated-cell-25-4"><a href="#annotated-cell-25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-25-5"><a href="#annotated-cell-25-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check structure</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="1">1</button><span id="annotated-cell-25-6" class="code-annotation-target"><a href="#annotated-cell-25-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(withzeros)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-25" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-25" data-code-lines="5" data-code-annotation="1">Notice how there are more rows than the preceding data object and several new zeroes in the first few rows?</span>
+<span data-code-cell="annotated-cell-25" data-code-lines="6" data-code-annotation="1">Notice how there are more rows than the preceding data object and several new zeroes in the first few rows?</span>
 </dd>
 </dl>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   1100 obs. of  4 variables:
- $ plot : int  1 2 2 3 4 5 5 6 7 8 ...
+ $ plot : Factor w/ 10 levels "1","2","3","4",..: 1 2 2 3 4 5 5 6 7 8 ...
  $ taxon: chr  "Taxon_A" "Taxon_A" "Taxon_A" "Taxon_A" ...
  $ year : int  2014 2014 2019 2014 2014 2014 2019 2014 2014 2013 ...
  $ n    : int  0 0 0 0 0 0 0 0 0 0 ...</code></pre>
@@ -1335,7 +1336,7 @@ Discussion: Graph Accessibility
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-26"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-26-1"><a href="#annotated-cell-26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the plot of species counts over time (with zeros filled in)</span></span>
 <span id="annotated-cell-26-2"><a href="#annotated-cell-26-2" aria-hidden="true" tabindex="-1"></a>myplot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(withzeros, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> n, <span class="at">group =</span> plot, <span class="at">color =</span> plot)) <span class="sc">+</span></span>
-<span id="annotated-cell-26-3"><a href="#annotated-cell-26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="annotated-cell-26-3"><a href="#annotated-cell-26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
 <span id="annotated-cell-26-4"><a href="#annotated-cell-26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> scales<span class="sc">::</span><span class="fu">pretty_breaks</span>()) <span class="sc">+</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="1">1</button><span id="annotated-cell-26-5" class="code-annotation-target"><a href="#annotated-cell-26-5" aria-hidden="true" tabindex="-1"></a>  ggforce<span class="sc">::</span><span class="fu">facet_wrap_paginate</span>(<span class="sc">~</span> taxon, <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
 <span id="annotated-cell-26-6"><a href="#annotated-cell-26-6" aria-hidden="true" tabindex="-1"></a></span>
@@ -1465,7 +1466,7 @@ Discussion: Graph Accessibility
 </dl>
 </div>
 </div>
-<p>The resulting figure should look something like this:</p>
+<p>The first page of the resulting figure should look something like this:</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
