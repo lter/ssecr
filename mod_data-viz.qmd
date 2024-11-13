@@ -590,7 +590,7 @@ str(green_biochem)
 ```
 1. Note that you could also read in this data directly from EDI. See ~line 31 of [this script](https://github.com/lter/ssecr/blob/main/scripts/prep-data_data-viz-demo.R) for a syntax example
 
-Once we have the data, we can programmatically identify all columns that R knows to be numeric.
+Once we have the data file, we can programmatically identify all columns that R knows to be numeric.
 
 ```{r demo_all-num-vars_numcols}
 # determine which columns are numeric in green_biochem
@@ -605,7 +605,7 @@ numcols # <2>
 1. The tilde (`~`) is allowing us to evaluate each column against this conditional
 2. You may notice that these columns all have `"num"` next to them in their structure check. The scripted method is _dramatically_ faster and more reproducible than writing these names down by hand
 
-Now that we have our data and a vector of numeric column names, we can generate a multi-page PDF of scatterplots where each page is specific to a numeric variable and each graph panel within a given page reflects a site-by-date combination.
+Now that we have our data and a vector of numeric column names, we can generate a multi-page PDF of scatterplots where each page is specific to a numeric variable and each graph panel within a given page reflects the time series at each site.
 
 ```{r demo_all-num-vars_viz-code-fake}
 #| eval: false
@@ -670,7 +670,8 @@ First, we'll define units of sampling (year, plot and taxon) and 'pad out' the z
 
 ```{r  demo_tax-consist_data-2}
 # Read in data
-withzeros <- read.csv(file.path("data", "simulated-taxa-df_with-zeros.csv"))
+withzeros <- read.csv(file.path("data", "simulated-taxa-df_with-zeros.csv")) %>% 
+  dplyr::mutate(plot = factor(plot))
 
 # Check structure
 str(withzeros) # <1>
@@ -684,7 +685,7 @@ Now that we have the data in the format we need, we'll create a plot of species 
 
 # Create the plot of species counts over time (with zeros filled in)
 myplot <- ggplot(withzeros, aes(x = year, y = n, group = plot, color = plot)) +
-  geom_point() +
+  geom_line() +
   scale_x_continuous(breaks = scales::pretty_breaks()) +
   ggforce::facet_wrap_paginate(~ taxon, nrow = 2, ncol = 2) # <1>
 
@@ -718,7 +719,7 @@ The first page of the resulting plot should look something like this:
 
 # Make multi-page graph
 myplot <- ggplot(withzeros, aes(x = year, y = n, group = plot, color = plot)) +
-  geom_point() +
+  geom_line() +
   scale_x_continuous(breaks = scales::pretty_breaks()) +
   ggforce::facet_wrap_paginate(~ taxon, nrow = 2, ncol = 2)
 
@@ -793,7 +794,7 @@ dev.off()
 1. Add points based on the year
 2. Adding lines based on the average
 
-The resulting figure should look something like this:
+The first page of the resulting figure should look something like this:
 
 ```{r demo_seasons_viz-code-real}
 #| fig-align: center
