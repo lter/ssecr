@@ -71,8 +71,8 @@ datafile <- tidyr::expand_grid(
   dplyr::mutate(count = random_walk(n = length(year), start = 10, sd = 3)) %>%  
   dplyr::ungroup() %>%
   # make pseudoturnover
-  dplyr::mutate(taxon = ifelse(test = (taxon == "Taxon_1" & year == 2014),
-                               yes = "Taxon_2", no = taxon)) %>%
+  dplyr::mutate(taxon = ifelse(test = (taxon == "Taxon_A" & year == 2014),
+                               yes = "Taxon_B", no = taxon)) %>%
   # Change into a typical "presence only" survey
   dplyr::filter(count != 0) 
 

@@ -558,7 +558,7 @@ Some other factors you might consider _regardless of where the graphs will be em
 
 After harmonizing your data, you'll want to generate one last set of 'sanity check' plots to make sure (1) you have interpreted the metadata correctly (2) you haven't made any obvious errors in the harmonization and (3) your data are ready for analysis. Nothing is less fun than finding out your analytical results are due to an error in the underlying data.
 
-For these plots, printing out to multi-page PDFs can be helpful instead of trying to scroll through many pages on the screen.
+The following is a multi-part code demonstration of three common post-harmonization uses of visualization. In addition to being useful graphs, there is also example code on how to export multiple panels of graphs into separate pages of a PDF which can be really helpful when reviewing exploratory visualizations as a group (without needing to scroll through a ton of separate graph files).
 
 ### Additional Needed Packages
 
