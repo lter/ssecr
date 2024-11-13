@@ -554,6 +554,264 @@ Some other factors you might consider _regardless of where the graphs will be em
 
 :::
 
+## Code Demo: Post-Harmonization Visualization
+
+After harmonizing your data, you'll want to generate one last set of 'sanity check' plots to make sure (1) you have interpreted the metadata correctly (2) you haven't made any obvious errors in the harmonization and (3) your data are ready for analysis. Nothing is less fun than finding out your analytical results are due to an error in the underlying data.
+
+For these plots, printing out to multi-page PDFs can be helpful instead of trying to scroll through many pages on the screen.
+
+### Additional Needed Packages
+
+If you'd like to follow along with the code chunks included throughout this demo, you'll need to install the following packages:
+
+```{r load-pkgs}
+#| message: false
+
+## install.packages("librarian")
+librarian::shelf(tidyverse, scales, ggforce, slider)
+```
+
+The three sets of plots below encompass many of the most common data structures
+we have encountered types in ecological synthesis projects. These include 
+quantitative measurements collected over many sites, taxonomic data collected
+over many sites, and seasonal time series data.
+
+::: panel-tabset
+### Graph _All_ Numeric Variables
+
+It can be helpful to visualize all numeric variables in your dataset, grouped by site (or dataset source) to check that the data have been homogenized correctly. As an example, we'll use a 2019 dataset on lake water quality, chemistry, and zooplankton community composition near the [Niwot Ridge](https://nwt.lternet.edu/) LTER. The dataset is a survey of 16 high alpine lakes and has structure similar to one that might be included in a multi-site synthesis. For more information on these data, check out [the data package on EDI](https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-nwt.12.1). 
+
+```{r demo_all-num-vars_data}
+# Read in data
+green_biochem <- read.csv(file = file.path("data", "green-lakes_water-chem-zooplank.csv")) # <1>
+
+# Check structure
+str(green_biochem)
+```
+1. Note that you could also read in this data directly from EDI. See ~line 31 of [this script](https://github.com/lter/ssecr/blob/main/scripts/prep-data_data-viz-demo.R) for a syntax example
+
+Once we have the data, we can programmatically identify all columns that R knows to be numeric.
+
+```{r demo_all-num-vars_numcols}
+# determine which columns are numeric in green_biochem
+numcols <- green_biochem %>%
+  dplyr::select(dplyr::where(~ is.numeric(.x) == TRUE)) %>% # <1>
+  names(.) %>% 
+  sort(.)
+
+# Check that out
+numcols # <2>
+```
+1. The tilde (`~`) is allowing us to evaluate each column against this conditional
+2. You may notice that these columns all have `"num"` next to them in their structure check. The scripted method is _dramatically_ faster and more reproducible than writing these names down by hand
+
+Now that we have our data and a vector of numeric column names, we can generate a multi-page PDF of scatterplots where each page is specific to a numeric variable and each graph panel within a given page reflects a site-by-date combination.
+
+```{r demo_all-num-vars_viz-code-fake}
+#| eval: false
+
+# Open PDF 'device'
+grDevices::pdf(file = file.path("qc_all_numeric.pdf")) # <1>
+
+# Loop across numeric variables
+for (var in numcols) {
+  
+  # Create a set of graphs for onevariable
+  myplot <- ggplot(green_biochem, aes(x = date, y = .data[[var]])) +
+    geom_point(alpha = 0.5) + # <2>
+    facet_wrap(. ~ local_site)
+  
+  # Print that variable
+  print(myplot)
+}
+
+# Close the device
+dev.off() # <3>
+```
+1. This function tells R that the following code should be saved as a PDF
+2. A scatterplot may not be the best tool for your data; adjust appropriately
+3. This function (when used after a 'device' function like `grDevices::pdf`) tells R when to stop adding things to the PDF and actually save it
+
+The first page of the resulting plot should look something like the following, with each page having the same content but a different variable on the Y axis.
+
+```{r demo_all-num-vars_viz-code-real}
+#| fig-align: center
+#| fig-width: 8
+#| fig-height: 8
+#| echo: false
+#| warning: false
+
+# Grab just one variable
+var <- sort(numcols)[1]
+
+# Graph it
+ggplot(green_biochem, aes(x = date, y = .data[[var]])) +
+  geom_point(alpha = 0.5) +
+  facet_wrap(~local_site, ncol = 3)
+```
+
+### Taxonomic Consistency
+
+Taxonomic time series can be tricky to work with due to inconsistencies in nomenclature and/or sampling effort. In particular, 'pseudoturnover' where one species 'disappears' with or without the simultaneous 'appearance' of another taxa can be indicative of either true extinctions, or changes in species names, or changes in methodology that cause particular taxa not to be detected. A second complication is that taxonomic data are often archived as 'presence-only' so it is necessary to _infer_ the absences based on sampling methodology and add them to your dataset before analysis.
+
+While there are doubtless many field-collected datasets that have this issue, we've elected to simulate data so that we can emphasize the visualization elements of this problem while avoiding the "noise" typical of real data. This simulation is not necessarily vital to the visualization so we've left it out of the following demo. _However_, if that is of interest to you, see [this script](https://github.com/lter/ssecr/blob/main/scripts/prep-data_data-viz-demo.R)--in particular \~line 41 through \~80.
+
+A workflow for establishing taxonomic consistency and plotting the results is included below.
+
+```{r demo_tax-consist_data}
+# Read in data
+taxa_df <- read.csv(file.path("data", "simulated-taxa-df.csv"))
+
+# Check structure
+str(taxa_df)
+```
+
+First, we'll define units of sampling (year, plot and taxon) and 'pad out' the zeros. In this example, we have only added zeroes for taxa-plot-year combinations where that taxa is present in at least one year at a given plot. Again, this zero-padding is prerequisite to the visualization but not necessarily part of it so see \~lines 84-117 of the [prep script](https://github.com/lter/ssecr/blob/main/scripts/prep-data_data-viz-demo.R) if that process is of interest.
+
+```{r  demo_tax-consist_data-2}
+# Read in data
+withzeros <- read.csv(file.path("data", "simulated-taxa-df_with-zeros.csv"))
+
+# Check structure
+str(withzeros) # <1>
+```
+1. Notice how there are more rows than the preceding data object and several new zeroes in the first few rows?
+
+Now that we have the data in the format we need, we'll create a plot of species counts over time with zeros filled in. Because there are many plots and it is difficult to see so many panels on the same page, we'll use the `facet_wrap_paginate` function from the `ggforce` package to create a multi-page PDF output.
+
+```{r demo_tax-consist_viz-code-fake}
+#| eval: false
+
+# Create the plot of species counts over time (with zeros filled in)
+myplot <- ggplot(withzeros, aes(x = year, y = n, group = plot, color = plot)) +
+  geom_point() +
+  scale_x_continuous(breaks = scales::pretty_breaks()) +
+  ggforce::facet_wrap_paginate(~ taxon, nrow = 2, ncol = 2) # <1>
+
+# Start the PDF output
+grDevices::pdf(file.path("counts_by_taxon_with_zeros.pdf"),
+               width = 9, height = 5)
+
+# Loop across pages (defined by `ggforce::facet_wrap_paginate`)
+for (i in seq_along(ggforce::n_pages(myplot))) {
+  
+  page_plot <- myplot + 
+      ggforce::facet_wrap_paginate(~taxon, page = i, 
+                                   nrow = 2, ncol = 2)
+  
+  print(page_plot)
+}
+
+# Close the PDF output
+dev.off()
+```
+1. This allows a faceted graph to spread across more than one page. See `?ggforce::facet_wrap_paginate` for details
+
+The first page of the resulting plot should look something like this:
+
+```{r demo_tax-consist_viz-code-real}
+#| fig-align: center
+#| fig-width: 7
+#| fig-height: 5
+#| message: false
+#| echo: false
+
+# Make multi-page graph
+myplot <- ggplot(withzeros, aes(x = year, y = n, group = plot, color = plot)) +
+  geom_point() +
+  scale_x_continuous(breaks = scales::pretty_breaks()) +
+  ggforce::facet_wrap_paginate(~ taxon, nrow = 2, ncol = 2)
+
+# Check out just the first page
+myplot +
+  ggforce::facet_wrap_paginate(~ taxon, page = 1,
+                               nrow = 2, ncol = 2)
+```
+
+Notice how "Taxon_A" is absent from all plots in 2014 whereas "Taxon_B" has extremely high counts in the same year. Often this can signify inconsistent use of taxonomic names over time.
+
+### Seasonal Time Series
+
+For time series, intra-annual variation can often make data issues difficult to spot. In these cases, it can be helpful to plot each year onto the same figure and compare trends across study years.
+
+As an example, we'll use a 2024 dataset on streamflow near the [Niwot Ridge](https://nwt.lternet.edu/) LTER. The dataset is a 22 year time-series of daily streamflow. For more information on these data, check out [the data package on EDI](https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-nwt.105.18). 
+
+```{r demo_seasons_data}
+# Read data
+green_streamflow <- read.csv(file.path("data", "green-lakes_streamflow.csv")) # <1>
+
+# Check structure
+str(green_streamflow)
+```
+1. Note again that you could also read in this data directly from EDI. See ~line 129 of [this script](https://github.com/lter/ssecr/blob/main/scripts/prep-data_data-viz-demo.R) for a syntax example
+
+Let's now calculate a moving average encompassing the 5 values before and after each focal value.
+
+```{r demo_seasons_wrangle}
+#| message: false
+
+# Do necessary wrangling
+stream_data <- green_streamflow %>%
+  # Calculate moving average for each numeric variable
+  dplyr::mutate(dplyr::across(.cols = dplyr::all_of(c("discharge", "temperature")),
+                              .fns = ~ slider::slide_dbl(.x = .x, .f = mean,
+                                                         .before = 5, .after = 5),
+                              .names = "{.col}_move.avg" )) %>%
+  # Handle date format issues
+  dplyr::mutate(yday = lubridate::yday(date),
+                year = lubridate::year(date))
+
+# Check the structure of that
+str(stream_data)
+```
+
+Plot seasonal timeseries of each numeric variable as points with the moving
+average included as lines
+
+```{r demo_seasons_viz-code-fake}
+#| eval: false
+
+# Start PDF output
+grDevices::pdf(file = file.path("qc_all_numeric_seasonal.pdf"))
+
+# Loop across variables
+for (var in c("discharge", "temperature")) {
+  
+  # Make the graph
+  myplot <- ggplot(stream_data, aes(x = yday, group = year, color = year)) +
+    geom_point(aes(y = .data[[var]])) + # <1>
+    geom_line(aes(y = .data[[paste0(var, "_move.avg")]])) + # <2>
+    viridis::scale_color_viridis()
+  
+  # Print it
+  print(myplot)
+}
+
+# End PDF creation
+dev.off()
+```
+1. Add points based on the year
+2. Adding lines based on the average
+
+The resulting figure should look something like this:
+
+```{r demo_seasons_viz-code-real}
+#| fig-align: center
+#| fig-width: 8
+#| fig-height: 8
+#| echo: false
+#| warning: false
+
+# Print the first graph
+ggplot(stream_data, aes(x = yday, group = year, color = year)) +
+  geom_point(aes(y = .data[["discharge"]])) +
+  geom_line(aes(y = .data[["discharge_move.avg"]])) +
+  viridis::scale_color_viridis()
+```
+
+One of these years is not like the others...
+:::
+
 ## Multivariate Visualization
 
 If you are working with multivariate data (i.e., data where multiple columns are all response variables collectively) you may need to use visualization methods unique to that data structure. For more information, check out the [bonus multivariate visualization module](https://lter.github.io/ssecr/mod_multivar-viz.html).
