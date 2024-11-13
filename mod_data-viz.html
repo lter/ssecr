@@ -1170,7 +1170,7 @@ Discussion: Graph Accessibility
 <section id="code-demo-post-harmonization-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="code-demo-post-harmonization-visualization">Code Demo: Post-Harmonization Visualization</h2>
 <p>After harmonizing your data, you’ll want to generate one last set of ‘sanity check’ plots to make sure (1) you have interpreted the metadata correctly (2) you haven’t made any obvious errors in the harmonization and (3) your data are ready for analysis. Nothing is less fun than finding out your analytical results are due to an error in the underlying data.</p>
-<p>For these plots, printing out to multi-page PDFs can be helpful instead of trying to scroll through many pages on the screen.</p>
+<p>The following is a multi-part code demonstration of three common post-harmonization uses of visualization. In addition to being useful graphs, there is also example code on how to export multiple panels of graphs into separate pages of a PDF which can be really helpful when reviewing exploratory visualizations as a group (without needing to scroll through a ton of separate graph files).</p>
 <section id="additional-needed-packages" class="level3">
 <h3 class="anchored" data-anchor-id="additional-needed-packages">Additional Needed Packages</h3>
 <p>If you’d like to follow along with the code chunks included throughout this demo, you’ll need to install the following packages:</p>
@@ -1325,10 +1325,10 @@ Discussion: Graph Accessibility
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   1100 obs. of  4 variables:
- $ plot : int  2 5 8 1 2 3 4 5 6 7 ...
+ $ plot : int  1 2 2 3 4 5 5 6 7 8 ...
  $ taxon: chr  "Taxon_A" "Taxon_A" "Taxon_A" "Taxon_A" ...
- $ year : int  2019 2019 2013 2010 2010 2010 2010 2010 2010 2010 ...
- $ n    : int  0 0 0 8 8 8 13 6 13 13 ...</code></pre>
+ $ year : int  2014 2014 2019 2014 2014 2014 2019 2014 2014 2013 ...
+ $ n    : int  0 0 0 0 0 0 0 0 0 0 ...</code></pre>
 </div>
 </div>
 <p>Now that we have the data in the format we need, we’ll create a plot of species counts over time with zeros filled in. Because there are many plots and it is difficult to see so many panels on the same page, we’ll use the <code>facet_wrap_paginate</code> function from the <code>ggforce</code> package to create a multi-page PDF output.</p>
@@ -1475,7 +1475,7 @@ Discussion: Graph Accessibility
 </div>
 </div>
 </div>
-<p>One of these years is not like the others….</p>
+<p>One of these years is not like the others…</p>
 </div>
 </div>
 </div>
