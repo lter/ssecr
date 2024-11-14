@@ -1253,7 +1253,7 @@ Discussion: Graph Accessibility
 <span id="annotated-cell-21-4"><a href="#annotated-cell-21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across numeric variables</span></span>
 <span id="annotated-cell-21-5"><a href="#annotated-cell-21-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (var <span class="cf">in</span> numcols) {</span>
 <span id="annotated-cell-21-6"><a href="#annotated-cell-21-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-21-7"><a href="#annotated-cell-21-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a set of graphs for onevariable</span></span>
+<span id="annotated-cell-21-7"><a href="#annotated-cell-21-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a set of graphs for one variable</span></span>
 <span id="annotated-cell-21-8"><a href="#annotated-cell-21-8" aria-hidden="true" tabindex="-1"></a>  myplot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(green_biochem, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> .data[[var]])) <span class="sc">+</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-21" data-target-annotation="2">2</button><span id="annotated-cell-21-9" class="code-annotation-target"><a href="#annotated-cell-21-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
 <span id="annotated-cell-21-10"><a href="#annotated-cell-21-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(. <span class="sc">~</span> local_site)</span>
