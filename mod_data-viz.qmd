@@ -2,7 +2,7 @@
 title: "Data Visualization & Exploration"
 code-annotations: hover
 ---
- 
+
 ## Overview
 
 Data visualization is a fundamental part of working with data. Visualization can be only used in the final stages of a project to make figures for publication but it can also be hugely valuable for quality control and hypothesis development processes. This module focuses on the fundamentals of graph creation in an effort to empower you to apply those methods in the various contexts where you might find visualization to be helpful.
@@ -618,7 +618,7 @@ grDevices::pdf(file = file.path("qc_all_numeric.pdf")) # <1>
 # Loop across numeric variables
 for (var in numcols) {
   
-  # Create a set of graphs for onevariable
+  # Create a set of graphs for one variable
   myplot <- ggplot(green_biochem, aes(x = date, y = .data[[var]])) +
     geom_point(alpha = 0.5) + # <2>
     facet_wrap(. ~ local_site)
