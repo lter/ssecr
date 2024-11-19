@@ -23,6 +23,7 @@ $black: #08090A;
 // Fonts
 $font-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 // Base document colors
 $navbar-bg: $lter-green-1; // navbar
@@ -32,8 +33,8 @@ $sidebar-fg: $cream; // sidebar foreground elements
 $navbar-hl: $lter-green-3; // highlight color when on a page
 $body-bg: $cream; // page background
 $body-color: $black; // page text
-$footer-bg: $lter-green-1; // footer
-$footer-fg: $cream; // footer text
+$footer-bg: $lter-blue-1; // footer
+$footer-fg: $gray-4; // footer text
 $link-color: $lter-blue-2; // hyperlinks
 
 // Code text
