@@ -854,9 +854,9 @@
   {
     "objectID": "mod_project-mgmt.html",
     "href": "mod_project-mgmt.html",
-    "title": "Project Management & Logic Models",
+    "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "Team science works best when all participants know when and how they can contribute. Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project. The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort. Developing an explicit logic model as a team helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis. It also helps clarify all of the information that will be needed and the appropriate order of steps.",
+    "text": "aration required— title: “Project Management & Logic Models” editor: markdown: wrap: sentence",
     "crumbs": [
       "Phase II -- Plan",
       "Project Management"
@@ -865,9 +865,9 @@
   {
     "objectID": "mod_project-mgmt.html#overview",
     "href": "mod_project-mgmt.html#overview",
-    "title": "Project Management & Logic Models",
-    "section": "",
-    "text": "Team science works best when all participants know when and how they can contribute. Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project. The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort. Developing an explicit logic model as a team helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis. It also helps clarify all of the information that will be needed and the appropriate order of steps.",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "Overview",
+    "text": "Overview\nTeam science works best when all participants know when and how they can contribute. Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project. The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort. Developing an explicit logic model as a team helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis. It also helps clarify all of the information that will be needed and the appropriate order of steps.",
     "crumbs": [
       "Phase II -- Plan",
       "Project Management"
@@ -876,7 +876,7 @@
   {
     "objectID": "mod_project-mgmt.html#learning-objectives",
     "href": "mod_project-mgmt.html#learning-objectives",
-    "title": "Project Management & Logic Models",
+    "title": "Synthesis Skills for Early Career Researchers",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nArticulate key principles of project management\nDevelop (or refine) the project management framework for your team project\nDefine common approaches for logic models\nIdentify and make explicit internal logical leaps",
     "crumbs": [
@@ -887,9 +887,9 @@
   {
     "objectID": "mod_project-mgmt.html#preparation",
     "href": "mod_project-mgmt.html#preparation",
-    "title": "Project Management & Logic Models",
+    "title": "Synthesis Skills for Early Career Researchers",
     "section": "Preparation",
-    "text": "Preparation\nTBD (To Be Determined)",
+    "text": "Preparation\nNo specific preparation required.",
     "crumbs": [
       "Phase II -- Plan",
       "Project Management"
@@ -898,7 +898,7 @@
   {
     "objectID": "mod_project-mgmt.html#networking-session",
     "href": "mod_project-mgmt.html#networking-session",
-    "title": "Project Management & Logic Models",
+    "title": "Synthesis Skills for Early Career Researchers",
     "section": "Networking Session",
     "text": "Networking Session\n\n2024 Guests\n\n\nThe Silica Exports synthesis working group faced a number of coordination challenges – including work context (federal agency and academia), widely dispersed geographic locations (participants and data from 6 continents), and multiple data repositories. Their approach to project management helped them to overcome these obstacles and assemble an exceptional database that is broadly available and a set of novel analyses.\n\nKathi Jo Jankowski, Research Ecologist, Upper Midwest Environmental Sciences Center, U.S. Geological Survey",
     "crumbs": [
@@ -909,7 +909,7 @@
   {
     "objectID": "mod_project-mgmt.html#module-content",
     "href": "mod_project-mgmt.html#module-content",
-    "title": "Project Management & Logic Models",
+    "title": "Synthesis Skills for Early Career Researchers",
     "section": "Module Content",
     "text": "Module Content\n\nWhat is project management?\nThere are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability. You’ve probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc. There are whole industries devoted to training project managers and developing apps to support them.\nThe trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don’t require a full-time project manager to implement.\n\nSome common elements of project management schemes\n\n\n\n\n\n\n\nPM Activity\nIndustry Outcome\nScience Outcome\n\n\n\n\nBuild a logical sequence of steps\nEnsure needed resources/people tools are available when needed\nKnow which skills are needed when; know what form the output of each script/analysis needs to take\n\n\nIdentify dependencies\nAvoid supply chain lags\nKnow what data you need and when you need them\n\n\nClarify responsibilities/accountabilities\nDocument productivity and responsibility\nAvoid duplication of effort; keep the project moving; support authorship/credit agreements\n\n\nIdentify and mitigate risks\nKnow when to abort or revise project goals\nAssess threats to project success early and make a plan B\n\n\n\n\n\nHow to Start\nLike outlining a paper, there are a few basic steps to developing a solid project management plan. And it’s easy to think you can skip over the first steps because they seem so obvious. The trouble is, they may be obvious to each team member in different ways. Taking the time to make sure you all see them the same way can save worlds of headache down the road.\n\nDefine the project\nAgree on the goal and the timeline\nIf the timeline is determined externally (as for SSECR or for most grants), you’ll need to start with the timeline (possibly budget) and scope the project to fit.\nDevelop a list of the steps needed to get from where you are to where you need to be.\nPlace the steps in order and define the inputs and outputs of each step.\nIdentify the people responsible for each step and an approximate timeline for its completion.\nIdentify time points for check-in and re-evaluation\n\nHonestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful.\n\n\n\n\n\n\nSmall Group Discussion: Project Management “Fails”\n\n\n\nAnyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment…\nPart 1 (~3 minutes)\nReflect silently on one of your own project management “fails”\n\nWhat went wrong?\nHow could planning have prevented or improved the situation?\n\nPart 2 (~10 minutes)\nBreak into random groups or 5-6\n\nShare your project management “fails”\nIf time allows, consider what aspects of planning are most likely to be skipped or overlooked\n\n\n\n\n\nDefining the Project\nFor defining the project and agreeing on the goals, mind maps and logic models (or theories of change in some disciplines) are useful individual or group exercises. Tools for developing them can be as simple as pen and paper, basic drawing apps, a zoom whiteboard, or online collaboration and project planning tools such as Miro, Mural, and FigJam. MindMaps offer a lightly-structured way of exploring a focus area. The graphical approach helps to surface unexpected connections and reveal gaps in understanding.\n\n\n\nFigure 1. Mind Map Example\n\n\nThe mind map will likely surface many relevant and un-answered questions, but time is limited. You’ll need to choose one on which to focus. One way to prioritize them is to place them on a two-by-two matrix of payoff v. feasibility. The most important payoff for a particular team may be scientific novelty, practical importance, or whether it’s a fun and engaging question for the group. Often, the most interesting questions will also require the most effort and the group will just need to determine what trade-offs they are willing to accept. But sometimes, a question emerges that is both interesting and feasible–perhaps because a new source of data has just become available or simply because no one saw the question from that angle before.\n\n\n\nFigure 2. Feasibility Matrix Example\n\n\n\n\nLogic Models\nLogic models come into play once the team has settled on a question and specific set of processes to explore or test. A logic model is essentially a graphical representation of your resources, plans and goals. While the framework comes from implementation research, often in the fields of public health or education research, it can be really useful to apply a similar framework to collaborations in the natural sciences.\nThe process of building an explicit logic model as a team can quickly reveal mismatches in team members’ mental models and uncover hidden assumptions. Making those (often disciplinary) differences visible early can mitigate some of the biggest risks of interdisciplinary research and also offer a way into the most novel insights. A well-structured logic model can also be a touchstone to return to throughout the life of your project, keeping the team on-track and avoiding mission creep.\nThe included description of logic models and their application to collaborations comes from trainings developed at NCEAS for the Delta Stewardship Council (Jones et al. 2021)\n\nOnce your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities. Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities. As with other visualizations, there are lots of pretty tools for constructing a Gantt chart, but it’s getting the underlying logic right that really matters.\n\nBefore diving into any specific tool, start by making a list of your goal and the steps necessary to get there.\nPlace them into an outline in the order they must proceed.\nSome steps cannot start until others are finished, while others can proceed simultaneously.\n\nSequential steps get a new number, while steps that can be done in parallel get the same number with different letters.\n\nAttach an estimated time frame to each step and identify a responsible team member (tentative at this point).\nArrange the steps in colored bars along a horizontal timeline.\nUse the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.\n\n\n\n\nFigure 2. Gantt Chart Example\n\n\n\n\n\n\n\n\nProject Group Discussion: Develop a project timeline/Gantt chart\n\n\n\nA Gantt chart Google sheet template is available here. Copy it into your project folder.\n\nBreakout into project groups.\nThe template has two tabs. The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead. _ The “basic” tab will update the graph when you update task dates.\nWorking backwards from the end of May deadline, astimate how long each task will take.\nAdd or remove steps as needed for your proposed project.\nChoose task leads (they should expect to draw on other group members for assistance and feedback)\nDecide on a plan for checking in and updating the Gantt chart.\n\nAfter 30 minutes, return to whole group and discuss any insights or innovations.",
     "crumbs": [
@@ -920,7 +920,7 @@
   {
     "objectID": "mod_project-mgmt.html#additional-resources",
     "href": "mod_project-mgmt.html#additional-resources",
-    "title": "Project Management & Logic Models",
+    "title": "Synthesis Skills for Early Career Researchers",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Issues. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Milestones. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Projects. 2024.\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Logic Models and Synthesis Development. 2021.\nNCEAS Project Management Workshop for new synthesis working groups\n\n\n\nWeb-based Project Management Tools\n\nAsana. Task and project management. Free up to 10 members.\nWrike. Tasks and project management. Capable for individuals. $10 pp per month for teams.\nClickUp. Capable free plan. Less intuitive to set up.\nZoHo Projects. Task and project management. Up to 5 users and 3 projects on the free plan",
     "crumbs": [
