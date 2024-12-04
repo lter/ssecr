@@ -1,4 +1,4 @@
----
+aration required---
 title: "Project Management & Logic Models"
 editor: 
   markdown: 
@@ -24,7 +24,7 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+No specific preparation required.
 
 ## Networking Session
 
