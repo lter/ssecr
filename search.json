@@ -675,7 +675,7 @@
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
+      "Phase II -- Plan",
       "Supporting D.E.C. Thinking"
     ]
   },
@@ -686,7 +686,7 @@
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase III -- Execute",
+      "Phase II -- Plan",
       "Supporting D.E.C. Thinking"
     ]
   },
@@ -697,7 +697,7 @@
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDevelop strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting",
     "crumbs": [
-      "Phase III -- Execute",
+      "Phase II -- Plan",
       "Supporting D.E.C. Thinking"
     ]
   },
@@ -708,7 +708,7 @@
     "section": "Preparation",
     "text": "Preparation\nTBD (To Be Determined)",
     "crumbs": [
-      "Phase III -- Execute",
+      "Phase II -- Plan",
       "Supporting D.E.C. Thinking"
     ]
   },
@@ -719,7 +719,7 @@
     "section": "Module Content",
     "text": "Module Content",
     "crumbs": [
-      "Phase III -- Execute",
+      "Phase II -- Plan",
       "Supporting D.E.C. Thinking"
     ]
   },
@@ -730,7 +730,7 @@
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\nKaner, S. Facilitator’s Guide to Participatory Decision-Making. 2014.\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nLiberating Structures: Including and Uleashing Everyone",
     "crumbs": [
-      "Phase III -- Execute",
+      "Phase II -- Plan",
       "Supporting D.E.C. Thinking"
     ]
   },
@@ -1338,7 +1338,7 @@
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1349,7 +1349,7 @@
     "section": "",
     "text": "Under Construction, stay tuned!",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1360,7 +1360,7 @@
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDefine elements of (in)effective communication\nIdentify relevant audiences for a particular work\nDetermine audience motivations and interest\nTranslate communication into various formats based on efficacy with target group",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1371,7 +1371,7 @@
     "section": "Preparation",
     "text": "Preparation\nTBD (To Be Determined)",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1382,7 +1382,7 @@
     "section": "Effective Communication",
     "text": "Effective Communication",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1393,7 +1393,7 @@
     "section": "Publishing Code, Data, and Results",
     "text": "Publishing Code, Data, and Results",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1404,7 +1404,7 @@
     "section": "Data Management Plans",
     "text": "Data Management Plans",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1415,7 +1415,7 @@
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Communicating Your Science. 2023.\n\n\n\nWebsites\n\nCOMPASS. The Message Box",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Communicating Findings"
     ]
   },
@@ -1635,7 +1635,7 @@
     "section": "",
     "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. “Computational notebooks” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills.\nThis module focuses on the structure and content of these notebooks from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1646,7 +1646,7 @@
     "section": "",
     "text": "At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested milestones page for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. “Computational notebooks” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage both your technical skills and your scientific communication skills.\nThis module focuses on the structure and content of these notebooks from a primarily technical lens, so please consult the communicating findings module for the team science perspective.",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1657,7 +1657,7 @@
     "section": "Learning Objectives",
     "text": "Learning Objectives\nAfter completing this module you will be able to:\n\nDescribe contexts where computational notebooks are useful\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1668,7 +1668,7 @@
     "section": "Preparation",
     "text": "Preparation\nTBD (To Be Determined)",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1679,7 +1679,7 @@
     "section": "Notebook Structure & Value",
     "text": "Notebook Structure & Value\nFiles that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add–and format–plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is intended to be interpretable without any prior coding experience. The plain text can be formatted with Markdown syntax (we’ll discuss that in greater depth later) but even unformatted text outside of code chunks is visually ‘easier on the eyes’ than comment lines in scripts.\nAnother shared facet of notebook interfaces is that they are meant to be “rendered” (a.k.a. “knit”) to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other output options. These rendered files can then be shared (and opened) outside of coding platforms and thus make their content even more accessible to non-coders.\nIn synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. Creating reports with embedded code can enable these collaborators to engage more fully than they might otherwise be able to if there was essentially a minimum threshold of coding literacy required in order to contribute. These reports can also be useful documentation of past coding decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.\n\nStructural Elements\nTypically, these notebooks have three structural components:\n\nYAML\n\nPronounced ‘YEAH-mull’\n\nPlain text\n\nPossibly formatted with Markdown syntax\n\nEmbedded code chunks\n\n\nYAMLMarkdown TextCode Chunks\n\n\nThe YAML (Yet Another Markup Language) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It can also be used to define the top-level title, author, and date information. Finally, it can change the default options for code chunks throughout the document (more on code chunk options elsewhere).\nDifferent notebook file types will specify the YAML differently but in both Quarto documents and R Markdown files, the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:\n---\ntitle: \"Reproducible Reports\"\noutput: html_document\n---\n\n\nThe text outside of the YAML and code chunks is plain text that accepts Markdown syntax to accomplish text format tweaks. Dedicated text-formatting software (e.g., Microsoft Word, Gmail, etc.) provides buttons and hot keys for these sorts of format alterations but many programming IDEs do not provide such user interface elements.1 Markdown syntax is used to support this same functionality.\nSome fundamental Markdown options include:\n\n**bold text**  bold text\n_italic text_  italic text\n`code text`  code text\n[hyperlinked text](https://lter.github.io/ssecr/mod_reports.html)  hyperlinked text\n\nFor a more complete glossary of fundamental Markdown syntax options see here. You may also want to explore the ‘back end’ of this course’s website as every page is built using computational notebook files.\n\n\nThe code chunks embedded in notebooks are essentially a fragmented script containing runable code. These chunks may contain code and/or comments and share an environment with one another when rendered (i.e., if you load a particular library in one chunk you’ll be able to use functions from that library in subsequent chunks). When used in concert with the Markdown text in a given notebook the code chunks can be used to effectively demonstrate a workflow while providing as much human-readable context as is desired.\nIn Quarto documents, code chunks look like this2:\n\\```{r demo-chunk}\n1#| echo: true\n\n2# Round pi to 2 digits\nround(x = pi, digits = 2)\n\\```\n\n1\n\nYou may specify chunk-specific options using this syntax (i.e., #| option_name: option_setting). Options you want to apply to all chunks across a notebook should be specified once in the YAML and can exclude the leading #| bit of the format.\n\n2\n\nIf your Markdown text provides sufficient context you may exclude comments in code chunks but opinions differ on which is “more” appropriate\n\n\n\n\n[1] 3.14\n\n\n\n\n\n\n\nScript vs. Report Decision\nSee here for more information.",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1690,7 +1690,7 @@
     "section": "Applications",
     "text": "Applications\n\nStatic PDF/HTML files\nFull manuscripts\nDeployed website",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1701,7 +1701,7 @@
     "section": "Deployment & GitHub",
     "text": "Deployment & GitHub",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1712,7 +1712,7 @@
     "section": "Additional Resources",
     "text": "Additional Resources\n\nPapers & Documents\n\n\n\n\n\nWorkshops & Courses\n\nCsik, S. Creating Your Personal Website Using Quarto. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Literate Analysis with Quarto. 2023.\nMecum, B. Reproducible Papers with RMarkdown. 2019.\n\n\n\nWebsites\n\nThe Markdown Guide: Basic Syntax.\nPosit. Welcome to Quarto",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
@@ -1723,7 +1723,7 @@
     "section": "Footnotes",
     "text": "Footnotes\n\n\nNote that with the addition of the “Visual” tab in RStudio there are button options for many text format changes. Markdown syntax is still useful to know for general knowledge reasons though!↩︎\nNormally code chunks start and end with three backticks (```) but to embed this code chunk example we need to “escape” the first backtick (using a backslash) so that the notebook interprets it correctly.↩︎",
     "crumbs": [
-      "Phase V -- Share",
+      "Phase IV -- Magnify",
       "Reproducible Reports"
     ]
   },
