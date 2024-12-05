@@ -1,4 +1,4 @@
-aration required---
+---
 title: "Project Management & Logic Models"
 editor: 
   markdown: 
@@ -18,9 +18,9 @@ It also helps clarify all of the information that will be needed and the appropr
 After completing this module you will be able to:
 
 -   <u>Articulate</u> key principles of project management
--   <u>Develop</u> (or refine) the project management framework for your team project
--   <u>Define</u> common approaches for logic models
+-   <u>Define</u> common approaches for defining project scope
 -   <u>Identify</u> and make explicit internal logical leaps
+-   <u>Develop</u> (or refine) the project management framework for your team project
 
 ## Preparation
 
@@ -65,19 +65,18 @@ Taking the time to make sure you all see them the same way can save worlds of he
 
 1.  Define the project
 2.  Agree on the goal and the timeline
-3.  If the timeline is determined externally (as for SSECR or for most grants), you’ll need to start with the timeline (possibly budget) and scope the project to fit. 
+3.  If the timeline is determined externally (as for SSECR or for most grants), you’ll need to start with the timeline (possibly budget) and scope the project to fit the time and funds you have available. 
 4.  Develop a list of the steps needed to get from where you are to where you need to be.
 5.  Place the steps in order and define the inputs and outputs of each step.
 6.  Identify the people responsible for each step and an approximate timeline for its completion.
 7.  Identify time points for check-in and re-evaluation
 
-Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful.
+Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today. First, though, we'll remind ourselves of *why* the investment in planning time is so valuable.
 
 ::: {.callout-note icon="false"}
 #### Small Group Discussion: Project Management "Fails"
 
 Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment...
-
 
 Part 1 (~3 minutes)
 
@@ -97,17 +96,16 @@ Break into random groups or 5-6
 
 ### Defining the Project
 
-For defining the project and agreeing on the goals, mind maps and logic models (or theories of change in some disciplines) are useful individual or group exercises. Tools for developing them can be as simple as pen and paper, basic drawing apps, a zoom whiteboard, or online collaboration and project planning tools such as Miro, Mural, and FigJam. MindMaps offer a lightly-structured way of exploring a focus area.
-The graphical approach helps to surface unexpected connections and reveal gaps in understanding.
+For defining the project and agreeing on the goals, mind maps are useful individual or group exercises. Mind maps offer a lightly-structured way of exploring a focus area. The graphical approach helps to surface unexpected connections and reveal gaps in understanding. Tools for developing them can be as simple as pen and paper, basic drawing apps, a zoom whiteboard, or online collaboration and project planning tools such as Miro, Mural, and FigJam. 
+
+Start with a general topic or question, then expand to the precedents and implications. Then expand from there to the assumptions, modifying conditions, or follow-on implications related to each of your precedents or implications. Often, looking at a problem head-on reveals little new, but surfacing and testing the underlying assumptions can open up fresh territory.
 
 <p align="center">
 <img src="images/mind-map.png" alt="Bubble with a central concept or question, surrounded, at the first level, by inputs, outputs or modifiers and at the second level by question, concerns, or implications" width="90%"/>
 <figcaption>**Figure 1. Mind Map Example**</figcaption>
 </p>
 
-The mind map will likely surface many relevant and un-answered questions, but time is limited. You'll need to choose one on which to focus.
-One way to prioritize them is to place them on a two-by-two matrix of payoff v. feasibility.
-The most important payoff for a particular team may be scientific novelty, practical importance, or whether it's a fun and engaging question for the group. Often, the most interesting questions will also require the most effort and the group will just need to determine what trade-offs they are willing to accept. But sometimes, a question emerges that is both interesting and feasible--perhaps because a new source of data has just become available or simply because no one saw the question from that angle before. 
+The mind map will likely surface many relevant and un-answered questions, but time is limited. You'll need to choose one on which to focus. One way to prioritize them is to place them on a two-by-two matrix of payoff v. feasibility. The most important payoff for a particular team may be scientific novelty, practical importance, or whether it's a fun and engaging question for the group. Often, the most interesting questions will also require the most effort and the group will need to determine what trade-offs they are willing to accept. But sometimes, a question emerges that is both interesting and feasible--perhaps because a new source of data has just become available or simply because no one saw the question from that angle before. 
 
 <p align="center">
 <img src="images/feasibility-matrix.png" alt="x and y axes, labelled with novelty/importance (Y) and feasibility (x), with project ideas distributed across the resulting space" width="90%"/>
@@ -120,10 +118,14 @@ Once the team has settled on a question and specific set of processes to explore
 
 The process of building an explicit analysis description as a team can quickly reveal mismatches in team members’ mental models and uncover hidden assumptions. Making those (often disciplinary) differences visible early can mitigate some of the biggest risks of interdisciplinary research and also offer a way into the most novel insights. A well-structured analysis plan can also be a touchstone to return to throughout the life of your project, keeping the team on-track and avoiding mission creep.
 
+<p align="center">
+<img src="images/analysis-flow.png" alt="rectangular boxes containing data sources (Si concentration, streamflow, watershed geometry and land use, watershed precipitation), linked to diamond-shaped boxed describing processing steps, linked to more rectangles with outputs" width="90%"/>
+<figcaption>**Figure 3.** Analysis Flowchart for a (relatively) straightforward test of controls on Silica exports in streamflow.</figcaption>
+</p>
 
 ### Plan the Work
 
-Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities. Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities. As with other visualizations, there are lots of pretty tools for constructing a Gantt chart, but it’s getting the underlying logic right that really matters.
+Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities. Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities. With each task arranged on a timeline, it becomes easier to spot potential dependencies that could otherwise hold up the project. With simultaneous tasks stacked vertically, it becomes apparent when the planned workload is unrealistic. 
 
 -  Before diving into any specific tool, start by making a list of your goal and the steps necessary to get there.
 -  Place them into an outline in the order they must proceed.
@@ -133,23 +135,51 @@ Once your team goals and the necessary steps are agreed on, it becomes much easi
 -  Arrange the steps in colored bars along a horizontal timeline.
 -  Use the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.
 
+A robust support infrastructure exists for the project management profession -- including formal training and a multitude of (often pricey) apps. But for the job of managing research collaborations, we've found that the single most important factor is whether your collaborators will use the system. For that to happen, they must have easy access to it, ideally without setting up a new account and as part of something they already do every day. 
+
+For non-coders, we've included a [Google sheet template](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing) of a Gantt chart, pictured below.
+
 <p align="center">
 <img src="images/gantt-image.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="90%"/>
-<figcaption>**Figure 2. Gantt Chart Example**</figcaption>
+<figcaption>**Figure 4. Gantt Chart Example using Google Sheets**</figcaption>
+</p>
+
+But if you're already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub's project management capabilities? In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project. Issues can also be created in the project itself. Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates. The examples below draw from the repository we are using to organize the first iteration of this course.
+
+<p align="center">
+<img src="images/github-project.png" alt="a series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" width="90%"/>
+<figcaption>**Figure 5. Organizing with GitHub Projects**</figcaption>
+</p>
+
+Two additional views make it even easier to track overall progress and individual workloads. The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. Th stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
+
+The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
+
+<p align="center">
+<img src="images/github-gantt.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="90%"/>
+<figcaption>**Figure 5. Gantt Chart Example using GitHub Projects**</figcaption>
 </p>
 
 ::: {.callout-note icon="false"}
 #### Project Group Discussion: Develop a project timeline/Gantt chart
 
-A [Gantt chart Google sheet template](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing) is available here. Copy it into your project folder.
+Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
 
--  Breakout into project groups.
--  The template has two tabs. The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead.
-_  The "basic" tab will update the graph when you update task dates.
--  Working backwards from the end of May deadline, estimate how long each task will take.
--  Add or remove steps as needed for your proposed project.
--  Choose task leads (they should expect to draw on other group members for assistance and feedback)
--  Decide on a plan for checking in and updating the Gantt chart. 
+1.  Breakout into project groups.
+1.  Decide whether you will use the Google sheet template or GitHub.
+1.  If using **GitHub**, go to your project repository and create a new project (top center menu). It will open in a Kanban Board view.
+    a.  Begin adding tasks (bottom of each list). Click on the task title to open it and add a brief description.
+    a.  Choose task leads and add them to each task card (supporting group members can also be added).
+    a.  Add approximate start dates and target end dates for each task. 
+    a.  When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back.
+    a.  Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project? 
+1.  If using the **[Google sheet template](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing)**, copy it into your project folder. The template has two tabs. The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead. The "basic" tab will update the graph when you update task dates.
+    a.  Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet.
+    a.  Add or remove steps as needed for your proposed project.
+    a.  Choose task leads (they should expect to draw on other group members for assistance and feedback)
+    a.  Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
+    a.  Revise task dates as needed.
+1.  Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart. Every group meeting? Every Monday? Once a month? 
 
 After 30 minutes, return to whole group and discuss any insights or innovations.
 
@@ -157,10 +187,6 @@ After 30 minutes, return to whole group and discuss any insights or innovations.
 
 
 ## Additional Resources
-
-### Papers & Documents
-
--   
 
 ### Workshops & Courses
 
@@ -172,7 +198,13 @@ After 30 minutes, return to whole group and discuss any insights or innovations.
 
 ### Web-based Project Management Tools
 
+#### Open Source
+
+-  [GitHub Documentation: Issues and Projects](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/planning-and-tracking-work-for-your-team-or-project)
+
+#### Commercial
+
 -  [Asana](https://asana.com/). Task and project management. Free up to 10 members.
 -  [Wrike](https://www.wrike.com/). Tasks and project management. Capable for individuals. $10 pp per month for teams.
 -  [ClickUp](https://clickup.com/). Capable free plan.  Less intuitive to set up.
--  [ZoHo Projects](https://www.zoho.com/projects/). Task and project management. Up to 5 users and 3 projects on the free plan 
+-  [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brianstorming han ongoing project management.
