@@ -1,5 +1,5 @@
 ---
-title: "Project Management & Logic Models"
+title: "Project Management"
 editor: 
   markdown: 
     wrap: sentence
@@ -151,7 +151,7 @@ But if you're already working in GitHub or GitLab to collaborate on code, why no
 <figcaption>**Figure 5. Organizing with GitHub Projects**</figcaption>
 </p>
 
-Two additional views make it even easier to track overall progress and individual workloads. The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. Th stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
+Two additional views make it even easier to track overall progress and individual workloads. The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
 
 The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
 
@@ -207,4 +207,4 @@ After 30 minutes, return to whole group and discuss any insights or innovations.
 -  [Asana](https://asana.com/). Task and project management. Free up to 10 members.
 -  [Wrike](https://www.wrike.com/). Tasks and project management. Capable for individuals. $10 pp per month for teams.
 -  [ClickUp](https://clickup.com/). Capable free plan.  Less intuitive to set up.
--  [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brianstorming han ongoing project management.
+-  [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brianstorming than ongoing project management.
