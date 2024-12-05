@@ -74,7 +74,7 @@ Taking the time to make sure you all see them the same way can save worlds of he
 Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today. First, though, we'll remind ourselves of *why* the investment in planning time is so valuable.
 
 ::: {.callout-note icon="false"}
-#### Small Group Discussion: Project Management "Fails"
+#### Full Group Discussion: Project Management "Fails"
 
 Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment...
 
@@ -85,9 +85,7 @@ Reflect silently on one of your own project management "fails"
 -  What went wrong?
 -  How could planning have prevented or improved the situation?
 
-Part 2 (~10 minutes)
-
-Break into random groups or 5-6
+Part 2 (~12 minutes)
 
 -  Share your project management "fails"
 -  If time allows, consider what aspects of planning are most likely to be skipped or overlooked
@@ -167,8 +165,8 @@ Instructions are included for using either GitHub or a Google sheet template to 
 
 1.  Breakout into project groups.
 1.  Decide whether you will use the Google sheet template or GitHub.
-1.  If using **GitHub**, go to your project repository and create a new project (top center menu). It will open in a Kanban Board view.
-    a.  Begin adding tasks (bottom of each list). Click on the task title to open it and add a brief description.
+1.  If using **GitHub**, go to your project repository and find the project that has been created for you (top center menu). It will open in a Kanban Board view.
+    a.  Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description. A nice touch here is to add a checklist of subtasks.
     a.  Choose task leads and add them to each task card (supporting group members can also be added).
     a.  Add approximate start dates and target end dates for each task. 
     a.  When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back.
