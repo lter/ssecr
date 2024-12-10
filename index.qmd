@@ -63,20 +63,20 @@ Project groups will also meet at a time of their own choosing to work on project
 
 ### Attendance
 
-{{< include policy_attendance.qmd >}}
+{{< include policy/attendance.qmd >}}
 
 ### Usability, Accessibility, and Design
 
-{{< include policy_usability.qmd >}}
+{{< include policy/usability.qmd >}}
 
 ### Artificial Intelligence Tools
 
-{{< include policy_ai.qmd >}}
+{{< include policy/ai.qmd >}}
 
 ### Name, Gender Identity, and/or Gender Expression
 
-{{< include policy_pronouns.qmd >}}
+{{< include policy/pronouns.qmd >}}
 
 ### Code of Conduct
 
-{{< include policy_conduct.qmd >}}
+{{< include policy/conduct.qmd >}}
