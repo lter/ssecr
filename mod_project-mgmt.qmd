@@ -37,9 +37,7 @@ Their approach to project management helped them to overcome these obstacles and
 -   [Kathi Jo Jankowski](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski), Research Ecologist, Upper Midwest Environmental Sciences Center, U.S. Geological Survey
 :::
 
-## Module Content
-
-### What is project management?
+## What is Project Management?
 
 There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability.
 You’ve probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc.
@@ -56,7 +54,7 @@ The trick, for scientific research projects, is to identify the approaches that 
 
 : **Some common elements of project management schemes** {.striped .hover .bordered}
 
-### How to Start
+## How to Start
 
 Like outlining a paper, there are a few basic steps to developing a solid project management plan.
 And it’s easy to think you can skip over the first steps because they seem so obvious.
@@ -74,7 +72,7 @@ Taking the time to make sure you all see them the same way can save worlds of he
 Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today. First, though, we'll remind ourselves of *why* the investment in planning time is so valuable.
 
 ::: {.callout-note icon="false"}
-#### Full Group Discussion: Project Management "Fails"
+### Full Group Discussion: Project Management "Fails"
 
 Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment...
 
@@ -92,7 +90,7 @@ Part 2 (~12 minutes)
 
 :::
 
-### Defining the Project
+## Defining the Project
 
 For defining the project and agreeing on the goals, mind maps are useful individual or group exercises. Mind maps offer a lightly-structured way of exploring a focus area. The graphical approach helps to surface unexpected connections and reveal gaps in understanding. Tools for developing them can be as simple as pen and paper, basic drawing apps, a zoom whiteboard, or online collaboration and project planning tools such as Miro, Mural, and FigJam. 
 
@@ -110,7 +108,7 @@ The mind map will likely surface many relevant and un-answered questions, but ti
 <figcaption>**Figure 2. Feasibility Matrix Example**</figcaption>
 </p>
 
-### Outline Your Analysis
+## Outline Your Analysis
 
 Once the team has settled on a question and specific set of processes to explore or test, it's worth sketching out the steps in your analysis. By making the inputs, processing, and outputs of each step explicit, you'll identify needed data sooner and avoid (some) backtracking.  
 
@@ -121,7 +119,7 @@ The process of building an explicit analysis description as a team can quickly r
 <figcaption>**Figure 3.** Analysis Flowchart for a (relatively) straightforward test of controls on Silica exports in streamflow.</figcaption>
 </p>
 
-### Plan the Work
+## Plan the Work
 
 Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities. Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities. With each task arranged on a timeline, it becomes easier to spot potential dependencies that could otherwise hold up the project. With simultaneous tasks stacked vertically, it becomes apparent when the planned workload is unrealistic. 
 
@@ -159,7 +157,7 @@ The "sliced tasks view" also allows each collaborator to see only their own assi
 </p>
 
 ::: {.callout-note icon="false"}
-#### Project Group Discussion: Develop a project timeline/Gantt chart
+### Project Group Discussion: Develop a project timeline/Gantt chart
 
 Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
 
@@ -182,7 +180,6 @@ Instructions are included for using either GitHub or a Google sheet template to 
 After 30 minutes, return to whole group and discuss any insights or innovations.
 
 :::
-
 
 ## Additional Resources
 
