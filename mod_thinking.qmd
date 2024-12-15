@@ -4,32 +4,38 @@ title: "Supporting Divergent, Emergent, and Convergent Thinking"
 
 ## Overview
 
-Under Construction, stay tuned!
+As many course participants will have discovered by now, the process of deciding on, refining, and choosing a path forward for data analysis will involve many differing opinions and perspectives. To work effectively as a group, you will need to elicit a broad range of ideas and then combine and focus them. This can be unfamiliar territory for researchers who have mainly pursued individual projects. While the particulars of each project are different, the patterns are often similar and being familiar with a few approaches for eliciting the best from yourself and colleagues can speed the process and improve the experience for all involved.
 
 ## Learning Objectives
 
-After completing this module you will be able to: 
+After completing this module you will be able to:
 
-- <u>Develop</u> strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting
+-   <u>Develop</u> strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+None required.
+
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
+
+[Bala Chaudhary](https://balachaudhary.com/index.html#/) is a soil ecologist specializing in plant-soil-microbial interactions and mycorrhizal symbioses. Research in her lab examines ecosystem-scale questions in mycorrhizal ecology along four main themes: microbial dispersal at the macrosystems scale, trait-based mycorrhizal ecology, synthesis in ecology, and microbial mediation of global change solutions. She uses trait-based approaches to develop predictive frameworks for mycorrhizal dispersal, community assembly, and biogeography, and employs complimentary approaches of macroecological field work, controlled lab experiments, and data synthesis to study multi-scale questions in ecology. Her work spans dozens of ecosystem types and has applications in global change solutions including climate mitigation and adaptation, soil conservation, ecosystem restoration, and sustainable agriculture. She also conducts research on ways to broaden scientific participation and promote racial and ethnic diversity, equity, and inclusion in STEM.
+:::
 
 ## Module Content
-
-
 
 ## Additional Resources
 
 ### Papers & Documents
 
-- Kaner, S. [Facilitator's Guide to Participatory Decision-Making](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+-   Kaner, S. [Facilitator's Guide to Participatory Decision-Making](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
 
 ### Workshops & Courses
 
-- 
+-   
 
 ### Websites
 
-- [Liberating Structures: Including and Uleashing Everyone](https://www.liberatingstructures.com/)
+-   [Liberating Structures: Including and Uleashing Everyone](https://www.liberatingstructures.com/)
