@@ -27,7 +27,9 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+- In project teams, draft your strategy for wrangling data
+    - What needs to happen to the datasets in order for them to be usable in answering your question?
+    - What quality control, structural changes, or formatting edits must be made?
 
 ## Needed Packages
 
@@ -171,10 +173,14 @@ The datasets you gather for your synthesis project will likely have a multitude 
 
 When you read in a dataset and a column that _should be_ numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to 'NA' where a human might be able to deduce the true number each value 'should be.'
 
-```{r num-check}
+```{r supportr-load}
+#| message: false
+
 # Load the supportR package
 library(supportR)
+```
 
+```{r num-check}
 # Create an example dataset with non-numbers in ideally numeric columns
 fish_ct <- data.frame("species" = c("salmon", "bass", "halibut", "moray eel"),
                       "count" = c(12, "14x", "_23", 1))
