@@ -27,9 +27,17 @@ After completing this module you will be able to:
 
 ## Preparation
 
-- In project teams, draft your strategy for wrangling data
-    - What needs to happen to the datasets in order for them to be usable in answering your question?
-    - What quality control, structural changes, or formatting edits must be made?
+1. In project teams, draft your strategy for wrangling data
+    - What needs to happen to the datasets in order for them to be usable in answering your question(s)?
+    - I.e., what quality control, structural changes, or formatting edits must be made?
+2. _If you are an R user_, run the following code:
+
+```{r install-pkgs}
+#| eval: false
+
+install.packages("librarian")
+librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
+```
 
 ## Making a Wrangling Plan
 
@@ -50,31 +58,6 @@ With your project groups discuss the following questions:
 - How can you change the workflow now to make life easier for 'future you'?
 
 :::
-
-## Needed Packages
-
-If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
-
-```{r install-pkgs}
-#| eval: false
-
-# Note that these lines only need to be run once per computer
-## So you can skip this step if you've installed these before
-install.packages("ltertools")
-install.packages("lterdatasampler")
-install.packages("psych")
-install.packages("supportR")
-install.packages("tidyverse")
-```
-
-We'll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.
-
-```{r libs}
-#| message: false
-
-# Load tidyverse
-library(tidyverse)
-```
 
 ## Harmonizing Data
 
@@ -249,6 +232,11 @@ Rather than finding and replacing content, you may want to create a new column b
 If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let's return to our Plum Island Ecosystems crab dataset for an example.
 
 ```{r ifelse}
+#| message: false
+
+# Load tidyverse
+library(tidyverse)
+
 # Make a new colum with an either/or conditional
 pie_crab_v2 <- pie_crab %>% 
   dplyr::mutate(size_category = ifelse(test = (size >= 15), # <1>
