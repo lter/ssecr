@@ -432,7 +432,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="preparation" class="level2">
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
-<p>TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)</p>
+<ul>
+<li>In project teams, draft your strategy for wrangling data
+<ul>
+<li>What needs to happen to the datasets in order for them to be usable in answering your question?</li>
+<li>What quality control, structural changes, or formatting edits must be made?</li>
+</ul></li>
+</ul>
 </section>
 <section id="needed-packages" class="level2">
 <h2 class="anchored" data-anchor-id="needed-packages">Needed Packages</h2>
@@ -615,21 +621,14 @@ Discussion: Data Exploration Tools
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'supportR'</code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:dplyr':
-
-    count</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">1</span>))</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">1</span>))</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>For 'count', 2 non-numbers identified: '14x' | '_23'</code></pre>
 </div>
@@ -640,11 +639,11 @@ Attaching package: 'supportR'</code></pre>
 <h4 class="anchored" data-anchor-id="text-replacement">Text Replacement</h4>
 <p>One of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>fish_ct<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> fish_ct<span class="sc">$</span>count)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>fish_ct<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> fish_ct<span class="sc">$</span>count)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>For 'count', no non-numeric values identified.</code></pre>
 </div>
@@ -655,16 +654,16 @@ Attaching package: 'supportR'</code></pre>
 <h4 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h4>
 <p>You may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hello"   "xxx"     "goodbye" "xxx"    </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "0"   "123" "0"   "456"</code></pre>
 </div>
@@ -852,12 +851,12 @@ Activity: Conditionals
 <p>Often the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups’ data on sea star abundance and–once you’ve synonymized the column names–you can simply ‘stack’ the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group’s research. You can’t simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps “site” and coordinate columns) you can use <strong>joins</strong> to let your computer match these key columns and make sure that only appropriate rows are combined.</p>
 <p>Because joins are completely dependent upon the value in both columns being an <em>exact</em> match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
-<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Following element(s) found in old object but not new: </code></pre>
 </div>
@@ -960,20 +959,20 @@ Activity: Separating Columns &amp; Joining Data
 <p>Data shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes “tidy”, you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then–when you’re finished–reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.</p>
 <p>Let’s consider an example to help clarify this. We’ll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a butterfly dataframe</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>bfly_v1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"pasture"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"PNW"</span>, <span class="st">"PNW"</span>, <span class="st">"RCS"</span>, <span class="st">"RCS"</span>),</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"monarch"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"14m"</span>, <span class="st">"10f"</span>, <span class="st">"7m"</span>, <span class="st">"16f"</span>),</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"melissa_blue"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"32m"</span>, <span class="st">"2f"</span>, <span class="st">"6m"</span>, <span class="st">"0f"</span>),</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"swallowtail"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"1m"</span>, <span class="st">"3f"</span>, <span class="st">"0m"</span>, <span class="st">"5f"</span>))</span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co"># First we'll reshape this into long format</span></span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>bfly_v2 <span class="ot">&lt;-</span> bfly_v1 <span class="sc">%&gt;%</span> </span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>pasture, </span>
-<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"butterfly_sp"</span>, </span>
-<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"count_sex"</span>)</span>
-<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Check what that leaves us with</span></span>
-<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v2, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a butterfly dataframe</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>bfly_v1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"pasture"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"PNW"</span>, <span class="st">"PNW"</span>, <span class="st">"RCS"</span>, <span class="st">"RCS"</span>),</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"monarch"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"14m"</span>, <span class="st">"10f"</span>, <span class="st">"7m"</span>, <span class="st">"16f"</span>),</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"melissa_blue"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"32m"</span>, <span class="st">"2f"</span>, <span class="st">"6m"</span>, <span class="st">"0f"</span>),</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"swallowtail"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"1m"</span>, <span class="st">"3f"</span>, <span class="st">"0m"</span>, <span class="st">"5f"</span>))</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># First we'll reshape this into long format</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>bfly_v2 <span class="ot">&lt;-</span> bfly_v1 <span class="sc">%&gt;%</span> </span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>pasture, </span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"butterfly_sp"</span>, </span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"count_sex"</span>)</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Check what that leaves us with</span></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v2, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
   pasture butterfly_sp count_sex
@@ -983,15 +982,15 @@ Activity: Separating Columns &amp; Joining Data
 3 PNW     swallowtail  1m       
 4 PNW     monarch      10f      </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's separate count from sex to be more usable later</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>bfly_v3 <span class="ot">&lt;-</span> bfly_v2 <span class="sc">%&gt;%</span> </span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_regex</span>(<span class="at">cols =</span> count_sex, </span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">c</span>(<span class="at">count =</span> <span class="st">"[[:digit:]]+"</span>, <span class="at">sex =</span> <span class="st">"[[:alpha:]]"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the 'count' column a real number now</span></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">count =</span> <span class="fu">as.numeric</span>(count))</span>
-<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check output</span></span>
-<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v3, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's separate count from sex to be more usable later</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>bfly_v3 <span class="ot">&lt;-</span> bfly_v2 <span class="sc">%&gt;%</span> </span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_regex</span>(<span class="at">cols =</span> count_sex, </span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">c</span>(<span class="at">count =</span> <span class="st">"[[:digit:]]+"</span>, <span class="at">sex =</span> <span class="st">"[[:alpha:]]"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the 'count' column a real number now</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">count =</span> <span class="fu">as.numeric</span>(count))</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check output</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v3, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 4
   pasture butterfly_sp count sex  
@@ -1001,12 +1000,12 @@ Activity: Separating Columns &amp; Joining Data
 3 PNW     swallowtail      1 m    
 4 PNW     monarch         10 f    </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape back into wide-ish format</span></span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>bfly_v4 <span class="ot">&lt;-</span> bfly_v3 <span class="sc">%&gt;%</span> </span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"butterfly_sp"</span>, <span class="at">values_from =</span> count)</span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-re-check output</span></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape back into wide-ish format</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>bfly_v4 <span class="ot">&lt;-</span> bfly_v3 <span class="sc">%&gt;%</span> </span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"butterfly_sp"</span>, <span class="at">values_from =</span> count)</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-re-check output</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 5
   pasture sex   monarch melissa_blue swallowtail
@@ -1108,18 +1107,18 @@ Activity: Separating Columns &amp; Joining Data
 <p>Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR <a href="https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions">Reproducibility module</a>) and also can be useful end products of synthesis work in and of themselves.</p>
 <p>If one of your group’s outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project’s findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
-<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, size_cat){</span>
-<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
-<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
-<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
-<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
-<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb44-11"><a href="#cb44-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke function</span></span>
-<span id="cb44-12"><a href="#cb44-12" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4, <span class="at">size_cat =</span> <span class="st">"tiny"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, size_cat){</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke function</span></span>
+<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4, <span class="at">size_cat =</span> <span class="st">"tiny"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
