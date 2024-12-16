@@ -361,7 +361,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
-  <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
+  <li><a href="#making-a-wrangling-plan" id="toc-making-a-wrangling-plan" class="nav-link" data-scroll-target="#making-a-wrangling-plan">Making a Wrangling Plan</a></li>
   <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
   <li><a href="#wrangling-data" id="toc-wrangling-data" class="nav-link" data-scroll-target="#wrangling-data">Wrangling Data</a>
   <ul class="collapse">
@@ -432,30 +432,50 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="preparation" class="level2">
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
-<ul>
+<ol type="1">
 <li>In project teams, draft your strategy for wrangling data
 <ul>
-<li>What needs to happen to the datasets in order for them to be usable in answering your question?</li>
-<li>What quality control, structural changes, or formatting edits must be made?</li>
+<li>What needs to happen to the datasets in order for them to be usable in answering your question(s)?</li>
+<li>I.e., what quality control, structural changes, or formatting edits must be made?</li>
 </ul></li>
-</ul>
-</section>
-<section id="needed-packages" class="level2">
-<h2 class="anchored" data-anchor-id="needed-packages">Needed Packages</h2>
-<p>If you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:</p>
+<li><em>If you are an R user</em>, run the following code:</li>
+</ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Note that these lines only need to be run once per computer</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## So you can skip this step if you've installed these before</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ltertools"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lterdatasampler"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"psych"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"supportR"</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"librarian"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(ltertools, lterdatasampler, psych, supportR, tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>We’ll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load tidyverse</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="making-a-wrangling-plan" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-wrangling-plan">Making a Wrangling Plan</h2>
+<p><em>Before</em> you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data maniuplation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group’s plan for your data.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discussion: Wrangling Plan
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>With your project groups discuss the following questions:</p>
+<ul>
+<li>What harmonization needs to be done to make your starting data files comparable?
+<ul>
+<li>Consider units, taxonomic resolution, spatial/temporal granularity, etc.</li>
+</ul></li>
+<li>Once you have harmonized your data, what wrangling nedes to be done?
+<ul>
+<li>Do you need to calculate index metrics? Change the ‘shape’ of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?</li>
+</ul></li>
+<li>How can you make your workflow less repetitive / more efficient?
+<ul>
+<li>Reducing redundancy makes integrating new ideas dramatially easier</li>
+</ul></li>
+<li>How easy will it be to maintain or revisit this code workflow?</li>
+<li>How can you change the workflow now to make life easier for ‘future you’?</li>
+</ul>
+</div>
 </div>
 </section>
 <section id="harmonizing-data" class="level2">
@@ -478,36 +498,36 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>Data wrangling is a <em>huge</em> subject that covers a wide range of topics. In this part of the module, we’ll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you’ll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice ‘jumping off’ point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.</p>
 <p>To begin, we’ll load the Plum Island Ecosystems fiddler crab dataset we’ve used in other modules.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="exploring-the-data" class="level3">
 <h3 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h3>
 <p>Before beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.</p>
 <p>Checking the data structure is one way of getting a lot of this high-level information.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check dataset structure</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check dataset structure</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>tibble [392 × 9] (S3: tbl_df/tbl/data.frame)
- $ date         : Date[1:392], format: "2016-07-24" "2016-07-24" ...
- $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
- $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
- $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
- $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
- $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
- $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
- $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
- $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+<pre><code>Classes 'tbl_df', 'tbl' and 'data.frame':   392 obs. of  9 variables:
+ $ date         : Date, format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num  30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr  "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num  12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num  21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num  6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num  24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num  6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr  "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
 </div>
 </div>
 <p>For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information elsewhere.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>      date               latitude         site                size      
  Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  
@@ -534,8 +554,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the sites included in the data</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(pie_crab<span class="sc">$</span>site))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the sites included in the data</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(pie_crab<span class="sc">$</span>site))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "BC"  "CC"  "CT"  "DB"  "GTM" "JC"  "NB"  "NIB" "PIE" "RC"  "SI"  "VCR"
 [13] "ZI" </code></pre>
@@ -543,11 +563,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the ‘base’ packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the psych library</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the histogram of crab "size" (carapace width in mm)</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">multi.hist</span>(pie_crab<span class="sc">$</span>size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the psych library</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the histogram of crab "size" (carapace width in mm)</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">multi.hist</span>(pie_crab<span class="sc">$</span>size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -619,16 +639,16 @@ Discussion: Data Exploration Tools
 <h4 class="anchored" data-anchor-id="number-checking">Number Checking</h4>
 <p>When you read in a dataset and a column that <em>should be</em> numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to ‘NA’ where a human might be able to deduce the true number each value ‘should be.’</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">1</span>))</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">1</span>))</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>For 'count', 2 non-numbers identified: '14x' | '_23'</code></pre>
 </div>
@@ -639,11 +659,11 @@ Discussion: Data Exploration Tools
 <h4 class="anchored" data-anchor-id="text-replacement">Text Replacement</h4>
 <p>One of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>fish_ct<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> fish_ct<span class="sc">$</span>count)</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>fish_ct<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> fish_ct<span class="sc">$</span>count)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>For 'count', no non-numeric values identified.</code></pre>
 </div>
@@ -654,16 +674,16 @@ Discussion: Data Exploration Tools
 <h4 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h4>
 <p>You may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "hello"   "xxx"     "goodbye" "xxx"    </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "0"   "123" "0"   "456"</code></pre>
 </div>
@@ -676,22 +696,25 @@ Discussion: Data Exploration Tools
 <p>Rather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as ‘if column X has [some values] then column Y should have [other values]’. These operations are called <u>conditionals</u> and are an important part of data wrangling.</p>
 <p>If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let’s return to our Plum Island Ecosystems crab dataset for an example.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-13-1"><a href="#annotated-cell-13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new colum with an either/or conditional</span></span>
-<span id="annotated-cell-13-2"><a href="#annotated-cell-13-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-3" class="code-annotation-target"><a href="#annotated-cell-13-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> <span class="fu">ifelse</span>(<span class="at">test =</span> (size <span class="sc">&gt;=</span> <span class="dv">15</span>),</span>
-<span id="annotated-cell-13-4"><a href="#annotated-cell-13-4" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">yes =</span> <span class="st">"big"</span>,</span>
-<span id="annotated-cell-13-5"><a href="#annotated-cell-13-5" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">no =</span> <span class="st">"small"</span>),</span>
-<span id="annotated-cell-13-6"><a href="#annotated-cell-13-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">.after =</span> size) </span>
-<span id="annotated-cell-13-7"><a href="#annotated-cell-13-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-13-8"><a href="#annotated-cell-13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the number of crabs in each category</span></span>
-<span id="annotated-cell-13-9"><a href="#annotated-cell-13-9" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-13-10"><a href="#annotated-cell-13-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(size_category) <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-13-11"><a href="#annotated-cell-13-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">crab_ct =</span> dplyr<span class="sc">::</span><span class="fu">n</span>())</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-12"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-12-1"><a href="#annotated-cell-12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load tidyverse</span></span>
+<span id="annotated-cell-12-2"><a href="#annotated-cell-12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="annotated-cell-12-3"><a href="#annotated-cell-12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-12-4"><a href="#annotated-cell-12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new colum with an either/or conditional</span></span>
+<span id="annotated-cell-12-5"><a href="#annotated-cell-12-5" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1">1</button><span id="annotated-cell-12-6" class="code-annotation-target"><a href="#annotated-cell-12-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> <span class="fu">ifelse</span>(<span class="at">test =</span> (size <span class="sc">&gt;=</span> <span class="dv">15</span>),</span>
+<span id="annotated-cell-12-7"><a href="#annotated-cell-12-7" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">yes =</span> <span class="st">"big"</span>,</span>
+<span id="annotated-cell-12-8"><a href="#annotated-cell-12-8" aria-hidden="true" tabindex="-1"></a>                                       <span class="at">no =</span> <span class="st">"small"</span>),</span>
+<span id="annotated-cell-12-9"><a href="#annotated-cell-12-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">.after =</span> size) </span>
+<span id="annotated-cell-12-10"><a href="#annotated-cell-12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-12-11"><a href="#annotated-cell-12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the number of crabs in each category</span></span>
+<span id="annotated-cell-12-12"><a href="#annotated-cell-12-12" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-12-13"><a href="#annotated-cell-12-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(size_category) <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-12-14"><a href="#annotated-cell-12-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">crab_ct =</span> dplyr<span class="sc">::</span><span class="fu">n</span>())</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-13" data-code-lines="3" data-code-annotation="1"><code>mutate</code> makes a new column, <code>ifelse</code> is actually doing the conditional</span>
+<span data-code-cell="annotated-cell-12" data-code-lines="6" data-code-annotation="1"><code>mutate</code> makes a new column, <code>ifelse</code> is actually doing the conditional</span>
 </dd>
 </dl>
 </div>
@@ -705,29 +728,29 @@ Discussion: Data Exploration Tools
 </div>
 <p>If you have multiple different conditions you <em>can</em> just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-14"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-14-1"><a href="#annotated-cell-14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new column with several conditionals</span></span>
-<span id="annotated-cell-14-2"><a href="#annotated-cell-14-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-14-3"><a href="#annotated-cell-14-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> dplyr<span class="sc">::</span><span class="fu">case_when</span>( </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="1">1</button><span id="annotated-cell-14-4" class="code-annotation-target"><a href="#annotated-cell-14-4" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&lt;=</span> <span class="dv">10</span> <span class="sc">~</span> <span class="st">"tiny"</span>,</span>
-<span id="annotated-cell-14-5"><a href="#annotated-cell-14-5" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">10</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">15</span> <span class="sc">~</span> <span class="st">"small"</span>,</span>
-<span id="annotated-cell-14-6"><a href="#annotated-cell-14-6" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">15</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"big"</span>,</span>
-<span id="annotated-cell-14-7"><a href="#annotated-cell-14-7" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"huge"</span>,</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="2">2</button><span id="annotated-cell-14-8" class="code-annotation-target"><a href="#annotated-cell-14-8" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"uncategorized"</span>),</span>
-<span id="annotated-cell-14-9"><a href="#annotated-cell-14-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">.after =</span> size)</span>
-<span id="annotated-cell-14-10"><a href="#annotated-cell-14-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-14-11"><a href="#annotated-cell-14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the number of crabs in each category</span></span>
-<span id="annotated-cell-14-12"><a href="#annotated-cell-14-12" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-14-13"><a href="#annotated-cell-14-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(size_category) <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-14-14"><a href="#annotated-cell-14-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">crab_ct =</span> dplyr<span class="sc">::</span><span class="fu">n</span>())</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-13-1"><a href="#annotated-cell-13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a new column with several conditionals</span></span>
+<span id="annotated-cell-13-2"><a href="#annotated-cell-13-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-13-3"><a href="#annotated-cell-13-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">size_category =</span> dplyr<span class="sc">::</span><span class="fu">case_when</span>( </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-4" class="code-annotation-target"><a href="#annotated-cell-13-4" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&lt;=</span> <span class="dv">10</span> <span class="sc">~</span> <span class="st">"tiny"</span>,</span>
+<span id="annotated-cell-13-5"><a href="#annotated-cell-13-5" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">10</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">15</span> <span class="sc">~</span> <span class="st">"small"</span>,</span>
+<span id="annotated-cell-13-6"><a href="#annotated-cell-13-6" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">15</span> <span class="sc">&amp;</span> size <span class="sc">&lt;=</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"big"</span>,</span>
+<span id="annotated-cell-13-7"><a href="#annotated-cell-13-7" aria-hidden="true" tabindex="-1"></a>    size <span class="sc">&gt;</span> <span class="dv">20</span> <span class="sc">~</span> <span class="st">"huge"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="2">2</button><span id="annotated-cell-13-8" class="code-annotation-target"><a href="#annotated-cell-13-8" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"uncategorized"</span>),</span>
+<span id="annotated-cell-13-9"><a href="#annotated-cell-13-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">.after =</span> size)</span>
+<span id="annotated-cell-13-10"><a href="#annotated-cell-13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-13-11"><a href="#annotated-cell-13-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the number of crabs in each category</span></span>
+<span id="annotated-cell-13-12"><a href="#annotated-cell-13-12" aria-hidden="true" tabindex="-1"></a>pie_crab_v2 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-13-13"><a href="#annotated-cell-13-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(size_category) <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-13-14"><a href="#annotated-cell-13-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarize</span>(<span class="at">crab_ct =</span> dplyr<span class="sc">::</span><span class="fu">n</span>())</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-13" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-14" data-code-lines="4" data-code-annotation="1">Syntax is ‘test ~ what to do when true’</span>
+<span data-code-cell="annotated-cell-13" data-code-lines="4" data-code-annotation="1">Syntax is ‘test ~ what to do when true’</span>
 </dd>
-<dt data-target-cell="annotated-cell-14" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-13" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-14" data-code-lines="8" data-code-annotation="2">This line is a catch-all for any rows that <em>don’t</em> meet previous conditions</span>
+<span data-code-cell="annotated-cell-13" data-code-lines="8" data-code-annotation="2">This line is a catch-all for any rows that <em>don’t</em> meet previous conditions</span>
 </dd>
 </dl>
 </div>
@@ -767,24 +790,24 @@ Activity: Conditionals
 <h3 class="anchored" data-anchor-id="uniting-separating-columns">Uniting / Separating Columns</h3>
 <p>Sometimes one column has multiple pieces of information that you’d like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-15"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-15-1"><a href="#annotated-cell-15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split date into each piece of temporal info</span></span>
-<span id="annotated-cell-15-2"><a href="#annotated-cell-15-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v3 <span class="ot">&lt;-</span> pie_crab_v2 <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-15-3"><a href="#annotated-cell-15-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_delim</span>(<span class="at">cols =</span> date, </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="1">1</button><span id="annotated-cell-15-4" class="code-annotation-target"><a href="#annotated-cell-15-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">delim =</span> <span class="st">"-"</span>,</span>
-<span id="annotated-cell-15-5"><a href="#annotated-cell-15-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">names =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>, <span class="st">"day"</span>),</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="2">2</button><span id="annotated-cell-15-6" class="code-annotation-target"><a href="#annotated-cell-15-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">cols_remove =</span> <span class="cn">TRUE</span>)</span>
-<span id="annotated-cell-15-7"><a href="#annotated-cell-15-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-15-8"><a href="#annotated-cell-15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that out</span></span>
-<span id="annotated-cell-15-9"><a href="#annotated-cell-15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v3)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-14"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-14-1"><a href="#annotated-cell-14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split date into each piece of temporal info</span></span>
+<span id="annotated-cell-14-2"><a href="#annotated-cell-14-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v3 <span class="ot">&lt;-</span> pie_crab_v2 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-14-3"><a href="#annotated-cell-14-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_delim</span>(<span class="at">cols =</span> date, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="1">1</button><span id="annotated-cell-14-4" class="code-annotation-target"><a href="#annotated-cell-14-4" aria-hidden="true" tabindex="-1"></a>                              <span class="at">delim =</span> <span class="st">"-"</span>,</span>
+<span id="annotated-cell-14-5"><a href="#annotated-cell-14-5" aria-hidden="true" tabindex="-1"></a>                              <span class="at">names =</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"month"</span>, <span class="st">"day"</span>),</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-14" data-target-annotation="2">2</button><span id="annotated-cell-14-6" class="code-annotation-target"><a href="#annotated-cell-14-6" aria-hidden="true" tabindex="-1"></a>                              <span class="at">cols_remove =</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-14-7"><a href="#annotated-cell-14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-14-8"><a href="#annotated-cell-14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that out</span></span>
+<span id="annotated-cell-14-9"><a href="#annotated-cell-14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v3)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-15" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-14" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-15" data-code-lines="4" data-code-annotation="1">‘delim’ is short for “delimiter” which we covered in the Reproducibility module</span>
+<span data-code-cell="annotated-cell-14" data-code-lines="4" data-code-annotation="1">‘delim’ is short for “delimiter” which we covered in the Reproducibility module</span>
 </dd>
-<dt data-target-cell="annotated-cell-15" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-14" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-15" data-code-lines="6" data-code-annotation="2">This argument specifies whether to remove the original column when making the new columns</span>
+<span data-code-cell="annotated-cell-14" data-code-lines="6" data-code-annotation="2">This argument specifies whether to remove the original column when making the new columns</span>
 </dd>
 </dl>
 </div>
@@ -806,24 +829,24 @@ Activity: Conditionals
 </div>
 <p>While breaking apart a column’s contents can be useful, it can also be helpful to combine the contents of several columns!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-16"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-16-1"><a href="#annotated-cell-16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-combine data information back into date</span></span>
-<span id="annotated-cell-16-2"><a href="#annotated-cell-16-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v4 <span class="ot">&lt;-</span> pie_crab_v3 <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-16-3"><a href="#annotated-cell-16-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">unite</span>(<span class="at">col =</span> <span class="st">"date"</span>,</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-16" data-target-annotation="1">1</button><span id="annotated-cell-16-4" class="code-annotation-target"><a href="#annotated-cell-16-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">sep =</span> <span class="st">"/"</span>,</span>
-<span id="annotated-cell-16-5"><a href="#annotated-cell-16-5" aria-hidden="true" tabindex="-1"></a>               year<span class="sc">:</span>day, </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-16" data-target-annotation="2">2</button><span id="annotated-cell-16-6" class="code-annotation-target"><a href="#annotated-cell-16-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">remove =</span> <span class="cn">FALSE</span>)</span>
-<span id="annotated-cell-16-7"><a href="#annotated-cell-16-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-16-8"><a href="#annotated-cell-16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Structure check</span></span>
-<span id="annotated-cell-16-9"><a href="#annotated-cell-16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v4)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-15"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-15-1"><a href="#annotated-cell-15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-combine data information back into date</span></span>
+<span id="annotated-cell-15-2"><a href="#annotated-cell-15-2" aria-hidden="true" tabindex="-1"></a>pie_crab_v4 <span class="ot">&lt;-</span> pie_crab_v3 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-15-3"><a href="#annotated-cell-15-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">unite</span>(<span class="at">col =</span> <span class="st">"date"</span>,</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="1">1</button><span id="annotated-cell-15-4" class="code-annotation-target"><a href="#annotated-cell-15-4" aria-hidden="true" tabindex="-1"></a>               <span class="at">sep =</span> <span class="st">"/"</span>,</span>
+<span id="annotated-cell-15-5"><a href="#annotated-cell-15-5" aria-hidden="true" tabindex="-1"></a>               year<span class="sc">:</span>day, </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-15" data-target-annotation="2">2</button><span id="annotated-cell-15-6" class="code-annotation-target"><a href="#annotated-cell-15-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">remove =</span> <span class="cn">FALSE</span>)</span>
+<span id="annotated-cell-15-7"><a href="#annotated-cell-15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-15-8"><a href="#annotated-cell-15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Structure check</span></span>
+<span id="annotated-cell-15-9"><a href="#annotated-cell-15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab_v4)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-16" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-15" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-16" data-code-lines="4" data-code-annotation="1">This is equivalent to the ‘delim’ argument in the previous function</span>
+<span data-code-cell="annotated-cell-15" data-code-lines="4" data-code-annotation="1">This is equivalent to the ‘delim’ argument in the previous function</span>
 </dd>
-<dt data-target-cell="annotated-cell-16" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-15" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-16" data-code-lines="6" data-code-annotation="2">Comparable to the ‘cols_remove’ argument in the previous function</span>
+<span data-code-cell="annotated-cell-15" data-code-lines="6" data-code-annotation="2">Comparable to the ‘cols_remove’ argument in the previous function</span>
 </dd>
 </dl>
 </div>
@@ -851,12 +874,12 @@ Activity: Conditionals
 <p>Often the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups’ data on sea star abundance and–once you’ve synonymized the column names–you can simply ‘stack’ the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group’s research. You can’t simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps “site” and coordinate columns) you can use <strong>joins</strong> to let your computer match these key columns and make sure that only appropriate rows are combined.</p>
 <p>Because joins are completely dependent upon the value in both columns being an <em>exact</em> match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Following element(s) found in old object but not new: </code></pre>
 </div>
@@ -871,19 +894,19 @@ Activity: Conditionals
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-18"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-18-1"><a href="#annotated-cell-18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use text replacement methods to fix that mistake in one table</span></span>
-<span id="annotated-cell-18-2"><a href="#annotated-cell-18-2" aria-hidden="true" tabindex="-1"></a>fish_tax_v2 <span class="ot">&lt;-</span> fish_tax <span class="sc">%&gt;%</span> </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-18" data-target-annotation="1">1</button><span id="annotated-cell-18-3" class="code-annotation-target"><a href="#annotated-cell-18-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"^eel$"</span>,</span>
-<span id="annotated-cell-18-4"><a href="#annotated-cell-18-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">replacement =</span> <span class="st">"moray eel"</span>, </span>
-<span id="annotated-cell-18-5"><a href="#annotated-cell-18-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">x =</span> species))</span>
-<span id="annotated-cell-18-6"><a href="#annotated-cell-18-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-18-7"><a href="#annotated-cell-18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check to make sure that fixed it</span></span>
-<span id="annotated-cell-18-8"><a href="#annotated-cell-18-8" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax_v2<span class="sc">$</span>species)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-17"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-17-1"><a href="#annotated-cell-17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use text replacement methods to fix that mistake in one table</span></span>
+<span id="annotated-cell-17-2"><a href="#annotated-cell-17-2" aria-hidden="true" tabindex="-1"></a>fish_tax_v2 <span class="ot">&lt;-</span> fish_tax <span class="sc">%&gt;%</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="1">1</button><span id="annotated-cell-17-3" class="code-annotation-target"><a href="#annotated-cell-17-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"^eel$"</span>,</span>
+<span id="annotated-cell-17-4"><a href="#annotated-cell-17-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">replacement =</span> <span class="st">"moray eel"</span>, </span>
+<span id="annotated-cell-17-5"><a href="#annotated-cell-17-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">x =</span> species))</span>
+<span id="annotated-cell-17-6"><a href="#annotated-cell-17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-17-7"><a href="#annotated-cell-17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check to make sure that fixed it</span></span>
+<span id="annotated-cell-17-8"><a href="#annotated-cell-17-8" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax_v2<span class="sc">$</span>species)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-18" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-17" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-18" data-code-lines="3" data-code-annotation="1">The symbols around “eel” mean that we’re only finding/replacing <em>exact</em> matches. It doesn’t matter in this context but often replacing a partial match would result in more problems. For example, replacing “eel” with “moray eel” could make “electric eel” into “electric moray eel”.</span>
+<span data-code-cell="annotated-cell-17" data-code-lines="3" data-code-annotation="1">The symbols around “eel” mean that we’re only finding/replacing <em>exact</em> matches. It doesn’t matter in this context but often replacing a partial match would result in more problems. For example, replacing “eel” with “moray eel” could make “electric eel” into “electric moray eel”.</span>
 </dd>
 </dl>
 </div>
@@ -903,20 +926,20 @@ Activity: Conditionals
 </ol>
 <p>You can learn more about the types of join <a href="https://nceas.github.io/scicomp-workshop-tidyverse/join.html">here</a> or <a href="https://njlyon0.github.io/teach_r-for-biologists/materials/slides_4a.html#/title-slide">here</a> but the quick explanation is that <u>the name of the join indicates whether the rows of the “left” and/or the “right” table are retained in the combined table</u>. In synthesis work a left join or full join is most common (where you have your primary data in the left position and some ancillary/supplementary dataset in the right position).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-19"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-19-1"><a href="#annotated-cell-19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's combine the fish count and fish taxonomy information</span></span>
-<span id="annotated-cell-19-2"><a href="#annotated-cell-19-2" aria-hidden="true" tabindex="-1"></a>fish_df <span class="ot">&lt;-</span> fish_ct <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-19-3"><a href="#annotated-cell-19-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Actual join step</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-19" data-target-annotation="1">1</button><span id="annotated-cell-19-4" class="code-annotation-target"><a href="#annotated-cell-19-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(<span class="at">y =</span> fish_tax_v2, <span class="at">by =</span> <span class="st">"species"</span>) <span class="sc">%&gt;%</span></span>
-<span id="annotated-cell-19-5"><a href="#annotated-cell-19-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Move 'family' column to the left of all other columns</span></span>
-<span id="annotated-cell-19-6"><a href="#annotated-cell-19-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">relocate</span>(family, <span class="at">.before =</span> dplyr<span class="sc">::</span><span class="fu">everything</span>())</span>
-<span id="annotated-cell-19-7"><a href="#annotated-cell-19-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-19-8"><a href="#annotated-cell-19-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the result of that</span></span>
-<span id="annotated-cell-19-9"><a href="#annotated-cell-19-9" aria-hidden="true" tabindex="-1"></a>fish_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-18"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-18-1"><a href="#annotated-cell-18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's combine the fish count and fish taxonomy information</span></span>
+<span id="annotated-cell-18-2"><a href="#annotated-cell-18-2" aria-hidden="true" tabindex="-1"></a>fish_df <span class="ot">&lt;-</span> fish_ct <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-18-3"><a href="#annotated-cell-18-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Actual join step</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-18" data-target-annotation="1">1</button><span id="annotated-cell-18-4" class="code-annotation-target"><a href="#annotated-cell-18-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(<span class="at">y =</span> fish_tax_v2, <span class="at">by =</span> <span class="st">"species"</span>) <span class="sc">%&gt;%</span></span>
+<span id="annotated-cell-18-5"><a href="#annotated-cell-18-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Move 'family' column to the left of all other columns</span></span>
+<span id="annotated-cell-18-6"><a href="#annotated-cell-18-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">relocate</span>(family, <span class="at">.before =</span> dplyr<span class="sc">::</span><span class="fu">everything</span>())</span>
+<span id="annotated-cell-18-7"><a href="#annotated-cell-18-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-18-8"><a href="#annotated-cell-18-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the result of that</span></span>
+<span id="annotated-cell-18-9"><a href="#annotated-cell-18-9" aria-hidden="true" tabindex="-1"></a>fish_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-19" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-18" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-19" data-code-lines="4" data-code-annotation="1">The ‘by’ argument accepts a vector of column names found in both data tables</span>
+<span data-code-cell="annotated-cell-18" data-code-lines="4" data-code-annotation="1">The ‘by’ argument accepts a vector of column names found in both data tables</span>
 </dd>
 </dl>
 </div>
@@ -959,20 +982,20 @@ Activity: Separating Columns &amp; Joining Data
 <p>Data shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes “tidy”, you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then–when you’re finished–reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.</p>
 <p>Let’s consider an example to help clarify this. We’ll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a butterfly dataframe</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>bfly_v1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"pasture"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"PNW"</span>, <span class="st">"PNW"</span>, <span class="st">"RCS"</span>, <span class="st">"RCS"</span>),</span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"monarch"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"14m"</span>, <span class="st">"10f"</span>, <span class="st">"7m"</span>, <span class="st">"16f"</span>),</span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"melissa_blue"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"32m"</span>, <span class="st">"2f"</span>, <span class="st">"6m"</span>, <span class="st">"0f"</span>),</span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"swallowtail"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"1m"</span>, <span class="st">"3f"</span>, <span class="st">"0m"</span>, <span class="st">"5f"</span>))</span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="co"># First we'll reshape this into long format</span></span>
-<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>bfly_v2 <span class="ot">&lt;-</span> bfly_v1 <span class="sc">%&gt;%</span> </span>
-<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>pasture, </span>
-<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"butterfly_sp"</span>, </span>
-<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"count_sex"</span>)</span>
-<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Check what that leaves us with</span></span>
-<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v2, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate a butterfly dataframe</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>bfly_v1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"pasture"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"PNW"</span>, <span class="st">"PNW"</span>, <span class="st">"RCS"</span>, <span class="st">"RCS"</span>),</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"monarch"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"14m"</span>, <span class="st">"10f"</span>, <span class="st">"7m"</span>, <span class="st">"16f"</span>),</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"melissa_blue"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"32m"</span>, <span class="st">"2f"</span>, <span class="st">"6m"</span>, <span class="st">"0f"</span>),</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"swallowtail"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"1m"</span>, <span class="st">"3f"</span>, <span class="st">"0m"</span>, <span class="st">"5f"</span>))</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co"># First we'll reshape this into long format</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>bfly_v2 <span class="ot">&lt;-</span> bfly_v1 <span class="sc">%&gt;%</span> </span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="sc">-</span>pasture, </span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>                      <span class="at">names_to =</span> <span class="st">"butterfly_sp"</span>, </span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">values_to =</span> <span class="st">"count_sex"</span>)</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Check what that leaves us with</span></span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v2, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 3
   pasture butterfly_sp count_sex
@@ -982,15 +1005,15 @@ Activity: Separating Columns &amp; Joining Data
 3 PNW     swallowtail  1m       
 4 PNW     monarch      10f      </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's separate count from sex to be more usable later</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>bfly_v3 <span class="ot">&lt;-</span> bfly_v2 <span class="sc">%&gt;%</span> </span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_regex</span>(<span class="at">cols =</span> count_sex, </span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">c</span>(<span class="at">count =</span> <span class="st">"[[:digit:]]+"</span>, <span class="at">sex =</span> <span class="st">"[[:alpha:]]"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the 'count' column a real number now</span></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">count =</span> <span class="fu">as.numeric</span>(count))</span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check output</span></span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v3, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's separate count from sex to be more usable later</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>bfly_v3 <span class="ot">&lt;-</span> bfly_v2 <span class="sc">%&gt;%</span> </span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">separate_wider_regex</span>(<span class="at">cols =</span> count_sex, </span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>                              <span class="fu">c</span>(<span class="at">count =</span> <span class="st">"[[:digit:]]+"</span>, <span class="at">sex =</span> <span class="st">"[[:alpha:]]"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Make the 'count' column a real number now</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">count =</span> <span class="fu">as.numeric</span>(count))</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check output</span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v3, <span class="at">n =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 4
   pasture butterfly_sp count sex  
@@ -1000,12 +1023,12 @@ Activity: Separating Columns &amp; Joining Data
 3 PNW     swallowtail      1 m    
 4 PNW     monarch         10 f    </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape back into wide-ish format</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>bfly_v4 <span class="ot">&lt;-</span> bfly_v3 <span class="sc">%&gt;%</span> </span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"butterfly_sp"</span>, <span class="at">values_from =</span> count)</span>
-<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-re-check output</span></span>
-<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reshape back into wide-ish format</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>bfly_v4 <span class="ot">&lt;-</span> bfly_v3 <span class="sc">%&gt;%</span> </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"butterfly_sp"</span>, <span class="at">values_from =</span> count)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-re-check output</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(bfly_v4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 4 × 5
   pasture sex   monarch melissa_blue swallowtail
@@ -1023,24 +1046,24 @@ Activity: Separating Columns &amp; Joining Data
 <p>Another way of simplfying repetitive operations is to use a “for loop” (often called simply “loops”). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an “index” object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object’s identity will be determined by whatever set of values you define at the top of the loop.</p>
 <p>Here’s a very bare bones example to demonstrate the fundamentals.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-23"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-23-1"><a href="#annotated-cell-23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across each number between 2 and 4</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="1">1</button><span id="annotated-cell-23-2" class="code-annotation-target"><a href="#annotated-cell-23-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>){</span>
-<span id="annotated-cell-23-3"><a href="#annotated-cell-23-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-23-4"><a href="#annotated-cell-23-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Square the number</span></span>
-<span id="annotated-cell-23-5"><a href="#annotated-cell-23-5" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> k<span class="sc">^</span><span class="dv">2</span></span>
-<span id="annotated-cell-23-6"><a href="#annotated-cell-23-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-23-7"><a href="#annotated-cell-23-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Message that outside of the loop</span></span>
-<span id="annotated-cell-23-8"><a href="#annotated-cell-23-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(k, <span class="st">" squared is "</span>, result)</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="2">2</button><span id="annotated-cell-23-9" class="code-annotation-target"><a href="#annotated-cell-23-9" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-22"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-22-1"><a href="#annotated-cell-22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across each number between 2 and 4</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-22" data-target-annotation="1">1</button><span id="annotated-cell-22-2" class="code-annotation-target"><a href="#annotated-cell-22-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(k <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>){</span>
+<span id="annotated-cell-22-3"><a href="#annotated-cell-22-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-22-4"><a href="#annotated-cell-22-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Square the number</span></span>
+<span id="annotated-cell-22-5"><a href="#annotated-cell-22-5" aria-hidden="true" tabindex="-1"></a>  result <span class="ot">&lt;-</span> k<span class="sc">^</span><span class="dv">2</span></span>
+<span id="annotated-cell-22-6"><a href="#annotated-cell-22-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-22-7"><a href="#annotated-cell-22-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Message that outside of the loop</span></span>
+<span id="annotated-cell-22-8"><a href="#annotated-cell-22-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(k, <span class="st">" squared is "</span>, result)</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-22" data-target-annotation="2">2</button><span id="annotated-cell-22-9" class="code-annotation-target"><a href="#annotated-cell-22-9" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-23" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-22" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-23" data-code-lines="2" data-code-annotation="1">‘k’ is our index object in this loop</span>
+<span data-code-cell="annotated-cell-22" data-code-lines="2" data-code-annotation="1">‘k’ is our index object in this loop</span>
 </dd>
-<dt data-target-cell="annotated-cell-23" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-22" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-23" data-code-lines="9" data-code-annotation="2">Note that the operations to iterate across are wrapped in curly braces (<code>{...}</code>)</span>
+<span data-code-cell="annotated-cell-22" data-code-lines="9" data-code-annotation="2">Note that the operations to iterate across are wrapped in curly braces (<code>{...}</code>)</span>
 </dd>
 </dl>
 </div>
@@ -1056,40 +1079,40 @@ Activity: Separating Columns &amp; Joining Data
 </div>
 <p>Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let’s return to our Plum Island Ecosystems crab dataset for a more nuanced example.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-24"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-24-1"><a href="#annotated-cell-24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list</span></span>
-<span id="annotated-cell-24-2"><a href="#annotated-cell-24-2" aria-hidden="true" tabindex="-1"></a>crab_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="annotated-cell-24-3"><a href="#annotated-cell-24-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-24-4"><a href="#annotated-cell-24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's loop across size categories of crab</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-24" data-target-annotation="1">1</button><span id="annotated-cell-24-5" class="code-annotation-target"><a href="#annotated-cell-24-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_size <span class="cf">in</span> <span class="fu">unique</span>(pie_crab_v4<span class="sc">$</span>size_category)){</span>
-<span id="annotated-cell-24-6"><a href="#annotated-cell-24-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-24-7"><a href="#annotated-cell-24-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset the data to just this size category</span></span>
-<span id="annotated-cell-24-8"><a href="#annotated-cell-24-8" aria-hidden="true" tabindex="-1"></a>  focal_df <span class="ot">&lt;-</span> pie_crab_v4 <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-24-9"><a href="#annotated-cell-24-9" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(size_category <span class="sc">==</span> focal_size)</span>
-<span id="annotated-cell-24-10"><a href="#annotated-cell-24-10" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-24-11"><a href="#annotated-cell-24-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate average and standard deviation of size within this category</span></span>
-<span id="annotated-cell-24-12"><a href="#annotated-cell-24-12" aria-hidden="true" tabindex="-1"></a>  size_avg <span class="ot">&lt;-</span> <span class="fu">mean</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
-<span id="annotated-cell-24-13"><a href="#annotated-cell-24-13" aria-hidden="true" tabindex="-1"></a>  size_dev <span class="ot">&lt;-</span> <span class="fu">sd</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
-<span id="annotated-cell-24-14"><a href="#annotated-cell-24-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-24-15"><a href="#annotated-cell-24-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble this into a data table and add to our list</span></span>
-<span id="annotated-cell-24-16"><a href="#annotated-cell-24-16" aria-hidden="true" tabindex="-1"></a>  crab_list[[focal_size]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"size_category"</span> <span class="ot">=</span> focal_size,</span>
-<span id="annotated-cell-24-17"><a href="#annotated-cell-24-17" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_mean"</span> <span class="ot">=</span> size_avg,</span>
-<span id="annotated-cell-24-18"><a href="#annotated-cell-24-18" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_sd"</span> <span class="ot">=</span> size_dev)</span>
-<span id="annotated-cell-24-19"><a href="#annotated-cell-24-19" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close loop</span></span>
-<span id="annotated-cell-24-20"><a href="#annotated-cell-24-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-24-21"><a href="#annotated-cell-24-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Unlist the outputs into a dataframe</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-24" data-target-annotation="2">2</button><span id="annotated-cell-24-22" class="code-annotation-target"><a href="#annotated-cell-24-22" aria-hidden="true" tabindex="-1"></a>crab_df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">list_rbind</span>(<span class="at">x =</span> crab_list)</span>
-<span id="annotated-cell-24-23"><a href="#annotated-cell-24-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-24-24"><a href="#annotated-cell-24-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the resulting data table</span></span>
-<span id="annotated-cell-24-25"><a href="#annotated-cell-24-25" aria-hidden="true" tabindex="-1"></a>crab_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-23"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-23-1"><a href="#annotated-cell-23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list</span></span>
+<span id="annotated-cell-23-2"><a href="#annotated-cell-23-2" aria-hidden="true" tabindex="-1"></a>crab_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="annotated-cell-23-3"><a href="#annotated-cell-23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-23-4"><a href="#annotated-cell-23-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's loop across size categories of crab</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="1">1</button><span id="annotated-cell-23-5" class="code-annotation-target"><a href="#annotated-cell-23-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_size <span class="cf">in</span> <span class="fu">unique</span>(pie_crab_v4<span class="sc">$</span>size_category)){</span>
+<span id="annotated-cell-23-6"><a href="#annotated-cell-23-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-23-7"><a href="#annotated-cell-23-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset the data to just this size category</span></span>
+<span id="annotated-cell-23-8"><a href="#annotated-cell-23-8" aria-hidden="true" tabindex="-1"></a>  focal_df <span class="ot">&lt;-</span> pie_crab_v4 <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-23-9"><a href="#annotated-cell-23-9" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(size_category <span class="sc">==</span> focal_size)</span>
+<span id="annotated-cell-23-10"><a href="#annotated-cell-23-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-23-11"><a href="#annotated-cell-23-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate average and standard deviation of size within this category</span></span>
+<span id="annotated-cell-23-12"><a href="#annotated-cell-23-12" aria-hidden="true" tabindex="-1"></a>  size_avg <span class="ot">&lt;-</span> <span class="fu">mean</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
+<span id="annotated-cell-23-13"><a href="#annotated-cell-23-13" aria-hidden="true" tabindex="-1"></a>  size_dev <span class="ot">&lt;-</span> <span class="fu">sd</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
+<span id="annotated-cell-23-14"><a href="#annotated-cell-23-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-23-15"><a href="#annotated-cell-23-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble this into a data table and add to our list</span></span>
+<span id="annotated-cell-23-16"><a href="#annotated-cell-23-16" aria-hidden="true" tabindex="-1"></a>  crab_list[[focal_size]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"size_category"</span> <span class="ot">=</span> focal_size,</span>
+<span id="annotated-cell-23-17"><a href="#annotated-cell-23-17" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_mean"</span> <span class="ot">=</span> size_avg,</span>
+<span id="annotated-cell-23-18"><a href="#annotated-cell-23-18" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_sd"</span> <span class="ot">=</span> size_dev)</span>
+<span id="annotated-cell-23-19"><a href="#annotated-cell-23-19" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close loop</span></span>
+<span id="annotated-cell-23-20"><a href="#annotated-cell-23-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-23-21"><a href="#annotated-cell-23-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Unlist the outputs into a dataframe</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-23" data-target-annotation="2">2</button><span id="annotated-cell-23-22" class="code-annotation-target"><a href="#annotated-cell-23-22" aria-hidden="true" tabindex="-1"></a>crab_df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">list_rbind</span>(<span class="at">x =</span> crab_list)</span>
+<span id="annotated-cell-23-23"><a href="#annotated-cell-23-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-23-24"><a href="#annotated-cell-23-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the resulting data table</span></span>
+<span id="annotated-cell-23-25"><a href="#annotated-cell-23-25" aria-hidden="true" tabindex="-1"></a>crab_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-24" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-23" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-24" data-code-lines="5" data-code-annotation="1">Note that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!</span>
+<span data-code-cell="annotated-cell-23" data-code-lines="5" data-code-annotation="1">Note that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!</span>
 </dd>
-<dt data-target-cell="annotated-cell-24" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-23" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-24" data-code-lines="22" data-code-annotation="2">When all elements of your list have the same column names, <code>list_rbind</code> efficiently stacks those elements into one longer data table.</span>
+<span data-code-cell="annotated-cell-23" data-code-lines="22" data-code-annotation="2">When all elements of your list have the same column names, <code>list_rbind</code> efficiently stacks those elements into one longer data table.</span>
 </dd>
 </dl>
 </div>
@@ -1107,18 +1130,18 @@ Activity: Separating Columns &amp; Joining Data
 <p>Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR <a href="https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions">Reproducibility module</a>) and also can be useful end products of synthesis work in and of themselves.</p>
 <p>If one of your group’s outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project’s findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, size_cat){</span>
-<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
-<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
-<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
-<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
-<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-11"><a href="#cb42-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke function</span></span>
-<span id="cb42-12"><a href="#cb42-12" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4, <span class="at">size_cat =</span> <span class="st">"tiny"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, size_cat){</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke function</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4, <span class="at">size_cat =</span> <span class="st">"tiny"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1129,47 +1152,47 @@ Activity: Separating Columns &amp; Joining Data
 </div>
 <p>When writing your own functions it can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated</p>
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="annotated-cell-26"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-26-1"><a href="#annotated-cell-26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="1">1</button><span id="annotated-cell-26-2" class="code-annotation-target"><a href="#annotated-cell-26-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, <span class="at">size_cat =</span> <span class="st">"small"</span>){</span>
-<span id="annotated-cell-26-3"><a href="#annotated-cell-26-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-26-4"><a href="#annotated-cell-26-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if 'df' isn't the right format</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="2">2</button><span id="annotated-cell-26-5" class="code-annotation-target"><a href="#annotated-cell-26-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.data.frame</span>(df) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
-<span id="annotated-cell-26-6"><a href="#annotated-cell-26-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"'df' must be provided as a data frame"</span>)</span>
-<span id="annotated-cell-26-7"><a href="#annotated-cell-26-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-26-8"><a href="#annotated-cell-26-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if the data doesn't have the right columns</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="3">3</button><span id="annotated-cell-26-9" class="code-annotation-target"><a href="#annotated-cell-26-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"size_category"</span>, <span class="st">"size"</span>) <span class="sc">%in%</span> <span class="fu">names</span>(df)) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
-<span id="annotated-cell-26-10"><a href="#annotated-cell-26-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"'df' must include a 'size' and 'size_category' column"</span>)</span>
-<span id="annotated-cell-26-11"><a href="#annotated-cell-26-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-26-12"><a href="#annotated-cell-26-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out for unsupported size category values</span></span>
-<span id="annotated-cell-26-13"><a href="#annotated-cell-26-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(size_cat <span class="sc">%in%</span> <span class="fu">unique</span>(df<span class="sc">$</span>size_category) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
-<span id="annotated-cell-26-14"><a href="#annotated-cell-26-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Specified 'size_cat' not found in provided data"</span>)</span>
-<span id="annotated-cell-26-15"><a href="#annotated-cell-26-15" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-26-16"><a href="#annotated-cell-26-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
-<span id="annotated-cell-26-17"><a href="#annotated-cell-26-17" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
-<span id="annotated-cell-26-18"><a href="#annotated-cell-26-18" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-26-19"><a href="#annotated-cell-26-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
-<span id="annotated-cell-26-20"><a href="#annotated-cell-26-20" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
-<span id="annotated-cell-26-21"><a href="#annotated-cell-26-21" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="annotated-cell-26-22"><a href="#annotated-cell-26-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-26-23"><a href="#annotated-cell-26-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke new-and-improved function</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-26" data-target-annotation="4">4</button><span id="annotated-cell-26-24" class="code-annotation-target"><a href="#annotated-cell-26-24" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-25"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-25-1"><a href="#annotated-cell-25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define custom function</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="1">1</button><span id="annotated-cell-25-2" class="code-annotation-target"><a href="#annotated-cell-25-2" aria-hidden="true" tabindex="-1"></a>crab_hist <span class="ot">&lt;-</span> <span class="cf">function</span>(df, <span class="at">size_cat =</span> <span class="st">"small"</span>){</span>
+<span id="annotated-cell-25-3"><a href="#annotated-cell-25-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-25-4"><a href="#annotated-cell-25-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if 'df' isn't the right format</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="2">2</button><span id="annotated-cell-25-5" class="code-annotation-target"><a href="#annotated-cell-25-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.data.frame</span>(df) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-25-6"><a href="#annotated-cell-25-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"'df' must be provided as a data frame"</span>)</span>
+<span id="annotated-cell-25-7"><a href="#annotated-cell-25-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-25-8"><a href="#annotated-cell-25-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if the data doesn't have the right columns</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="3">3</button><span id="annotated-cell-25-9" class="code-annotation-target"><a href="#annotated-cell-25-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">all</span>(<span class="fu">c</span>(<span class="st">"size_category"</span>, <span class="st">"size"</span>) <span class="sc">%in%</span> <span class="fu">names</span>(df)) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-25-10"><a href="#annotated-cell-25-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"'df' must include a 'size' and 'size_category' column"</span>)</span>
+<span id="annotated-cell-25-11"><a href="#annotated-cell-25-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-25-12"><a href="#annotated-cell-25-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out for unsupported size category values</span></span>
+<span id="annotated-cell-25-13"><a href="#annotated-cell-25-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(size_cat <span class="sc">%in%</span> <span class="fu">unique</span>(df<span class="sc">$</span>size_category) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="annotated-cell-25-14"><a href="#annotated-cell-25-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Specified 'size_cat' not found in provided data"</span>)</span>
+<span id="annotated-cell-25-15"><a href="#annotated-cell-25-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-25-16"><a href="#annotated-cell-25-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset data to the desired category</span></span>
+<span id="annotated-cell-25-17"><a href="#annotated-cell-25-17" aria-hidden="true" tabindex="-1"></a>  data_sub <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="at">.data =</span> df, size_category <span class="sc">==</span> size_cat)</span>
+<span id="annotated-cell-25-18"><a href="#annotated-cell-25-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-25-19"><a href="#annotated-cell-25-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create a histogram</span></span>
+<span id="annotated-cell-25-20"><a href="#annotated-cell-25-20" aria-hidden="true" tabindex="-1"></a>  p <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">multi.hist</span>(<span class="at">x =</span> data_sub<span class="sc">$</span>size)</span>
+<span id="annotated-cell-25-21"><a href="#annotated-cell-25-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="annotated-cell-25-22"><a href="#annotated-cell-25-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-25-23"><a href="#annotated-cell-25-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke new-and-improved function</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-25" data-target-annotation="4">4</button><span id="annotated-cell-25-24" class="code-annotation-target"><a href="#annotated-cell-25-24" aria-hidden="true" tabindex="-1"></a><span class="fu">crab_hist</span>(<span class="at">df =</span> pie_crab_v4)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-26" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-25" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-26" data-code-lines="2" data-code-annotation="1">The default category is now set to “small”</span>
+<span data-code-cell="annotated-cell-25" data-code-lines="2" data-code-annotation="1">The default category is now set to “small”</span>
 </dd>
-<dt data-target-cell="annotated-cell-26" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-25" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-26" data-code-lines="5" data-code-annotation="2">We recommend phrasing your error checks with this format (i.e., ’if &lt;some condition&gt; is <em>not</em> true, then &lt;informative error/warning message&gt;)</span>
+<span data-code-cell="annotated-cell-25" data-code-lines="5" data-code-annotation="2">We recommend phrasing your error checks with this format (i.e., ’if &lt;some condition&gt; is <em>not</em> true, then &lt;informative error/warning message&gt;)</span>
 </dd>
-<dt data-target-cell="annotated-cell-26" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-25" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-26" data-code-lines="9" data-code-annotation="3">The <code>%in%</code> operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate “or” conditionals</span>
+<span data-code-cell="annotated-cell-25" data-code-lines="9" data-code-annotation="3">The <code>%in%</code> operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate “or” conditionals</span>
 </dd>
-<dt data-target-cell="annotated-cell-26" data-target-annotation="4">4</dt>
+<dt data-target-cell="annotated-cell-25" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-26" data-code-lines="24" data-code-annotation="4">We don’t need to specify the ‘size_cat’ argument because we can rely on the default</span>
+<span data-code-cell="annotated-cell-25" data-code-lines="24" data-code-annotation="4">We don’t need to specify the ‘size_cat’ argument because we can rely on the default</span>
 </dd>
 </dl>
 </div>
