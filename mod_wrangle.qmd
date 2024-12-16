@@ -31,6 +31,26 @@ After completing this module you will be able to:
     - What needs to happen to the datasets in order for them to be usable in answering your question?
     - What quality control, structural changes, or formatting edits must be made?
 
+## Making a Wrangling Plan
+
+_Before_ you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data maniuplation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group's plan for your data.
+
+:::{.callout-warning icon="false"}
+#### Discussion: Wrangling Plan
+
+With your project groups discuss the following questions:
+
+- What harmonization needs to be done to make your starting data files comparable?
+    - Consider units, taxonomic resolution, spatial/temporal granularity, etc.
+- Once you have harmonized your data, what wrangling nedes to be done?
+    - Do you need to calculate index metrics? Change the 'shape' of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?
+- How can you make your workflow less repetitive / more efficient?
+    - Reducing redundancy makes integrating new ideas dramatially easier
+- How easy will it be to maintain or revisit this code workflow?
+- How can you change the workflow now to make life easier for 'future you'?
+
+:::
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
