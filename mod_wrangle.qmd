@@ -50,7 +50,7 @@ With your project groups discuss the following questions:
 
 - What harmonization needs to be done to make your starting data files comparable?
     - Consider units, taxonomic resolution, spatial/temporal granularity, etc.
-- Once you have harmonized your data, what wrangling nedes to be done?
+- Once you have harmonized your data, what wrangling needs to be done?
     - Do you need to calculate index metrics? Change the 'shape' of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?
 - How can you make your workflow less repetitive / more efficient?
     - Reducing redundancy makes integrating new ideas dramatially easier
