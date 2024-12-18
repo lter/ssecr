@@ -16,7 +16,6 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Science Mentor(s)</u>: **Will Wieder** (Niwot Ridge), **Marci Litvak** (Sevilleta)
 
-
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-c-cycling**](https://github.com/lter/ssecr-c-cycling)
 
 <u>Project Question(s)</u>: How does carbon cycling respond to environmental change (in experimental manipulations and to natural disturbances)? How does the duration of the disturbance influence how we model carbon cycling projections in the future across ecosystems? Further, what are the mechanisms driving these responses?
@@ -45,7 +44,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Bethany Williams**, **Sierra Perez** (Kellogg Biological Station; Cedar Creek), **Evald Maceno** (Luquillo), **Joey Krieger Lodge** (Niwot Ridge), **Jeremy Collings** (Andrews Forest), **Allison Case**
 
-<u>Science Mentor(s)</u>: **[Nancy Emery](https://emery-lab.org/)** (Niwot Ridge), **Joan Dudney**
+<u>Science Mentor(s)</u>: [**Zach Feiner**](https://zsfeiner.github.io/) (North Temperate Lakes), [**Nancy Emery**](https://emery-lab.org/) (Niwot Ridge), **Joan Dudney**
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-driver-scales**](https://github.com/lter/ssecr-driver-scales)
 
