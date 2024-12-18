@@ -14,7 +14,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Yiyang Xu** (Plum Island Ecosystems; Virginia Coast Reserve), **Taylor Walker** (Moorea Coral Reef), **Carla López Lloreda** (Luquillo), **Guopeng Liang** (Cedar Creek), **Jon Gewirtzman** (Harvard Forest; Florida Coastal Everglades), **Julie Gan** (Arctic), **Ricky Brokaw** (Santa Barbara Coastal)
 
-<u>Science Mentor(s)</u>: **Will Wieder** (Niwot Ridge), **Marci Litvak** (Sevilleta)
+<u>Science Mentor(s)</u>: [**Will Wieder**](https://staff.ucar.edu/users/wwieder) (Niwot Ridge), [**Marci Litvak**](https://www.litvaklab.org/) (Sevilleta)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-c-cycling**](https://github.com/lter/ssecr-c-cycling)
 
@@ -24,7 +24,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Smriti Pehim Limbu** (Konza Prairie), **McKinley Nevins** (Andrews Forest), **Francis Chaves Rodriguez** (Konza Prairie), **Ashley Bulseco** (Plum Island Ecosystems), **Abigail Borgmeier** (McMurdo Dry Valleys; Sevilleta)
 
-<u>Science Mentor(s)</u>: **Serita Frey** (Harvard Forest), **Meghan Avolio** (Konza Prairie)
+<u>Science Mentor(s)</u>: [**Serita Frey**](https://colsa.unh.edu/person/serita-frey) (Harvard Forest), [**Meghan Avolio**](https://avoliolab.weebly.com/) (Konza Prairie)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-above-belowground-coupling**](https://github.com/lter/ssecr-above-belowground-coupling)
 
@@ -34,7 +34,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Junna Wang** (Harvard Forest), **James Sturges** (Florida Coastal Everglades), **Kelsey Solomon** (Florida Coastal Everglades; Coweeta), **Julianna Renzi** (Moorea Coral Reef), **Pooja Panwar** (Hubbard Brook), **Katherine Hulting** (Kellogg Biological Station), **Noam Altman-Kurosaki** (Moorea Coral Reef)
 
-<u>Science Mentor(s)</u>: **Forest Isbell** (Cedar Creek), **Laura Dee** (Niwot Ridge)
+<u>Science Mentor(s)</u>: [**Forest Isbell**](https://biodiversitylab.umn.edu/) (Cedar Creek), [**Laura Dee**](https://www.lauraedee.com/) (Niwot Ridge)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-diversity-stability**](https://github.com/lter/ssecr-diversity-stability)
 
@@ -44,7 +44,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **Bethany Williams**, **Sierra Perez** (Kellogg Biological Station; Cedar Creek), **Evald Maceno** (Luquillo), **Joey Krieger Lodge** (Niwot Ridge), **Jeremy Collings** (Andrews Forest), **Allison Case**
 
-<u>Science Mentor(s)</u>: [**Zach Feiner**](https://zsfeiner.github.io/) (North Temperate Lakes), [**Nancy Emery**](https://emery-lab.org/) (Niwot Ridge), **Joan Dudney**
+<u>Science Mentor(s)</u>: [**Zach Feiner**](https://zsfeiner.github.io/) (North Temperate Lakes), [**Nancy Emery**](https://emery-lab.org/) (Niwot Ridge), [**Joan Dudney**](https://www.landscapesofchangelab.com/)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-driver-scales**](https://github.com/lter/ssecr-driver-scales)
 
