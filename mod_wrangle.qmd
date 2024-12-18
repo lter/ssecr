@@ -27,32 +27,37 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
-
-## Needed Packages
-
-If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+1. In project teams, draft your strategy for wrangling data
+    - What needs to happen to the datasets in order for them to be usable in answering your question(s)?
+    - I.e., what quality control, structural changes, or formatting edits must be made?
+2. _If you are an R user_, run the following code:
 
 ```{r install-pkgs}
 #| eval: false
 
-# Note that these lines only need to be run once per computer
-## So you can skip this step if you've installed these before
-install.packages("ltertools")
-install.packages("lterdatasampler")
-install.packages("psych")
-install.packages("supportR")
-install.packages("tidyverse")
+install.packages("librarian")
+librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
 ```
 
-We'll load the Tidyverse meta-package here to have access to many of its useful tools when we need them later.
+## Making a Wrangling Plan
 
-```{r libs}
-#| message: false
+_Before_ you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data maniuplation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group's plan for your data.
 
-# Load tidyverse
-library(tidyverse)
-```
+:::{.callout-warning icon="false"}
+#### Discussion: Wrangling Plan
+
+With your project groups discuss the following questions:
+
+- What harmonization needs to be done to make your starting data files comparable?
+    - Consider units, taxonomic resolution, spatial/temporal granularity, etc.
+- Once you have harmonized your data, what wrangling needs to be done?
+    - Do you need to calculate index metrics? Change the 'shape' of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?
+- How can you make your workflow less repetitive / more efficient?
+    - Reducing redundancy makes integrating new ideas dramatially easier
+- How easy will it be to maintain or revisit this code workflow?
+- How can you change the workflow now to make life easier for 'future you'?
+
+:::
 
 ## Harmonizing Data
 
@@ -171,10 +176,14 @@ The datasets you gather for your synthesis project will likely have a multitude 
 
 When you read in a dataset and a column that _should be_ numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to 'NA' where a human might be able to deduce the true number each value 'should be.'
 
-```{r num-check}
+```{r supportr-load}
+#| message: false
+
 # Load the supportR package
 library(supportR)
+```
 
+```{r num-check}
 # Create an example dataset with non-numbers in ideally numeric columns
 fish_ct <- data.frame("species" = c("salmon", "bass", "halibut", "moray eel"),
                       "count" = c(12, "14x", "_23", 1))
@@ -223,6 +232,11 @@ Rather than finding and replacing content, you may want to create a new column b
 If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let's return to our Plum Island Ecosystems crab dataset for an example.
 
 ```{r ifelse}
+#| message: false
+
+# Load tidyverse
+library(tidyverse)
+
 # Make a new colum with an either/or conditional
 pie_crab_v2 <- pie_crab %>% 
   dplyr::mutate(size_category = ifelse(test = (size >= 15), # <1>
