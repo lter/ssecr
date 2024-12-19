@@ -39,6 +39,14 @@ install.packages("librarian")
 librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
 ```
 
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
+
+To Be Determined!
+:::
+
 ## Making a Wrangling Plan
 
 _Before_ you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data maniuplation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group's plan for your data.

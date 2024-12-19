@@ -16,6 +16,14 @@ After completing this module you will be able to:
 
 This is a "bonus" module and thus was created for asynchronous learners. There is no suggested preparatory work.
 
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
+
+This was a bonus module for the 2024-25 cohort and so did not include a networking session.
+:::
+
 ## Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:

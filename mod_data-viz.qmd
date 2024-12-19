@@ -32,14 +32,12 @@ librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR,
 
 ## Networking Session
 
-We'll have two guests to kick off today's class. Each has been involved in synthesis as an early career researcher and each uses visualization in different ways to assess, clarify, and communicate their data and analyses.
-
 :::{.panel-tabset}
-
 ### 2024 Guests
 
-- [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator
+We'll have two guests to kick off today's class. Each has been involved in synthesis as an early career researcher and each uses visualization in different ways to assess, clarify, and communicate their data and analyses.
 
+- [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator
 - [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department
 
 :::

@@ -25,6 +25,14 @@ Each project group should:
 - Prepare a presentation (15-30 min) on their (A) synthesis question, (B) the data they are using to address that question, and (C) their proposed analytical methods
     - The presentation modality (e.g., slide deck, website, etc.) is up to the group!
 
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
+
+To Be Determined!
+:::
+
 ## Team Presentations of Proposed Methods
 
 Content produced by project teams during the presentation component of this module may be included in the tab panels below or in the '[Additional Resources](https://lter.github.io/ssecr/mod_stats.html#additional-resources)' section at the bottom of this module _at the discretion of each team._

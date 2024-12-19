@@ -25,7 +25,7 @@ Course participants meet for three hours, weekly, at the same time each week. Se
 
 Each three-hour session will include 2 components:
 
-1. **Inspiration (\~60 minutes)**: Presentation by an experienced synthesis scientist, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.
+1. **Networking (\~60 minutes)**: Presentation by one or more experienced synthesis scientists, describing why and how they conduct synthesis. This diverse group of researchers will be recruited from across the field and course participants will have ample time for discussion with each presenter.
 2. **Instruction (~120 minutes)**: Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently. 
     - Technical skills will build on earlier lessons and are not intended to be stand-alone modules.
 The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.
@@ -33,7 +33,6 @@ The course will include social and leadership skills required to bring a synthes
 Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.
 
 :::{.panel-tabset}
-
 ### 2024 Schedule
 
 | **Date** | **Module** | **Primary Instructor(s)** |

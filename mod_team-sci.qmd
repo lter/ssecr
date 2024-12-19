@@ -23,14 +23,14 @@ Each project group should:
 -   Plan on providing a 3-5 minute project summary and update on recent progress and any questions/issues that are arising
 -   Finish their internal ground rules (if not already complete)
 
-## Panel Discussion
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
 
 We'll begin this session's discussion with a conversation among participants in a recent synthesis group that tackled a particularly broad disciplinary stretch. The [Synthesizing population and community synchrony to understand drivers of ecological stability across LTER sites](https://lternet.edu/working-groups/synthesizing-population-and-community-synchrony-to-understand-drivers-of-ecological-stability-across-lter-sites/) brought together mathematicians, modelers, and empiricists to apply novel analytical strategies to understanding the impact of population fluctuations.
 
 Panelists will briefly introduce themselves and their experience with the synthesis group, which encountered a variety of challenges in their work. Ultimately, they produced several effective and well-received papers, but they had to introduce some innovations in working group approach to get there.
-
-::: panel-tabset
-### 2024 Panelists
 
 -   Dr. [Lauren Hallett](https://ie2.uoregon.edu/people/hallett/), Associate Professor, University of Oregon
 -   Dr. [Max Castorani](https://castorani.evsc.virginia.edu/), Associate Professor, University of Virginia

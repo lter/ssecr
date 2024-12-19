@@ -25,6 +25,14 @@ After completing this module you will be able to:
 
 TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
 
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
+
+To Be Determined!
+:::
+
 ## Notebook Structure & Value
 
 Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add--and format--plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is **intended to be interpretable without any prior coding experience**. The plain text can be formatted with Markdown syntax (we'll discuss that in greater depth later) but even unformatted text outside of code chunks is visually 'easier on the eyes' than comment lines in scripts.

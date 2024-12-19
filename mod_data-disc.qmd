@@ -22,20 +22,19 @@ After completing this module you will be able to:
 
 Each Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the first sheet of the "data-inventory" Google Sheet.
 
-## Panel Discussion
+## Networking Session
+
+::: panel-tabset
+### 2024 Guests
 
 To motivate this module and provide some beneficial context, we're beginning with a conversation with a panel composed of people who work at various organizations with a focus on data management and production. See the tabs below for each year's panelists and links to their professional sites.
 
 Panelists will briefly introduce themselves and describe their roles. They will then speak to the kinds of data available at their organization and the strengths, limitations, and quirks of those data products from a synthesis lens. Individuals not associated with data repositories will instead share their experience working with specific types of data. Time allowing, panelists will talk about their experiences working at their organizations more broadly.
 
-::: panel-tabset
-### 2024 Panelists
-
--   Dr. [Greg Maurer](https://greg.pronghorns.net/index.html), Environmental Data Initiative (EDI) and Jornada LTER
--   Dr. [Eric Sokol](https://www.neonscience.org/person/eric-sokol), Staff Scientist, Quantitative Ecology, National Ecological Observatory Network (NEON)
--   Dr. [Nicole Kaplan](https://www.ars.usda.gov/people-locations/person?person-id=51562), Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service (USDA-ARS)
--   Dr. [Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel), Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US)
-:::
+- Dr. [Greg Maurer](https://greg.pronghorns.net/index.html), Environmental Data Initiative (EDI) and Jornada LTER
+- Dr. [Eric Sokol](https://www.neonscience.org/person/eric-sokol), Staff Scientist, Quantitative Ecology, National Ecological Observatory Network (NEON)
+- Dr. [Nicole Kaplan](https://www.ars.usda.gov/people-locations/person?person-id=51562), Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service (USDA-ARS)
+- Dr. [Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel), Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US)
 
 #### Pre-Prepared Questions
 
@@ -43,6 +42,8 @@ Panelists will briefly introduce themselves and describe their roles. They will 
 -   What challenges (technical and scientific) do you see in integrating data across platforms and organizations?
 -   Are you aware of any open sources of code useful for downloading, wrangling, or analyzing data in your repository?
 -   How can young scientists and data professionals contribute to the work being done by your organizations?
+
+:::
 
 ## Data Repositories
 
@@ -174,7 +175,6 @@ Return to the main room and let's discuss (some of) the following questions:
 -   What challenges did you encounter while searching for the datasets?
 -   What is your plan for downloading the data?
 :::
-
 
 ## Downloading Data
 
