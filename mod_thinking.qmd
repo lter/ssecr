@@ -12,9 +12,9 @@ Below you will find support for your group as you move through both exciting, an
 
 After completing this module you will be able to:
 
--   <u>Recognize<u> the stages of a participatory decision making process and the type of thinking required for each stage
--   <u>Identify<u> the value of and potential obstacles to emergent thinking in the “groan zone”
--   <u>Understand<u> the diamond model of participatory decision making as a framework for group process design
+-   <u>Recognize/<u> the stages of a participatory decision making process and the type of thinking required for each stage
+-   <u>Identify/<u> the value of and potential obstacles to emergent thinking in the “groan zone”
+-   <u>Understand/<u> the diamond model of participatory decision making as a framework for group process design
 -   <u>Develop</u> strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting
 
 ## Preparation
@@ -31,7 +31,7 @@ None required.
 
 ## Module Content
 
-At the beginning of a collaborative process, the most important initial outcome is <b>getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them<b>. If your team process is effective, this plan will be an <i>inclusive solution<i> – one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
+At the beginning of a collaborative process, the most important initial outcome is <b>getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them/<b>. If your team process is effective, this plan will be an <i>inclusive solution/<i> – one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
 
 ### Embracing divergent thinking
 
