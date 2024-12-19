@@ -361,6 +361,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#networking-session" id="toc-networking-session" class="nav-link" data-scroll-target="#networking-session">Networking Session</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#types-of-spatial-data" id="toc-types-of-spatial-data" class="nav-link" data-scroll-target="#types-of-spatial-data">Types of Spatial Data</a></li>
   <li><a href="#coordinate-reference-systems" id="toc-coordinate-reference-systems" class="nav-link" data-scroll-target="#coordinate-reference-systems">Coordinate Reference Systems</a></li>
@@ -417,6 +418,17 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <p>This is a “bonus” module and thus was created for asynchronous learners. There is no suggested preparatory work.</p>
 </section>
+<section id="networking-session" class="level2">
+<h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>This was a bonus module for the 2024-25 cohort and so did not include a networking session.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="needed-packages" class="level2">
 <h2 class="anchored" data-anchor-id="needed-packages">Needed Packages</h2>
 <p>If you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:</p>
@@ -434,9 +446,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="types-of-spatial-data">Types of Spatial Data</h2>
 <p>There are two main types of spatial data: vector and raster. Both types (and the packages they require) are described in the tabs below.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Vector Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Raster Data</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Vector Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Raster Data</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Vector data are stored as polygons. Essentially vector data are a set of points and–sometimes–the lines between them that define the edges of a shape. They may store additional data that is retained in a semi-tabular format that relates to the polygon(s) but isn’t directly stored in them.</p>
 <p>Common vector data types include shape files or GeoJSONs.</p>
 <div class="cell">
@@ -496,7 +508,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Raster data are stored as values in pixels. The resolution (i.e., size of the pixels) may differ among rasters but in all cases the data are stored at a per-pixel level.</p>
 <p>Common raster data types include GeoTIFFs (.tif) and NetCDF (.nc) files.</p>
 <div class="cell">
@@ -548,9 +560,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>Some people use the analogy of peeling a citrus fruit and flattening the peel to describe the components of a CRS. The datum is the choice between a lemon or a grapefruit (i.e., the shape of the not-quite-spherical object) while the projection is the instructions for taking the complete peel and flattening it.</p>
 <p>You can check and transform the CRS in any scripted language that allows the loading of spatial data though the specifics do differ between the types of spatial data we introduced earlier.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Vector CRS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Raster CRS</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Vector CRS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Raster CRS</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>For vector data we can check the CRS with other functions from the <code>sf</code> library. It can be a little difficult to parse all of the information that returns but essentially it is most important that the CRS match that of any other spatial data with which we are working.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check CRS</span></span>
@@ -638,7 +650,7 @@ PROJCRS["NAD83 / Texas Centric Albers Equal Area",
 </div>
 </div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>For raster data we can check the CRS with other functions from the <code>terra</code> library. It can be a little difficult to parse all of the information that returns but essentially it is most important that the CRS match that of any other spatial data with which we are working.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check CRS</span></span>

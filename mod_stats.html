@@ -361,6 +361,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#networking-session" id="toc-networking-session" class="nav-link" data-scroll-target="#networking-session">Networking Session</a></li>
   <li><a href="#team-presentations-of-proposed-methods" id="toc-team-presentations-of-proposed-methods" class="nav-link" data-scroll-target="#team-presentations-of-proposed-methods">Team Presentations of Proposed Methods</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#hypothesis-framing-aside" id="toc-hypothesis-framing-aside" class="nav-link" data-scroll-target="#hypothesis-framing-aside">Hypothesis Framing Aside</a></li>
@@ -434,13 +435,24 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </ul></li>
 </ul>
 </section>
+<section id="networking-session" class="level2">
+<h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>To Be Determined!</p>
+</div>
+</div>
+</div>
+</section>
 <section id="team-presentations-of-proposed-methods" class="level2">
 <h2 class="anchored" data-anchor-id="team-presentations-of-proposed-methods">Team Presentations of Proposed Methods</h2>
 <p>Content produced by project teams during the presentation component of this module may be included in the tab panels below or in the ‘<a href="https://lter.github.io/ssecr/mod_stats.html#additional-resources">Additional Resources</a>’ section at the bottom of this module <em>at the discretion of each team.</em></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Methods</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">2024 Methods</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>For more information on project teams, see <a href="https://lter.github.io/ssecr/proj_teams.html">here</a>.</p>
 </div>
 </div>
@@ -470,14 +482,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>Before we dive in, we should discuss two of the ways in which you can frame your hypothesis and the differences in interpretation and appropriate statistical tool(s) that follow from that choice. We’ll restrict our conversation here to <strong>two alternate modes of thinking about your hypothesis: frequentist statistics versus multi-model inference.</strong></p>
 <p>Note that this is something of a false dichotomy as tools from both worlds can be/are frequently used to complement one another. However, many graduate students are trained by instructors with strong feelings about one method <em>in opposition to</em> the other so it is worthwhile to consider these two paths separately even if you wind up using components of both in your own work.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Frequentist Inference</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Multi-Model Inference</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Frequentist Inference</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Multi-Model Inference</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Hypotheses here are a question of <u>whether a variable has a “significant” effect on another</u>. “Significant” has a very precise meaning in this context that has to do with <em>p</em>-values. Fundamentally, these methods focus on whether the observed relationship in the data is likely to be observed by chance alone or not. Strong effects are less likely–though not impossible–to be observed due to random chance.</p>
 <p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that X affects Y’ then frequentist inference may be a more appropriate methodology.</p>
 <p>For the purposes of SSECR, <strong>our discussion of frequentist inference will focus on <u>mixed-effect models</u></strong>.</p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Hyoptheses here are a question of <u>which variables explain the <em>most</em> variation in the data</u>. Methods in this framing are unconcerned–or at least less concerned than in frequentist inference–with the probability associated with a particular variable. Intead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data <em>even when that best model does not necessarily explain much of that variation in absolute terms</em>.</p>
 <p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that models including X explain more of the variation in Y than those that do not’ then multi-model inference may be a more appropriate methodology.</p>
 <p>For the purposes of SSECR, <strong>our discussion of multi-model inference will focus on <u>comparing model strengths with AIC</u></strong>.</p>
@@ -493,14 +505,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h3 class="anchored" data-anchor-id="types-of-random-effect">Types of Random Effect</h3>
 <p>There are a few types of random effects but we can limit our conversation here to just two: random intercepts and random slopes.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Random Intercepts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Random Slopes</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Random Intercepts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Random Slopes</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>Random intercepts should be used when you expect that the average response differs among levels of that variable but <u>not</u> in a way that changes the relationship between each level of this variable and the other variables (either fixed or random). In statistical terms you want to allow the intercept to change with levels of this variable.</p>
 <p>For example, let’s imagine that we are studying the effect of different organic farming practices on beneficial insect populations. We build relationships with several organic farmers willing to let us conduct this research on their properties and sample the insect communities at each farm over the course of a summer. However, we know that each farm is surrounded by a different habitat type that affects the composition of the local insect community. It is reasonable to expect that even farms where ‘the same’ management method is used are likely to differ because of this difference in landscape context.</p>
 <p>In cases like this, we don’t want to include a term for ‘site’ as a fixed effect but we do want to account for those differences so that our assessment of the significance of our explanatory variables isn’t limited by the variation due to site.</p>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>Random slopes should be used when you expect that the average response differs among levels of that variable in a way that <u>does</u> change with other variables.</p>
 <p>For example, let’s imagine that we are studying the effect of temperature on avian malaria rates in songbirds. We identify several sites–along a gradient of daytime temperature ranges–where our species of interest can be found, capture them, and measure malaria infection rates. However, unbeknownst to us at the start of our study, our study sites have varying populations of dragonflies which affects local mosquito populations and malaria transmission/infection rates. If we revisit our sites repeatedly for several years is is reasonable to expect that this difference among sites likely affects the <em>relationship between</em> daytime temperatures and songbird malaria rates.</p>
 <p>By including site as a random slope in this context, we can account for this effect and still analyze our explanatory variables of interest. Note that random slopes are <em>very</em> “data hungry” so you may not be able to use them without very high replication in your study design.</p>

@@ -361,6 +361,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
+  <li><a href="#networking-session" id="toc-networking-session" class="nav-link" data-scroll-target="#networking-session">Networking Session</a></li>
   <li><a href="#needed-packages" id="toc-needed-packages" class="nav-link" data-scroll-target="#needed-packages">Needed Packages</a></li>
   <li><a href="#ordination" id="toc-ordination" class="nav-link" data-scroll-target="#ordination">Ordination</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
@@ -411,6 +412,17 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
 <p>This is a “bonus” module and thus was created for asynchronous learners. There is no suggested preparatory work.</p>
 </section>
+<section id="networking-session" class="level2">
+<h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>This was a bonus module for the 2024-25 cohort and so did not include a networking session.</p>
+</div>
+</div>
+</div>
+</section>
 <section id="needed-packages" class="level2">
 <h2 class="anchored" data-anchor-id="needed-packages">Needed Packages</h2>
 <p>If you’d like to follow along with the code chunks included throughout this module, you’ll need to install the following packages:</p>
@@ -453,9 +465,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Metric Ordination</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Non-Metric Ordination</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Metric Ordination</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Non-Metric Ordination</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Metric ordinations are typically used when you are concerned with retaining quantitative differences among particular points, <em>even after you’ve collapsed many response variables into just one or two</em>. For example, this is a common approach if you have a table of traits and want to compare the whole set of traits among groups while still being able to interpret the effect of a particular effect on the whole.</p>
 <p>Two of the more common methods for metric ordination are <u>P</u>rincipal <u>C</u>omponents <u>A</u>nalysis (PCA), and <u>P</u>rincipal <u>Co</u>ordinates <u>A</u>nalysis (PCoA / “metric multidimensional scaling”). The primary difference is that PCA works on the data directly while PCoA works on a distance matrix of the data. We’ll use PCoA in this example because it is closer analog to the non-metric ordination discussed in the other tab. <strong>If the holistic difference among groups is of interest,</strong> (rather than metric point-to-point comparisons), <strong>consider a non-metric ordination approach.</strong></p>
 <p>In order to perform a PCoA ordination we first need to get a distance matrix of our response variables and then we can actually do the PCoA step. The distance matrix can be calculated with the <code>vegdist</code> function from the <code>vegan</code> package and the <code>pcoa</code> function in the <code>ape</code> package can do the actual PCoA.</p>
@@ -503,7 +515,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>The percentages included in parentheses on either axis label are the percent of the total variation in the data explained by each axis on its own. Use this information in combination with what the graph looks like to determine how different the groups truly are.</p>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Non-metric ordinations are typically used when you care more about the relative differences among groups rather than specific measurements between particular points. For instance, you may want to assess whether the composition of insect communities differs between two experimental treatments. In such a case, your hypothesis likely depends more on the holistic difference between the treatments rather than some quantitative difference on one of the axes.</p>
 <p>The most common non-metric ordination type is called <u>N</u>onmetric <u>M</u>ultidimensional <u>S</u>caling (NMS / NMDS). This approach prioritizes making groups that are “more different” further apart than those that are less different. However, <u>NMS uses a dissimilarity matrix which means that the <em>distance</em> between any two specific points cannot be interpreted meaningfully</u>. It <em>is</em> appropriate though to interpret which cloud of points is closer to/further from another in aggregate. <strong>If specific distances among points are of interest, consider a metric ordination approach.</strong></p>
 <p>In order to perform an NMS ordination we’ll first need to calculate a dissimilarity matrix for our response data. The vegan function <code>metaMDS</code> is useful for this. This function has many arguments but the most fundamental are the following:</p>
