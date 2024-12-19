@@ -38,7 +38,7 @@ At the beginning of a collaborative process, the most important initial outcome 
 The first stage of group decision making is divergent thinking (Kaner et al. 2014). Confronted with a new, complex topic, the group will gradually move from the safe territory of familiar opinions into sharing their diverse perspectives and exploring new ideas. This can feel like the group process is devolving away from what was assumed to be shared agreement, but it is actually a critical part of the collaborative process.
 
 <p align="center">
-<img src="images/figure_groan-zone.jpg" alt="Figure of Sam Kaner's Diamond Model of Participatory Decisionmaking, showing an increasing diversity of ideas on the left side of the diamond, created through divergent thinking, a period of emergent thinking in the middle known as the _groan zone_ and a narrowing set of ideas filtered down through convergent thinking to a final solution on the right side of the diamond." width="80%"/> 
+<img src="images/figure_groan-zone.jpg" alt="Figure of Sam Kaner's Diamond Model of Participatory Decisionmaking, showing an increasing diversity of ideas on the left side of the diamond, created through divergent thinking, a period of emergent thinking in the middle known as the _groan zone_ and a narrowing set of ideas filtered down through convergent thinking to a final solution on the right side of the diamond." width="100%"/> 
 <figcaption> **Figure 1. Drawing by Carrie Kappel, adapted from Sam Kaner’s Facilitator’s Guide to Participatory Decision making**</figcaption>
 </p>
 
@@ -108,7 +108,7 @@ Once the group has a strong foundation of shared understanding, things often sta
 Discuss as a team _how_ you want to make decisions - what is your decision making process going to be? Will it be based on consensus? Majority rules? Or will you delegate the decisionmaking to the team leader or a sub-team who are closest to the decision? What's your fallback plan if you can't reach a decision during your time together? The figure below arrays a variety of different decisionmaking processes onto the axes of level of group member involvement and level of group member ownership. Note that the two red circles that are off the graph in the bottom left should definitely be avoided! 
 
 <p align="center">
-<img src="images/figure_decisionmaking.png" alt="Diagram of different decisionmaking models arrayed on two axes - level of involvement and level of ownership. Options include (in increasing order): Decide and announce; Gather input from individuals and decide; Gather input from group and decide; Vote (democratic or supermajority; Consensus; and Delegate with Constraints. Both voting and delegating with constraints are fallback options if consensus can't be reached." width="80%"/> 
+<img src="images/figure_decisionmaking.png" alt="Diagram of different decisionmaking models arrayed on two axes - level of involvement and level of ownership. Options include (in increasing order): Decide and announce; Gather input from individuals and decide; Gather input from group and decide; Vote (democratic or supermajority; Consensus; and Delegate with Constraints. Both voting and delegating with constraints are fallback options if consensus can't be reached." width="100%"/> 
 <figcaption> **Figure 2. Decision making approaches and fallback options**</figcaption>
 </p>
 
