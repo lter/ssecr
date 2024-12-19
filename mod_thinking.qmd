@@ -29,11 +29,11 @@ None required.
 [Bala Chaudhary](https://balachaudhary.com/index.html#/) is a soil ecologist specializing in plant-soil-microbial interactions and mycorrhizal symbioses. Research in her lab examines ecosystem-scale questions in mycorrhizal ecology along four main themes: microbial dispersal at the macrosystems scale, trait-based mycorrhizal ecology, synthesis in ecology, and microbial mediation of global change solutions. She uses trait-based approaches to develop predictive frameworks for mycorrhizal dispersal, community assembly, and biogeography, and employs complimentary approaches of macroecological field work, controlled lab experiments, and data synthesis to study multi-scale questions in ecology. Her work spans dozens of ecosystem types and has applications in global change solutions including climate mitigation and adaptation, soil conservation, ecosystem restoration, and sustainable agriculture. She also conducts research on ways to broaden scientific participation and promote racial and ethnic diversity, equity, and inclusion in STEM.
 :::
 
-## Module Content
+## Collaborative Convergence
 
 At the beginning of a collaborative process, the most important initial outcome is getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them. If your team process is effective, this plan will be an _inclusive solution_ – one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
 
-### Embracing divergent thinking
+## Embracing Divergent Thinking
 
 The first stage of group decision making is divergent thinking (Kaner et al. 2014). Confronted with a new, complex topic, the group will gradually move from the safe territory of familiar opinions into sharing their diverse perspectives and exploring new ideas. This can feel like the group process is devolving away from what was assumed to be shared agreement, but it is actually a critical part of the collaborative process.
 
@@ -48,7 +48,7 @@ While your working group is in the divergent thinking stage, it’s critical to 
 
 Beware of the most common pitfall at this stage, which is to converge too quickly on an early conclusion, staying in the safe space of familiar opinions and status quo solutions. You can prepare for this stage and help to avoid that pitfall by reviewing prior work and synthesizing data and knowledge gaps, promising approaches, and critical questions. Your team can use that synthesis of the current state of the science as a jumping off point.
 
-### Making it through the groan zone
+## Making it Through the Groan Zone
 
 It’s natural for groups to go through a period of confusion and frustration as they struggle to integrate their diverse perspectives into a shared framework of understanding (Kaner et al. 2014). The goal is to get the group across this no man’s land between divergent thinking and convergence known as the [“groan zone.”](https://i2insights.org/2019/05/28/collaboration-groan-zone/) In the groan zone, the group leader or facilitator’s job is to keep the group from getting frustrated and shutting down.  
 
@@ -56,11 +56,11 @@ While the groan zone can be challenging, it can also be an extremely fruitful an
 
 :::{.panel-tabset}
 
-#### Activity: Rapid Brainstorm
+### Activity: Rapid Brainstorm
 
 A variety of factors and dynamics can impede emergent thinking and make the groan zone especially challenging. What have you observed?
 
-#### Common barriers to emergent thinking
+### Common barriers to emergent thinking
 
 - Disciplinary differences in epistemology, vocabulary, and methods that impede understanding
 - Analysis paralysis - getting lost in the weeds of endless analysis and detail
@@ -102,7 +102,8 @@ If you find the conversation getting off track or the dynamics becoming difficul
  
 Don’t get discouraged by the groan zone. Misunderstanding and miscommunication are normal parts of the process of collaboration. And even more importantly, “the act of working through these misunderstandings is what builds the foundation for sustainable agreements [and]… meaningful collaboration” (Kaner et al. 2014).
 
-### Getting to convergence
+## Getting to Convergence
+
 Once the group has a strong foundation of shared understanding, things often start to click into place and feel easier and faster as you enter the zone of convergent thinking. At this point, the group is ready to devise inclusive solutions, weigh alternatives and make decisions. As the group leader your role is to help the group devise specific proposals, evaluate and decide among them, refine and synthesize into an overall approach, and lay out a concrete plan. The risk at this stage is that the group never converges on a clear decision or plan, leading the group to spin its wheels in the future.
 
 Discuss as a team _how_ you want to make decisions - what is your decision making process going to be? Will it be based on consensus? Majority rules? Or will you delegate the decisionmaking to the team leader or a sub-team who are closest to the decision? What's your fallback plan if you can't reach a decision during your time together? The figure below arrays a variety of different decisionmaking processes onto the axes of level of group member involvement and level of group member ownership. Note that the two red circles that are off the graph in the bottom left should definitely be avoided! 
@@ -123,7 +124,7 @@ Techniques that are useful in this phase include:
 
 While the big work of the initial stage of a synthesis science project is getting to convergence on the overall work plan, you should expect that the group may go through the process of divergence and convergence again at multiple points in the process as you dive into the work and uncover new challenges. But the shared understanding and social rapport that come from successfully struggling together early on will allow the group to more easily and rapidly develop and implement new solutions in subsequent meetings.
 
-### A framework for group process design
+## A Framework for Group Process Design
 
 The diamond model is not only a conceptual model of the common flow of participatory decisionmaking dynamics – it is also a tool you can use to design good group processes. 
 
@@ -136,6 +137,7 @@ Between those two points - your initial state and your target state - you can us
 Those diamonds can vary in scale from mini-exercises that only take a few minutes to multi-day or longer processes. Once you start to recognize it, you’ll see the diamond model everywhere (or miss it when it’s lacking!). 
 
 ::: {.callout-note icon="false"}
+
 ### Small Group Exercise #1 - Where are we in the diamond?
 
 Purpose: Identify where your group is in the diamond model right now and what stage you need to move through next. 
@@ -161,7 +163,7 @@ Share with the whole group
 
 :::
 
-### Tools to support the thinking you need 
+## Tools to Support the Thinking You Need 
 
 (D=divergent, E=emergent, C=convergent)
 

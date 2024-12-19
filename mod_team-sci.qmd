@@ -37,15 +37,13 @@ Panelists will briefly introduce themselves and their experience with the synthe
 -   Dr. [Jonathan Walter](https://sites.google.com/site/jwalterecology/home), Senior Researcher, [Center for Watershed Sciences](https://watershed.ucdavis.edu/), University of California, Davis
 :::
 
-## Module Content
-
-###  Science of Team Science
+## Science of Team Science
 
 Research in management, organizational behavior, and psychology  has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000’s–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of “science of team science” or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al. 2008).
 
 A National Academies study on the *Science of Team Science* (NRC 2015) assembled the existing evidence base and launched a flurry of research into how team composition, coordination, support, and organizational context could improve outcomes for science teams. A new National Academies study on *Research and Application in Team Science* is currently in progress. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience. 
 
-###  Teams have a predictable trajectory
+## Teams have a Predictable Trajectory
 
 Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent patterns in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.
 
@@ -56,7 +54,7 @@ Creating a team is not just a matter of putting a bunch of people in a room toge
 
 Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.  
 
-###  Instrumental Benefits of Diverse Teams
+## Instrumental Benefits of Diverse Teams
 
 ::::{.columns}
 :::{.column width="60%"}
@@ -80,33 +78,31 @@ Similarly, in a study of 6.6 million medical research papers, Yang et al. found 
 ![](images/go-far.png){style="width: 50%; float: right; padding: 20px"}
 It seems reasonable to expect that the effects of cultural and economic diversity on teams would be similar to that of gender diversity, but those factors remain harder to parse at this scale. In any case, the bump in creativity or publishing impact is only a happy side effect of assembling a diverse team. The real reason to do so is that it allows us to tackle bigger questions, makes our findings more relevant, our science  more fun, and our world more fair. What it **does not do** (at least in our experience) is make the process faster!
 
-###  A more nuanced view emerges
+## A More Nuanced View Emerges
 
 The paradox of team science is that the very factors that slow progress may be _exactly_ the factors that generate new insight -- Milliken and Martins' (1996) double-edged sword. The pressing question becomes not: "**Does** diversity impove team performance?" but rather: "**How and when** does diversity improve team performance?" 
 
-
 > **What mechanisms are responsible for the diversity effect?**
 
-> #### {{< fa circle-info >}}   Information Elaboration
+> #### {{< fa circle-info >}} Information Elaboration
 
 > The categorization-elaboration model (CEM, van Knippenberg et al. 2004) proposed that information elaboration—-that is, the exchange, discussion, and integration of task-relevant information and perspectives, was responsible for many of the benefits attributed to diverse groups. But later researchers found there were a few necessary conditions for cognitive elaboration to take place and for groups to reap the benefits. Only when team members brought a *learning goal orientation* to their work and when they remained open to revising their original ideas (Nederveen Pieterse 2013) did diversity improve team performance.
 
-> #### {{< fa people-group >}}   Avoiding ‘groupthink’
+> #### {{< fa people-group >}} Avoiding ‘groupthink’
 
 > We are all familiar with the "we've always done it this way" effect that can happen when a group of people have been working together for a while. By introducing people from new fields, laboratories, or cultures, that complacent thinking is disrupted. Often, the very act of justifying *why* we do something the way we do can invite a rethinking and improvement.
 
-> ####  {{< fa yin-yang >}}   Metacognition
+> #### {{< fa yin-yang >}} Metacognition
 
 > Metacognition, or "thinking about thinking" requires individuals to reflect and articulate their process for acheiving new knowledge. What information goes in?  Is information missing? How should it be analyzed and interpreted? Are those conclusions justified? 
 
-> #### {{< fa binoculars >}}   Enhanced group scanning ability and consideration of alternative solutions
+> #### {{< fa binoculars >}} Enhanced group scanning ability and consideration of alternative solutions
 
 > A science team may include members from different research disciplines, sectors, geographies or cultures. Along each of those axes, team members will have different personal networks and be more (or less) familiar with different literatures, models, communities, tools, and solutions. Collectively, the group has a much broader range of information to draw on...but only if group members feel empowered to contribute. 
 
-> #### {{< fa list-check >}}   Better task completion and more efficient use of resources
+> #### {{< fa list-check >}} Better task completion and more efficient use of resources
 
 > "Many hands make light work" the saying goes. Think of a meta-analysis where 10 group members can each read 30 papers instead of 1 individual reading 300 papers. Dividing the workload *can* speed up the process, but only if there is an efficiant way to manage dividing the work and then bringing the results back together again. Similarly, relying on a few skilled coders can be much more efficient than each individual writing their own code, but unless the group has a mechanism for getting broad input on key decisions, they will lose the value created by bringing together a larger group. 
-
 
 ::: {.panel-tabset}
 
@@ -136,7 +132,7 @@ In order for the above mechanisms to operate, teams need to cultivate conditions
 
 :::
 
-### All contribute some; none contribute all
+## All Contribute Some; None Contribute All
 
 ![Lotrecchiano et al. Figure 1. Overlapping and intersecting competencies across the domains. Colors define the primary domain for each competency.](images/translational-team-competencies_fig1-sm.png){style="width: 90%; align: center"}
 
