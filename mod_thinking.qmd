@@ -31,7 +31,7 @@ None required.
 
 ## Module Content
 
-At the beginning of a collaborative process, the most important initial outcome is **getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them**. If your team process is effective, this plan will be an _inclusive solution_ – one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
+At the beginning of a collaborative process, the most important initial outcome is getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them. If your team process is effective, this plan will be an _inclusive solution_ – one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
 
 ### Embracing divergent thinking
 
@@ -130,7 +130,9 @@ Small Group Exercise #1 - Where are we in the diamond?
   - Discuss and try to reach consensus about which stage(s) of the diamond model best match the next chunk of work you have ahead of you.
 - Report out (5 mins)
 
-### Tools Highlight: Microstructures to support the thinking needed at each stage of the diamond (D=divergent, E=emergent, C=convergent)
+### Tools to support the thinking you need 
+
+(D=divergent, E=emergent, C=convergent)
 
 | **Microstructure** | **Stage** | **Purpose** | **How It Works** | **Tips & Traps** |
 |:---|:---:|:------------|:--------------------|:---------------|
