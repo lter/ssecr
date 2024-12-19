@@ -123,6 +123,18 @@ Techniques that are useful in this phase include:
 
 While the big work of the initial stage of a synthesis science project is getting to convergence on the overall work plan, you should expect that the group may go through the process of divergence and convergence again at multiple points in the process as you dive into the work and uncover new challenges. But the shared understanding and social rapport that come from successfully struggling together early on will allow the group to more easily and rapidly develop and implement new solutions in subsequent meetings.
 
+### A framework for group process design
+
+The diamond model is not only a conceptual model of the common flow of participatory decisionmaking dynamics – it is also a tool you can use to design good group processes. 
+
+Have you ever been in a meeting that generated tons of ideas, but left you wondering whether any of it was going to go anywhere? That group process neglected to engage in convergent thinking. Or have you experienced a leader who hands down dictates with little discussion and expects everyone to just agree? They are missing out on the value of divergent and emergent thinking to generate creativity and buy-in. 
+
+A good group process will move through the diamond model and include all three types of thinking. Your process design, whether it’s for a single meeting, a multi-day workshop, or a longer collaborative process, should start by asking yourself, _where are we now?_ What resources, people, and information do we have as our starting point? And _where do we want to get to?_ What is our target end state – the deliverable or outcome we are trying to achieve?
+
+Between those two points - your initial state and your target state - you can use one or multiple diamond shaped activity to productively move your group along. Each microstructure or game you use to engage the group can help to generate new ideas, explore them together, and converge on new insights or decisions. Those insights or decisions can then become the input for the next diamond, until you eventually reach your goal.
+
+Those diamonds can vary in scale from mini-exercises that only take a few minutes to multi-day or longer processes. Once you start to recognize it, you’ll see the diamond model everywhere (or miss it when it’s lacking!). 
+
 ::: {.callout-note icon="false"}
 ### Small Group Exercise #1 - Where are we in the diamond?
 
