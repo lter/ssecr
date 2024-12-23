@@ -58,6 +58,14 @@ Project groups will also meet at a time of their own choosing to work on project
 
 :::
 
+## Note on Coding Languages
+
+The example code throughout this course is in the programming language [R](https://cran.r-project.org/). This language is widely used--particularly in the life sciences--but is certainly not the only option for working with data! It is not possible to have variants of this course in every coding language but even though we can't cover them specifically, we can make some broad points about how coding languages differ that will hopefully help you adapt your thinking if you choose to use a different coding language.
+
+Even relatively similar coding languages almost always use different syntax. This means that the specific command to accomplish a particular action is likely to differ between languages. The interpretation of certain characters is also likely to differ. For example, R does not interpret indentation while Python requires indented code for nested operations (e.g., code inside of a loop). So, when you know one language, you might (_might!_) be able to apply the same order of operations but the specific functions and tools you use to accomplish that will almost certainly differ. If you use a language other than what this course uses in its example code, you should focus more on the logical flow in the following demos than on the specific packages and functions that are used.
+
+For languages that are more distantly related to one another, it's possible that differences might be go beyond mere syntax: the core logic or philosophy of the languages might differ. Learning a very different language takes time and is often better approached by starting with the philosophical differences from the language(s) with which you are already familiar. Once you understand these fundamental differences you'll have a new framework to be able to "plug in" the new syntax which will make that much easier than trying to learn the new vocabulary at the same time as the new logical flow.
+
 ## Course Policies
 
 ### Attendance
