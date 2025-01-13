@@ -7,30 +7,30 @@ code-annotations: hover
 
 Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we're adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas. To make those definitions explicit:
 
-- <u>"Harmonization" = process of combining separate primary data objects into one object</u>. This includes things like synonymizing columns, or changing data format to support combination. This _excludes_ quality control steps--even those that are undertaken before harmonization begins.
+-   <u>"Harmonization" = process of combining separate primary data objects into one object</u>. This includes things like synonymizing columns, or changing data format to support combination. This *excludes* quality control steps--even those that are undertaken before harmonization begins.
 
-- <u>"Wrangling" = all modifications to data meant to create an analysis-ready 'tidy' data object</u>. This includes quality control, unit conversions, and data 'shape' changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) _also falls into this category!_
+-   <u>"Wrangling" = all modifications to data meant to create an analysis-ready 'tidy' data object</u>. This includes quality control, unit conversions, and data 'shape' changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) *also falls into this category!*
 
 ## Learning Objectives
 
-After completing this module you will be able to: 
+After completing this module you will be able to:
 
-- <u>Identify</u> typical steps in data harmonization and wrangling workflows
-- <u>Create</u> a harmonization workflow
-- <u>Define</u> quality control
-- <u>Summarize</u> typical operations in a quality control workflow
-- <u>Use</u> regular expressions to perform flexible text operations
-- <u>Write</u> custom functions to reduce code duplication
-- <u>Identify</u> value of and typical obstacles to data 'joining'
-- <u>Explain</u> benefits and drawbacks of using data shape to streamline code
-- <u>Design</u> a complete data wrangling workflow
+-   <u>Identify</u> typical steps in data harmonization and wrangling workflows
+-   <u>Create</u> a harmonization workflow
+-   <u>Define</u> quality control
+-   <u>Summarize</u> typical operations in a quality control workflow
+-   <u>Use</u> regular expressions to perform flexible text operations
+-   <u>Write</u> custom functions to reduce code duplication
+-   <u>Identify</u> value of and typical obstacles to data 'joining'
+-   <u>Explain</u> benefits and drawbacks of using data shape to streamline code
+-   <u>Design</u> a complete data wrangling workflow
 
 ## Preparation
 
-1. In project teams, draft your strategy for wrangling data
-    - What needs to happen to the datasets in order for them to be usable in answering your question(s)?
-    - I.e., what quality control, structural changes, or formatting edits must be made?
-2. _If you are an R user_, run the following code:
+1.  In project teams, draft your strategy for wrangling data
+    -   What needs to happen to the datasets in order for them to be usable in answering your question(s)?
+    -   I.e., what quality control, structural changes, or formatting edits must be made?
+2.  *If you are an R user*, run the following code:
 
 ```{r install-pkgs}
 #| eval: false
@@ -42,52 +42,55 @@ librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
 ## Networking Session
 
 ::: panel-tabset
-### 2024 Guests
+### 2025 Guests
 
-To Be Determined!
+-   [Stevan Earl](https://search.asu.edu/profile/938759), Information Manager, Central Arizona-Phoenix Long Term Ecological Research and [Soil Organic Matter Synthesis Working Group](https://lternet.edu/working-groups/advancing-soil-organic-matter-research/)
+
+-   [Cove Sturtevant](https://www.neonscience.org/person/cove-sturtevant), Research Scientist, National Ecological Observatory Network and the [Flux Gradient Project Synthesis Working Group](https://lternet.edu/working-groups/the-flux-gradient-project/)
 :::
 
 ## Making a Wrangling Plan
 
-_Before_ you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data manipulation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group's plan for your data.
+*Before* you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data manipulation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group's plan for your data.
 
-:::{.callout-warning icon="false"}
+::: {.callout-warning icon="false"}
 #### Discussion: Wrangling Plan
 
 With your project groups discuss the following questions:
 
-- What harmonization needs to be done to make your starting data files comparable?
-    - Consider units, taxonomic resolution, spatial/temporal granularity, etc.
-- Once you have harmonized your data, what wrangling needs to be done?
-    - Do you need to calculate index metrics? Change the 'shape' of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?
-- How can you make your workflow less repetitive / more efficient?
-    - Reducing redundancy makes integrating new ideas dramatially easier
-- How easy will it be to maintain or revisit this code workflow?
-- How can you change the workflow now to make life easier for 'future you'?
-
+-   What harmonization needs to be done to make your starting data files comparable?
+    -   Consider units, taxonomic resolution, spatial/temporal granularity, etc.
+-   Once you have harmonized your data, what wrangling needs to be done?
+    -   Do you need to calculate index metrics? Change the 'shape' of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?
+-   How can you make your workflow less repetitive / more efficient?
+    -   Reducing redundancy makes integrating new ideas dramatially easier
+-   How easy will it be to maintain or revisit this code workflow?
+-   How can you change the workflow now to make life easier for 'future you'?
 :::
 
 ## Harmonizing Data
 
-Data harmonization is an interesting topic in that it is _vital_ for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.
+Data harmonization is an interesting topic in that it is *vital* for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.
 
 For tabular data, we recommend using the [`ltertools` R package](https://lter.github.io/ltertools/) to perform any needed harmonization. This package relies on a "column key" to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key. If you already have a set of files locally, `ltertools` does offer a `begin_key` function that creates the first two required columns in the column key.
 
 The column key requires three columns:
 
-1. "source" -- Name of the raw file
-2. "raw_name" -- Name of all raw columns in that file to be synonymized
-3. "tidy_name" -- New name for each raw column that should be carried to the harmonized data
+1.  "source" -- Name of the raw file
+2.  "raw_name" -- Name of all raw columns in that file to be synonymized
+3.  "tidy_name" -- New name for each raw column that should be carried to the harmonized data
 
 Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the `ltertools` [package vignette](https://lter.github.io/ltertools/articles/ltertools.html). For convenience, we're attaching the visual diagram of this method of harmonization from the package vignette.
 
 <p align="center">
-<img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
+
+<img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective &apos;tidy names&apos; in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%"/>
+
 </p>
 
 ## Wrangling Data
 
-Data wrangling is a _huge_ subject that covers a wide range of topics. In this part of the module, we'll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you'll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice 'jumping off' point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.
+Data wrangling is a *huge* subject that covers a wide range of topics. In this part of the module, we'll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you'll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice 'jumping off' point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.
 
 To begin, we'll load the Plum Island Ecosystems fiddler crab dataset we've used in other modules.
 
@@ -142,47 +145,46 @@ library(psych)
 psych::multi.hist(pie_crab$size)
 ```
 
-:::{.callout-warning icon="false"}
+::: {.callout-warning icon="false"}
 #### Discussion: Data Exploration Tools
 
 With a group of 4-5 others discuss the following questions:
 
-- What tools do you use when exploring new data?
-- Do you already use any of these tools to explore your data?
-    - If you do, why do you use them?
-    - If not, where do you think they might be valuable to include?
-- What value--if any--do you see in including these exploratory efforts in your code workflow?
-
+-   What tools do you use when exploring new data?
+-   Do you already use any of these tools to explore your data?
+    -   If you do, why do you use them?
+    -   If not, where do you think they might be valuable to include?
+-   What value--if any--do you see in including these exploratory efforts in your code workflow?
 :::
 
 ### Quality Control
 
-You may have encountered the phrase "QA/QC" (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality assurance only encapsulates _preventative_ measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors _after_ data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.
+You may have encountered the phrase "QA/QC" (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality assurance only encapsulates *preventative* measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality control on the other hand refers to all steps taken to resolve errors *after* data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.
 
-In synthesis work, QA is only very rarely an option. You'll be working with datasets that have already been collected and attempting to handle any issues _post hoc_ which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be **incredibly** time-consuming so using a programming language (like R or Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.
+In synthesis work, QA is only very rarely an option. You'll be working with datasets that have already been collected and attempting to handle any issues *post hoc* which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be **incredibly** time-consuming so using a programming language (like R or Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.
 
 #### QC Considerations
 
 The datasets you gather for your synthesis project will likely have a multitude of issues you'll need to resolve before the data are ready for visualization or analysis. Some of these issues may be clearly identified in that datasets' metadata or apply to all datasets but it is good practice to make a thorough QC effort as early as is feasible. Keep the following data issues and/or checks in mind as we cover code tools that may be useful in this context later in the module.
 
-- Verify taxonomic classificiations against authorities
-    - [ITIS](https://www.itis.gov/), [GBIF](https://www.gbif.org/), and [WoRMS](https://www.marinespecies.org/) are all examples of taxonomic authorities
-    - Note that many of these authorities have R or Python libraries that can make this verification step scripted rather than dependent on manual searches
-- Handle missing data
-    - Some datasets will use a code to indicate missing values (likely identified in their metadata) while others will just have empty cells
-- Check for unreasonable values / outliers
-    - Can use conditionals to create "flags" for these values or just filter them out
-- Check geographic coordinates' reasonability
-    - E.g., western hemisphere coordinates may lack the minus sign
-- Check date formatting
-    - I.e., if all sampling is done in the first week of each month it can be difficult to say whether a given date is formatted as MM/DD/YY or DD/MM/YY
-- Consider spatial and temporal granularity among datasets
-    - You may need to aggregate data from separate studies in different ways to ensure that the data are directly comparable across all of the data you gather
-- Handle duplicate data / rows
+-   Verify taxonomic classificiations against authorities
+    -   [ITIS](https://www.itis.gov/), [GBIF](https://www.gbif.org/), and [WoRMS](https://www.marinespecies.org/) are all examples of taxonomic authorities
+    -   Note that many of these authorities have R or Python libraries that can make this verification step scripted rather than dependent on manual searches
+-   Handle missing data
+    -   Some datasets will use a code to indicate missing values (likely identified in their metadata) while others will just have empty cells
+-   Check for unreasonable values / outliers
+    -   Can use conditionals to create "flags" for these values or just filter them out
+-   Check geographic coordinates' reasonability
+    -   E.g., western hemisphere coordinates may lack the minus sign
+-   Check date formatting
+    -   I.e., if all sampling is done in the first week of each month it can be difficult to say whether a given date is formatted as MM/DD/YY or DD/MM/YY
+-   Consider spatial and temporal granularity among datasets
+    -   You may need to aggregate data from separate studies in different ways to ensure that the data are directly comparable across all of the data you gather
+-   Handle duplicate data / rows
 
 #### Number Checking
 
-When you read in a dataset and a column that _should be_ numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to 'NA' where a human might be able to deduce the true number each value 'should be.'
+When you read in a dataset and a column that *should be* numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to 'NA' where a human might be able to deduce the true number each value 'should be.'
 
 ```{r supportr-load}
 #| message: false
@@ -257,9 +259,10 @@ pie_crab_v2 %>%
   dplyr::group_by(size_category) %>% 
   dplyr::summarize(crab_ct = dplyr::n())
 ```
-1. `mutate` makes a new column, `ifelse` is actually doing the conditional
 
-If you have multiple different conditions you _can_ just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!
+1.  `mutate` makes a new column, `ifelse` is actually doing the conditional
+
+If you have multiple different conditions you *can* just stack these either/or conditionals together but this gets cumbersome quickly. It is preferable to instead use a function that supports as many alternates as you want!
 
 ```{r case-when}
 # Make a new column with several conditionals
@@ -277,20 +280,20 @@ pie_crab_v2 %>%
   dplyr::group_by(size_category) %>% 
   dplyr::summarize(crab_ct = dplyr::n())
 ```
-1. Syntax is 'test ~ what to do when true'
-2. This line is a catch-all for any rows that _don't_ meet previous conditions
+
+1.  Syntax is 'test \~ what to do when true'
+2.  This line is a catch-all for any rows that *don't* meet previous conditions
 
 Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.
 
-:::{.callout-note icon="false"}
+::: {.callout-note icon="false"}
 #### Activity: Conditionals
 
 In a script, attempt the following with the PIE crab data:
 
-- Create a column indicating when air temperature is above or below 13° Fahrenheit
-- Create a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile
-    - _Hint:_ consult the `summary` function output!
-
+-   Create a column indicating when air temperature is above or below 13° Fahrenheit
+-   Create a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile
+    -   *Hint:* consult the `summary` function output!
 :::
 
 ### Uniting / Separating Columns
@@ -308,8 +311,9 @@ pie_crab_v3 <- pie_crab_v2 %>%
 # Check that out
 str(pie_crab_v3)
 ```
-1. 'delim' is short for "delimiter" which we covered in the Reproducibility module
-2. This argument specifies whether to remove the original column when making the new columns
+
+1.  'delim' is short for "delimiter" which we covered in the Reproducibility module
+2.  This argument specifies whether to remove the original column when making the new columns
 
 While breaking apart a column's contents can be useful, it can also be helpful to combine the contents of several columns!
 
@@ -324,8 +328,9 @@ pie_crab_v4 <- pie_crab_v3 %>%
 # Structure check
 str(pie_crab_v4)
 ```
-1. This is equivalent to the 'delim' argument in the previous function
-2. Comparable to the 'cols_remove' argument in the previous function
+
+1.  This is equivalent to the 'delim' argument in the previous function
+2.  Comparable to the 'cols_remove' argument in the previous function
 
 Note in this output how despite re-combining data information the column is listed as a character column! Simply combining or separating data is not always enough so you need to really lean into frequent data structure checks to be sure that your data are structured in the way that you want.
 
@@ -333,7 +338,7 @@ Note in this output how despite re-combining data information the column is list
 
 Often the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups' data on sea star abundance and--once you've synonymized the column names--you can simply 'stack' the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group's research. You can't simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps "site" and coordinate columns) you can use **joins** to let your computer match these key columns and make sure that only appropriate rows are combined.
 
-Because joins are completely dependent upon the value in both columns being an _exact_ match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.
+Because joins are completely dependent upon the value in both columns being an *exact* match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.
 
 ```{r diff-check-1}
 # Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe
@@ -354,14 +359,15 @@ fish_tax_v2 <- fish_tax %>%
 # Re-check to make sure that fixed it
 supportR::diff_check(old = fish_ct$species, new = fish_tax_v2$species)
 ```
-1. The symbols around "eel" mean that we're only finding/replacing _exact_ matches. It doesn't matter in this context but often replacing a partial match would result in more problems. For example, replacing "eel" with "moray eel" could make "electric eel" into "electric moray eel".
+
+1.  The symbols around "eel" mean that we're only finding/replacing *exact* matches. It doesn't matter in this context but often replacing a partial match would result in more problems. For example, replacing "eel" with "moray eel" could make "electric eel" into "electric moray eel".
 
 Now that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:
 
-1. left/right join
-2. full join (a.k.a. outer join)
-3. inner join
-4. anti join
+1.  left/right join
+2.  full join (a.k.a. outer join)
+3.  inner join
+4.  anti join
 
 You can learn more about the types of join [here](https://nceas.github.io/scicomp-workshop-tidyverse/join.html) or [here](https://njlyon0.github.io/teach_r-for-biologists/materials/slides_4a.html#/title-slide) but the quick explanation is that <u>the name of the join indicates whether the rows of the "left" and/or the "right" table are retained in the combined table</u>. In synthesis work a left join or full join is most common (where you have your primary data in the left position and some ancillary/supplementary dataset in the right position).
 
@@ -376,24 +382,24 @@ fish_df <- fish_ct %>%
 # Look at the result of that
 fish_df
 ```
-1. The 'by' argument accepts a vector of column names found in both data tables
 
-:::{.callout-note icon="false"}
+1.  The 'by' argument accepts a vector of column names found in both data tables
+
+::: {.callout-note icon="false"}
 #### Activity: Separating Columns & Joining Data
 
 In a script, attempt the following with the PIE crab data:
 
-1. Create a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)
-    - Use your judgement on which month(s) should fall into each given PIE's latitude/location
-2. Join your season table to the PIE crab data based on month
-    - _Hint:_ you may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined
-3. Calculate the average size of crabs in each season in order to identify which season correlates with the largest crabs
-
+1.  Create a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)
+    -   Use your judgement on which month(s) should fall into each given PIE's latitude/location
+2.  Join your season table to the PIE crab data based on month
+    -   *Hint:* you may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined
+3.  Calculate the average size of crabs in each season in order to identify which season correlates with the largest crabs
 :::
 
 ### Leveraging Data Shape
 
-You may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations _dramatically_ more efficient. If you haven't encountered it before, any data table can be said to have one of two 'shapes': either **long** or **wide**. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or "wider" data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or "longer" data tables).
+You may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations *dramatically* more efficient. If you haven't encountered it before, any data table can be said to have one of two 'shapes': either **long** or **wide**. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or "wider" data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or "longer" data tables).
 
 Data shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes "tidy", you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then--when you're finished--reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.
 
@@ -433,7 +439,7 @@ bfly_v4 <- bfly_v3 %>%
 head(bfly_v4)
 ```
 
-While we absolutely _could_ have used the same function to break apart count and butterfly sex data it would have involved copy/pasting the same information repeatedly. By pivoting to long format first, we can greatly streamline our code. This can also be advantageous for unit conversions, applying data transformations, or checking text column contents among many other possible applications.
+While we absolutely *could* have used the same function to break apart count and butterfly sex data it would have involved copy/pasting the same information repeatedly. By pivoting to long format first, we can greatly streamline our code. This can also be advantageous for unit conversions, applying data transformations, or checking text column contents among many other possible applications.
 
 ### Loops
 
@@ -452,8 +458,9 @@ for(k in 2:4){ # <1>
   message(k, " squared is ", result)
 } # <2>
 ```
-1. 'k' is our index object in this loop
-2. Note that the operations to iterate across are wrapped in curly braces (`{...}`)
+
+1.  'k' is our index object in this loop
+2.  Note that the operations to iterate across are wrapped in curly braces (`{...}`)
 
 Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let's return to our Plum Island Ecosystems crab dataset for a more nuanced example.
 
@@ -484,12 +491,13 @@ crab_df <- purrr::list_rbind(x = crab_list) # <2>
 # Check out the resulting data table
 crab_df
 ```
-1. Note that this is not the most efficient way of doing group-wise summarization but is--hopefully--a nice demonstration of loops!
-2. When all elements of your list have the same column names, `list_rbind` efficiently stacks those elements into one longer data table.
+
+1.  Note that this is not the most efficient way of doing group-wise summarization but is--hopefully--a nice demonstration of loops!
+2.  When all elements of your list have the same column names, `list_rbind` efficiently stacks those elements into one longer data table.
 
 ### Custom Functions
 
-Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR [Reproducibility module](https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions)) and also can be useful end products of synthesis work in and of themselves. 
+Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR [Reproducibility module](https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions)) and also can be useful end products of synthesis work in and of themselves.
 
 If one of your group's outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project's findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.
 
@@ -544,44 +552,51 @@ crab_hist <- function(df, size_cat = "small"){ # <1>
 # Invoke new-and-improved function
 crab_hist(df = pie_crab_v4) # <4>
 ```
-1. The default category is now set to "small"
-2. We recommend phrasing your error checks with this format (i.e., 'if \<some condition\> is _not_ true, then \<informative error/warning message\>)
-3. The `%in%` operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate "or" conditionals
-4. We don't need to specify the 'size_cat' argument because we can rely on the default
 
-:::{.callout-note icon="false"}
+1.  The default category is now set to "small"
+2.  We recommend phrasing your error checks with this format (i.e., 'if \<some condition\> is *not* true, then \<informative error/warning message\>)
+3.  The `%in%` operator lets you check whether one value matches any element of a set of accepted values. Very useful in contexts like this because the alternative would be a lot of separate "or" conditionals
+4.  We don't need to specify the 'size_cat' argument because we can rely on the default
+
+::: {.callout-note icon="false"}
 #### Activity: Custom Functions
 
 In a script, attempt the following on the PIE crab data:
 
-- Write a function that:
-    - (A) calculates the median of the user-supplied column
-    - (B) determines whether each value is above, equal to, or below the median
-    - (C) makes a column indicating the results of step B
-- Use the function on the _standard deviation_ of water temperature
-- Use it again on the standard deviation of air temperature
-- Revisit your function and identify 2-3 likely errors
-- Write custom checks (and error messages) for the set of likely issues you just identified
+-   Write a function that:
+    -   
 
+        (A) calculates the median of the user-supplied column
+
+    -   
+
+        (B) determines whether each value is above, equal to, or below the median
+
+    -   
+
+        (C) makes a column indicating the results of step B
+-   Use the function on the *standard deviation* of water temperature
+-   Use it again on the standard deviation of air temperature
+-   Revisit your function and identify 2-3 likely errors
+-   Write custom checks (and error messages) for the set of likely issues you just identified
 :::
 
 ## Additional Resources
 
 ### Papers & Documents
 
-- Todd-Brown, K.E.O. _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/bg-19-3505-2022.html). **2022**. _Biogeosciences_
-- Elgarby, O. [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). **2019**. _Medium_
-- Borer, E. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
+-   Todd-Brown, K.E.O. *et al.* [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/bg-19-3505-2022.html). **2022**. *Biogeosciences*
+-   Elgarby, O. [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). **2019**. *Medium*
+-   Borer, E. *et al.* [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. *Ecological Society of America Bulletin*
 
 ### Workshops & Courses
 
-
-- The Carpentries. [Data Analysis and Visualization in R for Ecologists: Working with Data](https://datacarpentry.org/R-ecology-lesson/working-with-data.html). **2024**.
-- LTER Scientific Computing Team. [Coding in the Tidyverse](https://lter.github.io/workshop-tidyverse/). **2023**.
-- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub [coreR: Cleaning & Wrangling Data](https://learning.nceas.ucsb.edu/2023-10-coreR/session_08.html). **2023**.
-- NCEAS Learning Hub [coreR: Writing Functions & Packages](https://learning.nceas.ucsb.edu/2023-10-coreR/session_16.html). **2023**.
-- Delta Science Program [Data Munging / QA / QC / Cleaning](https://nceas.github.io/oss-lessons/data-munging-qa-qc-cleaning/data-munging-qa-qc-cleaning.html). **2019**.
+-   The Carpentries. [Data Analysis and Visualization in R for Ecologists: Working with Data](https://datacarpentry.org/R-ecology-lesson/working-with-data.html). **2024**.
+-   LTER Scientific Computing Team. [Coding in the Tidyverse](https://lter.github.io/workshop-tidyverse/). **2023**.
+-   National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub [coreR: Cleaning & Wrangling Data](https://learning.nceas.ucsb.edu/2023-10-coreR/session_08.html). **2023**.
+-   NCEAS Learning Hub [coreR: Writing Functions & Packages](https://learning.nceas.ucsb.edu/2023-10-coreR/session_16.html). **2023**.
+-   Delta Science Program [Data Munging / QA / QC / Cleaning](https://nceas.github.io/oss-lessons/data-munging-qa-qc-cleaning/data-munging-qa-qc-cleaning.html). **2019**.
 
 ### Websites
 
-- Fox, J. [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. _Dynamic Ecology_
+-   Fox, J. [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. *Dynamic Ecology*
