@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,8 +70,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-0b8ebf32f6f0b1f934b80c78b73511f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -449,10 +449,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="networking-session" class="level2">
 <h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2025 Guests</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>To Be Determined!</p>
+<ul>
+<li><p><a href="https://search.asu.edu/profile/938759">Stevan Earl</a>, Information Manager, Central Arizona-Phoenix Long Term Ecological Research and <a href="https://lternet.edu/working-groups/advancing-soil-organic-matter-research/">Soil Organic Matter Synthesis Working Group</a></p></li>
+<li><p><a href="https://www.neonscience.org/person/cove-sturtevant">Cove Sturtevant</a>, Research Scientist, National Ecological Observatory Network and the <a href="https://lternet.edu/working-groups/the-flux-gradient-project/">Flux Gradient Project Synthesis Working Group</a></p></li>
+</ul>
 </div>
 </div>
 </div>
@@ -502,8 +505,8 @@ Discussion: Wrangling Plan
 </ol>
 <p>Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the <code>ltertools</code> <a href="https://lter.github.io/ltertools/articles/ltertools.html">package vignette</a>. For convenience, we’re attaching the visual diagram of this method of harmonization from the package vignette.</p>
 <p align="center">
-<img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
-</p>
+</p><p><img src="images/image_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%"></p>
+<p></p>
 </section>
 <section id="wrangling-data" class="level2">
 <h2 class="anchored" data-anchor-id="wrangling-data">Wrangling Data</h2>
@@ -1138,7 +1141,7 @@ Activity: Separating Columns &amp; Joining Data
 </div>
 </section>
 <section id="custom-functions" class="level3">
-<h3 class="anchored" data-anchor-id="custom-functions">Custom Functions</h3>
+<h3 class="anchored">Custom Functions</h3>
 <p>Finally, writing your own, customized functions can be really useful particularly when doing synthesis work. Custom functions are generally useful for reducing duplication and increasing ease of maintenance (see the note on custom functions in the SSECR <a href="https://lter.github.io/ssecr/mod_reproducibility.html#consider-custom-functions">Reproducibility module</a>) and also can be useful end products of synthesis work in and of themselves.</p>
 <p>If one of your group’s outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project’s findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.</p>
 <div class="cell" data-layout-align="center">
@@ -1228,11 +1231,9 @@ Activity: Custom Functions
 <div class="callout-body-container callout-body">
 <p>In a script, attempt the following on the PIE crab data:</p>
 <ul>
-<li>Write a function that:
+<li><h2 id="write-a-function-that" class="anchored" data-anchor-id="custom-functions">Write a function that:</h2>
+<pre><code>(A) calculates the median of the user-supplied column</code></pre>
 <ul>
-<li><ol type="A">
-<li>calculates the median of the user-supplied column</li>
-</ol></li>
 <li><ol start="2" type="A">
 <li>determines whether each value is above, equal to, or below the median</li>
 </ol></li>
