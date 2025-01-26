@@ -8,12 +8,12 @@ Group synthesis requires many types of contributions, from raw data to idea gene
 
 ## Learning Objectives
 
-After completing this module you will be able to: 
+After completing this module you will be able to:
 
-- <u>Define</u> types of intellectual contributions to a synthesis project
-- <u>Describe</u> some common frameworks for equitable authorship decisions
-- <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
-- <u>Create</u> a draft intellectual credit plan for your team
+-   <u>Define</u> types of intellectual contributions to a synthesis project
+-   <u>Describe</u> some common frameworks for equitable authorship decisions
+-   <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
+-   <u>Create</u> a draft intellectual credit plan for your team
 
 ## Preparation
 
@@ -24,29 +24,46 @@ None required.
 ::: panel-tabset
 ### 2024 Guests
 
-To Be Determined!
+-   [Jaclyn Hatala Matthes](https://matthesecolab.com/people/), Senior Scientist, Harvard Forest. Jackie specializes in land-atmosphere interactions, ecosystem responses to insect and climate disturbance, and scaling water and carbon processes with models. She is a co-PI of the Flux Gradient Synthesis Working Group, which brings together multiple data sources and people to better estimate the methane flux from upland systems at scale.
 :::
 
-## ...
+## Intellectual Credit Module Content
 
+In their [Code of Ethics](https://esa.org/about/code-of-ethics/) the Ecological Society of America lays out what seems like straightforward guidance for what contributions warrant authorship on a paper:
 
+> 22. Researchers will claim authorship of a paper only if they have made a substantial contribution. Authorship may legitimately be claimed if researchers
+>
+>     1.  conceived the ideas or experimental design;
+>
+>     2.  participated actively in execution of the study;
+>
+>     3.  analyzed and interpreted the data; or
+>
+>     4.  wrote the manuscript
 
+Even in the context of traditional research projects, with a discrete experimental design, sample collection, and analysis, appropriate allocation of authorship can be challenging to determine. In the context of a multidisciplinary group project, where each contributor may have limited knowledge of the others' fields or expertise, fairly judging authorship becomes much more complicated. In synthesis work, the ultimate analytical design often results from multiple overlapping and often free-wheeling conversations and trials. In such cases, the potential for misunderstanding and conflict becomes obvious.
+
+Of course, human psychology also has a role to play. It is quite common for individuals to overestimate their own contribution to the work of a team, especially when the outcome is positive. Nelson et al. (2020) examined the phenomenon in the context of scientific publishing and found that authors almost universally over-estimated their own contribution to a project, at least with respect to how their team members percieved it.
+
+![Fig 1. Nelson et al. 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors’ contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 (“Self”), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 (“Self-Corrected”), and mean percent contribution assigned to authors by their coauthors (“Other”). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001.](images/credit-fig-1.jpeg){fig-alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%." fig-align="center"}
 
 ## Additional Resources
 
 ### Papers & Documents
 
-- Nelson, P.R. et al. [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. PNAS.
-- Puebla, I. _et al._ [Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. _PLoS Computational Biology_
-- Dahlin, K.M. _et al._, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. _Frontiers in Ecology and the Environment_
-- Allen, L. _et al._, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. _Learned Publishing_
+-   Nelson, P.R. et al. [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. PNAS.
+-   Puebla, I. *et al.* [Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. *PLoS Computational Biology*
+-   Dahlin, K.M. *et al.*, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. *Frontiers in Ecology and the Environment*
+-   Allen, L. *et al.*, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. *Learned Publishing*
 
 ### Workshops & Courses
 
-- 
+-   
 
 ### Websites
 
-- Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html)
-- Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
-- Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
+-    Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at #22.
+
+-   American Geophysical Union [Publications and Ethics Policies](https://www.agu.org/publications/authors/policies#ethical-obligations).
+
+-   Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html) - Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship) - Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
