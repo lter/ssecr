@@ -43,9 +43,84 @@ In their [Code of Ethics](https://esa.org/about/code-of-ethics/) the Ecological 
 
 Even in the context of traditional research projects, with a discrete experimental design, sample collection, and analysis, appropriate allocation of authorship can be challenging to determine. In the context of a multidisciplinary group project, where each contributor may have limited knowledge of the others' fields or expertise, fairly judging authorship becomes much more complicated. In synthesis work, the ultimate analytical design often results from multiple overlapping and often free-wheeling conversations and trials. In such cases, the potential for misunderstanding and conflict becomes obvious.
 
-Of course, human psychology also has a role to play. It is quite common for individuals to overestimate their own contribution to the work of a team, especially when the outcome is positive. Nelson et al. (2020) examined the phenomenon in the context of scientific publishing and found that authors almost universally over-estimated their own contribution to a project, at least with respect to how their team members percieved it.
+Of course, human psychology also has a role to play. It is quite common for individuals to overestimate their own contribution to the work of a team, especially when the outcome is positive. Nelson et al. (2020) examined the phenomenon in the context of scientific publishing and found that authors almost universally over-estimated their own contribution to a project, at least with respect to how their team members perceived it.
 
 ![Fig 1. Nelson et al. 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors’ contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 (“Self”), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 (“Self-Corrected”), and mean percent contribution assigned to authors by their coauthors (“Other”). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001.](images/credit-fig-1.jpeg){fig-alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%." fig-align="center"}
+
+At each stage of a project, different factors may work to distort, conceal, or amplify the contributions of some authors or potential authors. Take a few minutes to consider each project stage and how misperceptions might arise.
+
+## Group Discussion
+
+Take a few minutes to reflect on your own experiences in each of these areas before expanding each of the below panels. **In each area, what types of contributions have you noticed get under- or over-valued?**
+
+::: {.callout-caution collapse="true" appearance="minimal"}
+### Hypothesis Development
+
+-   In group discussions, the contributions of asynchronous or virtual participants can easily be discounted, because they seem less immediate
+-   Similarly, when an idea is first contributed by an early career-stage participant, it can be overlooked until echoed by a senior participant.
+-   Often, a seemingly naive question ignites the process that leads to a new way of seeing the problem. In these cases, the conclusion is often remembered, but the question (and the questioner) rarely is.
+:::
+
+::: {.callout-warning collapse="true" appearance="minimal"}
+### Data Gathering
+
+-   Data are cite-able products, even when they are already publicly available.
+-   Data that are easily accessed and downloaded can receive less credit than when the synthesis team needs to make direct contact with the original researcher to get access or permission to use.
+-   Significant labor goes into finding, downloading, and cleaning datasets, but it is not glamorous work and often happens in isolation. That does not make it any less essential.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+### Data Analysis
+
+-   Data analysis is the "meat" of synthesis, but even here there are pitfalls. Consider the originality of the approach and the labor involved when valuing analytical contributions.
+-   While the work of doing the analysis may fall to the more quantitatively skilled team members, key insights at this stage often come from careful review by and discussion with field ecologists and savvy communicators.
+:::
+
+::: {.callout-tip collapse="true" appearance="minimal"}
+### Writing
+
+-   Like framing a house, framing the "story" of a paper provides essential structure and stability -- even when covered by the walls and trim (or words and figures) of the built-out product.
+-   Getting the first few paragraphs on the page is a valuable contribution -- even if not a single one of those words makes it to the final draft. Editing and expanding others' work is far easier than writing de novo.
+:::
+
+::: {.callout-important collapse="true" appearance="minimal"}
+### Editing
+
+-   Even when all contributors are fluent writers, the job of merging disparate sections into a single voice is challenging.
+-   Resolving versions, checking references, and formatting are thankless, but essential tasks in getting to a publishable product.
+:::
+
+## Value of an Authorship Policy
+
+It is now broadly understood that developing an authorship policy has many benefits for group work, not least of which is reducing intra-group conflict, which can be especially destructive for early career researchers.
+
+[Oliver et al. (2018)](https://doi.org/10.1002/ecs2.2206 "Strategies for effective collaborative manuscript development in interdisciplinary science teams") described six principles that they aimed for their authorship process to support:
+
+[![Figure 2.From Oliver at al. Fig. 1. A conceptual diagram that shows the strategies for effective collaborative manuscript (MS) development being firmly embedded within and balancing the guiding principles, and the relative order that the practices occur (numbers). Strategies that are on the same row are strongly related, can occur in any order, and are in fact iterative. All strategies should feed back into the team coauthorship policy for evaluation and reflection about whether the practices are fulfilling the guiding principles.](images/credit-fig-2.jpg){fig-alt="Image summarizing guiding principles and authorship management process." fig-align="center"}](https://doi.org/10.1002/ecs2.2206)
+
+------------------------------------------------------------------------
+
+Their approach considers the entire life of a project (not only the writing of a particular manuscript) and aims to balance efficiency, creativity, and inclusion – which can seem to be in conflict. It would, for example, be very inefficient to solicit many authors for a student's dissertation paper, which is likely to only involve a small number of authors in the end.
+
+Their starting point is to **understand the makeup of the group** involved. What are each member's assumptions about authorship credit and order? These can differ based on their field of study, their country of origin, their seniority, and their role in the group and what they hope to get out of involvement with the group. Articulating these assumptions at the start can avoid later conflicts.
+
+Then **develop a draft authorship policy**–either from scratch or starting with one the many frameworks available. Recognize that this policy is a living document that the team can return to as issues arise.
+
+**Announcing ideas that may lead to manuscripts** is also critical in their view. It allows the whole team to contribute to developing the idea (creativity) and allows interested parties to opt-in to further development (transparency) and work on the project.
+
+**Determine the manuscript type**. They outline a taxonomy of manuscript types, which will often determine how large the co-author list can or should be and what kinds of co-author management strategies will work best.
+
+-   **Disciplinary research manuscripts**
+
+-   **Multidisciplinary research manuscripts.** Special considerations include the unfamiliarity of researchers from one discipline with the work of the other and the role of data analysts.
+
+-   **Essay, commentary, or concept manuscripts.** Contributions may be less clear and harder to document.
+
+-   **Database documentation and data manuscripts.** Often uses an opt-out model, where all group participants are included unless they are unable or unwilling to make basic contributions, such as contributing to editing or reading and approving the manuscript before submission.
+
+-   **Graduate student dissertation manuscripts.** Depending on the student's institution and committee, this may require the involvement of fewer authors.
+
+The **decision on an authorship management strategy** will flow from the type of paper and the individuals involved. Here, the value of flexibility and communication within the team is key.
 
 ## Additional Resources
 
@@ -62,8 +137,12 @@ Of course, human psychology also has a role to play. It is quite common for indi
 
 ### Websites
 
--    Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at #22.
+-   Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at #22.
 
 -   American Geophysical Union [Publications and Ethics Policies](https://www.agu.org/publications/authors/policies#ethical-obligations).
 
--   Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html) - Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship) - Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
+-   Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html)
+
+-   Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
+
+-   Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
