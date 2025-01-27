@@ -1175,11 +1175,44 @@
     ]
   },
   {
+    "objectID": "mod_credit.html#breakout-groups",
+    "href": "mod_credit.html#breakout-groups",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Breakout Groups",
+    "text": "Breakout Groups\nNext, we’ll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 5-10 minutes to scan the assigned authorship policy and another 10 minutes to discuss it’s implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.\n\nNutrient Network Authorship Policy\nEquity in Author Order, A Feminist Laboratory’s Approach | Paper (longer, older, cite-able) | Public Version of CLEAR Lab Book (2021). Authorship begins on page 58.\nCReDiT Framework",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#group-discussion-1",
+    "href": "mod_credit.html#group-discussion-1",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Group discussion",
+    "text": "Group discussion\nWe contend that there is no one “right” authorship policy. But each policy we’ve covered has advantages in certain situations. What matters most is that the research team discusses their approach and records it in an accessible location where it can be revisited and updated as needed.",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Intellectual Credit"
+    ]
+  },
+  {
+    "objectID": "mod_credit.html#project-team-time",
+    "href": "mod_credit.html#project-team-time",
+    "title": "Authorship & Intellectual Credit",
+    "section": "Project Team Time",
+    "text": "Project Team Time\nGather in your project teams and begin to build out your own authorship approach, if you have not already. We have added an outline for an authorship plan to your GitHub repos.",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Intellectual Credit"
+    ]
+  },
+  {
     "objectID": "mod_credit.html#additional-resources",
     "href": "mod_credit.html#additional-resources",
     "title": "Authorship & Intellectual Credit",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nNelson, P.R. et al. Authors overestimate their contribution to scientific work, demonstrating a strong bias. 2020. PNAS.\nPuebla, I. et al. Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure. 2024. PLoS Computational Biology\nDahlin, K.M. et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nAllen, L. et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\n\n\n\nWorkshops & Courses\n\n\n\n\n\nWebsites\n\nEcological Society of America Code of Ethics. Authorship criteria found at #22.\nAmerican Geophysical Union Publications and Ethics Policies.\nSoil Organic Matter Synthesis Group authorship policy\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
+    "text": "Additional Resources\n\nPapers & Documents\n\nAllen, L. et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\nBrand, et al. Beyond authorship: Attribution, contribution, collaboration, and credit. 2015. Learned Publishing, 28(2), 151–155.\nDahlin, K.M. et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nLiboiron, M. et al. Equity in Author Order: A Feminist Laboratory’s Approach. 2017. Catalyst: Feminism, Theory, Technoscience, 3(2), Article 2. https://doi.org/10.28968/cftt.v3i2.28850\nNelson, P.R. et al. Authors overestimate their contribution to scientific work, demonstrating a strong bias. 2020. PNAS.\nPuebla, I. et al. Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure. 2024. PLoS Computational Biology\n\n\n\nWebsites\n\nEcological Society of America Code of Ethics. Authorship criteria found at #22.\nAmerican Geophysical Union Publications and Ethics Policies.\nSoil Organic Matter Synthesis Group authorship policy\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
@@ -1652,7 +1685,7 @@
     "href": "mod_project-mgmt.html#additional-resources",
     "title": "Project Management",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Issues. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Milestones. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Projects. 2024.\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Logic Models and Synthesis Development. 2021.\nNCEAS Project Management Workshop for new synthesis working groups\n\n\n\nWeb-based Project Management Tools\n\nOpen Source\n\nGitHub Documentation: Issues and Projects\n\n\n\nCommercial\n\nAsana. Task and project management. Free up to 10 members.\nWrike. Tasks and project management. Capable for individuals. $10 pp per month for teams.\nClickUp. Capable free plan. Less intuitive to set up.\nMiro. Free for up to three projects. More focus on diagrams and brianstorming than ongoing project management.",
+    "text": "Additional Resources\n\nWorkshops & Courses\n\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Issues. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Milestones. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Projects. 2024.\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Logic Models and Synthesis Development. 2021.\nNCEAS Project Management Workshop for new synthesis working groups\n\n\n\nWeb-based Project Management Tools\n\nOpen Source\n\nGitHub Documentation: Issues and Projects\n\n\n\nCommercial\n\nAsana. Task and project management. Free up to 10 members.\nWrike. Tasks and project management. Capable for individuals. $10 pp per month for teams.\nClickUp. Capable free plan. Less intuitive to set up.\nMiro. Free for up to three projects. More focus on diagrams and brianstorming than ongoing project management.\nEasy Retro",
     "crumbs": [
       "Phase II -- Plan",
       "Project Management"
