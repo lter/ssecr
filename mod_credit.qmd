@@ -122,18 +122,34 @@ Then **develop a draft authorship policy**–either from scratch or starting wit
 
 The **decision on an authorship management strategy** will flow from the type of paper and the individuals involved. Here, the value of flexibility and communication within the team is key.
 
+## Breakout Groups
+
+Next, we'll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 5-10 minutes to scan the assigned authorship policy and another 10 minutes to discuss it's implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.
+
+1.  [Nutrient Network Authorship Policy](https://nutnet.org/authorship)
+
+2.  Equity in Author Order, A Feminist Laboratory's Approach \| [Paper](https://doi.org/10.28968/cftt.v3i2.28850) (longer, older, cite-able) \| [Public Version of CLEAR Lab Book](https://research.library.mun.ca/15034/1/Public%20version%20of%20CLEAR%20Lab%20book-2021.pdf) (2021). Authorship begins on page 58.
+
+3.  [CReDiT Framework](https://doi.org/10.1087/20150211)
+
+## Group discussion
+
+We contend that there is no one "right" authorship policy. But each policy we've covered has advantages in certain situations. What matters most is that the research team discusses their approach and records it in an accessible location where it can be revisited and updated as needed.
+
+## Project Team Time
+
+Gather in your project teams and begin to build out your own authorship approach, if you have not already. We have added an outline for an authorship plan to your GitHub repos.
+
 ## Additional Resources
 
 ### Papers & Documents
 
+-   Allen, L. *et al.*, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. *Learned Publishing*
+-   Brand, et al. [Beyond authorship: Attribution, contribution, collaboration, and credit](https://doi.org/10.1087/20150211). **2015.** *Learned Publishing*, *28*(2), 151–155.
+-   Dahlin, K.M. *et al.*, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. *Frontiers in Ecology and the Environment*
+-   Liboiron, M. et al. [Equity in Author Order: A Feminist Laboratory’s Approach.](https://doi.org/10.28968/cftt.v3i2.28850) **2017.** *Catalyst: Feminism, Theory, Technoscience*, *3*(2), Article 2. <https://doi.org/10.28968/cftt.v3i2.28850>
 -   Nelson, P.R. et al. [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. PNAS.
 -   Puebla, I. *et al.* [Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. *PLoS Computational Biology*
--   Dahlin, K.M. *et al.*, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. *Frontiers in Ecology and the Environment*
--   Allen, L. *et al.*, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. *Learned Publishing*
-
-### Workshops & Courses
-
--   
 
 ### Websites
 
