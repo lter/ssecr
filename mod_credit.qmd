@@ -147,13 +147,19 @@ Then **develop a draft authorship policy**–either from scratch or starting wit
 
 The **decision on an authorship management strategy** will flow from the type of paper and the individuals involved. Here, the value of flexibility and communication within the team is key.
 
+## An Evolving Landscape
+
+Community science and knowledge co-production with non-academics, particularly Indigenous knowledge and rights-holders, have been growing rapidly in the last few years. The academic community is still struggling to come to terms with how best to honor and credit such research partners. Authorship is an academic currency that may or may not have value for community partners. Indigenous Peoples can be understandably wary about sharing data related to their land, resources, history, culture, and bodies. The [CARE Principles](https://doi.org/10.5334/dsj-2020-043) (Collective Benefit, Authority to Control, Responsibility, and Ethics) were published in 2020 help researchers focus on the values most important to Indigenous data stewards, rather than focusing solely on the open-data [FAIR Principles](https://doi.org/10.1038/sdata.2016.18) (Findable Accessible, Interoperable, and Reproducible) and [concrete guidance](https://doi.org/10.1038/s41467-024-53480-2) is gradually being developed to guide researchers. Community science and Indigenous data found in repositories should include guidance on how they can ethically be reused.
+
+Another emerging issue in intellectual credit is how to deal with the growing role of AI in research and publishing. Understanding how AI has been used in a research effort is critical to evaluating the reliability of results. Providing figures and asking AI to write a paper yields a very different result than providing bullet points along with the figures, or asking AI to clean up your first draft. In addition, almost every AI system currently available provides results by drawing on millions of public data sources, without any thought of crediting the originators. Journal publishers are starting to [provide guidance](https://doi.org/10.1002/leap.1582) about how to acknowledge researchers' use of AI.
+
 ## Breakout Groups
 
 Next, we'll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 10 minutes to scan the assigned authorship policy and another 15 minutes to discuss it's implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.
 
 1.  [Nutrient Network Authorship Policy](https://nutnet.org/authorship)
 
-2.  [Expanded Authorship Guidelines](https://doi.org/10.1002/2688-8319.12060) (Cooke et a. 20210
+2.  [Expanded Authorship Guidelines](https://doi.org/10.1002/2688-8319.12060) (Cooke et al. 2021)
 
 3.  [CReDiT Framework](https://doi.org/10.1087/20150211) (Brand et al. 2015)
 
@@ -163,7 +169,7 @@ We contend that there is no one "right" authorship policy. But each policy we've
 
 ## Project Team Time
 
-Gather in your project teams and begin to build out your own authorship approach, if you have not already. We have added an outline for an authorship plan to your GitHub repos.
+Gather in your project teams and begin to build out your own authorship approach, if you have not already.
 
 ## Additional Resources
 
@@ -172,9 +178,11 @@ Gather in your project teams and begin to build out your own authorship approach
 -   Allen, L. *et al.*, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. *Learned Publishing*
 -   Brand, et al. [Beyond authorship: Attribution, contribution, collaboration, and credit](https://doi.org/10.1087/20150211). **2015.** *Learned Publishing*, *28*(2), 151–155.
 -   Dahlin, K.M. *et al.*, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. *Frontiers in Ecology and the Environment*
--   Liboiron, M. et al. [Equity in Author Order: A Feminist Laboratory’s Approach.](https://doi.org/10.28968/cftt.v3i2.28850) **2017.** *Catalyst: Feminism, Theory, Technoscience*, *3*(2), Article 2. <https://doi.org/10.28968/cftt.v3i2.28850>
+-   Jennings, L., Jones, K., Taitingfong, R. *et al.* [Governance of Indigenous data in open earth systems science](https://doi.org/10.1038/s41467-024-53480-2). *Nat Commun* **16**, 572 (2025).
+-   Lund, B.D. and Naheem, K.T. (2024), [Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals](https://doi.org/10.1002/leap.1582). Learned Publishing, 37: 13-21.
 -   Nelson, P.R. et al. [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. PNAS.
 -   Puebla, I. *et al.* [Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. *PLoS Computational Biology*
+-   Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* [The FAIR Guiding Principles for scientific data management and stewardship](https://doi.org/10.1038/sdata.2016.18). *Sci Data* **3**, 160018 (2016).
 
 ### Websites
 
