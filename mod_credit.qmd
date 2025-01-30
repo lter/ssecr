@@ -169,7 +169,19 @@ We contend that there is no one "right" authorship policy. But each policy we've
 
 ## Project Team Time
 
-Gather in your project teams and begin to build out your own authorship approach, if you have not already.
+Gather in your project teams and begin to build out your own authorship approach, if you have not already. A few key questions to get you started follow:
+
+-   How will you let participants know about papers and products?
+
+-   Beyond your core group, have others been involved in ways that might warrant authorship? How will they learn about upcoming products.
+
+-   Do you want to operate on an opt-in or an opt-out basis?
+
+-   What kinds of products do you expect to produce?
+
+-   What kinds of contributions do you think are most important?
+
+-   What is the minimum requirement for being a paper author? A dataset author? A package creator?
 
 ## Additional Resources
 
