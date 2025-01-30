@@ -1186,11 +1186,22 @@
     ]
   },
   {
+    "objectID": "mod_credit.html#an-evolving-landscape",
+    "href": "mod_credit.html#an-evolving-landscape",
+    "title": "Authorship & Intellectual Credit",
+    "section": "An Evolving Landscape",
+    "text": "An Evolving Landscape\nCommunity science and knowledge co-production with non-academics, particularly Indigenous knowledge and rights-holders, have been growing rapidly in the last few years. The academic community is still struggling to come to terms with how best to honor and credit such research partners. Authorship is an academic currency that may or may not have value for community partners. Indigenous Peoples can be understandably wary about sharing data related to their land, resources, history, culture, and bodies. The CARE Principles (Collective Benefit, Authority to Control, Responsibility, and Ethics) were published in 2020 help researchers focus on the values most important to Indigenous data stewards, rather than focusing solely on the open-data FAIR Principles (Findable Accessible, Interoperable, and Reproducible) and concrete guidance is gradually being developed to guide researchers. Community science and Indigenous data found in repositories should include guidance on how they can ethically be reused.\nAnother emerging issue in intellectual credit is how to deal with the growing role of AI in research and publishing. Understanding how AI has been used in a research effort is critical to evaluating the reliability of results. Providing figures and asking AI to write a paper yields a very different result than providing bullet points along with the figures, or asking AI to clean up your first draft. In addition, almost every AI system currently available provides results by drawing on millions of public data sources, without any thought of crediting the originators. Journal publishers are starting to provide guidance about how to acknowledge researchers’ use of AI.",
+    "crumbs": [
+      "Phase III -- Execute",
+      "Intellectual Credit"
+    ]
+  },
+  {
     "objectID": "mod_credit.html#breakout-groups",
     "href": "mod_credit.html#breakout-groups",
     "title": "Authorship & Intellectual Credit",
     "section": "Breakout Groups",
-    "text": "Breakout Groups\nNext, we’ll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 10 minutes to scan the assigned authorship policy and another 15 minutes to discuss it’s implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.\n\nNutrient Network Authorship Policy\nExpanded Authorship Guidelines (Cooke et a. 20210\nCReDiT Framework (Brand et al. 2015)",
+    "text": "Breakout Groups\nNext, we’ll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 10 minutes to scan the assigned authorship policy and another 15 minutes to discuss it’s implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.\n\nNutrient Network Authorship Policy\nExpanded Authorship Guidelines (Cooke et al. 2021)\nCReDiT Framework (Brand et al. 2015)",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
@@ -1212,7 +1223,7 @@
     "href": "mod_credit.html#project-team-time",
     "title": "Authorship & Intellectual Credit",
     "section": "Project Team Time",
-    "text": "Project Team Time\nGather in your project teams and begin to build out your own authorship approach, if you have not already. We have added an outline for an authorship plan to your GitHub repos.",
+    "text": "Project Team Time\nGather in your project teams and begin to build out your own authorship approach, if you have not already.",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
@@ -1223,7 +1234,7 @@
     "href": "mod_credit.html#additional-resources",
     "title": "Authorship & Intellectual Credit",
     "section": "Additional Resources",
-    "text": "Additional Resources\n\nPapers & Documents\n\nAllen, L. et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\nBrand, et al. Beyond authorship: Attribution, contribution, collaboration, and credit. 2015. Learned Publishing, 28(2), 151–155.\nDahlin, K.M. et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nLiboiron, M. et al. Equity in Author Order: A Feminist Laboratory’s Approach. 2017. Catalyst: Feminism, Theory, Technoscience, 3(2), Article 2. https://doi.org/10.28968/cftt.v3i2.28850\nNelson, P.R. et al. Authors overestimate their contribution to scientific work, demonstrating a strong bias. 2020. PNAS.\nPuebla, I. et al. Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure. 2024. PLoS Computational Biology\n\n\n\nWebsites\n\nEcological Society of America Code of Ethics. Authorship criteria found at #22.\nAmerican Geophysical Union Publications and Ethics Policies.\nSoil Organic Matter Synthesis Group authorship policy\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
+    "text": "Additional Resources\n\nPapers & Documents\n\nAllen, L. et al., How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship. 2018. Learned Publishing\nBrand, et al. Beyond authorship: Attribution, contribution, collaboration, and credit. 2015. Learned Publishing, 28(2), 151–155.\nDahlin, K.M. et al., Hear Every Voice, Working Groups that Work. 2019. Frontiers in Ecology and the Environment\nJennings, L., Jones, K., Taitingfong, R. et al. Governance of Indigenous data in open earth systems science. Nat Commun 16, 572 (2025).\nLund, B.D. and Naheem, K.T. (2024), Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals. Learned Publishing, 37: 13-21.\nNelson, P.R. et al. Authors overestimate their contribution to scientific work, demonstrating a strong bias. 2020. PNAS.\nPuebla, I. et al. Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure. 2024. PLoS Computational Biology\nWilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016).\n\n\n\nWebsites\n\nEcological Society of America Code of Ethics. Authorship criteria found at #22.\nAmerican Geophysical Union Publications and Ethics Policies.\nSoil Organic Matter Synthesis Group authorship policy\nNutrient Network (NutNet) authorship policy\nHerbivory Variability Network (HerbVar) participation guidelines",
     "crumbs": [
       "Phase III -- Execute",
       "Intellectual Credit"
