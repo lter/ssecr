@@ -47,14 +47,15 @@ Project groups will also meet at a time of their own choosing to work on project
 | 12/19/24 | Supporting Divergent, Emergent, and Convergent Thinking | [Carrie Kappel](https://legacyworksgroup.com/team-content/carrie-kappel) |
 | 1/16/25 | Data Wrangling | [Nick Lyon](https://njlyon0.github.io/) |
 | 1/30/25 | Authorship & Intellectual Credit | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
-| 2/13/25 | Analysis & Modeling | [Nick Lyon](https://njlyon0.github.io/) |
-| 2/27/25 | Next Steps & Logic Models | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
-| 3/13/25 | Communicating Findings | [Gabriel de la Rosa](https://www.gabrieldelarosa.com/) |
-| 3/27/25 | Reproducible Reports | [Nick Lyon](https://njlyon0.github.io/) |
-| 4/10/25 | _Optional Module_ | TBD |
-| 4/24/25 | _Optional Prep_ | TBD |
+| 2/13/25 | **Cancelled**
+| 2/27/25 | Analysis & Modeling | [Nick Lyon](https://njlyon0.github.io/) |
+| 3/13/25 | Next Steps & Logic Models | [Marty Downs](https://orcid.org/0000-0003-2833-956X) |
+| 3/27/25 | Communicating Findings | [Gabriel de la Rosa](https://www.gabrieldelarosa.com/) |
+| 4/10/25 | Reproducible Reports | [Nick Lyon](https://njlyon0.github.io/) |
+| 4/24/25 | _Bonus Module / Optional Prep_ | TBD |
 | 5/8/25 | _Optional Prep_ | TBD |
 | 5/22/25 | **Final Project Symposium** | _SSECR Participants!_ |
+| 5/28/25 | Public Presentations on LTER Community Call | _SSECR Participants!_ |
 
 :::
 
