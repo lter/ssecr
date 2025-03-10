@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,12 +70,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5f1a9ca80a16c292a486fa3c5e336abb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b3228ed974fe9c758a2ded1277dec4fe.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d7f512a412a3446ae32d22219c4a4e26.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ec1e6663705370e8800e81577df69757.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -367,10 +367,12 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#notebook-structure-value" id="toc-notebook-structure-value" class="nav-link" data-scroll-target="#notebook-structure-value">Notebook Structure &amp; Value</a>
   <ul class="collapse">
   <li><a href="#structural-elements" id="toc-structural-elements" class="nav-link" data-scroll-target="#structural-elements">Structural Elements</a></li>
-  <li><a href="#script-vs.-report-decision" id="toc-script-vs.-report-decision" class="nav-link" data-scroll-target="#script-vs.-report-decision">Script vs.&nbsp;Report Decision</a></li>
   </ul></li>
-  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications">Applications</a></li>
-  <li><a href="#deployment-github" id="toc-deployment-github" class="nav-link" data-scroll-target="#deployment-github">Deployment &amp; GitHub</a></li>
+  <li><a href="#making-a-website-with-notebooks" id="toc-making-a-website-with-notebooks" class="nav-link" data-scroll-target="#making-a-website-with-notebooks">Making a Website with Notebooks</a></li>
+  <li><a href="#customizing-a-quarto-website" id="toc-customizing-a-quarto-website" class="nav-link" data-scroll-target="#customizing-a-quarto-website">Customizing a Quarto Website</a>
+  <ul class="collapse">
+  <li><a href="#custom-themes-with-scss" id="toc-custom-themes-with-scss" class="nav-link" data-scroll-target="#custom-themes-with-scss">Custom Themes with SCSS</a></li>
+  </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -406,7 +408,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>At this point in the course, we anticipate that you’re likely approaching the end of your team’s synthesis project (see our suggested <a href="https://lter.github.io/ssecr/proj_milestones.html">milestones page</a> for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you’ve been doing for the last several months. “<strong>Computational notebooks</strong>” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage <em>both</em> your technical skills and your scientific communication skills.</p>
+<p>At this point in the course, we anticipate that your synthesis project is–if not finished–in a state where some amount of external-facing products would be beneficial (see our suggested <a href="https://lter.github.io/ssecr/proj_milestones.html">milestones page</a>). “<strong>Computational notebooks</strong>” (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) are an excellent choice for creating reproducible documentation that has direct ties to scripts or data files relevant to your project. Effective notebook files allow you to leverage <em>both</em> your technical skills and your scientific communication skills.</p>
 <p>This module focuses on the structure and content of these notebooks from a <u>primarily technical</u> lens, so please consult the <a href="https://lter.github.io/ssecr/mod_findings.html">communicating findings</a> module for the team science perspective.</p>
 </section>
 <section id="learning-objectives" class="level2">
@@ -424,7 +426,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="preparation" class="level2">
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
-<p>TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)</p>
+<ol type="1">
+<li>Install <a href="https://quarto.org/docs/get-started/">Quarto</a></li>
+<li>Double check that your group’s GitHub repository is up to date</li>
+</ol>
 </section>
 <section id="networking-session" class="level2">
 <h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
@@ -448,7 +453,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ol type="1">
 <li>YAML
 <ul>
-<li>Pronounced ‘<em>YEAH-mull</em>’</li>
+<li>Pronounced [ <em>YEAH-mull</em> ]</li>
 </ul></li>
 <li>Plain text
 <ul>
@@ -466,6 +471,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> <span class="st">"Reproducible Reports"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">output:</span> html_document</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Among other roles, the YAML defines what type of output file is produced when the notebook is “rendered” (a.k.a. “knit”). Most commonly this is either a single PDF or HTML file but more complex YAMLs can be used to create full websites or scientific manuscripts!</p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>The text outside of the YAML and code chunks is plain text that accepts Markdown syntax to accomplish text format tweaks. Dedicated text-formatting software (e.g., Microsoft Word, Gmail, etc.) provides buttons and hot keys for these sorts of format alterations but many programming IDEs do not provide such user interface elements.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Markdown syntax is used to support this same functionality.</p>
@@ -506,21 +512,62 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </section>
-<section id="script-vs.-report-decision" class="level3">
-<h3 class="anchored" data-anchor-id="script-vs.-report-decision">Script vs.&nbsp;Report Decision</h3>
-<p>See <a href="https://lter.github.io/scicomp/tip_notebook-vs-script.html">here</a> for more information.</p>
 </section>
-</section>
-<section id="applications" class="level2">
-<h2 class="anchored" data-anchor-id="applications">Applications</h2>
+<section id="making-a-website-with-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-website-with-notebooks">Making a Website with Notebooks</h2>
+<p>Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead <strong>we’ll be making individual or team websites!</strong> This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.</p>
+<p>We’ll work through the details together but broadly the process of making a website is as follows:</p>
 <ul>
-<li>Static PDF/HTML files</li>
-<li>Full manuscripts</li>
-<li>Deployed website</li>
+<li>Create the core website skeleton on your computer</li>
+<li>Make an <em>empty</em> GitHub repository</li>
+<li>Connect your local website materials with that GitHub repo</li>
+<li>“Deploy” your website on GitHub
+<ul>
+<li>This makes your site ‘real’</li>
+</ul></li>
 </ul>
+<p>Once that’s all done, you can customize your website locally using the normal ‘edit-pull-push’ workflow that is appropriate for any other type of repository.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Making a Team / Personal Website
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that you <em>do not</em> need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.</p>
+<p>Eventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, <strong>all but one member of your group must work on individual sites instead</strong>. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena.</p>
+<section id="lter-scicomp-tutorial-materials" class="level4">
+<h4 class="anchored" data-anchor-id="lter-scicomp-tutorial-materials">LTER SciComp Tutorial Materials</h4>
+<p>We’ll be working through live tutorial materials <a href="https://lter.github.io/scicomp/tutorial_quarto-website.html">here</a> but for convenience we have also embedded the tutorial directly into the SSECR course website (see below).</p>
+<iframe src="https://lter.github.io/scicomp/tutorial_quarto-website.html" height="450" width="750" style="border: 1px solid #2e3846;"></iframe>
 </section>
-<section id="deployment-github" class="level2">
-<h2 class="anchored" data-anchor-id="deployment-github">Deployment &amp; GitHub</h2>
+</div>
+</div>
+</section>
+<section id="customizing-a-quarto-website" class="level2">
+<h2 class="anchored" data-anchor-id="customizing-a-quarto-website">Customizing a Quarto Website</h2>
+<p>You can customize a Quarto website by editing the <code>_quarto.yml</code> file. This is written entirely in YAML and is what connects your pages to one another and also allows for website-wide theme elements (e.g., colors, fonts, etc.). There are <em>a lot</em> of options in this realm so we recommend that <strong>you cannibalize elements from other Quarto websites you like as you find them</strong>.</p>
+<p>While that advice applies in most cases, it is likely that customizing your website’s color palette is something all groups will want to do so we’ll cover that facet as part of this module.</p>
+<section id="custom-themes-with-scss" class="level3">
+<h3 class="anchored" data-anchor-id="custom-themes-with-scss">Custom Themes with SCSS</h3>
+<p>Under construction; check back later!</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Customize Your Website
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Revisit the Quarto website you created for the prior module and - Decide on your ideal color palette - Create both a light theme and a dark theme - Check out this <a href="https://github.com/JamieMcDevittIrwin/CAGED-website">LTER working group’s <i class="fa-brands fa-github" aria-label="github"></i> repository</a> to see how they customized their site</p>
+</div>
+</div>
+</section>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
@@ -533,6 +580,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="workshops-courses" class="level3">
 <h3 class="anchored" data-anchor-id="workshops-courses">Workshops &amp; Courses</h3>
 <ul>
+<li>LTER Scientific Computing Team. <a href="https://lter.github.io/scicomp/tip_notebook-vs-script.html">Notebooks versus Scripts</a>. <strong>2025</strong>.</li>
 <li>Csik, S. <a href="https://ucsb-meds.github.io/creating-quarto-websites/">Creating Your Personal Website Using Quarto</a>. <strong>2024</strong>.</li>
 <li>National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. <a href="https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html">coreR: Literate Analysis with Quarto</a>. <strong>2023</strong>.</li>
 <li>Mecum, B. <a href="https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html">Reproducible Papers with RMarkdown</a>. <strong>2019</strong>.</li>
