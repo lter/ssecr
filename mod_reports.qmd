@@ -5,7 +5,7 @@ code-annotations: hover
 
 ## Overview
 
-At this point in the course, we anticipate that you're likely approaching the end of your team's synthesis project (see our suggested [milestones page](https://lter.github.io/ssecr/proj_milestones.html) for more information). As the end of your project and the course as a whole nears, it might be valuable for your group to consider how you can reproducibly document all of the work you've been doing for the last several months. "**Computational notebooks**" (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) can be a reproducible way of documenting your results in a format that allows you to leverage _both_ your technical skills and your scientific communication skills.
+At this point in the course, we anticipate that your synthesis project is--if not finished--in a state where some amount of external-facing products would be beneficial (see our suggested [milestones page](https://lter.github.io/ssecr/proj_milestones.html)). "**Computational notebooks**" (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) are an excellent choice for creating reproducible documentation that has direct ties to scripts or data files relevant to your project. Effective notebook files allow you to leverage _both_ your technical skills and your scientific communication skills.
 
 This module focuses on the structure and content of these notebooks from a <u>primarily technical</u> lens, so please consult the [communicating findings](https://lter.github.io/ssecr/mod_findings.html) module for the team science perspective.
 
