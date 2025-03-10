@@ -111,11 +111,56 @@ round(x = pi, digits = 2)
 
 :::
 
+## Making a Website with Notebooks
 
+Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead **we'll be making individual or team websites!** This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.
 
+We'll work through the details together but broadly the process of making a website is as follows:
 
-## Deployment & GitHub
+- Create the core website skeleton on your computer
+- Make an _empty_ GitHub repository
+- Connect your local website materials with that GitHub repo
+- "Deploy" your website on GitHub
+    - This makes your site 'real'
 
+Once that's all done, you can customize your website locally using the normal 'edit-pull-push' workflow that is appropriate for any other type of repository.
+
+:::{.callout-note icon="false"}
+### Activity: Making a Team / Personal Website
+
+Note that you _do not_ need to keep your website up after you make it if you already have one or don't want one but this activity will still be good practice regardless.
+
+Eventually you will likely want a team-wide website. You are absolutely welcome to make this during today's module but because the first draft must be made by a single person, **all but one member of your group must work on individual sites instead**. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop 'muscle memory' in this arena.
+
+#### LTER SciComp Tutorial Materials
+
+We'll be working through live tutorial materials [here](https://lter.github.io/scicomp/tutorial_quarto-website.html) but for convenience we have also embedded the tutorial directly into the SSECR course website (see below).
+
+ ```{=html}
+<iframe src="https://lter.github.io/scicomp/tutorial_quarto-website.html" height="450" width="750" style="border: 1px solid #2e3846;"></iframe>
+```
+
+:::
+
+## Customizing a Quarto Website
+
+You can customize a Quarto website by editing the `_quarto.yml` file. This is written entirely in YAML and is what connects your pages to one another and also allows for website-wide theme elements (e.g., colors, fonts, etc.). There are _a lot_ of options in this realm so we recommend that **you cannibalize elements from other Quarto websites you like as you find them**.
+
+While that advice applies in most cases, it is likely that customizing your website's color palette is something all groups will want to do so we'll cover that facet as part of this module.
+
+### Custom Themes with SCSS
+
+Under construction; check back later!
+
+:::{.callout-note icon="false"}
+#### Activity: Customize Your Website
+
+Revisit the Quarto website you created for the prior module and
+- Decide on your ideal color palette
+- Create both a light theme and a dark theme
+    - Check out this [LTER working group's {{< fa brands github >}} repository](https://github.com/JamieMcDevittIrwin/CAGED-website) to see how they customized their site
+
+:::
 
 ## Additional Resources
 
