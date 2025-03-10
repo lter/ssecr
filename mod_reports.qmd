@@ -23,7 +23,8 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+1. Install [Quarto](https://quarto.org/docs/get-started/)
+2. Double check that your group's GitHub repository is up to date
 
 ## Networking Session
 
@@ -46,7 +47,7 @@ In synthesis work these reports can be especially valuable because your team may
 Typically, these notebooks have three structural components:
 
 1. YAML
-    - Pronounced '_YEAH-mull_'
+    - Pronounced \[ _YEAH-mull_ \]
 2. Plain text
     - Possibly formatted with Markdown syntax
 3. Embedded code chunks
@@ -65,6 +66,8 @@ title: "Reproducible Reports"
 output: html_document
 ---
 ```
+
+Among other roles, the YAML defines what type of output file is produced when the notebook is "rendered" (a.k.a. "knit"). Most commonly this is either a single PDF or HTML file but more complex YAMLs can be used to create full websites or scientific manuscripts!
 
 #### Markdown Text
 
@@ -110,17 +113,6 @@ round(x = pi, digits = 2)
 
 
 
-### Script vs. Report Decision
-
-See [here](https://lter.github.io/scicomp/tip_notebook-vs-script.html) for more information.
-
-
-
-## Applications
-
-- Static PDF/HTML files
-- Full manuscripts
-- Deployed website
 
 ## Deployment & GitHub
 
@@ -133,6 +125,7 @@ See [here](https://lter.github.io/scicomp/tip_notebook-vs-script.html) for more 
 
 ### Workshops & Courses
 
+- LTER Scientific Computing Team. [Notebooks versus Scripts](https://lter.github.io/scicomp/tip_notebook-vs-script.html). **2025**.
 - Csik, S. [Creating Your Personal Website Using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/). **2024**.
 - National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Literate Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html). **2023**.
 - Mecum, B. [Reproducible Papers with RMarkdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html). **2019**.
