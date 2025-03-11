@@ -438,10 +438,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="networking-session" class="level2">
 <h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2025 Guests</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>To Be Determined!</p>
+<p>Ingrid Slette, Postdoctoral Researcher at the University Minnesota Coordinator of <a href="https://nutnet.org/">NutNet</a> and <a href="https://dragnetglobal.weebly.com/">DRAGNet</a> coordinated, distributed experiments.</p>
+<p>Ingid synthesizes data in order to understand the impacts of intersecting global changes. Her PhD research focused on how previous climate extremes alter the impacts of extreme drought on root traits and patterns of aboveground vs.&nbsp;belowground plant production and carbon cycling in grasslands. Name pronunciation: ing-rid sleh-tuh. Pronouns: she/her</p>
 </div>
 </div>
 </div>
@@ -487,12 +488,12 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Hypotheses here are a question of <u>whether a variable has a “significant” effect on another</u>. “Significant” has a very precise meaning in this context that has to do with <em>p</em>-values. Fundamentally, these methods focus on whether the observed relationship in the data is likely to be observed by chance alone or not. Strong effects are less likely–though not impossible–to be observed due to random chance.</p>
 <p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that X affects Y’ then frequentist inference may be a more appropriate methodology.</p>
-<p>For the purposes of SSECR, <strong>our discussion of frequentist inference will focus on <u>mixed-effect models</u></strong>.</p>
+<p>For the purposes of SSECR, <strong>our discussion of frequentist inference will focus on</strong> <u>mixed-effect models</u>.</p>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Hyoptheses here are a question of <u>which variables explain the <em>most</em> variation in the data</u>. Methods in this framing are unconcerned–or at least less concerned than in frequentist inference–with the probability associated with a particular variable. Intead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data <em>even when that best model does not necessarily explain much of that variation in absolute terms</em>.</p>
 <p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that models including X explain more of the variation in Y than those that do not’ then multi-model inference may be a more appropriate methodology.</p>
-<p>For the purposes of SSECR, <strong>our discussion of multi-model inference will focus on <u>comparing model strengths with AIC</u></strong>.</p>
+<p>For the purposes of SSECR, <strong>our discussion of multi-model inference will focus on</strong> <u>comparing model strengths with AIC</u>.</p>
 </div>
 </div>
 </div>
@@ -591,11 +592,11 @@ Discussion: Random versus Fixed Effects
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   450 obs. of  6 variables:
  $ year           : int  2022 2022 2022 2022 2022 2022 2022 2022 2022 2022 ...
- $ road.dist_km   : num  64.5 64.5 64.5 64.5 64.5 ...
+ $ road.dist_km   : num  41.4 41.4 41.4 41.4 41.4 ...
  $ site           : chr  "site_A" "site_A" "site_A" "site_A" ...
  $ plot           : chr  "plot_a" "plot_a" "plot_a" "plot_a" ...
  $ site.plot      : chr  "A_a" "A_a" "A_a" "A_a" ...
- $ tarantula_count: int  199 220 213 206 220 128 156 121 121 142 ...</code></pre>
+ $ tarantula_count: int  114 119 128 128 123 28 28 28 23 28 ...</code></pre>
 </div>
 </div>
 <p>With our data in hand, we now want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em>-values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
@@ -620,18 +621,18 @@ lm(formula = tarantula_count ~ road.dist_km, data = tarantula_df)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--216.916  -77.487    8.486   59.913  316.084 
+-210.626  -76.460    2.734   56.608  300.374 
 
 Coefficients:
              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)   -3.3935    14.8929  -0.228     0.82    
-road.dist_km   2.8140     0.2775  10.141   &lt;2e-16 ***
+(Intercept)   0.04412   12.19538   0.004    0.997    
+road.dist_km  2.72198    0.22818  11.929   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 100.2 on 448 degrees of freedom
-Multiple R-squared:  0.1867,    Adjusted R-squared:  0.1849 
-F-statistic: 102.8 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 100.3 on 448 degrees of freedom
+Multiple R-squared:  0.2411,    Adjusted R-squared:  0.2394 
+F-statistic: 142.3 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <p>This naive test seems to support our hypothesis. However, sampling effort differed between the three study years. Not only was there a second person in the second year but we can also reasonably expect that by the third year in this system we had greatly improved our tarantula-finding skills. So, a random effect of year is definitely justified. We are not concerned that the different study years will affect the relationship between tarantula populations and road distance though so a random intercept is fine.</p>
@@ -658,28 +659,28 @@ lmerModLmerTest]
 Formula: tarantula_count ~ road.dist_km + (1 | year)
    Data: tarantula_df
 
-REML criterion at convergence: 5362.6
+REML criterion at convergence: 5369.7
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.6578 -0.7941  0.1653  0.6517  2.9451 
+-2.5692 -0.7352  0.1277  0.5898  2.7851 
 
 Random effects:
  Groups   Name        Variance Std.Dev.
- year     (Intercept) 1940     44.04   
- Residual             8747     93.52   
+ year     (Intercept) 1763     41.99   
+ Residual             8883     94.25   
 Number of obs: 450, groups:  year, 3
 
 Fixed effects:
-             Estimate Std. Error       df t value Pr(&gt;|t|)    
-(Intercept)   -3.3935    28.9768   3.1783  -0.117    0.914    
-road.dist_km   2.8140     0.2589 446.0000  10.868   &lt;2e-16 ***
+              Estimate Std. Error        df t value Pr(&gt;|t|)    
+(Intercept)    0.04412   26.81272   2.80159   0.002    0.999    
+road.dist_km   2.72198    0.21438 446.00000  12.697   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-road.dst_km -0.455</code></pre>
+road.dst_km -0.394</code></pre>
 </div>
 </div>
 <p>By including that random effect we actually get a slightly stronger effect of road distance (T value of ~12 without versus ~13 with). This is because our new random effect accounts for some of the ‘noise’ between study years. That actually gives us a better picture of the relationship between our response and explanatory variables.</p>
@@ -734,29 +735,29 @@ lmerModLmerTest]
 Formula: tarantula_count ~ road.dist_km + (1 | year) + (1 | site.plot)
    Data: tarantula_df
 
-REML criterion at convergence: 4553.6
+REML criterion at convergence: 4587.3
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--3.0902 -0.5352 -0.0117  0.5990  3.9323 
+-3.2573 -0.6293 -0.0265  0.5946  3.1164 
 
 Random effects:
  Groups    Name        Variance Std.Dev.
- site.plot (Intercept) 8165     90.36   
- year      (Intercept) 1991     44.62   
- Residual              1058     32.52   
+ site.plot (Intercept) 8218     90.65   
+ year      (Intercept) 1814     42.59   
+ Residual              1145     33.84   
 Number of obs: 450, groups:  site.plot, 30; year, 3
 
 Fixed effects:
-             Estimate Std. Error     df t value Pr(&gt;|t|)   
-(Intercept)    -3.393     58.233 23.593  -0.058  0.95402   
-road.dist_km    2.814      0.973 28.000   2.892  0.00733 **
+             Estimate Std. Error       df t value Pr(&gt;|t|)   
+(Intercept)   0.04412   49.42924 19.57403   0.001  0.99930   
+road.dist_km  2.72198    0.80228 27.99583   3.393  0.00208 **
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-road.dst_km -0.851</code></pre>
+road.dst_km -0.800</code></pre>
 </div>
 </div>
 <p>This test reveals that while there is a significant relationship between road distance and tarantula population but the effect is not nearly as strong as it was when we let plot-level variation be ignored. This is likely due to high (or low) average populations in a single plot skewing the site-level average. Still, this is a result we can be more confident in because we’ve now accounted for all known sources of variation in our data–either by including them as fixed effects or including them as a random effects.</p>
