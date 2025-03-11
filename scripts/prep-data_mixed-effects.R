@@ -124,6 +124,6 @@ ggplot(spider_df, aes(y = tarantula_count, x = year, fill = as.factor(year))) +
   theme(legend.position = "top")
 
 # Export locally
-# write.csv(x = spider_df, row.names = F, na = '', file = file.path("data", "tarantulas.csv"))
+write.csv(x = spider_df, row.names = F, na = '', file = file.path("data", "tarantulas.csv"))
 
 # End ----
