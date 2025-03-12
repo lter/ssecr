@@ -4,7 +4,7 @@ title: "Next Steps & Logic Models"
 
 ## Overview
 
-Under Construction, stay tuned!
+Whether group members are excited about continuing to work together or ready to go their own ways, a little thought and discussion about how group members envision their next steps can set you up for success. In this module, we discuss ways to help ensure that your work is recognized and cited, talk about expectations going forward, and begin thinking about how continued work could be supported.
 
 ## Learning Objectives
 
@@ -16,14 +16,19 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+No specific preparation required.
 
 ## Networking Session
 
 ::: panel-tabset
-### 2024 Guests
+### 2025 Guests
 
-To Be Determined!
+[Dr. Cristina Portales Reyes](https://www.portalesbiodiversitylab.com/), Assistant Professor, St. Louis University
+Cristy participated in the [synchrony synthesis working group](https://www.portalesbiodiversitylab.com/) as a graduate student at the University of Minnesota. That group had barely finished when she proposed (and was awarded) a working group that she now leads on difficult-to-reverse [ecosystem transitions](https://lternet.edu/working-groups/ecosystem-transitions-increased-variability-and-regime-shifts/). 
+
+[Dr. Laureano Gherardi](https://vcresearch.berkeley.edu/faculty/laureano-gherardi), Assistant Professor, Berkeley University
+Laureano also participated in the [synchrony synthesis working group](https://lternet.edu/working-groups/synthesizing-population-and-community-synchrony-to-understand-drivers-of-ecological-stability-across-lter-sites/) as a graduate student at Arizona State University and followed it up with not one, but three additional synthesis groups:  [ecosystem transitions](https://lternet.edu/working-groups/ecosystem-transitions-increased-variability-and-regime-shifts/), [global drought effects](https://lternet.edu/working-groups/a-global-synthesis-of-multi-year-drought-effects-on-terrestrial-ecosystems/), and [resilience and management](https://lternet.edu/working-groups/resilience-and-management/).
+
 :::
 
 ## ...
