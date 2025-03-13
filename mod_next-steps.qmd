@@ -68,11 +68,87 @@ Want to reach community ecologists? Modellers? Land managers? Teachers? The choi
 
 Whatever tactics you pursue, spend a little time as a group agreeing on the language and the main talking points about your work. The potential impact is much greater when everyone amplifies a coherent set of messages. One time-honored tool for developing these messages is the “[Message Box](https://www.compassscicomm.org/leadership-development/the-message-box/)” developed by COMPASS. Assembling those key messages in one location, such as on a project website, also gives each team member a place to point interested individuals and a touchstone for reference.
 
-## Revisit your Authorship Agreement
-
 ## Park Downhill
 
+Beyond preserving and promoting the current work, there are a few things you can do to prepare for the new research opportunities that it can generate. Ideally, the group has been tracking spinoff ideas as they come up. It’s impractical to chase them all down in the moment, but recording them, with just a few sentences of context and explanation, will help to resurface the inspiration at a later date.
+
+Now is the time to pull those ideas out of mothballs or, alternatively, return to the mind maps we made in the [project management session](https://lter.github.io/ssecr/mod_project-mgmt.html) to unearth some new ones.
+
+![A sample mind map](images/mind-map.png){fig-alt="linked concepts around a central theme"}
+
+You are now well on your way to nailing down one, maybe two, of the relationships on that mind map. But chances are that the data you’ve assembled sheds light on several more. In this project group discussion, we’ll take some time to identify and explore a few of them. 
+
+:::{.callout-note icon="false"}
+
+#### Preparing to Propose
+
+Break out into project groups. Assign a timekeeper, facilitator and reporter.  
+Pull up your running list of project ideas, the mind map you generated in the project management session, or start a new mind map with your current project theme at the center.
+
+-  Take 3-5 minutes of individual quiet time to come up with a related research idea or two that capitalize on the data you’ve assembled. (3-5 min)  
+-  Share ideas in the group and nominate your top 3 (10 min)  
+-  For each of those ideas (20 minutes)  
+- Identify what additional data or analyses would be needed to clarify the nature and scale of the relationship  
+-  Identify what the downstream effects of a change in our understanding of that relationship would be  
+-  Brainstorm a list of people (individuals, groups, roles, agencies) who care about those changes or that intersect with them
+
+For example, say your original project was focused on understanding what factors influence the long term immobilization of soil carbon during decomposition. Spinoff ideas might look at 
+1.  additional controlling factors that you couldn’t include in the first effort; 
+1. a wider range of ecosystems; 
+1. the role of variability (not only temperature, for example, but also the frequency of freeze-thaw cycles);
+1. the effect of the same factors on the mobilization of nutrients in soil; or 
+1.  scaling the analysis to forecast the impact on carbon sinks under alternative climate scenarios. 
+
+In addition to the standard science funding agencies such as NSF, NASA, DOE, or USDA, your list of stakeholders might include: farmers, fertilizer suppliers, extension professionals, carbon markets, climate modelers…
+
+Note these along with the nature of their interest.
+
+:::
+
+When thinking about how to support a research program, strategy (setting goals and making plans to achieve them) is often contrasted with an opportunistic approach. But really, it’s essential to apply a bit of both. The list of people and agencies you generated from this exercise serves as a starting point for exploring funding opportunities. That way, you know they already have an interest in work that will lead toward your goals. When you find an opportunity that intersects with a problem that you have the tools, skills, and data to tackle, that’s when you spring into action, building on knowledge gaps that you’ve already identified. 
+
+
+
+## Crafting a compelling proposal
+
+No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet their goals.
+
+I’m going out on a limb here to say that ALL proposals need:
+-  Context - what is already known/done? What’s the gap you’re trying to fill?
+-  What do you want to do?
+-  How do you plan to do it?
+-  Why are you the right person/group to do it?
+-  Why is it a fit for THIS funder?
+-  What do you expect the results to be
+
+Depending on the source of funding, the order and emphasis of these items will be different. For a foundation funder, the need and results might be most important, with the precise “how” taking a back seat.For a science agency, context and work plan will take higher priority, but be sure to include why you are the right group to do it and what you expect the results to be--even if only a sentence or two.
+
+Even for an individual donor, you’ll want to have a list of talking points that addresses these questions, you just won’t turn it into a formal proposal until you’ve had a conversation or two.
+
+##  Revisit your Authorship Agreement
+
+Anytime a project undergoes a major transition, it’s a good idea to revisit the approach to authorship. An agreement that worked well for an organized project with fixed membership may not be as appropriate for spinoff projects, spearheaded by individual team members and involving rotating groups of collaborators. 
+
+Questions to consider in a next-phase authorship discussion include:
+-  Who wants to stay involved? In what ways?
+-  When related research opportunities arise, is there a responsibility to notify the group? To invite participation?
+-  Whether a team member wants to stay involved or not, what are the expectations for how members of this group are credited on future related projects?
+
+
 ## Additional Resources
+
+Schimel, Joshua. [Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded](https://global.oup.com/academic/product/writing-science-9780199760244?cc=us&lang=en&). Oxford University Press. 2011.
+
+Resource list of funding sources and search tools
+-  [NSF funding search](https://www.nsf.gov/funding/opportunities) 
+-  [DoE funding search](https://www.energy.gov/science/office-science-funding-opportunities)
+-  [Cooperative Ecosystem Studies Units (CESU)](http://www.cesu.psu.edu/fundopps/fundopps.htm)
+-  [International Synthesis Consortium](https://synthesis-consortium.org/) is an umbrella group for synthesis centers across disciplines
+-  [Pivot-RP](https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/pivot-rp-funding/), a Clarivate product that curates funding opportunities across public and private sources. Pivot is a paid product, but most research universities have access.
+-  [Philanthropy News Digest](https://philanthropynewsdigest.org/rfps) publishes a feed of requests for proposals from private foundations. It can be filtered by topic, location, and other keywords. Awards are small, relative to federal funding agencies and topics tend to be applied.
+-  [Community Foundations](https://cof.org/foundation-type/community-foundations) fund project with clear benefits to a local community. 
+-  State environmental and fish and wildlife agencies often have a need for science to inform their conservation activities
+
 
 ### Papers & Documents
 
