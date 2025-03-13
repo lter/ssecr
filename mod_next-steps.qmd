@@ -181,6 +181,7 @@ Resource list of funding sources and search tools
 -  [DoE funding search](https://www.energy.gov/science/office-science-funding-opportunities)
 -  [Cooperative Ecosystem Studies Units (CESU)](http://www.cesu.psu.edu/fundopps/fundopps.htm)
 -  [International Synthesis Consortium](https://synthesis-consortium.org/) is an umbrella group for synthesis centers across disciplines
+-  [Science for Nature and People Partnership](https://snappartnership.net/)
 -  [Pivot-RP](https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/pivot-rp-funding/), a Clarivate product that curates funding opportunities across public and private sources. Pivot is a paid product, but most research universities have access.
 -  [Philanthropy News Digest](https://philanthropynewsdigest.org/rfps) publishes a feed of requests for proposals from private foundations. It can be filtered by topic, location, and other keywords. Awards are small, relative to federal funding agencies and topics tend to be applied.
 -  [Community Foundations](https://cof.org/foundation-type/community-foundations) fund project with clear benefits to a local community. 
