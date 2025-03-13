@@ -1,5 +1,5 @@
 ---
-title: "Next Steps & Logic Models"
+title: "Next Steps"
 ---
 
 ## Overview
@@ -12,7 +12,7 @@ After completing this module you will be able to:
 
 -   <u>Identify</u> needed data and target audience(s)
 -   <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
--   <u>Write</u> polished, funding-worthy proposals
+-   <u>Conceive</u> funding-worthy proposals
 
 ## Preparation
 
@@ -36,19 +36,19 @@ Depositing your assembled dataset in a public repository ensures that others can
 
 The Environmental Data Initiative has developed the [ezEML app](https://edirepository.org/resources/creating-metadata-for-publication#ezeml:~:text=create%20EML%20metadata.-,ezEML,-ezEML%20is%20a) to simplify the publication of datasets with high-quality metadata. The form-based tool leads users through creating and validating Ecological Metadata Language (EML) documents, a standard that can describe many types of data and their use cases, and then submitting them to the repository with accompanying data files. To prepare for submitting your data you’ll need to gather some information and make a few decisions.
 
--   General dataset descriptors: You’ll need a title, abstract, keywords and list of dataset creators (with associated [ORCIDs](https://orcid.org/)). While it’s tempting to just use the abstract for your paper here, an abstract for a dataset does NOT focus on scientific findings. Instead, focus on the purpose of the data, how they were assembled and what decisions were made in the process. In writing your metadata, try to adopt the perspective of a data user and ensure that the information you provide answers questions they might have about data quality and fitness for use.
+-   **General dataset descriptors**: You’ll need a title, abstract, keywords and list of dataset creators (with associated [ORCIDs](https://orcid.org/)). While it’s tempting to just use the abstract for your paper here, an abstract for a dataset does NOT focus on scientific findings. Instead, focus on the purpose of the data, how they were assembled and what decisions were made in the process. In writing your metadata, try to adopt the perspective of a data user and ensure that the information you provide answers questions they might have about data quality and fitness for use.
 
--   Data table descriptors: The most common submission formats in EDI are simple comma-separated value (CSV) tables. What tables does your synthesized dataset contain, and how do they relate to each other?
+-   **Data table descriptors**: The most common submission formats in EDI are simple comma-separated value (CSV) tables. What tables does your synthesized dataset contain, and how do they relate to each other?
 
--   Column descriptors: List the column names, units, and descriptions for each column in each table.
+-   **Column descriptors**: List the column names, units, and descriptions for each column in each table.
 
--   Methods: Be ready to describe, in reproducible detail, the steps used to create the published dataset. For a synthesis project, your team probably spent considerable time finding, cleaning, harmonizing, and assembling the finished product into something that could be analyzed. What were these steps?
+-   **Methods**: Be ready to describe, in reproducible detail, the steps used to create the published dataset. For a synthesis project, your team probably spent considerable time finding, cleaning, harmonizing, and assembling the finished product into something that could be analyzed. What were these steps?
 
--   Provenance: What original data sources did you draw on? You’ll want your dataset to link to the original data sources so that they, too, receive credit for their work. In ezEML, data provenance information is associated with the methods metadata, and links are displayed on all EDI dataset landing pages.
+-   **Provenance**: What original data sources did you draw on? You’ll want your dataset to link to the original data sources so that they, too, receive credit for their work. In ezEML, data provenance information is associated with the methods metadata, and links are displayed on all EDI dataset landing pages.
 
--   Reuse: ezEML will ask you to decide on a license for reuse of your synthesized data. EDI and LTER recommend using a C[C-0 public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/) which allows reuse and adaptation without requiring a specific form of citation. Professional standards and EDI policy encourage citation, but preserving flexibility about the form of citation relieves downstream users from the obligation to cite data in ways that may not be workable for large syntheses. [CC-BY](https://creativecommons.org/licenses/by/4.0/deed.en) is also an acceptable license. It allows downstream users to re-share and adapt the licensed work, but requires that users “give appropriate credit, provide a link to the license, and indicate if changes were made.”
+-   **Reuse**: ezEML will ask you to decide on a license for reuse of your synthesized data. EDI and LTER recommend using a C[C-0 public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/) which allows reuse and adaptation without requiring a specific form of citation. Professional standards and EDI policy encourage citation, but preserving flexibility about the form of citation relieves downstream users from the obligation to cite data in ways that may not be workable for large syntheses. [CC-BY](https://creativecommons.org/licenses/by/4.0/deed.en) is also an acceptable license. It allows downstream users to re-share and adapt the licensed work, but requires that users “give appropriate credit, provide a link to the license, and indicate if changes were made.”
 
--   How to share code: Chances are, your code is already public on GitHub (and hopefully, well documented), but you’ll want to create a persistent reference to the version of the code that you used to conduct *this* analysis. One way to go is to package your code along with your data on EDI. That approach makes the code findable, because it is right there with the data, but the code remains static, and it can be difficult to represent the software package structure and release history. Many researchers now prefer to release their GitHub repository [code on Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) and reference the specific release with their dataset in EDI or another repository. This allows continued development of code in the repository, while linking together the dataset and the code for creating or analyzing it. This approach is great for synthesis groups that will continue adding new data, analyses, or publications in the future.
+-   **Sharing code**: Chances are, your code is already public on GitHub (and hopefully, well documented), but you’ll want to create a persistent reference to the version of the code that you used to conduct *this* analysis. One way to go is to package your code along with your data on EDI. That approach makes the code findable, because it is right there with the data, but the code remains static, and it can be difficult to represent the software package structure and release history. Many researchers now prefer to release their GitHub repository [code on Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content) and reference the specific release with their dataset in EDI or another repository. This allows continued development of code in the repository, while linking together the dataset and the code for creating or analyzing it. This approach is great for synthesis groups that will continue adding new data, analyses, or publications in the future.
 
 ## Promote your dataset (and other products)
 
@@ -72,9 +72,11 @@ Whatever tactics you pursue, spend a little time as a group agreeing on the lang
 
 Beyond preserving and promoting the current work, there are a few things you can do to prepare for the new research opportunities that it can generate. Ideally, the group has been tracking spinoff ideas as they come up. It’s impractical to chase them all down in the moment, but recording them, with just a few sentences of context and explanation, will help to resurface the inspiration at a later date.
 
-Now is the time to pull those ideas out of mothballs or, alternatively, return to the mind maps we made in the [project management session](https://lter.github.io/ssecr/mod_project-mgmt.html) to unearth some new ones.
+<figure >
+<img src="images/mind-map.png" alt="linked concepts around a central theme" width="50%" align="right">
+</figure>
 
-![A sample mind map](images/mind-map.png){fig-alt="linked concepts around a central theme"}
+Now is the time to pull those ideas out of mothballs or, alternatively, return to the mind maps we made in the [project management session](https://lter.github.io/ssecr/mod_project-mgmt.html) to unearth some new ones.
 
 You are now well on your way to nailing down one, maybe two, of the relationships on that mind map. But chances are that the data you’ve assembled sheds light on several more. In this project group discussion, we’ll take some time to identify and explore a few of them. 
 
@@ -92,11 +94,12 @@ Pull up your running list of project ideas, the mind map you generated in the pr
 -  Identify what the downstream effects of a change in our understanding of that relationship would be  
 -  Brainstorm a list of people (individuals, groups, roles, agencies) who care about those changes or that intersect with them
 
-For example, say your original project was focused on understanding what factors influence the long term immobilization of soil carbon during decomposition. Spinoff ideas might look at 
+For example, say your original project was focused on understanding what factors influence the long term immobilization of soil carbon during decomposition. Spinoff ideas might look at:
+
 1.  additional controlling factors that you couldn’t include in the first effort; 
-1. a wider range of ecosystems; 
-1. the role of variability (not only temperature, for example, but also the frequency of freeze-thaw cycles);
-1. the effect of the same factors on the mobilization of nutrients in soil; or 
+1.  a wider range of ecosystems; 
+1.  the role of variability (not only temperature, for example, but also the frequency of freeze-thaw cycles);
+1.  the effect of the same factors on the mobilization of nutrients in soil; or 
 1.  scaling the analysis to forecast the impact on carbon sinks under alternative climate scenarios. 
 
 In addition to the standard science funding agencies such as NSF, NASA, DOE, or USDA, your list of stakeholders might include: farmers, fertilizer suppliers, extension professionals, carbon markets, climate modelers…
@@ -105,15 +108,26 @@ Note these along with the nature of their interest.
 
 :::
 
-When thinking about how to support a research program, strategy (setting goals and making plans to achieve them) is often contrasted with an opportunistic approach. But really, it’s essential to apply a bit of both. The list of people and agencies you generated from this exercise serves as a starting point for exploring funding opportunities. That way, you know they already have an interest in work that will lead toward your goals. When you find an opportunity that intersects with a problem that you have the tools, skills, and data to tackle, that’s when you spring into action, building on knowledge gaps that you’ve already identified. 
+<figure >
+<img src="images/pocket.png" alt="a garment pocket with money poking out of it" width="25%" align="right">
+<figcaption background-color="white"></figcaption>
+</figure>
 
+When thinking about how to support a research program, strategy (setting goals and making plans to achieve them) is often contrasted with an opportunistic approach. But really, it’s essential to apply a bit of both. The list of people and agencies you generated from this exercise serves as a starting point for exploring funding opportunities. When you find an opportunity that intersects with a problem that you have the tools, skills, and data to tackle, that’s when you spring into action, building on knowledge gaps that you’ve already identified. 
 
+When you have an idea that you're excited about, one great practice is to develop a "pocket proposal"--a two-page, scaled down description of the research you hope to do. Writing one will force you to clarify your ideas, improve your articulation of them, give you something to share with colleagues (either to invite collaborators or to seek critical feedback), and provide a head start when you DO find a funding opportunity that's a fit.
+
+:::{.callout-caution icon="false"}
+#### Bonus! 
+A pocket proposal serves as a great starting point for the research statement you'll need for a faculty job search. 
+:::
 
 ## Crafting a compelling proposal
 
-No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet their goals.
+No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet _their_ goals, no matter how exciting they find your science.
 
 I’m going out on a limb here to say that ALL proposals need:
+
 -  Context - what is already known/done? What’s the gap you’re trying to fill?
 -  What do you want to do?
 -  How do you plan to do it?
@@ -140,6 +154,7 @@ Questions to consider in a next-phase authorship discussion include:
 Schimel, Joshua. [Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded](https://global.oup.com/academic/product/writing-science-9780199760244?cc=us&lang=en&). Oxford University Press. 2011.
 
 Resource list of funding sources and search tools
+
 -  [NSF funding search](https://www.nsf.gov/funding/opportunities) 
 -  [DoE funding search](https://www.energy.gov/science/office-science-funding-opportunities)
 -  [Cooperative Ecosystem Studies Units (CESU)](http://www.cesu.psu.edu/fundopps/fundopps.htm)
@@ -149,15 +164,10 @@ Resource list of funding sources and search tools
 -  [Community Foundations](https://cof.org/foundation-type/community-foundations) fund project with clear benefits to a local community. 
 -  State environmental and fish and wildlife agencies often have a need for science to inform their conservation activities
 
-
 ### Papers & Documents
 
 -   Deutsch L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. *Environmental Science & Policy*
 
-### Workshops & Courses
-
--   
-
 ### Websites
 
--   Shabanov, I. (\@Artifexx) [Tweet on logic models](https://x.com/artifexx/status/1798936726788051403?s=51&t=TCar5jaRTW3NNuD_rXT8Pg). **2024**.
+-  [Research proposal examples from every science field](https://peerrecognized.com/research-proposal-examples-for-every-science-field/). The site does a nice job of describing the key pieces of a proposal. If you're looking for examples, you can probably find colleagues who will share their more closely-related proposals with you. 
