@@ -30,7 +30,7 @@ No specific preparation required.
 
 ## Make Data and Code Findable
 
-Depositing your assembled dataset in a public repository ensures that others can find it. Using a repository with high-quality, machine-readable metadata goes a long way toward ensuring that it is usable and appropriately credited. Unless there is a specific reason not to use the [Environmental Data Initiative (EDI) repository](https://edirepository.org/), it is what we recommend for LTER-related data because EDI serves some of the most "findable, accessible, interoperable, and reusable" (FAIR) environmental data available. Also, since EDI serves the vast majority of LTER data, co-locating your synthesis data makes it more available to users seeking similar types of data.
+Depositing your assembled dataset in a public repository ensures that others can find it and (importantly) cite it effectively. Using a repository with high-quality, machine-readable metadata goes a long way toward ensuring that it is usable and appropriately credited. Unless there is a specific reason not to use the [Environmental Data Initiative (EDI) repository](https://edirepository.org/), it is what we recommend for LTER-related data because EDI serves some of the most "findable, accessible, interoperable, and reusable" (FAIR) environmental data available. Also, since EDI serves the vast majority of LTER data, co-locating your synthesis data makes it more available to users seeking similar types of data.
 
 [![Authors provide data and metadata to EDI through ezEML. EDI checks for metadata completeness, packages, and serves the data to users. Credit: EDI](images/the-data-package.png){fig-alt="a pipeline from data and metadata, through quality report and resource map to finished data package."}](https://edirepository.org/resources/the-data-package)
 
@@ -78,33 +78,41 @@ Beyond preserving and promoting the current work, there are a few things you can
 
 Now is the time to pull those ideas out of mothballs or, alternatively, return to the mind maps we made in the [project management session](https://lter.github.io/ssecr/mod_project-mgmt.html) to unearth some new ones.
 
-You are now well on your way to nailing down one, maybe two, of the relationships on that mind map. But chances are that the data you’ve assembled sheds light on several more. In this project group discussion, we’ll take some time to identify and explore a few of them. 
+This year, you've tackled one, maybe two, of the relationships on that mind map. But chances are that the data you’ve assembled sheds light on several more. In this project group discussion, we’ll take some time to identify and explore a few of them. 
 
-:::{.callout-note icon="false"}
+:::panel-tabset
+### Discussion: Preparing to Propose
 
-#### Preparing to Propose
+**Individually (15 minutes)**
 
-Break out into project groups. Assign a timekeeper, facilitator and reporter.  
-Pull up your running list of project ideas, the mind map you generated in the project management session, or start a new mind map with your current project theme at the center.
+-  Pull up your running list of project ideas, the mind map you generated in the project management session, or start a new mind map with your current project theme at the center.
+-  Come up with a related research idea that capitalizes on the data you’ve assembled. Try focusing on upsteam controls, downstream impacts or modifying factors to spur your creativity. It doesn't have to be Nobel-worthy, it's just for this exercise.
+-  Identify what additional data or analyses would be needed to clarify the nature and scale of the relationship  
+-  How might a change in our understanding of that relationship affect how we understand other processes? 
 
--  Take 3-5 minutes of individual quiet time to come up with a related research idea or two that capitalize on the data you’ve assembled. (3-5 min)  
--  Share ideas in the group and nominate your top 3 (10 min)  
--  For each of those ideas (20 minutes)  
-- Identify what additional data or analyses would be needed to clarify the nature and scale of the relationship  
--  Identify what the downstream effects of a change in our understanding of that relationship would be  
--  Brainstorm a list of people (individuals, groups, roles, agencies) who care about those changes or that intersect with them
+**In pairs (5 minutes each)**
+
+-  Explain your idea, what you would need, and where it might lead
+
+**Still in pairs (5 minutes)**
+
+-  For each of your projects, brainstorm a list of people (individuals, groups, roles, agencies) who care about those changes or that might benefit from or be hurt by them.
 
 For example, say your original project was focused on understanding what factors influence the long term immobilization of soil carbon during decomposition. Spinoff ideas might look at:
 
-1.  additional controlling factors that you couldn’t include in the first effort; 
-1.  a wider range of ecosystems; 
-1.  the role of variability (not only temperature, for example, but also the frequency of freeze-thaw cycles);
-1.  the effect of the same factors on the mobilization of nutrients in soil; or 
-1.  scaling the analysis to forecast the impact on carbon sinks under alternative climate scenarios. 
+-  additional controlling factors that you couldn’t include in the first effort; 
+-  a wider range of ecosystems; 
+-  the role of variability (not only temperature, for example, but also the frequency of freeze-thaw cycles);
+-  the effect of the same factors on the mobilization of nutrients in soil; or 
+-  scaling the analysis to forecast the impact on carbon sinks under alternative climate scenarios. 
 
 In addition to the standard science funding agencies such as NSF, NASA, DOE, or USDA, your list of stakeholders might include: farmers, fertilizer suppliers, extension professionals, carbon markets, climate modelers…
 
 Note these along with the nature of their interest.
+
+**In full group (5-10 minutes)**
+
+Discuss how ideas came together and what kinds of audiences were identified. 
 
 :::
 
@@ -117,37 +125,51 @@ When thinking about how to support a research program, strategy (setting goals a
 
 When you have an idea that you're excited about, one great practice is to develop a "pocket proposal"--a two-page, scaled down description of the research you hope to do. Writing one will force you to clarify your ideas, improve your articulation of them, give you something to share with colleagues (either to invite collaborators or to seek critical feedback), and provide a head start when you DO find a funding opportunity that's a fit.
 
-:::{.callout-caution icon="false"}
+:::{.callout-tip}
 #### Bonus! 
 A pocket proposal serves as a great starting point for the research statement you'll need for a faculty job search. 
 :::
 
 ## Crafting a compelling proposal
 
-No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet _their_ goals, no matter how exciting they find your science.
+No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet _their_ goals, no matter how exciting they find your science. Of course you need to follow their guidelines, but take it a step further. Think about who this agency serves. Read up on their past awards. Get inside their heads.
 
-I’m going out on a limb here to say that ALL proposals need:
+:::{.callout-tip}
+#### Pro-tip
+All NSF program pages have a link at the bottom leading to a list of past awards made through the program. Successful proposers are often quite happy to share their funded proposal.
+:::
+
+The bones of any proposal include answers to the following questions:
 
 -  Context - what is already known/done? What’s the gap you’re trying to fill?
 -  What do you want to do?
 -  How do you plan to do it?
 -  Why are you the right person/group to do it?
 -  Why is it a fit for THIS funder?
+-  How will you disseminate or apply the work?
 -  What do you expect the results to be
 
-Depending on the source of funding, the order and emphasis of these items will be different. For a foundation funder, the need and results might be most important, with the precise “how” taking a back seat.For a science agency, context and work plan will take higher priority, but be sure to include why you are the right group to do it and what you expect the results to be--even if only a sentence or two.
+Depending on the source of funding, the order and emphasis of these items will be different. For a foundation funder, the need and results might be most important, with the precise “how” taking a back seat. For a science agency, context and work plan will take higher priority, but be sure to include why you are the right group to do it and what you expect the results to be--even if only a sentence or two.
 
-Even for an individual donor, you’ll want to have a list of talking points that addresses these questions, you just won’t turn it into a formal proposal until you’ve had a conversation or two.
+Even for an individual donor, you’ll want to have a list of talking points that addresses these questions, but you probably won’t turn it into a formal proposal until you’ve developed a relationship.
 
-##  Revisit your Authorship Agreement
+It can be intimidating, but it is immensely helpful to ask for feedback from experienced colleagues at various stages of proposal development. Be sure to specify what kind of feedback would be useful to you and to give them a (reasonable) deadline.
+
+:::panel-tabset
+
+##  Group Discussion: Revisit your Authorship Agreement
 
 Anytime a project undergoes a major transition, it’s a good idea to revisit the approach to authorship. An agreement that worked well for an organized project with fixed membership may not be as appropriate for spinoff projects, spearheaded by individual team members and involving rotating groups of collaborators. 
 
-Questions to consider in a next-phase authorship discussion include:
+Break out into project groups and discuss the following questions as they might apply to emerging projects:
+
+-  Do we know of any emerging projects?
 -  Who wants to stay involved? In what ways?
 -  When related research opportunities arise, is there a responsibility to notify the group? To invite participation?
 -  Whether a team member wants to stay involved or not, what are the expectations for how members of this group are credited on future related projects?
 
+Record the decisions and preserve for further discussion as projects evolve.
+:::
 
 ## Additional Resources
 
