@@ -42,6 +42,14 @@ Another shared facet of notebook interfaces is that they are meant to be "render
 
 In synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. <u>Creating reports with embedded code can enable these collaborators to engage more fully than they might otherwise be able to if there was essentially a minimum threshold of coding literacy required in order to contribute</u>. These reports can also be useful documentation of past coding decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.
 
+## LTER SciComp Workshop Materials
+
+The workshop materials we will be working through live [here](https://lter.github.io/workshop-quarto/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
+
+ ```{=html}
+<iframe src="https://lter.github.io/workshop-quarto/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
+```
+
 ### Structural Elements
 
 Typically, these notebooks have three structural components:
