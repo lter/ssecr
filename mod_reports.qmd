@@ -34,6 +34,10 @@ After completing this module you will be able to:
 To Be Determined!
 :::
 
+## Making a Website with Notebooks
+
+Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead **we'll be making individual or team websites!** This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.
+
 ## Notebook Structure & Value
 
 Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add--and format--plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is **intended to be interpretable without any prior coding experience**. The plain text can be formatted with Markdown syntax (we'll discuss that in greater depth later) but even unformatted text outside of code chunks is visually 'easier on the eyes' than comment lines in scripts.
@@ -50,89 +54,6 @@ The workshop materials we will be working through live [here](https://lter.githu
 <iframe src="https://lter.github.io/workshop-quarto/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
 ```
 
-### Structural Elements
-
-Typically, these notebooks have three structural components:
-
-1. YAML
-    - Pronounced \[ _YEAH-mull_ \]
-2. Plain text
-    - Possibly formatted with Markdown syntax
-3. Embedded code chunks
-
-:::{.panel-tabset}
-
-#### YAML
-
-The YAML (<u>Y</u>et <u>A</u>nother <u>M</u>arkup <u>L</u>anguage) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It can also be used to define the top-level title, author, and date information. Finally, it can change the default options for code chunks throughout the document (more on code chunk options elsewhere).
-
-Different notebook file types will specify the YAML differently but in both Quarto documents and R Markdown files, the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:
-
-```{.bash}
----
-title: "Reproducible Reports"
-output: html_document
----
-```
-
-Among other roles, the YAML defines what type of output file is produced when the notebook is "rendered" (a.k.a. "knit"). Most commonly this is either a single PDF or HTML file but more complex YAMLs can be used to create full websites or scientific manuscripts!
-
-#### Markdown Text
-
-The text outside of the YAML and code chunks is plain text that accepts Markdown syntax to accomplish text format tweaks. Dedicated text-formatting software (e.g., Microsoft Word, Gmail, etc.) provides buttons and hot keys for these sorts of format alterations but many programming IDEs do not provide such user interface elements.[^1] Markdown syntax is used to support this same functionality.
-
-Some fundamental Markdown options include:
-
-- \*\*bold text\*\* {{< fa arrow-right >}} **bold text**
-- \_italic text\_ {{< fa arrow-right >}} _italic text_
-- \`code text\` {{< fa arrow-right >}} `code text`
-- \[hyperlinked text\]\(https://lter.github.io/ssecr/mod_reports.html\) {{< fa arrow-right >}} [hyperlinked text](https://lter.github.io/ssecr/mod_reports.html)
-
-For a more complete glossary of fundamental Markdown syntax options see [here](https://www.markdownguide.org/basic-syntax/). You may also want to explore [the 'back end' of this course's website](https://github.com/lter/ssecr) as _every_ page is built using computational notebook files.
-
-[^1]: Note that with the addition of the "Visual" tab in RStudio there are button options for many text format changes. Markdown syntax is still useful to know for general knowledge reasons though! 
-
-#### Code Chunks
-
-The code chunks embedded in notebooks are essentially a fragmented script containing runable code. These chunks may contain code and/or comments and share an environment with one another when rendered (i.e., if you load a particular library in one chunk you'll be able to use functions from that library in subsequent chunks). When used in concert with the Markdown text in a given notebook the code chunks can be used to effectively demonstrate a workflow while providing as much human-readable context as is desired.
-
-In Quarto documents, code chunks look like this[^2]:
-
-```{.bash}
-\```{r demo-chunk}
-#| echo: true # <1>
-
-# Round pi to 2 digits #<2>
-round(x = pi, digits = 2)
-\```
-```
-1. You may specify chunk-specific options using this syntax (i.e., `#| option_name: option_setting`). Options you want to apply to _all_ chunks across a notebook should be specified once in the YAML and can exclude the leading `#|` bit of the format.
-2. If your Markdown text provides sufficient context you may exclude comments in code chunks but opinions differ on which is "more" appropriate
-
-```{r demo-chunk}
-#| echo: false
-# Round pi to 2 digits
-round(x = pi, digits = 2)
-```
-
-[^2]: Normally code chunks start and end with three backticks (\`\`\`) but to embed this code chunk example we need to "escape" the first backtick (using a backslash) so that the notebook interprets it correctly.
-
-:::
-
-## Making a Website with Notebooks
-
-Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead **we'll be making individual or team websites!** This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.
-
-We'll work through the details together but broadly the process of making a website is as follows:
-
-- Create the core website skeleton on your computer
-- Make an _empty_ GitHub repository
-- Connect your local website materials with that GitHub repo
-- "Deploy" your website on GitHub
-    - This makes your site 'real'
-
-Once that's all done, you can customize your website locally using the normal 'edit-pull-push' workflow that is appropriate for any other type of repository.
-
 :::{.callout-note icon="false"}
 ### Activity: Making a Team / Personal Website
 
@@ -140,30 +61,17 @@ Note that you _do not_ need to keep your website up after you make it if you alr
 
 Eventually you will likely want a team-wide website. You are absolutely welcome to make this during today's module but because the first draft must be made by a single person, **all but one member of your group must work on individual sites instead**. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop 'muscle memory' in this arena.
 
-#### LTER SciComp Tutorial Materials
-
-We'll be working through live tutorial materials [here](https://lter.github.io/scicomp/tutorial_quarto-website.html) but for convenience we have also embedded the tutorial directly into the SSECR course website (see below).
-
- ```{=html}
-<iframe src="https://lter.github.io/scicomp/tutorial_quarto-website.html" height="450" width="750" style="border: 1px solid #2e3846;"></iframe>
-```
-
 :::
 
-## Customizing a Quarto Website
+## Customizing Your Quarto Website
 
-You can customize a Quarto website by editing the `_quarto.yml` file. This is written entirely in YAML and is what connects your pages to one another and also allows for website-wide theme elements (e.g., colors, fonts, etc.). There are _a lot_ of options in this realm so we recommend that **you cannibalize elements from other Quarto websites you like as you find them**.
-
-While that advice applies in most cases, it is likely that customizing your website's color palette is something all groups will want to do so we'll cover that facet as part of this module.
-
-### Custom Themes with SCSS
-
-Under construction; check back later!
+You can customize a Quarto website by editing the `_quarto.yml` file. There are _a lot_ of options in this realm so we recommend that **you cannibalize elements from other Quarto websites you like as you find them**. You may find some of the later modules in the above workshop useful in this regard. Feel free to explore those materials and reach out to SSECR design team members if you have questions!
 
 :::{.callout-note icon="false"}
 #### Activity: Customize Your Website
 
 Revisit the Quarto website you created for the prior module and
+
 - Decide on your ideal color palette
 - Create both a light theme and a dark theme
     - Check out this [LTER working group's {{< fa brands github >}} repository](https://github.com/JamieMcDevittIrwin/CAGED-website) to see how they customized their site
