@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -364,15 +330,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
   <li><a href="#preparation" id="toc-preparation" class="nav-link" data-scroll-target="#preparation">Preparation</a></li>
   <li><a href="#networking-session" id="toc-networking-session" class="nav-link" data-scroll-target="#networking-session">Networking Session</a></li>
-  <li><a href="#notebook-structure-value" id="toc-notebook-structure-value" class="nav-link" data-scroll-target="#notebook-structure-value">Notebook Structure &amp; Value</a>
-  <ul class="collapse">
-  <li><a href="#structural-elements" id="toc-structural-elements" class="nav-link" data-scroll-target="#structural-elements">Structural Elements</a></li>
-  </ul></li>
   <li><a href="#making-a-website-with-notebooks" id="toc-making-a-website-with-notebooks" class="nav-link" data-scroll-target="#making-a-website-with-notebooks">Making a Website with Notebooks</a></li>
-  <li><a href="#customizing-a-quarto-website" id="toc-customizing-a-quarto-website" class="nav-link" data-scroll-target="#customizing-a-quarto-website">Customizing a Quarto Website</a>
-  <ul class="collapse">
-  <li><a href="#custom-themes-with-scss" id="toc-custom-themes-with-scss" class="nav-link" data-scroll-target="#custom-themes-with-scss">Custom Themes with SCSS</a></li>
-  </ul></li>
+  <li><a href="#notebook-structure-value" id="toc-notebook-structure-value" class="nav-link" data-scroll-target="#notebook-structure-value">Notebook Structure &amp; Value</a></li>
+  <li><a href="#lter-scicomp-workshop-materials" id="toc-lter-scicomp-workshop-materials" class="nav-link" data-scroll-target="#lter-scicomp-workshop-materials">LTER SciComp Workshop Materials</a></li>
+  <li><a href="#customizing-your-quarto-website" id="toc-customizing-your-quarto-website" class="nav-link" data-scroll-target="#customizing-your-quarto-website">Customizing Your Quarto Website</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a>
   <ul class="collapse">
   <li><a href="#papers-documents" id="toc-papers-documents" class="nav-link" data-scroll-target="#papers-documents">Papers &amp; Documents</a></li>
@@ -442,91 +403,20 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </section>
+<section id="making-a-website-with-notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-website-with-notebooks">Making a Website with Notebooks</h2>
+<p>Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead <strong>we’ll be making individual or team websites!</strong> This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.</p>
+</section>
 <section id="notebook-structure-value" class="level2">
 <h2 class="anchored" data-anchor-id="notebook-structure-value">Notebook Structure &amp; Value</h2>
 <p>Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add–and format–plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is <strong>intended to be interpretable without any prior coding experience</strong>. The plain text can be formatted with Markdown syntax (we’ll discuss that in greater depth later) but even unformatted text outside of code chunks is visually ‘easier on the eyes’ than comment lines in scripts.</p>
 <p>Another shared facet of notebook interfaces is that they are meant to be “rendered” (a.k.a. “knit”) to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other output options. These rendered files can then be shared (and opened) outside of coding platforms and thus make their content even more accessible to non-coders.</p>
 <p>In synthesis work these reports can be especially valuable because your team may include those with a wealth of discipline insight but not necessarily coding literacy. <u>Creating reports with embedded code can enable these collaborators to engage more fully than they might otherwise be able to if there was essentially a minimum threshold of coding literacy required in order to contribute</u>. These reports can also be useful documentation of past coding decisions and serve as reminders for judgement calls for which no one in the team remembers the rationale.</p>
-<section id="structural-elements" class="level3">
-<h3 class="anchored" data-anchor-id="structural-elements">Structural Elements</h3>
-<p>Typically, these notebooks have three structural components:</p>
-<ol type="1">
-<li>YAML
-<ul>
-<li>Pronounced [ <em>YEAH-mull</em> ]</li>
-</ul></li>
-<li>Plain text
-<ul>
-<li>Possibly formatted with Markdown syntax</li>
-</ul></li>
-<li>Embedded code chunks</li>
-</ol>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">YAML</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Markdown Text</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Code Chunks</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>The YAML (<u>Y</u>et <u>A</u>nother <u>M</u>arkup <u>L</u>anguage) defines document-level metadata. Most fundamentally, the YAML defines what file type will be produced when the report is rendered. It can also be used to define the top-level title, author, and date information. Finally, it can change the default options for code chunks throughout the document (more on code chunk options elsewhere).</p>
-<p>Different notebook file types will specify the YAML differently but in both Quarto documents and R Markdown files, the YAML is defined in the first few lines of the report and starts/ends with a line containing three hyphens. This looks something like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">title:</span> <span class="st">"Reproducible Reports"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">output:</span> html_document</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Among other roles, the YAML defines what type of output file is produced when the notebook is “rendered” (a.k.a. “knit”). Most commonly this is either a single PDF or HTML file but more complex YAMLs can be used to create full websites or scientific manuscripts!</p>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>The text outside of the YAML and code chunks is plain text that accepts Markdown syntax to accomplish text format tweaks. Dedicated text-formatting software (e.g., Microsoft Word, Gmail, etc.) provides buttons and hot keys for these sorts of format alterations but many programming IDEs do not provide such user interface elements.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Markdown syntax is used to support this same functionality.</p>
-<p>Some fundamental Markdown options include:</p>
-<ul>
-<li>**bold text** <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <strong>bold text</strong></li>
-<li>_italic text_ <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <em>italic text</em></li>
-<li>`code text` <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <code>code text</code></li>
-<li>[hyperlinked text](https://lter.github.io/ssecr/mod_reports.html) <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> <a href="https://lter.github.io/ssecr/mod_reports.html">hyperlinked text</a></li>
-</ul>
-<p>For a more complete glossary of fundamental Markdown syntax options see <a href="https://www.markdownguide.org/basic-syntax/">here</a>. You may also want to explore <a href="https://github.com/lter/ssecr">the ‘back end’ of this course’s website</a> as <em>every</em> page is built using computational notebook files.</p>
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>The code chunks embedded in notebooks are essentially a fragmented script containing runable code. These chunks may contain code and/or comments and share an environment with one another when rendered (i.e., if you load a particular library in one chunk you’ll be able to use functions from that library in subsequent chunks). When used in concert with the Markdown text in a given notebook the code chunks can be used to effectively demonstrate a workflow while providing as much human-readable context as is desired.</p>
-<p>In Quarto documents, code chunks look like this<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p>
-<div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode bash code-annotation-code code-with-copy code-annotated"><code class="sourceCode bash"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">\`</span><span class="kw">``</span>{r demo-chunk}</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
-<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2">2</button><span id="annotated-cell-2-4" class="code-annotation-target"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Round pi to 2 digits</span></span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">round</span><span class="er">(</span><span class="ex">x</span> = pi, digits = 2<span class="kw">)</span></span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">\`</span><span class="kw">``</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="2" data-code-annotation="1">You may specify chunk-specific options using this syntax (i.e., <code>#| option_name: option_setting</code>). Options you want to apply to <em>all</em> chunks across a notebook should be specified once in the YAML and can exclude the leading <code>#|</code> bit of the format.</span>
-</dd>
-<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="4" data-code-annotation="2">If your Markdown text provides sufficient context you may exclude comments in code chunks but opinions differ on which is “more” appropriate</span>
-</dd>
-</dl>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 3.14</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
-</section>
-<section id="making-a-website-with-notebooks" class="level2">
-<h2 class="anchored" data-anchor-id="making-a-website-with-notebooks">Making a Website with Notebooks</h2>
-<p>Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead <strong>we’ll be making individual or team websites!</strong> This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.</p>
-<p>We’ll work through the details together but broadly the process of making a website is as follows:</p>
-<ul>
-<li>Create the core website skeleton on your computer</li>
-<li>Make an <em>empty</em> GitHub repository</li>
-<li>Connect your local website materials with that GitHub repo</li>
-<li>“Deploy” your website on GitHub
-<ul>
-<li>This makes your site ‘real’</li>
-</ul></li>
-</ul>
-<p>Once that’s all done, you can customize your website locally using the normal ‘edit-pull-push’ workflow that is appropriate for any other type of repository.</p>
+<section id="lter-scicomp-workshop-materials" class="level2">
+<h2 class="anchored" data-anchor-id="lter-scicomp-workshop-materials">LTER SciComp Workshop Materials</h2>
+<p>The workshop materials we will be working through live <a href="https://lter.github.io/workshop-quarto/">here</a> but for convenience we have also embedded the workshop directly into the SSECR course website (see below).</p>
+<iframe src="https://lter.github.io/workshop-quarto/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -539,21 +429,12 @@ Activity: Making a Team / Personal Website
 <div class="callout-body-container callout-body">
 <p>Note that you <em>do not</em> need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.</p>
 <p>Eventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, <strong>all but one member of your group must work on individual sites instead</strong>. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena.</p>
-<section id="lter-scicomp-tutorial-materials" class="level4">
-<h4 class="anchored" data-anchor-id="lter-scicomp-tutorial-materials">LTER SciComp Tutorial Materials</h4>
-<p>We’ll be working through live tutorial materials <a href="https://lter.github.io/scicomp/tutorial_quarto-website.html">here</a> but for convenience we have also embedded the tutorial directly into the SSECR course website (see below).</p>
-<iframe src="https://lter.github.io/scicomp/tutorial_quarto-website.html" height="450" width="750" style="border: 1px solid #2e3846;"></iframe>
-</section>
 </div>
 </div>
 </section>
-<section id="customizing-a-quarto-website" class="level2">
-<h2 class="anchored" data-anchor-id="customizing-a-quarto-website">Customizing a Quarto Website</h2>
-<p>You can customize a Quarto website by editing the <code>_quarto.yml</code> file. This is written entirely in YAML and is what connects your pages to one another and also allows for website-wide theme elements (e.g., colors, fonts, etc.). There are <em>a lot</em> of options in this realm so we recommend that <strong>you cannibalize elements from other Quarto websites you like as you find them</strong>.</p>
-<p>While that advice applies in most cases, it is likely that customizing your website’s color palette is something all groups will want to do so we’ll cover that facet as part of this module.</p>
-<section id="custom-themes-with-scss" class="level3">
-<h3 class="anchored" data-anchor-id="custom-themes-with-scss">Custom Themes with SCSS</h3>
-<p>Under construction; check back later!</p>
+<section id="customizing-your-quarto-website" class="level2">
+<h2 class="anchored" data-anchor-id="customizing-your-quarto-website">Customizing Your Quarto Website</h2>
+<p>You can customize a Quarto website by editing the <code>_quarto.yml</code> file. There are <em>a lot</em> of options in this realm so we recommend that <strong>you cannibalize elements from other Quarto websites you like as you find them</strong>. You may find some of the later modules in the above workshop useful in this regard. Feel free to explore those materials and reach out to SSECR design team members if you have questions!</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -564,10 +445,16 @@ Activity: Customize Your Website
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Revisit the Quarto website you created for the prior module and - Decide on your ideal color palette - Create both a light theme and a dark theme - Check out this <a href="https://github.com/JamieMcDevittIrwin/CAGED-website">LTER working group’s <i class="fa-brands fa-github" aria-label="github"></i> repository</a> to see how they customized their site</p>
+<p>Revisit the Quarto website you created for the prior module and</p>
+<ul>
+<li>Decide on your ideal color palette</li>
+<li>Create both a light theme and a dark theme
+<ul>
+<li>Check out this <a href="https://github.com/JamieMcDevittIrwin/CAGED-website">LTER working group’s <i class="fa-brands fa-github" aria-label="github"></i> repository</a> to see how they customized their site</li>
+</ul></li>
+</ul>
 </div>
 </div>
-</section>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
@@ -597,14 +484,7 @@ Activity: Customize Your Website
 </section>
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Note that with the addition of the “Visual” tab in RStudio there are button options for many text format changes. Markdown syntax is still useful to know for general knowledge reasons though!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Normally code chunks start and end with three backticks (```) but to embed this code chunk example we need to “escape” the first backtick (using a backslash) so that the notebook interprets it correctly.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
