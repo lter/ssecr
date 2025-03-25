@@ -17,14 +17,17 @@ After completing this module you will be able to:
 
 ## Preparation
 
-TBD (<u>T</u>o <u>B</u>e <u>D</u>etermined)
+None required.
 
 ## Networking Session
 
 ::: panel-tabset
 ### 2024 Guests
 
-To Be Determined!
+[Dr. Alex Phillips](https://www.alexandraatleephillips.com/), Assistant Teaching Professor, Bren School of Environmental Science and Management, UC Santa Barbara
+
+As a former NCEAS communications officer and a AAAS science and technology policy fellow in climate science, Alex brings extensive experience in making scientific synthesis engaging. Her teaching and research focuses on environmental communication to students, scientists, policymakers, and the public. She was also a postdoc at UCSB and the Large Lakes Observatory at University of Minnesota, Duluth where she investigated carbon sequestration in Lake Superior. She holds a PhD from Caltech in geochemistry, where she studied sulfur and carbon cycling in lakes and oceans.
+
 :::
 
 ## Effective Communication
