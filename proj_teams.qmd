@@ -8,6 +8,7 @@ As stated elsewhere in the course page, one of the primary facets of the course 
 
 Team members and project mentors are listed in reverse alphabetical order by last name and their LTER site affilitation is indicated in parentheses. For more information on LTER sites, check out the [site profiles](https://lternet.edu/site/) section of the Network website.
 
+:::{.panel-tabset}
 ## 2024 Teams
 
 ### Carbon Cycling Responses Across Spatiotemporal Scales
@@ -47,5 +48,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 <u>Science Mentor(s)</u>: [**Zach Feiner**](https://zsfeiner.github.io/) (North Temperate Lakes), [**Nancy Emery**](https://emery-lab.org/) (Niwot Ridge), [**Joan Dudney**](https://www.landscapesofchangelab.com/)
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-driver-scales**](https://github.com/lter/ssecr-driver-scales)
+
+:::
 
 <u>Project Question(s)</u>: Are the effects of environmental drivers consistent across ecological scales?
