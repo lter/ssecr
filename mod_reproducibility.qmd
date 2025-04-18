@@ -67,7 +67,7 @@ Here are some rules to keep in mind as you decide how to organize your project:
 
 Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.
 
-Note that <u>how you define "projct" may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.
+Note that <u>how you define "project" may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.
 
 2. **Organize content with sub-folders**
 
@@ -250,7 +250,7 @@ You'll likely need a number of scripts to accomplish the different stages of pre
 
 Raw data will be parsed into cleaned data--often using idiosyncratic or dataset-specific scripts--which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially _many_ scripts, **coding reproducibly is vital to making this workflow intuitive and easy to maintain.**
 
-You don't necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new teammembers, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!
+You don't necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!
 
 <p align="center">
 <img src="images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%"/>
@@ -515,7 +515,7 @@ Data availability, data size, and demand for transparency by government and fund
 
 ### FAIR
 
-FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nterpoerable and <u>R</u>eusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take _throughout the lifecycle of your project_ to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is--in some ways--dependent upon how thoroughly you consider these actions.
+FAIR is an acronym for <u>F</u>indable <u>A</u>ccessible <u>I</u>nteroperable and <u>R</u>eusable. Each element of the FAIR principles can be broken into a set of concrete actions that you can take _throughout the lifecycle of your project_ to ensure that your data are open and transparent. Perhaps most importantly, FAIR data are most easily used by other research teams in the future so the future impact of your work is--in some ways--dependent upon how thoroughly you consider these actions.
 
 Consider the following list of actions you might take to make your data FAIR. Note that not all actions may be appropriate for all types of data (see our discussion of the CARE principles below), but these guidelines are still important to consider--even if you ultimately choose to reject some of them. Virtually all of the guidelines considered below apply to metadata (i.e., the formal documentation describing your data) and the 'actual' data but for ease of reference we will call both of these resources "data."
 

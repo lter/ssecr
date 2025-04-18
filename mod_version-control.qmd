@@ -60,7 +60,7 @@ This may sound like a perfect fit for collaboration but in reality it introduces
 
 It is equally likely for the primary code version to be in any group member's fork (or the original fork). So if you want to re-run a set of analyses you'll need to hunt down which fork the current script lives in rather than consulting a single repository in which you all work together.
 
-2. You essentially gaurantee significant merge conflicts
+2. You essentially guarantee significant merge conflicts
 
 If everyone is working independently and submitting pull requests to merge back into the main repository you all but ensure that people will make different edits that GitHub then doesn't know how to resolve. The pull request will tell you that there are merge conflicts but you still need to fix them yourself--and now that fixing effort must be done in someone else's fork of the repository.
 
