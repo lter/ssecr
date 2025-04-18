@@ -6,7 +6,7 @@ title: "Project Teams"
 
 As stated elsewhere in the course page, one of the primary facets of the course is the creation of teams of Synthesis Fellows. These teams collaboratively identify synthesis questions and pursue them throughout the 9-month run of the course. See below for brief descriptions of each project team.
 
-Team members and project mentors are listed in reverse alphabetical order by last name and their LTER site affilitation is indicated in parentheses. For more information on LTER sites, check out the [site profiles](https://lternet.edu/site/) section of the Network website.
+Team members and project mentors are listed in reverse alphabetical order by last name and their LTER site affiliation is indicated in parentheses. For more information on LTER sites, check out the [site profiles](https://lternet.edu/site/) section of the Network website.
 
 :::{.panel-tabset}
 ## 2024 Teams
