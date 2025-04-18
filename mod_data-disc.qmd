@@ -12,11 +12,11 @@ Synthesis projects often begin with a few datasets that inspire the questions--a
 
 After completing this module you will be able to:
 
--   <u>Identify</u> repositories "known for" a particular type of data
--   <u>Explain</u> how to effectively search for data outside of specialized repositories
--   <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
--   <u>Plan</u> how to download data in a reproducible way
--   <u>Perform</u> checks of the fundamental structure of a dataset
+- <u>Identify</u> repositories "known for" a particular type of data
+- <u>Explain</u> how to effectively search for data outside of specialized repositories
+- <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
+- <u>Plan</u> how to download data in a reproducible way
+- <u>Perform</u> checks of the fundamental structure of a dataset
 
 ## Preparation
 
@@ -38,38 +38,38 @@ Panelists will briefly introduce themselves and describe their roles. They will 
 
 #### Pre-Prepared Questions
 
--   What policies are in place to ensure responsible use of your data?
--   What challenges (technical and scientific) do you see in integrating data across platforms and organizations?
--   Are you aware of any open sources of code useful for downloading, wrangling, or analyzing data in your repository?
--   How can young scientists and data professionals contribute to the work being done by your organizations?
+- What policies are in place to ensure responsible use of your data?
+- What challenges (technical and scientific) do you see in integrating data across platforms and organizations?
+- Are you aware of any open sources of code useful for downloading, wrangling, or analyzing data in your repository?
+- How can young scientists and data professionals contribute to the work being done by your organizations?
 
 :::
 
 ## Data Repositories
 
-There are *a lot* of specialized data repositories out there. These organizations are either primarily dedicated to storing and managing data or those operations constitute a substantive proportion of their efforts. In synthesis work, you may already have some datasets in-hand at the outset but it likely that **you will need to find more data to test your hypotheses**. Data repositories are a great way of finding/accessing data that are relevant to your questions.
+There are _a lot_ of specialized data repositories out there. These organizations are either primarily dedicated to storing and managing data or those operations constitute a substantive proportion of their efforts. In synthesis work, you may already have some datasets in-hand at the outset but it likely that **you will need to find more data to test your hypotheses**. Data repositories are a great way of finding/accessing data that are relevant to your questions.
 
 You'll become familiar with many of these when you need a particular type of data and go searching for it but to help speed you along, see the list below for a non-exhaustive set of some that have proved useful to other synthesis projects in the past. They are in alphabetical order. If the "{{< fa brands r-project >}} Package" column contains the GitHub logo ({{< fa brands github >}}) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).
 
-|                                 **Name**                                 | **Description**                                                                                                                                                                                                                                               |                          {{< fa brands r-project >}} **Package**                           |
-|:------------------------:|:--------------------|:------------------------:|
-|         [AmeriFlux](https://ameriflux.lbl.gov/data/data-policy/)         | Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research.                                                                                                                      |       [`amerifluxr`](https://cran.r-project.org/web/packages/amerifluxr/index.html)        |
-|                   [DataONE](https://www.dataone.org/)                    | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research.                                                                                                                                  |          [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html)           |
-|                    [EDI](https://edirepository.org/)                     | Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems.                                                                                      |         [`EDIutils`](https://cran.r-project.org/web/packages/EDIutils/index.html)          |
-|                  [EES-DIVE](https://ess-dive.lbl.gov/)                   | The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems.                                |                                             --                                             |
-|                      [GBIF](https://www.gbif.org/)                       | The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation.                                                                         |            [`rgbif`](https://cran.r-project.org/web/packages/rgbif/index.html)             |
-|          [Google Earth Engine](https://earthengine.google.com/)          | Google Earth Engine is a cloud-based geospatial analysis platform that provides access to vast amounts of satellite imagery and environmental data for monitoring and understanding changes in the Earth's surface.                                           |            {{< fa brands github >}} [`rgee`](https://github.com/r-spatial/rgee)            |
-| [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) | The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research.                                                                      |       {{< fa brands github >}} [`rstac`](https://github.com/brazil-data-cube/rstac)        |
-|                      [NASA](https://data.nasa.gov/)                      | Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via [AppEEARS](https://appeears.earthdatacloud.nasa.gov/). |         [`nasadata`](https://cran.r-project.org/web/packages/nasadata/index.html)          |
-|                  [NCBI](https://www.ncbi.nlm.nih.gov/)                   | Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research.                                                                                                                             |          [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html)           |
-|                  [NEON](https://data.neonscience.org/)                   | Provides ecological data from U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research.                                                                                                     |    [`neonUtilities`](https://cran.r-project.org/web/packages/neonUtilities/index.html)     |
-|                  [NOAA](https://data.noaa.gov/onestop/)                  | Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends.                                                                                                | {{< fa brands github >}} [`EpiNOAA-R`](https://github.com/NOAA-Big-Data-Program/EpiNOAA-R) |
-|       [Open Traits Network](https://opentraits.org/datasets.html)        | While not a repository *per se*, the Open Traits Network has compiled an extensive lists of repositories for trait data. Check out their repository inventory for trait data                                                                                  |                                             --                                             |
-|           [USGS](https://www.usgs.gov/products/data/all-data)            | Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments.                                                                                                                                      |    [`dataRetrieval`](https://cran.r-project.org/web/packages/dataRetrieval/index.html)     |
+| **Name** | **Description** | {{< fa brands r-project >}} **Package** |
+|:---:|:---|:---:|
+| [AmeriFlux](https://ameriflux.lbl.gov/data/data-policy/) | Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research. | [`amerifluxr`](https://cran.r-project.org/web/packages/amerifluxr/index.html) |
+| [DataONE](https://www.dataone.org/) | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research. | [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html) |
+| [EDI](https://edirepository.org/) | Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems. | [`EDIutils`](https://cran.r-project.org/web/packages/EDIutils/index.html) |
+| [EES-DIVE](https://ess-dive.lbl.gov/) | The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems. | -- |
+| [GBIF](https://www.gbif.org/) | The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation. | [`rgbif`](https://cran.r-project.org/web/packages/rgbif/index.html) |
+| [Google Earth Engine](https://earthengine.google.com/) | Google Earth Engine is a cloud-based geospatial analysis platform that provides access to vast amounts of satellite imagery and environmental data for monitoring and understanding changes in the Earth's surface. | {{< fa brands github >}} [`rgee`](https://github.com/r-spatial/rgee) |
+| [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) | The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research. | {{< fa brands github >}} [`rstac`](https://github.com/brazil-data-cube/rstac) |
+| [NASA](https://data.nasa.gov/) | Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via [AppEEARS](https://appeears.earthdatacloud.nasa.gov/). | [`nasadata`](https://cran.r-project.org/web/packages/nasadata/index.html) |
+| [NCBI](https://www.ncbi.nlm.nih.gov/) | Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research. | [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) |
+| [NEON](https://data.neonscience.org/) | Provides ecological data from U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research. | [`neonUtilities`](https://cran.r-project.org/web/packages/neonUtilities/index.html) |
+| [NOAA](https://data.noaa.gov/onestop/) | Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends. | {{< fa brands github >}} [`EpiNOAA-R`](https://github.com/NOAA-Big-Data-Program/EpiNOAA-R) |
+| [Open Traits Network](https://opentraits.org/datasets.html) | While not a repository _per se_, the Open Traits Network has compiled an extensive lists of repositories for trait data. Check out their repository inventory for trait data | -- |
+| [USGS](https://www.usgs.gov/products/data/all-data) | Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments. | [`dataRetrieval`](https://cran.r-project.org/web/packages/dataRetrieval/index.html) |
 
 ## General Data Searches
 
-If you don't find what you're looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, [Google](https://www.google.com) is a suprisingly good resource for finding data and--for those familiar with Google Scholar for peer reviewed literature-specific Googling--there is a dataset-specific variant of Google called [Google Dataset Search](https://datasetsearch.research.google.com/).
+If you don't find what you're looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, [Google](https://www.google.com) is a surprisingly good resource for finding data and--for those familiar with Google Scholar for peer reviewed literature-specific Googling--there is a dataset-specific variant of Google called [Google Dataset Search](https://datasetsearch.research.google.com/).
 
 #### Search Operators
 
@@ -77,7 +77,7 @@ Virtually all search engines support "operators" to create more effective querie
 
 See the tabs below for some useful operators that might help narrow your dataset search even when using more general platforms.
 
-::: panel-tabset
+:::{.panel-tabset}
 #### Quotes
 
 Use quotation marks (`""`) to **search for an exact phrase**. This is particularly useful when you need specific data points or exact wording.
@@ -116,7 +116,7 @@ Example: `site:.gov bird data`
 
 #### File Type
 
-Use the file type operator (`filetype:`) to **search for data with a specific file extension**. Useful to make sure the data you find is already in a format you can intteract with.
+Use the file type operator (`filetype:`) to **search for data with a specific file extension**. Useful to make sure the data you find is already in a format you can interact with.
 
 Example: `filetype:tif precipitation data`
 
@@ -133,36 +133,35 @@ Use the 'in URL' operator (`inurl:`) to **search for pages that have a specific 
 Example: `inurl:data soil chemistry`
 :::
 
-
 ## Data Inventory Value
 
 Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
 
--   Well-documented data inventory table make it easier for researchers to find and access specific data for reproducible research
--   Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
--   Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
+- Well-documented data inventory table make it easier for researchers to find and access specific data for reproducible research
+- Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
+- Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
 
-::: {.callout-note icon="false"}
+:::{.callout-note icon="false"}
 #### Activity: Data Inventory
 
-**Part 1** (\~25 min)
+**Part 1**
 
 In your project groups:
 
--   Review your data inventory Google Sheet and discuss why you chose the datasets included.
--   Discuss what key information is needed to determine if each dataset is useful for your project. The columns from the detailed data inventory sheet (Data_Inventory_V2) might help to guide the conversation.  
--   Decide on the datasets you want to use in your analysis, ensuring there are at least as many as group members. Each group member will self-assign at least one dataset.
-    - *Later, each person will download their assigned dataset*
--   After identifying the necessary information, begin filling out the detailed data inventory Google Sheet. Focus on completing the columns that are relevant for making informed decisions. 
-    - *This sheet will be shared with another group in Part 2*
+- Review your data inventory Google Sheet and discuss why you chose the datasets included.
+- Discuss what key information is needed to determine if each dataset is useful for your project. The columns from the detailed data inventory sheet (Data_Inventory_V2) might help to guide the conversation.  
+- Decide on the datasets you want to use in your analysis, ensuring there are at least as many as group members. Each group member will self-assign at least one dataset.
+    - _Later, each person will download their assigned dataset_ 
+- After identifying the necessary information, begin filling out the detailed data inventory Google Sheet. Focus on completing the columns that are relevant for making informed decisions. 
+    - _This sheet will be shared with another group in Part 2_
 
-**Part 2** (\~10 min)
+**Part 2**
 
--   You are assigned to review the detailed data inventory table (Data_Inventory_V2) from another project group
--   Each group member self-assigns one dataset that you want to review.
--   Try to find the exact data file to which you were assigned
--   Do you agree with the information entered in the data inventory?
--   Is there any information you think should be in the data inventory that wasn’t?
+- You are assigned to review the detailed data inventory table (Data_Inventory_V2) from another project group
+- Each group member self-assigns one dataset that you want to review.
+- Try to find the exact data file to which you were assigned
+- Do you agree with the information entered in the data inventory?
+- Is there any information you think should be in the data inventory that wasn’t?
 
 :::
 
@@ -171,9 +170,9 @@ In your project groups:
 
 Return to the main room and let's discuss (some of) the following questions:
 
--   Which elements of the data inventory table made it easier or more difficult to find the data?
--   What challenges did you encounter while searching for the datasets?
--   What is your plan for downloading the data?
+- Which elements of the data inventory table made it easier or more difficult to find the data?
+- What challenges did you encounter while searching for the datasets?
+- What is your plan for downloading the data?
 :::
 
 ## Downloading Data
@@ -231,7 +230,7 @@ head(dischargeData)
 
 ### Batch Download
 
-You may want to download several data files hosted in the same repository online for different spatial/temporal replicates. You *could* try to use the data entity URL or an associated {{< fa brands r-project >}} package (if one exists) or you could write code to do a "batch download" where you'd just download each file using a piece of code that repeats itself as much as needed.
+You may want to download several data files hosted in the same repository online for different spatial/temporal replicates. You _could_ try to use the data entity URL or an associated {{< fa brands r-project >}} package (if one exists) or you could write code to do a "batch download" where you'd just download each file using a piece of code that repeats itself as much as needed.
 
 The dataset we demonstrate downloading below is [NOAA weather station data](https://www1.ncdc.noaa.gov/pub/data/gsod/). Specifically it is the <u>I</u>ntegrated <u>S</u>urface <u>D</u>ata (ISD).
 
@@ -258,8 +257,8 @@ for(focal_year in target_years){
 }
 ```
 
-1.  This message isn't required but can be nice! Downloading data can take a *long* time so including a progress message can re-assure you that your R session hasn't crashed
-2.  To create a working URL you'll likely need to click an example data file URL and try to *exactly* mimic its format
+1.  This message isn't required but can be nice! Downloading data can take a _long_ time so including a progress message can re-assure you that your R session hasn't crashed
+2.  To create a working URL you'll likely need to click an example data file URL and try to _exactly_ mimic its format
 3.  This step again isn't required but can let you exert a useful level of control over the naming convention of your data file(s)
 
 ### API Call
@@ -328,7 +327,7 @@ tide_df <- fetch_tide(station_id = "9411340")
 ```
 
 1.  When you do need to make an API call, a custom function is a great way of standardizing your entries. This way you only need to figure out how to do the call once and from then on you can lean on the (likely more familiar) syntax of the language in which you wrote the function!
-2.  We're excluding error checks for simplicity's sake but **you will want to code informative error checks**. Basically you want to consider inputs to the function that would break it and pre-emptively stop the function (with an informative message) when those malformed inputs are received
+2.  We're excluding error checks for simplicity's sake but **you will want to code informative error checks**. Basically you want to consider inputs to the function that would break it and preemptively stop the function (with an informative message) when those malformed inputs are received
 3.  Just like the batch download, we need to assemble the URL that the API is expecting
 
 ### Command Line
@@ -337,7 +336,9 @@ While many ecologists are trained in programming languages like R or Python, som
 
 Below we demonstrate download via command line for NASA [OMI/Aura Sulfur Dioxide (SO2)](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3). The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis.
 
-> Step 1: Using the "subset/Get Data" tab on the right-hand side of the [data page](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3), generate a list of file names for your specified target area and time period. Download the list of links as a TXT file named "list.txt". Be sure to document the target area and temporal coverage you selected in your data inventory table.
+1. Generate a List of File Names
+
+Use the "subset/Get Data" tab on the right-hand side of the [data page](https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3) to generate a list of file names for your specified target area and time period. **Download the list of links as a TXT file named "list.txt"**. Be sure to document the target area and temporal coverage you selected in your data inventory table.
 
 ```{bash download-cli-1}
 #| eval: false
@@ -349,28 +350,30 @@ https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMS
 https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]
 ```
 
-> Step 2: Open a command line window and execute the wget command. Replace the placeholder for username and password with your EarthData login credentials.
+2. Execute the {{< fa terminal >}} `wget` CLI command
+
+Open a command line window and execute the `wget` command. Replace the placeholder for username and password with your EarthData login credentials.
 
 ```{bash download-cli-2}
 #| eval: false
 wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-session-cookies --user=XXX --password=XXX
---content-disposition -i list.txt
+--content-disposition -i list.txt # <1>
 ```
+1. Note that if you called our list something _other_ than "list.txt" you'd need to update the file name at the end of this line
 
-> If you encounter any issue, follow this step-by-step guide on [using wget and curl specifically with the GES DISC data system](https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl).
+If you encounter any issues, follow this step-by-step guide on [using `wget` and `curl` specifically with the GES DISC data system](https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl).
 
 :::
 
 ::: {.callout-note icon="false"}
-#### Activity: Data Download (~25 mins)
+#### Activity: Data Download
 
-
--   Each member work on the data that you have been assigned. 
--   Discuss with your group how to collaborate on coding without creating merge conflicts
-    -   *Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!*
--   Write a script **for your group** to download data using your chosen method
--   Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
-    -   If no datasets in your group's inventory need the download method you chose, try to run the example codes provided
+- Each member work on the data that you have been assigned. 
+- Discuss with your group how to collaborate on coding without creating merge conflicts
+    - *Many right answers here so discuss the pros/cons of each and pick one that feels best for your group!*
+- Write a script **for your group** to download data using your chosen method
+- Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
+    - If no datasets in your group's inventory need the download method you chose, try to run the example codes provided
 :::
 
 ## Data Format and Structure
@@ -412,22 +415,22 @@ anyNA(lobster_df)
 
 ### Papers & Documents
 
--   British Ecological Society (BES). [Better Science Guides: Data Management Guide](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
+- British Ecological Society (BES). [Better Science Guides: Data Management Guide](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
 
 ### Workshops & Courses
 
--   LTER Scientific Computing Team. [Data Acquisition Guide for TRY and AppEEARS](https://lter.github.io/scicomp/internal_get-data.html). **2024**.
--   National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html). **2023**.
--   NCEAS Learning Hub. [UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html). **2023**.
--   NCEAS Learning Hub. [UCSB Faculty Seminar Series: Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html). **2023**.
+- LTER Scientific Computing Team. [Data Acquisition Guide for TRY and AppEEARS](https://lter.github.io/scicomp/internal_get-data.html). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html). **2023**.
 
 ### Websites
 
--   Environmental Data Initiative (EDI) [Data Portal](https://portal.edirepository.org/nis/advancedSearch.jsp)
--   DataONE [Data Catalog](https://search.dataone.org/data)
--   Ocean Observatories Initiative (OOI) [Data Explorer](https://dataexplorer.oceanobservatories.org/)
--   Global Biodiversity Information Facility (GBIF) [Data Portal](https://www.gbif.org/)
--   iDigBio Digitized [Specimen Portal](https://www.idigbio.org/portal)
--   [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
--   [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
--   [Data Is Plural](https://www.data-is-plural.com/) and its [data list](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0) for exploring the cool datasets in various domains
+- Environmental Data Initiative (EDI) [Data Portal](https://portal.edirepository.org/nis/advancedSearch.jsp)
+- DataONE [Data Catalog](https://search.dataone.org/data)
+- Ocean Observatories Initiative (OOI) [Data Explorer](https://dataexplorer.oceanobservatories.org/)
+- Global Biodiversity Information Facility (GBIF) [Data Portal](https://www.gbif.org/)
+- iDigBio Digitized [Specimen Portal](https://www.idigbio.org/portal)
+- [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
+- [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
+- [Data Is Plural](https://www.data-is-plural.com/) and its [data list](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0) for exploring the cool datasets in various domains
