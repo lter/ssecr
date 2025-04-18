@@ -531,7 +531,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="general-data-searches" class="level2">
 <h2 class="anchored" data-anchor-id="general-data-searches">General Data Searches</h2>
-<p>If you don’t find what you’re looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, <a href="https://www.google.com">Google</a> is a suprisingly good resource for finding data and–for those familiar with Google Scholar for peer reviewed literature-specific Googling–there is a dataset-specific variant of Google called <a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>.</p>
+<p>If you don’t find what you’re looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, <a href="https://www.google.com">Google</a> is a surprisingly good resource for finding data and–for those familiar with Google Scholar for peer reviewed literature-specific Googling–there is a dataset-specific variant of Google called <a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>.</p>
 <section id="search-operators" class="level4">
 <h4 class="anchored" data-anchor-id="search-operators">Search Operators</h4>
 <p>Virtually all search engines support “operators” to create more effective queries (i.e., search parameters). If you don’t use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you’re looking for very specific criteria in candidate datasets.</p>
@@ -564,7 +564,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>Example: <code>site:.gov bird data</code></p>
 </div>
 <div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
-<p>Use the file type operator (<code>filetype:</code>) to <strong>search for data with a specific file extension</strong>. Useful to make sure the data you find is already in a format you can intteract with.</p>
+<p>Use the file type operator (<code>filetype:</code>) to <strong>search for data with a specific file extension</strong>. Useful to make sure the data you find is already in a format you can interact with.</p>
 <p>Example: <code>filetype:tif precipitation data</code></p>
 </div>
 <div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
@@ -597,7 +597,7 @@ Activity: Data Inventory
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Part 1</strong> (~25 min)</p>
+<p><strong>Part 1</strong></p>
 <p>In your project groups:</p>
 <ul>
 <li>Review your data inventory Google Sheet and discuss why you chose the datasets included.</li>
@@ -612,7 +612,7 @@ Activity: Data Inventory
 <li><em>This sheet will be shared with another group in Part 2</em></li>
 </ul></li>
 </ul>
-<p><strong>Part 2</strong> (~10 min)</p>
+<p><strong>Part 2</strong></p>
 <ul>
 <li>You are assigned to review the detailed data inventory table (Data_Inventory_V2) from another project group</li>
 <li>Each group member self-assigns one dataset that you want to review.</li>
@@ -795,7 +795,7 @@ Discussion: Data Inventory
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="8" data-code-annotation="2">We’re excluding error checks for simplicity’s sake but <strong>you will want to code informative error checks</strong>. Basically you want to consider inputs to the function that would break it and pre-emptively stop the function (with an informative message) when those malformed inputs are received</span>
+<span data-code-cell="annotated-cell-5" data-code-lines="8" data-code-annotation="2">We’re excluding error checks for simplicity’s sake but <strong>you will want to code informative error checks</strong>. Basically you want to consider inputs to the function that would break it and preemptively stop the function (with an informative message) when those malformed inputs are received</span>
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
 <dd>
@@ -808,9 +808,10 @@ Discussion: Data Inventory
 <div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
 <p>While many ecologists are trained in programming languages like R or Python, some operations require the <u>C</u>ommand <u>L</u>ine <u>I</u>nterface (“CLI”; a.k.a. “shell”, “bash”, “terminal”, etc.). <strong>Don’t worry if you’re new to this language!</strong> There are a lot of good resources for learning the fundamentals, including The Carpentries’ workshop “<a href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a>”.</p>
 <p>Below we demonstrate download via command line for NASA <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">OMI/Aura Sulfur Dioxide (SO2)</a>. The OMI science team produces this Level-3 Aura/OMI Global OMSO2e Data Products (0.25 degree Latitude/Longitude grids) for atmospheric analysis.</p>
-<blockquote class="blockquote">
-<p>Step 1: Using the “subset/Get Data” tab on the right-hand side of the <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">data page</a>, generate a list of file names for your specified target area and time period. Download the list of links as a TXT file named “list.txt”. Be sure to document the target area and temporal coverage you selected in your data inventory table.</p>
-</blockquote>
+<ol type="1">
+<li>Generate a List of File Names</li>
+</ol>
+<p>Use the “subset/Get Data” tab on the right-hand side of the <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">data page</a> to generate a list of file names for your specified target area and time period. <strong>Download the list of links as a TXT file named “list.txt”</strong>. Be sure to document the target area and temporal coverage you selected in your data inventory table.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0805_v003-2023m0807t093718.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
@@ -819,16 +820,23 @@ Discussion: Data Inventory
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0808_v003-2023m0810t092721.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<blockquote class="blockquote">
-<p>Step 2: Open a command line window and execute the wget command. Replace the placeholder for username and password with your EarthData login credentials.</p>
-</blockquote>
+<ol start="2" type="1">
+<li>Execute the <i class="fa-solid fa-terminal" aria-label="terminal"></i> <code>wget</code> CLI command</li>
+</ol>
+<p>Open a command line window and execute the <code>wget</code> command. Replace the placeholder for username and password with your EarthData login credentials.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--content-disposition</span> <span class="at">-i</span> list.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode bash code-annotation-code code-with-copy code-annotated"><code class="sourceCode bash"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-2" class="code-annotation-target"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--content-disposition</span> <span class="at">-i</span> list.txt</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-7" data-code-lines="2" data-code-annotation="1">Note that if you called our list something <em>other</em> than “list.txt” you’d need to update the file name at the end of this line</span>
+</dd>
+</dl>
 </div>
-<blockquote class="blockquote">
-<p>If you encounter any issue, follow this step-by-step guide on <a href="https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl">using wget and curl specifically with the GES DISC data system</a>.</p>
-</blockquote>
+</div>
+<p>If you encounter any issues, follow this step-by-step guide on <a href="https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl">using <code>wget</code> and <code>curl</code> specifically with the GES DISC data system</a>.</p>
 </div>
 </div>
 </div>
@@ -838,7 +846,7 @@ Discussion: Data Inventory
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Activity: Data Download (~25 mins)
+Activity: Data Download
 </div>
 </div>
 <div class="callout-body-container callout-body">
