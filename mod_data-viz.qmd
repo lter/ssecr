@@ -436,8 +436,8 @@ In the above graph, even though the rainbow palette is not ideal for reasons men
 With a group discuss (some of) the following questions:
 
 - What are other facets of accessibility that you think are important to consider when making data visualizations?
-- What changes do you make to your graphs to increase accessibility?
-    - What changes _could_ you make going forward?
+- How do you currently make your graphs accessible?
+- What changes _could_ you make going forward?
 
 :::
 
