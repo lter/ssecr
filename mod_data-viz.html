@@ -367,6 +367,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#exploratory-visualization-applications" id="toc-exploratory-visualization-applications" class="nav-link" data-scroll-target="#exploratory-visualization-applications">Exploratory Visualization Applications</a></li>
   </ul></li>
+  <li><a href="#final-pre-code-step-draw" id="toc-final-pre-code-step-draw" class="nav-link" data-scroll-target="#final-pre-code-step-draw">Final Pre-Code Step: Draw!</a></li>
   <li><a href="#graphing-with-ggplot2" id="toc-graphing-with-ggplot2" class="nav-link" data-scroll-target="#graphing-with-ggplot2">Graphing with <code>ggplot2</code></a></li>
   <li><a href="#streamlining-graph-aesthetics" id="toc-streamlining-graph-aesthetics" class="nav-link" data-scroll-target="#streamlining-graph-aesthetics">Streamlining Graph Aesthetics</a></li>
   <li><a href="#multi-panel-graphs" id="toc-multi-panel-graphs" class="nav-link" data-scroll-target="#multi-panel-graphs">Multi-Panel Graphs</a></li>
@@ -470,7 +471,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="visualization-for-exploration" class="level2">
 <h2 class="anchored" data-anchor-id="visualization-for-exploration">Visualization for Exploration</h2>
 <p>Exploratory data visualization is an important part of any scientific project. Before launching into analysis it is valuable to make some simple plots to scan the contents. These plots may reveal any number of issues, such as typos, sensor calibration problems or differences in the protocol over time.</p>
-<p>These “fitness for use” visualizations are even more critical for synthesis projects. In synthesis, we are often repurposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group’s question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of ‘warts’ that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g.&nbsp;spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process (see the <a href="https://lter.github.io/ssecr/mod_wrangle.html">Data Wrangling module</a>). Others may come as a surprise.</p>
+<p>These “fitness for use” visualizations are even more critical for synthesis projects. In synthesis, we are often re-purposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group’s question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of ‘warts’ that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g.&nbsp;spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process (see the <a href="https://lter.github.io/ssecr/mod_wrangle.html">Data Wrangling module</a>). Others may come as a surprise.</p>
 <p>During the early stages of a synthesis project, you will want to gain skill to quickly scan through large volumes of data. The figures you make will typically be for internal use only, and therefore have low emphasis on aesthetics.</p>
 <section id="exploratory-visualization-applications" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-visualization-applications">Exploratory Visualization Applications</h3>
@@ -581,6 +582,31 @@ Activity: Data Sleuth
 </div>
 </section>
 </section>
+<section id="final-pre-code-step-draw" class="level2">
+<h2 class="anchored" data-anchor-id="final-pre-code-step-draw">Final Pre-Code Step: Draw!</h2>
+<p>It may sound facile, but one of the best things you can do to make your life easier when you ‘actually’ start making graphs is to draw your hypothetical graph. You will likely find that creating a small sketch of your ideal figure will help you make some critical decisions. This can save you time so you don’t laboriously code a graph that–once created–doesn’t meet your expectations. You may still change your mind once you’ve seen the graph your code produces (and that is okay!) but you’ll likely make some of the necessary larger decisions with pen and paper and streamline your process in generating a visualization that perfectly meets your needs.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Activity: Sketch-y Graphing
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On a piece of scrap paper, draw one graph you think might be helpful in your project. Then, ask yourself the following questions:</p>
+<ul>
+<li>Does the graph make it clear whether your hypothesis is or is not supported?
+<ul>
+<li>How / will you identify statistical significance?</li>
+</ul></li>
+<li>What type of graph makes the most sense (e.g., boxplot vs.&nbsp;violin plot, etc.)?</li>
+<li>What information is contained in the axes versus stored in other graph elements (e.g., point shape, color, transparency, etc.)?</li>
+</ul>
+</div>
+</div>
+</section>
 <section id="graphing-with-ggplot2" class="level2">
 <h2 class="anchored" data-anchor-id="graphing-with-ggplot2">Graphing with <code>ggplot2</code></h2>
 <p>You may already be familiar with the <code>ggplot2</code> package in R but if you are not, it is a popular graphing library based on <a href="https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447">The Grammar of Graphics</a>. Every ggplot is composed of four elements:</p>
@@ -631,7 +657,7 @@ Activity: Data Sleuth
 </dd>
 <dt data-target-cell="annotated-cell-9" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="2" data-code-annotation="2">Because we defined the data and aesthetics in the <code>ggplot()</code> function call above, this geometry can assume those mappings without re-specificying</span>
+<span data-code-cell="annotated-cell-9" data-code-lines="2" data-code-annotation="2">Because we defined the data and aesthetics in the <code>ggplot()</code> function call above, this geometry can assume those mappings without re-specifying</span>
 </dd>
 </dl>
 </div>
@@ -718,7 +744,7 @@ Activity: Data Sleuth
  $ std_error  : num  0.79 0.39 0.41 0.39 0.34 0.5 0.43 0.44 0.43 0.47 ...</code></pre>
 </div>
 </div>
-<p>With this data object in-hand, we can make a graph that includes both this and the original, unsummarized crab data. To better focus on the ‘multiple data objects’ bit of this example we’ll pare down on the actual graph code.</p>
+<p>With this data object in-hand, we can make a graph that includes both this and the original, un-summarized crab data. To better focus on the ‘multiple data objects’ bit of this example we’ll pare down on the actual graph code.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="annotated-cell-13"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-13" data-target-annotation="1">1</button><span id="annotated-cell-13-1" class="code-annotation-target"><a href="#annotated-cell-13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="annotated-cell-13-2"><a href="#annotated-cell-13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size, <span class="at">fill =</span> site),</span>
@@ -949,7 +975,7 @@ Activity: Graph Creation (P3)
 <p>After you’ve made the graphs you need, it is good practice to revisit them with to ensure that they are as accessible as possible. You can of course also do this during the graph construction process but it is sometimes less onerous to tackle as a penultimate step in the figure creation process. There are many facets to accessibility and we’ve tried to cover just a few of them below.</p>
 <section id="color-choice" class="level3">
 <h3 class="anchored" data-anchor-id="color-choice">Color Choice</h3>
-<p>One of the more well-known facets of accessibility in data visualization is choosing colors that are “colorblind safe”. Such palettes still create distinctive colors for those with various forms of color blindness (e.g., deuteranomoly, protanomaly, etc.). The classic red-green heatmap for instance is very colorblind unsafe in that people with some forms of colorblindness cannot distinguish between those colors (hence the rise of the yellow-blue heatmap in recent years). Unforunately, the <code>ggplot2</code> default rainbow palette–while nice for exploratory purposes–<em>is not</em> colorlbind sfae.</p>
+<p>One of the more well-known facets of accessibility in data visualization is choosing colors that are “colorblind safe”. Such palettes still create distinctive colors for those with various forms of color blindness (e.g., deuteranomoly, protanomaly, etc.). The classic red-green heatmap for instance is very colorblind unsafe in that people with some forms of colorblindness cannot distinguish between those colors (hence the rise of the yellow-blue heatmap in recent years). Unfortunately, the <code>ggplot2</code> default rainbow palette–while nice for exploratory purposes–<em>is not</em> colorlblind safe.</p>
 <p>Some websites (such as <a href="https://colorbrewer2.org/#type=sequential&amp;scheme=YlGnBu&amp;n=9">colorbewer2.org</a>) include a simple checkbox for colorblindness safety which automatically limits the listed options to those that are colorblind safe. Alternately, you could use a browser plug-in (such as <a href="https://chromewebstore.google.com/detail/lets-get-color-blind/bkdgdianpkfahpkmphgehigalpighjck">Let’s get color blind</a> on Google Chrome) to simulate colorblindness on a particular page.</p>
 <p>One extreme approach you could take is to dodge this issue entirely and format your graphs such that color either isn’t used at all or only conveys information that is also conveyed in another graph aesthetic. We don’t necessarily recommend this as color–when the palette is chosen correctly–can be a really nice way of making information-dense graphs more informative and easily-navigable by viewers.</p>
 </section>
@@ -997,10 +1023,8 @@ Discussion: Graph Accessibility
 <p>With a group discuss (some of) the following questions:</p>
 <ul>
 <li>What are other facets of accessibility that you think are important to consider when making data visualizations?</li>
-<li>What changes do you make to your graphs to increase accessibility?
-<ul>
+<li>How do you currently make your graphs accessible?</li>
 <li>What changes <em>could</em> you make going forward?</li>
-</ul></li>
 </ul>
 </div>
 </div>
@@ -1081,7 +1105,7 @@ Discussion: Graph Accessibility
 </ul></li>
 <li>Present un-summarized data (with or without summarized points included)
 <ul>
-<li>Many reviewers will want to get a sense for the “real” data so you should include unsummarized values wherever possible</li>
+<li>Many reviewers will want to get a sense for the “real” data so you should include un-summarized values wherever possible</li>
 </ul></li>
 <li>Use multi-panel graphs
 <ul>
@@ -1424,7 +1448,7 @@ Discussion: Graph Accessibility
  $ year                : num  1981 1981 1981 1981 1981 ...</code></pre>
 </div>
 </div>
-<p>Plot seasonal timeseries of each numeric variable as points with the moving average included as lines</p>
+<p>Plot seasonal time series of each numeric variable as points with the moving average included as lines</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-31"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-31-1"><a href="#annotated-cell-31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Start PDF output</span></span>
 <span id="annotated-cell-31-2"><a href="#annotated-cell-31-2" aria-hidden="true" tabindex="-1"></a>grDevices<span class="sc">::</span><span class="fu">pdf</span>(<span class="at">file =</span> <span class="fu">file.path</span>(<span class="st">"qc_all_numeric_seasonal.pdf"</span>))</span>
