@@ -205,7 +205,7 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) + # 
   geom_point(pch = 21, size = 2, alpha = 0.5) # <2>
 ```
 1. We're defining both the data and the X/Y aesthetics in this top-level bit of the plot. Also, note that each line ends with a plus sign
-2. Because we defined the data and aesthetics in the `ggplot()` function call above, this geometry can assume those mappings without re-specifiying
+2. Because we defined the data and aesthetics in the `ggplot()` function call above, this geometry can assume those mappings without re-specifying
 
 ### 2. Custom Theme
 
