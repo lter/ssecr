@@ -146,6 +146,22 @@ Both of these packages have extensive vignettes and online instructional materia
 
 :::
 
+## Final Pre-Code Step: Draw!
+
+It may sound facile, but one of the best things you can do to make your life easier when you 'actually' start making graphs is to draw your hypothetical graph. You will likely find that creating a small sketch of your ideal figure will help you make some critical decisions. This can save you time so you don't laboriously code a graph that--once created--doesn't meet your expectations. You may still change your mind once you've seen the graph your code produces (and that is okay!) but you'll likely make some of the necessary larger decisions with pen and paper and streamline your process in generating a visualization that perfectly meets your needs.
+
+:::{.callout-note icon="false"}
+#### Activity: Sketch-y Graphing
+
+On a piece of scrap paper, draw one graph you think might be helpful in your project. Then, ask yourself the following questions:
+
+- Does the graph make it clear whether your hypothesis is or is not supported?
+    - How / will you identify statistical significance?
+- What type of graph makes the most sense (e.g., boxplot vs. violin plot, etc.)?
+- What information is contained in the axes versus stored in other graph elements (e.g., point shape, color, transparency, etc.)?
+
+:::
+
 ## Graphing with `ggplot2`
 
 You may already be familiar with the `ggplot2` package in R but if you are not, it is a popular graphing library based on [The Grammar of Graphics](https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447). Every ggplot is composed of four elements:
