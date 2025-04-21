@@ -35,14 +35,12 @@ Their approach to project management helped them to overcome these obstacles and
 
 ## What is Project Management?
 
-There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability.
-You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc.
-There are whole industries devoted to training project managers and developing apps to support them.
+There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability. You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc. There are whole industries devoted to training project managers and developing apps to support them.
 
-The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don' t require a full-time project manager to implement.
+The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don't require a full-time project manager to implement.
 
 | PM Activity | Industry Outcome | Science Outcome |
-|:---------------------|:-----------------------:|:-----------------------:|
+|:---------------------|:-----------------------|:-----------------------|
 | Build a logical sequence of steps | Ensure needed resources/people tools are available when needed | Know which skills are needed when; know what form the output of each script/analysis needs to take |
 | Identify dependencies | Avoid supply chain lags | Know what data you need and when you need them |
 | Clarify responsibilities/accountabilities | Document productivity and responsibility | Avoid duplication of effort; keep the project moving; support authorship/credit agreements |
@@ -53,37 +51,38 @@ The trick, for scientific research projects, is to identify the approaches that 
 ## How to Start
 
 Like outlining a paper, there are a few basic steps to developing a solid project management plan.
-And it' s easy to think you can skip over the first steps because they seem so obvious.
+And it's easy to think you can skip over the first steps because they seem so obvious.
 The trouble is, they may be obvious to each team member in different ways.
 Taking the time to make sure you all see them the same way can save worlds of headache down the road.
 
 1. Define the project
 2. Agree on the goal and the timeline
-3. If the timeline is determined externally (as for SSECR or for most grants), you' ll need to start with the timeline (possibly budget) and scope the project to fit the time and funds you have available.
+3. If the timeline is determined externally (as for SSECR or for most grants), you'll need to start with the timeline (possibly budget) and scope the project to fit the time and funds you have available.
 4. Develop a list of the steps needed to get from where you are to where you need to be.
 5. Place the steps in order and define the inputs and outputs of each step.
 6. Identify the people responsible for each step and an approximate timeline for its completion.
 7. Identify time points for check-in and re-evaluation
 
 Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today.
-First, though, we'll remind ourselves of *why* the investment in planning time is so valuable.
+First, though, we'll remind ourselves of _why_ the investment in planning time is so valuable.
 
 ::: {.callout-note icon="false"}
-### Full Group Discussion: Project Management "Fails"
+### Project Management "Fails"
 
 Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment...
 
-Part 1 (\~3 minutes)
+**Part 1**
 
 Reflect silently on one of your own project management "fails"
 
 - What went wrong?
 - How could planning have prevented or improved the situation?
 
-Part 2 (\~12 minutes)
+**Part 2**
 
 - Share your project management "fails"
 - If time allows, consider what aspects of planning are most likely to be skipped or overlooked
+
 :::
 
 ## Defining the Project
@@ -98,11 +97,7 @@ Then expand from there to the assumptions, modifying conditions, or follow-on im
 Often, looking at a problem head-on reveals little new, but surfacing and testing the underlying assumptions can open up fresh territory.
 
 <p align="center">
-
-<img src="images/mind-map.png" alt="Bubble with a central concept or question, surrounded, at the first level, by inputs, outputs or modifiers and at the second level by question, concerns, or implications" width="90%"/>
-
-<figcaption>**Figure 1. Mind Map Example**</figcaption>
-
+<img src="images/figure_mind-map.png" alt="Bubble with a central concept or question, surrounded, at the first level, by inputs, outputs or modifiers and at the second level by question, concerns, or implications" width="90%"/>
 </p>
 
 The mind map will likely surface many relevant and un-answered questions, but time is limited.
@@ -113,11 +108,7 @@ Often, the most interesting questions will also require the most effort and the 
 But sometimes, a question emerges that is both interesting and feasible--perhaps because a new source of data has just become available or simply because no one saw the question from that angle before.
 
 <p align="center">
-
-<img src="images/feasibility-matrix.png" alt="x and y axes, labelled with novelty/importance (Y) and feasibility (x), with project ideas distributed across the resulting space" width="90%"/>
-
-<figcaption>**Figure 2. Feasibility Matrix Example**</figcaption>
-
+<img src="images/figure_feasibility-matrix.png" alt="x and y axes, labelled with novelty/importance (Y) and feasibility (x), with project ideas distributed across the resulting space" width="90%"/>
 </p>
 
 ## Outline Your Analysis
@@ -130,11 +121,8 @@ Making those (often disciplinary) differences visible early can mitigate some of
 A well-structured analysis plan can also be a touchstone to return to throughout the life of your project, keeping the team on-track and avoiding mission creep.
 
 <p align="center">
-
-<img src="images/analysis-flow.png" alt="rectangular boxes containing data sources (Si concentration, streamflow, watershed geometry and land use, watershed precipitation), linked to diamond-shaped boxed describing processing steps, linked to more rectangles with outputs" width="90%"/>
-
-<figcaption>**Figure 3.** Analysis Flowchart for a (relatively) straightforward test of controls on Silica exports in streamflow.</figcaption>
-
+<img src="images/figure_analysis-flow.png" alt="rectangular boxes containing data sources (Si concentration, streamflow, watershed geometry and land use, watershed precipitation), linked to diamond-shaped boxed describing processing steps, linked to more rectangles with outputs" width="90%"/>
+<figcaption>Analysis flowchart for a (relatively) straightforward test of controls on Silica exports in streamflow.</figcaption>
 </p>
 
 ## Plan the Work
@@ -146,8 +134,8 @@ With simultaneous tasks stacked vertically, it becomes apparent when the planned
 
 - Before diving into any specific tool, start by making a list of your goal and the steps necessary to get there.
 - Place them into an outline in the order they must proceed.
-- Some steps cannot start until others are finished, while others can proceed simultaneously.
- - Sequential steps get a new number, while steps that can be done in parallel get the same number with different letters.
+    - Some steps cannot start until others are finished, while others can proceed simultaneously.
+    - Sequential steps get a new number, while steps that can be done in parallel get the same number with different letters.
 - Attach an estimated time frame to each step and identify a responsible team member (tentative at this point).
 - Arrange the steps in colored bars along a horizontal timeline.
 - Use the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.
@@ -159,11 +147,7 @@ For that to happen, they must have easy access to it, ideally without setting up
 For non-coders, we've included a [Google sheet template](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing) of a Gantt chart, pictured below.
 
 <p align="center">
-
-<img src="images/gantt-image.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="90%"/>
-
-<figcaption>**Figure 4. Gantt Chart Example using Google Sheets**</figcaption>
-
+<img src="images/image_gantt-image.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%"/>
 </p>
 
 But if you're already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub's project management capabilities?
@@ -173,11 +157,8 @@ Both kinds of issues can be assigned to individuals, marked with topical tags, a
 The examples below draw from the repository we are using to organize the first iteration of this course.
 
 <p align="center">
-
-<img src="images/github-project.png" alt="a series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" width="90%"/>
-
-<figcaption>**Figure 5. Organizing with GitHub Projects**</figcaption>
-
+<img src="images/image_github-project.png" alt="a series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" width="100%"/>
+<figcaption>Organizing with GitHub Projects</figcaption>
 </p>
 
 Two additional views make it even easier to track overall progress and individual workloads.
@@ -188,36 +169,58 @@ The stack of issues can be sorted by start date, target date, topic tags or assi
 The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
 
 <p align="center">
-
-<img src="images/github-gantt.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="90%"/>
-
-<figcaption>**Figure 5. Gantt Chart Example using GitHub Projects**</figcaption>
-
+<img src="images/image_github-gantt.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%"/>
+<figcaption>Gantt Chart Example using GitHub Projects</figcaption>
 </p>
 
 ::: {.callout-note icon="false"}
-### Project Group Discussion: Develop a project timeline/Gantt chart
+### Discussion: Develop a Project Timeline/Gantt Chart
 
-Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart.
-GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
+As a project group, work through the following prompts.
 
-1. Breakout into project groups.
-2. Decide whether you will use the Google sheet template or GitHub.
-3. If using **GitHub**, go to your project repository and find the project that has been created for you (top center menu). It will open in a Kanban Board view.
- a. Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description. A nice touch here is to add a checklist of subtasks.
- b. Choose task leads and add them to each task card (supporting group members can also be added).
- c. Add approximate start dates and target end dates for each task.
- d. When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back.
- e. Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
-4. If using the [**Google sheet template**](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing), copy it into your project folder. The template has two tabs. The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead. The "basic" tab will update the graph when you update task dates.
- a. Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet.
- b. Add or remove steps as needed for your proposed project.
- c. Choose task leads (they should expect to draw on other group members for assistance and feedback)
- d. Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
- e. Revise task dates as needed.
-5. Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart. Every group meeting? Every Monday? Once a month?
+Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
 
-After 30 minutes, return to whole group and discuss any insights or innovations.
+- Decide whether you will use the Google Sheet template or GitHub
+    - Click the respective tab for the next direction
+
+:::{.panel-tabset}
+#### Google Sheet Template
+
+1. Access the [**Google sheet template**](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing), and copy it into your project folder
+    - The template has two tabs
+    - The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead
+    - The "basic" tab will update the graph when you update task dates
+2. Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet
+3. Add or remove steps as needed for your proposed project
+4. Choose task leads
+    - They should expect to draw on other group members for assistance and feedback
+5. Review the chart
+    - What appear to be the bottlenecks?
+    - How could you mitigate them?
+    - Can subgroups work simultaneously on different sub-projects?
+    - Do you need to think about re-scoping the project?
+6. Revise task dates as needed
+    
+#### GitHub
+
+1. Go to your project repository and find the project that has been created for you (top center menu)
+    - It will open in a Kanban Board view
+2. Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description
+    - A nice touch here is to add a checklist of subtasks
+3. Choose task leads and add them to each task card (supporting group members can also be added)
+4. Add approximate start dates and target end dates for each task
+5. When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back
+6. Review the chart
+    - What appear to be the bottlenecks? How could you mitigate them?
+    - Can subgroups work simultaneously on different sub-projects?
+    - Do you need to think about re-scoping the project?
+    
+:::
+
+- Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart
+    - Every group meeting? Every Monday? Once a month?
+- After 30 minutes, return to whole group and discuss any insights or innovations
+
 :::
 
 ## Additional Resources
