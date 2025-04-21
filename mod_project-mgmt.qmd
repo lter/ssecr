@@ -7,20 +7,16 @@ editor:
 
 ## Overview
 
-Team science works best when all participants know when and how they can contribute.
-Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project.
-The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort.
-Developing an explicit logic model *as a team* helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis.
-It also helps clarify all of the information that will be needed and the appropriate order of steps.
+Team science works best when all participants know when and how they can contribute. Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project. The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort. Developing an explicit logic model _as a team_ helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis. It also helps clarify all of the information that will be needed and the appropriate order of steps.
 
 ## Learning Objectives
 
 After completing this module you will be able to:
 
--   <u>Articulate</u> key principles of project management
--   <u>Define</u> common approaches for defining project scope
--   <u>Identify</u> and make explicit internal logical leaps
--   <u>Develop</u> (or refine) the project management framework for your team project
+- <u>Articulate</u> key principles of project management
+- <u>Define</u> common approaches for defining project scope
+- <u>Identify</u> and make explicit internal logical leaps
+- <u>Develop</u> (or refine) the project management framework for your team project
 
 ## Preparation
 
@@ -34,16 +30,16 @@ No specific preparation required.
 The [Silica Exports synthesis working group](https://lternet.edu/working-groups/from-poles-to-tropics-a-multi-biome-synthesis-investigating-the-controls-on-river-si-exports/) faced a number of coordination challenges -- including work context (federal agency and academia), widely dispersed geographic locations (participants and data from 6 continents), and multiple data repositories.
 Their approach to project management helped them to overcome these obstacles and assemble an exceptional database that is broadly available and a set of novel analyses.
 
--   [Kathi Jo Jankowski](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski), Research Ecologist, Upper Midwest Environmental Sciences Center, U.S. Geological Survey
+- [Kathi Jo Jankowski](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski), Research Ecologist, Upper Midwest Environmental Sciences Center, U.S. Geological Survey
 :::
 
 ## What is Project Management?
 
 There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability.
-You’ve probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc.
+You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc.
 There are whole industries devoted to training project managers and developing apps to support them.
 
-The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don’t require a full-time project manager to implement.
+The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don' t require a full-time project manager to implement.
 
 | PM Activity | Industry Outcome | Science Outcome |
 |:---------------------|:-----------------------:|:-----------------------:|
@@ -57,17 +53,17 @@ The trick, for scientific research projects, is to identify the approaches that 
 ## How to Start
 
 Like outlining a paper, there are a few basic steps to developing a solid project management plan.
-And it’s easy to think you can skip over the first steps because they seem so obvious.
+And it' s easy to think you can skip over the first steps because they seem so obvious.
 The trouble is, they may be obvious to each team member in different ways.
 Taking the time to make sure you all see them the same way can save worlds of headache down the road.
 
-1.  Define the project
-2.  Agree on the goal and the timeline
-3.  If the timeline is determined externally (as for SSECR or for most grants), you’ll need to start with the timeline (possibly budget) and scope the project to fit the time and funds you have available.
-4.  Develop a list of the steps needed to get from where you are to where you need to be.
-5.  Place the steps in order and define the inputs and outputs of each step.
-6.  Identify the people responsible for each step and an approximate timeline for its completion.
-7.  Identify time points for check-in and re-evaluation
+1. Define the project
+2. Agree on the goal and the timeline
+3. If the timeline is determined externally (as for SSECR or for most grants), you' ll need to start with the timeline (possibly budget) and scope the project to fit the time and funds you have available.
+4. Develop a list of the steps needed to get from where you are to where you need to be.
+5. Place the steps in order and define the inputs and outputs of each step.
+6. Identify the people responsible for each step and an approximate timeline for its completion.
+7. Identify time points for check-in and re-evaluation
 
 Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today.
 First, though, we'll remind ourselves of *why* the investment in planning time is so valuable.
@@ -81,13 +77,13 @@ Part 1 (\~3 minutes)
 
 Reflect silently on one of your own project management "fails"
 
--   What went wrong?
--   How could planning have prevented or improved the situation?
+- What went wrong?
+- How could planning have prevented or improved the situation?
 
 Part 2 (\~12 minutes)
 
--   Share your project management "fails"
--   If time allows, consider what aspects of planning are most likely to be skipped or overlooked
+- Share your project management "fails"
+- If time allows, consider what aspects of planning are most likely to be skipped or overlooked
 :::
 
 ## Defining the Project
@@ -129,7 +125,7 @@ But sometimes, a question emerges that is both interesting and feasible--perhaps
 Once the team has settled on a question and specific set of processes to explore or test, it's worth sketching out the steps in your analysis.
 By making the inputs, processing, and outputs of each step explicit, you'll identify needed data sooner and avoid (some) backtracking.
 
-The process of building an explicit analysis description as a team can quickly reveal mismatches in team members’ mental models and uncover hidden assumptions.
+The process of building an explicit analysis description as a team can quickly reveal mismatches in team members' mental models and uncover hidden assumptions.
 Making those (often disciplinary) differences visible early can mitigate some of the biggest risks of interdisciplinary research and also offer a way into the most novel insights.
 A well-structured analysis plan can also be a touchstone to return to throughout the life of your project, keeping the team on-track and avoiding mission creep.
 
@@ -148,13 +144,13 @@ Especially with limited-term projects such as ours, a Gantt chart can be a parti
 With each task arranged on a timeline, it becomes easier to spot potential dependencies that could otherwise hold up the project.
 With simultaneous tasks stacked vertically, it becomes apparent when the planned workload is unrealistic.
 
--   Before diving into any specific tool, start by making a list of your goal and the steps necessary to get there.
--   Place them into an outline in the order they must proceed.
--   Some steps cannot start until others are finished, while others can proceed simultaneously.
-    -   Sequential steps get a new number, while steps that can be done in parallel get the same number with different letters.
--   Attach an estimated time frame to each step and identify a responsible team member (tentative at this point).
--   Arrange the steps in colored bars along a horizontal timeline.
--   Use the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.
+- Before diving into any specific tool, start by making a list of your goal and the steps necessary to get there.
+- Place them into an outline in the order they must proceed.
+- Some steps cannot start until others are finished, while others can proceed simultaneously.
+ - Sequential steps get a new number, while steps that can be done in parallel get the same number with different letters.
+- Attach an estimated time frame to each step and identify a responsible team member (tentative at this point).
+- Arrange the steps in colored bars along a horizontal timeline.
+- Use the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.
 
 A robust support infrastructure exists for the project management profession -- including formal training and a multitude of (often pricey) apps.
 But for the job of managing research collaborations, we've found that the single most important factor is whether your collaborators will use the system.
@@ -205,21 +201,21 @@ The "sliced tasks view" also allows each collaborator to see only their own assi
 Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart.
 GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
 
-1.  Breakout into project groups.
-2.  Decide whether you will use the Google sheet template or GitHub.
-3.  If using **GitHub**, go to your project repository and find the project that has been created for you (top center menu). It will open in a Kanban Board view.
-    a.  Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description. A nice touch here is to add a checklist of subtasks.
-    b.  Choose task leads and add them to each task card (supporting group members can also be added).
-    c.  Add approximate start dates and target end dates for each task.
-    d.  When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back.
-    e.  Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
-4.  If using the [**Google sheet template**](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing), copy it into your project folder. The template has two tabs. The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead. The "basic" tab will update the graph when you update task dates.
-    a.  Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet.
-    b.  Add or remove steps as needed for your proposed project.
-    c.  Choose task leads (they should expect to draw on other group members for assistance and feedback)
-    d.  Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
-    e.  Revise task dates as needed.
-5.  Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart. Every group meeting? Every Monday? Once a month?
+1. Breakout into project groups.
+2. Decide whether you will use the Google sheet template or GitHub.
+3. If using **GitHub**, go to your project repository and find the project that has been created for you (top center menu). It will open in a Kanban Board view.
+ a. Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description. A nice touch here is to add a checklist of subtasks.
+ b. Choose task leads and add them to each task card (supporting group members can also be added).
+ c. Add approximate start dates and target end dates for each task.
+ d. When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back.
+ e. Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
+4. If using the [**Google sheet template**](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing), copy it into your project folder. The template has two tabs. The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead. The "basic" tab will update the graph when you update task dates.
+ a. Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet.
+ b. Add or remove steps as needed for your proposed project.
+ c. Choose task leads (they should expect to draw on other group members for assistance and feedback)
+ d. Review the chart. What appear to be the bottlenecks? How could you mitigate them? Can subgroups work simultaneously on different sub-projects? Do you need to think about re-scoping the project?
+ e. Revise task dates as needed.
+5. Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart. Every group meeting? Every Monday? Once a month?
 
 After 30 minutes, return to whole group and discuss any insights or innovations.
 :::
@@ -228,22 +224,22 @@ After 30 minutes, return to whole group and discuss any insights or innovations.
 
 ### Workshops & Courses
 
--   LTER Scientific Computing Team. [Collaborative Coding with GitHub: Issues](https://lter.github.io/workshop-github/issues.html). **2024**.
--   LTER Scientific Computing Team. [Collaborative Coding with GitHub: Milestones](https://lter.github.io/workshop-github/milestones.html). **2024**.
--   LTER Scientific Computing Team. [Collaborative Coding with GitHub: Projects](https://lter.github.io/workshop-github/projects.html). **2024**.
--   NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Logic Models and Synthesis Development](https://learning.nceas.ucsb.edu/2021-09-delta/session-8-hands-on-logic-models-and-synthesis-development.html). **2021**.
--   [NCEAS Project Management Workshop](https://learning.nceas.ucsb.edu/2024-working-groups/session_01.html) for new synthesis working groups
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Issues](https://lter.github.io/workshop-github/issues.html). **2024**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Milestones](https://lter.github.io/workshop-github/milestones.html). **2024**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Projects](https://lter.github.io/workshop-github/projects.html). **2024**.
+- NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Logic Models and Synthesis Development](https://learning.nceas.ucsb.edu/2021-09-delta/session-8-hands-on-logic-models-and-synthesis-development.html). **2021**.
+- [NCEAS Project Management Workshop](https://learning.nceas.ucsb.edu/2024-working-groups/session_01.html) for new synthesis working groups
 
 ### Web-based Project Management Tools
 
 #### Open Source
 
--   [GitHub Documentation: Issues and Projects](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/planning-and-tracking-work-for-your-team-or-project)
+- [GitHub Documentation: Issues and Projects](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/planning-and-tracking-work-for-your-team-or-project)
 
 #### Commercial
 
--   [Asana](https://asana.com/). Task and project management. Free up to 10 members.
--   [Wrike](https://www.wrike.com/). Tasks and project management. Capable for individuals. \$10 pp per month for teams.
--   [ClickUp](https://clickup.com/). Capable free plan. Less intuitive to set up.
--   [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brianstorming than ongoing project management.
--   [Easy Retro](https://easyretro.io/about)
+- [Asana](https://asana.com/). Task and project management. Free up to 10 members.
+- [Wrike](https://www.wrike.com/). Tasks and project management. Capable for individuals. \$10 pp per month for teams.
+- [ClickUp](https://clickup.com/). Capable free plan. Less intuitive to set up.
+- [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brainstorming than ongoing project management.
+- [Easy Retro](https://easyretro.io/about)
