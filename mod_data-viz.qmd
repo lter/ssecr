@@ -55,7 +55,7 @@ As shown in the graphic below, visualization can be valuable throughout the life
 
 Exploratory data visualization is an important part of any scientific project. Before launching into analysis it is valuable to make some simple plots to scan the contents. These plots may reveal any number of issues, such as typos, sensor calibration problems or differences in the protocol over time.
 
-These "fitness for use" visualizations are even more critical for synthesis projects. In synthesis, we are often repurposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group's question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of 'warts' that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g. spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process (see the [Data Wrangling module](https://lter.github.io/ssecr/mod_wrangle.html)). Others may come as a surprise.
+These "fitness for use" visualizations are even more critical for synthesis projects. In synthesis, we are often re-purposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group's question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of 'warts' that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g. spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process (see the [Data Wrangling module](https://lter.github.io/ssecr/mod_wrangle.html)). Others may come as a surprise.
 
 During the early stages of a synthesis project, you will want to gain skill to quickly scan through large volumes of data. The figures you make will typically be for internal use only, and therefore have low emphasis on aesthetics.
 
@@ -189,7 +189,7 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) + # 
   geom_point(pch = 21, size = 2, alpha = 0.5) # <2>
 ```
 1. We're defining both the data and the X/Y aesthetics in this top-level bit of the plot. Also, note that each line ends with a plus sign
-2. Because we defined the data and aesthetics in the `ggplot()` function call above, this geometry can assume those mappings without re-specificying
+2. Because we defined the data and aesthetics in the `ggplot()` function call above, this geometry can assume those mappings without re-specifiying
 
 ### 2. Custom Theme
 
@@ -246,7 +246,7 @@ crab_summary <- supportR::summary_table(data = pie_crab, groups = c("site", "lat
 str(crab_summary)
 ```
 
-With this data object in-hand, we can make a graph that includes both this and the original, unsummarized crab data. To better focus on the 'multiple data objects' bit of this example we'll pare down on the actual graph code.
+With this data object in-hand, we can make a graph that includes both this and the original, un-summarized crab data. To better focus on the 'multiple data objects' bit of this example we'll pare down on the actual graph code.
 
 ```{r gg-4}
 #| fig-align: center
@@ -402,7 +402,7 @@ After you've made the graphs you need, it is good practice to revisit them with 
 
 ### Color Choice
 
-One of the more well-known facets of accessibility in data visualization is choosing colors that are "colorblind safe". Such palettes still create distinctive colors for those with various forms of color blindness (e.g., deuteranomoly, protanomaly, etc.). The classic red-green heatmap for instance is very colorblind unsafe in that people with some forms of colorblindness cannot distinguish between those colors (hence the rise of the yellow-blue heatmap in recent years). Unforunately, the `ggplot2` default rainbow palette--while nice for exploratory purposes--_is not_ colorlbind sfae.
+One of the more well-known facets of accessibility in data visualization is choosing colors that are "colorblind safe". Such palettes still create distinctive colors for those with various forms of color blindness (e.g., deuteranomoly, protanomaly, etc.). The classic red-green heatmap for instance is very colorblind unsafe in that people with some forms of colorblindness cannot distinguish between those colors (hence the rise of the yellow-blue heatmap in recent years). Unfortunately, the `ggplot2` default rainbow palette--while nice for exploratory purposes--_is not_ colorlblind safe.
 
 Some websites (such as [colorbewer2.org](https://colorbrewer2.org/#type=sequential&scheme=YlGnBu&n=9)) include a simple checkbox for colorblindness safety which automatically limits the listed options to those that are colorblind safe. Alternately, you could use a browser plug-in (such as [Let's get color blind](https://chromewebstore.google.com/detail/lets-get-color-blind/bkdgdianpkfahpkmphgehigalpighjck) on Google Chrome) to simulate colorblindness on a particular page.
 
@@ -496,7 +496,7 @@ ggplot(crab_summary, aes(x = latitude, y = mean,
 - Increase size of text/points **slightly**
     - You want to be legible but you can more safely assume that many readers will be able to increase the zoom of their browser window if needed
 - Present un-summarized data (with or without summarized points included)
-    - Many reviewers will want to get a sense for the "real" data so you should include unsummarized values wherever possible
+    - Many reviewers will want to get a sense for the "real" data so you should include un-summarized values wherever possible
 - Use multi-panel graphs
     - If multiple graphs "tell a story" together, then they should be included in the same file!
 - Map multiple aesthetics to the same variables
@@ -766,7 +766,7 @@ stream_data <- green_streamflow %>%
 str(stream_data)
 ```
 
-Plot seasonal timeseries of each numeric variable as points with the moving
+Plot seasonal time series of each numeric variable as points with the moving
 average included as lines
 
 ```{r demo_seasons_viz-code-fake}
