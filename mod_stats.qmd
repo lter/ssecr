@@ -32,7 +32,7 @@ Each project group should:
 
 Ingrid Slette, Postdoctoral Researcher at the University Minnesota Coordinator of [NutNet](https://nutnet.org/) and [DRAGNet](https://dragnetglobal.weebly.com/) coordinated, distributed experiments.
 
-Ingid synthesizes data in order to understand the impacts of intersecting global changes. Her PhD research focused on how previous climate extremes alter the impacts of extreme drought on root traits and patterns of aboveground vs. belowground plant production and carbon cycling in grasslands. Name pronunciation: ing-rid sleh-tuh. Pronouns: she/her
+Ingrid synthesizes data in order to understand the impacts of intersecting global changes. Her PhD research focused on how previous climate extremes alter the impacts of extreme drought on root traits and patterns of aboveground vs. belowground plant production and carbon cycling in grasslands. Name pronunciation: \[ing-rid sleh-tuh\]. Pronouns: she/her
 
 :::
 
@@ -89,7 +89,7 @@ For the purposes of SSECR, **our discussion of frequentist inference will focus 
 
 ### Multi-Model Inference
 
-Hyoptheses here are a question of <u>which variables explain the *most* variation in the data</u>. Methods in this framing are unconcerned--or at least less concerned than in frequentist inference--with the probability associated with a particular variable. Intead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data *even when that best model does not necessarily explain much of that variation in absolute terms*.
+Hypotheses here are a question of <u>which variables explain the *most* variation in the data</u>. Methods in this framing are unconcerned--or at least less concerned than in frequentist inference--with the probability associated with a particular variable. Instead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data *even when that best model does not necessarily explain much of that variation in absolute terms*.
 
 If your hypothesis can be summarized as something along the lines of 'we hypothesize that models including X explain more of the variation in Y than those that do not' then multi-model inference may be a more appropriate methodology.
 
@@ -126,9 +126,9 @@ By including site as a random slope in this context, we can account for this eff
 
 ### Nested Random Effects
 
-To further complicate matters, we can use nested random effects as well. These can be either random intercepts or random slopes though they are more commonly seen with random intercepts. A nested random effect accounts for the effect of one random variable that *is itself affected by another variable!* A classic example of this is when a study design uses two (or more) levels of spatial nestedness in their experimentall design.
+To further complicate matters, we can use nested random effects as well. These can be either random intercepts or random slopes though they are more commonly seen with random intercepts. A nested random effect accounts for the effect of one random variable that *is itself affected by another variable!* A classic example of this is when a study design uses two (or more) levels of spatial nestedness in their experimental design.
 
-For instance, let's imagine we were conducting a global study of marine plankton biodiversity. To gether these data we took several cruises (scientific not--exclusively--pleasure) at different places around the world and during each cruise we followed a set of transects. In each transect we did several plankton tows and quantified the diversity of each tow. We can reasonably assume the following:
+For instance, let's imagine we were conducting a global study of marine plankton biodiversity. To gather these data we took several cruises (scientific not--exclusively--pleasure) at different places around the world and during each cruise we followed a set of transects. In each transect we did several plankton tows and quantified the diversity of each tow. We can reasonably assume the following:
 
 1.  Each cruise differs from each other cruise (due to any number of climatic/ecological factors)
     -   But cruises within the same part of the world are still likely to have similar planktonic communities
@@ -165,7 +165,7 @@ With a small group, decide whether you think the terms in the examples below sho
 
 ### Mixed-Effects Case Study
 
-Let's imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas will be greater in sites further from the nearest road. We select ten study sites of varying distances from the nearest road and intensively count our furry friends at three plots within each site for several months. We return to our sites--and their associated plots--and repeat this process each year for three years. In the second year we have help from a new member of our lab but in the third year we're back to working alone (they had their own project to handle by then). We enter our data and perform careful quality control to get it into a tidy format ready for analyis.
+Let's imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas will be greater in sites further from the nearest road. We select ten study sites of varying distances from the nearest road and intensively count our furry friends at three plots within each site for several months. We return to our sites--and their associated plots--and repeat this process each year for three years. In the second year we have help from a new member of our lab but in the third year we're back to working alone (they had their own project to handle by then). We enter our data and perform careful quality control to get it into a tidy format ready for analysis.
 
 ```{r mem-data}
 # Read in data
@@ -175,7 +175,7 @@ tarantula_df <- read.csv(file = file.path("data", "tarantulas.csv"))
 str(tarantula_df)
 ```
 
-With our data in hand, we now want to run some statistical tests and--hopefully--get some endorphine-inducingly small *p*-values. If we choose to simply ignore our possible random effects, we could fit a linear regression.
+With our data in hand, we now want to run some statistical tests and--hopefully--get some endorphine-inducing-ly small *p*-values. If we choose to simply ignore our possible random effects, we could fit a linear regression.
 
 ```{r mem-lm}
 # Fit model
@@ -219,7 +219,7 @@ ggplot(tarantula_df, aes(y = tarantula_count, x = plot, fill = plot)) +
   theme(axis.text.x = element_text(angle = 35, hjust = 1)) # <2>
 ```
 
-1.  Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intutive grasp of the distribution metrics described by each bit of a boxplot
+1.  Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intuitive grasp of the distribution metrics described by each bit of a boxplot
 2.  This is allowing us to 'tilt' the X axis tick labels so they don't overlap with one another
 
 This graph clearly supports our intuition that among-plot variation is dramatic! We *could* account for this by including plot as a fixed effect but we'll need to sacrifice a lot of degrees of freedom (can be thought of as "statistical power") for a variable that we don't actually care about. Instead, we could include plot as another random effect.
@@ -265,7 +265,7 @@ To begin, it can be helpful to write out all possible "candidate models". For in
 
 We might also fit other candidate models for pairs of X, W, and Z but for the sake of simplicity in this hypothetical we'll skip those. Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!
 
-Once we've fit all of our models and assigned them to objects, we can use the `AIC` function included in base R to compare the AIC score of each model. "AIC" stands for <u>A</u>kaike (*AH-kuh-ee-kay*) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model's explanatory power. Models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data.
+Once we've fit all of our models and assigned them to objects, we can use the `AIC` function included in base R to compare the AIC score of each model. "AIC" stands for <u>A</u>kaike (\[AH-kuh-ee-kay\]) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model's explanatory power. Models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data.
 
 The model with the *lowest* AIC best explains the data. Technically any difference in AIC indicates model improvement but many scientists use a rule of thumb of a difference of 2. So, if two models have AIC scores that differ by less than 2, you can safely say that they have comparable explanatory power. That is definitely a semi-arbitrary threshold but so is the 0.05 threshold for *p*-value "significance".
 
@@ -360,7 +360,7 @@ calc_effect <- esc::esc_mean_sd(grp1m = 50, grp2m = 60,
 calc_effect
 ```
 
-Note that Cohen's *d* is just one effect size available to you and others may be more appropriate in certain contexts. Just like any other metric, which effect size you choose is a mix of your scientific intution and appropriateness for the content of your data. For a deeper dive into the breadth of effect size considerations available to you, see [the relevant chapter](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/effects.html#effects) of the *Doing Meta-Analysis in R* online book.
+Note that Cohen's *d* is just one effect size available to you and others may be more appropriate in certain contexts. Just like any other metric, which effect size you choose is a mix of your scientific intuition and appropriateness for the content of your data. For a deeper dive into the breadth of effect size considerations available to you, see [the relevant chapter](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/effects.html#effects) of the *Doing Meta-Analysis in R* online book.
 
 After you've calculated all relevant effect sizes--using your chosen flavor of effect size--the "actual" meta-analysis is nearly finished. Simply create a graph of the effect sizes with error bars indicating confidence intervals (included by default in most effect size functions). Where the error bars overlap among studies, there is no significant difference between those effect sizes. Conversely, where the error bars *do not* overlap among studies the effect sizes do significantly differ indicating that the studies results' differ for the data used to calculate the effect size.
 
@@ -368,7 +368,7 @@ After you've calculated all relevant effect sizes--using your chosen flavor of e
 
 ### Papers & Documents
 
--   Spake, R. *et al.* [Understanding 'It Depends' in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). **2023**. *Biological Reviews*
+-   Spake, R. *et al.* [Understanding 'It Depends' in Ecology: A Guide to Hypothesizing, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). **2023**. *Biological Reviews*
 -   Spake, R. *et al.* [Improving Quantitative Synthesis to Achieve Generality in Ecology](https://www.nature.com/articles/s41559-022-01891-z). **2022**. *Nature Ecology and Evolution*
 -   Tredennick, A.T. *et al.* [A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3336). **2021**. *Ecology*
 -   Harrier, M. *et al.* [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2021**.
