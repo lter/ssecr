@@ -6,14 +6,22 @@ title: "Communicating Findings"
 
 So you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. In this module, we talk through some broadly applicable scicomm strategies that will get you started.
 
+:::{.callout-important}
+### Note for Those Completing this Module Independently
+
+This module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
+
+:::
+
+
 ## Learning Objectives
 
 After completing this module you will be able to:
 
--   [Define]{.underline} elements of (in)effective communication
--   I[dentify]{.underline} relevant audiences for a particular work
--   [Identify]{.underline} jargon—when to use it, when to avoid it
--   [Translate]{.underline} communication into different formats
+- <u>Define</u> elements of (in)effective communication
+- <u>Identify</u> relevant audiences for a particular work
+- <u>Identify</u> jargon--when to use it, when to avoid it
+- <u>Translate</u> communication into different formats
 
 ## Preparation
 
@@ -29,11 +37,7 @@ None required.
 As a former NCEAS communications officer and a AAAS science and technology policy fellow in climate science, Alex brings extensive experience in making scientific synthesis engaging. Her teaching and research focuses on environmental communication to students, scientists, policymakers, and the public. She was also a postdoc at UCSB and the Large Lakes Observatory at University of Minnesota, Duluth where she investigated carbon sequestration in Lake Superior. She holds a PhD from Caltech in geochemistry, where she studied sulfur and carbon cycling in lakes and oceans.
 :::
 
-## Effective Communication
-
-*This module was designed to be highly interactive and includes a lot of peer editing. For those completing this module independently, we highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience.*
-
-### Why communicate your findings?
+### Why Communicate Your Findings?
 
 *Science speaks for itself. Good work will get recognized. It's the journal/university/lab's job to share my results.*
 
@@ -43,25 +47,35 @@ Some evidence ([like this paper](https://journals.sagepub.com/doi/10.1177/107769
 
 Putting your work out in public let's others find it. That could lead to new collaborators, more citations, an article in the press, or even money from funders. If that work hides behind a paywall, it's much harder for someone to find it!
 
-Think about this—one [SBC LTER researcher was walking on the beach](https://www.independent.com/2022/10/08/chance-encounter-on-beach-leads-to-3-million-for-santa-barbara-coastal-research/), doing drone surveys. Someone stopped to chat, and they explained their research to them. A few weeks later, the SBC LTER had *three million more dollars*, after that person decided to donate to the cause. All from SciComm!
+Think about this--one [SBC LTER researcher was walking on the beach](https://www.independent.com/2022/10/08/chance-encounter-on-beach-leads-to-3-million-for-santa-barbara-coastal-research/), doing drone surveys. Someone stopped to chat, and they explained their research to them. A few weeks later, the SBC LTER had *three million more dollars*, after that person decided to donate to the cause. All from SciComm!
 
 Today, we're going to walk through turning your own research into an elevator pitch, a tight, concise explanation of what you've done. The process of creating an elevator pitch will give you the tools necessary to adapt your message to a variety of different audiences and formats.
 
 [**How Science Communication Can Boost Your Research**](https://www.aldacenter.org/thelink/posts/Boosting_Research_Through_Scicomm.php#:~:text=Everyone%20has%20the%20right%20to,not%20do%20science%20at%20all.) **- Alda Center**
 
-## Crafting your Elevator Pitch
+## Crafting Your Elevator Pitch
 
-> **Let's start with an activity!**
->
-> **3 minutes to write, 5 minutes to share: Come up with a minute-long elevator pitch for your project.**
->
-> **Share among each other! All effective communication contains a story**
+
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#1
+
+Individually:
+
+- Draft a 1-minute-long elevator pitch for your project
+- 3 minutes to write, 5 minutes to share with your peers
+
+<details>
+<summary>Hint</summary>
+All effective communication contains a story!
+</details>
+
+:::
 
 This first exercise is a starting point. First of all, it's really hard to distill your whole project down to a minute! Think about how much you left out, and how much it hurt to leave that out. From here, we'll continue to refine and rebuild this elevator pitch.
 
-#### The power of a story
+#### The Power of a Story
 
-Read the two following introductions to an essay about wildfire. Which would you rather continue to read?
+Read the two following introductions to an essay about wildfire. Which essay would you rather continue to read?
 
 ::: panel-tabset
 ### Version 1
@@ -70,57 +84,56 @@ Climate change is affecting all ecosystems. One of the impacts from climate chan
 
 ### Version 2
 
-The smoke is thick in Fairbanks. Air the characteristic dirty orange of a nearby wildfire. Michelle Mack, lead PI of the Bonanza Creek LTER and long-time fire ecologist, saunters out of her lab. “It’s gone,” she says.
-
-Overnight, the nearby McDonald Fire burned one of her experiments down. The experiment explored an innovative approach to preventing wildfires. Now it was charcoal. (from Shaped by fire: the Bonanza Creek LTER)
+The smoke is thick in Fairbanks. Air the characteristic dirty orange of a nearby wildfire. Michelle Mack, lead PI of the Bonanza Creek LTER and long-time fire ecologist, saunters out of her lab. "It's gone," she says. Overnight, the nearby McDonald Fire burned one of her experiments down. The experiment explored an innovative approach to preventing wildfires. Now it was charcoal. (from Shaped by fire: the Bonanza Creek LTER)
 :::
 
-What are the differences here? Version 2 has *tension*, which begs for a *resolution*—the reader has incentive to keep reading. The second has *characters*, which can inspire empathy. There is a tangible sense of time, a before, during, and after. The language in Version 2 is more dynamic, less technical.
+What are the differences here? Version 2 has *tension*, which begs for a *resolution*--the reader has incentive to keep reading. The second has *characters*, which can inspire empathy. There is a tangible sense of time, a before, during, and after. The language in Version 2 is more dynamic, less technical.
 
-Version 2 has the makings of a story—a narrative with a beginning, middle, and end. It has characters. It has scenes. Those, in combination, do a better job of engaging an audience than just facts do. Storytelling is a central part of communication. That should include science communication!
+Version 2 has the makings of a story--a narrative with a beginning, middle, and end. It has characters. It has scenes. Those, in combination, do a better job of engaging an audience than just facts do. Storytelling is a central part of communication. That should include science communication!
 
-Ok—not every elevator pitch needs to start with *Once upon a time...* But thinking about building some sort of story into your elevator pitch can dramatically improve it's effectiveness.
+Ok--not every elevator pitch needs to start with *"Once upon a time..."* But thinking about building some sort of story into your elevator pitch can dramatically improve it's effectiveness.
 
-As someone who’s conducting the research, you already have stories. In fact, doing research is trying to figure out what a very specific story is—pulling a narrative from raw data. The trick to science communication is finding a different story, or modifying your story, to appeal to different audiences. We'll cover that below.
+As someone who's conducting the research, you already have stories. In fact, doing research is trying to figure out what a very specific story is--pulling a narrative from raw data. The trick to science communication is finding a different story, or modifying your story, to appeal to different audiences. We'll cover that below.
 
-**Does your elevator pitch have a story?**
+### Does Your Elevator Pitch Have a Story?
 
-[A guide to scientific storytelling](https://cartoonbase.com/en/resources/blog/a-guide-to-scientific-storytelling/): This is a great resource on the *why* of science storytelling.
+- [A guide to scientific storytelling](https://cartoonbase.com/en/resources/blog/a-guide-to-scientific-storytelling/)
+    - This is a great resource on the *why* of science storytelling.
+- [How to get an audience to care about your science \| ‘Talking Science' Course #4](https://www.youtube.com/watch?v=OwPMU5-gbh4&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=8)
+    - Great short video on hooking in a reader
 
-[How to get an audience to care about your science \| ‘Talking Science’ Course #4](https://www.youtube.com/watch?v=OwPMU5-gbh4&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=8) — great short video on hooking in a reader
+## 'And, But, Therefore' Framework -- A Storytelling Tool
 
-## And, But, Therefore framework—a storytelling tool
+The 'And, But, Therefore' (ABT) framework is a simple tool that helps develop a narrative in an elevator pitch (or any other short communication material).
 
-The And, But, Therefore (ABT) framework is a simple tool that helps develop a narrative in an elevator pitch (or any other short communication material).
-
-The temptation for many (researchers and non!) is to continue adding AND’s to their work.
+The temptation for many (researchers and non-researchers!) is to continue adding AND's to their work.
 
 ::: panel-tabset
-#### With only AND's
+#### With _Only_ "And"
 
 Climate change is affecting all ecosystems. **AND** One of the impacts from climate change is that wildfire intensity is increasing across the globe, including in the Boreal Forest. **AND** Wildfire releases carbon into the atmosphere and threatens local communities.
 :::
 
-But that doesn’t add up to any sort of great story, just a collection of facts. Scientific peers might know what to do with these facts (but…they still often don’t!), but most people don’t want to put in the effort to connect the dots.
+But that doesn't add up to any sort of great story, just a collection of facts. Scientific peers might know what to do with these facts (but...they still often don't!), but most people don't want to put in the effort to connect the dots.
 
-The *And But Therefore framework* provides a scaffolding from which to build a story.
+The 'And But Therefore' framework provides a scaffolding from which to build a story.
 
-This method really helps you focus in on just the critical parts of the story. There are many things that you’ll leave out. That’s more than OK—that’s the point!
+This method really helps you focus in on just the critical parts of the story. There are many things that you'll leave out. That's more than OK--that's the point!
 
-The first AND is a setup—all your baseline information lives here. Let’s try this out with our Boreal forest research:
+The first "and" is a setup--all your baseline information lives here. Let's try this out with our Boreal forest research:
 
 ::: panel-tabset
-#### Start with an and...
+#### Start With an "And"
 
-Spruce trees evolved to burn, AND as a result, wildfire is an important part of the Boreal forest ecosystem.
+Spruce trees evolved to burn, **AND** as a result, wildfire is an important part of the Boreal forest ecosystem.
 :::
 
-We’ve provided the bare minimum information for people to understand our research. But research addresses a problem. The BUT leads us to that problem:
+We've provided the bare minimum information for people to understand our research. But research addresses a problem. The "but" leads us to that problem:
 
 ::: panel-tabset
-#### Add in a but...
+#### Add in a "But"
 
-BUT, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the Boreal forest.
+**BUT**, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the Boreal forest.
 :::
 
 Now, the audience knows the stakes, as well as the background. They want to know how that problem is being addressed! How will we protect those people that live near the Boreal?
@@ -128,191 +141,203 @@ Now, the audience knows the stakes, as well as the background. They want to know
 THEREFORE lets you resolve the tension that was built by the BUT.
 
 ::: panel-tabset
-#### Finish with a therefore
+#### Finish With a "Therefore"
 
-THEREFORE, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing communities with spaces to farm or recreate.
+**THEREFORE**, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing communities with spaces to farm or recreate.
 :::
 
 All together, we get...
 
 ::: panel-tabset
-#### Full elevator pitch!
+#### Full Elevator Pitch!
 
-Spruce trees evolved to burn, AND as a result, wildfire is an important part of the boreal forest ecosystem. BUT, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the boreal forest. THEREFORE, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing towns with spaces to farm or recreate.
+Spruce trees evolved to burn, **AND** as a result, wildfire is an important part of the boreal forest ecosystem. **BUT**, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the boreal forest. **THEREFORE**, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing towns with spaces to farm or recreate.
 :::
 
 Another example, on a completely different subject:
 
-I’ll be using this paper as an example: [Using a units ontology to annotate pre-existing metadata \| Scientific Data](https://www.nature.com/articles/s41597-025-04587-8#Sec2)
+I'll be using this paper as an example: [Using a units ontology to annotate pre-existing metadata \| Scientific Data](https://www.nature.com/articles/s41597-025-04587-8#Sec2)
 
 ::: panel-tabset
-#### Another example
+#### Another Example
 
-Scientific data needs units—meters per second, grams, et cetera—to have any real meaning, AND researchers might write those units in any number of different ways, even though they refer to the same thing \[meters per second might be written m/s, or m-s, or m per s\]. BUT computers read those different annotations as unique, preventing easy analysis across different datasets. THEREFORE, an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
+Scientific data needs units--meters per second, grams, etc.--to have any real meaning, **AND** researchers might write those units in any number of different ways, even though they refer to the same thing (e.g., "meters per second" might be written "m/s", or "m-s", or "m per s"). **BUT** computers read those different annotations as unique, preventing easy analysis across different datasets. **THEREFORE** an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
 :::
 
-> **Now you try!** (8 minutes)\
-> \
-> For this exercise, make sure to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences max. If you can’t fit it all in, you’re probably trying to say too much!\
-> \
-> Share out (8 minutes) and critique in groups:
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#2
 
-Things to look out for as a listener:
+**Part 1 - Revize**
 
-Do I know just enough information to understand the problem? If not, what am I missing? Does the problem hook me in? Are the stakes clear? What would make this speak to me more? Does the conclusion actually resolve the problem?
+- Revisit your draft elevator pitch and tweak it to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences _max_
+    - If you can't fit it all in, you're probably trying to say too much!
 
-[Randy Olson's TED Talk on the ABT framework (he's the creator!)](https://www.youtube.com/watch?v=ERB7ITvabA4)
+**Part 2 - Share**
 
-[An expansion on ABT](https://medium.com/find-the-red-thread-persuasion/the-simplest-storytelling-structure-7fdc7d8a60e5)
+- Share out and critique in groups
+- Things to look out for as a listener:
+    - Do I know just enough information to understand the problem? If not, what am I missing?
+    - Does the problem 'hook' me in?
+    - Are the stakes clear?
+    - What would make this speak to me more?
+    - Does the conclusion actually resolve the problem?
 
-[A great short blog on ABT](https://ian.umces.edu/blog/storytelling-and-science-whats-abt-got-to-do-with-it/)
+:::
 
-## Adapting your message to different audiences (30 minutes)
+- [Randy Olson's TED talk on the ABT framework](https://www.youtube.com/watch?v=ERB7ITvabA4) (he's the creator!)
+- [An expansion on ABT](https://medium.com/find-the-red-thread-persuasion/the-simplest-storytelling-structure-7fdc7d8a60e5)
+- [A great blog on ABT](https://ian.umces.edu/blog/storytelling-and-science-whats-abt-got-to-do-with-it/)
 
-You’re 17, back in high school. The football team had a party last night, and you and all your friends went. Describe the party to….
+## Adapting Your Message to Different Audiences
 
-Your friend who was grounded and couldn’t go:
+You're 17, back in high school. The football team had a party last night, and you and all your friends went. Describe the party to...
 
-“It was crazy. Jackie did a kegstand! Et cetera et cetera…”
+Your friend who was grounded and couldn't go:
+
+"It was crazy. Jackie did a kegstand!"
 
 Your mom, who was hesitant to let you go:
 
-“It was fun! Low key. Tommy was there, from soccer! Et cetera et cetera…”
+"It was fun! Low key. Jackie was there--from soccer!"
 
-Neither of these stories are false—but they’re narratives that are designed to best appeal to their target audience. Effective science communication does the same thing: it organizes its narrative around the ideas that best appeal to specific groups.
+Neither of these stories are _false_--but they're narratives that are designed to best appeal to their target audience. **Effective science communication does the same thing: it organizes its narrative around the ideas that best appeal to specific groups.** Figuring out which story best appeals to specific audiences is the key to mastering effective science communication.
 
-Figuring out which story best appeals to specific audiences is the key to mastering effective science communication.
+From Northeastern's [Tips for Effective SciComm](https://graduate.northeastern.edu/knowledge-hub/tips-for-effective-science-communication/):
 
-from…[Northeastern's Tips for Effective SciComm](https://graduate.northeastern.edu/knowledge-hub/tips-for-effective-science-communication/)
+:::{.panel-tabset}
+### General Public
 
-> ***The general public** (caution: who the heck is the general public?) wants to know how your research impacts their lives and their societies. This communication could take the form of a formal presentation, or it could be a casual conversation with friends and neighbors.*
->
-> ***The media** wants to know what makes the findings of your research important, including how it’s different from what others have done.\
-> *
->
-> ***Potential investors** want to know whether your work will provide them with a significant return.\
-> *
->
-> ***Peers** will be interested in determining whether your work may provide an opportunity for future collaboration, or how it ties into their own work.\
-> *
->
-> ***Leadership at your company** \[lab\] need to know if a project has achieved the expected results and should progress to the next phase, or if changes are needed.*
+Caution: who the heck is the "general public?". Wants to know how your research impacts their lives and their societies. This communication could take the form of a formal presentation, or it could be a casual conversation with friends and neighbors.
 
-Each of these audiences is looking for something different—they have different motivations and needs. You first need to understand what they're looking for. Then, you can identify which stories will best address those needs.
+### Media
+
+Wants to know what makes the findings of your research important, including how it's different from what others have done
+
+### Potential Investors
+
+Want to know whether your work will provide them with a significant return
+
+### Peers
+
+Will be interested in determining whether your work may provide an opportunity for future collaboration, or how it ties into their own work
+
+### Leadership at Your Institution
+
+Need to know if a project has achieved the expected results and should progress to the next phase, or if changes are needed
+
+:::
+
+Each of these audiences is looking for something different--they have different motivations and needs. You first need to understand what they're looking for. Then, you can identify which stories will best address those needs.
 
 Here are some things that differ between audiences:
 
 -   **Knowledge** of the issue
-
 -   **How** that issue affects them
-
 -   **Values** they hold
-
 -   **What captures** their attention
 
 The first step is to try and understand the audience you're writing for.
 
-A funder familiar with the work won't need you to tell them that climate change is a serious problem, but an eighth grader might! Or, if you're posting a video on YouTube, you need to hook that audience in—finding something that's interesting is paramount. That's not *as* essential in a poster session or thesis defense!
+A funder familiar with the work won't need you to tell them that climate change is a serious problem, but an eighth grader might! Or, if you're posting a video on YouTube, you need to hook that audience in--finding something that's interesting is paramount. That's not *as* essential in a poster session or thesis defense!
 
 Remember our elevator pitch? Thinking about audience should be second, after you identify your core story.
 
-*Note: The general public is not an audience! The public is not very general. Every subgroup has different motivations*
+*Note: "The general public" is not an audience! The public is not very general. Every subgroup has different motivations*
 
-Let’s try to adapt our elevator pitch to two different audiences:
+Let's try to adapt our example elevator pitch to two different audiences:
 
 ::: panel-tabset
-#### Original text
+#### Original Text
 
 Spruce trees evolved to burn, AND as a result, wildfire is an important part of the boreal forest ecosystem. BUT, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the boreal forest. THEREFORE, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing towns with spaces to farm or recreate.
 
-#### A friend over dinner
+#### A Friend at Dinner
 
-A lot of people in Alaska are threatened by fire every summer, and instead of trying to put out every fire, they instead focus on stopping fires before they get to towns. They usually cut strips out of the forest around towns, but that’s kind of ugly and bad for the ecosystem. So instead, people are trying to figure out what they can do in those clear cuts! Some projects are growing berries, others put in aircraft landing strips or parks. Basically, if they’re going to cut those trees down anyways, it’s better to have some sort of useful space, rather than just empty land.
+A lot of people in Alaska are threatened by fire every summer, and instead of trying to put out every fire, they instead focus on stopping fires before they get to towns. They usually cut strips out of the forest around towns, but that's kind of ugly and bad for the ecosystem. So instead, people are trying to figure out what they can do in those clear cuts! Some projects are growing berries, others put in aircraft landing strips or parks. Basically, if they're going to cut those trees down anyways, it's better to have some sort of useful space, rather than just empty land.
 
-#### A funder for fire mitigation:
+#### A Funder for Fire Mitigation
 
-Fuel breaks are necessary for mitigating fire risk to local communities in Alaska. But fuel breaks are disruptive to the ecosystem, ugly to look at, and provide little to no value to local communities outside of mitigating fire risk. This project reimagines fuel breaks to maximize benefits to local communities by providing space for parks, food production, or industry while maintaining their effectiveness as a fire mitigation strategy.
+Fuel breaks are necessary for mitigating fire risk to local communities in Alaska. But fuel breaks are disruptive to the ecosystem, ugly to look at, and provide little to no value to local communities outside of mitigating fire risk. This project re-imagines fuel breaks to maximize benefits to local communities by providing space for parks, food production, or industry while maintaining their effectiveness as a fire mitigation strategy.
 :::
 
-> **Now you try!**
->
-> **Reimagine your elevator pitch to a different audiences**: (8 minutes)
->
-> -   Friend
->
-> -   Another ecology colleague, but they study something pretty different
->
-> -   Funder
->
-> -   A reporter asking for a short summary for a radio story
->
-> -   8th grade students visiting your site
->
-> -   Another audience of your choosing
->
-> **Share out in groups**… Is the “hook” appropriate for each audience? Is the detail or technical language appropriate for that audience?
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#3
 
-[Good blog on understanding audience](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.)
+**Part 1 - Revize**
 
-[The message box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html)—This is an oft reference tool for adapting scicomm to different audiences. I will warn that I find it unnecessarily confusing, and it's nonlinearity sometimes tangles one's ability to tell stories. But it's here for your reference, because you *will* see it come up when researching scicomm.
+- Re-imagine your elevator pitch to the following different audiences:
+    - Friend
+    - Colleague in a different subfield of your field
+    - Funder
+    - Reporter asking for a short summary for a radio story
+    - 8th grade students visiting your site
+    - Another audience (of your choosing!)
 
-[Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences)—a good take on audience.
+**Part 2 - Share**
 
-## Jargon (30 minutes)
+- Share out and critique in groups
+- Things to look out for as a listener:
+    - Is the "hook" appropriate for each audience?
+    - Is the detail or technical language appropriate for that audience?
 
-What is jargon? “Special words or expressions that are used by a particular profession or group and are difficult for others to understand,” as per the dictionary.
+:::
 
-That's not very useful. Let's illustrate this better...
+- [Good blog on understanding audience](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.)
+- [The message box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html)--This is an oft reference tool for adapting scicomm to different audiences. I will warn that I find it unnecessarily confusing, and it's nonlinearity sometimes tangles one's ability to tell stories. But it's here for your reference, because you *will* see it come up when researching scicomm.
+- [Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences)--a good take on audience.
+
+## Jargon
+
+What is jargon? "Special words or expressions that are used by a particular profession or group and are difficult for others to understand," as per the dictionary.
+
+That's not very useful. Let's illustrate this better with an example:
 
 <details>
-
 <summary>Click me!</summary>
-
-![](https://imgs.xkcd.com/comics/up_goer_five_2x.png)
-
+<img src="https://imgs.xkcd.com/comics/up_goer_five_2x.png" alt="Cartoon of a rocketship with labels that only use the one thousand most common English words" width="100%"/>
 </details>
 
-This is a rocket, that's described ONLY by the thousand (ten hundred) most common words in English. Kind of a mess, huh!
+This is a rocket, that's described _only_ by the thousand (ten hundred) most common words in English. Kind of a mess, huh!
 
-> **You try it!**
->
-> Describe your research using the [UpGooer5 text editor](https://splasho.com/upgoer5/) https://splasho.com/upgoer5/
+:::{.callout-note icon="false"}
+#### Activity: UpGoer5
+
+- Describe your research using the [UpGooer5 text editor](https://splasho.com/upgoer5/)
+- Share your draft once you have one!
+
+:::
 
 Remember our elevator pitch for scientific data?
 
 ::: panel-tabset
-#### Original versionp
+#### Original Version
 
-Scientific data needs units—meters per second, grams, et cetera—to have any real meaning, AND researchers might write those units in any number of different ways, even though they refer to the same thing \[meters per second might be written m/s, or m-s, or m per s\]. BUT computers read those different annotations as unique, preventing easy analysis across different datasets. THEREFORE, an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
+Scientific data needs units--meters per second, grams, etc.--to have any real meaning, AND researchers might write those units in any number of different ways, even though they refer to the same thing \["meters per second" might be written "m/s", or "m-s", or "m per s"\]. BUT computers read those different annotations as unique, preventing easy analysis across different datasets. THEREFORE, an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
 
-#### upgooer5 version
+#### UpGoer5 Version
 
 Numbers only mean something if they have a word at the end that tells us what they mean. But people that study how the world works write what they mean in different ways. Computers read those things they write to mean something wrong. So people that try and make life easier for the people that study the world came up with a way to make those the way people write what they mean the same. That way, the people that study the world can work together, using computers, and everyone understands.
 :::
 
-Whew! Looks like we needed some....jargon to make this a bit better!
+Whew! Looks like we needed some...jargon to make this a bit better!
 
-### We all need need jargon
+### We All Need Jargon
 
-jargon IS useful—terms that refer to highly specific things streamline our ability to communicate. Too little jargon is also a problem!
+Jargon _is_ useful! Terms that refer to highly specific things streamline our ability to communicate. Too little jargon is also a problem!
 
-Jargon is a shared language used by an “in-group.” Some of that jargon is shared by a large in-group—maybe environmentally minded people. But for scientific jargon? Most people are not part of that group! That’s important for communicating science—you need to use terms that the audience understands. Remember, each audience might understand different terms!
+Jargon is a shared language used by an "in-group." Some of that jargon is shared by a large in-group--maybe environmentally-minded people. But for scientific jargon? Most people are not part of that group! That's important for communicating science--you need to use terms that the audience understands. Remember, each audience might understand different terms!
 
-But Russel Hirst, who has a [great lesson on jargon](https://www.russelhirst.com/home/lesson-four/), has a very important consideration:
+But Russel Hirst, who has a [great lesson on jargon](https://www.russelhirst.com/home/lesson-four/), captured this important consideration nicely:
 
-> Remember, though: when you are reducing jargon, you must not damage accuracy. For example, if you were to substitute “burnable” for “flammable,” you could be doing readers a great disservice; “flammable” has a specific meaning. A flammable substance (such as gasoline) is not merely burnable; it is very easily ignited, will ignite if a flame or spark merely touches its fumes, and it burns with great intensity. - Russel Hirst
+> Remember, though: when you are reducing jargon, you must not damage accuracy. For example, if you were to substitute "burnable" for "flammable," you could be doing readers a great disservice; "flammable" has a specific meaning. A flammable substance (such as gasoline) is not merely burnable; it is very easily ignited, will ignite if a flame or spark merely touches its fumes, and it burns with great intensity. - Russel Hirst
 
-#### But jargon is a double edged sword
+#### But Jargon is a Double-Edged Sword
 
-So…use jargon but don’t use it wrong?
+So...use jargon but don't use it wrong? Yep!
 
-Yes....
+You're going to have to use jargon. You might find that you have to use jargon that nobody but you and your labmates will understand. When this happens, _it is critical that you define those terms!_ Explain what you mean early, and continue to remind the audience what you mean throughout your talk/video/casual chat.
 
-You're going to have to use jargon. You might find that you have to use jargon that nobody but you and your labmates will understand. When this happens, DEFINE DEFINE DEFINE! Explain what you mean up front, and continue to remind the audience what you mean throughout your talk/video/casual chat.
-
-But we don't want clunky writing!
-
-[One great blog](https://www.metastellar.com/nonfiction/writing-advice-of-the-week/3-tips-for-tight-writing/) post makes a key distinction between jargon and another type of unapproachable writing: sentence fat.
+But we don't want clunky writing! [One great blog](https://www.metastellar.com/nonfiction/writing-advice-of-the-week/3-tips-for-tight-writing/) post makes a key distinction between jargon and another type of unapproachable writing: "sentence fat".
 
 Sentence fat is unnecessarily clunky words and phrases that make it unreasonably hard to understand. When we remove these clunky phrases, our writing gets much more streamlined and easier to understand.
 
@@ -324,11 +349,8 @@ Let's take a look at some good examples.
 We calculated the volume of water in the adjoining ocean to assist local homeowners with maritime ecosystems as neighbors
 
 <details>
-
-<summary>Click me!</summary>
-
+<summary>Trimmed Version</summary>
 **We studied sea level to protect coastal communities.**
-
 </details>
 
 #### Example 2
@@ -336,11 +358,8 @@ We calculated the volume of water in the adjoining ocean to assist local homeown
 We present materials, mechanics, and integration schemes that afford scalable pathways to working arthropod-inspired cameras with nearly full hemispherical shapes.
 
 <details>
-
-<summary>Click me!</summary>
-
+<summary>Trimmed Version</summary>
 **New, high-tech digital cameras mimic bug eyes.**
-
 </details>
 
 #### Example 3
@@ -348,11 +367,8 @@ We present materials, mechanics, and integration schemes that afford scalable pa
 This system works because of AI integration through motion scaling and tremor reduction.
 
 <details>
-
-<summary>Click me!</summary>
-
-**This system works because of programming that makes the robot’s movements more precise and less shaky.**
-
+<summary>Trimmed Version</summary>
+**This system works because of programming that makes the robot's movements more precise and less shaky.**
 </details>
 
 #### Example 4
@@ -360,25 +376,25 @@ This system works because of AI integration through motion scaling and tremor re
 Translate communication into various formats based on efficacy with target group
 
 <details>
-
-<summary>Click me!</summary>
-
+<summary>Trimmed Version</summary>
 **Adapt communication to fit different audiences**
-
 </details>
 :::
 
-> **Activity!**
->
-> Revisit your elevator pitch. Is there anywhere you can streamline or clarify your language? (3 minutes)
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#4
 
-[\[Explainer\] Why do we use jargon when talking about science?](https://india.mongabay.com/2023/06/explainer-why-do-we-use-jargon-when-talking-about-science/) - MongaBay
+- Revisit your elevator pitch
+- Is there anywhere you can streamline or clarify your language? 
 
-[How to explain a science idea clearly \| ‘Talking Science’ Course #6](https://www.youtube.com/watch?v=u9cqwQQqHoU&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=9) A really amazing video that goes far more in depth
+:::
 
-## Where do I communicate? 
+- [\[Explainer\] Why do we use jargon when talking about science?](https://india.mongabay.com/2023/06/explainer-why-do-we-use-jargon-when-talking-about-science/) - MongaBay
+- [How to explain a science idea clearly \| ‘Talking Science' Course #6](https://www.youtube.com/watch?v=u9cqwQQqHoU&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=9) A really amazing video that goes far more in depth
 
-Bluesky, Instagram, LinkedIn, Facebook, the university newspaper, [lternet.edu](lternet.edu), et cetera—where does this stuff go?
+## Where Do I Communicate?
+
+Bluesky, Instagram, LinkedIn, Facebook, the university newspaper, [lternet.edu](lternet.edu), etc.--where does this stuff go?
 
 First question: where do I already exist?
 
@@ -386,71 +402,54 @@ It's easiest to share out with your own communities that you've built from the g
 
 Bluesky, Instagram, LinkedIn, Facebook, etc all offer low barriers to entry. Or, see if your site has a newsletter. I'm sure they'd love a story. Or, talk to your university (or research station!) press offices!
 
-> **Homework!**
->
-> Post about your synthesis project! Make sure to tag us so we can amplify it!
+:::{.callout-note icon="false"}
+#### Activity: Social Media Homework!
 
-Bluesky: [uslter.bsky.social](https://bsky.app/profile/uslter.bsky.social)\
-Instagram: [uslter](https://www.instagram.com/lter_community/)\
-YouTube: [uslter](https://www.youtube.com/channel/UCsyi2-kL_cTcm6FOnek-bRA)\
-LinkedIn: [lter-network](https://www.linkedin.com/company/lter-network/)
+- Post about your synthesis project!
+    - Make sure to tag us so we can amplify it!
 
-You are not alone! Social media is….social. When you post, make sure to tag other people and institutions that can get the word out. Write a piece for your university? Post about it!
+- LTER Social Accounts:
+    - {{< fa brands instagram >}} (Instagram) -- [uslter](https://www.instagram.com/lter_community/)
+    - Bluesky -- [uslter.bsky.social](https://bsky.app/profile/uslter.bsky.social)
+    - {{< fa brands youtube >}} (YouTube) -- [uslter](https://www.youtube.com/channel/UCsyi2-kL_cTcm6FOnek-bRA)
+    - {{< fa brands linkedin >}} (LinkedIn) -- [lter-network](https://www.linkedin.com/company/lter-network/)
 
-It’s always a good idea to acknowledge the LTER and NSF and other institutions in the work, anyways.
+:::
 
-## Additional Resources
+You are not alone! Social media is...social. When you post, make sure to tag other people and institutions that can get the word out. Write a piece for your university? Post about it! It's always a good idea to acknowledge the LTER and NSF and other institutions in the work, anyways.
 
-### Communicating about your research...before it's published
+## Communicating About Your Research...Before It's Published
 
-First of all, you all do this—talking to your advisor, a friend, etc. Here are some tips that might be useful when thinking about getting this out publicly.
+First of all, you all do this--talking to your advisor, a friend, etc. Here are some tips that might be useful when thinking about getting this out publicly. [**Why is it difficult to talk about early-stage research**](https://richardberks.co.uk/blog/how-to-talk-about-the-impact-of-basic-research/)? Many of you have research that isn't yet complete. But you can (and should!) be encouraged to share it share it!
 
-[**Why is it difficult to talk about early-stage research?**](https://richardberks.co.uk/blog/how-to-talk-about-the-impact-of-basic-research/) — Many of you have research that isn't yet complete. But you can (and should!) be encouraged to share it share it!
+### Connecting With Your Press Office:
 
-### How to connect with your press office:
+Tips from Harrison Tassoff, science writer for the UCSB Current.
 
-Tips from Harrison Tassoff, science writer for the UCSB Current
+- If you don't tell us about it, we don't know about it
+- We want to share your work, and we want to get it right
+- Don't know whom to contact? Email someone that looks right. We can always direct you to the right person
+- Not every paper/grant/award is news. But, if in doubt, email us
+- Journalists can't let you see a rough draft. Public Information Officers (those that work for the University, etc) generally will
+- When you first contact a writer, please give us:
+    - A brief description of the research, what you found and why it matters (\~1-2 paragraphs)
+    - The most recent version of the manuscript
+    - The journal name
+    - The embargo date and time (best guess is fine)
+    - What other institutions are involved and if they're issuing a release
 
-> Connecting with your press office:
->
-> -   If you don’t tell us about it, we don’t know about it.
->
-> -   We want to share your work, and we want to get it right.
->
-> -   Don’t know whom to contact? Email someone that looks right. We can always direct you to the right person.
->
-> -   Not every paper/grant/award is news. But, if in doubt, email us.
->
-> -   Journalists can’t let you see a rough draft. Public Information Officers (those that work for the University, etc) generally will.
->
-> When you first contact a writer, please give us:
->
-> -   A brief description of the research, what you found and why it matters (\~1-2 paragraphs)
->
-> -   The most recent version of the manuscript
->
-> -   The journal name
->
-> -   The embargo date and time (best guess is fine)
->
-> -   What other institutions are involved and if they’re issuing a release
+### Uh Oh, I Have an Interview With the Media
 
-### Uh oh, I have an interview with the media
+- [Five tips for scientists speaking to reporters](https://www.sciline.org/advice/5-tips-speaking-reporters/). AAAS SciLine
+- [Science Communicators: How to Practice for a Media Interview](https://www.agu.org/share-and-advocate/share/news-media/rehearse). AAAS
+- [A Scientist's Guide to Working with the Media](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf). American Geophysical Union
 
-[Five tips for scientists speaking to reporters](https://www.sciline.org/advice/5-tips-speaking-reporters/) - AAAS SciLine
+### Visual Storytelling
 
-[SCIENCE COMMUNICATORS: HOW TO PRACTICE FOR A MEDIA INTERVIEW](https://www.agu.org/share-and-advocate/share/news-media/rehearse) - AAAS
+- [Kelso Harper, LTER Visual Media Series](https://www.youtube.com/watch?v=eSIRSUene1M). **2024**.
+- [Science Graphics with Jen Christiansen, LTER Visual Media Series](https://www.youtube.com/watch?v=yWxlTYUcWNo). **2024**.
+- [Jasiek Krzysztofiak, LTER Visual Media Series](https://www.youtube.com/watch?v=FyQtGB4JFEw). **2024**.
 
-[A Scientist’s Guide to Working with the Media](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf) - AGU
-
-### Visual storytelling
-
-[**Kelso Harper \| LTER Visual Media Series \| April 19, 2024**](https://www.youtube.com/watch?v=eSIRSUene1M)
-
-[**Science Graphics with Jen Christiansen \| LTER Visual Media Series \| October 6, 2024**](https://www.youtube.com/watch?v=yWxlTYUcWNo)
-
-[**Jasiek Krzysztofiak \| LTER Visual Media Series \| February 9, 2024**](https://www.youtube.com/watch?v=FyQtGB4JFEw)
-
-### Workshops & Courses
+## Other Resources
 
 -   NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Communicating Your Science](https://learning.nceas.ucsb.edu/2023-10-delta/session_02.html). **2023**.
