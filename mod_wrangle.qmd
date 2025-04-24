@@ -63,7 +63,7 @@ With your project groups discuss the following questions:
 -   Once you have harmonized your data, what wrangling needs to be done?
     -   Do you need to calculate index metrics? Change the 'shape' of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?
 -   How can you make your workflow less repetitive / more efficient?
-    -   Reducing redundancy makes integrating new ideas dramatially easier
+    -   Reducing redundancy makes integrating new ideas _dramatically_ easier
 -   How easy will it be to maintain or revisit this code workflow?
 -   How can you change the workflow now to make life easier for 'future you'?
 :::
@@ -167,7 +167,7 @@ In synthesis work, QA is only very rarely an option. You'll be working with data
 
 The datasets you gather for your synthesis project will likely have a multitude of issues you'll need to resolve before the data are ready for visualization or analysis. Some of these issues may be clearly identified in that datasets' metadata or apply to all datasets but it is good practice to make a thorough QC effort as early as is feasible. Keep the following data issues and/or checks in mind as we cover code tools that may be useful in this context later in the module.
 
--   Verify taxonomic classificiations against authorities
+-   Verify taxonomic classifications against authorities
     -   [ITIS](https://www.itis.gov/), [GBIF](https://www.gbif.org/), and [WoRMS](https://www.marinespecies.org/) are all examples of taxonomic authorities
     -   Note that many of these authorities have R or Python libraries that can make this verification step scripted rather than dependent on manual searches
 -   Handle missing data
@@ -443,7 +443,7 @@ While we absolutely *could* have used the same function to break apart count and
 
 ### Loops
 
-Another way of simplfying repetitive operations is to use a "for loop" (often called simply "loops"). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an "index" object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object's identity will be determined by whatever set of values you define at the top of the loop.
+Another way of simplifying repetitive operations is to use a "for loop" (often called simply "loops"). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an "index" object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object's identity will be determined by whatever set of values you define at the top of the loop.
 
 Here's a very bare bones example to demonstrate the fundamentals.
 
