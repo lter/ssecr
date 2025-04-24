@@ -11,7 +11,11 @@ This page is meant to make it simpler to copy/paste certain page elements among 
 In a script, attempt the following:
 
 - X
-    - _Hint:_ hint text!
+
+<details>
+<summary>Hint</summary>
+Hint text
+</details>
 
 :::
 
