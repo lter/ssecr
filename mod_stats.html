@@ -442,7 +442,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Ingrid Slette, Postdoctoral Researcher at the University Minnesota Coordinator of <a href="https://nutnet.org/">NutNet</a> and <a href="https://dragnetglobal.weebly.com/">DRAGNet</a> coordinated, distributed experiments.</p>
-<p>Ingid synthesizes data in order to understand the impacts of intersecting global changes. Her PhD research focused on how previous climate extremes alter the impacts of extreme drought on root traits and patterns of aboveground vs.&nbsp;belowground plant production and carbon cycling in grasslands. Name pronunciation: ing-rid sleh-tuh. Pronouns: she/her</p>
+<p>Ingrid synthesizes data in order to understand the impacts of intersecting global changes. Her PhD research focused on how previous climate extremes alter the impacts of extreme drought on root traits and patterns of aboveground vs.&nbsp;belowground plant production and carbon cycling in grasslands. Name pronunciation: [ing-rid sleh-tuh]. Pronouns: she/her</p>
 </div>
 </div>
 </div>
@@ -491,7 +491,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>For the purposes of SSECR, <strong>our discussion of frequentist inference will focus on</strong> <u>mixed-effect models</u>.</p>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>Hyoptheses here are a question of <u>which variables explain the <em>most</em> variation in the data</u>. Methods in this framing are unconcerned–or at least less concerned than in frequentist inference–with the probability associated with a particular variable. Intead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data <em>even when that best model does not necessarily explain much of that variation in absolute terms</em>.</p>
+<p>Hypotheses here are a question of <u>which variables explain the <em>most</em> variation in the data</u>. Methods in this framing are unconcerned–or at least less concerned than in frequentist inference–with the probability associated with a particular variable. Instead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data <em>even when that best model does not necessarily explain much of that variation in absolute terms</em>.</p>
 <p>If your hypothesis can be summarized as something along the lines of ‘we hypothesize that models including X explain more of the variation in Y than those that do not’ then multi-model inference may be a more appropriate methodology.</p>
 <p>For the purposes of SSECR, <strong>our discussion of multi-model inference will focus on</strong> <u>comparing model strengths with AIC</u>.</p>
 </div>
@@ -523,8 +523,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 <section id="nested-random-effects" class="level3">
 <h3 class="anchored" data-anchor-id="nested-random-effects">Nested Random Effects</h3>
-<p>To further complicate matters, we can use nested random effects as well. These can be either random intercepts or random slopes though they are more commonly seen with random intercepts. A nested random effect accounts for the effect of one random variable that <em>is itself affected by another variable!</em> A classic example of this is when a study design uses two (or more) levels of spatial nestedness in their experimentall design.</p>
-<p>For instance, let’s imagine we were conducting a global study of marine plankton biodiversity. To gether these data we took several cruises (scientific not–exclusively–pleasure) at different places around the world and during each cruise we followed a set of transects. In each transect we did several plankton tows and quantified the diversity of each tow. We can reasonably assume the following:</p>
+<p>To further complicate matters, we can use nested random effects as well. These can be either random intercepts or random slopes though they are more commonly seen with random intercepts. A nested random effect accounts for the effect of one random variable that <em>is itself affected by another variable!</em> A classic example of this is when a study design uses two (or more) levels of spatial nestedness in their experimental design.</p>
+<p>For instance, let’s imagine we were conducting a global study of marine plankton biodiversity. To gather these data we took several cruises (scientific not–exclusively–pleasure) at different places around the world and during each cruise we followed a set of transects. In each transect we did several plankton tows and quantified the diversity of each tow. We can reasonably assume the following:</p>
 <ol type="1">
 <li>Each cruise differs from each other cruise (due to any number of climatic/ecological factors)
 <ul>
@@ -582,7 +582,7 @@ Discussion: Random versus Fixed Effects
 </section>
 <section id="mixed-effects-case-study" class="level3">
 <h3 class="anchored" data-anchor-id="mixed-effects-case-study">Mixed-Effects Case Study</h3>
-<p>Let’s imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas will be greater in sites further from the nearest road. We select ten study sites of varying distances from the nearest road and intensively count our furry friends at three plots within each site for several months. We return to our sites–and their associated plots–and repeat this process each year for three years. In the second year we have help from a new member of our lab but in the third year we’re back to working alone (they had their own project to handle by then). We enter our data and perform careful quality control to get it into a tidy format ready for analyis.</p>
+<p>Let’s imagine we are researching tarantula populations for several years in the Chihuahuan Desert. Our hypothesis is that the number of tarantulas will be greater in sites further from the nearest road. We select ten study sites of varying distances from the nearest road and intensively count our furry friends at three plots within each site for several months. We return to our sites–and their associated plots–and repeat this process each year for three years. In the second year we have help from a new member of our lab but in the third year we’re back to working alone (they had their own project to handle by then). We enter our data and perform careful quality control to get it into a tidy format ready for analysis.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in data</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tarantula_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"tarantulas.csv"</span>))</span>
@@ -592,14 +592,14 @@ Discussion: Random versus Fixed Effects
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   450 obs. of  6 variables:
  $ year           : int  2022 2022 2022 2022 2022 2022 2022 2022 2022 2022 ...
- $ road.dist_km   : num  41.4 41.4 41.4 41.4 41.4 ...
+ $ road.dist_km   : num  64.5 64.5 64.5 64.5 64.5 ...
  $ site           : chr  "site_A" "site_A" "site_A" "site_A" ...
  $ plot           : chr  "plot_a" "plot_a" "plot_a" "plot_a" ...
  $ site.plot      : chr  "A_a" "A_a" "A_a" "A_a" ...
- $ tarantula_count: int  114 119 128 128 123 28 28 28 23 28 ...</code></pre>
+ $ tarantula_count: int  199 220 213 206 220 128 156 121 121 142 ...</code></pre>
 </div>
 </div>
-<p>With our data in hand, we now want to run some statistical tests and–hopefully–get some endorphine-inducingly small <em>p</em>-values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
+<p>With our data in hand, we now want to run some statistical tests and–hopefully–get some endorphine-inducing-ly small <em>p</em>-values. If we choose to simply ignore our possible random effects, we could fit a linear regression.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>tarantula_lm <span class="ot">&lt;-</span> <span class="fu">lm</span>(tarantula_count <span class="sc">~</span> road.dist_km, <span class="at">data =</span> tarantula_df)</span>
@@ -621,18 +621,18 @@ lm(formula = tarantula_count ~ road.dist_km, data = tarantula_df)
 
 Residuals:
      Min       1Q   Median       3Q      Max 
--210.626  -76.460    2.734   56.608  300.374 
+-216.916  -77.487    8.486   59.913  316.084 
 
 Coefficients:
              Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)   0.04412   12.19538   0.004    0.997    
-road.dist_km  2.72198    0.22818  11.929   &lt;2e-16 ***
+(Intercept)   -3.3935    14.8929  -0.228     0.82    
+road.dist_km   2.8140     0.2775  10.141   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 100.3 on 448 degrees of freedom
-Multiple R-squared:  0.2411,    Adjusted R-squared:  0.2394 
-F-statistic: 142.3 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
+Residual standard error: 100.2 on 448 degrees of freedom
+Multiple R-squared:  0.1867,    Adjusted R-squared:  0.1849 
+F-statistic: 102.8 on 1 and 448 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 <p>This naive test seems to support our hypothesis. However, sampling effort differed between the three study years. Not only was there a second person in the second year but we can also reasonably expect that by the third year in this system we had greatly improved our tarantula-finding skills. So, a random effect of year is definitely justified. We are not concerned that the different study years will affect the relationship between tarantula populations and road distance though so a random intercept is fine.</p>
@@ -659,28 +659,28 @@ lmerModLmerTest]
 Formula: tarantula_count ~ road.dist_km + (1 | year)
    Data: tarantula_df
 
-REML criterion at convergence: 5369.7
+REML criterion at convergence: 5362.6
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.5692 -0.7352  0.1277  0.5898  2.7851 
+-2.6578 -0.7941  0.1653  0.6517  2.9451 
 
 Random effects:
  Groups   Name        Variance Std.Dev.
- year     (Intercept) 1763     41.99   
- Residual             8883     94.25   
+ year     (Intercept) 1940     44.04   
+ Residual             8747     93.52   
 Number of obs: 450, groups:  year, 3
 
 Fixed effects:
-              Estimate Std. Error        df t value Pr(&gt;|t|)    
-(Intercept)    0.04412   26.81272   2.80159   0.002    0.999    
-road.dist_km   2.72198    0.21438 446.00000  12.697   &lt;2e-16 ***
+             Estimate Std. Error       df t value Pr(&gt;|t|)    
+(Intercept)   -3.3935    28.9768   3.1783  -0.117    0.914    
+road.dist_km   2.8140     0.2589 446.0000  10.868   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-road.dst_km -0.394</code></pre>
+road.dst_km -0.455</code></pre>
 </div>
 </div>
 <p>By including that random effect we actually get a slightly stronger effect of road distance (T value of ~12 without versus ~13 with). This is because our new random effect accounts for some of the ‘noise’ between study years. That actually gives us a better picture of the relationship between our response and explanatory variables.</p>
@@ -696,7 +696,7 @@ road.dst_km -0.394</code></pre>
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-6" data-code-lines="2" data-code-annotation="1">Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intutive grasp of the distribution metrics described by each bit of a boxplot</span>
+<span data-code-cell="annotated-cell-6" data-code-lines="2" data-code-annotation="1">Violin plots are a nice alternative to boxplots because they allow visualizing data distributions directly rather than requiring an intuitive grasp of the distribution metrics described by each bit of a boxplot</span>
 </dd>
 <dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
 <dd>
@@ -735,29 +735,29 @@ lmerModLmerTest]
 Formula: tarantula_count ~ road.dist_km + (1 | year) + (1 | site.plot)
    Data: tarantula_df
 
-REML criterion at convergence: 4587.3
+REML criterion at convergence: 4553.6
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--3.2573 -0.6293 -0.0265  0.5946  3.1164 
+-3.0902 -0.5352 -0.0117  0.5990  3.9323 
 
 Random effects:
  Groups    Name        Variance Std.Dev.
- site.plot (Intercept) 8218     90.65   
- year      (Intercept) 1814     42.59   
- Residual              1145     33.84   
+ site.plot (Intercept) 8165     90.36   
+ year      (Intercept) 1991     44.62   
+ Residual              1058     32.52   
 Number of obs: 450, groups:  site.plot, 30; year, 3
 
 Fixed effects:
-             Estimate Std. Error       df t value Pr(&gt;|t|)   
-(Intercept)   0.04412   49.42924 19.57403   0.001  0.99930   
-road.dist_km  2.72198    0.80228 27.99583   3.393  0.00208 **
+             Estimate Std. Error     df t value Pr(&gt;|t|)   
+(Intercept)    -3.393     58.233 23.593  -0.058  0.95402   
+road.dist_km    2.814      0.973 28.000   2.892  0.00733 **
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Correlation of Fixed Effects:
             (Intr)
-road.dst_km -0.800</code></pre>
+road.dst_km -0.851</code></pre>
 </div>
 </div>
 <p>This test reveals that while there is a significant relationship between road distance and tarantula population but the effect is not nearly as strong as it was when we let plot-level variation be ignored. This is likely due to high (or low) average populations in a single plot skewing the site-level average. Still, this is a result we can be more confident in because we’ve now accounted for all known sources of variation in our data–either by including them as fixed effects or including them as a random effects.</p>
@@ -789,7 +789,7 @@ road.dst_km -0.800</code></pre>
 <li>X, W, and Z together explain the most variation in Y</li>
 </ol>
 <p>We might also fit other candidate models for pairs of X, W, and Z but for the sake of simplicity in this hypothetical we’ll skip those. Note that for this method to be appropriate <u>you need to fit the same type of model in all cases</u>!</p>
-<p>Once we’ve fit all of our models and assigned them to objects, we can use the <code>AIC</code> function included in base R to compare the AIC score of each model. “AIC” stands for <u>A</u>kaike (<em>AH-kuh-ee-kay</em>) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model’s explanatory power. Models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data.</p>
+<p>Once we’ve fit all of our models and assigned them to objects, we can use the <code>AIC</code> function included in base R to compare the AIC score of each model. “AIC” stands for <u>A</u>kaike ([AH-kuh-ee-kay]) <u>I</u>nformation <u>C</u>riterion and is one of several related information criteria for summarizing a model’s explanatory power. Models with more parameters are penalized to make it mathematically possible for a model with fewer explanatory variables to still do a better job capturing the variation in the data.</p>
 <p>The model with the <em>lowest</em> AIC best explains the data. Technically any difference in AIC indicates model improvement but many scientists use a rule of thumb of a difference of 2. So, if two models have AIC scores that differ by less than 2, you can safely say that they have comparable explanatory power. That is definitely a semi-arbitrary threshold but so is the 0.05 threshold for <em>p</em>-value “significance”.</p>
 <section id="aic-case-study" class="level3">
 <h3 class="anchored" data-anchor-id="aic-case-study">AIC Case Study</h3>
@@ -923,7 +923,7 @@ Effect Size Calculation for Meta Analysis
          Weight:  22.2222</code></pre>
 </div>
 </div>
-<p>Note that Cohen’s <em>d</em> is just one effect size available to you and others may be more appropriate in certain contexts. Just like any other metric, which effect size you choose is a mix of your scientific intution and appropriateness for the content of your data. For a deeper dive into the breadth of effect size considerations available to you, see <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/effects.html#effects">the relevant chapter</a> of the <em>Doing Meta-Analysis in R</em> online book.</p>
+<p>Note that Cohen’s <em>d</em> is just one effect size available to you and others may be more appropriate in certain contexts. Just like any other metric, which effect size you choose is a mix of your scientific intuition and appropriateness for the content of your data. For a deeper dive into the breadth of effect size considerations available to you, see <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/effects.html#effects">the relevant chapter</a> of the <em>Doing Meta-Analysis in R</em> online book.</p>
 <p>After you’ve calculated all relevant effect sizes–using your chosen flavor of effect size–the “actual” meta-analysis is nearly finished. Simply create a graph of the effect sizes with error bars indicating confidence intervals (included by default in most effect size functions). Where the error bars overlap among studies, there is no significant difference between those effect sizes. Conversely, where the error bars <em>do not</em> overlap among studies the effect sizes do significantly differ indicating that the studies results’ differ for the data used to calculate the effect size.</p>
 </section>
 <section id="additional-resources" class="level2">
@@ -931,7 +931,7 @@ Effect Size Calculation for Meta Analysis
 <section id="papers-documents" class="level3">
 <h3 class="anchored" data-anchor-id="papers-documents">Papers &amp; Documents</h3>
 <ul>
-<li>Spake, R. <em>et al.</em> <a href="https://onlinelibrary.wiley.com/doi/10.1111/brv.12939">Understanding ‘It Depends’ in Ecology: A Guide to Hypothesising, Visualising and Interpreting Statistical Interactions</a>. <strong>2023</strong>. <em>Biological Reviews</em></li>
+<li>Spake, R. <em>et al.</em> <a href="https://onlinelibrary.wiley.com/doi/10.1111/brv.12939">Understanding ‘It Depends’ in Ecology: A Guide to Hypothesizing, Visualising and Interpreting Statistical Interactions</a>. <strong>2023</strong>. <em>Biological Reviews</em></li>
 <li>Spake, R. <em>et al.</em> <a href="https://www.nature.com/articles/s41559-022-01891-z">Improving Quantitative Synthesis to Achieve Generality in Ecology</a>. <strong>2022</strong>. <em>Nature Ecology and Evolution</em></li>
 <li>Tredennick, A.T. <em>et al.</em> <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3336">A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology</a>. <strong>2021</strong>. <em>Ecology</em></li>
 <li>Harrier, M. <em>et al.</em> <a href="https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/">Doing Meta-Analysis with R: A Hands-On Guide</a>. <strong>2021</strong>.</li>
