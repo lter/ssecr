@@ -57,7 +57,7 @@ In such cases, the potential for misunderstanding and conflict becomes obvious. 
 
 Of course, it's useful to bear in mind that human psychology also has a role to play in authorship conflicts. It is quite common for individuals to overestimate their own contribution to the work of a team, especially when the outcome is positive. Nelson et al. (2020) examined the phenomenon in the context of scientific publishing and found that authors almost universally over-estimated their own contribution to a project, at least with respect to how their team members perceived it.
 
-![Fig 1. Nelson et al. 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors’ contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 (“Self”), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 (“Self-Corrected”), and mean percent contribution assigned to authors by their coauthors (“Other”). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001.](images/credit-fig-1.jpeg){fig-alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%." fig-align="center"}
+![Fig 1. Nelson et al. 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors' contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 ("Self"), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 ("Self-Corrected"), and mean percent contribution assigned to authors by their coauthors ("Other"). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001.](images/credit-fig-1.jpeg){fig-alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%." fig-align="center"}
 
 At each stage of a project, different factors may work to distort, conceal, or amplify the contributions of some authors or potential authors. Take a few minutes to consider each project stage and how misperceptions might arise.
 
@@ -103,17 +103,17 @@ Take a few minutes to reflect on your own experiences in each of these areas bef
 
 ## Opt-in v. Opt-Out
 
-There are two major ways to approach authorship, whether you're talking about papers, derived data, or software. Opt-in approaches require individuals to be invited to or request involvement in a product and set basic criteria for authorship. Opt-out approaches assume that anyone contributing data, or making contributions to, say, the R repo behind a package, will be credited as an author.
+There are two major ways to approach authorship, whether you're talking about papers, derived data, or software. Opt-in approaches require individuals to be invited to or request involvement in a product and set basic criteria for authorship. Opt-out approaches assume that anyone contributing data, or making contributions to, say, the GitHub repository behind a package, will be credited as an author.
 
 Some collaboration efforts use a hybrid system, where the primary paper issuing from a data assembly effort is expected to use an opt-out model (and therefore includes all the data contributors), while subsequent papers require potential authors to opt-in and participate in developing the analysis and writing the paper.
 
 ::: callout-note
 ## It's OK to opt-out!
 
-Researchers can be reluctant to opt-out of a paper for many reasons. They "should" have time. They need the paper for their CV. Or they are just embarrased to have misjudged their own capacity to contribute. If you find that you can't contribute at a level that warrants authorship, the kindest thing you can do for your co-authors is to opt out.
+Researchers can be reluctant to opt-out of a paper for many reasons. They "should" have time. They need the paper for their CV. Or they are just embarrassed to have misjudged their own capacity to contribute. If you find that you can't contribute at a level that warrants authorship, the kindest thing you can do for your co-authors is to opt out.
 :::
 
-Authorship is also not the only way to recognize contributors. When funding is the only contribution to the research, funders should appear in the acknowledgements section. Other contributions, such as translation, line editing, acquisition of permits, or other logistical support are also appropriate for the acknowledgements section, when the relevant individuals have not also contributed to developing the study and writing the paper. Data providers who have not contributed to study design should be credited by [citing their data](https://edirepository.org/resources/citing-data), in the references using a doi and appropriate bibliographic information.
+Authorship is also not the only way to recognize contributors. When funding is the only contribution to the research, funders should appear in the acknowledgments section. Other contributions, such as translation, line editing, acquisition of permits, or other logistical support are also appropriate for the acknowledgments section, when the relevant individuals have not also contributed to developing the study and writing the paper. Data providers who have not contributed to study design should be credited by [citing their data](https://edirepository.org/resources/citing-data), in the references using a DOI and appropriate bibliographic information.
 
 ## How to Develop and Use an Authorship Policy
 
