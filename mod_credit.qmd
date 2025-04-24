@@ -27,7 +27,7 @@ None required.
 -   [Jaclyn Hatala Matthes](https://matthesecolab.com/people/), Senior Scientist, Harvard Forest. Jackie specializes in land-atmosphere interactions, ecosystem responses to insect and climate disturbance, and scaling water and carbon processes with models. She is a co-PI of the Flux Gradient Synthesis Working Group, which brings together multiple data sources and people to better estimate the methane flux from upland systems at scale.
 :::
 
-## Intellectual Credit Module Content
+## Intellectual Credit Context
 
 In their [Code of Ethics](https://esa.org/about/code-of-ethics/) the Ecological Society of America lays out what seems like straightforward guidance for what contributions warrant authorship on a paper:
 
@@ -57,11 +57,15 @@ In such cases, the potential for misunderstanding and conflict becomes obvious. 
 
 Of course, it's useful to bear in mind that human psychology also has a role to play in authorship conflicts. It is quite common for individuals to overestimate their own contribution to the work of a team, especially when the outcome is positive. Nelson et al. (2020) examined the phenomenon in the context of scientific publishing and found that authors almost universally over-estimated their own contribution to a project, at least with respect to how their team members perceived it.
 
-![Fig 1. Nelson et al. 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors' contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 ("Self"), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 ("Self-Corrected"), and mean percent contribution assigned to authors by their coauthors ("Other"). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001.](images/credit-fig-1.jpeg){fig-alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%." fig-align="center"}
+<p align="center">
+<img src="images/figure_credit-01.jpeg" alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%" width="100%"/>
+<figcaption> Figure taken from Nelson _et al._ 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors' contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 ("Self"), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 ("Self-Corrected"), and mean percent contribution assigned to authors by their coauthors ("Other"). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001. </figcaption>
+</p>
 
 At each stage of a project, different factors may work to distort, conceal, or amplify the contributions of some authors or potential authors. Take a few minutes to consider each project stage and how misperceptions might arise.
 
-## Group Discussion
+:::{.callout-warning icon="false"}
+#### Discussion: Your Experiences with Intellectual Credit
 
 Take a few minutes to reflect on your own experiences in each of these areas before expanding each of the below panels. **In each area, what types of contributions have you noticed get under- or over-valued?**
 
@@ -71,6 +75,7 @@ Take a few minutes to reflect on your own experiences in each of these areas bef
 -   In group discussions, the contributions of asynchronous or virtual participants can easily be discounted, because they seem less immediate.
 -   Similarly, when an idea is first contributed by an early career-stage participant, it can be overlooked until echoed by a senior participant.
 -   Often, a seemingly naive question ignites the process that leads to a new way of seeing the problem. In these cases, the conclusion is often remembered, but the question (and the questioner) rarely is.
+
 :::
 
 ::: {.callout-warning collapse="true" appearance="minimal"}
@@ -78,6 +83,7 @@ Take a few minutes to reflect on your own experiences in each of these areas bef
 
 -   Data that are easily accessed and downloaded can receive less credit than when the synthesis team needs to make direct contact with the original researcher to get access or permission to use. Data should always be cited, even when they are already publicly available.
 -   Significant labor goes into finding, downloading, and cleaning datasets, but it is not glamorous work and often happens in isolation. That does not make it any less essential.
+
 :::
 
 ::: {.callout-note collapse="true" appearance="minimal"}
@@ -85,6 +91,7 @@ Take a few minutes to reflect on your own experiences in each of these areas bef
 
 -   Data analysis is the "meat" of synthesis, but even here there are pitfalls. Consider the originality of the approach and the labor involved when valuing analytical contributions.
 -   While the work of doing the analysis may fall to the more quantitatively skilled team members, key insights at this stage often come from careful review by, and discussion with, field ecologists and savvy communicators. Just because someone didn't write the R code doesn't mean they didn't contribute to analysis.
+
 :::
 
 ::: {.callout-tip collapse="true" appearance="minimal"}
@@ -92,6 +99,7 @@ Take a few minutes to reflect on your own experiences in each of these areas bef
 
 -   Like framing a house, framing the "story" of a paper provides essential structure and stability -- even when covered by the walls and trim (or words and figures) of the built-out product.
 -   Getting the first few paragraphs on the page is a valuable contribution -- even if not a single one of those words makes it to the final draft. Editing and expanding others' work is far easier than writing de novo.
+
 :::
 
 ::: {.callout-important collapse="true" appearance="minimal"}
@@ -99,16 +107,19 @@ Take a few minutes to reflect on your own experiences in each of these areas bef
 
 -   Even when all contributors are fluent writers, the job of merging disparate sections into a single voice is challenging and deserves credit.
 -   Resolving versions, checking references, and formatting are thankless, but essential tasks in getting to a publishable product.
+
 :::
 
-## Opt-in v. Opt-Out
+:::
+
+## Opt-In v. Opt-Out
 
 There are two major ways to approach authorship, whether you're talking about papers, derived data, or software. Opt-in approaches require individuals to be invited to or request involvement in a product and set basic criteria for authorship. Opt-out approaches assume that anyone contributing data, or making contributions to, say, the GitHub repository behind a package, will be credited as an author.
 
 Some collaboration efforts use a hybrid system, where the primary paper issuing from a data assembly effort is expected to use an opt-out model (and therefore includes all the data contributors), while subsequent papers require potential authors to opt-in and participate in developing the analysis and writing the paper.
 
 ::: callout-note
-## It's OK to opt-out!
+### It's OK to Opt-Out!
 
 Researchers can be reluctant to opt-out of a paper for many reasons. They "should" have time. They need the paper for their CV. Or they are just embarrassed to have misjudged their own capacity to contribute. If you find that you can't contribute at a level that warrants authorship, the kindest thing you can do for your co-authors is to opt out.
 :::
@@ -121,9 +132,10 @@ An authorship policy will be most helpful if it if it reflects shared values of 
 
 [Oliver et al. (2018)](https://doi.org/10.1002/ecs2.2206 "Strategies for effective collaborative manuscript development in interdisciplinary science teams") described six principles that they aimed for their authorship process to support:
 
-[![Figure 2.From Oliver at al. Fig. 1. A conceptual diagram that shows the strategies for effective collaborative manuscript (MS) development being firmly embedded within and balancing the guiding principles, and the relative order that the practices occur (numbers). Strategies that are on the same row are strongly related, can occur in any order, and are in fact iterative. All strategies should feed back into the team coauthorship policy for evaluation and reflection about whether the practices are fulfilling the guiding principles.](images/credit-fig-2.jpg){fig-alt="Image summarizing guiding principles and authorship management process." fig-align="center"}](https://doi.org/10.1002/ecs2.2206)
-
-------------------------------------------------------------------------
+<p align="center">
+<img src="images/figure_credit-02.jpg" alt="Image summarizing guiding principles and authorship management process" width="100%"/>
+<figcaption>Figure taken from Oliver _et al._ 2018 A conceptual diagram that shows the strategies for effective collaborative manuscript (MS) development being firmly embedded within and balancing the guiding principles, and the relative order that the practices occur (numbers). Strategies that are on the same row are strongly related, can occur in any order, and are in fact iterative. All strategies should feed back into the team coauthorship policy for evaluation and reflection about whether the practices are fulfilling the guiding principles</figcaption>
+</p>
 
 Their approach considers the entire life of a project and aims to balance efficiency, creativity, and inclusion – which can seem to be in conflict. It would, for example, be very inefficient to solicit many authors for a student's dissertation paper, which is likely to only involve a small number of authors in the end.
 
@@ -153,57 +165,52 @@ Community science and knowledge co-production with non-academics, particularly I
 
 Another emerging issue in intellectual credit is how to deal with the growing role of AI in research and publishing. Understanding how AI has been used in a research effort is critical to evaluating the reliability of results. Providing figures and asking AI to write a paper yields a very different result than providing bullet points along with the figures, or asking AI to clean up your first draft. In addition, almost every AI system currently available provides results by drawing on millions of public data sources, without any thought of crediting the originators. Journal publishers are starting to [provide guidance](https://doi.org/10.1002/leap.1582) about how to acknowledge researchers' use of AI.
 
-## Breakout Groups
+
+:::{.callout-warning icon="false"}
+#### Discussion: Examine Existing Authorship Policies
 
 Next, we'll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 10 minutes to scan the assigned authorship policy and another 15 minutes to discuss it's implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.
 
 1.  [Nutrient Network Authorship Policy](https://nutnet.org/authorship)
+2.  [Expanded Authorship Guidelines](https://doi.org/10.1002/2688-8319.12060) (Cooke _et al._ 2021)
+3.  [CReDiT Framework](https://doi.org/10.1087/20150211) (Brand _et al._ 2015)
 
-2.  [Expanded Authorship Guidelines](https://doi.org/10.1002/2688-8319.12060) (Cooke et al. 2021)
+:::
 
-3.  [CReDiT Framework](https://doi.org/10.1087/20150211) (Brand et al. 2015)
+**We contend that there is no single "right" authorship policy. _But_ each policy we've covered has advantages in certain situations.** What matters most is that the research team discusses their approach and records it in an accessible location where it can be revisited and updated as needed.
 
-## Group discussion
-
-We contend that there is no one "right" authorship policy. But each policy we've covered has advantages in certain situations. What matters most is that the research team discusses their approach and records it in an accessible location where it can be revisited and updated as needed.
-
-## Project Team Time
+:::{.callout-note icon="false"}
+#### Activity: Develop Your Own Authorship Policy
 
 Gather in your project teams and begin to build out your own authorship approach, if you have not already. A few key questions to get you started follow:
 
--   How will you let participants know about papers and products?
+- How will you let participants know about papers and products?
+- Beyond your core group, have others been involved in ways that might warrant authorship?
+    - How will they learn about upcoming products.
+- Do you want to operate on an opt-in or an opt-out basis?
+- What kinds of products do you expect to produce?
+- What kinds of contributions do you think are most important?
+- What is the minimum requirement for being a paper author? A dataset author? A package creator?
 
--   Beyond your core group, have others been involved in ways that might warrant authorship? How will they learn about upcoming products.
-
--   Do you want to operate on an opt-in or an opt-out basis?
-
--   What kinds of products do you expect to produce?
-
--   What kinds of contributions do you think are most important?
-
--   What is the minimum requirement for being a paper author? A dataset author? A package creator?
+:::
 
 ## Additional Resources
 
 ### Papers & Documents
 
--   Allen, L. *et al.*, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. *Learned Publishing*
--   Brand, et al. [Beyond authorship: Attribution, contribution, collaboration, and credit](https://doi.org/10.1087/20150211). **2015.** *Learned Publishing*, *28*(2), 151–155.
--   Dahlin, K.M. *et al.*, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. *Frontiers in Ecology and the Environment*
--   Jennings, L., Jones, K., Taitingfong, R. *et al.* [Governance of Indigenous data in open earth systems science](https://doi.org/10.1038/s41467-024-53480-2). *Nat Commun* **16**, 572 (2025).
--   Lund, B.D. and Naheem, K.T. (2024), [Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals](https://doi.org/10.1002/leap.1582). Learned Publishing, 37: 13-21.
--   Nelson, P.R. et al. [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. PNAS.
--   Puebla, I. *et al.* [Ten simple rules for recognizing data and software contributions in hiring, promotion, and tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. *PLoS Computational Biology*
--   Wilkinson, M., Dumontier, M., Aalbersberg, I. *et al.* [The FAIR Guiding Principles for scientific data management and stewardship](https://doi.org/10.1038/sdata.2016.18). *Sci Data* **3**, 160018 (2016).
+- Jennings, L. _et al._ [Governance of Indigenous data in open earth systems science](https://doi.org/10.1038/s41467-024-53480-2). **2025**. _Nature Communications_
+- Lund, B.D. & Naheem, K.T. [Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals](https://doi.org/10.1002/leap.1582). **2024**. _Learned Publishing_
+- Puebla, I. _et al._ [Ten Simple Rules for Recognizing Data and Software Contributions in Hiring, Promotion, and Tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. _PLoS Computational Biology_
+- Nelson, P.R. _et al._ [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. _PNAS_
+- Dahlin, K.M. _et al._, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. _Frontiers in Ecology and the Environment_
+- Allen, L. _et al._, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. _Learned Publishing_
+- Wilkinson, M. _et al._ [The FAIR Guiding Principles for Scientific Data Management and Stewardship](https://doi.org/10.1038/sdata.2016.18). **2016**. _Scientific Data_
+- Brand, A. _et al._ [Beyond Authorship: Attribution, Contribution, Collaboration, and Credit](https://doi.org/10.1087/20150211). **2015**. _Learned Publishing_
 
 ### Websites
 
--   Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at #22.
-
--   American Geophysical Union [Publications and Ethics Policies](https://www.agu.org/publications/authors/policies#ethical-obligations).
-
--   Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html)
-
--   Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
-
--   Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
+- Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at \#22.
+- American Geophysical Union [Publications and Ethics Policies](https://www.agu.org/publications/authors/policies#ethical-obligations).
+- Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html)
+- Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
+- Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
