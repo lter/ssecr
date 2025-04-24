@@ -188,104 +188,6 @@ Scientific data needs units--meters per second, grams, etc.--to have any real me
 - [An expansion on ABT](https://medium.com/find-the-red-thread-persuasion/the-simplest-storytelling-structure-7fdc7d8a60e5)
 - [A great blog on ABT](https://ian.umces.edu/blog/storytelling-and-science-whats-abt-got-to-do-with-it/)
 
-## Adapting Your Message to Different Audiences
-
-You're 17, back in high school. The football team had a party last night, and you and all your friends went. Describe the party to...
-
-Your friend who was grounded and couldn't go:
-
-"It was crazy. Jackie did a kegstand!"
-
-Your mom, who was hesitant to let you go:
-
-"It was fun! Low key. Jackie was there--from soccer!"
-
-Neither of these stories are _false_--but they're narratives that are designed to best appeal to their target audience. **Effective science communication does the same thing: it organizes its narrative around the ideas that best appeal to specific groups.** Figuring out which story best appeals to specific audiences is the key to mastering effective science communication.
-
-From Northeastern's [Tips for Effective SciComm](https://graduate.northeastern.edu/knowledge-hub/tips-for-effective-science-communication/):
-
-:::{.panel-tabset}
-### General Public
-
-Caution: who the heck is the "general public?". Wants to know how your research impacts their lives and their societies. This communication could take the form of a formal presentation, or it could be a casual conversation with friends and neighbors.
-
-### Media
-
-Wants to know what makes the findings of your research important, including how it's different from what others have done
-
-### Potential Investors
-
-Want to know whether your work will provide them with a significant return
-
-### Peers
-
-Will be interested in determining whether your work may provide an opportunity for future collaboration, or how it ties into their own work
-
-### Leadership at Your Institution
-
-Need to know if a project has achieved the expected results and should progress to the next phase, or if changes are needed
-
-:::
-
-Each of these audiences is looking for something different--they have different motivations and needs. You first need to understand what they're looking for. Then, you can identify which stories will best address those needs.
-
-Here are some things that differ between audiences:
-
--   **Knowledge** of the issue
--   **How** that issue affects them
--   **Values** they hold
--   **What captures** their attention
-
-The first step is to try and understand the audience you're writing for.
-
-A funder familiar with the work won't need you to tell them that climate change is a serious problem, but an eighth grader might! Or, if you're posting a video on YouTube, you need to hook that audience in--finding something that's interesting is paramount. That's not *as* essential in a poster session or thesis defense!
-
-Remember our elevator pitch? Thinking about audience should be second, after you identify your core story.
-
-*Note: "The general public" is not an audience! The public is not very general. Every subgroup has different motivations*
-
-Let's try to adapt our example elevator pitch to two different audiences:
-
-::: panel-tabset
-#### Original Text
-
-Spruce trees evolved to burn, AND as a result, wildfire is an important part of the boreal forest ecosystem. BUT, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the boreal forest. THEREFORE, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing towns with spaces to farm or recreate.
-
-#### A Friend at Dinner
-
-A lot of people in Alaska are threatened by fire every summer, and instead of trying to put out every fire, they instead focus on stopping fires before they get to towns. They usually cut strips out of the forest around towns, but that's kind of ugly and bad for the ecosystem. So instead, people are trying to figure out what they can do in those clear cuts! Some projects are growing berries, others put in aircraft landing strips or parks. Basically, if they're going to cut those trees down anyways, it's better to have some sort of useful space, rather than just empty land.
-
-#### A Funder for Fire Mitigation
-
-Fuel breaks are necessary for mitigating fire risk to local communities in Alaska. But fuel breaks are disruptive to the ecosystem, ugly to look at, and provide little to no value to local communities outside of mitigating fire risk. This project re-imagines fuel breaks to maximize benefits to local communities by providing space for parks, food production, or industry while maintaining their effectiveness as a fire mitigation strategy.
-:::
-
-:::{.callout-note icon="false"}
-#### Activity: Elevator Pitch - Draft \#3
-
-**Part 1 - Revize**
-
-- Re-imagine your elevator pitch to the following different audiences:
-    - Friend
-    - Colleague in a different subfield of your field
-    - Funder
-    - Reporter asking for a short summary for a radio story
-    - 8th grade students visiting your site
-    - Another audience (of your choosing!)
-
-**Part 2 - Share**
-
-- Share out and critique in groups
-- Things to look out for as a listener:
-    - Is the "hook" appropriate for each audience?
-    - Is the detail or technical language appropriate for that audience?
-
-:::
-
-- [Good blog on understanding audience](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.)
-- [The message box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html)--This is an oft reference tool for adapting scicomm to different audiences. I will warn that I find it unnecessarily confusing, and it's nonlinearity sometimes tangles one's ability to tell stories. But it's here for your reference, because you *will* see it come up when researching scicomm.
-- [Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences)--a good take on audience.
-
 ## Jargon
 
 What is jargon? "Special words or expressions that are used by a particular profession or group and are difficult for others to understand," as per the dictionary.
@@ -391,6 +293,104 @@ Translate communication into various formats based on efficacy with target group
 
 - [\[Explainer\] Why do we use jargon when talking about science?](https://india.mongabay.com/2023/06/explainer-why-do-we-use-jargon-when-talking-about-science/) - MongaBay
 - [How to explain a science idea clearly \| ‘Talking Science' Course #6](https://www.youtube.com/watch?v=u9cqwQQqHoU&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=9) A really amazing video that goes far more in depth
+
+## Adapting Your Message to Different Audiences
+
+You're 17, back in high school. The football team had a party last night, and you and all your friends went. Describe the party to...
+
+Your friend who was grounded and couldn't go:
+
+"It was crazy. Jackie did a kegstand!"
+
+Your mom, who was hesitant to let you go:
+
+"It was fun! Low key. Jackie was there--from soccer!"
+
+Neither of these stories are _false_--but they're narratives that are designed to best appeal to their target audience. **Effective science communication does the same thing: it organizes its narrative around the ideas that best appeal to specific groups.** Figuring out which story best appeals to specific audiences is the key to mastering effective science communication.
+
+From Northeastern's [Tips for Effective SciComm](https://graduate.northeastern.edu/knowledge-hub/tips-for-effective-science-communication/):
+
+:::{.panel-tabset}
+### General Public
+
+Caution: who the heck is the "general public?". Wants to know how your research impacts their lives and their societies. This communication could take the form of a formal presentation, or it could be a casual conversation with friends and neighbors.
+
+### Media
+
+Wants to know what makes the findings of your research important, including how it's different from what others have done
+
+### Potential Investors
+
+Want to know whether your work will provide them with a significant return
+
+### Peers
+
+Will be interested in determining whether your work may provide an opportunity for future collaboration, or how it ties into their own work
+
+### Leadership at Your Institution
+
+Need to know if a project has achieved the expected results and should progress to the next phase, or if changes are needed
+
+:::
+
+Each of these audiences is looking for something different--they have different motivations and needs. You first need to understand what they're looking for. Then, you can identify which stories will best address those needs.
+
+Here are some things that differ between audiences:
+
+-   **Knowledge** of the issue
+-   **How** that issue affects them
+-   **Values** they hold
+-   **What captures** their attention
+
+The first step is to try and understand the audience you're writing for.
+
+A funder familiar with the work won't need you to tell them that climate change is a serious problem, but an eighth grader might! Or, if you're posting a video on YouTube, you need to hook that audience in--finding something that's interesting is paramount. That's not *as* essential in a poster session or thesis defense!
+
+Remember our elevator pitch? Thinking about audience should be second, after you identify your core story.
+
+*Note: "The general public" is not an audience! The public is not very general. Every subgroup has different motivations*
+
+Let's try to adapt our example elevator pitch to two different audiences:
+
+::: panel-tabset
+#### Original Text
+
+Spruce trees evolved to burn, AND as a result, wildfire is an important part of the boreal forest ecosystem. BUT, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the boreal forest. THEREFORE, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing towns with spaces to farm or recreate.
+
+#### A Friend at Dinner
+
+A lot of people in Alaska are threatened by fire every summer, and instead of trying to put out every fire, they instead focus on stopping fires before they get to towns. They usually cut strips out of the forest around towns, but that's kind of ugly and bad for the ecosystem. So instead, people are trying to figure out what they can do in those clear cuts! Some projects are growing berries, others put in aircraft landing strips or parks. Basically, if they're going to cut those trees down anyways, it's better to have some sort of useful space, rather than just empty land.
+
+#### A Funder for Fire Mitigation
+
+Fuel breaks are necessary for mitigating fire risk to local communities in Alaska. But fuel breaks are disruptive to the ecosystem, ugly to look at, and provide little to no value to local communities outside of mitigating fire risk. This project re-imagines fuel breaks to maximize benefits to local communities by providing space for parks, food production, or industry while maintaining their effectiveness as a fire mitigation strategy.
+:::
+
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#3
+
+**Part 1 - Revize**
+
+- Re-imagine your elevator pitch to the following different audiences:
+    - Friend
+    - Colleague in a different subfield of your field
+    - Funder
+    - Reporter asking for a short summary for a radio story
+    - 8th grade students visiting your site
+    - Another audience (of your choosing!)
+
+**Part 2 - Share**
+
+- Share out and critique in groups
+- Things to look out for as a listener:
+    - Is the "hook" appropriate for each audience?
+    - Is the detail or technical language appropriate for that audience?
+
+:::
+
+- [Good blog on understanding audience](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.)
+- [The message box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html)--This is an oft reference tool for adapting scicomm to different audiences. I will warn that I find it unnecessarily confusing, and it's nonlinearity sometimes tangles one's ability to tell stories. But it's here for your reference, because you *will* see it come up when researching scicomm.
+- [Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences)--a good take on audience.
 
 ## Where Do I Communicate?
 
