@@ -6,14 +6,14 @@ title: "Supporting Divergent, Emergent, and Convergent Thinking"
 
 As many course participants will have discovered by now, the process of deciding on, refining, and choosing a path forward for data analysis will involve many differing opinions and perspectives. To work effectively as a group, you will need to elicit a broad range of ideas and then combine and focus them. This can be unfamiliar territory for researchers who have mainly pursued individual projects. While the particulars of each project are different, the patterns are often similar and being familiar with a few approaches for eliciting the best from yourself and colleagues can speed the process and improve the experience for all involved.
 
-Below you will find support for your group as you move through both exciting, and sometimes uncomfortable, stages of collaborative, participatory decision-making - from divergent to emergent and finally convergent thinking.
+Below you will find support for your group as you move through both exciting, and sometimes uncomfortable, stages of collaborative, participatory decision-making--from divergent to emergent and finally convergent thinking.
 
 ## Learning Objectives
 
 After completing this module you will be able to:
 
 - <u>Recognize</u> the stages of a participatory decision making process and the type of thinking required for each stage
-- <u>Identify</u> the value of and potential obstacles to emergent thinking in the “groan zone”
+- <u>Identify</u> the value of and potential obstacles to emergent thinking in the "groan zone"
 - <u>Understand</u> the diamond model of participatory decision making as a framework for group process design
 - <u>Develop</u> strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting
 
@@ -31,7 +31,7 @@ None required.
 
 ## Collaborative Convergence
 
-At the beginning of a collaborative process, the most important initial outcome is getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them. If your team process is effective, this plan will be an _inclusive solution_ – one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
+At the beginning of a collaborative process, the most important initial outcome is getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them. If your team process is effective, this plan will be an _inclusive solution_--one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
 
 ## Embracing Divergent Thinking
 
@@ -39,42 +39,33 @@ The first stage of group decision making is divergent thinking (Kaner et al. 201
 
 <p align="center">
 <img src="images/figure_groan-zone.jpg" alt="Figure of Sam Kaner's Diamond Model of Participatory Decisionmaking, showing an increasing diversity of ideas on the left side of the diamond, created through divergent thinking, a period of emergent thinking in the middle known as the _groan zone_ and a narrowing set of ideas filtered down through convergent thinking to a final solution on the right side of the diamond." width="100%"/> 
-<figcaption> **Figure 1. Drawing by Carrie Kappel, adapted from Sam Kaner’s Facilitator’s Guide to Participatory Decision making**</figcaption>
+<figcaption> **Drawing of the 'Groan Zone' by Carrie Kappel, adapted from Sam Kaner's Facilitator's Guide to Participatory Decision making**</figcaption>
 </p>
 
-When a diverse group comes together to work on a complex problem, their views are likely to diverge widely across many dimensions from problem definition to priorities to methods/approaches to the definition of success. But you can tap that divergent thinking to generate entirely new ideas and options that emerge through the group’s productive struggle for mutual understanding.
+When a diverse group comes together to work on a complex problem, their views are likely to diverge widely across many dimensions from problem definition to priorities to methods/approaches to the definition of success. But you can tap that divergent thinking to generate entirely new ideas and options that emerge through the group's productive struggle for mutual understanding.
 
-While your working group is in the divergent thinking stage, it’s critical to foster dialogue to surface different perspectives. Examine hidden assumptions. Create room for disagreement and questioning. Amplify diverse perspectives - and particularly, voices from the edge (e.g., junior members, new collaborators, people from different disciplines, non-scientists who may be affected by the research) - in order to expand the range of possibilities. Mirror and validate what you hear. Invite people who are good at bridging across disciplinary or other differences to help translate and build shared understanding of methods and ways of thinking. Suspend judgment and encourage full participation. 
+While your working group is in the divergent thinking stage, it's critical to foster dialogue to surface different perspectives. Examine hidden assumptions. Create room for disagreement and questioning. Amplify diverse perspectives--and particularly, voices from the edge (e.g., junior members, new collaborators, people from different disciplines, non-scientists who may be affected by the research)--in order to expand the range of possibilities. Mirror and validate what you hear. Invite people who are good at bridging across disciplinary or other differences to help translate and build shared understanding of methods and ways of thinking. Suspend judgment and encourage full participation. 
 
 Beware of the most common pitfall at this stage, which is to converge too quickly on an early conclusion, staying in the safe space of familiar opinions and status quo solutions. You can prepare for this stage and help to avoid that pitfall by reviewing prior work and synthesizing data and knowledge gaps, promising approaches, and critical questions. Your team can use that synthesis of the current state of the science as a jumping off point.
 
 ## Making it Through the Groan Zone
 
-It’s natural for groups to go through a period of confusion and frustration as they struggle to integrate their diverse perspectives into a shared framework of understanding (Kaner et al. 2014). The goal is to get the group across this no man’s land between divergent thinking and convergence known as the [“groan zone.”](https://i2insights.org/2019/05/28/collaboration-groan-zone/) In the groan zone, the group leader or facilitator’s job is to keep the group from getting frustrated and shutting down.  
+It's natural for groups to go through a period of confusion and frustration as they struggle to integrate their diverse perspectives into a shared framework of understanding (Kaner et al. 2014). The goal is to get the group across this no man's land between divergent thinking and convergence known as the ["groan zone"](https://i2insights.org/2019/05/28/collaboration-groan-zone/). In the groan zone, the group leader or facilitator's job is to keep the group from getting frustrated and shutting down.  
 
 While the groan zone can be challenging, it can also be an extremely fruitful and creative stage. Here in the messy middle of a group process, an open and flexible mindset and a process that invites participants to engage in emergent thinking can enable true innovation. Emergent thinking builds upon ideas generated in the divergent thinking stage, recombining or adapting them in novel ways. It seeks to identify patterns and make meaning in the face of complexity and uncertainty. Done well, _emergent thinking enables a group to adapt, sense opportunities, and generate new and exciting ideas._
 
-:::{.panel-tabset}
-
-### Activity: Rapid Brainstorm
+:::{.callout-note icon="false"}
+#### Activity: Rapid Brainstorm
 
 A variety of factors and dynamics can impede emergent thinking and make the groan zone especially challenging. What have you observed?
 
-### Common barriers to emergent thinking
-
-- Disciplinary differences in epistemology, vocabulary, and methods that impede understanding
-- Analysis paralysis - getting lost in the weeds of endless analysis and detail
-- Polarization - opposite camps anchored in
-- Power dynamics that squelch creative contributions from the “edges”
-- Avoidance of a deeper issue impeding collaboration (e.g. lack of trust)
-- Turf wars, competition
-- Risk aversion, perception management, fear of failure / getting it wrong
-- Confirmation bias and resistance to ideas that challenge group identity and beliefs
-
 :::
 
+:::{.panel-tabset}
+### Techniques for Fostering Emergent Thinking
+
 Some useful techniques for navigating the groan zone and fostering emergent thinking include:
- 
+
 - Cultivating presence and patience 
 - Active listening
 - Building shared understanding via translation (e.g. across disciplines), metacognition (thinking about how you are thinking), and inquiry 
@@ -86,9 +77,24 @@ Some useful techniques for navigating the groan zone and fostering emergent thin
 - Capturing side issues in writing and reserving time to revisit these – taking the tangents seriously is a critical part of letting participants know you value their contributions
 - Examining how proposed ideas might affect each individual in the group
 - Honoring objections to the process and asking for suggestions
-- Addressing power imbalances and elevating voices from the “edge” 
+- Addressing power imbalances and elevating voices from the "edge" 
 
-If you find the conversation getting off track or the dynamics becoming difficult, useful techniques that allow you to remain committed to being supportive and respectful of all group members (including ones you might experience as “difficult”) include:
+### Common Barriers to Emergent Thinking
+
+Some typical obstacles to emergent thinking include:
+ 
+- Disciplinary differences in epistemology, vocabulary, and methods that impede understanding
+- Analysis paralysis - getting lost in the weeds of endless analysis and detail
+- Polarization - opposite camps anchored in
+- Power dynamics that squelch creative contributions from the "edges"
+- Avoidance of a deeper issue impeding collaboration (e.g. lack of trust)
+- Turf wars, competition
+- Risk aversion, perception management, fear of failure / getting it wrong
+- Confirmation bias and resistance to ideas that challenge group identity and beliefs
+
+:::
+
+If you find the conversation getting off track or the dynamics becoming difficult, useful techniques that allow you to remain committed to being supportive and respectful of all group members (including ones you might experience as "difficult") include:
  
 - Reminding individuals of the larger purpose of the group and reconnecting them to their own personal reasons for caring about and working on the issue, e.g. by inviting them to take a moment to reflect or to restate what success looks like
 - Focusing on common ground and areas of potential alignment
@@ -100,7 +106,7 @@ If you find the conversation getting off track or the dynamics becoming difficul
 - Encouraging more people to participate
 - Reframing the discussion, e.g. by surfacing underlying issues, and/or focusing on concrete actions that the group can take to resolve the conflict
  
-Don’t get discouraged by the groan zone. Misunderstanding and miscommunication are normal parts of the process of collaboration. And even more importantly, “the act of working through these misunderstandings is what builds the foundation for sustainable agreements [and]… meaningful collaboration” (Kaner et al. 2014).
+Don't get discouraged by the groan zone. Misunderstanding and miscommunication are normal parts of the process of collaboration. And even more importantly, "the act of working through these misunderstandings is what builds the foundation for sustainable agreements [and]… meaningful collaboration" (Kaner et al. 2014).
 
 ## Getting to Convergence
 
@@ -110,7 +116,7 @@ Discuss as a team _how_ you want to make decisions - what is your decision makin
 
 <p align="center">
 <img src="images/figure_decisionmaking.png" alt="Diagram of different decisionmaking models arrayed on two axes - level of involvement and level of ownership. Options include (in increasing order): Decide and announce; Gather input from individuals and decide; Gather input from group and decide; Vote (democratic or supermajority; Consensus; and Delegate with Constraints. Both voting and delegating with constraints are fallback options if consensus can't be reached." width="100%"/> 
-<figcaption> **Figure 2. Decision making approaches and fallback options**</figcaption>
+<figcaption> **Decision making approaches and fallback options**</figcaption>
 </p>
 
 Techniques that are useful in this phase include:
@@ -130,34 +136,31 @@ The diamond model is not only a conceptual model of the common flow of participa
 
 Have you ever been in a meeting that generated tons of ideas, but left you wondering whether any of it was going to go anywhere? That group process neglected to engage in convergent thinking. Or have you experienced a leader who hands down dictates with little discussion and expects everyone to just agree? They are missing out on the value of divergent and emergent thinking to generate creativity and buy-in. 
 
-A good group process will move through the diamond model and include all three types of thinking. Your process design, whether it’s for a single meeting, a multi-day workshop, or a longer collaborative process, should start by asking yourself, _where are we now?_ What resources, people, and information do we have as our starting point? And _where do we want to get to?_ What is our target end state – the deliverable or outcome we are trying to achieve?
+A good group process will move through the diamond model and include all three types of thinking. Your process design, whether it's for a single meeting, a multi-day workshop, or a longer collaborative process, should start by asking yourself, _where are we now?_ What resources, people, and information do we have as our starting point? And _where do we want to get to?_ What is our target end state – the deliverable or outcome we are trying to achieve?
 
 Between those two points - your initial state and your target state - you can use one or multiple diamond shaped activities to productively move your group along. Each microstructure or game you use to engage the group can help to generate new ideas, explore them together, and converge on new insights or decisions. Those insights or decisions can then become the input for the next diamond, until you eventually reach your goal.
 
-Those diamonds can vary in scale from mini-exercises that only take a few minutes to multi-day or longer processes. Once you start to recognize it, you’ll see the diamond model everywhere (or miss it when it’s lacking!). 
+Those diamonds can vary in scale from mini-exercises that only take a few minutes to multi-day or longer processes. Once you start to recognize it, you'll see the diamond model everywhere (or miss it when it's lacking!). 
 
 ::: {.callout-note icon="false"}
-
 ### Small Group Exercise #1 - Where are we in the diamond?
 
 Purpose: Identify where your group is in the diamond model right now and what stage you need to move through next. 
 
-Part 1 (~2 mins)
+**Part 1 - Individual Reflection**
 
-Individual reflection
+- Where would you say your group is right now in the diamond model?
+- Have you been leveraging the relevant thinking for the stage you are in (divergent, emergent, or convergent)?
+- Think about the next group work or decisionmaking task that lies ahead:
+    - What stage(s) of the diamond will that work take you through and what kind of thinking will be needed?
 
-- _Where would you say your group is right now in the diamond model? Have you been leveraging the relevant thinking for the stage you are in (divergent, emergent, or convergent)?_ 
-- _Think about the next group work or decisionmaking task that lies ahead - what stage(s) of the diamond will that work take you through and what kind of thinking will be needed?_
-
-Part 2 (15 mins) 
-
-Project team discussion 
+**Part 2 - Project Team Discussion**
 
 - Identify a reporter, notetaker, and facilitator/timekeeper
 - Go around and share your answers to the prompt (1 min each)
 - Discuss and try to reach consensus about which stage(s) of the diamond model best match the next chunk of work you have ahead of you.
 
-Part 3 (~5 mins)
+**Part 3 - Report Out**
 
 Share with the whole group
 
@@ -169,20 +172,20 @@ Share with the whole group
 
 | **Microstructure** | **Stage** | **Purpose** | **How It Works** | **Tips & Traps** |
 |:---|:---:|:------------|:--------------------|:---------------|
-| [Brainwriting](https://gamestorming.com/brainwriting/) or brainstorming | D | Surface and elaborate ideas | Brainstorm ideas in a google doc or virtual whiteboard (or on index cards or sticky notes in person); read and add to each other’s ideas; discuss | Follow up with affinity mapping as you move into emergent thinking |
-| [Rotating Stations](http://www.liberatingstructures.com/11-shift-share/) | D | Spread good ideas and make informal connections | Set up stations with experts or innovators who can present information and engage discussion; group members circulate to learn, ask questions, or provide feedback | Keep the overall session short so that it’s not too fatiguing for presenters who will have to repeat their spiel many times |
+| [Brainwriting](https://gamestorming.com/brainwriting/) or brainstorming | D | Surface and elaborate ideas | Brainstorm ideas in a google doc or virtual whiteboard (or on index cards or sticky notes in person); read and add to each other's ideas; discuss | Follow up with affinity mapping as you move into emergent thinking |
+| [Rotating Stations](http://www.liberatingstructures.com/11-shift-share/) | D | Spread good ideas and make informal connections | Set up stations with experts or innovators who can present information and engage discussion; group members circulate to learn, ask questions, or provide feedback | Keep the overall session short so that it's not too fatiguing for presenters who will have to repeat their spiel many times |
 | [User Experience Fishbowl](http://www.liberatingstructures.com/18-users-experience-fishbowl/) (a riff on panel discussion) | DE | Draw out and contrast different perspectives from experts or interested parties  | Experts with direct experience of the challenge at hand are invited to engage each other in conversation at the center of a circle; the rest of the group are audience to their conversation; audience and facilitator can suggest things for them to discuss | Avoid falling back on traditional formats where panelists talk to the audience rather than each other - the power of the fishbowl is the deep way in which the experts can engage each other |
-| Horizon scanning / futures thinking | DE | Detect emerging trends, issues, or research opportunities | Define your scope; consult outside sources of data and expertise or brainstorm within the group to identify emerging trends, events, and weak signals of future change that may affect the question / topic you have defined | Set a timeframe that’s far enough out to encompass important uncertainties but not so far that forecasting becomes overly speculative |
+| Horizon scanning / futures thinking | DE | Detect emerging trends, issues, or research opportunities | Define your scope; consult outside sources of data and expertise or brainstorm within the group to identify emerging trends, events, and weak signals of future change that may affect the question / topic you have defined | Set a timeframe that's far enough out to encompass important uncertainties but not so far that forecasting becomes overly speculative |
 | [Affinity Map](https://gamestorming.com/?s=affinity+map) (clustering) | E | Surface ideas, detect patterns, and analyze | Brainstorm ideas using sticky notes on a wall or virtual whiteboard; cluster into categories | Follow up with prioritization of ideas within clusters as you move into convergent thinking |
 | Conceptual models | E | Build a shared representation of the system | Co-develop a figure or diagram that encapsulates your collective understanding of the focal problem or system  | Consider mind maps, flow charts, system diagrams; Consider having several small groups attempt this in parallel and compare results |
-| [World Cafe conversations](http://www.liberatingstructures.com/17-conversation-cafe/) | E | Engage everyone in making sense of profound challenges | Ask for a volunteer to host each table; use a talking object; Go-around 1: share what you are thinking, feeling, or doing about the theme or topic; Go-around 2: share your thoughts and feelings after having listened to others; Open conversation; Go-around 4: “takeaways” | Start with a clear question or prompt for discussion; Share the agreements and ask hosts to gently facilitate adherence |
+| [World Cafe conversations](http://www.liberatingstructures.com/17-conversation-cafe/) | E | Engage everyone in making sense of profound challenges | Ask for a volunteer to host each table; use a talking object; Go-around 1: share what you are thinking, feeling, or doing about the theme or topic; Go-around 2: share your thoughts and feelings after having listened to others; Open conversation; Go-around 4: "takeaways" | Start with a clear question or prompt for discussion; Share the agreements and ask hosts to gently facilitate adherence |
 | [What, So What, Now What](https://www.liberatingstructures.com/9-what-so-what-now-what-w/) | EC | Make sense of past progress or experiences and decide on future actions | What - As a group, compile the facts and observations relevant to the context; So What - Reflect on the facts and their implications, identify patterns, generate hypotheses; Now What - Draw conclusions - What actions make sense? | Be firm in calling out opinions being passed off as facts in the What stage. Stick to what is observable. |
 | Polling | EC | Rank alternatives | Decide how many votes per person; In person - use sticky dots; Virtually - use +1s in a google doc or a digital polling tool (e.g., Zoom, Mural, slido) | Before you start - clarify how you will use the results - are you gathering information or taking a vote to make a decision? |
 | Feasibility x impact matrix | C | Compare alternatives | Discuss and agree on definitions for two criteria for evaluating ideas: feasibility of implementation and impact potential; Rate each idea against these two axes and map onto 2x2 grid | How you define the axes must be clear and agreed upon by everyone before you start |
-| [Fist to Five](https://gamestorming.com/five-fingered-consensus/) / Gradient of Agreement | C | Assess degree of consensus; seek closure | Use when ready to close a discussion or make a decision; Invite participants to rate their level of agreement with a proposal on a scale of 0-5; Five fingers means “absolute, total agreement or support” and a fist means “complete opposition” | If you have some 1s and 2s, more discussion is needed - ask them to explain their concerns or questions |
-| Open discussion | DEC | Group inquiry, sensemaking, and/or decisionmaking | Clearly define the scope; set agreements for inclusive discussion; invite discussion about the topic at hand; capture ideas and questions; listen for when the group is ready to converge | Keep track of side topics (e.g. in a “bike rack”) and make time to come back to them, but don’t let them derail |
+| [Fist to Five](https://gamestorming.com/five-fingered-consensus/) / Gradient of Agreement | C | Assess degree of consensus; seek closure | Use when ready to close a discussion or make a decision; Invite participants to rate their level of agreement with a proposal on a scale of 0-5; Five fingers means "absolute, total agreement or support" and a fist means "complete opposition" | If you have some 1s and 2s, more discussion is needed - ask them to explain their concerns or questions |
+| Open discussion | DEC | Group inquiry, sensemaking, and/or decision-making | Clearly define the scope; set agreements for inclusive discussion; invite discussion about the topic at hand; capture ideas and questions; listen for when the group is ready to converge | Keep track of side topics (e.g. in a "bike rack") and make time to come back to them, but don't let them derail |
 | Breakout groups | DEC | Engage everyone deeply; avoid groupthink | Define the scope and intended outcomes; set a time limit; assign roles (facilitator, notetaker, reporter); model what you want in the report out | Consider whether all groups should work with the same prompts or different aspects of the problem |
-| Chart writing or whiteboarding | DEC | Reflect participant’s viewpoints back to the group | On a virtual or physical chart or whiteboard, capture key points in the discussion so everyone can see them | Use speakers’ own words; if the comment is long or complex, ask the speaker to give you a headline you can capture |
+| Chart writing or whiteboarding | DEC | Reflect participant's viewpoints back to the group | On a virtual or physical chart or whiteboard, capture key points in the discussion so everyone can see them | Use speakers' own words; if the comment is long or complex, ask the speaker to give you a headline you can capture |
 | [1,2,4,all](https://www.liberatingstructures.com/1-1-2-4-all/) | DEC | Engage everyone in generating questions, ideas, and suggestions | Individual reflection; Pair share; Two pairs combine and share as a group of 4; Small groups share highlights with whole group | Emphasize novel ideas and distinctions for divergence; common themes and emerging insights for emergence and convergence |
 | Round robin / go around | DEC | Hear from everyone; get starting positions on the table | Everyone answers the same prompt. Alternatives to going in order: each speaker calls on someone else after they have shared; popcorn-style - people share in the order that they feel moved to speak | Do not allow discussion until everyone has responded to the initial prompt |
 
@@ -190,23 +193,22 @@ Share with the whole group
 ::: {.callout-note icon="false"}
 #### Activity: Small Group Exercise #2 - Emergent thinking practice
 
-Part 1 (25 mins)
-
-Team discussion and co-production
+**Part 1 - Team Discussion & Co-Production**
 
 - Assign a facilitator, notetaker and reporter
 - Read through the list of options and begin with the step that seems most useful for your team's current needs. Work your way through as many of the steps as you can during the allotted time.
-- _If your group doesn’t yet have a conceptual figure that captures how you are thinking about the system you are investigating, design one._
-- _If you already have one, revisit it and refine it as needed._
-- _Once you are satisfied with your conceptual figure, outline your key questions and map your planned analyses to them. How are you going to answer each question with data? If you were working with the tools we suggested last time to start outlining your analysis, this should build from there._
-- _What are the ≤3 key figures that would best illustrate your results?_
+- _Create or refine a conceptual figure_ that captures how you are thinking about the system you are investigating
+- Once you are satisfied with your conceptual figure:
+    - Outline your key questions
+    - Map your planned analyses to them
+    - How are you going to answer each question with data?
+    - If you were working with the tools we suggested last time to start outlining your analysis, this should build from there
+- What are the \~3 key figures that would best illustrate your results?
 
-Part 2 (2-3 mins / team)
+**Part 2 - Report Out**
 
-Report Out
-
-Share what you developed with the whole group
-After all groups have shared, offer suggestions to other groups and/or ask  questions about the module.
+- Share what you developed with the whole group!
+- After all groups have shared, offer suggestions to other groups and/or ask questions about the module.
 
 :::
 
