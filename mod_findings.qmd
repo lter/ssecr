@@ -13,7 +13,6 @@ This module was designed to be _highly_ interactive and includes a lot of peer e
 
 :::
 
-
 ## Learning Objectives
 
 After completing this module you will be able to:
@@ -37,9 +36,9 @@ None required.
 As a former NCEAS communications officer and a AAAS science and technology policy fellow in climate science, Alex brings extensive experience in making scientific synthesis engaging. Her teaching and research focuses on environmental communication to students, scientists, policymakers, and the public. She was also a postdoc at UCSB and the Large Lakes Observatory at University of Minnesota, Duluth where she investigated carbon sequestration in Lake Superior. She holds a PhD from Caltech in geochemistry, where she studied sulfur and carbon cycling in lakes and oceans.
 :::
 
-### Why Communicate Your Findings?
+## Why Communicate Your Findings?
 
-*Science speaks for itself. Good work will get recognized. It's the journal/university/lab's job to share my results.*
+> "Science speaks for itself." "Good work will get recognized on its own." "It's the journal/university/lab's job to share my results."
 
 All are common excuses that keep researchers from taking the initiative to communicate their science. But sharing your work is an essential part of maximizing it's impact.
 
@@ -51,10 +50,11 @@ Think about this--one [SBC LTER researcher was walking on the beach](https://www
 
 Today, we're going to walk through turning your own research into an elevator pitch, a tight, concise explanation of what you've done. The process of creating an elevator pitch will give you the tools necessary to adapt your message to a variety of different audiences and formats.
 
+### Additional Resources
+
 [**How Science Communication Can Boost Your Research**](https://www.aldacenter.org/thelink/posts/Boosting_Research_Through_Scicomm.php#:~:text=Everyone%20has%20the%20right%20to,not%20do%20science%20at%20all.) **- Alda Center**
 
 ## Crafting Your Elevator Pitch
-
 
 :::{.callout-note icon="false"}
 #### Activity: Elevator Pitch - Draft \#1
@@ -95,7 +95,7 @@ Ok--not every elevator pitch needs to start with *"Once upon a time..."* But thi
 
 As someone who's conducting the research, you already have stories. In fact, doing research is trying to figure out what a very specific story is--pulling a narrative from raw data. The trick to science communication is finding a different story, or modifying your story, to appeal to different audiences. We'll cover that below.
 
-### Does Your Elevator Pitch Have a Story?
+### Additional Resources
 
 - [A guide to scientific storytelling](https://cartoonbase.com/en/resources/blog/a-guide-to-scientific-storytelling/)
     - This is a great resource on the *why* of science storytelling.
@@ -104,9 +104,7 @@ As someone who's conducting the research, you already have stories. In fact, doi
 
 ## 'And, But, Therefore' Framework -- A Storytelling Tool
 
-The 'And, But, Therefore' (ABT) framework is a simple tool that helps develop a narrative in an elevator pitch (or any other short communication material).
-
-The temptation for many (researchers and non-researchers!) is to continue adding AND's to their work.
+The 'And, But, Therefore' (ABT) framework is a simple tool that helps develop a narrative in an elevator pitch (or any other short communication material). The temptation for many (researchers and non-researchers!) is to continue adding AND's to their work.
 
 ::: panel-tabset
 #### With _Only_ "And"
@@ -118,9 +116,7 @@ But that doesn't add up to any sort of great story, just a collection of facts. 
 
 The 'And But Therefore' framework provides a scaffolding from which to build a story.
 
-This method really helps you focus in on just the critical parts of the story. There are many things that you'll leave out. That's more than OK--that's the point!
-
-The first "and" is a setup--all your baseline information lives here. Let's try this out with our Boreal forest research:
+This method really helps you focus in on just the critical parts of the story. There are many things that you'll leave out. That's more than OK--that's the point! The first "and" is a setup--all your baseline information lives here. Let's try this out with our Boreal forest research:
 
 ::: panel-tabset
 #### Start With an "And"
@@ -183,6 +179,8 @@ Scientific data needs units--meters per second, grams, etc.--to have any real me
     - Does the conclusion actually resolve the problem?
 
 :::
+
+### Additional Resources
 
 - [Randy Olson's TED talk on the ABT framework](https://www.youtube.com/watch?v=ERB7ITvabA4) (he's the creator!)
 - [An expansion on ABT](https://medium.com/find-the-red-thread-persuasion/the-simplest-storytelling-structure-7fdc7d8a60e5)
@@ -291,6 +289,8 @@ Translate communication into various formats based on efficacy with target group
 
 :::
 
+### Additional Resources
+
 - [\[Explainer\] Why do we use jargon when talking about science?](https://india.mongabay.com/2023/06/explainer-why-do-we-use-jargon-when-talking-about-science/) - MongaBay
 - [How to explain a science idea clearly \| ‘Talking Science' Course #6](https://www.youtube.com/watch?v=u9cqwQQqHoU&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=9) A really amazing video that goes far more in depth
 
@@ -388,6 +388,8 @@ Fuel breaks are necessary for mitigating fire risk to local communities in Alask
 
 :::
 
+### Additional Resources
+
 - [Good blog on understanding audience](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.)
 - [The message box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html)--This is an oft reference tool for adapting scicomm to different audiences. I will warn that I find it unnecessarily confusing, and it's nonlinearity sometimes tangles one's ability to tell stories. But it's here for your reference, because you *will* see it come up when researching scicomm.
 - [Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences)--a good take on audience.
@@ -438,7 +440,7 @@ Tips from Harrison Tassoff, science writer for the UCSB Current.
     - The embargo date and time (best guess is fine)
     - What other institutions are involved and if they're issuing a release
 
-### Uh Oh, I Have an Interview With the Media
+### "Uh Oh, I Have an Interview With the Media"
 
 - [Five tips for scientists speaking to reporters](https://www.sciline.org/advice/5-tips-speaking-reporters/). AAAS SciLine
 - [Science Communicators: How to Practice for a Media Interview](https://www.agu.org/share-and-advocate/share/news-media/rehearse). AAAS
