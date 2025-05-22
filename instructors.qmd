@@ -16,6 +16,7 @@ _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{<
 - **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907)
 - **Sarah Elmendorf** (_she/her_) -- [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1085-8521)
 - **Gregory Maurer** (_he/him_) -- [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
+- **Gabriel De La Rosa** (_he/him_) -- [{{< fa globe >}}](https://www.gabrieldelarosa.com/)
 
 ### Other Contributors
 
