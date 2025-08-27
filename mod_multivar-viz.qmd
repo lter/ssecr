@@ -4,13 +4,14 @@ title: "Multivariate Visualization"
 
 ## Overview
 
-Under construction; check back later!
+Synthesis projects often eventually want to use multivariate statistics and visualization. This makes a lot of sense when you consider that many synthesis projects eventually have many (_many_) variables so reducing the dimensionality of the data can be one way of looking at differences that might not be apparent in any variable by itself. Just as univariate statistics are only shallowly discussed in this course, we won't dive into multivariate statistics here but multivariate visualization (or at least some common methods under that heading) is reasonable to cover in this module.
 
 ## Learning Objectives
 
 After completing this module you will be able to: 
 
 - <u>Define</u> some common multivariate visualization methods
+- <u>Describe</u> the similarities/differences between metric and non-metric ordination (methodology and interpretation)
 
 ## Preparation
 
