@@ -22,7 +22,7 @@ _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{<
 
 - **Angel Chen** (_she/her_) -- [{{< fa globe >}}](https://angelchen7.github.io/) [{{< fa brands github >}}](https://github.com/angelchen7/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3515-6710)
 - **Molly Phillips** (_she/they_) -- [{{< fa brands github >}}](https://github.com/phillips-map) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1568-4858)
-- **Ingrid Slette** (_she/her_)
+- **Ingrid Slette** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7707-3246)
 
 ## Supporting Organizations
 
