@@ -930,7 +930,7 @@
     "href": "mod_data-disc.html#preparation",
     "title": "Data Discovery & Management",
     "section": "Preparation",
-    "text": "Preparation\nEach Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the first sheet of the “data-inventory” Google Sheet.",
+    "text": "Preparation\nEach Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the “data-inventory” Google Sheet provided to your team. Note that not all columns of the data inventory may be useful to you (and some pieces of contextual information may be useful but not have columns) so use the provided template as a starting point rather than an untouchable framework.\nIf you are working through these materials outside of a formal SSECR cohort, download a copy of this Google Sheet version of the data inventory described above.",
     "crumbs": [
       "Phase I -- Prepare",
       "Data Discovery"
