@@ -1,3 +1,9 @@
+## Development Version
+
+This is the development version of the course. Changes from the preceding version are identified below as they are made.
+
+- Zenodo DOI and formal citation for these materials added to course content
+
 ## Version 1.0
 
 - First full version of the course
