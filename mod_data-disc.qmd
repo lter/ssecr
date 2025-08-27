@@ -20,7 +20,9 @@ After completing this module you will be able to:
 
 ## Preparation
 
-Each Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the first sheet of the "data-inventory" Google Sheet.
+Each Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the "data-inventory" Google Sheet provided to your team. Note that not all columns of the data inventory may be useful to you (and some pieces of contextual information may be useful but not have columns) so use the provided template as a starting point rather than an untouchable framework.
+
+If you are working through these materials outside of a formal SSECR cohort, download a copy of [this Google Sheet](https://docs.google.com/spreadsheets/d/1o_Y4BlgyYDuFjz0nTgnke59hJiGIIDliyZewJWVaGCg/edit?gid=1621635180#gid=1621635180) version of the data inventory described above.
 
 ## Networking Session
 
