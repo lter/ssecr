@@ -30,18 +30,6 @@ install.packages("librarian")
 librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)
 ```
 
-## Networking Session
-
-:::{.panel-tabset}
-### 2024 Guests
-
-We'll have two guests to kick off today's class. Each has been involved in synthesis as an early career researcher and each uses visualization in different ways to assess, clarify, and communicate their data and analyses.
-
-- [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124), Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator
-- [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/), Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department
-
-:::
-
 ## Data Visualization & The Synthesis Workflow
 
 As shown in the graphic below, visualization can be valuable throughout the lifecycle of a synthesis project, albeit in different ways at different phases of a project.

@@ -20,7 +20,8 @@ SSECR class meetings in the 2024 version of the course featured a 'networking se
 | 04 - Team Science Practices | Dr. [Max Castorani](https://castorani.evsc.virginia.edu/) | Associate Professor, University of Virginia |
 | 04 - Team Science Practices | Dr. [Jonathan Walter](https://sites.google.com/site/jwalterecology/home) | Senior Researcher, [Center for Watershed Sciences](https://watershed.ucdavis.edu/), University of California, Davis |
 | 05 - Inclusive Facilitation | [Mack White](https://mackwhite.github.io/) | PhD student with Dr. Jennifer Rehage, Florida International University |
-| x | y | z |
+| 06 - Data Visualization & Exploration | [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124) | Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator |
+| 06 - Data Visualization & Exploration | [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/) | Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department |
 | x | y | z |
 | x | y | z |
 | x | y | z |
