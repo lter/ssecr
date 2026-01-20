@@ -12,19 +12,20 @@ SSECR class meetings in the 2024 version of the course featured a 'networking se
 
 | Module | Name | Bio / Links |
 |:---:|:---:|:---|
-| 03 - Data Discovery & Management | Dr. [Greg Maurer](https://greg.pronghorns.net/index.html) | Environmental Data Initiative (EDI) and Jornada LTER |
-| 03 - Data Discovery & Management | Dr. [Eric Sokol](https://www.neonscience.org/person/eric-sokol) | Staff Scientist, Quantitative Ecology, National Ecological Observatory Network (NEON) |
-| 03 - Data Discovery & Management | Dr. [Nicole Kaplan](https://www.ars.usda.gov/people-locations/person?person-id=51562) | Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service (USDA-ARS) |
-| 03 - Data Discovery & Management | Dr. [Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel) | Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US) |
-| 04 - Team Science Practices | Dr. [Lauren Hallett](https://ie2.uoregon.edu/people/hallett/) | Associate Professor, University of Oregon |
-| 04 - Team Science Practices | Dr. [Max Castorani](https://castorani.evsc.virginia.edu/) | Associate Professor, University of Virginia |
-| 04 - Team Science Practices | Dr. [Jonathan Walter](https://sites.google.com/site/jwalterecology/home) | Senior Researcher, [Center for Watershed Sciences](https://watershed.ucdavis.edu/), University of California, Davis |
+| 03 - Data Discovery & Management | [Greg Maurer](https://greg.pronghorns.net/index.html) | Environmental Data Initiative (EDI) and Jornada LTER |
+| 03 - Data Discovery & Management | [Eric Sokol](https://www.neonscience.org/person/eric-sokol) | Staff Scientist, Quantitative Ecology, National Ecological Observatory Network (NEON) |
+| 03 - Data Discovery & Management | [Nicole Kaplan](https://www.ars.usda.gov/people-locations/person?person-id=51562) | Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service (USDA-ARS) |
+| 03 - Data Discovery & Management | [Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel) | Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US) |
+| 04 - Team Science Practices | [Lauren Hallett](https://ie2.uoregon.edu/people/hallett/) | Associate Professor, University of Oregon |
+| 04 - Team Science Practices | [Max Castorani](https://castorani.evsc.virginia.edu/) | Associate Professor, University of Virginia |
+| 04 - Team Science Practices | [Jonathan Walter](https://sites.google.com/site/jwalterecology/home) | Senior Researcher, [Center for Watershed Sciences](https://watershed.ucdavis.edu/), University of California, Davis |
 | 05 - Inclusive Facilitation | [Mack White](https://mackwhite.github.io/) | PhD student with Dr. Jennifer Rehage, Florida International University |
 | 06 - Data Visualization & Exploration | [Tim Ohlert](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124) | Postdoctoral Researcher, Colorado State University; DroughtNet Coordinator |
 | 06 - Data Visualization & Exploration | [Kyle Cavanaugh](https://www.ioes.ucla.edu/person/kyle-cavanaugh/) | Associate Professor, UCLA Institute of the Environment and Sustainability and the UCLA Geography Department |
 | 07 - Project Management | [Kathi Jo Jankowski](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski) | Research Ecologist, Upper Midwest Environmental Sciences Center, U.S. Geological Survey |
 | 08 - Supporting D.E.C. Thinking | [Bala Chaudhary](https://balachaudhary.com/index.html#/) | Associate Professor, Department of Environmental Studies at Dartmouth College |
-| x | y | z |
+| 09 - Data Harmonization & Wrangling | [Stevan Earl](https://search.asu.edu/profile/938759) | Information Manager, Central Arizona-Phoenix LTER |
+| 09 - Data Harmonization & Wrangling | [Cove Sturtevant](https://www.neonscience.org/person/cove-sturtevant) | Research Scientist, National Ecological Observatory Network (NEON) |
 | x | y | z |
 | x | y | z |
 | x | y | z |
