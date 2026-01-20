@@ -27,7 +27,7 @@ SSECR class meetings in the 2024 version of the course featured a 'networking se
 | 09 - Data Harmonization & Wrangling | [Stevan Earl](https://search.asu.edu/profile/938759) | Information Manager, Central Arizona-Phoenix LTER |
 | 09 - Data Harmonization & Wrangling | [Cove Sturtevant](https://www.neonscience.org/person/cove-sturtevant) | Research Scientist, National Ecological Observatory Network (NEON) |
 | 10 - Authorship & Intellectual Credit | [Jaclyn Hatala Matthes](https://matthesecolab.com/people/) | Senior Scientist, Harvard Forest |
-| x | y | z |
+| 11 - Analysis & Modeling | Ingrid Slette | Postdoctoral Researcher at the University Minnesota Coordinator of [NutNet](https://nutnet.org/) and [DRAGNet](https://dragnetglobal.weebly.com/) |
 | x | y | z |
 | x | y | z |
 | x | y | z |
