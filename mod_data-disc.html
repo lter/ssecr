@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -68,18 +68,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./images/logo_lter.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-efc1ba83da8cfef915db8a5e8a26d7ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-acb94f95de3b8051e45f897ebe4b9ba3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-efc1ba83da8cfef915db8a5e8a26d7ad.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3bcb4fc6939dbf8bc5b38fd77e0bc65d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ad824bf7ffcc90fba99bec34abd2f06d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-3bcb4fc6939dbf8bc5b38fd77e0bc65d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -302,6 +303,17 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-past-versions" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Past Versions</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-past-versions">    
+        <li>
+    <a class="dropdown-item" href="https://lter.github.io/ssecr-2024/">
+ <span class="dropdown-text">2024 (v1.0)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Projects</span>
     </a>
@@ -316,14 +328,21 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./fellows.html"> 
-<span class="menu-text">Fellows</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="./fellows.html">
+ <span class="dropdown-text">Fellows</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./instructors.html"> 
-<span class="menu-text">Instructors</span></a>
+        <li>
+    <a class="dropdown-item" href="./instructors.html">
+ <span class="dropdown-text">Instructors</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/lter/ssecr"> <i class="bi bi-github" role="img">
 </i> 
@@ -592,7 +611,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="networking-session" class="level2">
 <h2 class="anchored" data-anchor-id="networking-session">Networking Session</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">2024 Guests</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">2024 Guests</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>To motivate this module and provide some beneficial context, we’re beginning with a conversation with a panel composed of people who work at various organizations with a focus on data management and production. See the tabs below for each year’s panelists and links to their professional sites.</p>
@@ -705,7 +724,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>Virtually all search engines support “operators” to create more effective queries (i.e., search parameters). If you don’t use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you’re looking for very specific criteria in candidate datasets.</p>
 <p>See the tabs below for some useful operators that might help narrow your dataset search even when using more general platforms.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Quotes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Wildcard</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Plus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false">OR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false">Minus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false">Site</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false">File Type</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false">In Title</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-9" role="tab" aria-controls="tabset-2-9" aria-selected="false">In URL</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Quotes</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Wildcard</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Plus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">OR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Minus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">Site</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">File Type</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false" href="">In Title</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-9" role="tab" aria-controls="tabset-2-9" aria-selected="false" href="">In URL</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Use quotation marks (<code>""</code>) to <strong>search for an exact phrase</strong>. This is particularly useful when you need specific data points or exact wording.</p>
@@ -761,7 +780,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Activity: Data Inventory
+<span class="screen-reader-only">Note</span>Activity: Data Inventory
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -796,7 +815,7 @@ Activity: Data Inventory
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Discussion: Data Inventory
+<span class="screen-reader-only">Warning</span>Discussion: Data Inventory
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -815,17 +834,17 @@ Discussion: Data Inventory
 <p>Most of these methods will work regardless of the format of the data (i.e., its file extension) but the format of the data will be important when you want to ‘read in’ the data and begin to work with it.</p>
 <p>Below are some example code chunks for five methods of downloading data in a scripted way. There will be contexts where only a <u>G</u>raphical <u>U</u>ser <u>I</u>nterface (“GUI”; [GOO-ee]) is available but the details of that method of downloading are usually specific to the portal you’re accessing so we won’t include an artificial general case.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Data Entity URL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">R Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Batch Download</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">API Call</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false">Command Line</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Data Entity URL</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">R Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Batch Download</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">API Call</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Command Line</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Sometimes you might have a URL directly to a particular dataset (usually one hosted by a data repository). If you copy/paste this URL into your browser the download would automatically begin. However, we want to make our workflows entirely scripted (or close to it) so see the example below for how to download data via a data entity URL.</p>
 <p>The dataset we download below is one collected at the Santa Barbara Coastal (SBC) LTER on <a href="https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sbc.77.10">California spiny lobster (<em>Panulirus interruptus</em>) populations</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-2" class="code-annotation-target"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a>dt_url <span class="ot">&lt;-</span> <span class="st">"https://pasta.lternet.edu/package/data/eml/knb-lter-sbc/77/10/f32823fba432f58f66c06b589b7efac6"</span></span>
 <span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read it into R</span></span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a>lobster_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> dt_url)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
@@ -840,7 +859,7 @@ Discussion: Data Inventory
 <p>If you’re quite lucky, the data you want might be stored in a repository that developed (and maintains!) an <i class="fa-brands fa-r-project" aria-label="r-project"></i> R package. These packages may or may not be on CRAN (packages can often also be found on GitHub or Bioconductor). Typically these packages have a “vignette” that demonstrates how their functions should be used.</p>
 <p>Consider the following example adapted from the USGS <code>dataRetrieval</code> <a href="https://cran.r-project.org/web/packages/dataRetrieval/vignettes/dataRetrieval.html">package vignette</a>. Visit <a href="https://dashboard.waterdata.usgs.gov/app/nwd/en/">USGS National Water Dashboard interactive map</a> to find site numbers and check data availability.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(dataRetrieval)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -854,14 +873,14 @@ Discussion: Data Inventory
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>dischargeData <span class="ot">&lt;-</span> <span class="fu">readNWISdv</span>(siteNumber, parameterCd, startDate, endDate)</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co"># View the first few rows of the data</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dischargeData)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dischargeData)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>You may want to download several data files hosted in the same repository online for different spatial/temporal replicates. You <em>could</em> try to use the data entity URL or an associated <i class="fa-brands fa-r-project" aria-label="r-project"></i> package (if one exists) or you could write code to do a “batch download” where you’d just download each file using a piece of code that repeats itself as much as needed.</p>
 <p>The dataset we demonstrate downloading below is <a href="https://www1.ncdc.noaa.gov/pub/data/gsod/">NOAA weather station data</a>. Specifically it is the <u>I</u>ntegrated <u>S</u>urface <u>D</u>ata (ISD).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the start/end years for which you want to download data</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the start/end years for which you want to download data</span></span>
 <span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>target_years <span class="ot">&lt;-</span> <span class="dv">2000</span><span class="sc">:</span><span class="dv">2005</span></span>
 <span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop across years</span></span>
@@ -878,7 +897,7 @@ Discussion: Data Inventory
 <span id="annotated-cell-4-15"><a href="#annotated-cell-4-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-4-16"><a href="#annotated-cell-4-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Download the data</span></span>
 <span id="annotated-cell-4-17"><a href="#annotated-cell-4-17" aria-hidden="true" tabindex="-1"></a>  utils<span class="sc">::</span><span class="fu">download.file</span>(<span class="at">url =</span> focal_url, <span class="at">destfile =</span> focal_file, <span class="at">method =</span> <span class="st">"curl"</span>)</span>
-<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>}</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
@@ -901,7 +920,7 @@ Discussion: Data Inventory
 <p>In slightly more complicated contexts, you’ll need to make a request via an <u>A</u>pplication <u>P</u>rogramming <u>I</u>nterface (“API”). As the name might suggest, these platforms serve as a bridge between some application and code. Using such a method to download data is a–relatively–frequent occurrence in synthesis work.</p>
 <p>Here we’ll demonstrate an API call for NOAA’s <a href="https://tidesandcurrents.noaa.gov/">Tides and Currents</a> data.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed packages</span></span>
 <span id="annotated-cell-5-2"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages("librarian")</span></span>
 <span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(httr, jsonlite)</span>
 <span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -954,7 +973,7 @@ Discussion: Data Inventory
 <span id="annotated-cell-5-51"><a href="#annotated-cell-5-51" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="annotated-cell-5-52"><a href="#annotated-cell-5-52" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-5-53"><a href="#annotated-cell-5-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Invoke the function</span></span>
-<span id="annotated-cell-5-54"><a href="#annotated-cell-5-54" aria-hidden="true" tabindex="-1"></a>tide_df <span class="ot">&lt;-</span> <span class="fu">fetch_tide</span>(<span class="at">station_id =</span> <span class="st">"9411340"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-5-54"><a href="#annotated-cell-5-54" aria-hidden="true" tabindex="-1"></a>tide_df <span class="ot">&lt;-</span> <span class="fu">fetch_tide</span>(<span class="at">station_id =</span> <span class="st">"9411340"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
@@ -981,20 +1000,20 @@ Discussion: Data Inventory
 </ol>
 <p>Use the “subset/Get Data” tab on the right-hand side of the <a href="https://disc.gsfc.nasa.gov/datasets/OMSO2e_003/summary?keywords=AURA_OMI_LEVEL3">data page</a> to generate a list of file names for your specified target area and time period. <strong>Download the list of links as a TXT file named “list.txt”</strong>. Be sure to document the target area and temporal coverage you selected in your data inventory table.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0802_v003-2023m0804t120832.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0805_v003-2023m0807t093718.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0806_v003-2023m0809t092629.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0807_v003-2023m0809t092635.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0808_v003-2023m0810t092721.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">https://acdisc.gesdisc.eosdis.nasa.gov/opendap/HDF-EOS5/ncml/Aura_OMI_Level3/OMSO2e.003/2023/OMI-Aura_L3-OMSO2e_2023m0809_v003-2023m0811t101920.he5.ncml.nc4?ColumnAmountSO2[119:659][0:1439],lat[119:659],lon[0:1439]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ol start="2" type="1">
 <li>Execute the <i class="fa-solid fa-terminal" aria-label="terminal"></i> <code>wget</code> CLI command</li>
 </ol>
 <p>Open a command line window and execute the <code>wget</code> command. Replace the placeholder for username and password with your EarthData login credentials.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode bash code-annotation-code code-with-copy code-annotated"><code class="sourceCode bash"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-2" class="code-annotation-target"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--content-disposition</span> <span class="at">-i</span> list.txt</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode bash code-annotation-code code-with-copy code-annotated"><code class="sourceCode bash"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="at">-nc</span> <span class="at">--load-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--save-cookies</span> ..<span class="dt">\.</span>urs_cookies <span class="at">--keep-session-cookies</span> <span class="at">--user</span><span class="op">=</span>XXX <span class="at">--password</span><span class="op">=</span>XXX</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-2" class="code-annotation-target"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">--content-disposition</span> <span class="at">-i</span> list.txt</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
@@ -1014,7 +1033,7 @@ Discussion: Data Inventory
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Activity: Data Download
+<span class="screen-reader-only">Note</span>Activity: Data Download
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1038,7 +1057,7 @@ Activity: Data Download
 <p>CSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the <a href="https://lter.github.io/ssecr/mod_spatial.html">spatial module</a> for more details).</p>
 <p>In R, information about data’s structure can be retrieved in a variety of ways. We’ll go ahead and load the <code>dplyr</code> package as well to be able to include one Tidyverse option for evaluating structure.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
 <span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-1-4"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define URL as an object</span></span>
@@ -1060,7 +1079,7 @@ Activity: Data Download
 <button class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1">1</button><span id="annotated-cell-1-20" class="code-annotation-target"><a href="#annotated-cell-1-20" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">glimpse</span>(lobster_df)</span>
 <span id="annotated-cell-1-21"><a href="#annotated-cell-1-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-1-22"><a href="#annotated-cell-1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Checks if there are any missing values (NA) in the dataset</span></span>
-<span id="annotated-cell-1-23"><a href="#annotated-cell-1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(lobster_df)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="annotated-cell-1-23"><a href="#annotated-cell-1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">anyNA</span>(lobster_df)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
@@ -1170,13 +1189,14 @@ Activity: Data Download
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
