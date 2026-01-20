@@ -57,9 +57,9 @@ _Panelists & Guest Speakers_
 - Steve Formel -- [{{< fa globe >}}](https://www.usgs.gov/staff-profiles/stephen-k-formel)
 - Laureano Gherardi -- [{{< fa globe >}}](https://vcresearch.berkeley.edu/faculty/laureano-gherardi)
 - Lauren Hallett -- [{{< fa globe >}}](https://ie2.uoregon.edu/people/hallett/)
-- Jaclyn Hatala Matthes -- [{{< fa globe >}}](https://matthesecolab.com/people/)
+- Jaclyn Hatala Matthes
 - Kathi Jo Jankowski -- [{{< fa globe >}}](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski)
-- Nicole Kaplan -- [{{< fa globe >}}](https://www.ars.usda.gov/people-locations/person?person-id=51562)
+- Nicole Kaplan
 :::
 ::: {.column width="50%"}
 - Greg Maurer -- [{{< fa globe >}}](https://greg.pronghorns.net/index.html)
