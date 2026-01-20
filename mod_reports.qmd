@@ -26,14 +26,6 @@ After completing this module you will be able to:
 1. Install [Quarto](https://quarto.org/docs/get-started/)
 2. Double check that your group's GitHub repository is up to date
 
-## Networking Session
-
-::: panel-tabset
-### 2024 Guests
-
-To Be Determined!
-:::
-
 ## Making a Website with Notebooks
 
 Many of you are likely already familiar with the fundamentals of notebook files. So, while we could practice these skills making relatively simple notebook versions of your most important scripts, instead **we'll be making individual or team websites!** This is only a little more work than making a single file and will give you a valuable portfolio addition while you practice these skills.
