@@ -87,6 +87,8 @@ website:
               href: instructors.qmd
             - text: "Fellows"
               href: fellows.qmd
+            - text: "Panelists"
+              href: guest-speakers.qmd
       - icon: github
         href: https://github.com/lter/ssecr
   page-footer: 

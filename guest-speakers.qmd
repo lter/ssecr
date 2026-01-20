@@ -1,0 +1,45 @@
+---
+title: "Guest Speakers & Panelists"
+---
+
+## Overview
+
+SSECR class meetings in the 2024 version of the course featured a 'networking session' before each module where synthesis experts lent their insight as panelists for Q&A with the SSECR participants. See below for a list of who was invited and for which content area(s).
+
+:::{.panel-tabset}
+
+### 2024 Speakers
+
+| Module | Name | Bio / Links |
+|:-:|:---:|:----------------------------------|
+| 03 - Data Discovery & Management | Dr. [Greg Maurer](https://greg.pronghorns.net/index.html) | Environmental Data Initiative (EDI) and Jornada LTER |
+| 03 - Data Discovery & Management | Dr. [Eric Sokol](https://www.neonscience.org/person/eric-sokol) | Staff Scientist, Quantitative Ecology, National Ecological Observatory Network (NEON) |
+| 03 - Data Discovery & Management | Dr. [Nicole Kaplan](https://www.ars.usda.gov/people-locations/person?person-id=51562) | Computational Biologist, U.S. Department of Agriculture-Agricultural Research Service (USDA-ARS) |
+| 03 - Data Discovery & Management | Dr. [Steve Formel](https://www.usgs.gov/staff-profiles/stephen-k-formel) | Biologist, USGS Science, Analytics, and Synthesis Program and node manager for the Ocean Biodiversity Information System - USA (OBIS-USA) and the Global Biodiversity Information Facility US (GBIF-US) |
+| 04 - Team Science Practices | y | z |
+| 04 - Team Science Practices | y | z |
+| 04 - Team Science Practices | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+| x | y | z |
+
+
+:::
