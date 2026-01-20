@@ -18,16 +18,6 @@ After completing this module you will be able to:
 
 No specific preparation required.
 
-## Networking Session
-
-::: panel-tabset
-### 2025 Guests
-
-[Dr. Cristina Portales Reyes](https://www.portalesbiodiversitylab.com/), Assistant Professor, St. Louis University Cristy participated in the [synchrony synthesis working group](https://www.portalesbiodiversitylab.com/) as a graduate student at the University of Minnesota. That group had barely finished when she proposed (and was awarded) a working group that she now leads on difficult-to-reverse [ecosystem transitions](https://lternet.edu/working-groups/ecosystem-transitions-increased-variability-and-regime-shifts/).
-
-[Dr. Laureano Gherardi](https://vcresearch.berkeley.edu/faculty/laureano-gherardi), Assistant Professor, Berkeley University Laureano also participated in the [synchrony synthesis working group](https://lternet.edu/working-groups/synthesizing-population-and-community-synchrony-to-understand-drivers-of-ecological-stability-across-lter-sites/) as a graduate student at Arizona State University and followed it up with not one, but three additional synthesis groups: [ecosystem transitions](https://lternet.edu/working-groups/ecosystem-transitions-increased-variability-and-regime-shifts/), [global drought effects](https://lternet.edu/working-groups/a-global-synthesis-of-multi-year-drought-effects-on-terrestrial-ecosystems/), and [resilience and management](https://lternet.edu/working-groups/resilience-and-management/).
-:::
-
 ## Make Data and Code Findable
 
 Depositing your assembled dataset in a public repository ensures that others can find it and (importantly) cite it effectively. Using a repository with high-quality, machine-readable metadata goes a long way toward ensuring that it is usable and appropriately credited. Unless there is a specific reason not to use the [Environmental Data Initiative (EDI) repository](https://edirepository.org/), it is what we recommend for LTER-related data because EDI serves some of the most "findable, accessible, interoperable, and reusable" (FAIR) environmental data available. Also, since EDI serves the vast majority of LTER data, co-locating your synthesis data makes it more available to users seeking similar types of data.
