@@ -19,7 +19,7 @@ SSECR class meetings in the 2024 version of the course featured a 'networking se
 | 04 - Team Science Practices | Dr. [Lauren Hallett](https://ie2.uoregon.edu/people/hallett/) | Associate Professor, University of Oregon |
 | 04 - Team Science Practices | Dr. [Max Castorani](https://castorani.evsc.virginia.edu/) | Associate Professor, University of Virginia |
 | 04 - Team Science Practices | Dr. [Jonathan Walter](https://sites.google.com/site/jwalterecology/home) | Senior Researcher, [Center for Watershed Sciences](https://watershed.ucdavis.edu/), University of California, Davis |
-| x | y | z |
+| 05 - Inclusive Facilitation | [Mack White](https://mackwhite.github.io/) | PhD student with Dr. Jennifer Rehage, Florida International University |
 | x | y | z |
 | x | y | z |
 | x | y | z |
