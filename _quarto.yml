@@ -71,6 +71,10 @@ website:
   navbar:
     background: primary
     right: 
+      - text: "Past Versions"
+        menu:
+            - text: "2024 (v1.0)"
+              href: https://lter.github.io/ssecr-2024/
       - text: "Projects"
         menu:
             - text: "Teams"
