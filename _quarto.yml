@@ -78,15 +78,15 @@ website:
       - text: "Projects"
         menu:
             - text: "Teams"
-              href: proj_teams.qmd
+              href: projects/teams.qmd
             - text: "Milestones"
-              href: proj_milestones.qmd
+              href: projects/milestones.qmd
       - text: "People"
         menu: 
-            - text: "Fellows"
-              href: fellows.qmd
             - text: "Instructors"
               href: instructors.qmd
+            - text: "Fellows"
+              href: fellows.qmd
       - icon: github
         href: https://github.com/lter/ssecr
   page-footer: 
