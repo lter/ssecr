@@ -21,14 +21,6 @@ After completing this module you will be able to:
 
 None required.
 
-## Networking Session
-
-::: panel-tabset
-### 2024 Guests
-
-[Bala Chaudhary](https://balachaudhary.com/index.html#/) is a soil ecologist specializing in plant-soil-microbial interactions and mycorrhizal symbioses. Research in her lab examines ecosystem-scale questions in mycorrhizal ecology along four main themes: microbial dispersal at the macrosystems scale, trait-based mycorrhizal ecology, synthesis in ecology, and microbial mediation of global change solutions. She uses trait-based approaches to develop predictive frameworks for mycorrhizal dispersal, community assembly, and biogeography, and employs complimentary approaches of macroecological field work, controlled lab experiments, and data synthesis to study multi-scale questions in ecology. Her work spans dozens of ecosystem types and has applications in global change solutions including climate mitigation and adaptation, soil conservation, ecosystem restoration, and sustainable agriculture. She also conducts research on ways to broaden scientific participation and promote racial and ethnic diversity, equity, and inclusion in STEM.
-:::
-
 ## Collaborative Convergence
 
 At the beginning of a collaborative process, the most important initial outcome is getting convergence or group alignment on a set of shared goals and objectives and a plan for how to achieve them. If your team process is effective, this plan will be an _inclusive solution_--one that works for everyone in the group. Achieving this shared vision can be more difficult than one might expect. While you may expect that participants have already agreed to the vision in joining the group, agreement does not always equate to alignment. This module focuses on tools and resources to help your group navigate to convergent, inclusive solutions that everyone on the team can align around.
