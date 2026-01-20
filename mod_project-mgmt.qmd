@@ -22,17 +22,6 @@ After completing this module you will be able to:
 
 No specific preparation required.
 
-## Networking Session
-
-::: panel-tabset
-### 2024 Guests
-
-The [Silica Exports synthesis working group](https://lternet.edu/working-groups/from-poles-to-tropics-a-multi-biome-synthesis-investigating-the-controls-on-river-si-exports/) faced a number of coordination challenges -- including work context (federal agency and academia), widely dispersed geographic locations (participants and data from 6 continents), and multiple data repositories.
-Their approach to project management helped them to overcome these obstacles and assemble an exceptional database that is broadly available and a set of novel analyses.
-
-- [Kathi Jo Jankowski](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski), Research Ecologist, Upper Midwest Environmental Sciences Center, U.S. Geological Survey
-:::
-
 ## What is Project Management?
 
 There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability. You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc. There are whole industries devoted to training project managers and developing apps to support them.
