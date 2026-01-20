@@ -83,10 +83,6 @@ For languages that are more distantly related to one another, it's possible that
 
 {{< include policy/usability.qmd >}}
 
-### Artificial Intelligence Tools
-
-{{< include policy/ai.qmd >}}
-
 ### Name, Gender Identity, and/or Gender Expression
 
 {{< include policy/pronouns.qmd >}}
