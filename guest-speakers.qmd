@@ -26,7 +26,7 @@ SSECR class meetings in the 2024 version of the course featured a 'networking se
 | 08 - Supporting D.E.C. Thinking | [Bala Chaudhary](https://balachaudhary.com/index.html#/) | Associate Professor, Department of Environmental Studies at Dartmouth College |
 | 09 - Data Harmonization & Wrangling | [Stevan Earl](https://search.asu.edu/profile/938759) | Information Manager, Central Arizona-Phoenix LTER |
 | 09 - Data Harmonization & Wrangling | [Cove Sturtevant](https://www.neonscience.org/person/cove-sturtevant) | Research Scientist, National Ecological Observatory Network (NEON) |
-| x | y | z |
+| 10 - Authorship & Intellectual Credit | [Jaclyn Hatala Matthes](https://matthesecolab.com/people/) | Senior Scientist, Harvard Forest |
 | x | y | z |
 | x | y | z |
 | x | y | z |
