@@ -68,6 +68,8 @@ website:
               href: mod_interactivity.qmd
             - text: "Multivariate Visualization"
               href: mod_multivar-viz.qmd
+      - text: "Additional Resources"
+        href: resources.qmd
   navbar:
     background: primary
     right: 
