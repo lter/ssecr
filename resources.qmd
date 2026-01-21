@@ -117,3 +117,16 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
     - [ClickUp](https://clickup.com/). Capable free plan. Less intuitive to set up.
     - [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brainstorming than ongoing project management.
     - [Easy Retro](https://easyretro.io/about)
+
+## Supporting Divergent, Emergent, and Convergent Thinking
+
+- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
+- Kappel, C. [Collaboration: From groan zone to growth zone. Integration and Implementation Insights.](https://i2insights.org/2019/05/28/collaboration-groan-zone/). **2019**.
+- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+- Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
+- Bohm, D. On Dialogue. Routledge Classics. **2004**.
+- [IAF Endorsed™ Facilitation Training Programmes](https://www.iaf-world.org/site/professional/endorsement)
+- [Facilitation Training Programs recommended by the Facilitator School](https://www.facilitator.school/best-facilitation-training-courses)
+- [Liberating Structures: Including and Unleashing Everyone](https://www.liberatingstructures.com/)
+- [Gamestorming](https://gamestorming.com/)

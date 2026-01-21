@@ -30,3 +30,11 @@ Data visualization is a fundamental part of working with data. Visualization can
 
 Team science works best when all participants know when and how they can contribute. Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project. The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort. Developing an explicit logic model _as a team_ helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis. It also helps clarify all of the information that will be needed and the appropriate order of steps.
 
+## Supporting Divergent, Emergent, and Convergent Thinking Overview
+
+As many course participants will have discovered by now, the process of deciding on, refining, and choosing a path forward for data analysis will involve many differing opinions and perspectives. To work effectively as a group, you will need to elicit a broad range of ideas and then combine and focus them. This can be unfamiliar territory for researchers who have mainly pursued individual projects. While the particulars of each project are different, the patterns are often similar and being familiar with a few approaches for eliciting the best from yourself and colleagues can speed the process and improve the experience for all involved.
+
+Below you will find support for your group as you move through both exciting, and sometimes uncomfortable, stages of collaborative, participatory decision-making--from divergent to emergent and finally convergent thinking.
+
+
+
