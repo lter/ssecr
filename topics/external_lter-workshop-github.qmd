@@ -1,0 +1,7 @@
+## “Collaborative Coding with GitHub” LTER Workshop Materials
+
+The workshop materials we will be working through live [here](https://lter.github.io/workshop-github/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
+
+ ```{=html}
+<iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
+```
