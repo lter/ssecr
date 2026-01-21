@@ -31,70 +31,11 @@ The workshop materials we will be working through live [here](https://lter.githu
 
 ## Collaborating with Git
 
-It is important to remember that while Git is a phenomenal tool for collaboration, it is _not_ Google Docs! <u>You can work together but you cannot work simultaneously in the same files</u>. Working at the same time is how merge conflicts happen which can be a huge pain to untangle after the fact. Fortunately, avoiding merge conflicts is relatively simple! Here are a few strategies for avoiding conflicts.
-
-:::{.panel-tabset}
-## Separate Scripts
-
-At it's simplest, you can make a separate script for each group member and have each of you work _exclusively_ in your own script. If no one ever works in your script you will never have a merge conflict even if you are working in your script at the same time as someone else is working in theirs.
-
-You can do this by all working on separate scripts that are trying to do the same thing or you can delegate a particular script in the workflow to a single person (e.g., one person is the only one allowed to edit the 'data wrangling' script, another is the only one allowed to edit the 'analysis' script, etc.)
-
-**Recommendation: Worth Discussing!**
-
-## Separate Shifts
-
-You might also decide to work together on the same scripts and just stagger the time that you are doing stuff so that all of your changes are made, committed, and pushed before the next person begins work. This is a particularly nice option if you have people in different time zones because someone in Maine can work on code likely before another team member living in Oregon has even woken up much less started working on code.
-
-For this to work _you will need to communicate extensively with the rest of your team_ so that you are absolutely sure that you won't start working before someone else has finished their edits.
-
-**Recommendation: Worth Discussing!**
-
-## Forks
-
-GitHub does offer a "fork" feature where people can make a copy of a given repository that they then 'own'. Forks are connected to the source repository and you can open a pull request to get the edits from one fork into the source repository.
-
-This may sound like a perfect fit for collaboration but in reality it introduces significant hurdles! Consider the following:
-
-1. It is difficult to know where the "best" version of the code lives
-
-It is equally likely for the primary code version to be in any group member's fork (or the original fork). So if you want to re-run a set of analyses you'll need to hunt down which fork the current script lives in rather than consulting a single repository in which you all work together.
-
-2. You essentially guarantee significant merge conflicts
-
-If everyone is working independently and submitting pull requests to merge back into the main repository you all but ensure that people will make different edits that GitHub then doesn't know how to resolve. The pull request will tell you that there are merge conflicts but you still need to fix them yourself--and now that fixing effort must be done in someone else's fork of the repository.
-
-3. It's not the intended use of GitHub forks
-
-Forks are intended for when you want to take a set of code and then "go your own way" with that code base. While there is a mechanism for contributing those edits back to the main repository it's really better used when you never intend to do a pull request and thus don't have to worry about eventual merge conflicts. A good example here is you might attend a workshop and decide to offer a similar workshop yourself. You could then fork the original workshop's repository to serve as a starting point for your version and save yourself from unnecessary labor. It would be bizarre for you to suggest that your workshop should _replace_ the original one even if did begin with that content.
-
-**Recommendation: Don't Do This**
-
-## Branches
-
-GitHub also offers a "branch" feature which is similar to forks in some ways. Branches create parallel workspaces within a single repository as opposed to forks that create a copy of a repository under a different user.
-
-These have the same hurdles as forks so check out the first two points in the "Work in Forks" tab. Also, just like forks, this isn't how branches were meant to be used either! Branches exist so that you can leave some version of the code untouched while simultaneously developing some improvement in a branch. That way the user experiences a seamless upgrade while still allowing you to have a messy development period. Branches _are not_ intended for multiple people to be working on the same things at the same time and merge conflicts are the likely outcome of using branches in this way.
-
-**Recommendation: Don't Do This**
-
-## Single Author
-
-You may be tempted to just delegate all code editing to a single person in the group. While this strategy does guarantee that there will never be a merge conflict it is also deeply inequitable as it places an unfair share of the labor of the project on one person.
-
-Practically-speaking this also encourages an atmosphere where only one person can even _read_ your group's code. This makes it difficult for other group members to contribute and ultimately may cause your group to 'miss out on' novel insights.
-
-**Recommendation: Don't Do This**
-:::
+{{< include topics/github-recs.qmd >}}
 
 ## Additional Resources
 
-### Papers & Documents
-
-- Pereira Braga, P.H. _et al._ [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
-- GitHub. [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
-
-### Workshops & Courses
-
 - Bryan J. _et al._ [Happy Git and GitHub for the useR](https://happygitwithr.com/). **2024**.
+- Pereira Braga, P.H. _et al._ [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
 - National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). **2023**.
+- GitHub. [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
