@@ -1,0 +1,14 @@
+---
+title: "2024 Learning Objectives"
+---
+
+## Version Control Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Describe</u> how version control facilitates code collaboration
+- <u>Navigate</u> GitHub via a web browser
+- <u>Create</u> and edit a repository through GitHub
+- <u>Define</u> fundamental git vocabulary
+- <u>Sketch</u> the RStudio-to-GitHub order of operations
+- <u>Use</u> RStudio, Git, and GitHub to collaborate with version control

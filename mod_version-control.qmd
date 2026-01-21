@@ -2,25 +2,6 @@
 title: "Version Control"
 ---
 
-## Overview
-
-Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code "scripts") that lends itself remarkably well to coding in groups. The LTER Network Office has a [Scientific Computing Team](https://lter.github.io/scicomp/) that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than re-invent these materials for the purposes of SSECR, we will work through parts of these workshop materials.
-
-## Learning Objectives
-
-After completing this module you will be able to: 
-
-- <u>Describe</u> how version control facilitates code collaboration
-- <u>Navigate</u> GitHub via a web browser
-- <u>Create</u> and edit a repository through GitHub
-- <u>Define</u> fundamental git vocabulary
-- <u>Sketch</u> the RStudio-to-GitHub order of operations
-- <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
-
-## Preparation
-
-Complete the ["Workshop Preparation" steps](https://lter.github.io/workshop-github/#workshop-preparation) identified in the linked workshop (see below).
-
 ## LTER SciComp Workshop Materials
 
 The workshop materials we will be working through live [here](https://lter.github.io/workshop-github/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
@@ -29,13 +10,4 @@ The workshop materials we will be working through live [here](https://lter.githu
 <iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>
 ```
 
-## Collaborating with Git
-
 {{< include topics/github-recs.qmd >}}
-
-## Additional Resources
-
-- Bryan J. _et al._ [Happy Git and GitHub for the useR](https://happygitwithr.com/). **2024**.
-- Pereira Braga, P.H. _et al._ [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
-- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). **2023**.
-- GitHub. [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
