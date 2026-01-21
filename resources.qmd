@@ -142,3 +142,18 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 -   Fox, J. [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. _Dynamic Ecology_
 -   Borer, E. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
 
+## Authorship & Intellectual Credit
+
+- Jennings, L. _et al._ [Governance of Indigenous data in open earth systems science](https://doi.org/10.1038/s41467-024-53480-2). **2025**. _Nature Communications_
+- Lund, B.D. & Naheem, K.T. [Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals](https://doi.org/10.1002/leap.1582). **2024**. _Learned Publishing_
+- Puebla, I. _et al._ [Ten Simple Rules for Recognizing Data and Software Contributions in Hiring, Promotion, and Tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. _PLoS Computational Biology_
+- Nelson, P.R. _et al._ [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. _PNAS_
+- Dahlin, K.M. _et al._, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. _Frontiers in Ecology and the Environment_
+- Allen, L. _et al._, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. _Learned Publishing_
+- Wilkinson, M. _et al._ [The FAIR Guiding Principles for Scientific Data Management and Stewardship](https://doi.org/10.1038/sdata.2016.18). **2016**. _Scientific Data_
+- Brand, A. _et al._ [Beyond Authorship: Attribution, Contribution, Collaboration, and Credit](https://doi.org/10.1087/20150211). **2015**. _Learned Publishing_
+- Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at \#22.
+- American Geophysical Union [Publications and Ethics Policies](https://www.agu.org/publications/authors/policies#ethical-obligations).
+- Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html)
+- Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
+- Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)

@@ -1,0 +1,19 @@
+## An Evolving Landscape
+
+Community science and knowledge co-production with non-academics, particularly Indigenous knowledge and rights-holders, have been growing rapidly in the last few years. The academic community is still struggling to come to terms with how best to honor and credit such research partners. Authorship is an academic currency that may or may not have value for community partners. Indigenous Peoples can be understandably wary about sharing data related to their land, resources, history, culture, and bodies. The [CARE Principles](https://doi.org/10.5334/dsj-2020-043) (Collective Benefit, Authority to Control, Responsibility, and Ethics) were published in 2020 help researchers focus on the values most important to Indigenous data stewards, rather than focusing solely on the open-data [FAIR Principles](https://doi.org/10.1038/sdata.2016.18) (Findable Accessible, Interoperable, and Reproducible) and [concrete guidance](https://doi.org/10.1038/s41467-024-53480-2) is gradually being developed to guide researchers. Community science and Indigenous data found in repositories should include guidance on how they can ethically be reused.
+
+Another emerging issue in intellectual credit is how to deal with the growing role of AI in research and publishing. Understanding how AI has been used in a research effort is critical to evaluating the reliability of results. Providing figures and asking AI to write a paper yields a very different result than providing bullet points along with the figures, or asking AI to clean up your first draft. In addition, almost every AI system currently available provides results by drawing on millions of public data sources, without any thought of crediting the originators. Journal publishers are starting to [provide guidance](https://doi.org/10.1002/leap.1582) about how to acknowledge researchers' use of AI.
+
+
+:::{.callout-warning icon="false"}
+#### Discussion: Examine Existing Authorship Policies
+
+Next, we'll take a closer look at three approaches to authorship policies from teams of varying sizes. Three breakout groups will focus on one policy each and report back on the approaches strengths and weaknesses. Please take 10 minutes to scan the assigned authorship policy and another 15 minutes to discuss it's implications, what it might miss, how it might distort or align incentives for collaboration, data sharing, and freeloading.
+
+1.  [Nutrient Network Authorship Policy](https://nutnet.org/authorship)
+2.  [Expanded Authorship Guidelines](https://doi.org/10.1002/2688-8319.12060) (Cooke _et al._ 2021)
+3.  [CReDiT Framework](https://doi.org/10.1087/20150211) (Brand _et al._ 2015)
+
+:::
+
+**We contend that there is no single "right" authorship policy. _But_ each policy we've covered has advantages in certain situations.** What matters most is that the research team discusses their approach and records it in an accessible location where it can be revisited and updated as needed.

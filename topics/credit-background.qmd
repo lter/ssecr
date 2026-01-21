@@ -1,0 +1,84 @@
+## Intellectual Credit Context
+
+In their [Code of Ethics](https://esa.org/about/code-of-ethics/) the Ecological Society of America lays out what seems like straightforward guidance for what contributions warrant authorship on a paper:
+
+> 22. Researchers will claim authorship of a paper only if they have made a substantial contribution. Authorship may legitimately be claimed if researchers
+>
+>     1.  conceived the ideas or experimental design;
+>
+>     2.  participated actively in execution of the study;
+>
+>     3.  analyzed and interpreted the data; or
+>
+>     4.  wrote the manuscript
+
+The recommendations from the [International Committee of Medical Journal Editors (ICMJE)](https://www.icmje.org/recommendations/), first published in 1978, updated in 2019, and again in 2025, goes a step farther and requires all 4 of the following responsibilities:
+
+> 1.  Substantial contributions to the conception or design of the work; or the acquisition, analysis, or interpretation of data for the work; AND
+>
+> 2.  Drafting the work or reviewing it critically for important intellectual content; AND
+>
+> 3.  Final approval of the version to be published; AND
+>
+> 4.  *Agreement to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.*
+
+But what are we to do in the context of a multidisciplinary group project, where the study design design often results from multiple overlapping and free-wheeling conversations and trials? Each contributor may have very limited knowledge of the others' fields or expertise. Fairly judging authorship, let alone "being accountable for all aspects of the work" becomes much more complicated. But readers and journal editors have a right to expect that authors can stand behind their work.
+
+In such cases, the potential for misunderstanding and conflict becomes obvious. And, of course, academia's traditionally hierarchical structures can make it especially difficult for early career researchers to advocate for themselves in the moment. Proactively developing an authorship policy can help head off intra-group conflict, which can be especially destructive for early career researchers. It also helps the group to clarify expectations, maintain accountability, and allows researchers to rehearse potentially difficult conversations before they become personal.
+
+Of course, it's useful to bear in mind that human psychology also has a role to play in authorship conflicts. It is quite common for individuals to overestimate their own contribution to the work of a team, especially when the outcome is positive. Nelson et al. (2020) examined the phenomenon in the context of scientific publishing and found that authors almost universally over-estimated their own contribution to a project, at least with respect to how their team members perceived it.
+
+<p align="center">
+<img src="topics/images/figure_credit-01.jpeg" alt="Column graph with the sum of authors' self-reported contributions exceeding 100% by 17 to 158%" width="100%"/>
+<figcaption> Figure taken from Nelson _et al._ 2020. The sum of coauthors percent contribution to 10 published manuscripts is shown in (A). The red dash-dotted line represents the sum of coauthors' contributions after they were given the opportunity to adjust their own percent contribution. In (B) we show the mean percent contribution assigned by coauthors to themselves in Step 1 ("Self"), percent contribution coauthors assigned to themselves after given the opportunity to adjust their contribution not to exceed 100% in Step 2 ("Self-Corrected"), and mean percent contribution assigned to authors by their coauthors ("Other"). Error bars represent standard errors of the means. \*\*p\<.01, \*\*\*p\<.0001. </figcaption>
+</p>
+
+At each stage of a project, different factors may work to distort, conceal, or amplify the contributions of some authors or potential authors. Take a few minutes to consider each project stage and how misperceptions might arise.
+
+:::{.callout-warning icon="false"}
+#### Discussion: Your Experiences with Intellectual Credit
+
+Take a few minutes to reflect on your own experiences in each of these areas before expanding each of the below panels. **In each area, what types of contributions have you noticed get under- or over-valued?**
+
+::: {.callout-caution collapse="true" appearance="minimal"}
+### Hypothesis Development
+
+-   In group discussions, the contributions of asynchronous or virtual participants can easily be discounted, because they seem less immediate.
+-   Similarly, when an idea is first contributed by an early career-stage participant, it can be overlooked until echoed by a senior participant.
+-   Often, a seemingly naive question ignites the process that leads to a new way of seeing the problem. In these cases, the conclusion is often remembered, but the question (and the questioner) rarely is.
+
+:::
+
+::: {.callout-warning collapse="true" appearance="minimal"}
+### Data Gathering
+
+-   Data that are easily accessed and downloaded can receive less credit than when the synthesis team needs to make direct contact with the original researcher to get access or permission to use. Data should always be cited, even when they are already publicly available.
+-   Significant labor goes into finding, downloading, and cleaning datasets, but it is not glamorous work and often happens in isolation. That does not make it any less essential.
+
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+### Data Analysis
+
+-   Data analysis is the "meat" of synthesis, but even here there are pitfalls. Consider the originality of the approach and the labor involved when valuing analytical contributions.
+-   While the work of doing the analysis may fall to the more quantitatively skilled team members, key insights at this stage often come from careful review by, and discussion with, field ecologists and savvy communicators. Just because someone didn't write the R code doesn't mean they didn't contribute to analysis.
+
+:::
+
+::: {.callout-tip collapse="true" appearance="minimal"}
+### Writing
+
+-   Like framing a house, framing the "story" of a paper provides essential structure and stability -- even when covered by the walls and trim (or words and figures) of the built-out product.
+-   Getting the first few paragraphs on the page is a valuable contribution -- even if not a single one of those words makes it to the final draft. Editing and expanding others' work is far easier than writing de novo.
+
+:::
+
+::: {.callout-important collapse="true" appearance="minimal"}
+### Editing
+
+-   Even when all contributors are fluent writers, the job of merging disparate sections into a single voice is challenging and deserves credit.
+-   Resolving versions, checking references, and formatting are thankless, but essential tasks in getting to a publishable product.
+
+:::
+
+:::

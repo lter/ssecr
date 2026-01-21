@@ -94,13 +94,13 @@ After completing this module you will be able to:
 - <u>Explain</u> benefits and drawbacks of using data shape to streamline code
 - <u>Design</u> a complete data wrangling workflow
 
+## Authorship & Intellectual Credit Learning Objectives
 
+After completing this module you will be able to:
 
-
-
-
-
-
-
+-   <u>Define</u> types of intellectual contributions to a synthesis project
+-   <u>Describe</u> some common frameworks for equitable authorship decisions
+-   <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
+-   <u>Create</u> a draft intellectual credit plan for your team
 
 
