@@ -11,8 +11,8 @@ execute:
 website:
   title: "Synthesis Skills for Early Career Researchers"
   repo-url: https://github.com/lter/ssecr
-  repo-actions: [issue]
-  favicon: images/logo_lter.png
+  repo-actions: [issue] 
+  favicon: topics/images/logo_lter.png
   google-analytics: "G-YGFW2JT4EY"
   sidebar: 
     title: "Modules"
@@ -91,8 +91,8 @@ website:
     center: "Copyright 2026, LTER Network"
     background: secondary
   margin-footer: |
-    ![NCEAS Logo](images/logo_nceas.png){ width=40% }
-    ![LTER Logo](images/logo_lter.png){ width=34% }
+    ![NCEAS Logo](topics/images/logo_nceas.png){ width=40% }
+    ![LTER Logo](topics/images/logo_lter.png){ width=34% }
 
 format:
   html:
