@@ -31,3 +31,17 @@ Each project group should:
 install.packages("librarian")
 librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)
 ```
+
+## Data Harmonization & Wrangling Preparation
+
+1. In project teams, draft your strategy for wrangling data
+    - What needs to happen to the datasets in order for them to be usable in answering your question(s)?
+    -   I.e., what quality control, structural changes, or formatting edits must be made?
+2.  *If you are an R user*, run the following code:
+
+```{r install-pkgs}
+#| eval: false
+
+install.packages("librarian")
+librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
+```

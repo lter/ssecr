@@ -1,0 +1,14 @@
+::: {.callout-note icon="false"}
+#### Activity: Conditionals
+
+In a script, attempt the following with the PIE crab data:
+
+-   Create a column indicating when air temperature is above or below 13° Fahrenheit
+-   Create a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile
+
+<details>
+<summary>Hint</summary>
+Consult the `summary` function output!
+</details>
+
+:::

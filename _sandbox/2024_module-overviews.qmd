@@ -36,5 +36,13 @@ As many course participants will have discovered by now, the process of deciding
 
 Below you will find support for your group as you move through both exciting, and sometimes uncomfortable, stages of collaborative, participatory decision-making--from divergent to emergent and finally convergent thinking.
 
+## Data Harmonization & Wrangling Overview
+
+Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we're adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas.
+
+
+
+
+
 
 
