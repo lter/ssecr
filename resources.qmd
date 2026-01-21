@@ -2,7 +2,7 @@
 title: "Additional Resources"
 ---
 
-See below for a non-exhaustive list of additional resources that may prove helpful complements to SSECR course content.
+See below for a (non-exhaustive) list of additional resources that may prove helpful complements to SSECR course content.
 
 ## Version Control
 
@@ -11,3 +11,21 @@ See below for a non-exhaustive list of additional resources that may prove helpf
 - National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). **2023**.
 - GitHub. [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
 
+## Reproducibility
+
+- British Ecological Society (BES). [Better Science Guides: Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
+- Englehardt, C. _et al._ [FAIR Teaching Handbook](https://fairsfair.gitbook.io/fair-teaching-handbook/). **2024**.
+- Csik, S. _et al._ UCSB [Master of Environmental Data Science (MEDS) README Guidelines](https://ucsb-meds.github.io/README-guidelines/). **2024**.
+- The Carpentries. [Data Analysis and Visualization in R for Ecologists: Before We Start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html). **2024**.
+- The Carpentries. [Introduction to R for Geospatial Data: Project Management with RStudio](https://datacarpentry.org/r-intro-geospatial/02-project-intro.html). **2024**.
+- Briney, K. [Research Data Management Workbook](https://caltechlibrary.github.io/RDMworkbook/). **2024**.
+- Google. [Style Guide](http://adv-r.had.co.nz/Style.html). **2024**.
+- LTER Scientific Computing Team. [Team Coding: 5 Essentials](https://lter.github.io/scicomp/wg_team-coding.html). **2024**.
+- Jennings, L. _et al._ [Applying the 'CARE Principles for Indigenous Data Governance' to Ecology and Biodiversity Research](https://www.nature.com/articles/s41559-023-02161-2). **2023**. _Nature Ecology & Evolution_
+- Wickham, H. & Bryan, J. [R Packages](https://r-pkgs.org/) (2nd ed.). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: FAIR and CARE Principles](https://learning.nceas.ucsb.edu/2023-10-coreR/session_05.html). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Reproducibility & Provenance](https://learning.nceas.ucsb.edu/2023-10-coreR/session_18.html). **2023**.
+- Lowndes, J.S. _et al._ [Documenting Things: Openly for Future Us](https://openscapes.github.io/documenting-things/#/title-slide). **2023**. _posit::conf(2023)_
+- Trisovic, A. _et al._ [A Large-Scale Study on Research Code Quality and Execution](https://www.nature.com/articles/s41597-022-01143-6). **2022**. _Scientific Data_
+- Wickham, H. [Advanced R: Style Guide](http://adv-r.had.co.nz/Style.html). (1st ed.). **2019**.
+- van Rossum, G. _et al._ [PEP 8: Style Guide for Python Code](https://peps.python.org/pep-0008/). **2013**. _Python Enhancement Proposals_

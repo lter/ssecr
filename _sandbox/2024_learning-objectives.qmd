@@ -12,3 +12,14 @@ After completing this module you will be able to:
 - <u>Define</u> fundamental git vocabulary
 - <u>Sketch</u> the RStudio-to-GitHub order of operations
 - <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
+
+## Reproducibility Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Identify</u> core tenets of reproducibility best practices
+- <u>Create</u> robust workflow documentation
+- <u>Implement</u> reproducible project organization strategies
+- <u>Discuss</u> methods for improving the reproducibility of your code products
+- <u>Summarize</u> FAIR and CARE data principles
+- <u>Evaluate</u> the FAIR/CAREness of your work
