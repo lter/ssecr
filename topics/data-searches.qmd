@@ -1,0 +1,65 @@
+## Searching for Data
+
+If you don't find what you're looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, [Google](https://www.google.com) is a surprisingly good resource for finding data and--for those familiar with Google Scholar for peer reviewed literature-specific Googling--there is a dataset-specific variant of Google called [Google Dataset Search](https://datasetsearch.research.google.com/).
+
+#### Search Operators
+
+Virtually all search engines support "operators" to create more effective queries (i.e., search parameters). If you don't use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you're looking for very specific criteria in candidate datasets.
+
+See the tabs below for some useful operators that might help narrow your dataset search even when using more general platforms.
+
+:::{.panel-tabset}
+#### Quotes
+
+Use quotation marks (`""`) to **search for an exact phrase**. This is particularly useful when you need specific data points or exact wording.
+
+Example: `"reef biodiversity"`
+
+#### Wildcard
+
+Use an asterisk (`*`) to **search using a placeholder for any word or phrase in the query**. This is useful for finding variations of a term.
+
+Example: `Pinus * data`
+
+#### Plus
+
+Use a plus sign (`+`) to **search using more than one query *at the same time***. This is useful when you need combinations of criteria to be met.
+
+Example: `bat + cactus`
+
+#### OR
+
+Use the 'or' operator (`OR`) operator to **search for either one term *or* another**. It broadens your search to include multiple terms.
+
+Example: `"prairie pollinator" OR "grassland pollinator"`
+
+#### Minus
+
+Use a minus sign (`-`; a.k.a. "hyphen") to **exclude certain words from your search**. Useful to filter out irrelevant results.
+
+Example: `marine biodiversity data -fishery`
+
+#### Site
+
+Use the site operator (`site:`) to **search within a specific website or domain**. This is helpful when you're looking for data from a particular source.
+
+Example: `site:.gov bird data`
+
+#### File Type
+
+Use the file type operator (`filetype:`) to **search for data with a specific file extension**. Useful to make sure the data you find is already in a format you can interact with.
+
+Example: `filetype:tif precipitation data`
+
+#### In Title
+
+Use the 'in title' operator (`intitle:`) to **search for pages that have a specific word in the title**. This can narrow down your results to more relevant pages.
+
+Example: `intitle:"lithology"`
+
+#### In URL
+
+Use the 'in URL' operator (`inurl:`) to **search for pages that have a specific word in the URL**. This can help locate data repositories or specific datasets.
+
+Example: `inurl:data soil chemistry`
+:::

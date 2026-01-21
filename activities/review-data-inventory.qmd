@@ -1,0 +1,31 @@
+:::{.callout-note icon="false"}
+#### Activity: Data Inventory
+
+**Part 1**
+
+In your project groups:
+
+- Review your data inventory Google Sheet and discuss why you chose the datasets included.
+- Discuss what key information is needed to determine if each dataset is useful for your project. The columns from the detailed data inventory sheet (Data_Inventory_V2) might help to guide the conversation.  
+- Decide on the datasets you want to use in your analysis, ensuring there are at least as many as group members. Each group member will self-assign at least one dataset.
+    - _Later, each person will download their assigned dataset_ 
+- After identifying the necessary information, begin filling out the detailed data inventory Google Sheet. Focus on completing the columns that are relevant for making informed decisions. 
+    - _This sheet will be shared with another group in Part 2_
+
+**Part 2**
+
+- You are assigned to review the detailed data inventory table (Data_Inventory_V2) from another project group
+- Each group member self-assigns one dataset that you want to review.
+- Try to find the exact data file to which you were assigned
+- Do you agree with the information entered in the data inventory?
+- Is there any information you think should be in the data inventory that wasn’t?
+
+**Part 3**
+
+In a larger group, discuss (some of) the following questions:
+
+- Which elements of the data inventory table made it easier or more difficult to find the data?
+- What challenges did you encounter while searching for the datasets?
+- What is your plan for downloading the data?
+
+:::
