@@ -184,3 +184,22 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 -  [Pivot-RP](https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/pivot-rp-funding/), a Clarivate product that curates funding opportunities across public and private sources. Pivot is a paid product, but most research universities have access
 -  [Philanthropy News Digest](https://philanthropynewsdigest.org/rfps) publishes a feed of requests for proposals from private foundations. It can be filtered by topic, location, and other keywords. Awards are small, relative to federal funding agencies and topics tend to be applied
 -  [Community Foundations](https://cof.org/foundation-type/community-foundations) fund project with clear benefits to a local community
+
+## Communicating Findings 
+
+- [Kelso Harper, LTER Visual Media Series](https://www.youtube.com/watch?v=eSIRSUene1M). **2024**.
+- [Science Graphics with Jen Christiansen, LTER Visual Media Series](https://www.youtube.com/watch?v=yWxlTYUcWNo). **2024**.
+- [Jasiek Krzysztofiak, LTER Visual Media Series](https://www.youtube.com/watch?v=FyQtGB4JFEw). **2024**.
+- Corominas, J. [Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences). **2024**. _Adsmurai_
+- NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Communicating Your Science](https://learning.nceas.ucsb.edu/2023-10-delta/session_02.html). **2023**.
+- Krishnan, A. [Why do we use jargon when talking about science?](https://india.mongabay.com/2023/06/explainer-why-do-we-use-jargon-when-talking-about-science/). **2023**. _MongaBay_
+- Prast, I. [Writing for Different Audiences: Adapting Your Tone and Style](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.). **2023**. _Medium_
+- Delta Science Program. [Session 7: Communicating Your Research: The Message Box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html). **2021**. 
+- [Five tips for scientists speaking to reporters](https://www.sciline.org/advice/5-tips-speaking-reporters/). **2021**. AAAS SciLine
+- Webster, T. [The Simplest Storytelling Structure](https://medium.com/find-the-red-thread-persuasion/the-simplest-storytelling-structure-7fdc7d8a60e5). **2020**. _Medium_
+- Foot, G. [How to get an audience to care about your science](https://www.youtube.com/watch?v=OwPMU5-gbh4&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=8). **2020**. ‘Talking Science' Course \#4. _YouTube_
+- Foot, G. [How to explain a science idea clearly](https://www.youtube.com/watch?v=u9cqwQQqHoU&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=9). **2020**. ‘Talking Science' Course \#6. _YouTube_
+- Wenker, R. [Storytelling and Science: What's ABT got to do with it?](https://ian.umces.edu/blog/storytelling-and-science-whats-abt-got-to-do-with-it/). **2018**. _University of Maryland, Center for Environmental Science_
+- Olson, R. [Great Challenges Day at TEDMED 2013](https://www.youtube.com/watch?v=ERB7ITvabA4). **2013**
+- [A Guide to Scientific Storytelling](https://cartoonbase.com/en/resources/blog/a-guide-to-scientific-storytelling/). Cartoonbase.
+- American Geophysical Union (AGU). [A Scientist's Guide to Working with the Media](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf). 

@@ -52,5 +52,17 @@ Given the wide range in statistical training in graduate curricula (and correspo
 
 Whether group members are excited about continuing to work together or ready to go their own ways, a little thought and discussion about how group members envision their next steps can set you up for success. In this module, we discuss ways to help ensure that your work is recognized and cited, talk about expectations going forward, and begin thinking about how continued work could be supported.
 
+## Communicating Findings Overview
+
+So you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. In this module, we talk through some broadly applicable scicomm strategies that will get you started.
+
+:::{.callout-important}
+### Note for Those Completing this Module Independently
+
+This module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
+
+:::
+
+
 
 

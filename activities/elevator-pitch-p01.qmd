@@ -1,0 +1,16 @@
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#1
+
+Individually:
+
+- Draft a 1-minute-long elevator pitch for your project
+- 3 minutes to write, 5 minutes to share with your peers
+
+<details>
+<summary>Hint</summary>
+All effective communication contains a story!
+</details>
+
+This first exercise is a starting point. First of all, it's really hard to distill your whole project down to a minute! Think about how much you left out, and how much it hurt to leave that out. From here, we'll continue to refine and rebuild this elevator pitch.
+
+:::

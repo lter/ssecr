@@ -1,0 +1,19 @@
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#2
+
+**Part 1 - Revize**
+
+- Revisit your draft elevator pitch and tweak it to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences _max_
+    - If you can't fit it all in, you're probably trying to say too much!
+
+**Part 2 - Share**
+
+- Share out and critique in groups
+- Things to look out for as a listener:
+    - Do I know just enough information to understand the problem? If not, what am I missing?
+    - Does the problem 'hook' me in?
+    - Are the stakes clear?
+    - What would make this speak to me more?
+    - Does the conclusion actually resolve the problem?
+
+:::

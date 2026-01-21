@@ -1,0 +1,21 @@
+:::{.callout-note icon="false"}
+#### Activity: Elevator Pitch - Draft \#4
+
+**Part 1 - Revise**
+
+- Re-imagine your elevator pitch to the following different audiences:
+    - Friend
+    - Colleague in a different subfield of your field
+    - Funder
+    - Reporter asking for a short summary for a radio story
+    - 8th grade students visiting your site
+    - Another audience (of your choosing!)
+
+**Part 2 - Share**
+
+- Share out and critique in groups
+- Things to look out for as a listener:
+    - Is the "hook" appropriate for each audience?
+    - Is the detail or technical language appropriate for that audience?
+
+:::
