@@ -62,6 +62,16 @@ After completing this module you will be able to:
 - <u>Discuss</u> differences between presentation- and publication-quality graphs
 - <u>Explain</u> how your graphs can be made more accessible
 
+## Project Management Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Articulate</u> key principles of project management
+- <u>Define</u> common approaches for defining project scope
+- <u>Identify</u> and make explicit internal logical leaps
+- <u>Develop</u> (or refine) the project management framework for your team project
+
+
 
 
 

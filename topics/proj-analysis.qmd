@@ -1,0 +1,13 @@
+## Outline Your Analysis
+
+Once the team has settled on a question and specific set of processes to explore or test, it's worth sketching out the steps in your analysis.
+By making the inputs, processing, and outputs of each step explicit, you'll identify needed data sooner and avoid (some) backtracking.
+
+The process of building an explicit analysis description as a team can quickly reveal mismatches in team members' mental models and uncover hidden assumptions.
+Making those (often disciplinary) differences visible early can mitigate some of the biggest risks of interdisciplinary research and also offer a way into the most novel insights.
+A well-structured analysis plan can also be a touchstone to return to throughout the life of your project, keeping the team on-track and avoiding mission creep.
+
+<p align="center">
+<img src="topics/images/figure_analysis-flow.png" alt="rectangular boxes containing data sources (Si concentration, streamflow, watershed geometry and land use, watershed precipitation), linked to diamond-shaped boxed describing processing steps, linked to more rectangles with outputs" width="90%"/>
+<figcaption>Analysis flowchart for a (relatively) straightforward test of controls on Silica exports in streamflow.</figcaption>
+</p>

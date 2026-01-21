@@ -1,0 +1,32 @@
+## How to Start
+
+Like outlining a paper, there are a few basic steps to developing a solid project management plan. And it's easy to think you can skip over the first steps because they seem so obvious. The trouble is, they may be obvious to each team member in different ways. Taking the time to make sure you all see them the same way can save worlds of headache down the road.
+
+1. Define the project
+2. Agree on the goal and the timeline
+3. If the timeline is determined externally (as for SSECR or for most grants), you'll need to start with the timeline (possibly budget) and scope the project to fit the time and funds you have available.
+4. Develop a list of the steps needed to get from where you are to where you need to be.
+5. Place the steps in order and define the inputs and outputs of each step.
+6. Identify the people responsible for each step and an approximate timeline for its completion.
+7. Identify time points for check-in and re-evaluation
+
+Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today. First, though, we'll remind ourselves of _why_ the investment in planning time is so valuable.
+
+::: {.callout-warning icon="false"}
+### Discussion: Project Management "Fails"
+
+Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment...
+
+**Part 1**
+
+Reflect silently on one of your own project management "fails"
+
+- What went wrong?
+- How could planning have prevented or improved the situation?
+
+**Part 2**
+
+- Share your project management "fails"
+- If time allows, consider what aspects of planning are most likely to be skipped or overlooked
+
+:::

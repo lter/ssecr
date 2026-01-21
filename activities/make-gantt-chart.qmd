@@ -1,0 +1,49 @@
+::: {.callout-note icon="false"}
+### Activity: Develop a Project Timeline/Gantt Chart
+
+As a project group, work through the following prompts.
+
+Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
+
+- Decide whether you will use the Google Sheet template or GitHub
+    - Click the respective tab for the next direction
+
+:::{.panel-tabset}
+#### Google Sheet Template
+
+1. Access the [**Google sheet template**](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing), and copy it into your project folder
+    - The template has two tabs
+    - The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead
+    - The "basic" tab will update the graph when you update task dates
+2. Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet
+3. Add or remove steps as needed for your proposed project
+4. Choose task leads
+    - They should expect to draw on other group members for assistance and feedback
+5. Review the chart
+    - What appear to be the bottlenecks?
+    - How could you mitigate them?
+    - Can subgroups work simultaneously on different sub-projects?
+    - Do you need to think about re-scoping the project?
+6. Revise task dates as needed
+    
+#### GitHub
+
+1. Go to your project repository and find the project that has been created for you (top center menu)
+    - It will open in a Kanban Board view
+2. Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description
+    - A nice touch here is to add a checklist of subtasks
+3. Choose task leads and add them to each task card (supporting group members can also be added)
+4. Add approximate start dates and target end dates for each task
+5. When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back
+6. Review the chart
+    - What appear to be the bottlenecks? How could you mitigate them?
+    - Can subgroups work simultaneously on different sub-projects?
+    - Do you need to think about re-scoping the project?
+    
+:::
+
+- Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart
+    - Every group meeting? Every Monday? Once a month?
+- After 30 minutes, return to whole group and discuss any insights or innovations
+
+:::
