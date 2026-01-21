@@ -1,0 +1,11 @@
+:::{.callout-note icon="false"}
+#### Activity: Graph Creation (P1)
+
+In a script, attempt the following with one of either yours or your group's datasets:
+
+- Make a graph using `ggplot2`
+    - Include at least one geometry
+    - Include at least one aesthetic (beyond X/Y axes)
+    - Modify at least one theme element from the default
+
+:::

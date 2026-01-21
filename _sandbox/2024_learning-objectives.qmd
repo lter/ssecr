@@ -52,6 +52,16 @@ After completing this module you will be able to:
 - <u>Identify</u> methods for ensuring equitable access to participation in a team setting
 - <u>Identify</u> one activity that privileges each thinking style
 
+## Data Visualization & Exploration Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Explain</u> how data visualization can be used to explore data
+- <u>Define</u> fundamental `ggplot2` vocabulary
+- <u>Identify</u> appropriate graph types for given data type/distribution
+- <u>Discuss</u> differences between presentation- and publication-quality graphs
+- <u>Explain</u> how your graphs can be made more accessible
+
 
 
 

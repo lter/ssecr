@@ -18,3 +18,16 @@ Each project group should:
 
 - Plan on providing a 3-5 minute project summary and update on recent progress and any questions/issues that are arising
 - Finish their internal ground rules (if not already complete)
+
+## Data Visualization & Exploration Preparation
+
+1. Each Synthesis fellow should download one data file identified for your group's project
+2. _If you are a Mac user_, install [XQuartz](https://www.xquartz.org/)
+3. _If you are an R user_, run the following code:
+
+```{r install-pkgs}
+#| eval: false
+
+install.packages("librarian")
+librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)
+```
