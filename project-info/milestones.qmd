@@ -1,12 +1,5 @@
----
-title: "Project Milestones"
----
 
-## Overview
-
-This page is meant to provide the project teams with rough progress estimates in relation to the course's instructional modules. Your group may at times be ahead of these milestones or behind at others so **please use this resource as general guidance rather than specific timing requirements.**
-
-## Milestones
+The below benchmarks are meant to provide a _rough_ progress estimate of how your project "should" progress during the course. Your group may at times be ahead of these milestones or behind at others so **please use this resource as general guidance rather than specific timing requirements.**
 
 ### Months 1-2 (Sep./Oct.)
 
@@ -43,7 +36,7 @@ This page is meant to provide the project teams with rough progress estimates in
 - Draft outline for the product that your team aims to create
 - Begin generating publication-quality figures
 - Prepare datasets for publication (if relevant)
-    - Consider FAIR and CARE data practices (see [Reproducibility](https://lter.github.io/ssecr/mod_reproducibility.html) module)
+    - Consider FAIR and CARE data practices
 
 ### Month 8-9 (Apr./May)
 

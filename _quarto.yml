@@ -76,11 +76,7 @@ website:
             - text: "2024 (v1.0)"
               href: https://lter.github.io/ssecr-2024/
       - text: "Projects"
-        menu:
-            - text: "Teams"
-              href: projects/teams.qmd
-            - text: "Milestones"
-              href: projects/milestones.qmd
+        href: projects.qmd 
       - text: "People"
         menu: 
             - text: "Instructors"
