@@ -1,0 +1,160 @@
+## Reproducible Coding
+
+Now that you've organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project's worth of R code found that 74% of the associated R files **failed to complete without error** (Trisovic _et al._ 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.
+
+<img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right">
+
+When your scripts are clear and reproducibly-written you will reap the following benefits:
+
+1. Returning to your code after having set it down for weeks/months is much simpler
+2. Collaborating with team members requires less verbal explanation
+3. Sharing methods for external result validation is more straightforward
+4. In cases where you're developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy
+
+### Code and the Stages of Data
+
+You'll likely need a number of scripts to accomplish the different stages of preparing a synthesized dataset. All of these scripts together are often called a "workflow." Each script will meet a specific need and its outputs will be the inputs of the next script. These intermediary data products are sometimes useful in and of themselves and tend to occur and predictable points that exist in most code workflows.
+
+Raw data will be parsed into cleaned data--often using idiosyncratic or dataset-specific scripts--which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially _many_ scripts, **coding reproducibly is vital to making this workflow intuitive and easy to maintain.**
+
+You don't necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!
+
+<p align="center">
+<img src="topics/images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%"/>
+<figcaption>Diagram of data stages from raw data to published products. Credit: Margaret O'Brian & Li Kui</figcaption>
+</p>
+
+### Packages, Namespacing, and Software Versions
+
+An under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script _and_ the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions **is not sustainable** but recording key information can help users set up the code environment that does work for your project.
+
+#### Load Libraries Explicitly
+
+It is important to load libraries at the start of _every_ script. In some languages (like Python) this step is required but in others (like R) this step is technically "optional" but disastrous to skip. It is safe to skip including the installation step in your code because the library step should tell code-literate users which packages they need to install.
+
+For instance you might begin each script with something like:
+
+```{.r}
+# Load needed libraries
+library(dplyr); library(magrittr); library(ggplot2)
+
+# Get to actual work
+. . .
+```
+
+In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way cuts down on the number of lines while still being precise about which packages are needed in the script.
+
+If you are feeling generous you could use the [`librarian` R package](https://cran.r-project.org/web/packages/librarian/index.html) to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:
+
+```{.r}
+# Load `librarian` package
+library(librarian)
+
+# Install missing packages and load needed libraries
+shelf(dplyr, magrittr, ggplot2)
+
+# Get to actual work
+. . .
+```
+
+#### Function Namespacing
+
+It is also strongly recommended to "namespace" functions everywhere you use them. In R this is technically optional but it is a really good practice to adopt, _particularly for functions that may appear in multiple packages_ with the same name but do very different operations depending on their source. In R the 'namespacing operator' is two colons.
+
+```{.r}
+# Use the `mutate` function from the `dplyr` package
+dplyr::mutate(. . .)
+```
+
+An ancillary benefit of namespacing is that namespaced functions don't need to have their respective libraries loaded. Still good practice to load the library though!
+
+#### Package Versions
+
+While working on a project you should use the latest version of every needed package. However, as you prepare to publish or otherwise publicize your code, you'll need to record package versions. R provides the `sessionInfo` function (from the [`utils` package](https://cran.r-project.org/web/packages/R.utils/index.html) included in "base" R) which neatly summarizes some high level facets of your code environment. Note that for this method to work you'll need to actually run the library-loading steps of your scripts.
+
+For more in-depth records of package versions and environment preservation--in R--you might also consider the [`renv` package](https://cran.r-project.org/web/packages/renv/index.html) or the [`packrat` package](https://cran.r-project.org/web/packages/packrat/index.html).
+
+### Script Organization
+
+Every change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!
+
+You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).
+
+### File Paths
+
+When importing inputs or exporting outputs we need to specify "file paths". These are the set of folders between where your project is 'looking' and where the input/output should come from/go. The figure from Trisovic _et al._ (2022) shows that file path and working directory errors are a substantial barrier to code that can be re-run in clean coding environments. Consider the following ways of specifying file paths from least to most reproducible.
+
+::::panel-tabset
+## Worst
+
+#### Absolute Paths
+
+The worst way of specifying a file path is to use the "absolute" file path. This is the path from the root of your computer to a given file. There are many issues here but the primary one is that <u>absolute paths only work for one computer</u>! Given that only one person can even run lines of code that use absolute paths, it's not really worth specifying the other issues.
+
+#### Example
+
+```{.r}
+# Read in bee community data
+my_df <- read.csv(file = "~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)/Data/bees.csv")
+```
+
+## Bad
+
+#### Manually Setting the Working Directory
+
+Marginally better than using the absolute path is to set the working directory to some location. This may look neater than the absolute path option but it actually has the same point of failure: Both methods <u>only work for one computer</u>!
+
+#### Example
+
+```{.r}
+# Set working directory
+setwd(dir = "~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)")
+
+# Read in bee community data
+my_df <- read.csv(file = "Data/bees.csv")
+```
+
+## Better
+
+#### Relative Paths
+
+Instead of using absolute paths or manually setting the working directory you can use "relative" file paths! Relative paths <u>assume all project content lives in the same folder</u>. 
+
+This is a safe assumption because it is the most fundamental tenet of reproducible project organization! The strength of relative paths is actually a serious contributing factor for why it is good practice to use a single folder.
+
+#### Example
+
+```{.r}
+# Read in bee community data
+my_df <- read.csv(file = "Data/bees.csv") # <1>
+```
+1. Parts of file path specific to each user are automatically recognized by the computer
+
+## Best!
+
+#### Operating System-Flexible Relative Paths
+
+The "better" example is nice but has a serious limitation: <u>it hard coded the type of slash between file path elements</u>. This means that _only computers of the same operating system as the code author_ could run that line.
+
+We can use functions to automatically detect and insert the correct slashes though!
+
+#### Example
+
+```{.r}
+# Read in bee community data
+my_df <- read.csv(file = file.path("Data", "bees.csv"))
+```
+
+::::
+
+### Code Style
+
+When it comes to code style, the same 'rule of thumb' applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! That said, there are a few principles worth adopting if you have not already done so.
+
+> Use concise and descriptive object names
+
+It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.
+
+> Don't be afraid of empty space!
+
+Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.

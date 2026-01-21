@@ -1,0 +1,175 @@
+## Project Documentation & Organization
+
+Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. "Perfect" code in a project that isn't structured thoughtfully can still result in a project that isn't reproducible. On the other hand, "bad" code can be made more intelligible when it is placed in a well-documented/organized project!
+
+### Documentation
+
+Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include:
+
+1. Project overview written in plain language
+2. Basic table of contents for the primary folders in your project folder
+3. Brief description of the file naming scheme you've adopted for this project.
+
+Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
+
+Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the [Version Control module](https://lter.github.io/ssecr/mod_version-control.html) but GitHub offers something called [Issues](https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html) that can be a really effective place to record some of this information.
+
+### Fundamental Structure
+
+<img src="topics/images/comic_xkcd-folders.png" alt="One stick figure looks in despair at another's computer where many badly-named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right">
+
+<u>The simplest way of beginning a reproducible project is adopting a good file organization system</u>. There is no single "best" way of organizing your projects' files as long as you are _consistent_. Consistency will make your system--whatever that consists of--understandable to others.
+
+Here are some rules to keep in mind as you decide how to organize your project:
+
+1. **Use one folder per project**
+
+Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.
+
+Note that <u>how you define "project" may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.
+
+2. **Organize content with sub-folders**
+
+Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don't feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.
+
+3. **Craft informative file names**
+
+An ideal file name should give some information about the file's contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should _be inherently meaningful_. This lets you change folder names without fear that files would also need to be re-named.
+
+:::{.callout-warning icon="false"}
+#### Discussion: Project Structure
+
+With a partner discuss (some of) the following questions:
+
+- How do you typically organize your projects' files?
+- What benefits do you see of your current approach?
+- What--if any--limitations to your system have you experienced?
+- Do you think your structure would work well in a team environment?
+    - If not, what changes might you make to better fit that context?
+
+:::
+
+#### Naming Tips
+
+We've brought up the importance of naming several times already but haven't actually discussed the specifics of what makes a "good" name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.
+
+> Names should be sorted by a computer and human in the same way
+
+Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow _should be_ run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to "zero pad" numbers so that all numbers have the same number of digits (e.g., "01" and "10" vs. "1" and "10").
+
+> Names should avoid spaces and special characters
+
+Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs. uppercase).
+
+> Names should use consistent delimiters
+
+**Delimiters** are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder "coral_reef_data" which would be more readable than "coralreefdata".
+
+You may also want to use _multiple_ delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.
+
+> Names should use "slugs" to connect inputs and outputs
+
+**Slugs** are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named "02_tidy.R" and all of the data files it creates are named "02_...". Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.
+
+### Organizing Example
+
+These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let's consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.
+
+:::panel-tabset
+
+## Version 1
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="topics/images/image_proj-struct-v1.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- All project files are in one folder
+
+#### Areas for Improvement
+
+- No use of sub-folders to divide logically-linked content
+- File names lack key context (e.g., workflow order, inputs vs. outputs, etc.)
+- Inconsistent use of delimiters
+
+:::
+::::
+
+## Version 2
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="topics/images/image_proj-struct-v2.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- Sub-folders used to divide content
+- Project documentation included in top level (README and license files)
+
+#### Areas for Improvement
+
+- File names still inconsistent
+    - File names contain different information in different order
+    - Mixed use of delimiters
+    - Many file names include spaces
+
+:::
+::::
+
+## Version 3
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="topics/images/image_proj-struct-v3.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- Most file names contain context
+- Standardized use of casing and--within sub-folder--consistent delimiters used
+
+#### Areas for Improvement
+
+- Workflow order "guessable" but not explicit
+- Unclear which files are inputs / outputs (and of which scripts)
+
+:::
+::::
+
+## Version 4
+
+::::{.columns}
+:::{.column width="40%"}
+
+<img src="topics/images/image_proj-struct-v4.png" alt="" width="90%">
+
+:::
+:::{.column width="60%"}
+
+#### Positives
+
+- Scripts include zero-padded numbers indicating order of operations
+- Inputs / outputs share zero padded slug with source script
+- Report file names machine sorted from least to most recent (top to bottom)
+
+#### Areas for Improvement
+
+- Depending on sub-folder complexity, could add sub-folder specific README files
+- Graph file names still include spaces
+
+:::
+::::
+
+:::
