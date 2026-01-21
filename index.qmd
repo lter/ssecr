@@ -48,7 +48,7 @@ Project groups will also meet at a time of their own choosing to work on project
 :::{.panel-tabset}
 ### 2026-27 Schedule
 
-{{< fa person-digging >}} Under Construction!
+#### {{< fa person-digging >}} Under Construction!
 
 ### 2024-25 Schedule
 

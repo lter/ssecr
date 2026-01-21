@@ -34,5 +34,4 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 <img src="images/image_2024-ssecr-fellows.jpg" alt="Group photo of 2024 LTER Synthesis Fellows" width="90%" height="110%"/>
 </p>
 
-
 :::
