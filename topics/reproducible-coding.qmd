@@ -2,7 +2,7 @@
 
 Now that you've organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project's worth of R code found that 74% of the associated R files **failed to complete without error** (Trisovic _et al._ 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.
 
-<img src="images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right">
+<img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right">
 
 When your scripts are clear and reproducibly-written you will reap the following benefits:
 
@@ -20,7 +20,7 @@ Raw data will be parsed into cleaned data--often using idiosyncratic or dataset-
 You don't necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!
 
 <p align="center">
-<img src="images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%"/>
+<img src="topics/images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%"/>
 <figcaption>Diagram of data stages from raw data to published products. Credit: Margaret O'Brian & Li Kui</figcaption>
 </p>
 
