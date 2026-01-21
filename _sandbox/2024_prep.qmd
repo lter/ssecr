@@ -45,3 +45,25 @@ librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR,
 install.packages("librarian")
 librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
 ```
+
+## Analysis & Modeling Preparation
+
+Each project group should:
+
+-   Prepare a presentation (15-30 min) on their (A) synthesis question, (B) the data they are using to address that question, and (C) their proposed analytical methods
+    -   The presentation modality (e.g., slide deck, website, etc.) is up to the group!
+
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've installed these before
+install.packages("tidyverse")
+install.packages("lmerTest")
+install.packages("palmerpenguins")
+install.packages("esc")
+```
+
+

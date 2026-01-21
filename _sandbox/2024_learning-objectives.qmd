@@ -103,4 +103,14 @@ After completing this module you will be able to:
 -   <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
 -   <u>Create</u> a draft intellectual credit plan for your team
 
+## Analysis & Modeling Learning Objectives
+
+After completing this module you will be able to:
+
+-   <u>Describe</u> proposed analytical methods to an interested audience of mixed prior experience
+-   <u>Explain</u> nuance in interpretation of results of proposed analyses
+-   <u>Identify</u> some statistical tests common in synthesis research
+-   <u>Perform</u> some synthesis-specific analyses
+
+
 

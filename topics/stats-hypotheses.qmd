@@ -1,0 +1,23 @@
+## Hypothesis Framing Aside
+
+Before we dive in, we should discuss two of the ways in which you can frame your hypothesis and the differences in interpretation and appropriate statistical tool(s) that follow from that choice. We'll restrict our conversation here to **two alternate modes of thinking about your hypothesis: frequentist statistics versus multi-model inference.**
+
+Note that this is something of a false dichotomy as tools from both worlds can be/are frequently used to complement one another. However, many graduate students are trained by instructors with strong feelings about one method *in opposition to* the other so it is worthwhile to consider these two paths separately even if you wind up using components of both in your own work.
+
+::: panel-tabset
+### Frequentist Inference
+
+Hypotheses here are a question of <u>whether a variable has a "significant" effect on another</u>. "Significant" has a very precise meaning in this context that has to do with *p*-values. Fundamentally, these methods focus on whether the observed relationship in the data is likely to be observed by chance alone or not. Strong effects are less likely--though not impossible--to be observed due to random chance.
+
+If your hypothesis can be summarized as something along the lines of 'we hypothesize that X affects Y' then frequentist inference may be a more appropriate methodology.
+
+For the purposes of SSECR, **our discussion of frequentist inference will focus on** <u>mixed-effect models</u>.
+
+### Multi-Model Inference
+
+Hypotheses here are a question of <u>which variables explain the *most* variation in the data</u>. Methods in this framing are unconcerned--or at least less concerned than in frequentist inference--with the probability associated with a particular variable. Instead, these methods focus on which of a set of user-defined candidate models explains most of the noise in the data *even when that best model does not necessarily explain much of that variation in absolute terms*.
+
+If your hypothesis can be summarized as something along the lines of 'we hypothesize that models including X explain more of the variation in Y than those that do not' then multi-model inference may be a more appropriate methodology.
+
+For the purposes of SSECR, **our discussion of multi-model inference will focus on** <u>comparing model strengths with AIC</u>.
+:::
