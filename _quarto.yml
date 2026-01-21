@@ -86,7 +86,7 @@ website:
       - icon: github
         href: https://github.com/lter/ssecr
   page-footer: 
-    center: "Copyright 2024, LTER Network"
+    center: "Copyright 2026, LTER Network"
     background: secondary
   margin-footer: |
     ![NCEAS Logo](images/logo_nceas.png){ width=40% }
