@@ -15,6 +15,8 @@ One extreme approach you could take is to dodge this issue entirely and format y
 Related to the color conversation is the value of mapping multiple aesthetics to the same variable. By presenting information in multiple ways--even if that seems redundant--you enable a wider audience to gain an intuitive sense of what you're trying to display.
 
 ```{r multi-modal}
+#| eval: false
+
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
@@ -66,6 +68,8 @@ One final element of accessibility to consider is the difference between a '_pre
     - If you have multiple graph panels, put each on its own slide!
 
 ```{r talk-graph}
+#| eval: false
+
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
@@ -111,6 +115,8 @@ ggplot(crab_summary, aes(x = latitude, y = mean,
     - You can--and should--lean more heavily on the text of your publication to discuss particular areas of a graph
 
 ```{r pub-graph}
+#| eval: false
+
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4

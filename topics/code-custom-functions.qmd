@@ -5,6 +5,7 @@ Writing your own, customized functions can be really useful particularly when do
 If one of your group's outputs is a new standard data format or analytical workflow, the functions that you develop to aid yourself become valuable to anyone who adopts your synthesis project's findings into their own workflows. If you get enough functions you can even release a package that others can install and use on their own computers. Such packages are a valuable product of synthesis efforts and can be a nice addition to a robust scientific resume/CV.
 
 ```{r custom-fxns}
+#| eval: false
 #| fig-align: center
 #| fig-width: 4
 #| fig-height: 3
@@ -26,6 +27,7 @@ crab_hist(df = pie_crab_v4, size_cat = "tiny")
 When writing your own functions it can also be useful to program defensively. This involves anticipating likely errors and writing your own error messages that are more informative to the user than whatever machine-generated error would otherwise get generated
 
 ```{r custom-fxns-improved}
+#| eval: false
 #| fig-align: center
 #| fig-width: 4
 #| fig-height: 3

@@ -4,6 +4,12 @@ Before beginning any code operations, it's important to get a sense for the data
 
 Checking the data structure is one way of getting a lot of this high-level information.
 
+```{r explore-libs}
+#| include: false
+
+library(lterdatasampler)
+```
+
 ```{r structure}
 # Check dataset structure
 str(pie_crab)

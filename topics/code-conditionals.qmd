@@ -4,6 +4,16 @@ Rather than finding and replacing content, you may want to create a new column b
 
 If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let's return to our Plum Island Ecosystems crab dataset for an example.
 
+```{r conditional-libs}
+#| include: false
+
+# Load the lterdatasampler package
+library(lterdatasampler)
+
+# Load the fiddler crab dataset
+data(pie_crab)
+```
+
 ```{r ifelse}
 #| message: false
 

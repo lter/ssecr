@@ -12,6 +12,9 @@ In a faceted graph, <u>every panel of the graph has the same aesthetics</u>. The
 Let's check out an example.
 
 ```{r facet-1}
+#| eval: false
+
+
 #| fig-align: center
 #| fig-width: 6
 #| fig-height: 6
@@ -32,6 +35,9 @@ In a plot grid, <u>each panel is completely independent of all others</u>. These
 Let's check out an example that relies on the `cowplot` library.
 
 ```{r grid-1}
+#| eval: false
+
+
 #| message: false
 #| fig-align: center
 #| fig-width: 9

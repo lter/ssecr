@@ -6,6 +6,12 @@ Data shape is often important for statistical analysis or visualization but it h
 
 Let's consider an example to help clarify this. We'll simulate a butterfly dataset where both the number of different species and their sex were recorded in the same column. This makes the column not technically numeric and therefore unusable in analysis or visualization.
 
+```{r shape-libs}
+#| include: false
+
+library(magrittr)
+```
+
 ```{r shape}
 # Generate a butterfly dataframe
 bfly_v1 <- data.frame("pasture" = c("PNW", "PNW", "RCS", "RCS"),

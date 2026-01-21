@@ -2,7 +2,15 @@
 
 Sometimes one column has multiple pieces of information that you'd like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.
 
+```{r splitunite-libs}
+#| include: false
+
+library(magrittr)
+```
+
 ```{r separate-wider-delim}
+#| eval: false
+
 # Split date into each piece of temporal info
 pie_crab_v3 <- pie_crab_v2 %>% 
   tidyr::separate_wider_delim(cols = date, 
@@ -20,6 +28,8 @@ str(pie_crab_v3)
 While breaking apart a column's contents can be useful, it can also be helpful to combine the contents of several columns!
 
 ```{r unite}
+#| eval: false
+
 # Re-combine data information back into date
 pie_crab_v4 <- pie_crab_v3 %>% 
   tidyr::unite(col = "date",

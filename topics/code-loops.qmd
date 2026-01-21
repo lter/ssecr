@@ -22,6 +22,8 @@ for(k in 2:4){ # <1>
 Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let's return to our Plum Island Ecosystems crab dataset for a more nuanced example.
 
 ```{r loop-2}
+#| eval: false
+
 # Create an empty list
 crab_list <- list()
 

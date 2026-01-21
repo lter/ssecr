@@ -5,6 +5,9 @@ Synthesis projects often generate an entire network of inter-related papers. Ens
 `ggplot2` supports adding theme elements to an object that can then be reused as needed elsewhere. This is the same theory behind wrapping repeated operations into custom functions.
 
 ```{r std-theme}
+#| eval: false
+
+
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
