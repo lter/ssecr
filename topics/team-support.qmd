@@ -1,0 +1,41 @@
+## Conditions and Practices that Support Team Functioning
+
+In order for the above mechanisms to operate, teams need to cultivate conditions that encourage all members to contribute at the times and in the ways that they are most skilled and effective. Explore the tabs below for some of these conditions.
+
+:::{.panel-tabset}
+#### Learning Orientation
+
+Cultivate a **learning goal orientation** rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al. 2013)
+
+#### Revising Assumptions
+
+Remain open to **revising assumptions and world views**. When divergent positions are met only with resistance, groupthink gains the upper hand
+
+#### Cognitive Trust
+
+**Cognitive trust** is the rational belief that group members can and will deliver on their portion of the work. When it isn't present, group members tend to pull back on their own contributions. Good coordination supports cognitive trust by providing clarity and accountability about who agreed to do what work and whether they delivered. It ensures that contributions can be appropriately credited and that work isn't unnecessarily duplicated. Effective coordination and facilitation make space for _all_ group members to engage.
+
+- **Fast and slow processors** can be accommodated by making space for written as well as verbal contributions and allowing "thinking time" before expecting a response.
+-  **Visual, auditory and kinesthetic learners** take in information (and are more or less fluent) in different formats. Try to provide key information (and allow input) in more than one format.
+- Those with **caregiving responsibilities** may have unpredictable availability and shorter periods of concentrated effort. A task management system (such as GitHub Projects or Trello) that breaks down tasks into manageable chunks and provides necessary contexts can help them contribute without as much task-switching cost.
+-  Strategies for managing different **geographies** include virtual meetings, pulsed contributing times, and asynchronous editing of shared documents.
+
+#### Affective Trust
+
+**Affective trust** is the belief (usually grounded in common experience) that group members have your best interests in mind. Some strategies for building it include:
+
+- Spend social time together - meals, activities when in-person, but also, don't skimp on icebreakers and check-ins when virtual
+- Pay attention to mutual respect and speaking time. Explicitly acknowledge and credit new ideas as they come up.
+- Be willing to look foolish. Ask the "dumb" questions that surface unquestioned assumptions. When some (leaders especially) make themselves vulnerable, it provides safety for others to do so.
+- Consider assigning a vibes-keeper to track when the group becomes impatient, offended, or disengaged.
+- Spend time early to talk through various perspectives on the question that may be present in the group.
+- Attend to conflicts as they arise.  
+
+:::
+
+### All Contribute Some; None Contribute All
+
+<figure>
+<img src="topics/images/graphic_translational-team-competencies.png" alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership" width="100%" />
+<figcaption>Overlapping and intersecting competencies across the domains (from Lotrecchiano _et al._ 2021). Colors define the primary domain for each competency.</figcaption>
+</figure>

@@ -45,3 +45,33 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 - [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
 - [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
 - [Data Is Plural](https://www.data-is-plural.com/) and its [data list](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0) for exploring the cool datasets in various domains
+
+## Team Science Practices
+
+- Bates, A.E. _et al._, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. _Biological Conservation_
+- Hong, L., & Page, S. E. [Individual selection criteria for optimal team composition](https://doi.org/10.1007/s11238-023-09960-w). **2024**. _Theory and Decision_
+- Lowman, H. _et al._, [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). **2024**. _PNAS_
+- Liberatore, A. [Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p). **2024**.
+- Lahr, H. [How to effectively engage teams in interdisciplinary collaborations](https://emlab.ucsb.edu/blog/how-effectively-engage-teams-interdisciplinary-collaborations). **2024**
+- Peterson, D.M. _et al._, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). **2023**. _Ecology and Evolution_
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html). **2023**.
+- Graffius, S.M. [Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update](https://www.exceptional-pmo.com). **2023**
+- Gaynor, K.M., _et al._, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). **2022**. _PLoS Computational Biology_
+- Yang, Y. _et al._, [Gender-diverse teams produce more novel and higher-impact scientific ideas](https://doi.org/10.1073/pnas.220084111). **2022**. _PNAS_
+- Delta Stewardship Council. [Open Science Synthesis: Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences). **2021**.
+- Deutsch, L. _et al._, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. _Environmental Science & Policy_
+- Farrell, K.J. _et al._, [Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
+- Lotrecchiano, G.R., _et al._, [Individual and team competencies in translational teams](https://doi.org/10.1017/cts.2020.551). **2021**. _Journal of Clinical and Translational Science_  
+- Folger, J.P., _et al._, [Working Through Conflict: Strategies for Relationships, Groups, and Organizations (8th ed.)](https://doi.org/10.4324/9781315296296). **2017**. _Routledge_
+- Lee, Y. _et al._, [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). **2015**. _Research Policy_
+- Abbasi, A., & Jaafari, A. [Research impact and scholars' geographical diversity](https://doi.org/10.1016/j.joi.2013.04.004). **2013**. _Journal of Informetrics_ 
+- Nederveen P.A., _et al._, [Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation](https://doi.org/10.5465/amj.2010.0992). **2013**. _Academy of Management Journal_ 
+- Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
+- Woolley, A.W. _et al._, [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). **2010**. _Science_
+- Fiore S.M. _et al._, [Interdisciplinarity as Teamwork: How the Science of Teams Can Inform Team Science](https://doi.org/10.1177/1046496408317797). **2008**. _Small Group Research_
+- Stokols, D. _et al._, [The Ecology of Team Science: Understanding Contextual Influences on Transdisciplinary Collaboration](https://doi.org/10.1016/j.amepre.2008.05.003). **2008**. _American Journal of Preventive Medicine_
+- van Knippenberg, D. _et al._, [Work Group Diversity and Group Performance: An Integrative Model and Research Agenda](https://doi.org/10.1037/0021-9010.89.6.1008). **2004**. _Journal of Applied Psychology_
+- Milliken, F.J. & Martins, L.L. [Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups](https://www.jstor.org/stable/258667). **1996**. _The Academy of Management Review_
+- Tuckman, B.W., & Jensen, M.A.C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). **1977**. _Group and Organizational Studies_
+- Tuckman, B.W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). **1965**. _Psychological Bulletin_
+
