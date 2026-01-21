@@ -112,5 +112,11 @@ After completing this module you will be able to:
 -   <u>Identify</u> some statistical tests common in synthesis research
 -   <u>Perform</u> some synthesis-specific analyses
 
+## Next Steps Learning Objectives
 
+After completing this module you will be able to:
+
+-   <u>Identify</u> needed data and target audience(s)
+-   <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
+-   <u>Conceive</u> funding-worthy proposals
 

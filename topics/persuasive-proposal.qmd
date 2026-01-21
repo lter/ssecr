@@ -1,0 +1,42 @@
+## Crafting a Compelling Proposal
+
+No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet _their_ goals, no matter how exciting they find your science. Of course you need to follow their guidelines, but take it a step further. Think about who this agency serves. Read up on their past awards. Get inside their heads.
+
+:::{.callout-tip}
+#### Pro-tip
+All NSF program pages have a link at the bottom leading to a list of past awards made through the program. Successful proposers are often quite happy to share their funded proposal.
+:::
+
+The bones of any proposal include answers to the following questions:
+
+-  Context - what is already known/done? What's the gap you're trying to fill?
+-  What do you want to do?
+-  How do you plan to do it?
+-  Why are you the right person/group to do it?
+-  Why is it a fit for THIS funder?
+-  How will you disseminate or apply the work?
+-  What do you expect the results to be
+
+Depending on the source of funding, the order and emphasis of these items will be different. For a foundation funder, the need and results might be most important, with the precise "how" taking a back seat. For a science agency, context and work plan will take higher priority, but be sure to include why you are the right group to do it and what you expect the results to be--even if only a sentence or two.
+
+Even for an individual donor, you'll want to have a list of talking points that addresses these questions, but you probably won't turn it into a formal proposal until you've developed a relationship.
+
+It can be intimidating, but it is immensely helpful to ask for feedback from experienced colleagues at various stages of proposal development. Be sure to specify what kind of feedback would be useful to you and to give them a (reasonable) deadline.
+
+:::{.callout-warning icon="false"}
+#### Discussion: Revisit Group Authorship Agreement
+
+With a partner/group discuss (some of) the following questions:
+
+Anytime a project undergoes a major transition, it's a good idea to revisit the approach to authorship. An agreement that worked well for an organized project with fixed membership may not be as appropriate for spin-off projects, spearheaded by individual team members and involving rotating groups of collaborators. 
+
+Break out into project groups and discuss the following questions as they might apply to emerging projects:
+
+-  Do we know of any emerging projects?
+-  Who wants to stay involved? In what ways?
+-  When related research opportunities arise, is there a responsibility to notify the group? To invite participation?
+-  Whether a team member wants to stay involved or not, what are the expectations for how members of this group are credited on future related projects?
+
+Record the decisions and preserve for further discussion as projects evolve.
+
+:::

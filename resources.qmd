@@ -170,3 +170,17 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 -   Kurz, A. S. [Bayesian Meta-Analysis in brms](https://solomonkurz.netlify.app/blog/bayesian-meta-analysis/). **2020**.
 -   Vuorre, M. [Bayesian Meta-Analysis with R, Stan, and brms](https://mvuorre.github.io/posts/2016-09-29-bayesian-meta-analysis/). **2016**.
 -   Zuur, A.F. _et al._ [Mixed Effects Models and Extensions in Ecology with R](https://link.springer.com/book/10.1007/978-0-387-87458-6). **2009**.
+
+## Next Steps 
+
+-   Deutsch L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. *Environmental Science & Policy*
+- Schimel, J. [Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded](https://global.oup.com/academic/product/writing-science-9780199760244?cc=us&lang=en&). **2011**.
+-  [Research proposal examples from every science field](https://peerrecognized.com/research-proposal-examples-for-every-science-field/).
+-  [NSF funding search](https://www.nsf.gov/funding/opportunities) 
+-  [DoE funding search](https://www.energy.gov/science/office-science-funding-opportunities)
+-  [Cooperative Ecosystem Studies Units](http://www.cesu.psu.edu/fundopps/fundopps.htm) (CESU)
+-  [International Synthesis Consortium](https://synthesis-consortium.org/) is an umbrella group for synthesis centers across disciplines
+-  [Science for Nature and People Partnership](https://snappartnership.net/)
+-  [Pivot-RP](https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/pivot-rp-funding/), a Clarivate product that curates funding opportunities across public and private sources. Pivot is a paid product, but most research universities have access
+-  [Philanthropy News Digest](https://philanthropynewsdigest.org/rfps) publishes a feed of requests for proposals from private foundations. It can be filtered by topic, location, and other keywords. Awards are small, relative to federal funding agencies and topics tend to be applied
+-  [Community Foundations](https://cof.org/foundation-type/community-foundations) fund project with clear benefits to a local community

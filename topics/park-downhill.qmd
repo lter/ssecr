@@ -1,0 +1,54 @@
+## Park Downhill
+
+Beyond preserving and promoting the current work, there are a few things you can do to prepare for the new research opportunities that it can generate. Ideally, the group has been tracking spin-off ideas as they come up. It's impractical to chase them all down in the moment, but recording them, with just a few sentences of context and explanation, will help to resurface the inspiration at a later date.
+
+<figure >
+<img src="topics/images/figure_mind-map.png" alt="linked concepts around a central theme" width="50%" align="right">
+</figure>
+
+Now is the time to pull those ideas out of mothballs or, alternatively, return to the mind maps we made in the [project management session](https://lter.github.io/ssecr/mod_project-mgmt.html) to unearth some new ones.
+
+This year, you've tackled one, maybe two, of the relationships on that mind map. But chances are that the data you've assembled sheds light on several more. In this project group discussion, we'll take some time to identify and explore a few of them. 
+
+:::{.callout-warning icon="false"}
+#### Discussion: Preparing to Propose
+
+**Part 1 - Individually**
+
+-  Pull up your running list of project ideas, the mind map you generated in the project management session, or start a new mind map with your current project theme at the center.
+-  Come up with a related research idea that capitalizes on the data you've assembled. Try focusing on upstream controls, downstream impacts or modifying factors to spur your creativity. It doesn't have to be Nobel-worthy, it's just for this exercise.
+-  Identify what additional data or analyses would be needed to clarify the nature and scale of the relationship  
+-  How might a change in our understanding of that relationship affect how we understand other processes? 
+
+**Part 2 - In Pairs**
+
+-  Explain your idea, what you would need, and where it might lead
+
+**Part 3 - Still in Pairs**
+
+-  For each of your projects, brainstorm a list of people (individuals, groups, roles, agencies) who care about those changes or that might benefit from or be hurt by them.
+- For example, say your original project was focused on understanding what factors influence the long term immobilization of soil carbon during decomposition. Spin-off ideas might look at:
+    -  Additional controlling factors that you couldn't include in the first effort; 
+    -  A wider range of ecosystems; 
+    -  The role of variability (not only temperature, for example, but also the frequency of freeze-thaw cycles);
+    -  The effect of the same factors on the mobilization of nutrients in soil; or 
+    -  Scaling the analysis to forecast the impact on carbon sinks under alternative climate scenarios. 
+- In addition to the standard science funding agencies such as NSF, NASA, DOE, or USDA, other interested parties: farmers, fertilizer suppliers, extension professionals, carbon markets, climate modelers...
+    - Note these along with the nature of their interest.
+
+**Part 4 - In Full Group**
+
+Discuss how ideas came together and what kinds of audiences were identified. 
+
+:::
+
+<img src="topics/images/icon_pocket.png" alt="a garment pocket with money poking out of it" width="25%" align="right"/>
+
+When thinking about how to support a research program, strategy (setting goals and making plans to achieve them) is often contrasted with an opportunistic approach. But really, it's essential to apply a bit of both. The list of people and agencies you generated from this exercise serves as a starting point for exploring funding opportunities. When you find an opportunity that intersects with a problem that you have the tools, skills, and data to tackle, that's when you spring into action, building on knowledge gaps that you've already identified. 
+
+When you have an idea that you're excited about, one great practice is to develop a "pocket proposal"--a two-page, scaled down description of the research you hope to do. Writing one will force you to clarify your ideas, improve your articulation of them, give you something to share with colleagues (either to invite collaborators or to seek critical feedback), and provide a head start when you DO find a funding opportunity that's a fit.
+
+:::{.callout-tip}
+#### Bonus! 
+A pocket proposal serves as a great starting point for the research statement you'll need for a faculty job search. 
+:::
