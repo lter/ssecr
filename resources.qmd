@@ -29,3 +29,19 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 - Trisovic, A. _et al._ [A Large-Scale Study on Research Code Quality and Execution](https://www.nature.com/articles/s41597-022-01143-6). **2022**. _Scientific Data_
 - Wickham, H. [Advanced R: Style Guide](http://adv-r.had.co.nz/Style.html). (1st ed.). **2019**.
 - van Rossum, G. _et al._ [PEP 8: Style Guide for Python Code](https://peps.python.org/pep-0008/). **2013**. _Python Enhancement Proposals_
+
+## Data Discovery & Management
+
+- British Ecological Society (BES). [Better Science Guides: Data Management Guide](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
+- LTER Scientific Computing Team. [Data Acquisition Guide for TRY and AppEEARS](https://lter.github.io/scicomp/internal_get-data.html). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html). **2023**.
+- Environmental Data Initiative (EDI) [Data Portal](https://portal.edirepository.org/nis/advancedSearch.jsp)
+- DataONE [Data Catalog](https://search.dataone.org/data)
+- Ocean Observatories Initiative (OOI) [Data Explorer](https://dataexplorer.oceanobservatories.org/)
+- Global Biodiversity Information Facility (GBIF) [Data Portal](https://www.gbif.org/)
+- iDigBio Digitized [Specimen Portal](https://www.idigbio.org/portal)
+- [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
+- [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
+- [Data Is Plural](https://www.data-is-plural.com/) and its [data list](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0) for exploring the cool datasets in various domains
