@@ -23,3 +23,13 @@ After completing this module you will be able to:
 - <u>Discuss</u> methods for improving the reproducibility of your code products
 - <u>Summarize</u> FAIR and CARE data principles
 - <u>Evaluate</u> the FAIR/CAREness of your work
+
+## Data Discovery & Management Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Identify</u> repositories "known for" a particular type of data
+- <u>Explain</u> how to effectively search for data outside of specialized repositories
+- <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
+- <u>Plan</u> how to download data in a reproducible way
+- <u>Perform</u> checks of the fundamental structure of a dataset
