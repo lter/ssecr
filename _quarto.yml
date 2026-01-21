@@ -60,14 +60,6 @@ website:
               href: mod_findings.qmd
             - text: "Reproducible Reports"
               href: mod_reports.qmd
-      - section: "Bonus Modules"
-        contents:
-            - text: "Spatial Data"
-              href: mod_spatial.qmd
-            - text: "Interactivity"
-              href: mod_interactivity.qmd
-            - text: "Multivariate Visualization"
-              href: mod_multivar-viz.qmd
       - text: "Additional Resources"
         href: resources.qmd
   navbar:
