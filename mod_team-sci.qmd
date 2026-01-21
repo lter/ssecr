@@ -2,27 +2,6 @@
 title: "Team Science Practices"
 ---
 
-## Overview
-
-In this module, we'll dive into some of the literature underlying our recommended team science practices (the science of team science). We'll also explore some of the more common types of conflicts that arise in synthesis work and ways to anticipate, prevent (when possible), and resolve those conflicts.
-
-## Learning Objectives
-
-After completing this module you will be able to:
-
-- <u>Interpret</u> and enact current best practices in team science
-- <u>Identify</u> different interaction styles and the effect they have on group dynamics
-- <u>Identify</u> benefits (and potential costs of) diverse teams
-- <u>Describe</u> ways to mitigate costs of diverse teams
-- <u>Explain</u> methods for improving the experience of virtual participants on hybrid teams
-
-## Preparation
-
-Each project group should:
-
-- Plan on providing a 3-5 minute project summary and update on recent progress and any questions/issues that are arising
-- Finish their internal ground rules (if not already complete)
-
 ## Science of Team Science
 
 Research in management, organizational behavior, and psychology  has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000's–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of "science of team science" or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al. 2008).
