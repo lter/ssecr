@@ -203,3 +203,12 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 - Olson, R. [Great Challenges Day at TEDMED 2013](https://www.youtube.com/watch?v=ERB7ITvabA4). **2013**
 - [A Guide to Scientific Storytelling](https://cartoonbase.com/en/resources/blog/a-guide-to-scientific-storytelling/). Cartoonbase.
 - American Geophysical Union (AGU). [A Scientist's Guide to Working with the Media](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf). 
+
+## Reproducible Reports & Quarto
+
+- LTER Scientific Computing Team. [Notebooks versus Scripts](https://lter.github.io/scicomp/tip_notebook-vs-script.html). **2025**.
+- Csik, S. [Creating Your Personal Website Using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Literate Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html). **2023**.
+- Mecum, B. [Reproducible Papers with RMarkdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html). **2019**.
+- [The Markdown Guide: Basic Syntax](https://www.markdownguide.org/basic-syntax/).
+- Posit. [Welcome to Quarto](https://quarto.org/)

@@ -66,4 +66,7 @@ install.packages("palmerpenguins")
 install.packages("esc")
 ```
 
+## Reproducible Reports Preparation
 
+1. Install [Quarto](https://quarto.org/docs/get-started/)
+2. Double check that your group's GitHub repository is up to date
