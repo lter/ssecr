@@ -1,0 +1,15 @@
+## Meeting Roles
+
+It's very difficult to both facilitate a conversation and engage fully in it as a participant. If you add taking notes on top of that, it's sure to become overwhelming. So recruit some help. The number of roles you need to fill will depend on the size of the group and the complexity of the process. Online meetings particularly benefit from a team approach to facilitation. Share and rotate duties over time:
+
+- **Process facilitator** - sets tone and pace, mediates conflicts, and ensures all voices are being heard, interpersonal dynamics are positive/effective, and group is staying on task
+- **Meeting chair** (optional) - keeps an eye on the overall vision and progress of the meeting
+- **Timekeeper** - may also be the chair or facilitator
+- **Tech Host** - monitors chat, sets up breakout rooms, records meeting, troubleshoots technology as needed in virtual/hybrid meetings
+- **Notetaker** - captures action items and notes, often in a google doc that can be viewed and added to by others; may also produce a meeting summary
+- **Scribe** - captures important points that can be seen in real time by the whole group, usually on a whiteboard or flipchart
+- **Spotter** - keeps a running list of who is waiting to speak (especially in large groups or intense discussions)
+- **Relationship monitor** - tracks group dynamics and actively works to help everyone feel included and engaged on personal and social levels, may also be the facilitator
+- **Participation monitor** - engineers opportunities for participation, quells interrupters, amplifies and credits the messages of quieter participants, may also be the facilitator
+
+As you get to know your team members, you can start to match people to these different roles based on their skills and recruit them to help.

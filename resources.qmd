@@ -75,3 +75,20 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 - Tuckman, B.W., & Jensen, M.A.C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). **1977**. _Group and Organizational Studies_
 - Tuckman, B.W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). **1965**. _Psychological Bulletin_
 
+## Inclusive Facilitation
+
+- Khuri et al., [Inclusive Practice Glossary for Facilitators](https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
+- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
+- Woodley, L. _et al._, [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). **2021**.
+- Tarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. **2021**.
+- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+- Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+- Kantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley & Sons. **2012**.
+- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
+- Bohm, D. On Dialogue. Routledge Classics. **2004**.
+- [IAF Endorsed™ Facilitation Training Programmes](https://www.iaf-world.org/site/professional/endorsement)
+- [Facilitation Training Programs recommended by the Facilitator School](https://www.facilitator.school/best-facilitation-training-courses)
+- [Liberating Structures: Including and Unleashing Everyone](https://www.liberatingstructures.com/)
+- [Gamestorming](https://gamestorming.com/)
+- [SciTS and Team Science Resources](https://www.inscits.org/scits-a-team-science-resources) compiled by INSciTS, the International Network for the Science of Team Science
+- [Dealing with Disruptive Behaviors in Meetings](https://coast.noaa.gov/ddb/)

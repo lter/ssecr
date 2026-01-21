@@ -18,5 +18,10 @@ Synthesis projects often begin with a few datasets that inspire the questions--a
 
 In this module, we'll dive into some of the literature underlying our recommended team science practices (the science of team science). We'll also explore some of the more common types of conflicts that arise in synthesis work and ways to anticipate, prevent (when possible), and resolve those conflicts.
 
+## Inclusive Facilitation Overview
+
+The success of a collaborative synthesis science project rests in no small part on the ability of the team of researchers to work effectively together and to draw on the full range of expertise, knowledge, and capacity in the group. Effective facilitation of team meetings can go a long way toward unlocking the group's full potential. This module focuses on inclusive facilitation techniques to enable and encourage full, thoughtful, engaged participation during virtual and in person group meetings. Many of the principles underpinning these techniques can also be applied to other aspects of managing your collaboration, outside the meeting setting.
+
+
 
 

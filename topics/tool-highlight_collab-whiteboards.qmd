@@ -1,0 +1,3 @@
+## Tool Highlight: Collaborative Whiteboards
+
+**Collaborative whiteboards** are useful tools for capturing ideas from a group during virtual meetings. They range from simple (EasyRetro, Zoom's whiteboard function) to complex (Mural, miro). Benefits include simultaneous input, the ability to organize information into discrete, movable chunks, and the visual (and lasting) nature of the output.
