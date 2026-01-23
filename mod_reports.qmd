@@ -1,9 +1,0 @@
----
-title: "Reproducible Reports"
----
-
-{{< include topics/notebook-value.qmd >}}
-
-{{< include topics/external_lter-workshop-quarto.qmd >}}
-
-{{< include activities/make-website.qmd >}}
