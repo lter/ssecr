@@ -1,4 +1,4 @@
-## Collaborating with Git
+## Recommendations for Using Git
 
 It is important to remember that while Git is a phenomenal tool for collaboration, it is _not_ Google Docs! <u>You can work together but you cannot work simultaneously in the same files</u>. Working at the same time is how merge conflicts happen which can be a huge pain to untangle after the fact. Fortunately, avoiding merge conflicts is relatively simple! Here are a few strategies for avoiding conflicts.
 
