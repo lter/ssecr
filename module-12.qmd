@@ -14,3 +14,16 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+{{< include topics/make-data-findable.qmd >}}
+
+{{< include topics/promote-products.qmd >}}
+
+
+
+
+{{< include topics/notebook-value.qmd >}}
+
+{{< include topics/external_lter-workshop-quarto.qmd >}}
+{{< include activities/make-website.qmd >}}

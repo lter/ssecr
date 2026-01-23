@@ -14,3 +14,20 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+
+{{< include topics/communication-rationale.qmd >}}
+{{< include activities/elevator-pitch-p01.qmd >}}
+
+{{< include topics/communicate-stories.qmd >}}
+
+{{< include topics/communicate-and-but-therefor.qmd >}}
+{{< include activities/elevator-pitch-p02.qmd >}}
+
+{{< include topics/communicate-jargon.qmd >}}
+{{< include activities/elevator-pitch-p03.qmd >}}
+
+{{< include topics/communicate-audiences.qmd >}}
+{{< include activities/elevator-pitch-p04.qmd >}}
+

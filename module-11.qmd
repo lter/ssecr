@@ -14,3 +14,15 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+
+{{< include topics/stats-presentations.qmd >}}
+
+{{< include topics/stats-hypotheses.qmd >}}
+
+{{< include topics/stats-mixed-effects.qmd >}}
+
+{{< include topics/stats-aic.qmd >}}
+
+{{< include topics/stats-meta.qmd >}}

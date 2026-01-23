@@ -14,3 +14,10 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+
+{{< include topics/park-downhill.qmd >}}
+
+{{< include topics/persuasive-proposal.qmd >}}
+

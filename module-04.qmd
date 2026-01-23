@@ -35,5 +35,3 @@ title: "Inclusive Facilitation & Data Discovery"
 
 {{< include topics/data-searches.qmd >}}
 
-{{< include topics/data-inventory.qmd >}}
-{{< include activities/review-data-inventory.qmd >}}
