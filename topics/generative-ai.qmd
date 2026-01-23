@@ -1,0 +1,17 @@
+## Responsibly Using Generative AI
+
+### What Do We Mean By "AI"?
+
+{{< fa person-digging >}} Under construction
+
+### What AI _Can_ Do
+
+{{< fa person-digging >}} Under construction
+
+### What AI _Cannot_ Do
+
+{{< fa person-digging >}} Under construction
+
+### AI and the Environment, Intellectual Property, and Justice
+
+{{< fa person-digging >}} Under construction
