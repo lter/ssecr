@@ -1,0 +1,15 @@
+{
+  "hash": "e246970403aad875f8c986cba61b838d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "## Needed Packages\n\nIf you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Note that these lines only need to be run once per computer\n## So you can skip this step if you've installed these before\ninstall.packages(\"tidyverse\")\ninstall.packages(\"sf\")\ninstall.packages(\"terra\")\ninstall.packages(\"maps\")\ninstall.packages(\"exactextractr\")\n```\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
