@@ -15,6 +15,8 @@ Now that we've covered the main types of spatial data as well as how to check th
 The `maps` package includes some useful national and US state borders so we'll begin by preparing an object that combines both sets of borders.
 
 ```{r map-borders}
+#| eval: false
+
 # Load library
 library(maps)
 
@@ -26,6 +28,7 @@ borders <- sf::st_as_sf(maps::map(database = "world", plot = F, fill = T)) %>%
 Note that the simplest way of making a map that includes a raster is to coerce that raster into a dataframe. To do this we will translate each pixel's geographic coordinates into X and Y values.
 
 ```{r map-raster-df}
+#| eval: false
 nc_pixel_df <- as.data.frame(nc_pixel, xy = T) %>% 
     # Rename the 'actual' data layer more clearly
     dplyr::rename(elevation_m = SRTMGL3_NC.003_SRTMGL3_DEM_doy2000042_aid0001)

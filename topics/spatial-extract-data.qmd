@@ -16,7 +16,15 @@ This package expects that you'll want to extract raster data within a the border
 
 We'll begin by making a simpler version of our North Carolina vector data. This ensures that the extraction is as fast as possible for demonstrative purposes while still being replicable for you.
 
+```{r spatial-extract-libs}
+#| include: false
+
+library(tidyverse); library(exactextractr)
+```
+
 ```{r extract-prep}
+#| eval: false
+
 # Simplify the vector data
 nc_poly_simp <- nc_poly %>% 
   dplyr::filter(NAME %in% c("Wake", "Swain")) %>% 
@@ -30,6 +38,7 @@ dplyr::glimpse(nc_poly_simp) # <1>
 Now let's use this simplified object and extract elevation for our counties of interest (normally we'd likely do this for all counties but the process is the same).
 
 ```{r extract-actual}
+#| eval: false
 #| message: false
 
 # Load needed libraries
