@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Inclusive Facilitation & Data Discovery"
 ---
 
 ## Overview
@@ -14,3 +14,26 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+
+{{< include activities/inclusivity-rapid-assessment.qmd >}}
+
+{{< include topics/participation-benefits.qmd >}}
+
+{{< include topics/debate-to-dialogue.qmd >}}
+
+{{< include topics/thinking-styles.qmd >}}
+{{< include activities/brainstorm-thinking-styles.qmd >}}
+
+{{< include topics/participation-access.qmd >}}
+
+
+
+
+{{< include topics/data-repositories.qmd >}}
+
+{{< include topics/data-searches.qmd >}}
+
+{{< include topics/data-inventory.qmd >}}
+{{< include activities/review-data-inventory.qmd >}}
