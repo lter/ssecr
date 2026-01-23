@@ -1,0 +1,76 @@
+## Coordinate Reference Systems
+
+```{r}
+#| include: false
+
+# !!! NOTE TO SSECR DESIGN TEAM !!!
+
+# This module uses raster and vector data that *are not widely available*
+# You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module
+# Reach out to Nick Lyon if questions exist
+```
+
+A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved--or at least clarified--by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. "CRS"). All spatial data have a CRS that is explicitly identified in the data and/or the metadata because the data _are not interpretable_ without knowing which CRS is used.
+
+The CRS defines the following information:
+
+1. **Datum** -- model for shape of the Earth including the starting coordinate pair and angular units that together define any particular point on the planet
+    - Note that there can be global datums that work for any region of the world and local datums that only work for a particular area
+2. **Projection** -- math for the transformation to get from a round planet to a flat map
+3. **Additional parameters** -- any other information necessary to support the projection
+    - E.g., the coordinates at the center of the map
+
+Some people use the analogy of peeling a citrus fruit and flattening the peel to describe the components of a CRS. The datum is the choice between a lemon or a grapefruit (i.e., the shape of the not-quite-spherical object) while the projection is the instructions for taking the complete peel and flattening it.
+
+You can check and transform the CRS in any scripted language that allows the loading of spatial data though the specifics do differ between the types of spatial data we introduced earlier.
+
+:::{.panel-tabset}
+### Vector CRS
+
+For vector data we can check the CRS with other functions from the `sf` library. It can be a little difficult to parse all of the information that returns but essentially it is most important that the CRS match that of any other spatial data with which we are working.
+
+```{r crs-check-vector}
+#| eval: false
+# Check CRS
+sf::st_crs(x = nc_poly)
+```
+
+Once you know the CRS, you can transform the data to another CRS if desired. This is a relatively fast operation for vector data because we're transforming geometric data rather than potentially millions of pixels.
+
+```{r crs-transform-vector}
+#| eval: false
+
+# Transform CRS
+nc_poly_nad83 <- sf::st_transform(x = nc_poly, crs = 3083) # <1>
+
+# Re-check CRS
+sf::st_crs(nc_poly_nad83)
+```
+1. In order to transform to a new CRS you'll need to identify the four-digit EPSG code for the desired CRS.
+
+### Raster CRS
+
+For raster data we can check the CRS with other functions from the `terra` library. It can be a little difficult to parse all of the information that returns but essentially it is most important that the CRS match that of any other spatial data with which we are working.
+
+```{r crs-check-raster}
+#| eval: false
+
+# Check CRS
+terra::crs(nc_pixel)
+```
+
+As with vector data, if desired you can transform the data to another CRS. However, unlike vector data, transforming the CRS of raster data is _very_ computationally intense. If at all possible you should avoid re-projecting rasters. If you must re-project, consider doing so in an environment with greater computing power than a typical laptop. Also, you should export a new raster in your preferred CRS after transforming so that you reduce the likelihood that you need to re-project again later in the lifecylce of your project.
+
+In the interests of making this website reasonably quick to re-build, the following code chunk is not actually evaluated but is the correct syntax for this operation.
+
+```{r crs-transform-raster}
+#| eval: false
+
+# Transform CRS
+nc_pixel_nad83 <- terra::project(x = nc_pixel, y = "epsg:3083")
+
+# Re-check CRS
+terra::crs(nc_pixel_nad83)
+```
+
+:::

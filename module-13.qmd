@@ -21,3 +21,15 @@ title: "Title TBD"
 
 {{< include topics/persuasive-proposal.qmd >}}
 
+
+
+
+{{< include topics/spatial-data-packages.qmd >}}
+
+{{< include topics/spatial-data-types.qmd >}}
+
+{{< include topics/spatial-crs.qmd >}}
+
+{{< include topics/spatial-map-making.qmd >}}
+
+{{< include topics/spatial-extract-data.qmd >}}

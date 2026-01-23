@@ -141,3 +141,14 @@ After completing this module you will be able to:
 - <u>Define</u> the purpose of GitHub Actions
 - <u>Deploy</u> a notebook with GitHub Pages
 
+## Spatial Data Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> the difference between the two major types of spatial data
+- <u>Manipulate</u> spatial data with R
+- <u>Create</u> maps using spatial data
+- <u>Integrate</u> spatial data with tabular data
+
+
+
