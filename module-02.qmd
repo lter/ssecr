@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Organization, Documentation, & AI Assistance"
 ---
 
 ## Overview
@@ -14,3 +14,19 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+{{< include topics/reproducibility-summary.qmd >}}
+
+{{< include activities/reproducibility-lego.qmd >}}
+
+{{< include topics/project-organizing.qmd >}}
+
+{{< include activities/create-readme.qmd >}}
+
+{{< include topics/organization-recs.qmd >}}
+
+
+
+
+{{< include topics/generative-ai.qmd >}}
