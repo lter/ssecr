@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Reproducible Work & Navigating Conflict"
 ---
 
 ## Overview
@@ -14,3 +14,20 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+
+{{< include topics/reproducible-coding.qmd >}}
+
+{{< include topics/code-comments.qmd >}}
+{{< include activities/comment-code.qmd >}}
+
+{{< include topics/consider-functions.qmd >}}
+
+
+
+
+{{< include topics/team-support.qmd >}}
+
+{{< include topics/team-conflict.qmd >}}
+{{< include activities/conflict-scenarios.qmd >}}
