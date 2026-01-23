@@ -25,41 +25,79 @@ website:
       - text: "Course Overview"
         href: index.qmd
       - section: "Phase I -- Prepare"
-        contents:
-            - text: "Version Control"
-              href: mod_version-control.qmd
-            - text: "Reproducibility"
-              href: mod_reproducibility.qmd
-            - text: "Data Discovery"
-              href: mod_data-disc.qmd
-            - text: "Team Science"
-              href: mod_team-sci.qmd
+        contents: 
+            - text: "Module 1"
+              href: module-01.qmd
+            - text: "Module 2"
+              href: module-02.qmd
+            - text: "Module 3"
+              href: module-03.qmd
+            - text: "Module 4"
+              href: module-04.qmd
       - section: "Phase II -- Plan"
-        contents:
-            - text: "Inclusive Facilitation"
-              href: mod_facilitation.qmd
-            - text: "Data Visualization"
-              href: mod_data-viz.qmd
-            - text: "Project Management"
-              href: mod_project-mgmt.qmd
-            - text: "Supporting D.E.C. Thinking"
-              href: mod_thinking.qmd
+        contents: 
+            - text: "Module 5"
+              href: module-05.qmd
+            - text: "Module 6"
+              href: module-06.qmd
+            - text: "Module 7"
+              href: module-07.qmd
+            - text: "Module 8"
+              href: module-08.qmd
       - section: "Phase III -- Execute"
-        contents:
-            - text: "Data Wrangling"
-              href: mod_wrangle.qmd
-            - text: "Intellectual Credit"
-              href: mod_credit.qmd
-            - text: "Analysis & Modeling"
-              href: mod_stats.qmd
+        contents: 
+            - text: "Module 9"
+              href: module-09.qmd
+            - text: "Module 10"
+              href: module-10.qmd
+            - text: "Module 11"
+              href: module-11.qmd
       - section: "Phase IV -- Magnify"
+        contents: 
+            - text: "Module 12"
+              href: module-12.qmd
+            - text: "Module 13"
+              href: module-13.qmd
+            - text: "Module 14"
+              href: module-14.qmd
+      - section: "2024 Content"
         contents:
-            - text: "Next Steps"
-              href: mod_next-steps.qmd
-            - text: "Communicating Findings"
-              href: mod_findings.qmd
-            - text: "Reproducible Reports"
-              href: mod_reports.qmd
+          - section: "Phase I -- Prepare"
+            contents: 
+                - text: "Version Control"
+                  href: mod_version-control.qmd
+                - text: "Reproducibility"
+                  href: mod_reproducibility.qmd
+                - text: "Data Discovery"
+                  href: mod_data-disc.qmd
+                - text: "Team Science"
+                  href: mod_team-sci.qmd
+          - section: "Phase II -- Plan"
+            contents:
+                - text: "Inclusive Facilitation"
+                  href: mod_facilitation.qmd
+                - text: "Data Visualization"
+                  href: mod_data-viz.qmd
+                - text: "Project Management"
+                  href: mod_project-mgmt.qmd
+                - text: "Supporting D.E.C. Thinking"
+                  href: mod_thinking.qmd
+          - section: "Phase III -- Execute"
+            contents:
+                - text: "Data Wrangling"
+                  href: mod_wrangle.qmd
+                - text: "Intellectual Credit"
+                  href: mod_credit.qmd
+                - text: "Analysis & Modeling"
+                  href: mod_stats.qmd
+          - section: "Phase IV -- Magnify"
+            contents:
+                - text: "Next Steps"
+                  href: mod_next-steps.qmd
+                - text: "Communicating Findings"
+                  href: mod_findings.qmd
+                - text: "Reproducible Reports"
+                  href: mod_reports.qmd
       - text: "Additional Resources"
         href: resources.qmd
   navbar:
