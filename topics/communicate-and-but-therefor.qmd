@@ -1,0 +1,57 @@
+## 'And, But, Therefore' Framework -- A Storytelling Tool
+
+The 'And, But, Therefore' (ABT) framework is a simple tool that helps develop a narrative in an elevator pitch (or any other short communication material). The temptation for many (researchers and non-researchers!) is to continue adding AND's to their work.
+
+::: panel-tabset
+#### With _Only_ "And"
+
+Climate change is affecting all ecosystems. **AND** One of the impacts from climate change is that wildfire intensity is increasing across the globe, including in the Boreal Forest. **AND** Wildfire releases carbon into the atmosphere and threatens local communities.
+:::
+
+But that doesn't add up to any sort of great story, just a collection of facts. Scientific peers might know what to do with these facts (but...they still often don't!), but most people don't want to put in the effort to connect the dots.
+
+The 'And But Therefore' framework provides a scaffolding from which to build a story.
+
+This method really helps you focus in on just the critical parts of the story. There are many things that you'll leave out. That's more than OK--that's the point! The first "and" is a setup--all your baseline information lives here. Let's try this out with our Boreal forest research:
+
+::: panel-tabset
+#### Start With an "And"
+
+Spruce trees evolved to burn, **AND** as a result, wildfire is an important part of the Boreal forest ecosystem.
+:::
+
+We've provided the bare minimum information for people to understand our research. But research addresses a problem. The "but" leads us to that problem:
+
+::: panel-tabset
+#### Add in a "But"
+
+**BUT**, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the Boreal forest.
+:::
+
+Now, the audience knows the stakes, as well as the background. They want to know how that problem is being addressed! How will we protect those people that live near the Boreal?
+
+THEREFORE lets you resolve the tension that was built by the BUT.
+
+::: panel-tabset
+#### Finish With a "Therefore"
+
+**THEREFORE**, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing communities with spaces to farm or recreate.
+:::
+
+All together, we get...
+
+::: panel-tabset
+#### Full Elevator Pitch!
+
+Spruce trees evolved to burn, **AND** as a result, wildfire is an important part of the boreal forest ecosystem. **BUT**, climate change is making fires burn hotter and more frequently, and those fires are now beginning to threaten people who live near the boreal forest. **THEREFORE**, researchers are designing fire mitigation strategies that protect these communities while simultaneously providing towns with spaces to farm or recreate.
+:::
+
+Another example, on a completely different subject:
+
+I'll be using this paper as an example: [Using a units ontology to annotate pre-existing metadata \| Scientific Data](https://www.nature.com/articles/s41597-025-04587-8#Sec2)
+
+::: panel-tabset
+#### Another Example
+
+Scientific data needs units--meters per second, grams, etc.--to have any real meaning, **AND** researchers might write those units in any number of different ways, even though they refer to the same thing (e.g., "meters per second" might be written "m/s", or "m-s", or "m per s"). **BUT** computers read those different annotations as unique, preventing easy analysis across different datasets. **THEREFORE** an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
+:::

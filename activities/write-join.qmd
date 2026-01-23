@@ -1,0 +1,16 @@
+::: {.callout-note icon="false"}
+#### Activity: Joining Data
+
+In a script, attempt the following with the PIE crab data:
+
+1.  Create a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)
+    -   Use your judgement on which month(s) should fall into each given PIE's latitude/location
+2.  Join your season table to the PIE crab data based on month
+3.  Calculate the average size of crabs in each season in order to identify which season correlates with the largest crabs
+
+<details>
+<summary>Hint</summary>
+You may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined
+</details>
+
+:::

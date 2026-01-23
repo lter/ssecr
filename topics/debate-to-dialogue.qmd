@@ -1,0 +1,145 @@
+## Moving from Debate to Dialogue
+
+Dialogue is a collaborative effort to understand and learn from each other. Debate, on the other hand, is an oppositional effort to convince the other side that you are right. Inclusive facilitation aims to support dialogue and skillful discussion. Dialogue allows groups to recognize the limits on their own and others' individual perspectives and to strive for more coherent thought. Dialogue becomes a container for collective thinking and exploration - a process that can take teams in directions not imagined or planned. In dialogue, all views are treated as equally valid, and different views are presented as a means toward discovering a new view. Participants listen to understand one another, not to win. Complex issues are explored and shared meaning is created. When it comes time to make a decision, skillful discussion is required. Both skillful discussion and dialogue are critical to the collaborative process, and the more artfully a group can move between these two forms of discourse (and out of less productive debate and polite discussion) according to what is needed, the more effective the group will be.
+
+:::{.panel-tabset}
+
+#### Debate
+
+- Intent to win
+- Listening to be understood
+- Power struggles
+- Competition "turf war"
+- Loudest wins
+- Ideas judged by who says them
+
+#### Polite Discussion
+
+- Intent to protect self, others
+- Surface friendly
+- Ideas judged by friendships/relationships
+- Impulsive, based on feeling, low data
+- Influence occurs outside the meeting
+- Limited active or empathetic listening
+
+#### Skillful Discussion
+
+- Intent is closure; informed decisions
+- Balance influence and inquiry
+- Focus on issues not personalities
+- Reasoning is made explicit
+- Ask about assumptions without criticizing
+- Influence is based in logic and data
+
+#### Dialogue
+
+- Intent to build mutual understanding
+- Listening to understand thoughts and feelings
+- Able to suspend assumptions
+- Energy used to find the right questions
+- "Container" for collective thinking
+- Influence is found in shared meaning created by groups
+
+:::
+
+David Kantor's Four Player Model is a helpful tool for diagnosing "stuck" patterns of communication, (including entrenched debate and polite discussion), and interceding to help shift to a more productive pattern. 
+
+Based on over 30 years of observation and study of face-to-face communication in many groups, Kantor developed the Four Player Model and a broader theory of Structural Dynamics. The model identifies four actions of effective communication:
+
+- **Move** - Initiate an idea, action, or direction for conversation
+- **Follow** - Continue the direction or flow of the conversation; support a move, either by agreeing or asking for more information
+- **Oppose** - Challenge or disagree with the idea, action, or suggested direction
+- **Bystand** - Notice and articulate what's happening in the conversation, add a neutral perspective
+
+<p align="center">
+<img src="topics/images/figure_four-player-model.png" alt="Figure of four modes of communication, arrayed on two axes - Move versus Oppose on the axis of Advocacy and Follow vs. Bystand on the axis of Inquiry." width="95%"/>
+</p>
+
+Each action in a group conversation can be coded into one of these four action modes. Most of us have one of these modes that we feel most comfortable in and tend to default to in a group. The most effective conversations involve good listening and the skillful use of all four modes. Common "stuck" patterns emerge when groups are not deploying all four actions.
+
+<p align="center">
+<img src="topics/images/figure_stuck-communication-patterns.png" alt="Four common patterns of 'stuck' communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition." width="95%"/>
+</p>
+
+:::{.panel-tabset}
+#### Serial Moves
+
+Lots of idea generation; may feel like a barrage; no clear thread, decision, or follow through
+
+#### What to Do
+
+Any of the other modes can help here, since move is the only mode being engaged.
+
+Add a **follow** to give momentum to a particular move and steer the conversation in that direction, e.g., "Can we go back to the idea that Jose put on the table? That felt like a topic that could really use our attention. Shall we focus there?"
+
+Offer an effective **oppose** - "We've heard a lot of different ideas. I'd like to focus on the one  Amelia laid out. I'm interested in the research question, but I don't think machine learning is going to be the most productive approach. Can we dig in to this one?"
+
+Use a **bystand** to bring awareness to and disrupt the dynamic - "Hey gang, we're 20 minutes into our call and we've put a lot of different topics on the table. Where do we want to focus ourselves so we can walk away with some clear next steps?"
+
+:::
+
+:::{.panel-tabset}
+#### Polite Discussion
+
+Moves are followed with little discussion or resistance; also known as Courteous Compliance
+
+#### What to Do
+
+Prompt an effective **oppose**: 
+
+- Who sees it differently? 
+- What's at risk here? 
+- What other angles should we consider?
+
+Invite a **bystand**:
+
+- Where is the group right now? 
+- What are you noticing? 
+- Is there an elephant in the room that needs to be named?
+
+:::
+
+:::{.panel-tabset}
+#### Point-Counterpoint / Debate
+
+Individuals are locked in a back and forth where each move is met with resistance / opposition
+
+#### What to Do
+
+Invite a **follow**: 
+
+- What do you like about the proposal on the table? 
+- What do you agree with that we could build upon?
+
+Coach for a more effective **oppose** by inviting those who have been opposing to identify some aspect of the idea they do agree with (even if only 2%), in addition to the specific aspects they object to.
+
+Invite a **bystand**:
+
+- In addition to the two viewpoints on the table, I'd love to hear from some other perspectives. 
+- What are you noticing? 
+- What might we be missing?
+
+:::
+
+:::{.panel-tabset}
+#### Covert Opposition
+
+On the surface, moves are followed, and the conversation appears harmonious, but below the surface, people have unspoken reservations. Opposition tends to be expressed outside the bounds of the conversation or harbored as resentment.
+
+Uneven power dynamics are often behind this pattern - group members defer to the moves of those with more power or seniority.
+
+#### What to Do
+
+Invite those with more power to experiment with **following** or **bystanding** to open up space for other players to make a **move**.
+
+Prompt a transparent **oppose**: 
+
+- Who sees it differently? 
+- What's at risk here? 
+- Are there some cons to the proposed idea?
+
+If others aren't comfortable, you can offer an **oppose**, e.g., by suggesting the limits of the proposed **move** be tested across different scenarios.
+
+Offer a **bystand**, e.g., "I want to offer a reflection from another team I was part of. On that team, we kept having meetings where it seemed like everyone was in agreement, but then we would leave, and over and over again there would be little follow through and more than a little grousing. People's real opinions were only coming out in side conversations outside of the meeting. We lost a lot of time and forward momentum because people didn't feel like they could air their concerns in the larger group. Do you see that happening here? Does anyone have a suggestion for how to make this a safer space to critically discuss ideas?"
+
+:::

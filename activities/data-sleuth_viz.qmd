@@ -1,0 +1,62 @@
+:::{.callout-note icon="false"}
+#### Activity: Data Sleuth
+
+In this activity, you'll play the role of data detective. You will have many potential datasets to look through. It is important to do it correctly, but you likely won't need or want to develop boutique code to examine each dataset, especially since some may be discarded after an initial pass.
+
+As a project team, discuss the following points:
+
+1. Decide on a structure for tracking results of exploratory data checks
+    - Git issues? Additional columns in your team-data-inventory google sheet? Something else?
+    - Draft a list of 'generic checks' you would want to apply to each dataset before inclusion in your synthesis
+2. Use the `summarytools` and/or `datacleanr` packages to explore one exemplar dataset that you intend to include in your project
+    - Discuss any issues you discover
+    - Create a "to do" list for the exemplar dataset that details additional steps needed to make that dataset analysis ready (e.g. remove 1993 due to incomplete sampling, convert concentrations from mmols to mg/L, contact dataset providers to ask about anomalous values in April 2021)
+    - Note we will work on skills to **implement** these steps in the [Data Wrangling module](https://lter.github.io/ssecr/mod_wrangle.html) in a few weeks.
+    - Revise the list of 'generic checks' for remaining datasets as necessary
+3. If you choose to save any images and/or code you used in your exploratory data visualization, decide on a naming convention and storage location
+    - Will you add these files to your `.gitignore` or do you plan on committing them?
+4. What additional plots would you ideally make that are not available through these generic tools?
+
+::::{.panel-tabset}
+##### `summarytools` Package
+
+```{r data-sleuth_summarytools}
+#| eval: false
+
+# Load the library
+library(summarytools)
+
+# Load data
+dataset_1 <- read_csv("your_file_name_here.csv")
+
+# View the data in your Rstudio environment
+summarytools::view(summarytools::dfSummary(dataset_1), footnote = NA) # <1>
+
+# Alternatively,save the results for viewing later, or to share with your team
+print(summarytools::dfSummary(dataset_1), footnote = NA,
+      file = 'dataset_01_summary.html')
+```
+1. Careful! Use lowercase 'v' in the `view` function of the `summarytools` package
+
+##### `datacleanr` Package
+
+```{r data-sleuth_datacleanr}
+#| eval: false
+
+# Load the library
+library(datacleanr)
+
+# Load data
+dataset_1 <- read_csv("your_file_name_here.csv")
+
+# Launch the shiny app and view the data interactively
+datacleanr::dcr_app(dataset_1)
+```
+
+::::
+
+<br>
+
+Both of these packages have extensive vignettes and online instructional materials. See [here](https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html) for one from `summarytools` and [here](https://the-hull.github.io/datacleanr/) for one from `datacleanr`.
+
+:::

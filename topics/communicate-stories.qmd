@@ -1,0 +1,21 @@
+## The Power of a Story
+
+Read the two following introductions to an essay about wildfire. Which essay would you rather continue to read?
+
+::: panel-tabset
+### Version 1
+
+Climate change is affecting all ecosystems. One of the impacts from climate change is that wildfire intensity is increasing across the globe, including in the Boreal Forest. Wildfire releases carbon into the atmosphere and threatens local communities. Some researchers are working on wildfire mitigation strategies in Alaska.
+
+### Version 2
+
+The smoke is thick in Fairbanks. Air the characteristic dirty orange of a nearby wildfire. Michelle Mack, lead PI of the Bonanza Creek LTER and long-time fire ecologist, saunters out of her lab. "It's gone," she says. Overnight, the nearby McDonald Fire burned one of her experiments down. The experiment explored an innovative approach to preventing wildfires. Now it was charcoal. (from Shaped by fire: the Bonanza Creek LTER)
+:::
+
+What are the differences here? Version 2 has *tension*, which begs for a *resolution*--the reader has incentive to keep reading. The second has *characters*, which can inspire empathy. There is a tangible sense of time, a before, during, and after. The language in Version 2 is more dynamic, less technical.
+
+Version 2 has the makings of a story--a narrative with a beginning, middle, and end. It has characters. It has scenes. Those, in combination, do a better job of engaging an audience than just facts do. Storytelling is a central part of communication. That should include science communication!
+
+Ok--not every elevator pitch needs to start with *"Once upon a time..."* But thinking about building some sort of story into your elevator pitch can dramatically improve it's effectiveness.
+
+As someone who's conducting the research, you already have stories. In fact, doing research is trying to figure out what a very specific story is--pulling a narrative from raw data. The trick to science communication is finding a different story, or modifying your story, to appeal to different audiences. We'll cover that below.

@@ -1,0 +1,45 @@
+<img src="topics/images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right">
+
+## Code Comments
+
+A "comment" in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include "too many" comments, so when in doubt: add more comments!
+
+There are two major strategies for comments and either or both might make sense for your project.
+
+### "What" Comments
+
+Comments describe _what_ the code is doing.
+
+- Benefits: allows team members to understand workflow without code literacy
+- Risks: rationale for code not explicit 
+
+```{.r}
+# Remove all pine trees from dataset
+no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
+```
+
+### "Why" Comments
+
+Comments describe _rationale_ and/or _context_ for code.
+
+- Benefits: built-in documentation for team decisions
+- Risks: assumes everyone can read code
+
+```{.r}
+# Cone-bearing plants are not comparable with other plants in dataset
+no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
+```
+
+:::{.callout-warning icon="false"}
+#### Discussion: Comment on Comments
+
+With a partner discuss the following questions:
+
+- When you write comments, do you focus more on the "what" or the "why"?
+- What would you estimate is the ratio of code to comment lines in your code?
+    - 1:1 being every code line has one comment line
+- If you have revisited old code, were your comments helpful?
+    - How could you make them more helpful?
+- In what ways do you think you would need to change your commenting style for a team project?
+
+:::

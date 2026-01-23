@@ -1,0 +1,35 @@
+---
+title: "Title TBD"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+
+{{< include topics/proj-analysis.qmd >}}
+
+{{< include topics/proj-mgmt-plan.qmd >}}
+{{< include activities/make-gantt-chart.qmd >}}
+
+
+
+
+
+{{< include topics/wrangle-plan.qmd >}}
+
+{{< include topics/harmonize-data.qmd >}}
+
+{{< include topics/wrangle-scope.qmd >}}
+
+{{< include topics/data-explore.qmd >}}

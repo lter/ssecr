@@ -1,0 +1,14 @@
+## What is Project Management?
+
+There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability. You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc. There are whole industries devoted to training project managers and developing apps to support them.
+
+The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don't require a full-time project manager to implement.
+
+**Some common elements of project management schemes:**
+
+| PM Activity | Industry Outcome | Science Outcome |
+|:---------------------|:-----------------------|:-----------------------|
+| Build a logical sequence of steps | Ensure needed resources/people tools are available when needed | Know which skills are needed when; know what form the output of each script/analysis needs to take |
+| Identify dependencies | Avoid supply chain lags | Know what data you need and when you need them |
+| Clarify responsibilities/accountabilities | Document productivity and responsibility | Avoid duplication of effort; keep the project moving; support authorship/credit agreements |
+| Identify and mitigate risks | Know when to abort or revise project goals | Assess threats to project success early and make a plan B |

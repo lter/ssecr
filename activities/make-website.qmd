@@ -1,0 +1,8 @@
+:::{.callout-note icon="false"}
+### Activity: Making a Team / Personal Website
+
+Note that you _do not_ need to keep your website up after you make it if you already have one or don't want one but this activity will still be good practice regardless.
+
+Eventually you will likely want a team-wide website. You are absolutely welcome to make this during today's module but because the first draft must be made by a single person, **all but one member of your group must work on individual sites instead**. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop 'muscle memory' in this arena.
+
+:::

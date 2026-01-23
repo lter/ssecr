@@ -1,0 +1,7 @@
+## Data Inventory Value
+
+Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
+
+- Well-documented data inventory table make it easier for researchers to find and access specific data for reproducible research
+- Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
+- Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)

@@ -1,0 +1,41 @@
+---
+title: "Title TBD"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+{{< include topics/viz-synthesis.qmd >}}
+
+{{< include topics/viz-exploration.qmd >}}
+{{< include activities/data-sleuth_viz.qmd >}}
+
+{{< include topics/viz-draw.qmd >}}
+{{< include activities/draw-graph.qmd >}}
+
+{{< include topics/viz-ggplot2-core.qmd >}}
+{{< include activities/make-graph-p01.qmd >}}
+{{< include activities/make-graph-p02.qmd >}}
+
+{{< include topics/viz-ggplot2-multipanel.qmd >}}
+{{< include activities/make-graph-p03.qmd >}}
+
+
+
+
+{{< include topics/proj-mgmt-def.qmd >}}
+
+{{< include topics/proj-mgmt-start.qmd >}}
+
+{{< include topics/proj-mgmt-scope.qmd >}}

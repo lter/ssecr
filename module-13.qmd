@@ -1,0 +1,35 @@
+---
+title: "Title TBD"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+
+{{< include topics/park-downhill.qmd >}}
+
+{{< include topics/persuasive-proposal.qmd >}}
+
+
+
+
+{{< include topics/spatial-data-packages.qmd >}}
+
+{{< include topics/spatial-data-types.qmd >}}
+
+{{< include topics/spatial-crs.qmd >}}
+
+{{< include topics/spatial-map-making.qmd >}}
+
+{{< include topics/spatial-extract-data.qmd >}}

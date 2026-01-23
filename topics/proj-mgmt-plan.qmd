@@ -1,0 +1,47 @@
+## Plan the Work
+
+Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities.
+Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities.
+With each task arranged on a timeline, it becomes easier to spot potential dependencies that could otherwise hold up the project.
+With simultaneous tasks stacked vertically, it becomes apparent when the planned workload is unrealistic.
+
+- Before diving into any specific tool, start by making a list of your goal and the steps necessary to get there.
+- Place them into an outline in the order they must proceed.
+    - Some steps cannot start until others are finished, while others can proceed simultaneously.
+    - Sequential steps get a new number, while steps that can be done in parallel get the same number with different letters.
+- Attach an estimated time frame to each step and identify a responsible team member (tentative at this point).
+- Arrange the steps in colored bars along a horizontal timeline.
+- Use the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.
+
+A robust support infrastructure exists for the project management profession -- including formal training and a multitude of (often pricey) apps.
+But for the job of managing research collaborations, we've found that the single most important factor is whether your collaborators will use the system.
+For that to happen, they must have easy access to it, ideally without setting up a new account and as part of something they already do every day.
+
+For non-coders, we've included a [Google sheet template](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing) of a Gantt chart, pictured below.
+
+<p align="center">
+<img src="topics/images/image_gantt-image.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%"/>
+</p>
+
+But if you're already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub's project management capabilities?
+In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project.
+Issues can also be created in the project itself.
+Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates.
+The examples below draw from the repository we are using to organize the first iteration of this course.
+
+<p align="center">
+<img src="topics/images/image_github-project.png" alt="a series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" width="100%"/>
+<figcaption>Organizing with GitHub Projects</figcaption>
+</p>
+
+Two additional views make it even easier to track overall progress and individual workloads.
+The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue.
+In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly.
+The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
+
+The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
+
+<p align="center">
+<img src="topics/images/image_github-gantt.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%"/>
+<figcaption>Gantt Chart Example using GitHub Projects</figcaption>
+</p>

@@ -1,0 +1,9 @@
+## Process Design
+
+Good meeting design starts with understanding your purpose and objectives, as well as your participants. Once you understand why you need to meet (your overarching goal) and what you want to accomplish (the specific outcomes you are driving toward), you can turn to how you will accomplish your purpose (i.e. the agenda of activities, timings, and tech) and who will play what roles. You want participants to know their role and how to be at their best. 
+
+A good rule of thumb is to allow 2-3x as much time to plan a meeting as its duration. 
+
+<p align="center">
+<img src="topics/images/figure_meeting-design-questions.png" alt="Figure separating meeting planning into 'why, what, how, and who' facets" width="95%"/>
+</p>

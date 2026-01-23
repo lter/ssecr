@@ -1,0 +1,3 @@
+## Final Pre-Code Step: Draw!
+
+It may sound facile, but one of the best things you can do to make your life easier when you 'actually' start making graphs is to draw your hypothetical graph. You will likely find that creating a small sketch of your ideal figure will help you make some critical decisions. This can save you time so you don't laboriously code a graph that--once created--doesn't meet your expectations. You may still change your mind once you've seen the graph your code produces (and that is okay!) but you'll likely make some of the necessary larger decisions with pen and paper and streamline your process in generating a visualization that perfectly meets your needs.

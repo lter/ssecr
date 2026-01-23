@@ -1,0 +1,28 @@
+---
+title: "Title TBD"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+
+{{< include topics/stats-presentations.qmd >}}
+
+{{< include topics/stats-hypotheses.qmd >}}
+
+{{< include topics/stats-mixed-effects.qmd >}}
+
+{{< include topics/stats-aic.qmd >}}
+
+{{< include topics/stats-meta.qmd >}}

@@ -1,0 +1,13 @@
+---
+title: "Synthesis Research Projects"
+---
+
+One of the primary facets of the course is that Synthesis Fellows assemble into project teams to collaboratively identify their research questions and pursue novel synthesis projects throughout the course. See below for brief descriptions of each project team as well as a high-level summary of project milestones to help teams stay on track.
+
+## Project Teams
+
+{{< include project-info/teams.qmd >}}
+
+## Project Milestones
+
+{{< include project-info/milestones.qmd >}}

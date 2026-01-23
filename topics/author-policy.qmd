@@ -1,0 +1,32 @@
+## How to Develop and Use an Authorship Policy
+
+An authorship policy will be most helpful if it if it reflects shared values of the research team and is developed *before* conflicts arise.
+
+[Oliver et al. (2018)](https://doi.org/10.1002/ecs2.2206 "Strategies for effective collaborative manuscript development in interdisciplinary science teams") described six principles that they aimed for their authorship process to support:
+
+<p align="center">
+<img src="topics/images/figure_credit-02.jpg" alt="Image summarizing guiding principles and authorship management process" width="100%"/>
+<figcaption>Figure taken from Oliver _et al._ 2018 A conceptual diagram that shows the strategies for effective collaborative manuscript (MS) development being firmly embedded within and balancing the guiding principles, and the relative order that the practices occur (numbers). Strategies that are on the same row are strongly related, can occur in any order, and are in fact iterative. All strategies should feed back into the team coauthorship policy for evaluation and reflection about whether the practices are fulfilling the guiding principles</figcaption>
+</p>
+
+Their approach considers the entire life of a project and aims to balance efficiency, creativity, and inclusion – which can seem to be in conflict. It would, for example, be very inefficient to solicit many authors for a student's dissertation paper, which is likely to only involve a small number of authors in the end.
+
+Their starting point is to **understand the makeup of the group** involved. What are each member's assumptions about authorship credit and order? These can differ based on their field of study, their country of origin, their seniority, and their role in the group and what they hope to get out of involvement with the group. Articulating these assumptions at the start can avoid later conflicts.
+
+Then **develop a draft authorship policy**–either from scratch or starting with one the many frameworks available. Recognize that this policy is a living document that the team can adjust as issues arise.
+
+**Announcing ideas that may lead to manuscripts** is also critical in their view. It allows the whole team to contribute to developing the idea (creativity) and allows interested parties to opt-in to further development (transparency) and work on the project.
+
+**Determine the manuscript type**. They outline a taxonomy of manuscript types, which will often determine how large the co-author list can or should be and what kinds of co-author management strategies will work best.
+
+-   **Disciplinary research manuscripts.** Typical small-group papers. Clarity is required, but no additional special considerations.
+
+-   **Multidisciplinary research manuscripts.** Special considerations include the unfamiliarity of researchers from one discipline with the work of the other and the role of data analysts.
+
+-   **Essay, commentary, or concept manuscripts.** In these "idea papers" contributions may be less clearly delineated and harder to document.
+
+-   **Data manuscripts and database documentation.** Data papers often use an opt-out model, where all group participants are included unless they are unable or unwilling to make basic contributions, such as editing or reading and approving the manuscript before submission. This is a convenient way to make sure that all contributors receive credit in at least one publication.
+
+-   **Graduate student dissertation manuscripts.** Depending on the student's institution and committee, this may require the involvement of fewer authors.
+
+The **decision on an authorship management strategy** will flow from the type of paper and the individuals involved. Here, the value of flexibility and communication within the team is key.

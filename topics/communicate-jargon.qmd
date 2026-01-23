@@ -1,0 +1,94 @@
+## Jargon
+
+What is jargon? "Special words or expressions that are used by a particular profession or group and are difficult for others to understand," as per the dictionary.
+
+That's not very useful. Let's illustrate this better with an example:
+
+<details>
+<summary>Click me!</summary>
+<img src="https://imgs.xkcd.com/comics/up_goer_five_2x.png" alt="Cartoon of a rocketship with labels that only use the one thousand most common English words" width="100%"/>
+</details>
+
+This is a rocket, that's described _only_ by the thousand (ten hundred) most common words in English. Kind of a mess, huh!
+
+:::{.callout-note icon="false"}
+#### Activity: UpGoer5
+
+- Describe your research using the [UpGooer5 text editor](https://splasho.com/upgoer5/)
+- Share your draft once you have one!
+
+:::
+
+Remember our elevator pitch for scientific data?
+
+::: panel-tabset
+#### Original Version
+
+Scientific data needs units--meters per second, grams, etc.--to have any real meaning, AND researchers might write those units in any number of different ways, even though they refer to the same thing \["meters per second" might be written "m/s", or "m-s", or "m per s"\]. BUT computers read those different annotations as unique, preventing easy analysis across different datasets. THEREFORE, an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
+
+#### UpGoer5 Version
+
+Numbers only mean something if they have a word at the end that tells us what they mean. But people that study how the world works write what they mean in different ways. Computers read those things they write to mean something wrong. So people that try and make life easier for the people that study the world came up with a way to make those the way people write what they mean the same. That way, the people that study the world can work together, using computers, and everyone understands.
+:::
+
+Whew! Looks like we needed some...jargon to make this a bit better!
+
+### We All Need Jargon
+
+Jargon _is_ useful! Terms that refer to highly specific things streamline our ability to communicate. Too little jargon is also a problem!
+
+Jargon is a shared language used by an "in-group." Some of that jargon is shared by a large in-group--maybe environmentally-minded people. But for scientific jargon? Most people are not part of that group! That's important for communicating science--you need to use terms that the audience understands. Remember, each audience might understand different terms!
+
+But Russel Hirst, who has a [great lesson on jargon](https://www.russelhirst.com/home/lesson-four/), captured this important consideration nicely:
+
+> Remember, though: when you are reducing jargon, you must not damage accuracy. For example, if you were to substitute "burnable" for "flammable," you could be doing readers a great disservice; "flammable" has a specific meaning. A flammable substance (such as gasoline) is not merely burnable; it is very easily ignited, will ignite if a flame or spark merely touches its fumes, and it burns with great intensity. - Russel Hirst
+
+#### But Jargon is a Double-Edged Sword
+
+So...use jargon but don't use it wrong? Yep!
+
+You're going to have to use jargon. You might find that you have to use jargon that nobody but you and your labmates will understand. When this happens, _it is critical that you define those terms!_ Explain what you mean early, and continue to remind the audience what you mean throughout your talk/video/casual chat.
+
+But we don't want clunky writing! [One great blog](https://www.metastellar.com/nonfiction/writing-advice-of-the-week/3-tips-for-tight-writing/) post makes a key distinction between jargon and another type of unapproachable writing: "sentence fat".
+
+Sentence fat is unnecessarily clunky words and phrases that make it unreasonably hard to understand. When we remove these clunky phrases, our writing gets much more streamlined and easier to understand.
+
+Let's take a look at some good examples.
+
+::: panel-tabset
+#### Example 1
+
+We calculated the volume of water in the adjoining ocean to assist local homeowners with maritime ecosystems as neighbors
+
+<details>
+<summary>Trimmed Version</summary>
+**We studied sea level to protect coastal communities.**
+</details>
+
+#### Example 2
+
+We present materials, mechanics, and integration schemes that afford scalable pathways to working arthropod-inspired cameras with nearly full hemispherical shapes.
+
+<details>
+<summary>Trimmed Version</summary>
+**New, high-tech digital cameras mimic bug eyes.**
+</details>
+
+#### Example 3
+
+This system works because of AI integration through motion scaling and tremor reduction.
+
+<details>
+<summary>Trimmed Version</summary>
+**This system works because of programming that makes the robot's movements more precise and less shaky.**
+</details>
+
+#### Example 4
+
+Translate communication into various formats based on efficacy with target group
+
+<details>
+<summary>Trimmed Version</summary>
+**Adapt communication to fit different audiences**
+</details>
+:::

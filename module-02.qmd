@@ -1,0 +1,32 @@
+---
+title: "Organization, Documentation, & AI Assistance"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+{{< include topics/reproducibility-summary.qmd >}}
+
+{{< include activities/reproducibility-lego.qmd >}}
+
+{{< include topics/project-organizing.qmd >}}
+
+{{< include activities/create-readme.qmd >}}
+
+{{< include topics/organization-recs.qmd >}}
+
+
+
+
+{{< include topics/generative-ai.qmd >}}

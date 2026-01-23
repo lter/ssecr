@@ -1,0 +1,170 @@
+---
+title: "2024 Learning Objectives"
+---
+
+## Version Control Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Describe</u> how version control facilitates code collaboration
+- <u>Navigate</u> GitHub via a web browser
+- <u>Create</u> and edit a repository through GitHub
+- <u>Define</u> fundamental git vocabulary
+- <u>Sketch</u> the RStudio-to-GitHub order of operations
+- <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
+
+## Reproducibility Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Identify</u> core tenets of reproducibility best practices
+- <u>Create</u> robust workflow documentation
+- <u>Implement</u> reproducible project organization strategies
+- <u>Discuss</u> methods for improving the reproducibility of your code products
+- <u>Summarize</u> FAIR and CARE data principles
+- <u>Evaluate</u> the FAIR/CAREness of your work
+
+## Data Discovery & Management Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Identify</u> repositories "known for" a particular type of data
+- <u>Explain</u> how to effectively search for data outside of specialized repositories
+- <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
+- <u>Plan</u> how to download data in a reproducible way
+- <u>Perform</u> checks of the fundamental structure of a dataset
+
+## Team Science Practices Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Interpret</u> and enact current best practices in team science
+- <u>Identify</u> different interaction styles and the effect they have on group dynamics
+- <u>Identify</u> benefits (and potential costs of) diverse teams
+- <u>Describe</u> ways to mitigate costs of diverse teams
+- <u>Explain</u> methods for improving the experience of virtual participants on hybrid teams
+
+## Inclusive Facilitation Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Describe</u> benefits of encouraging full, thoughtful, engaged participation
+- <u>Identify</u> methods for ensuring equitable access to participation in a team setting
+- <u>Identify</u> one activity that privileges each thinking style
+
+## Data Visualization & Exploration Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Explain</u> how data visualization can be used to explore data
+- <u>Define</u> fundamental `ggplot2` vocabulary
+- <u>Identify</u> appropriate graph types for given data type/distribution
+- <u>Discuss</u> differences between presentation- and publication-quality graphs
+- <u>Explain</u> how your graphs can be made more accessible
+
+## Project Management Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Articulate</u> key principles of project management
+- <u>Define</u> common approaches for defining project scope
+- <u>Identify</u> and make explicit internal logical leaps
+- <u>Develop</u> (or refine) the project management framework for your team project
+
+## Supporting Divergent, Emergent, and Convergent Thinking Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Recognize</u> the stages of a participatory decision making process and the type of thinking required for each stage
+- <u>Identify</u> the value of and potential obstacles to emergent thinking in the "groan zone"
+- <u>Understand</u> the diamond model of participatory decision making as a framework for group process design
+- <u>Develop</u> strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting
+
+## Data Harmonization & Wrangling Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Identify</u> typical steps in data harmonization and wrangling workflows
+- <u>Create</u> a harmonization workflow
+- <u>Define</u> quality control
+- <u>Summarize</u> typical operations in a quality control workflow
+- <u>Use</u> regular expressions to perform flexible text operations
+- <u>Write</u> custom functions to reduce code duplication
+- <u>Identify</u> value of and typical obstacles to data 'joining'
+- <u>Explain</u> benefits and drawbacks of using data shape to streamline code
+- <u>Design</u> a complete data wrangling workflow
+
+## Authorship & Intellectual Credit Learning Objectives
+
+After completing this module you will be able to:
+
+-   <u>Define</u> types of intellectual contributions to a synthesis project
+-   <u>Describe</u> some common frameworks for equitable authorship decisions
+-   <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
+-   <u>Create</u> a draft intellectual credit plan for your team
+
+## Analysis & Modeling Learning Objectives
+
+After completing this module you will be able to:
+
+-   <u>Describe</u> proposed analytical methods to an interested audience of mixed prior experience
+-   <u>Explain</u> nuance in interpretation of results of proposed analyses
+-   <u>Identify</u> some statistical tests common in synthesis research
+-   <u>Perform</u> some synthesis-specific analyses
+
+## Next Steps Learning Objectives
+
+After completing this module you will be able to:
+
+-   <u>Identify</u> needed data and target audience(s)
+-   <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
+-   <u>Conceive</u> funding-worthy proposals
+
+## Communicating Findings Learning Objectives
+
+After completing this module you will be able to:
+
+- <u>Define</u> elements of (in)effective communication
+- <u>Identify</u> relevant audiences for a particular work
+- <u>Identify</u> jargon--when to use it, when to avoid it
+- <u>Translate</u> communication into different formats
+
+## Reproducible Reports Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Describe</u> contexts where computational notebooks are useful
+- <u>Identify</u> the three fundamental elements of a typical notebook
+- <u>Use</u> Markdown syntax to accomplish text styling
+- <u>Create</u> notebooks that include a blend of plain text and embedded code chunks
+- <u>Make</u> a Quarto website
+- <u>Define</u> the purpose of GitHub Actions
+- <u>Deploy</u> a notebook with GitHub Pages
+
+## Spatial Data Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> the difference between the two major types of spatial data
+- <u>Manipulate</u> spatial data with R
+- <u>Create</u> maps using spatial data
+- <u>Integrate</u> spatial data with tabular data
+
+## Multivariate Learning Objectives
+
+After completing this module you will be able to: 
+
+- <u>Define</u> some common multivariate visualization methods
+- <u>Describe</u> the similarities/differences between metric and non-metric ordination (methodology and interpretation)
+
+## Interactivity Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> the three fundamental components of a Shiny app
+- <u>Explain</u> benefits and limitations of interactive approaches to data exploration
+- <u>Generate</u> an interactive app with Shiny
+- <u>Use</u> text formatting methods in a Shiny app
+- <u>Explore</u> available Shiny layout options
+- <u>Create</u> a Shiny app
+- <u>Describe</u> (briefly) the purpose of deploying a Shiny app

@@ -1,28 +1,80 @@
 ---
-title: "SSECR Design Team"
+title: "SSECR Instructors"
 ---
 
-## Overview
+## Overview 
 
-Materials like this can only be the product of a strong team lending their unique wisdom and expertise over an extended period of time. We are overjoyed to get to work with the folx identified below and could not ask for better collaborators. We've separated out people in our core 'design team' from those who provided feedback on a smaller scale but everyone listed on this page was absolutely invaluable to this effort.
+Materials like this can only be the product of a strong team lending their unique wisdom and expertise over an extended period of time. We are overjoyed to get to work with the folx identified below and could not ask for better collaborators. 
 
 _Icon legend: {{< fa brands orcid >}} = ORCID | {{< fa globe >}} = website | {{< fa brands github >}} = GitHub | {{< fa brands google scholar >}} = publications_
 
-### Design Team
+::::{.panel-tabset}
+#### 2026-27 Cohort
+
+_Design Team_
 
 - Lead: **Marty Downs** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X) 
 - Lead: **Nick J Lyon** (_they/them)_ -- [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
 - Lead: **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel)
-- **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907)
 - **Sarah Elmendorf** (_she/her_) -- [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1085-8521)
+- **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907)
 - **Gregory Maurer** (_he/him_) -- [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
-- **Gabriel De La Rosa** (_he/him_) -- [{{< fa globe >}}](https://www.gabrieldelarosa.com/)
 
-### Other Contributors
+_Content Editing & Feedback_
+
+- TBD
+
+_Panelists & Guest Speakers_ 
+
+- TBD
+
+#### 2024-25 Cohort
+
+_Design Team_
+
+- Lead: **Marty Downs** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2833-956X) 
+- Lead: **Nick J Lyon** (_they/them)_ -- [{{< fa globe >}}](https://njlyon0.github.io/) [{{< fa brands github >}}](https://github.com/njlyon0) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3905-1078)
+- Lead: **Carrie Kappel** (_she/her_) -- [{{< fa globe >}}](https://legacyworksgroup.com/team-content/carrie-kappel)
+- **Gabriel De La Rosa** (_he/him_) -- [{{< fa globe >}}](https://www.gabrieldelarosa.com/)
+- **Sarah Elmendorf** (_she/her_) -- [{{< fa globe >}}](https://www.colorado.edu/instaar/sarah-elmendorf) [{{< fa brands github >}}](https://github.com/scelmendorf/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1085-8521)
+- **Li Kui** (_she/her_) -- [{{< fa brands github >}}](https://github.com/lkuiucsb) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5894-4907)
+- **Gregory Maurer** (_he/him_) -- [{{< fa globe >}}](https://greg.pronghorns.net/) [{{< fa brands github >}}](https://github.com/gremau) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3007-8058)
+
+_Content Editing & Feedback_
 
 - **Angel Chen** (_she/her_) -- [{{< fa globe >}}](https://angelchen7.github.io/) [{{< fa brands github >}}](https://github.com/angelchen7/) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-3515-6710)
 - **Molly Phillips** (_she/they_) -- [{{< fa brands github >}}](https://github.com/phillips-map) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-1568-4858)
 - **Ingrid Slette** (_she/her_) -- [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7707-3246)
+
+_Panelists & Guest Speakers_ 
+
+::: {.columns}
+::: {.column width="50%"}
+- Max Castorani -- [{{< fa globe >}}](https://castorani.evsc.virginia.edu/)
+- Kyle Cavanaugh -- [{{< fa globe >}}](https://www.ioes.ucla.edu/person/kyle-cavanaugh/)
+- Bala Chaudhary -- [{{< fa globe >}}](https://balachaudhary.com/index.html#/)
+- Stevan Earl -- [{{< fa globe >}}](https://search.asu.edu/profile/938759)
+- Steve Formel -- [{{< fa globe >}}](https://www.usgs.gov/staff-profiles/stephen-k-formel)
+- Laureano Gherardi -- [{{< fa globe >}}](https://vcresearch.berkeley.edu/faculty/laureano-gherardi)
+- Lauren Hallett -- [{{< fa globe >}}](https://ie2.uoregon.edu/people/hallett/)
+- Jaclyn Hatala Matthes
+- Kathi Jo Jankowski -- [{{< fa globe >}}](https://www.usgs.gov/staff-profiles/kathi-jo-jankowski)
+- Nicole Kaplan
+:::
+::: {.column width="50%"}
+- Greg Maurer -- [{{< fa globe >}}](https://greg.pronghorns.net/index.html)
+- Tim Ohlert -- [{{< fa brands google scholar >}}](https://www.researchgate.net/scientific-contributions/Timothy-Ohlert-2172949124)
+- Alex Phillips -- [{{< fa globe >}}](https://www.alexandraatleephillips.com/)
+- Cristina Portales Reyes -- [{{< fa globe >}}](https://www.portalesbiodiversitylab.com/)
+- Ingrid Slette -- [{{< fa brands orcid >}}](https://orcid.org/0000-0002-7707-3246)
+- Eric Sokol -- [{{< fa globe >}}](https://www.neonscience.org/person/eric-sokol)
+- Cove Sturtevant -- [{{< fa globe >}}](https://www.neonscience.org/person/cove-sturtevant)
+- Jonathan Walter
+- Mack White -- [{{< fa globe >}}](https://mackwhite.github.io/)
+:::
+:::
+
+::::
 
 ## Supporting Organizations
 

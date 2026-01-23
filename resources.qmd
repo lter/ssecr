@@ -1,0 +1,236 @@
+---
+title: "Additional Resources"
+---
+
+See below for a (non-exhaustive) list of additional resources that may prove helpful complements to SSECR course content.
+
+## Version Control
+
+- Bryan J. _et al._ [Happy Git and GitHub for the useR](https://happygitwithr.com/). **2024**.
+- Pereira Braga, P.H. _et al._ [Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.14108). **2023**. _Methods in Ecology and Evolution_
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Intro to Git and GitHub](https://learning.nceas.ucsb.edu/2023-10-coreR/session_06.html). **2023**.
+- GitHub. [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf). **2023**.
+
+## Reproducibility
+
+- British Ecological Society (BES). [Better Science Guides: Reproducible Code](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
+- Englehardt, C. _et al._ [FAIR Teaching Handbook](https://fairsfair.gitbook.io/fair-teaching-handbook/). **2024**.
+- Csik, S. _et al._ UCSB [Master of Environmental Data Science (MEDS) README Guidelines](https://ucsb-meds.github.io/README-guidelines/). **2024**.
+- The Carpentries. [Data Analysis and Visualization in R for Ecologists: Before We Start](https://datacarpentry.org/R-ecology-lesson/00-before-we-start.html). **2024**.
+- The Carpentries. [Introduction to R for Geospatial Data: Project Management with RStudio](https://datacarpentry.org/r-intro-geospatial/02-project-intro.html). **2024**.
+- Briney, K. [Research Data Management Workbook](https://caltechlibrary.github.io/RDMworkbook/). **2024**.
+- Google. [Style Guide](http://adv-r.had.co.nz/Style.html). **2024**.
+- LTER Scientific Computing Team. [Team Coding: 5 Essentials](https://lter.github.io/scicomp/wg_team-coding.html). **2024**.
+- Jennings, L. _et al._ [Applying the 'CARE Principles for Indigenous Data Governance' to Ecology and Biodiversity Research](https://www.nature.com/articles/s41559-023-02161-2). **2023**. _Nature Ecology & Evolution_
+- Wickham, H. & Bryan, J. [R Packages](https://r-pkgs.org/) (2nd ed.). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: FAIR and CARE Principles](https://learning.nceas.ucsb.edu/2023-10-coreR/session_05.html). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Reproducibility & Provenance](https://learning.nceas.ucsb.edu/2023-10-coreR/session_18.html). **2023**.
+- Lowndes, J.S. _et al._ [Documenting Things: Openly for Future Us](https://openscapes.github.io/documenting-things/#/title-slide). **2023**. _posit::conf(2023)_
+- Trisovic, A. _et al._ [A Large-Scale Study on Research Code Quality and Execution](https://www.nature.com/articles/s41597-022-01143-6). **2022**. _Scientific Data_
+- Wickham, H. [Advanced R: Style Guide](http://adv-r.had.co.nz/Style.html). (1st ed.). **2019**.
+- van Rossum, G. _et al._ [PEP 8: Style Guide for Python Code](https://peps.python.org/pep-0008/). **2013**. _Python Enhancement Proposals_
+
+## Data Discovery & Management
+
+- British Ecological Society (BES). [Better Science Guides: Data Management Guide](https://www.britishecologicalsociety.org/publications/better-science/). **2024**.
+- LTER Scientific Computing Team. [Data Acquisition Guide for TRY and AppEEARS](https://lter.github.io/scicomp/internal_get-data.html). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Data Management Essentials](https://learning.nceas.ucsb.edu/2023-10-coreR/session_14.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_04.html). **2023**.
+- NCEAS Learning Hub. [UCSB Faculty Seminar Series: Writing Data Management Plans](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_05.html). **2023**.
+- Environmental Data Initiative (EDI) [Data Portal](https://portal.edirepository.org/nis/advancedSearch.jsp)
+- DataONE [Data Catalog](https://search.dataone.org/data)
+- Ocean Observatories Initiative (OOI) [Data Explorer](https://dataexplorer.oceanobservatories.org/)
+- Global Biodiversity Information Facility (GBIF) [Data Portal](https://www.gbif.org/)
+- iDigBio Digitized [Specimen Portal](https://www.idigbio.org/portal)
+- [LTAR Data Dashboards and Visualizations](https://ltar.ars.usda.gov/data/data-dashboards/)
+- [LTAR Group Data](https://agdatacommons.nal.usda.gov/Long_Term_Agroecosystem_Research/groups) within the Ag Data Commons, the digital repository of the National Agricultural Library
+- [Data Is Plural](https://www.data-is-plural.com/) and its [data list](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/edit?gid=0#gid=0) for exploring the cool datasets in various domains
+
+## Team Science Practices
+
+- Bates, A.E. _et al._, [Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks](https://www.sciencedirect.com/science/article/pii/S0006320724001289?via%3Dihub). **2024**. _Biological Conservation_
+- Hong, L., & Page, S. E. [Individual selection criteria for optimal team composition](https://doi.org/10.1007/s11238-023-09960-w). **2024**. _Theory and Decision_
+- Lowman, H. _et al._, [Collaborative consortia can boost postdoctoral workforce development](https://doi.org/10.1073/pnas.2401812121). **2024**. _PNAS_
+- Liberatore, A. [Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together](https://docs.google.com/presentation/d/1xbT59ULxJhV-QF4FAeU7EYkOGGzzrIjTlDEULlNyerw/edit#slide=id.p). **2024**.
+- Lahr, H. [How to effectively engage teams in interdisciplinary collaborations](https://emlab.ucsb.edu/blog/how-effectively-engage-teams-interdisciplinary-collaborations). **2024**
+- Peterson, D.M. _et al._, [Team Science: A Syllabus for Success on Big Projects](https://onlinelibrary.wiley.com/doi/10.1002/ece3.10343). **2023**. _Ecology and Evolution_
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Team Science for Synthesis](https://learning.nceas.ucsb.edu/2023-09-ucsb-faculty/session_02.html). **2023**.
+- Graffius, S.M. [Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update](https://www.exceptional-pmo.com). **2023**
+- Gaynor, K.M., _et al._, [Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010567). **2022**. _PLoS Computational Biology_
+- Yang, Y. _et al._, [Gender-diverse teams produce more novel and higher-impact scientific ideas](https://doi.org/10.1073/pnas.220084111). **2022**. _PNAS_
+- Delta Stewardship Council. [Open Science Synthesis: Thinking Preferences](https://learning.nceas.ucsb.edu/2021-09-delta/session-6-collaboration-practices.html#thinking-preferences). **2021**.
+- Deutsch, L. _et al._, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. _Environmental Science & Policy_
+- Farrell, K.J. _et al._, [Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2287). **2021**. _Frontiers in Ecology and the Environment_
+- Lotrecchiano, G.R., _et al._, [Individual and team competencies in translational teams](https://doi.org/10.1017/cts.2020.551). **2021**. _Journal of Clinical and Translational Science_  
+- Folger, J.P., _et al._, [Working Through Conflict: Strategies for Relationships, Groups, and Organizations (8th ed.)](https://doi.org/10.4324/9781315296296). **2017**. _Routledge_
+- Lee, Y. _et al._, [Creativity in scientific teams: Unpacking novelty and impact](https://doi.org/10.1016/j.respol.2014.10.007). **2015**. _Research Policy_
+- Abbasi, A., & Jaafari, A. [Research impact and scholars' geographical diversity](https://doi.org/10.1016/j.joi.2013.04.004). **2013**. _Journal of Informetrics_ 
+- Nederveen P.A., _et al._, [Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation](https://doi.org/10.5465/amj.2010.0992). **2013**. _Academy of Management Journal_ 
+- Hampton, S.E. & Parker, J.N. [Collaboration and Productivity in Scientific Synthesis](https://academic.oup.com/bioscience/article/61/11/900/223655). **2011**. _BioScience_
+- Woolley, A.W. _et al._, [Evidence for a Collective Intelligence Factor in the Performance of Human Groups](https://doi.org/10.1126/science.1193147). **2010**. _Science_
+- Fiore S.M. _et al._, [Interdisciplinarity as Teamwork: How the Science of Teams Can Inform Team Science](https://doi.org/10.1177/1046496408317797). **2008**. _Small Group Research_
+- Stokols, D. _et al._, [The Ecology of Team Science: Understanding Contextual Influences on Transdisciplinary Collaboration](https://doi.org/10.1016/j.amepre.2008.05.003). **2008**. _American Journal of Preventive Medicine_
+- van Knippenberg, D. _et al._, [Work Group Diversity and Group Performance: An Integrative Model and Research Agenda](https://doi.org/10.1037/0021-9010.89.6.1008). **2004**. _Journal of Applied Psychology_
+- Milliken, F.J. & Martins, L.L. [Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups](https://www.jstor.org/stable/258667). **1996**. _The Academy of Management Review_
+- Tuckman, B.W., & Jensen, M.A.C. [Stages of Small-Group Development Revisited](https://doi.org/10.1177/105960117700200404). **1977**. _Group and Organizational Studies_
+- Tuckman, B.W. [Developmental Sequence in Small Groups](https://doi.org/10.1037/h0022100). **1965**. _Psychological Bulletin_
+
+## Inclusive Facilitation
+
+- Khuri et al., [Inclusive Practice Glossary for Facilitators](https://collaborativecapacities.com/wp-content/uploads/Inclusive_Practice_Glossary_for_Facilitators-March2024.pdf). **2024**.
+- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
+- Woodley, L. _et al._, [A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events](https://doi.org/10.5281/zenodo.4987666). **2021**.
+- Tarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. **2021**.
+- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+- Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+- Kantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley & Sons. **2012**.
+- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
+- Bohm, D. On Dialogue. Routledge Classics. **2004**.
+- [IAF Endorsed™ Facilitation Training Programmes](https://www.iaf-world.org/site/professional/endorsement)
+- [Facilitation Training Programs recommended by the Facilitator School](https://www.facilitator.school/best-facilitation-training-courses)
+- [Liberating Structures: Including and Unleashing Everyone](https://www.liberatingstructures.com/)
+- [Gamestorming](https://gamestorming.com/)
+- [SciTS and Team Science Resources](https://www.inscits.org/scits-a-team-science-resources) compiled by INSciTS, the International Network for the Science of Team Science
+- [Dealing with Disruptive Behaviors in Meetings](https://coast.noaa.gov/ddb/)
+
+## Data Visualization & Exploration
+
+- The Carpentries. [Data Analysis and Visualization in R for Ecologists: Data Visualization with `ggplot2`](https://datacarpentry.org/R-ecology-lesson/visualizing-ggplot.html). **2024**.
+- The Carpentries. [Data Analysis and Visualization in Python for Ecologists: Making Plots with `plotnine`](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python.html). **2024**.
+- Chang, W. _et al._, [`ggplot2`: Elegant Graphics for Data Analysis](https://ggplot2-book.org/). 3^rd^ edition. **2023**.
+- LTER Scientific Computing Team. [Coding in the Tidyverse: 'Visualize' Module](https://lter.github.io/workshop-tidyverse/visualize.html). **2023**.
+- National Center for Ecological Analysis and Synthesis (NCEAS). [Colorblind Safe Color Schemes](https://www.nceas.ucsb.edu/sites/default/files/2022-06/Colorblind%20Safe%20Color%20Schemes.pdf). **2022**.
+- Wilke, C.O. [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/). **2020**.
+- [The R Graph Gallery](https://r-graph-gallery.com/)
+
+## Project Management
+
+- GitHub. [Issues and Projects](https://docs.github.com/en/issues/tracking-your-work-with-issues/configuring-issues/planning-and-tracking-work-for-your-team-or-project). **2026**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Issues](https://lter.github.io/workshop-github/issues.html). **2024**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Milestones](https://lter.github.io/workshop-github/milestones.html). **2024**.
+- LTER Scientific Computing Team. [Collaborative Coding with GitHub: Projects](https://lter.github.io/workshop-github/projects.html). **2024**.
+- NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Logic Models and Synthesis Development](https://learning.nceas.ucsb.edu/2021-09-delta/session-8-hands-on-logic-models-and-synthesis-development.html). **2021**.
+- [NCEAS Project Management Workshop](https://learning.nceas.ucsb.edu/2024-working-groups/session_01.html) for new synthesis working groups
+- Commercial Project Management Options
+    - [Asana](https://asana.com/). Task and project management. Free up to 10 members.
+    - [Wrike](https://www.wrike.com/). Tasks and project management. Capable for individuals. $10/person/month for teams.
+    - [ClickUp](https://clickup.com/). Capable free plan. Less intuitive to set up.
+    - [Miro](https://miro.com/teams/project-management/). Free for up to three projects. More focus on diagrams and brainstorming than ongoing project management.
+    - [Easy Retro](https://easyretro.io/about)
+
+## Supporting Divergent, Emergent, and Convergent Thinking
+
+- Cravens, A.E., _et al._, [Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration](https://doi.org/10.1057/s41599-022-01217-1). **2022**.
+- Kappel, C. [Collaboration: From groan zone to growth zone. Integration and Implementation Insights.](https://i2insights.org/2019/05/28/collaboration-groan-zone/). **2019**.
+- Lipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. **2014**.
+- Kaner, S. [Facilitator's Guide to Participatory Decision-Making (Revised)](https://bookshop.org/p/books/facilitator-s-guide-to-participatory-decision-making-sam-kaner/11179446?ean=9781118404959). **2014**.
+- Gray, D. _et al._, Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O'Reilly Media. **2010**.
+- Bohm, D. On Dialogue. Routledge Classics. **2004**.
+- [IAF Endorsed™ Facilitation Training Programmes](https://www.iaf-world.org/site/professional/endorsement)
+- [Facilitation Training Programs recommended by the Facilitator School](https://www.facilitator.school/best-facilitation-training-courses)
+- [Liberating Structures: Including and Unleashing Everyone](https://www.liberatingstructures.com/)
+- [Gamestorming](https://gamestorming.com/)
+
+## Data Harmonization & Wrangling
+
+-   The Carpentries. [Data Analysis and Visualization in R for Ecologists: Working with Data](https://datacarpentry.org/R-ecology-lesson/working-with-data.html). **2024**.
+-   LTER Scientific Computing Team. [Coding in the Tidyverse](https://lter.github.io/workshop-tidyverse/). **2023**.
+-   National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub [coreR: Cleaning & Wrangling Data](https://learning.nceas.ucsb.edu/2023-10-coreR/session_08.html). **2023**.
+-   NCEAS Learning Hub [coreR: Writing Functions & Packages](https://learning.nceas.ucsb.edu/2023-10-coreR/session_16.html). **2023**.-   Todd-Brown, K.E.O. _et al._ [Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential](https://bg.copernicus.org/articles/19/3505/2022/bg-19-3505-2022.html). **2022**. _Biogeosciences_
+-   Elgarby, O. [The Ultimate Guide to Data Cleaning](https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4). **2019**. _Medium_
+-   Delta Science Program [Data Munging / QA / QC / Cleaning](https://nceas.github.io/oss-lessons/data-munging-qa-qc-cleaning/data-munging-qa-qc-cleaning.html). **2019**.
+-   Fox, J. [Ten Commandments for Good Data Management](https://dynamicecology.wordpress.com/2016/08/22/ten-commandments-for-good-data-management/). **2016**. _Dynamic Ecology_
+-   Borer, E. _et al._ [Some Simple Guidelines for Effective Data Management](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/0012-9623-90.2.205). **2009**. _Ecological Society of America Bulletin_
+
+## Authorship & Intellectual Credit
+
+- Jennings, L. _et al._ [Governance of Indigenous data in open earth systems science](https://doi.org/10.1038/s41467-024-53480-2). **2025**. _Nature Communications_
+- Lund, B.D. & Naheem, K.T. [Can ChatGPT be an author? A study of artificial intelligence authorship policies in top academic journals](https://doi.org/10.1002/leap.1582). **2024**. _Learned Publishing_
+- Puebla, I. _et al._ [Ten Simple Rules for Recognizing Data and Software Contributions in Hiring, Promotion, and Tenure](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012296). **2024**. _PLoS Computational Biology_
+- Nelson, P.R. _et al._ [Authors overestimate their contribution to scientific work, demonstrating a strong bias](https://doi.org/10.1073/pnas.2003500117). **2020**. _PNAS_
+- Dahlin, K.M. _et al._, [Hear Every Voice, Working Groups that Work](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2115). **2019**. _Frontiers in Ecology and the Environment_
+- Allen, L. _et al._, [How Can We Ensure Visibility and Diversity in Research Contributions? How the Contributor Role Taxonomy (CReDiT) is Helping the Shift from Authorship to Contributorship](https://onlinelibrary.wiley.com/doi/epdf/10.1002/leap.1210). **2018**. _Learned Publishing_
+- Wilkinson, M. _et al._ [The FAIR Guiding Principles for Scientific Data Management and Stewardship](https://doi.org/10.1038/sdata.2016.18). **2016**. _Scientific Data_
+- Brand, A. _et al._ [Beyond Authorship: Attribution, Contribution, Collaboration, and Credit](https://doi.org/10.1087/20150211). **2015**. _Learned Publishing_
+- Ecological Society of America [Code of Ethics](https://esa.org/about/code-of-ethics/). Authorship criteria found at \#22.
+- American Geophysical Union [Publications and Ethics Policies](https://www.agu.org/publications/authors/policies#ethical-obligations).
+- Soil Organic Matter Synthesis Group [authorship policy](https://lter.github.io/som-website/authorship.html)
+- Nutrient Network (NutNet) [authorship policy](https://nutnet.org/authorship)
+- Herbivory Variability Network (HerbVar) [participation guidelines](https://herbvar.org/participation.html)
+
+## Analysis & Modeling 
+
+-   Spake, R. _et al._ [Understanding 'It Depends' in Ecology: A Guide to Hypothesizing, Visualising and Interpreting Statistical Interactions](https://onlinelibrary.wiley.com/doi/10.1111/brv.12939). **2023**. *Biological Reviews*
+-   Spake, R. _et al._ [Improving Quantitative Synthesis to Achieve Generality in Ecology](https://www.nature.com/articles/s41559-022-01891-z). **2022**. *Nature Ecology and Evolution*
+-   Kurz, A. S. [Bayesian Meta-Analysis in brms-II](https://solomonkurz.netlify.app/blog/2020-10-16-bayesian-meta-analysis-in-brms-ii/). **2022**.
+-   Viechtbauer, W. [Meta-Analysis with R](https://github.com/wviechtb/workshop_2022_ma_esmarconf/blob/master/workshop_meta-analysis.pdf). **2022**.
+-   Tredennick, A.T. _et al._ [A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3336). **2021**. *Ecology*
+-   Harrier, M. _et al._ [Doing Meta-Analysis with R: A Hands-On Guide](https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/). **2021**.
+-   Viechtbauer, W. [The `metafor` Package: A Meta-Analysis Package for R](https://www.metafor-project.org/doku.php/tips:rma_vs_lm_lme_lmer?s%5B%5D=lme4). **2021**.
+-   Kurz, A. S. [Bayesian Meta-Analysis in brms](https://solomonkurz.netlify.app/blog/bayesian-meta-analysis/). **2020**.
+-   Vuorre, M. [Bayesian Meta-Analysis with R, Stan, and brms](https://mvuorre.github.io/posts/2016-09-29-bayesian-meta-analysis/). **2016**.
+-   Zuur, A.F. _et al._ [Mixed Effects Models and Extensions in Ecology with R](https://link.springer.com/book/10.1007/978-0-387-87458-6). **2009**.
+
+## Next Steps 
+
+-   Deutsch L., *et al.*, [Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program](https://www.sciencedirect.com/science/article/pii/S146290112100054X?via%3Dihub). **2021**. *Environmental Science & Policy*
+- Schimel, J. [Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded](https://global.oup.com/academic/product/writing-science-9780199760244?cc=us&lang=en&). **2011**.
+-  [Research proposal examples from every science field](https://peerrecognized.com/research-proposal-examples-for-every-science-field/).
+-  [NSF funding search](https://www.nsf.gov/funding/opportunities) 
+-  [DoE funding search](https://www.energy.gov/science/office-science-funding-opportunities)
+-  [Cooperative Ecosystem Studies Units](http://www.cesu.psu.edu/fundopps/fundopps.htm) (CESU)
+-  [International Synthesis Consortium](https://synthesis-consortium.org/) is an umbrella group for synthesis centers across disciplines
+-  [Science for Nature and People Partnership](https://snappartnership.net/)
+-  [Pivot-RP](https://clarivate.com/academia-government/scientific-and-academic-research/research-funding-analytics/pivot-rp-funding/), a Clarivate product that curates funding opportunities across public and private sources. Pivot is a paid product, but most research universities have access
+-  [Philanthropy News Digest](https://philanthropynewsdigest.org/rfps) publishes a feed of requests for proposals from private foundations. It can be filtered by topic, location, and other keywords. Awards are small, relative to federal funding agencies and topics tend to be applied
+-  [Community Foundations](https://cof.org/foundation-type/community-foundations) fund project with clear benefits to a local community
+
+## Communicating Findings 
+
+- [Kelso Harper, LTER Visual Media Series](https://www.youtube.com/watch?v=eSIRSUene1M). **2024**.
+- [Science Graphics with Jen Christiansen, LTER Visual Media Series](https://www.youtube.com/watch?v=yWxlTYUcWNo). **2024**.
+- [Jasiek Krzysztofiak, LTER Visual Media Series](https://www.youtube.com/watch?v=FyQtGB4JFEw). **2024**.
+- Corominas, J. [Adapted Creativities: How to customize your messages to win over different audiences](https://www.adsmurai.com/en/articles/adapted-creativities-how-to-customize-your-messages-to-win-over-different-audiences). **2024**. _Adsmurai_
+- NCEAS Learning Hub & Delta Stewardship Council. [Open Science Synthesis: Communicating Your Science](https://learning.nceas.ucsb.edu/2023-10-delta/session_02.html). **2023**.
+- Krishnan, A. [Why do we use jargon when talking about science?](https://india.mongabay.com/2023/06/explainer-why-do-we-use-jargon-when-talking-about-science/). **2023**. _MongaBay_
+- Prast, I. [Writing for Different Audiences: Adapting Your Tone and Style](https://medium.com/@irfanmuhammad9192/writing-for-different-audiences-adapting-your-tone-and-style-e76d896745c#:~:text=Understanding%20Your%20Audience&text=Consider%20factors%20like%20age%2C%20gender,ll%20build%20your%20tailored%20message.). **2023**. _Medium_
+- Delta Science Program. [Session 7: Communicating Your Research: The Message Box](https://learning.nceas.ucsb.edu/2021-11-delta/session-7-communicating-your-research-the-message-box.html). **2021**. 
+- [Five tips for scientists speaking to reporters](https://www.sciline.org/advice/5-tips-speaking-reporters/). **2021**. AAAS SciLine
+- Webster, T. [The Simplest Storytelling Structure](https://medium.com/find-the-red-thread-persuasion/the-simplest-storytelling-structure-7fdc7d8a60e5). **2020**. _Medium_
+- Foot, G. [How to get an audience to care about your science](https://www.youtube.com/watch?v=OwPMU5-gbh4&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=8). **2020**. ‘Talking Science' Course \#4. _YouTube_
+- Foot, G. [How to explain a science idea clearly](https://www.youtube.com/watch?v=u9cqwQQqHoU&list=PLD160RWuGai9oUnAVRq-GD2njEo1XHadF&index=9). **2020**. ‘Talking Science' Course \#6. _YouTube_
+- Wenker, R. [Storytelling and Science: What's ABT got to do with it?](https://ian.umces.edu/blog/storytelling-and-science-whats-abt-got-to-do-with-it/). **2018**. _University of Maryland, Center for Environmental Science_
+- Olson, R. [Great Challenges Day at TEDMED 2013](https://www.youtube.com/watch?v=ERB7ITvabA4). **2013**
+- [A Guide to Scientific Storytelling](https://cartoonbase.com/en/resources/blog/a-guide-to-scientific-storytelling/). Cartoonbase.
+- American Geophysical Union (AGU). [A Scientist's Guide to Working with the Media](https://www.agu.org/-/media/Files/Share-and-Advocate-for-Science/020_37438_S2_Working_with_the_Media.pdf). 
+
+## Reproducible Reports & Quarto
+
+- LTER Scientific Computing Team. [Notebooks versus Scripts](https://lter.github.io/scicomp/tip_notebook-vs-script.html). **2025**.
+- Csik, S. [Creating Your Personal Website Using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/). **2024**.
+- National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. [coreR: Literate Analysis with Quarto](https://learning.nceas.ucsb.edu/2023-10-coreR/session_04.html). **2023**.
+- Mecum, B. [Reproducible Papers with RMarkdown](https://nceas.github.io/oss-lessons/reproducible-papers-with-rmd/reproducible-papers-with-rmd.html). **2019**.
+- [The Markdown Guide: Basic Syntax](https://www.markdownguide.org/basic-syntax/).
+- Posit. [Welcome to Quarto](https://quarto.org/)
+
+## Spatial Data
+
+- The Carpentries. [Introduction to Geospatial Raster and Vector Data with R](https://datacarpentry.org/r-raster-vector-geospatial/). **2024**.
+- The Carpentries. [Introduction to R for Geospatial Data](https://datacarpentry.org/r-intro-geospatial/index.html). **2024**.
+- King, R. [Spatial Data Visualization](https://github.com/king0708/spatial-data-viz). **2024**.
+- Flower, J. [Introduction to Rasters with `terra`](https://jflowernet.github.io/intro-terra-ecodatascience/). **2024**.
+- Clark, S.J., _et al._ [Spatial and Image Data Using GeoPandas](https://learning.nceas.ucsb.edu/2023-03-arctic/sections/geopandas.html). **2023**.
+- NASA. [AppEEARS Portal](https://appeears.earthdatacloud.nasa.gov/)
+
+## Multivariate Data
+
+- Abdi, H. & Williams, L.J., [Principal Coponent Analysis](https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.101). WIREs Computational Statistics. **2010**.
+- Ramette, A., [Multivariate Analyses in Microbial Ecology](https://pubmed.ncbi.nlm.nih.gov/17892477/). FEMS Microbial Ecology. **2007**.
+- Jackson, D.A., [Stopping Rules in Principal Components Analysis: A Comparison of Heuristical and Statistical Approaches](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939574). Ecology. **1993**.
+- Clarke, K.R., [Non-Parametric Multivariate Analyses of Changes in Community Structure](https://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.1993.tb00438.x). Australian Journal of Ecology. **1993**.
+- Kenkel, N.C. & Oroloci, L., [Applying Metric and Nonmetric Multidimensional Scaling to Ecological Studies: Some New Results](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939814). Ecology. **1986**.
+
+## Interactivity & Shiny Apps
+
+- Posit. [Welcome to Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html). **2024**.
+- Lyon, N.J., _et al._ [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/). **2022**.

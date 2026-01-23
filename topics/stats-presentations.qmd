@@ -1,0 +1,3 @@
+## Team Presentations of Proposed Methods
+
+Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module in a different way than other modules. **This module uses a "flipped approach" where project teams will share and discuss their proposed analyses with one another.**

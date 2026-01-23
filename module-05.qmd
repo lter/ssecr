@@ -1,0 +1,34 @@
+---
+title: "Effective Meetings & Useful Data Visualization"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+{{< include topics/data-inventory.qmd >}}
+{{< include activities/review-data-inventory.qmd >}}
+
+
+
+
+{{< include topics/meeting-process-design.qmd >}}
+
+{{< include topics/meeting-online.qmd >}}
+
+{{< include topics/meeting-roles.qmd >}}
+
+{{< include topics/meeting-variants.qmd >}}
+
+{{< include topics/meeting-records.qmd >}}
+{{< include activities/team-planning.qmd >}}
+

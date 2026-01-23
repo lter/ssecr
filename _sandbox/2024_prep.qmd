@@ -1,0 +1,72 @@
+---
+title: "2024 Preparation Instructions"
+---
+
+## Version Control Preparation
+
+Complete the ["Workshop Preparation" steps](https://lter.github.io/workshop-github/#workshop-preparation) identified in the linked workshop (see below).
+
+## Data Discovery & Management Preparation
+
+Each Synthesis Fellow should identify five (5) datasets of possible relevance to their project and enter the specified information into the "data-inventory" Google Sheet provided to your team. Note that not all columns of the data inventory may be useful to you (and some pieces of contextual information may be useful but not have columns) so use the provided template as a starting point rather than an untouchable framework.
+
+If you are working through these materials outside of a formal SSECR cohort, download a copy of [this Google Sheet](https://docs.google.com/spreadsheets/d/1o_Y4BlgyYDuFjz0nTgnke59hJiGIIDliyZewJWVaGCg/edit?gid=1621635180#gid=1621635180) version of the data inventory described above.
+
+## Team Science Practices Preparation
+
+Each project group should:
+
+- Plan on providing a 3-5 minute project summary and update on recent progress and any questions/issues that are arising
+- Finish their internal ground rules (if not already complete)
+
+## Data Visualization & Exploration Preparation
+
+1. Each Synthesis fellow should download one data file identified for your group's project
+2. _If you are a Mac user_, install [XQuartz](https://www.xquartz.org/)
+3. _If you are an R user_, run the following code:
+
+```{r install-pkgs}
+#| eval: false
+
+install.packages("librarian")
+librarian::shelf(tidyverse, summarytools, datacleanr, lterdatasampler, supportR, cowplot)
+```
+
+## Data Harmonization & Wrangling Preparation
+
+1. In project teams, draft your strategy for wrangling data
+    - What needs to happen to the datasets in order for them to be usable in answering your question(s)?
+    -   I.e., what quality control, structural changes, or formatting edits must be made?
+2.  *If you are an R user*, run the following code:
+
+```{r install-pkgs}
+#| eval: false
+
+install.packages("librarian")
+librarian::shelf(ltertools, lterdatasampler, psych, supportR, tidyverse)
+```
+
+## Analysis & Modeling Preparation
+
+Each project group should:
+
+-   Prepare a presentation (15-30 min) on their (A) synthesis question, (B) the data they are using to address that question, and (C) their proposed analytical methods
+    -   The presentation modality (e.g., slide deck, website, etc.) is up to the group!
+
+If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+
+```{r install-pkgs}
+#| eval: false
+
+# Note that these lines only need to be run once per computer
+## So you can skip this step if you've installed these before
+install.packages("tidyverse")
+install.packages("lmerTest")
+install.packages("palmerpenguins")
+install.packages("esc")
+```
+
+## Reproducible Reports Preparation
+
+1. Install [Quarto](https://quarto.org/docs/get-started/)
+2. Double check that your group's GitHub repository is up to date

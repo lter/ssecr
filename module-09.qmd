@@ -1,0 +1,39 @@
+---
+title: "Title TBD"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+
+{{< include topics/group-process-design.qmd >}}
+{{< include activities/design-process-p01.qmd >}}
+
+{{< include topics/thinking-tools.qmd >}}
+{{< include activities/design-process-p02.qmd >}}
+
+
+
+
+{{< include topics/code-conditionals.qmd >}}
+{{< include activities/write-conditional.qmd >}}
+
+{{< include topics/code-split-columns.qmd >}}
+
+{{< include topics/code-joins.qmd >}}
+{{< include activities/write-join.qmd >}}
+
+{{< include topics/code-shape.qmd >}}
+
+{{< include topics/code-loops.qmd >}}

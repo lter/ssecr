@@ -1,0 +1,8 @@
+:::{.callout-note icon="false"}
+#### Activity: Graph Creation (P3)
+
+In a script, attempt the following:
+
+- Assemble the two graphs you made in the preceding two activities into the appropriate type of multi-panel graph
+
+:::

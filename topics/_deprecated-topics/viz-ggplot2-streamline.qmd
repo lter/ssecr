@@ -1,0 +1,28 @@
+## Streamlining Graph Aesthetics
+
+Synthesis projects often generate an entire network of inter-related papers. Ensuring that all graphs across papers from a given team have a similar "feel" is a nice way of implying a certain standard of robustness for all of your group's projects. However, copy/pasting the theme elements of your graphs can (A) be cumbersome to do even once and (B) needs to be re-done every time you make a change anywhere. Fortunately, there is a better way!
+
+`ggplot2` supports adding theme elements to an object that can then be reused as needed elsewhere. This is the same theory behind wrapping repeated operations into custom functions.
+
+```{r std-theme}
+#| eval: false
+
+
+#| fig-align: center
+#| fig-width: 9
+#| fig-height: 4
+
+# Define core theme elements
+theme_synthesis <- theme(legend.position = "none",
+                         panel.background = element_blank(),
+                         axis.line = element_line(color = "black"),
+                         axis.text = element_text(size = 13)) # <1>
+
+# Create a graph
+ggplot(pie_crab, aes(y = water_temp, x = air_temp, color = size, size = size)) +
+  geom_point() +
+  theme_synthesis +
+  theme(legend.position = "right") # <2>
+```
+1. This theme element controls the text on the tick marks. `axis.title` controls the text in the _labels_ of the axes
+2. As a bonus, subsequent uses of `theme()` will replace defaults defined in your earlier theme object. So, you can design a set of theme elements that are _usually_ appropriate and then easily change just some of them as needed

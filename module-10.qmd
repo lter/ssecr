@@ -1,0 +1,28 @@
+---
+title: "Title TBD"
+---
+
+## Overview
+
+{{< fa person-digging >}} Under Construction
+
+## Learning Objectives
+
+{{< fa screwdriver-wrench >}} TBD
+
+## Preparation
+
+{{< fa screwdriver-wrench >}} TBD
+
+
+
+
+{{< include topics/credit-background.qmd >}}
+
+{{< include topics/credit-optin-optout.qmd >}}
+
+{{< include topics/author-policy.qmd >}}
+
+{{< include topics/credit-future.qmd >}}
+{{< include activities/draft-authorship-policy.qmd >}}
+

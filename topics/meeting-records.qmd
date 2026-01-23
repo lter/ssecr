@@ -1,0 +1,16 @@
+## Harvesting Meeting Content
+
+As you go, and definitely before your meeting is over, engage your team in synthesizing and capturing the information that has been discussed. This helps you to deepen understanding, document your workflow and decisions, and pick up easily next time. Use a consistent system - like a running notes document linked in the calendar item. Graphics or drawings can be a valuable complement to oral and written content in making thinking visible.
+
+<p align="center">
+<img src="topics/images/image_visible-thinking.png" alt="Art of many groups of people with blue speech bubbles connected by an orange amorphous cloud" width="100%"/>
+<figcaption> Making thinking visible, Credit: Nancy Margulies, World Cafe, Flickr </figcaption>
+</p>
+
+Consider using:
+
+- Grids to organize information
+- Conceptual models or mind maps to articulate shared understanding of complex systems 
+- Manifestos, abstracts, and other written collateral to distill ideas
+
+When capturing notes, try to use people's own words; if necessary ask them to distill long or complex points into a headline you can capture. Invite them to offer corrections if the notetaker didn't capture what they meant.

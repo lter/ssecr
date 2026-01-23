@@ -1,0 +1,86 @@
+---
+title: "2024 Module Overviews"
+---
+
+## Version Control Overview
+
+Synthesis projects require an intensely collaborative team spirit complemented by an emphasis on quantitative rigor. While other modules focus on elements of each of these, version control is a useful tool that lives at their intersection. We will shortly embark on a deep dive into version control but broadly it is a method of tracking changes to files (especially code "scripts") that lends itself remarkably well to coding in groups. The LTER Network Office has a [Scientific Computing Team](https://lter.github.io/scicomp/) that developed a robust workshop-style set of materials aimed at teaching version control to LTER-funded synthesis working groups. Rather than re-invent these materials for the purposes of SSECR, we will work through parts of these workshop materials.
+
+## Reproducibility Overview
+
+As we set out to engage with the synthesis skills this course aims to offer, it will be helpful to begin with a careful consideration of "reproducibility." Because synthesis projects draw data from many sources and typically involve many researchers working in concert, reproducibility is particularly important. In individual projects, adhering to reproducibility best practices is certainly a good goal but failing to do so for synthesis projects can severely limit the work in a more significant way than for those individual projects. "Reproducibility" is a wide sphere encompassing many different--albeit related--topics so it can be challenging to feel well-equipped to evaluate how well we are following these guidelines in our own work. In this module, we will cover a few fundamental facets of reproducibility and point to some considerations that may encourage you to push yourself to elevate your practices to the next level.
+
+## Data Discovery & Management Overview
+
+Synthesis projects often begin with a few datasets that inspire the questions--and end up incorporating dozens or hundreds of others. Researchers may seek out data that resemble their initial datasets, but come from other climates, ecosystems, or cultural settings. Or they may find that they need data of a completely different kind to establish drivers and context. The best synthesizers are resourceful in their search for data, cautious in evaluating data quality and relevance, and meticulous in documenting data sources, treatments, and related analytical decisions. In this workshop, we will cover all these aspects in enough depth for participants to begin finding and assessing their own project data.
+
+## Team Science Practices Overview
+
+In this module, we'll dive into some of the literature underlying our recommended team science practices (the science of team science). We'll also explore some of the more common types of conflicts that arise in synthesis work and ways to anticipate, prevent (when possible), and resolve those conflicts.
+
+## Inclusive Facilitation Overview
+
+The success of a collaborative synthesis science project rests in no small part on the ability of the team of researchers to work effectively together and to draw on the full range of expertise, knowledge, and capacity in the group. Effective facilitation of team meetings can go a long way toward unlocking the group's full potential. This module focuses on inclusive facilitation techniques to enable and encourage full, thoughtful, engaged participation during virtual and in person group meetings. Many of the principles underpinning these techniques can also be applied to other aspects of managing your collaboration, outside the meeting setting.
+
+## Data Visualization & Exploration Overview
+
+Data visualization is a fundamental part of working with data. Visualization can be only used in the final stages of a project to make figures for publication but it can also be hugely valuable for quality control and hypothesis development processes. This module focuses on the fundamentals of graph creation in an effort to empower you to apply those methods in the various contexts where you might find visualization to be helpful.
+
+## Project Management Overview
+
+Team science works best when all participants know when and how they can contribute. Effective project management allows team members to work on many tasks asynchronously, without losing track of the overall context or the progress in related areas of the project. The effort required is returned many times in avoided frustration and unnecessary backtracking and duplication of effort. Developing an explicit logic model _as a team_ helps identify and resolve differences in the mental models and assumptions that team members from diverse disciplines bring to an analysis. It also helps clarify all of the information that will be needed and the appropriate order of steps.
+
+## Supporting Divergent, Emergent, and Convergent Thinking Overview
+
+As many course participants will have discovered by now, the process of deciding on, refining, and choosing a path forward for data analysis will involve many differing opinions and perspectives. To work effectively as a group, you will need to elicit a broad range of ideas and then combine and focus them. This can be unfamiliar territory for researchers who have mainly pursued individual projects. While the particulars of each project are different, the patterns are often similar and being familiar with a few approaches for eliciting the best from yourself and colleagues can speed the process and improve the experience for all involved.
+
+Below you will find support for your group as you move through both exciting, and sometimes uncomfortable, stages of collaborative, participatory decision-making--from divergent to emergent and finally convergent thinking.
+
+## Data Harmonization & Wrangling Overview
+
+Now that we have covered how to find data and use data visualization methods to explore it, we can move on to combining separate data files and preparing that combined data file for analysis. For the purposes of this module we're adopting a very narrow view of harmonization and a very broad view of wrangling but this distinction aligns well with two discrete philosophical/practical arenas.
+
+## Authorship & Intellectual Credit Overview
+
+Group synthesis requires many types of contributions, from raw data to idea generation, analysis, group organization, figure development, conceptualizing, writing, and editing. Often, little of this work is directly compensated. Conflicts and misunderstandings about what contributions earn authorship arise -- especially in the absence of a clearly articulated policy on intellectual credit. In this module we will discuss a few models for aligning expectations around intellectual credit and how they may differ depending on the participants and the particular product the group is developing. We'll also take some time for project groups to develop or refine their own intellect credit policies.
+
+## Analysis & Modeling Overview
+
+Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module in a different way than other modules. **This module uses a "flipped approach" where project teams will share and discuss their proposed analyses with one another.** That said, one of our goals for these course materials is that they be a valuable resource to those who are not formally enrolled in the course and this flipped approach could result in a lack of information on a critical topic. To reduce this risk, we have created a typical instructional module dedicated to <u>analyses that are more common in--or exclusive to--synthesis research</u> that we hope is helpful.
+
+## Next Steps Overview
+
+Whether group members are excited about continuing to work together or ready to go their own ways, a little thought and discussion about how group members envision their next steps can set you up for success. In this module, we discuss ways to help ensure that your work is recognized and cited, talk about expectations going forward, and begin thinking about how continued work could be supported.
+
+## Communicating Findings Overview
+
+So you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. In this module, we talk through some broadly applicable scicomm strategies that will get you started.
+
+:::{.callout-important}
+### Note for Those Completing this Module Independently
+
+This module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
+
+:::
+
+## Reproducible Reports Overview
+
+At this point in the course, we anticipate that your synthesis project is--if not finished--in a state where some amount of external-facing products would be beneficial (see our suggested [milestones page](https://lter.github.io/ssecr/proj_milestones.html)). "**Computational notebooks**" (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) are an excellent choice for creating reproducible documentation that has direct ties to scripts or data files relevant to your project. Effective notebook files allow you to leverage _both_ your technical skills and your scientific communication skills.
+
+This module focuses on the structure and content of these notebooks from a <u>primarily technical</u> lens, so please consult the [communicating findings](https://lter.github.io/ssecr/mod_findings.html) module for the team science perspective.
+
+## Spatial Data Overview
+
+Synthesis projects often have need of spatial datasets. At its simplest, it can be helpful to have a map of the original project locations including in the synthesis dataset. In more complex instances you want to extract spatial data within a certain area of sampling locations. Regardless of 'why' you're using spatial data, it may come up during your primary or synthesis work and thus deserves consideration in this course's materials. There are _many_ modes of working with spatial data, and not all of these tools require coding literacy but for consistency with the rest of the modules **this module will focus on _scripted_ approaches to interacting with spatial data**.
+
+## Multivariate Overview
+
+Synthesis projects often eventually want to use multivariate statistics and visualization. This makes a lot of sense when you consider that many synthesis projects eventually have many (_many_) variables so reducing the dimensionality of the data can be one way of looking at differences that might not be apparent in any variable by itself. Just as univariate statistics are only shallowly discussed in this course, we won't dive into multivariate statistics here but multivariate visualization (or at least some common methods under that heading) is reasonable to cover in this module.
+
+## Interactivity  Overview
+
+Shiny is a popular tool that allows users to build interactive web applications without the normally pre-requisite web development expertise. In addition to Shiny apps being simpler to build for the programmer they are often used to allow visitors to perform coding tasks without ever actually writing code. These are huge advantages because they reduce or eliminate significant technical barriers in developing truly interactive applications.
+
+In synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly "play with" exploratory graphs, or even to create a data submission portal (as is the case with some <u>R</u>esearch <u>C</u>oordination <u>N</u>etworks or "RCNs").
+
+Note that Shiny can be built in either R or Python 'under the hood' but for the purposes of this module we'll focus on R.
