@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Effective Meetings & Useful Data Visualization"
 ---
 
 ## Overview
@@ -14,3 +14,34 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+
+
+
+{{< include topics/meeting-process-design.qmd >}}
+
+{{< include topics/meeting-online.qmd >}}
+
+{{< include topics/meeting-roles.qmd >}}
+
+{{< include topics/meeting-variants.qmd >}}
+
+{{< include topics/meeting-records.qmd >}}
+{{< include activities/team-planning.qmd >}}
+
+
+
+
+{{< include topics/viz-synthesis.qmd >}}
+
+{{< include topics/viz-exploration.qmd >}}
+{{< include activities/data-sleuth_viz.qmd >}}
+
+{{< include topics/viz-draw.qmd >}}
+{{< include activities/draw-graph.qmd >}}
+
+{{< include topics/viz-ggplot2-core.qmd >}}
+{{< include activities/make-graph-p01.qmd >}}
+{{< include activities/make-graph-p02.qmd >}}
+
+{{< include topics/viz-ggplot2-multipanel.qmd >}}
+{{< include activities/make-graph-p03.qmd >}}
