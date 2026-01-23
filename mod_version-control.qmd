@@ -1,7 +1,0 @@
----
-title: "Version Control"
----
-
-{{< include topics/external_lter-workshop-github.qmd >}}
-
-{{< include topics/github-recs.qmd >}}
