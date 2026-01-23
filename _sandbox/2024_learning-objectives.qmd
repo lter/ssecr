@@ -150,5 +150,21 @@ After completing this topic you will be able to:
 - <u>Create</u> maps using spatial data
 - <u>Integrate</u> spatial data with tabular data
 
+## Multivariate Learning Objectives
 
+After completing this module you will be able to: 
 
+- <u>Define</u> some common multivariate visualization methods
+- <u>Describe</u> the similarities/differences between metric and non-metric ordination (methodology and interpretation)
+
+## Interactivity Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> the three fundamental components of a Shiny app
+- <u>Explain</u> benefits and limitations of interactive approaches to data exploration
+- <u>Generate</u> an interactive app with Shiny
+- <u>Use</u> text formatting methods in a Shiny app
+- <u>Explore</u> available Shiny layout options
+- <u>Create</u> a Shiny app
+- <u>Describe</u> (briefly) the purpose of deploying a Shiny app

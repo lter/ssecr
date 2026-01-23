@@ -72,3 +72,15 @@ This module focuses on the structure and content of these notebooks from a <u>pr
 ## Spatial Data Overview
 
 Synthesis projects often have need of spatial datasets. At its simplest, it can be helpful to have a map of the original project locations including in the synthesis dataset. In more complex instances you want to extract spatial data within a certain area of sampling locations. Regardless of 'why' you're using spatial data, it may come up during your primary or synthesis work and thus deserves consideration in this course's materials. There are _many_ modes of working with spatial data, and not all of these tools require coding literacy but for consistency with the rest of the modules **this module will focus on _scripted_ approaches to interacting with spatial data**.
+
+## Multivariate Overview
+
+Synthesis projects often eventually want to use multivariate statistics and visualization. This makes a lot of sense when you consider that many synthesis projects eventually have many (_many_) variables so reducing the dimensionality of the data can be one way of looking at differences that might not be apparent in any variable by itself. Just as univariate statistics are only shallowly discussed in this course, we won't dive into multivariate statistics here but multivariate visualization (or at least some common methods under that heading) is reasonable to cover in this module.
+
+## Interactivity  Overview
+
+Shiny is a popular tool that allows users to build interactive web applications without the normally pre-requisite web development expertise. In addition to Shiny apps being simpler to build for the programmer they are often used to allow visitors to perform coding tasks without ever actually writing code. These are huge advantages because they reduce or eliminate significant technical barriers in developing truly interactive applications.
+
+In synthesis contexts, Shiny can be used for a variety of valuable purposes. You can use it to develop dashboards for sharing data with related communities, allow your team to quickly "play with" exploratory graphs, or even to create a data submission portal (as is the case with some <u>R</u>esearch <u>C</u>oordination <u>N</u>etworks or "RCNs").
+
+Note that Shiny can be built in either R or Python 'under the hood' but for the purposes of this module we'll focus on R.

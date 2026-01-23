@@ -221,3 +221,16 @@ See below for a (non-exhaustive) list of additional resources that may prove hel
 - Flower, J. [Introduction to Rasters with `terra`](https://jflowernet.github.io/intro-terra-ecodatascience/). **2024**.
 - Clark, S.J., _et al._ [Spatial and Image Data Using GeoPandas](https://learning.nceas.ucsb.edu/2023-03-arctic/sections/geopandas.html). **2023**.
 - NASA. [AppEEARS Portal](https://appeears.earthdatacloud.nasa.gov/)
+
+## Multivariate Data
+
+- Abdi, H. & Williams, L.J., [Principal Coponent Analysis](https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.101). WIREs Computational Statistics. **2010**.
+- Ramette, A., [Multivariate Analyses in Microbial Ecology](https://pubmed.ncbi.nlm.nih.gov/17892477/). FEMS Microbial Ecology. **2007**.
+- Jackson, D.A., [Stopping Rules in Principal Components Analysis: A Comparison of Heuristical and Statistical Approaches](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939574). Ecology. **1993**.
+- Clarke, K.R., [Non-Parametric Multivariate Analyses of Changes in Community Structure](https://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.1993.tb00438.x). Australian Journal of Ecology. **1993**.
+- Kenkel, N.C. & Oroloci, L., [Applying Metric and Nonmetric Multidimensional Scaling to Ecological Studies: Some New Results](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939814). Ecology. **1986**.
+
+## Interactivity & Shiny Apps
+
+- Posit. [Welcome to Shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/index.html). **2024**.
+- Lyon, N.J., _et al._ [Shiny Apps for Sharing Science](https://njlyon0.github.io/asm-2022_shiny-workshop/). **2022**.

@@ -1,25 +1,8 @@
----
-title: "Multivariate Visualization"
----
+## Multivariate Visualization
 
-## Overview
+### Needed Packages
 
-Synthesis projects often eventually want to use multivariate statistics and visualization. This makes a lot of sense when you consider that many synthesis projects eventually have many (_many_) variables so reducing the dimensionality of the data can be one way of looking at differences that might not be apparent in any variable by itself. Just as univariate statistics are only shallowly discussed in this course, we won't dive into multivariate statistics here but multivariate visualization (or at least some common methods under that heading) is reasonable to cover in this module.
-
-## Learning Objectives
-
-After completing this module you will be able to: 
-
-- <u>Define</u> some common multivariate visualization methods
-- <u>Describe</u> the similarities/differences between metric and non-metric ordination (methodology and interpretation)
-
-## Preparation
-
-This is a "bonus" module and thus was created for asynchronous learners. There is no suggested preparatory work.
-
-## Needed Packages
-
-If you'd like to follow along with the code chunks included throughout this module, you'll need to install the following packages:
+If you'd like to follow along with the code chunks included throughout this topic, you'll need to install the following packages:
 
 ```{r install-pkgs}
 #| eval: false
@@ -31,7 +14,7 @@ install.packages("ape")
 install.packages("supportR")
 ```
 
-## Ordination
+### Ordination
 
 Ordination is the general term for many types of multivariate visualization but typically is used to refer to visualizing a distance or dissimiliarity measure of the data. Such measures collapse multiple columns of response variables into fewer (typically two) index values that are easier to visualize.
 
@@ -148,21 +131,3 @@ supportR::ordination(mod = dissim_mat, grps = lichen_df$treatment,
 If the stress is less than 0.15 it is generally considered a good representation of the data. We can see that the ellipses do not overlap which indicates that the community composition of our two groups does seem to differ. We'd need to do real multivariate analysis if we wanted a _p_-value or AIC score to support that but as a visual tool this is still useful.
 
 :::
-
-## Additional Resources
-
-### Papers & Documents
-
-- Abdi, H. & Williams, L.J., [Principal Coponent Analysis](https://wires.onlinelibrary.wiley.com/doi/10.1002/wics.101). WIREs Computational Statistics. **2010**.
-- Ramette, A., [Multivariate Analyses in Microbial Ecology](https://pubmed.ncbi.nlm.nih.gov/17892477/). FEMS Microbial Ecology. **2007**.
-- Jackson, D.A., [Stopping Rules in Principal Components Analysis: A Comparison of Heuristical and Statistical Approaches](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939574). Ecology. **1993**.
-- Clarke, K.R., [Non-Parametric Multivariate Analyses of Changes in Community Structure](https://onlinelibrary.wiley.com/doi/10.1111/j.1442-9993.1993.tb00438.x). Australian Journal of Ecology. **1993**.
-- Kenkel, N.C. & Oroloci, L., [Applying Metric and Nonmetric Multidimensional Scaling to Ecological Studies: Some New Results](https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1939814). Ecology. **1986**.
-
-### Workshops & Courses
-
-- 
-
-### Websites
-
-- 
