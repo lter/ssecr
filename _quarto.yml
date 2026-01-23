@@ -24,19 +24,17 @@ website:
     contents:
       - text: "Course Overview"
         href: index.qmd
-      - section: "Phase I -- Prepare"
+      - section: "Course Content"
         contents: 
-            - text: "Start Strong"
+            - text: "Module 1"
               href: module-01.qmd
-            - text: "Get Organized"
+            - text: "Module 2"
               href: module-02.qmd
-            - text: "Be Thoughtful"
+            - text: "Module 3"
               href: module-03.qmd
-            - text: "Lay the Groundwork"
+            - text: "Module 4"
               href: module-04.qmd
-      - section: "Phase II -- Plan"
-        contents: 
-            - text: "Set the Tone"
+            - text: "Module 5"
               href: module-05.qmd
             - text: "Module 6"
               href: module-06.qmd
@@ -44,16 +42,12 @@ website:
               href: module-07.qmd
             - text: "Module 8"
               href: module-08.qmd
-      - section: "Phase III -- Execute"
-        contents: 
             - text: "Module 9"
               href: module-09.qmd
             - text: "Module 10"
               href: module-10.qmd
             - text: "Module 11"
               href: module-11.qmd
-      - section: "Phase IV -- Magnify"
-        contents: 
             - text: "Module 12"
               href: module-12.qmd
             - text: "Module 13"
