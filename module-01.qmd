@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Version Control & Team Science Fundamentals"
 ---
 
 ## Overview
@@ -14,3 +14,15 @@ title: "Title TBD"
 
 {{< fa screwdriver-wrench >}} TBD
 
+{{< include topics/external_lter-workshop-github.qmd >}}
+
+{{< include topics/github-recs.qmd >}} 
+
+
+
+{{< include topics/team-sci.qmd >}}
+
+{{< include topics/team-trajectory.qmd >}}
+
+{{< include topics/team-diversity.qmd >}}
+{{< include activities/draft-team-practices.qmd >}}
