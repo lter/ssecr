@@ -1,4 +1,6 @@
-## "Making a Website with Quarto" LTER Workshop Materials
+## Introduction to Quarto
+
+### LTER Workshop Materials
 
 The workshop materials we will be working through live [here](https://lter.github.io/workshop-quarto/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
 
