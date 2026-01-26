@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Data Visualization & Project Management 101"
 ---
 
 ## Overview

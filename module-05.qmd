@@ -1,5 +1,5 @@
 ---
-title: "Effective Meetings & Useful Data Visualization"
+title: "Data Inventories & Effective Meetings"
 ---
 
 ## Overview

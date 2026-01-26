@@ -1,5 +1,5 @@
 ---
-title: "Title TBD"
+title: "Statistics for Synthesis"
 ---
 
 ## Overview
