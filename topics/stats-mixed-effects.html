@@ -81,6 +81,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-3da87255a3dd44c939c0535110ed2ecf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-c09ca53a01c177fb6f1e15790796f6ff.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-3da87255a3dd44c939c0535110ed2ecf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -373,6 +375,27 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <section id="mixed-effects-models" class="level2">
 <h2 class="anchored" data-anchor-id="mixed-effects-models">Mixed-Effects Models</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Paraphrase</u> the purpose of a “random effect”</li>
+<li><u>Explain</u> (generally) the difference between random intercepts, random slopes</li>
+<li><u>Describe</u> how random effects may be “nested” and how that affects your inference</li>
+</ul>
+</div>
+</div>
+</div>
 <p>In any statistical test there is at least one response variable (a.k.a. “dependent” variable) and some number of explanatory variables (a.k.a. “independent” variables). However, in biology our experiments often involve repeated sampling over time or at the same locations. These variables (time or site) are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.</p>
 <p>In essence we want to use a statistical tool that asks ‘what is the effect of the explanatory variable(s) on the response <em>when the variation due to these non-variable considerations is accounted for</em>?’ Such tests are called <strong>mixed-effects models</strong>. This name derives from considering explanatory variables “fixed effects” and non-explanatory/response variables as “random effects”. Including both fixed and random effects thus creates a model with “mixed effects.”</p>
 <section id="types-of-random-effect" class="level3">
