@@ -1,5 +1,14 @@
-
 ## FAIR & CARE Data Principles
+
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Summarize</u> FAIR and CARE data principles
+- <u>Evaluate</u> the FAIR/CAREness of your work
+
+:::
 
 Data availability, data size, and demand for transparency by government and funding agencies are all steadily increasing. While ensuring that your project and code practices are reproducible is important, it is also important to consider how open and reproducible your data are as well. Synthesis projects are in a unique position here because synthesis projects use data that may have been previously published on and/or be added to a public data repository by the original data collectors. However, synthesis projects take data from these different sources and wrangle it such that the different data sources are comparable to one another. These 'synthesis data products' can be valuable to consider archiving in a public repository to save other researchers from needing to re-run your entire wrangling workflow in order to get the data product. In either primary or synthesis research contexts there are several valuable frameworks to consider as data structure and metadata are being decided. Among these are the FAIR and CARE data principles.
 

@@ -1,0 +1,25 @@
+## Project Documentation & Organization
+
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> what information makes documentation more or less useful
+- <u>Create</u> robust workflow documentation
+
+:::
+
+Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. "Perfect" code in a project that isn't structured thoughtfully can still result in a project that isn't reproducible. On the other hand, "bad" code can be made more intelligible when it is placed in a well-documented/organized project!
+
+### Documentation
+
+Documenting a project can feel daunting but it is often not as hard as one might imagine and always well worth the effort! One simple practice you can adopt to dramatically improve the reproducibility of your project is to create a "README" file in the top-level of your project's folder system. This file can be formatted however you'd like but generally READMEs should include:
+
+1. Project overview written in plain language
+2. Basic table of contents for the primary folders in your project folder
+3. Brief description of the file naming scheme you've adopted for this project.
+
+Your project's README becomes the 'landing page' for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your "data" folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.
+
+Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub elsewhere in the course, but GitHub offers something called "issues" that can be a really effective place to record some of this information.
