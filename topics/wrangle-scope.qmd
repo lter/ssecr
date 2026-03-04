@@ -1,5 +1,14 @@
 ## Wrangling Scope
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> "wrangling"
+
+:::
+ 
 For the purposes of SSECR, we'll define "wrangling" as <u>all modifications to a single data object meant to create a single, analysis-ready 'tidy' data object</u>. This includes quality control, unit conversions, and data 'shape' changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) _also falls into this category!_
 
 Data wrangling is a _huge_ subject that covers a wide range of topics. In this part of the module, we'll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you'll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice 'jumping off' point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.

@@ -1,5 +1,14 @@
 ## Exploring the Data
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Extract</u> typical data structure information
+
+:::
+
 Before beginning any code operations, it's important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.
 
 Checking the data structure is one way of getting a lot of this high-level information.

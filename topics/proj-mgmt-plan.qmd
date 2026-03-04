@@ -1,5 +1,15 @@
 ## Plan the Work
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> some benefits/drawbacks of different project management tools
+- <u>Draft</u> a plan for your own project using one of those tools
+
+:::
+
 Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities.
 Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities.
 With each task arranged on a timeline, it becomes easier to spot potential dependencies that could otherwise hold up the project.

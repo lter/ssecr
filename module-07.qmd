@@ -6,16 +6,9 @@ title: "Project and Code Planning"
 
 {{< fa person-digging >}} Under Construction
 
-## Learning Objectives
-
-{{< fa screwdriver-wrench >}} TBD
-
 ## Preparation
 
 {{< fa screwdriver-wrench >}} TBD
-
-
-
 
 {{< include topics/proj-analysis.qmd >}}
 

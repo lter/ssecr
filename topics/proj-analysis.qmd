@@ -1,5 +1,14 @@
 ## Outline Your Analysis
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Sketch</u> your project plan
+
+:::
+
 Once the team has settled on a question and specific set of processes to explore or test, it's worth sketching out the steps in your analysis.
 By making the inputs, processing, and outputs of each step explicit, you'll identify needed data sooner and avoid (some) backtracking.
 
