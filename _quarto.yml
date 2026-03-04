@@ -54,7 +54,7 @@ website:
               href: module-12.qmd
             - text: "Looking Ahead & Spatial Data"
               href: module-13.qmd
-            - text: "Module 14"
+            - text: "Share the Story"
               href: module-14.qmd
       - text: "Additional Resources"
         href: resources.qmd
