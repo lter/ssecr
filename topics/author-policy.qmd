@@ -1,5 +1,15 @@
 ## How to Develop and Use an Authorship Policy
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> some common frameworks for equitable authorship decisions
+- <u>Explain</u> benefits (or avoided costs) of making authorship decisions both collaboratively and transparently
+
+:::
+ 
 An authorship policy will be most helpful if it if it reflects shared values of the research team and is developed *before* conflicts arise.
 
 [Oliver et al. (2018)](https://doi.org/10.1002/ecs2.2206 "Strategies for effective collaborative manuscript development in interdisciplinary science teams") described six principles that they aimed for their authorship process to support:

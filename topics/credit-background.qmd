@@ -1,5 +1,14 @@
 ## Intellectual Credit Context
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> types of intellectual contributions to a synthesis project
+
+:::
+
 In their [Code of Ethics](https://esa.org/about/code-of-ethics/) the Ecological Society of America lays out what seems like straightforward guidance for what contributions warrant authorship on a paper:
 
 > 22. Researchers will claim authorship of a paper only if they have made a substantial contribution. Authorship may legitimately be claimed if researchers

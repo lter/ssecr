@@ -1,5 +1,15 @@
 ## Opt-In v. Opt-Out Authorship
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> the benefits and drawbacks of "opt-in" versus "opt-out" credit policies
+
+:::
+
+ 
 There are two major ways to approach authorship, whether you're talking about papers, derived data, or software. Opt-in approaches require individuals to be invited to or request involvement in a product and set basic criteria for authorship. Opt-out approaches assume that anyone contributing data, or making contributions to, say, the GitHub repository behind a package, will be credited as an author.
 
 Some collaboration efforts use a hybrid system, where the primary paper issuing from a data assembly effort is expected to use an opt-out model (and therefore includes all the data contributors), while subsequent papers require potential authors to opt-in and participate in developing the analysis and writing the paper.
