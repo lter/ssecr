@@ -1,5 +1,14 @@
 ## Joining Data
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> value of and typical obstacles to data 'joining'
+- <u>Identify</u> some of the primary types of join
+:::
+
 Often the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups' data on sea star abundance and--once you've synonymized the column names--you can simply 'stack' the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group's research. You can't simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps "site" and coordinate columns) you can use **joins** to let your computer match these key columns and make sure that only appropriate rows are combined.
 
 Because joins are completely dependent upon the value in both columns being an *exact* match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.

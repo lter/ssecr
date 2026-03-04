@@ -1,5 +1,14 @@
 ## Loops
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to:
+
+- <u>Identify</u> the core anatomy of a "for loop"
+
+:::
+
 Another way of simplifying repetitive operations is to use a "for loop" (often called simply "loops"). Loops allow you to iterate across a piece of code for a set number of times. Loops require you to define an "index" object that will change itself at the end of each iteration of the loop before beginning the next iteration. This index object's identity will be determined by whatever set of values you define at the top of the loop.
 
 Here's a very bare bones example to demonstrate the fundamentals.

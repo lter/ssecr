@@ -1,5 +1,14 @@
 ## Uniting or Separating Columns
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Use</u> functions from the `tidyr` package to separate or combine columns
+
+:::
+
 Sometimes one column has multiple pieces of information that you'd like to consider separately. A date column is a common example of this because particular months are always in a given season regardless of the specific day or year. So, it can be useful to break a complete date (i.e., year/month/day) into its component bits to be better able to access those pieces of information.
 
 ```{r splitunite-libs}

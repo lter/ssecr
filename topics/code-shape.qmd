@@ -1,5 +1,14 @@
 ## Leveraging Data Shape
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> benefits and drawbacks of using data shape to streamline code
+
+:::
+
 You may already be familiar with data shape but fewer people recognize how playing with the shape of data can make certain operations _dramatically_ more efficient. If you haven't encountered it before, any data table can be said to have one of two 'shapes': either **long** or **wide**. Wide data have all measured variables from a single observation in one row (typically resulting in more columns than rows or "wider" data tables). Long data usually have one observation split into many rows (typically resulting in more rows than columns or "longer" data tables).
 
 Data shape is often important for statistical analysis or visualization but it has an under-appreciated role to play in quality control efforts as well. If many columns have the shared criteria for what constitutes "tidy", you can reshape the data to get all of those values into a single column (i.e., reshape longer), perform any needed wrangling, then--when you're finished--reshape back into the original data shape (i.e., reshape wider). As opposed to applying the same operations repeatedly to each column individually.

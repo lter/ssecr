@@ -1,14 +1,10 @@
 ---
-title: "Useful Meetings and Code Tools"
+title: "Group Process Design & Code Tools"
 ---
 
 ## Overview
 
 {{< fa person-digging >}} Under Construction
-
-## Learning Objectives
-
-{{< fa screwdriver-wrench >}} TBD
 
 ## Preparation
 
@@ -18,12 +14,9 @@ title: "Useful Meetings and Code Tools"
 
 
 {{< include topics/group-process-design.qmd >}}
+
 {{< include activities/design-process-p01.qmd >}}
-
-{{< include topics/thinking-tools.qmd >}}
 {{< include activities/design-process-p02.qmd >}}
-
-
 
 
 {{< include topics/code-conditionals.qmd >}}

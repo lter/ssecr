@@ -1,5 +1,15 @@
 ## Conditionals
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> what a "conditional" is and how it's used in code
+- <u>Use</u> `dplyr::case_when()` to simplify conditionals with many possible options
+
+:::
+
 Rather than finding and replacing content, you may want to create a new column based on the contents of a different column. In plain language you might phrase this as 'if column X has \[some values\] then column Y should have \[other values\]'. These operations are called <u>conditionals</u> and are an important part of data wrangling.
 
 If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let's return to our Plum Island Ecosystems crab dataset for an example.
