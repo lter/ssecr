@@ -14,8 +14,7 @@ After completing this topic you will be able to:
 
 After completing this module you will be able to: 
 
-- <u>Define</u> some common multivariate visualization methods
-- <u>Describe</u> the similarities/differences between metric and non-metric ordination (methodology and interpretation)
+
 
 ## Interactivity Learning Objectives
 

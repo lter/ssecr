@@ -1,5 +1,15 @@
 ## Multivariate Visualization
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> some common multivariate visualization methods
+- <u>Describe</u> the similarities/differences between metric and non-metric ordination (methodology and interpretation)
+
+:::
+
 ### Needed Packages
 
 If you'd like to follow along with the code chunks included throughout this topic, you'll need to install the following packages:
