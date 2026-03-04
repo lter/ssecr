@@ -1,5 +1,14 @@
 ## Hypothesis Framing Aside
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> nuance in interpretation of results between "frequentist" and "multi-model inference" approaches
+
+:::
+
 Before we dive in, we should discuss two of the ways in which you can frame your hypothesis and the differences in interpretation and appropriate statistical tool(s) that follow from that choice. We'll restrict our conversation here to **two alternate modes of thinking about your hypothesis: frequentist statistics versus multi-model inference.**
 
 Note that this is something of a false dichotomy as tools from both worlds can be/are frequently used to complement one another. However, many graduate students are trained by instructors with strong feelings about one method *in opposition to* the other so it is worthwhile to consider these two paths separately even if you wind up using components of both in your own work.

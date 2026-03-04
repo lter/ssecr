@@ -6,18 +6,17 @@ title: "Statistics for Synthesis"
 
 {{< fa person-digging >}} Under Construction
 
-## Learning Objectives
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
 
-{{< fa screwdriver-wrench >}} TBD
+- Your group should be ready to give a short (15 minute) presentation on your proposed analyses
+- You should be ready to discuss feedback with the rest of the class
 
-## Preparation
-
-{{< fa screwdriver-wrench >}} TBD
-
-
-
+:::
 
 {{< include topics/stats-presentations.qmd >}}
+
+---
 
 {{< include topics/stats-hypotheses.qmd >}}
 

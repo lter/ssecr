@@ -1,3 +1,13 @@
 ## Team Presentations of Proposed Methods
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> proposed analytical methods to an interested audience of mixed prior experience
+- <u>Identify</u> the proposed analyses of other synthesis groups in the course
+
+:::
+
 Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module in a different way than other modules. **This module uses a "flipped approach" where project teams will share and discuss their proposed analyses with one another.**

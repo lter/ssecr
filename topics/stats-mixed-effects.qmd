@@ -1,5 +1,16 @@
 ## Mixed-Effects Models
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Paraphrase</u> the purpose of a "random effect"
+- <u>Explain</u> (generally) the difference between random intercepts, random slopes
+- <u>Describe</u> how random effects may be "nested" and how that affects your inference
+
+:::
+
 In any statistical test there is at least one response variable (a.k.a. "dependent" variable) and some number of explanatory variables (a.k.a. "independent" variables). However, in biology our experiments often involve repeated sampling over time or at the same locations. These variables (time or site) are neither response nor explanatory variables but we might reasonably conclude that they affect our response and/or explanatory variables.
 
 In essence we want to use a statistical tool that asks 'what is the effect of the explanatory variable(s) on the response *when the variation due to these non-variable considerations is accounted for*?' Such tests are called **mixed-effects models**. This name derives from considering explanatory variables "fixed effects" and non-explanatory/response variables as "random effects". Including both fixed and random effects thus creates a model with "mixed effects."

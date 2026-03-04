@@ -1,5 +1,15 @@
 ## Multi-Model Inference
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> the process of multi-model inference
+- <u>Interpret</u> an information criterion to assess model strength
+
+:::
+
 Regardless of your choice of statistical test, multi-model inference may be an appropriate method to use to assess your hypothesis. As stated earlier, this frames your research question as a case of which variables *best* explain the data rather than the likelihood of the observed effect relating to any variable in particular.
 
 To begin, it can be helpful to write out all possible "candidate models". For instance, let's say that you measured some response variable (Y) and several potential explanatory variables (X, W, and Z). We would then fit the following candidate models:
@@ -24,6 +34,8 @@ This dataset includes annual data on three penguin species spread across several
 For the purposes of this example, our research question is as follows: **what factors best explain penguin body mass?**
 
 ```{r mmi-data}
+#| message: false
+
 # Load the needed libraries
 library(palmerpenguins); library(dplyr)
 
