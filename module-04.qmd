@@ -6,15 +6,11 @@ title: "Inclusive Facilitation & Data Discovery"
 
 {{< fa person-digging >}} Under Construction
 
-## Learning Objectives
-
-{{< fa screwdriver-wrench >}} TBD
-
 ## Preparation
 
 {{< fa screwdriver-wrench >}} TBD
 
-
+ 
 
 
 {{< include activities/inclusivity-rapid-assessment.qmd >}}

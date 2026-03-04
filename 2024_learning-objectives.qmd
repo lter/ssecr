@@ -16,19 +16,9 @@ After completing this topic you will be able to:
 
 After completing this module you will be able to:
 
-- <u>Identify</u> repositories "known for" a particular type of data
-- <u>Explain</u> how to effectively search for data outside of specialized repositories
 - <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
 - <u>Plan</u> how to download data in a reproducible way
 - <u>Perform</u> checks of the fundamental structure of a dataset
-
-## Inclusive Facilitation Learning Objectives
-
-After completing this module you will be able to: 
-
-- <u>Describe</u> benefits of encouraging full, thoughtful, engaged participation
-- <u>Identify</u> methods for ensuring equitable access to participation in a team setting
-- <u>Identify</u> one activity that privileges each thinking style
 
 ## Data Visualization & Exploration Learning Objectives
 

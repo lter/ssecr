@@ -1,5 +1,14 @@
 ## Ensuring Equitable Access to Participation
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> methods for ensuring equitable access to participation in a team setting
+
+:::
+
 To tap diverse perspectives and catalyze productivity and creative problem-solving, we need to design meetings (and projects) so <u>everyone</u> can participate fully, rather than just a few. When tackling complex challenges, voices from the edge are often critical to uncovering new insights and approaches. Democratizing participation doesn't have to be all about controlling the dominant voices in a group; with thoughtful planning and some simple tools, you can design any conversation so that everyone can contribute.
 
 A few simple techniques can help:

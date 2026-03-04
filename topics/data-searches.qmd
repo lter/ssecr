@@ -1,8 +1,18 @@
 ## Searching for Data
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> how to effectively search for data outside of specialized repositories
+- <u>Use</u> some typical search operators to refine your quest for data
+
+:::
+
 If you don't find what you're looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, [Google](https://www.google.com) is a surprisingly good resource for finding data and--for those familiar with Google Scholar for peer reviewed literature-specific Googling--there is a dataset-specific variant of Google called [Google Dataset Search](https://datasetsearch.research.google.com/).
 
-#### Search Operators
+### Search Operators
 
 Virtually all search engines support "operators" to create more effective queries (i.e., search parameters). If you don't use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you're looking for very specific criteria in candidate datasets.
 

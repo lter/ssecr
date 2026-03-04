@@ -1,12 +1,20 @@
 ## Designing Meetings for All Thinking Styles
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> one activity that privileges each thinking style
+
+:::
+
 People have different thinking preferences which influence what they expect and enjoy in group processes (see Ned Herrmann's Whole Brain Model below).
 
-<p align="center">
-<img src="topics/images/figure_whole-brain-model.png" alt="Top-down image of a human brain divided into four sections next to a circle divided into the same sections. Top left of both is blue, labeled 'analytical' in the circle. Top right is yellow, labeled 'experimental' in the circle. Bottom right is red and labeled 'relational' in circle. Bottom left is green and is labeled 'practical' in the circle. The circle also labels the lines separating each pair of adjacent quadrants as follows: analytical and experimental is 'intellectual', experimental and relational is 'intuitive', relational and practical is 'instinctive', and practical and analytical is 'rational'." width="80%"/>
-<figcaption> Ned Herrmann's Whole Brain Model </figcaption>
-</p>
+:::{layout-ncol=2 layout-valign="center"}
 
-<p align="center">
-<img src="topics/images/figure_thinking-style-expects.png" alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="70%"/>
-</p>
+<img src="topics/images/figure_whole-brain-model.png" alt="Top-down image of a circle divided into four sections. Top left is blue, labeled 'analytical' in the circle. Top right is yellow, labeled 'experimental' in the circle. Bottom right is red and labeled 'relational' in circle. Bottom left is green and is labeled 'practical' in the circle. The circle also labels the lines separating each pair of adjacent quadrants as follows: analytical and experimental is 'intellectual', experimental and relational is 'intuitive', relational and practical is 'instinctive', and practical and analytical is 'rational'." width="100%"/>
+
+<img src="topics/images/figure_thinking-style-expects.png" alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="100%"/>
+
+:::
