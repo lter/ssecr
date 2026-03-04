@@ -18,8 +18,6 @@ Check back later
 {{< include topics/promote-products.qmd >}}
 
 
-
-
 {{< include topics/notebook-value.qmd >}}
 
 {{< include topics/external_lter-workshop-quarto.qmd >}}

@@ -1,5 +1,14 @@
 ## Make Data and Code Findable
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> characteristics of useful metadata
+
+:::
+ 
 Depositing your assembled dataset in a public repository ensures that others can find it and (importantly) cite it effectively. Using a repository with high-quality, machine-readable metadata goes a long way toward ensuring that it is usable and appropriately credited. Unless there is a specific reason not to use the [Environmental Data Initiative (EDI) repository](https://edirepository.org/), it is what we recommend for LTER-related data because EDI serves some of the most "findable, accessible, interoperable, and reusable" (FAIR) environmental data available. Also, since EDI serves the vast majority of LTER data, co-locating your synthesis data makes it more available to users seeking similar types of data.
 
 <p align="center">

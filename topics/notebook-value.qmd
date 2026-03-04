@@ -1,5 +1,14 @@
 ## Notebook Structure & Value
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> contexts where computational notebooks are useful
+
+:::
+ 
 Files that combine plain text with embedded code chunks are an excellent way of reproducibly documenting workflows and faciliating conversations about said workflows (or their outputs). Examples of notebook files include Quarto documents, Jupyter Notebooks, and R Markdown files. Regardless of the specific type, all of them function in the same way. Each of them allows you to use code chunks in the same way that you might use a typical script but between the code chunks you can add--and format--plain, human-readable text. Arguably you could do this with comments in a script but this format is built around the idea that this plain text is **intended to be interpretable without any prior coding experience**. The plain text can be formatted with Markdown syntax (we'll discuss that in greater depth later) but even unformatted text outside of code chunks is visually 'easier on the eyes' than comment lines in scripts.
 
 Another shared facet of notebook interfaces is that they are meant to be "rendered" (a.k.a. "knit") to produce a different file type that translates code chunks and Markdown-formatted text into something that looks much more similar to what you might produce in Microsoft Word or a Google Doc. Typically such files are rendered into PDFs or HTMLs though there are other output options. These rendered files can then be shared (and opened) outside of coding platforms and thus make their content even more accessible to non-coders.

@@ -1,5 +1,19 @@
 ## Introduction to Quarto
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> the three fundamental elements of a typical notebook
+- <u>Use</u> Markdown syntax to accomplish text styling
+- <u>Create</u> notebooks that include a blend of plain text and embedded code chunks
+- <u>Make</u> a Quarto website
+- <u>Define</u> the purpose of GitHub Actions
+- <u>Deploy</u> a notebook with GitHub Pages
+
+:::
+
 ### LTER Workshop Materials
 
 The workshop materials we will be working through live [here](https://lter.github.io/workshop-quarto/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).

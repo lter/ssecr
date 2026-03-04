@@ -1,5 +1,14 @@
 ## Promote Your Dataset (and Other Products)
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> different platforms for promoting your work/findings
+
+:::
+
 Now that potential users and collaborators can find your dataset, how will they? Data in EDI are easily found through EDI, DataONE and Google data search, but many potential users won't even know what they should be searching for. "Build it and they will come" doesn't work much better for data than it does in other realms – at least not yet. Eventually, AI-driven search tools for researchers may improve the situation, but for now it's still important to garner the attention of individuals. Who do you want to reach? Who you want to reach and what you want them to do with the data, paper, or other tool will influence how you spend the (likely quite limited) time you have to spend on promotion.
 
 Want to reach community ecologists? Modelers? Land managers? Teachers? The choice will affect both where and how you promote the work. The choices here are endless, but the examples below illustrate the principle.
