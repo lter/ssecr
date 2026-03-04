@@ -1,5 +1,15 @@
 ## Types of Spatial Data
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> the difference between the two major types of spatial data
+- <u>Manipulate</u> spatial data with R
+
+:::
+
 ```{r}
 #| include: false
 

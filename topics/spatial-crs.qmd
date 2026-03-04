@@ -1,5 +1,15 @@
 ## Coordinate Reference Systems
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+ 
+- <u>Describe</u> what "CRS" is and its relevance to spatial data
+
+:::
+
+
 ```{r}
 #| include: false
 

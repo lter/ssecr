@@ -1,5 +1,15 @@
 ## Extracting Spatial Data
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Integrate</u> spatial data with tabular data
+
+:::
+
+
 ```{r}
 #| include: false
 

@@ -1,5 +1,15 @@
 ## Park Downhill
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> steps that you can take to make continuing your project easier
+
+:::
+
+ 
 Beyond preserving and promoting the current work, there are a few things you can do to prepare for the new research opportunities that it can generate. Ideally, the group has been tracking spin-off ideas as they come up. It's impractical to chase them all down in the moment, but recording them, with just a few sentences of context and explanation, will help to resurface the inspiration at a later date.
 
 <figure >

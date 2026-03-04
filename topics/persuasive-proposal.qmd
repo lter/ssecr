@@ -1,11 +1,18 @@
 ## Crafting a Compelling Proposal
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
+- <u>Conceive</u> funding-worthy proposals
+
+:::
+
 No matter your audience, you need to put yourself in their shoes. Decision makers spend their limited resources to meet _their_ goals, no matter how exciting they find your science. Of course you need to follow their guidelines, but take it a step further. Think about who this agency serves. Read up on their past awards. Get inside their heads.
 
-:::{.callout-tip}
-#### Pro-tip
-All NSF program pages have a link at the bottom leading to a list of past awards made through the program. Successful proposers are often quite happy to share their funded proposal.
-:::
+> **Pro-tip:** All NSF program pages have a link at the bottom leading to a list of past awards made through the program. Successful proposers are often quite happy to share their funded proposal.
 
 The bones of any proposal include answers to the following questions:
 

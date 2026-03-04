@@ -1,5 +1,15 @@
 ## Making Maps
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Create</u> maps using spatial data
+
+:::
+
+
 ```{r}
 #| include: false
 
