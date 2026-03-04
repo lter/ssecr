@@ -15,7 +15,6 @@ After completing this topic you will be able to:
 
 After completing this module you will be able to:
 
--   <u>Identify</u> needed data and target audience(s)
 -   <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
 -   <u>Conceive</u> funding-worthy proposals
 
@@ -27,18 +26,6 @@ After completing this module you will be able to:
 - <u>Identify</u> relevant audiences for a particular work
 - <u>Identify</u> jargon--when to use it, when to avoid it
 - <u>Translate</u> communication into different formats
-
-## Reproducible Reports Learning Objectives
-
-After completing this module you will be able to: 
-
-- <u>Describe</u> contexts where computational notebooks are useful
-- <u>Identify</u> the three fundamental elements of a typical notebook
-- <u>Use</u> Markdown syntax to accomplish text styling
-- <u>Create</u> notebooks that include a blend of plain text and embedded code chunks
-- <u>Make</u> a Quarto website
-- <u>Define</u> the purpose of GitHub Actions
-- <u>Deploy</u> a notebook with GitHub Pages
 
 ## Spatial Data Learning Objectives
 
