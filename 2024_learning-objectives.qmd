@@ -2,16 +2,15 @@
 title: "2024 Learning Objectives"
 ---
 
-## Version Control Learning Objectives
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
 
-After completing this module you will be able to: 
+After completing this topic you will be able to: 
 
-- <u>Describe</u> how version control facilitates code collaboration
-- <u>Navigate</u> GitHub via a web browser
-- <u>Create</u> and edit a repository through GitHub
-- <u>Define</u> fundamental git vocabulary
-- <u>Sketch</u> the RStudio-to-GitHub order of operations
-- <u>Use</u> RStudio, Git, and GitHub to collaborate with version control
+
+:::
+
+
 
 ## Reproducibility Learning Objectives
 
@@ -33,16 +32,6 @@ After completing this module you will be able to:
 - <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
 - <u>Plan</u> how to download data in a reproducible way
 - <u>Perform</u> checks of the fundamental structure of a dataset
-
-## Team Science Practices Learning Objectives
-
-After completing this module you will be able to:
-
-- <u>Interpret</u> and enact current best practices in team science
-- <u>Identify</u> different interaction styles and the effect they have on group dynamics
-- <u>Identify</u> benefits (and potential costs of) diverse teams
-- <u>Describe</u> ways to mitigate costs of diverse teams
-- <u>Explain</u> methods for improving the experience of virtual participants on hybrid teams
 
 ## Inclusive Facilitation Learning Objectives
 

@@ -24,6 +24,8 @@ website:
     contents:
       - text: "Course Overview"
         href: index.qmd
+      - text: "DELETE ME"
+        href: 2024_learning-objectives.qmd
       - section: "Course Content"
         contents: 
             - text: "Module 1"
