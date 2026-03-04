@@ -11,13 +11,6 @@ After completing this topic you will be able to:
 :::
 
 
-## Next Steps Learning Objectives
-
-After completing this module you will be able to:
-
--   <u>Articulate</u> connection(s) between proposed investigation and beneficial outcome
--   <u>Conceive</u> funding-worthy proposals
-
 ## Communicating Findings Learning Objectives
 
 After completing this module you will be able to:
@@ -26,15 +19,6 @@ After completing this module you will be able to:
 - <u>Identify</u> relevant audiences for a particular work
 - <u>Identify</u> jargon--when to use it, when to avoid it
 - <u>Translate</u> communication into different formats
-
-## Spatial Data Learning Objectives
-
-After completing this topic you will be able to: 
-
-- <u>Define</u> the difference between the two major types of spatial data
-- <u>Manipulate</u> spatial data with R
-- <u>Create</u> maps using spatial data
-- <u>Integrate</u> spatial data with tabular data
 
 ## Multivariate Learning Objectives
 
