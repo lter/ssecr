@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>project-organizing – Synthesis Skills for Early Career Researchers</title>
+<title>project-documentation – Synthesis Skills for Early Career Researchers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -46,6 +46,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-3da87255a3dd44c939c0535110ed2ecf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-c09ca53a01c177fb6f1e15790796f6ff.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-3da87255a3dd44c939c0535110ed2ecf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -320,8 +322,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#project-documentation-organization" id="toc-project-documentation-organization" class="nav-link active" data-scroll-target="#project-documentation-organization">Project Documentation &amp; Organization</a>
   <ul class="collapse">
   <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#fundamental-structure" id="toc-fundamental-structure" class="nav-link" data-scroll-target="#fundamental-structure">Fundamental Structure</a></li>
-  <li><a href="#organizing-example" id="toc-organizing-example" class="nav-link" data-scroll-target="#organizing-example">Organizing Example</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -337,6 +337,26 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 <section id="project-documentation-organization" class="level2">
 <h2 class="anchored" data-anchor-id="project-documentation-organization">Project Documentation &amp; Organization</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Explain</u> what information makes documentation more or less useful</li>
+<li><u>Create</u> robust workflow documentation</li>
+</ul>
+</div>
+</div>
+</div>
 <p>Much of the popular conversation around reproducibility centers on reproducibility as it pertains to code. That is definitely an important facet but before we write even a single line it is vital to consider project-wide reproducibility. “Perfect” code in a project that isn’t structured thoughtfully can still result in a project that isn’t reproducible. On the other hand, “bad” code can be made more intelligible when it is placed in a well-documented/organized project!</p>
 <section id="documentation" class="level3">
 <h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
@@ -347,171 +367,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li>Brief description of the file naming scheme you’ve adopted for this project.</li>
 </ol>
 <p>Your project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.</p>
-<p>Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub during the <a href="https://lter.github.io/ssecr/mod_version-control.html">Version Control module</a> but GitHub offers something called <a href="https://nceas.github.io/scicomp-workshop-collaborative-coding/issues.html">Issues</a> that can be a really effective place to record some of this information.</p>
-</section>
-<section id="fundamental-structure" class="level3">
-<h3 class="anchored" data-anchor-id="fundamental-structure">Fundamental Structure</h3>
-<p><img src="topics/images/comic_xkcd-folders.png" alt="One stick figure looks in despair at another's computer where many badly-named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right"></p>
-<p><u>The simplest way of beginning a reproducible project is adopting a good file organization system</u>. There is no single “best” way of organizing your projects’ files as long as you are <em>consistent</em>. Consistency will make your system–whatever that consists of–understandable to others.</p>
-<p>Here are some rules to keep in mind as you decide how to organize your project:</p>
-<ol type="1">
-<li><strong>Use one folder per project</strong></li>
-</ol>
-<p>Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.</p>
-<p>Note that <u>how you define “project” may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.</p>
-<ol start="2" type="1">
-<li><strong>Organize content with sub-folders</strong></li>
-</ol>
-<p>Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don’t feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.</p>
-<ol start="3" type="1">
-<li><strong>Craft informative file names</strong></li>
-</ol>
-<p>An ideal file name should give some information about the file’s contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should <em>be inherently meaningful</em>. This lets you change folder names without fear that files would also need to be re-named.</p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Discussion: Project Structure
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>With a partner discuss (some of) the following questions:</p>
-<ul>
-<li>How do you typically organize your projects’ files?</li>
-<li>What benefits do you see of your current approach?</li>
-<li>What–if any–limitations to your system have you experienced?</li>
-<li>Do you think your structure would work well in a team environment?
-<ul>
-<li>If not, what changes might you make to better fit that context?</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<section id="naming-tips" class="level4">
-<h4 class="anchored" data-anchor-id="naming-tips">Naming Tips</h4>
-<p>We’ve brought up the importance of naming several times already but haven’t actually discussed the specifics of what makes a “good” name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.</p>
-<blockquote class="blockquote">
-<p>Names should be sorted by a computer and human in the same way</p>
-</blockquote>
-<p>Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow <em>should be</em> run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to “zero pad” numbers so that all numbers have the same number of digits (e.g., “01” and “10” vs.&nbsp;“1” and “10”).</p>
-<blockquote class="blockquote">
-<p>Names should avoid spaces and special characters</p>
-</blockquote>
-<p>Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs.&nbsp;uppercase).</p>
-<blockquote class="blockquote">
-<p>Names should use consistent delimiters</p>
-</blockquote>
-<p><strong>Delimiters</strong> are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder “coral_reef_data” which would be more readable than “coralreefdata”.</p>
-<p>You may also want to use <em>multiple</em> delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.</p>
-<blockquote class="blockquote">
-<p>Names should use “slugs” to connect inputs and outputs</p>
-</blockquote>
-<p><strong>Slugs</strong> are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named “02_tidy.R” and all of the data files it creates are named “02_…”. Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.</p>
-</section>
-</section>
-<section id="organizing-example" class="level3">
-<h3 class="anchored" data-anchor-id="organizing-example">Organizing Example</h3>
-<p>These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let’s consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Version 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Version 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Version 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Version 4</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="topics/images/image_proj-struct-v1.png" alt="" width="90%"></p>
-</div><div class="column" style="width:60%;">
-<section id="positives" class="level4">
-<h4 class="anchored" data-anchor-id="positives">Positives</h4>
-<ul>
-<li>All project files are in one folder</li>
-</ul>
-</section>
-<section id="areas-for-improvement" class="level4">
-<h4 class="anchored" data-anchor-id="areas-for-improvement">Areas for Improvement</h4>
-<ul>
-<li>No use of sub-folders to divide logically-linked content</li>
-<li>File names lack key context (e.g., workflow order, inputs vs.&nbsp;outputs, etc.)</li>
-<li>Inconsistent use of delimiters</li>
-</ul>
-</section>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="topics/images/image_proj-struct-v2.png" alt="" width="90%"></p>
-</div><div class="column" style="width:60%;">
-<section id="positives-1" class="level4">
-<h4 class="anchored" data-anchor-id="positives-1">Positives</h4>
-<ul>
-<li>Sub-folders used to divide content</li>
-<li>Project documentation included in top level (README and license files)</li>
-</ul>
-</section>
-<section id="areas-for-improvement-1" class="level4">
-<h4 class="anchored" data-anchor-id="areas-for-improvement-1">Areas for Improvement</h4>
-<ul>
-<li>File names still inconsistent
-<ul>
-<li>File names contain different information in different order</li>
-<li>Mixed use of delimiters</li>
-<li>Many file names include spaces</li>
-</ul></li>
-</ul>
-</section>
-</div>
-</div>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="topics/images/image_proj-struct-v3.png" alt="" width="90%"></p>
-</div><div class="column" style="width:60%;">
-<section id="positives-2" class="level4">
-<h4 class="anchored" data-anchor-id="positives-2">Positives</h4>
-<ul>
-<li>Most file names contain context</li>
-<li>Standardized use of casing and–within sub-folder–consistent delimiters used</li>
-</ul>
-</section>
-<section id="areas-for-improvement-2" class="level4">
-<h4 class="anchored" data-anchor-id="areas-for-improvement-2">Areas for Improvement</h4>
-<ul>
-<li>Workflow order “guessable” but not explicit</li>
-<li>Unclear which files are inputs / outputs (and of which scripts)</li>
-</ul>
-</section>
-</div>
-</div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="topics/images/image_proj-struct-v4.png" alt="" width="90%"></p>
-</div><div class="column" style="width:60%;">
-<section id="positives-3" class="level4">
-<h4 class="anchored" data-anchor-id="positives-3">Positives</h4>
-<ul>
-<li>Scripts include zero-padded numbers indicating order of operations</li>
-<li>Inputs / outputs share zero padded slug with source script</li>
-<li>Report file names machine sorted from least to most recent (top to bottom)</li>
-</ul>
-</section>
-<section id="areas-for-improvement-3" class="level4">
-<h4 class="anchored" data-anchor-id="areas-for-improvement-3">Areas for Improvement</h4>
-<ul>
-<li>Depending on sub-folder complexity, could add sub-folder specific README files</li>
-<li>Graph file names still include spaces</li>
-</ul>
-</section>
-</div>
-</div>
-</div>
-</div>
-</div>
+<p>Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub elsewhere in the course, but GitHub offers something called “issues” that can be a really effective place to record some of this information.</p>
 
 
 </section>
