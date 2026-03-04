@@ -11,20 +11,6 @@ After completing this topic you will be able to:
 :::
 
 
-## Supporting Divergent, Emergent, and Convergent Thinking Learning Objectives
-
-After completing this module you will be able to:
-
-- <u>Develop</u> strategies to support participation, innovative thinking, integration, and convergence / decision making in a team setting
-
-## Data Harmonization & Wrangling Learning Objectives
-
-After completing this module you will be able to:
-
-- <u>Identify</u> value of and typical obstacles to data 'joining'
-- <u>Explain</u> benefits and drawbacks of using data shape to streamline code
-- <u>Design</u> a complete data wrangling workflow
-
 ## Authorship & Intellectual Credit Learning Objectives
 
 After completing this module you will be able to:
