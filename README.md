@@ -7,7 +7,7 @@
 We hope this course is useful to you and encourage you to use these materials! If you do use these materials, please use the following citation:
 
 ```
-Downs, M., Lyon, N., Kappel, C., Kui, L., Elmendorf, S., Maurer, G. E., & De La Rosa, G. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. https://doi.org/10.5281/zenodo.16969471
+Lyon, N.J., Kappel, C., Elmendorf, S., Kui, L., Maurer, G. E., De La Rosa, G., & Downs, M. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. https://doi.org/10.5281/zenodo.16969471
 ```
 
 ## Repository Explanation
