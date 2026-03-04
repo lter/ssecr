@@ -1,5 +1,14 @@
 ## 'And, But, Therefore' Framework -- A Storytelling Tool
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> how the ABT framework can increase the effectiveness of a story
+
+:::
+
 The 'And, But, Therefore' (ABT) framework is a simple tool that helps develop a narrative in an elevator pitch (or any other short communication material). The temptation for many (researchers and non-researchers!) is to continue adding AND's to their work.
 
 ::: panel-tabset

@@ -1,5 +1,13 @@
-
 ## Adapting Your Message to Different Audiences
+
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> relevant audiences for a particular work
+
+:::
 
 You're 17, back in high school. The football team had a party last night, and you and all your friends went. Describe the party to...
 

@@ -1,5 +1,14 @@
 ## Why Communicate Your Findings?
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> why communicating your findings is useful
+
+:::
+
 > "Science speaks for itself." "Good work will get recognized on its own." "It's the journal/university/lab's job to share my results."
 
 All are common excuses that keep researchers from taking the initiative to communicate their science. But sharing your work is an essential part of maximizing it's impact.

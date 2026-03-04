@@ -1,5 +1,14 @@
 ## The Power of a Story
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> elements of (in)effective communication
+
+:::
+ 
 Read the two following introductions to an essay about wildfire. Which essay would you rather continue to read?
 
 ::: panel-tabset

@@ -1,5 +1,14 @@
 ## Jargon
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> jargon--when to use it, when to avoid it
+
+:::
+
 What is jargon? "Special words or expressions that are used by a particular profession or group and are difficult for others to understand," as per the dictionary.
 
 That's not very useful. Let's illustrate this better with an example:
