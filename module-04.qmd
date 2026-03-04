@@ -2,16 +2,16 @@
 title: "Inclusive Facilitation & Data Discovery"
 ---
 
-## Overview
+### {{< fa person-digging >}} \[Overview Under Construction\]
 
-{{< fa person-digging >}} Under Construction
+Check back later
 
-## Preparation
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
 
-{{< fa screwdriver-wrench >}} TBD
+- {{< fa screwdriver-wrench >}} TBD
 
- 
-
+:::
 
 {{< include activities/inclusivity-rapid-assessment.qmd >}}
 
