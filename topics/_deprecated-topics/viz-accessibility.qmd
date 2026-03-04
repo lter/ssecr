@@ -1,5 +1,15 @@
 ## Accessibility Considerations
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> how your graphs can be made more accessible
+- <u>Discuss</u> differences between presentation- and publication-quality graphs
+
+:::
+
 After you've made the graphs you need, it is good practice to revisit them with to ensure that they are as accessible as possible. You can of course also do this during the graph construction process but it is sometimes less onerous to tackle as a penultimate step in the figure creation process. There are many facets to accessibility and we've tried to cover just a few of them below.
 
 ### Color Choice

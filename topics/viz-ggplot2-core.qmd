@@ -1,5 +1,15 @@
 ## Graphing with `ggplot2`
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> fundamental `ggplot2` vocabulary
+- <u>Create</u> `ggplot2` graphs
+
+:::
+
 You may already be familiar with the `ggplot2` package in R but if you are not, it is a popular graphing library based on [The Grammar of Graphics](https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447). Every ggplot is composed of four elements:
 
 1. A 'core' `ggplot` function call

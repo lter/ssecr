@@ -1,5 +1,14 @@
 ## Streamlining Graph Aesthetics
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Use</u> code methods to streamline your `ggplot2` graph code
+
+:::
+
 Synthesis projects often generate an entire network of inter-related papers. Ensuring that all graphs across papers from a given team have a similar "feel" is a nice way of implying a certain standard of robustness for all of your group's projects. However, copy/pasting the theme elements of your graphs can (A) be cumbersome to do even once and (B) needs to be re-done every time you make a change anywhere. Fortunately, there is a better way!
 
 `ggplot2` supports adding theme elements to an object that can then be reused as needed elsewhere. This is the same theory behind wrapping repeated operations into custom functions.

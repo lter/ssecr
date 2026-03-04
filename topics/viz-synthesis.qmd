@@ -1,5 +1,14 @@
 ## Data Visualization for Synthesis
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> how data visualization fit into the synthesis process
+
+:::
+
 As shown in the graphic below, visualization can be valuable throughout the lifecycle of a synthesis project, albeit in different ways at different phases of a project.
 
 <p align="center">

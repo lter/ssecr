@@ -1,5 +1,16 @@
 ## Multi-Panel Graphs
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> the difference(s) between "faceted" graphs and "plot grids" 
+- <u>Create</u> faceted `ggplot2` graphs
+- <u>Assemble</u> grids of plots
+
+:::
+
 It is sometimes the case that you want to make a single graph file that has multiple panels. For many of us, we might default to creating the separate graphs that we want, exporting them, and then using software like Microsoft PowerPoint to stitch those panels into the single image we had in mind from the start. However, as all of us who have used this method know, this is hugely cumbersome when your advisor/committee/reviewers ask for edits and you now have to redo all of the manual work behind your multi-panel graph. 
 
 Fortunately, there are two nice entirely scripted alternatives that you might consider: **Faceted graphs** and **Plot grids**. See below for more information on both.

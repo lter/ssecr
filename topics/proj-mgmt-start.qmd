@@ -1,5 +1,15 @@
 ## How to Start
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Articulate</u> key principles of project management
+- <u>Develop</u> (or refine) the project management framework for your team project
+
+:::
+
 Like outlining a paper, there are a few basic steps to developing a solid project management plan. And it's easy to think you can skip over the first steps because they seem so obvious. The trouble is, they may be obvious to each team member in different ways. Taking the time to make sure you all see them the same way can save worlds of headache down the road.
 
 1. Define the project

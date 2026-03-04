@@ -1,5 +1,14 @@
 ## What is Project Management?
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> some common project management frameworks
+
+:::
+ 
 There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability. You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc. There are whole industries devoted to training project managers and developing apps to support them.
 
 The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don't require a full-time project manager to implement.

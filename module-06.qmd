@@ -6,10 +6,6 @@ title: "Data Visualization & Project Management 101"
 
 {{< fa person-digging >}} Under Construction
 
-## Learning Objectives
-
-{{< fa screwdriver-wrench >}} TBD
-
 ## Preparation
 
 {{< fa screwdriver-wrench >}} TBD

@@ -1,5 +1,15 @@
 ## Setting the Project Scope
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> common approaches for defining project scope
+- <u>Identify</u> and make explicit internal logical leaps
+
+:::
+
 For defining the project and agreeing on the goals, mind maps are useful individual or group exercises. Mind maps offer a lightly-structured way of exploring a focus area. The graphical approach helps to surface unexpected connections and reveal gaps in understanding. Tools for developing them can be as simple as pen and paper, basic drawing apps, a zoom whiteboard, or online collaboration and project planning tools such as Miro, Mural, and FigJam.
 
 Start with a general topic or question, then expand to the precedents and implications.
