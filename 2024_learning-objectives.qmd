@@ -11,34 +11,6 @@ After completing this topic you will be able to:
 :::
 
 
-
-## Data Discovery & Management Learning Objectives
-
-After completing this module you will be able to:
-
-- <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
-- <u>Plan</u> how to download data in a reproducible way
-- <u>Perform</u> checks of the fundamental structure of a dataset
-
-## Data Visualization & Exploration Learning Objectives
-
-After completing this module you will be able to: 
-
-- <u>Explain</u> how data visualization can be used to explore data
-- <u>Define</u> fundamental `ggplot2` vocabulary
-- <u>Identify</u> appropriate graph types for given data type/distribution
-- <u>Discuss</u> differences between presentation- and publication-quality graphs
-- <u>Explain</u> how your graphs can be made more accessible
-
-## Project Management Learning Objectives
-
-After completing this module you will be able to:
-
-- <u>Articulate</u> key principles of project management
-- <u>Define</u> common approaches for defining project scope
-- <u>Identify</u> and make explicit internal logical leaps
-- <u>Develop</u> (or refine) the project management framework for your team project
-
 ## Supporting Divergent, Emergent, and Convergent Thinking Learning Objectives
 
 After completing this module you will be able to:

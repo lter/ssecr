@@ -34,11 +34,11 @@ website:
               href: module-02.qmd
             - text: "Reproducible & Successful Teams"
               href: module-03.qmd
-            - text: "Effectively Communicate & Search for Data"
+            - text: "Group Dialogue & Data Searches"
               href: module-04.qmd
-            - text: "Module 5"
+            - text: "Qualities of Good Meetings & Data Logs"
               href: module-05.qmd
-            - text: "Module 6"
+            - text: "Visualizing Data & Project Scope"
               href: module-06.qmd
             - text: "Module 7"
               href: module-07.qmd
