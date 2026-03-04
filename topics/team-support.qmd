@@ -1,6 +1,15 @@
 ## Conditions and Practices that Support Team Functioning
 
-In order for the above mechanisms to operate, teams need to cultivate conditions that encourage all members to contribute at the times and in the ways that they are most skilled and effective. Explore the tabs below for some of these conditions.
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> conditions that allow for teams to empower their members through mutual support
+
+:::
+ 
+In order for teams to reap the instrumental benefits of diversity in membership, teams need to cultivate conditions that encourage all members to contribute at the times and in the ways that they are most skilled and effective. Explore the tabs below for some of these conditions.
 
 :::{.panel-tabset}
 #### Learning Orientation

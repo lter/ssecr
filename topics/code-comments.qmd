@@ -2,6 +2,16 @@
 
 ## Code Comments
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> the difference between "what" and "why" comments
+- <u>Create</u> useful comments in code
+
+:::
+
 A "comment" in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include "too many" comments, so when in doubt: add more comments!
 
 There are two major strategies for comments and either or both might make sense for your project.

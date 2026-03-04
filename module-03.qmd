@@ -1,19 +1,14 @@
 ---
-title: "Reproducible Work & Navigating Conflict"
+title: "Reproducible Work & Supporting the Team"
 ---
 
 ## Overview
 
 {{< fa person-digging >}} Under Construction
 
-## Learning Objectives
-
-{{< fa screwdriver-wrench >}} TBD
-
 ## Preparation
 
 {{< fa screwdriver-wrench >}} TBD
-
 
 
 

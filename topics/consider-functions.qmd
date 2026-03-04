@@ -1,5 +1,15 @@
 ## Consider Custom Functions
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> when and why writing your own function is preferable to non-function code
+- <u>Write</u> your own function
+
+:::
+
 In most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.
 
 Instead of taking this copy/paste approach, you could _consider_ writing a "custom" function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.

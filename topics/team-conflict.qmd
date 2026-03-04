@@ -1,5 +1,15 @@
 ## Navigating Conflict
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Explain</u> effective methods for navigating conflict in a team setting
+- <u>Describe</u> how different types of fairness are useful in resolving conflict
+
+:::
+
 <img src="topics/images/text_conflict-def.png" alt="Colored background behind the quote 'Conflict is a crisis that forces us to recognize explicitly that we live with multiple realities and must negotiate a common reality;  that we bring to each situation differing--frequently contrasting--stories and must create a single shared story with a role for each and for both'" width="60%" align="right" />
 
 All those diverse perspectives will inevitably lead to some degree of conflict, which can be stressful and intimidating. But identifying the components of a conflict and understanding what is at stake for each party can reveal unexpected solutions. In any event, ignoring conflict will only make it more difficult to resolve later. Expect and plan for conflict with the following approaches.

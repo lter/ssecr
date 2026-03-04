@@ -6,7 +6,6 @@
 After completing this topic you will be able to: 
 
 - <u>Implement</u> reproducible project organization strategies
-- <u>Discuss</u> methods for improving the reproducibility of your code products
 
 :::
 

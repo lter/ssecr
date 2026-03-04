@@ -1,5 +1,16 @@
 ## Reproducible Coding
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Discuss</u> methods for improving the reproducibility of your code products
+- <u>Define</u> code reproducibility-related vocabulary (e.g., "namespace", "file path")
+- <u>Explain</u> common pitfalls in file paths in code and how you might avoid them
+
+:::
+
 Now that you've organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project's worth of R code found that 74% of the associated R files **failed to complete without error** (Trisovic _et al._ 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.
 
 <img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right">
