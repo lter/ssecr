@@ -1,5 +1,36 @@
 ## Alternatives to Conventional Meeting Structures
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Use</u> some common microstructures
+- <u>Explain</u> how some meeting microstructures privilege different thinking styles
+
+:::
+ 
 Differences in thinking and learning styles, disciplinary background, power, and other dimensions of diversity mean that there's no such thing as a one-size-fits-all approach for participatory processes. Nonetheless, we tend to default to a small set of traditional ways of sharing information and engaging people when we meet. These conventional structures are often either too limiting (presentations, status reports, and managed discussions) or too free-form and disorganized (open discussions and brainstorms) to effectively tap the wisdom of the group (Lipmanowicz and McCandless, 2014). To support the engagement of all participants, we need to break out of those traditional ways of meeting.
 
 Books and websites like Liberating Structures, Gamestorming, and the Facilitator's Guide to Participatory Decision Making offer dozens of alternative group processes (see Resources). Known as microstructures or knowledge games, these simple, fun activities are designed to include everyone, distribute control, and unleash creativity. One or more activities can be matched to your intended outcomes and arranged in a sequence to advance the team toward your overall goal. Liberating Structures offers a [matching matrix](https://www.liberatingstructures.com/matching-matrix) to help you identify microstructures that could fit your needs and an app you can use to browse and assemble strings of activities. [Gamestorming](https://gamestorming.com/) organizes their activities into categories (e.g. games for opening, games for decision-making) for exploration.
+
+### Microstructures for Small Group Meetings
+
+Here are a few microstructures that work well for small group virtual meetings. They also work for larger groups and in person settings:
+
+| **Microstructure** | **Thinking Preference** | **Purpose** | **How It Works** |
+|:---|:---:|:------------|:---------------------|
+| Icebreaker / check in | **<span style="color:red">Relational</span>** | Connect as a team, start on a positive, human note | Many versions exist, e.g., one word to describe how you are arriving; one thing you are feeling grateful for today; coolest thing you've learned lately; describe where you grew up without using any place names, etc. |
+| Round robin / go around | **<span style="color:blue">Analytical</span>**, **<span style="color:red">Relational</span>** | Hear from everyone | Everyone answers the same prompt. Alternatives to going in order: each speaker calls on the next person after they have shared - keeping track of who has / hasn't spoken keeps people paying attention; popcorn-style - people share in the order that they feel moved to speak |
+| [1,2,4,all](https://www.liberatingstructures.com/1-1-2-4-all/) | **<span style="color:blue">Analytical</span>**, **<span style="color:green">Practical</span>**, **<span style="color:gold">Experimental</span>**, **<span style="color:red">Relational</span>** | Engage everyone in generating questions, ideas, and suggestions | Individual reflection; Pair share; Two pairs combine and share as a group of 4; Small groups share highlights with whole group |
+| [Min specs](https://www.liberatingstructures.com/14-min-specs/) | **<span style="color:gold">Experimental</span>** | Specify simple rules the group must follow to achieve your purpose | 1,2,4,all format; Individuals brainstorm things the group must do or must not do to achieve its purpose; Share in pairs or small groups; Pare the list down to the minimum set of rules you could follow and still achieve the purpose |
+| [Affinity Map](https://gamestorming.com/?s=affinity+map) | **<span style="color:blue">Analytical</span>**, **<span style="color:red">Relational</span>** | Surface ideas, detect patterns, and analyze | Brainstorm ideas using sticky notes on a wall or virtual whiteboard; Cluster into categories; If useful, prioritize within categories |
+| [Brainwriting](https://gamestorming.com/brainwriting/) | **<span style="color:blue">Analytical</span>**, **<span style="color:green">Practical</span>**, **<span style="color:gold">Experimental</span>**, **<span style="color:red">Relational</span>** | Surface and elaborate ideas | (1) Brainstorm ideas in a google doc or virtual whiteboard (or on index cards in person); (2) Read and add to each other's ideas; (3) Discuss |
+| [What, So What, Now What](https://www.liberatingstructures.com/9-what-so-what-now-what-w/) | **<span style="color:blue">Analytical</span>**, **<span style="color:green">Practical</span>**, **<span style="color:gold">Experimental</span>** | Make sense of past progress or experiences and decide on future actions | What - As a group, compile the facts and observations relevant to the context; So What - Reflect on the facts and their implications, identify patterns, generate hypotheses; Now What - Draw conclusions - What actions make sense? |
+| [Fist to Five](https://gamestorming.com/five-fingered-consensus/) / Gradient of Agreement | **<span style="color:green">Practical</span>**, **<span style="color:red">Relational</span>** | Assess degree of consensus; seek closure | Use when ready to close a discussion or make a decision; Invite participants to rate their level of agreement with a proposal on a scale of 0-5; Five fingers means "absolute, total agreement or support" and a fist means "complete opposition" |
+| Polling | **<span style="color:blue">Analytical</span>**, **<span style="color:green">Practical</span>** | Rank alternatives | Before you start - clarify how you will use the results - are you gathering information or taking a vote to make a decision?; Decide how many votes per person; In person - use sticky dots; Virtually - use +1s in a google doc or a digital polling tool (e.g., Zoom, Mural, slido) |
+| Feasibility-Impact Matrix (see figure below) | **<span style="color:blue">Analytical</span>**, **<span style="color:green">Practical</span>**, **<span style="color:gold">Experimental</span>** | Compare alternatives | Discuss and agree on definitions for two criteria for evaluating ideas: feasibility of implementation and impact potential; Rate each idea against these two axes and map onto 2x2 grid |
+
+<p align="center">
+<img src="topics/images/figure_project-impact-vs-feasibility.png" alt="Graph of impact versus feasibility where both axes range from low to high and the plot area is divided into four equal sections" width="70%"/>
+</p>

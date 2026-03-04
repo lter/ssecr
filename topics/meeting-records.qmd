@@ -1,5 +1,14 @@
 ## Harvesting Meeting Content
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+<u>Paraphrase</u> why recording meeting content 'as you go' is useful
+
+:::
+ 
 As you go, and definitely before your meeting is over, engage your team in synthesizing and capturing the information that has been discussed. This helps you to deepen understanding, document your workflow and decisions, and pick up easily next time. Use a consistent system - like a running notes document linked in the calendar item. Graphics or drawings can be a valuable complement to oral and written content in making thinking visible.
 
 <p align="center">

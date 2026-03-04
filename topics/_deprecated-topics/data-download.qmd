@@ -1,5 +1,14 @@
 ## Downloading Data
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Plan</u> how to download data in a reproducible way
+
+:::
+
 Once you've found data, filled out your data inventory, and decided which datasets you actually want, it's time to download some of them! There are several methods you can use and it's possible that each won't work in all cases so it's important to be at least somewhat familiar with several of these tools.
 
 Most of these methods will work regardless of the format of the data (i.e., its file extension) but the format of the data will be important when you want to 'read in' the data and begin to work with it.

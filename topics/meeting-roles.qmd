@@ -1,5 +1,14 @@
 ## Meeting Roles
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> useful roles for any meeting
+
+:::
+
 It's very difficult to both facilitate a conversation and engage fully in it as a participant. If you add taking notes on top of that, it's sure to become overwhelming. So recruit some help. The number of roles you need to fill will depend on the size of the group and the complexity of the process. Online meetings particularly benefit from a team approach to facilitation. Share and rotate duties over time:
 
 - **Process facilitator** - sets tone and pace, mediates conflicts, and ensures all voices are being heard, interpersonal dynamics are positive/effective, and group is staying on task

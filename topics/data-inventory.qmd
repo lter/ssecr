@@ -1,5 +1,14 @@
 ## Data Inventory Value
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
+
+:::
+
 Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
 
 - Well-documented data inventory table make it easier for researchers to find and access specific data for reproducible research

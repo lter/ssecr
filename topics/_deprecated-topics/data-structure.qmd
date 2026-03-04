@@ -1,5 +1,14 @@
 ## Data Format and Structure
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Perform</u> checks of the fundamental structure of a dataset
+
+:::
+
 CSV and TXT are common formats for data storage. In addition, formats like NetCDF, HDF5, Matlab, and Rdata/RDS are frequently used in research, along with spatial datasets such as geotiff, shapefiles, and raster files (refer to the [spatial module](https://lter.github.io/ssecr/mod_spatial.html) for more details).
 
 In R, information about data's structure can be retrieved in a variety of ways. We'll go ahead and load the `dplyr` package as well to be able to include one Tidyverse option for evaluating structure.
