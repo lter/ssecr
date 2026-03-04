@@ -28,7 +28,7 @@ website:
         href: 2024_learning-objectives.qmd
       - section: "Course Content"
         contents: 
-            - text: "Module 1"
+            - text: "Synthesis Team Fundamentals"
               href: module-01.qmd
             - text: "Module 2"
               href: module-02.qmd
