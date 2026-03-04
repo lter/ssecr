@@ -30,7 +30,7 @@ website:
         contents: 
             - text: "Synthesis Team Fundamentals"
               href: module-01.qmd
-            - text: "Module 2"
+            - text: "Project Documentation and Organization"
               href: module-02.qmd
             - text: "Module 3"
               href: module-03.qmd
