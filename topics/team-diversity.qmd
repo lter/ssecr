@@ -1,5 +1,15 @@
 ## Instrumental Benefits of Diverse Teams
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Identify</u> benefits (and potential costs of) diverse teams
+- <u>Describe</u> ways to mitigate costs of diverse teams
+
+:::
+
 <img src="topics/images/graph_team-size-novelty.jpg" alt="Graph showing novelty peaks at a team size of about 6 authors (examining only authors from a single private university). From: Lee et al. 2014" width="45%" align="right"/>
 
 There is pretty good evidence that collaborative teams produce research that is more novel and has higher impact than work produced by individuals or smaller more homogeneous groups (Lee at al. 2015, Hong and Page 2024). Woolley et al (2010) found evidence for a "collective intelligence" in teams, which is not strongly correlated with the average or maximum individual intelligence of group members but is correlated with the average social sensitivity of group members, the equality in distribution of conversational turn-taking, and the proportion of females in the group.

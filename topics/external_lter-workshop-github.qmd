@@ -1,8 +1,30 @@
 ## Introduction to Version Control
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Describe</u> how version control facilitates code collaboration
+- <u>Navigate</u> GitHub via a web browser
+- <u>Create</u> and edit a repository through GitHub
+- <u>Define</u> fundamental Git vocabulary
+- <u>Sketch</u> the IDE-to-GitHub order of operations
+- <u>Use</u> an IDE with Git and GitHub to collaborate with version control
+
+:::
+
+
 ### LTER Workshop Materials
 
 The workshop materials we will be working through live [here](https://lter.github.io/workshop-github/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).
+
+Our specific plan is to cover:
+
+1. Version Control Fundamentals
+2. Using GitHub with a Browser
+3. Using GitHub with an IDE
+4. Recommendations for Collaborating with Git/GitHub
 
  ```{=html}
 <iframe src="https://lter.github.io/workshop-github/" height="550" width="800" style="border: 1px solid #2e3846;"></iframe>

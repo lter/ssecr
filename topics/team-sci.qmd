@@ -1,5 +1,25 @@
 ## Science of Team Science
 
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Interpret</u> and enact current best practices in team science
+- <u>Identify</u> different interaction styles and the effect they have on group dynamics
+
+:::
+
 Research in management, organizational behavior, and psychology  has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000's–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of "science of team science" or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al. 2008).
 
 A National Academies study on the _Science of Team Science_ (NRC 2015) assembled the existing evidence base and launched a flurry of research into how team composition, coordination, support, and organizational context could improve outcomes for science teams. A new National Academies study on _Research and Application in Team Science_ is currently in progress. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience.
+
+### Predictable Team Trajectory
+
+Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent patterns in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.
+
+<p align="center"/>
+<img src="topics/images/figure_team-dev-phases.jpg" alt="graphic, laying out the 5 phases: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance" width="100%" />
+</p>
+
+Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.  
