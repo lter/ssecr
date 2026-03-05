@@ -26,7 +26,10 @@ We hope this course is useful to you and encourage you to use these materials! I
 :::{.panel-tabset}
 ### 2026-27 Structure
 
-#### {{< fa person-digging >}} Under Construction!
+
+Course participants meet for two hours, weekly, at the same time each week. Each session covers a module (linked in the sidebar on the left of this page) that includes a blend of technical and interpersonal skills relevant for inclusive synthesis and team work on the chosen group projects.
+
+Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at least 4 times throughout the year.
 
 ### 2024-25 Structure
 
