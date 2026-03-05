@@ -55,23 +55,21 @@ All dates are in 2026.
 
 | **Date** | **Module** | **Primary Instructors** |
 |:---:|:-------------|:---------|
-| 8 / 27 | 1. Synthesis Team Fundamentals | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} _Marty Downs / Carrie Kappel_ (TBD) |
-| 9 / 03 | **Skip for Labor Day on 9/7** | -- |
-| 9 / 10 | 2. Project Documentation & Organization | {{< fa people-group >}} Nick Lyon <br> {{< fa screwdriver-wrench >}} _Sarah Elmendorf / Li Kui_ (TBD) |
-| 9 / 17 | 3. Reproducible & Successful Teams | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Carrie Kappel |
-| 9 / 24 | 4. Group Dialogue & Data Searches | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Li Kui |
-| 10 / 01 | 5. Qualities of Good Meetings & Data Logs | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Marty Downs |
-| 10 / 08 | 6. Visualizing Data & Project Scope | {{< fa screwdriver-wrench >}} Sarah Elmendorf <br> {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Marty Downs |
-| 10 / 15 | 7. Plan the Work | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 10 / 22 | 8. Build Consensus & Do Quality Control | {{< fa people-group >}} Carrie Kappel <br>  {{< fa screwdriver-wrench >}} Nick Lyon |
-| 10 / 29 | 9. Tools for Meetings & Data Wrangling | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 11 / 05 | 10. Intellectual Credit | {{< fa people-group >}} Marty Downs |
-| 11 / 12 | **11. Group Stats Presentations** | _SSECR Participants!_ |
-| 11 / 19 | 12. Making Reports & Websites | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 9 / 10 | 1. Synthesis Team Fundamentals | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} _Marty Downs / Carrie Kappel_ (TBD) |
+| 9 / 17 | 2. Project Documentation & Organization | {{< fa people-group >}} Nick Lyon <br> {{< fa screwdriver-wrench >}} _Sarah Elmendorf / Li Kui_ (TBD) |
+| 9 / 24 | 3. Reproducible & Successful Teams | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Carrie Kappel |
+| 10 / 01 | 4. Group Dialogue & Data Searches | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Li Kui |
+| 10 / 08 | 5. Qualities of Good Meetings & Data Logs | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Marty Downs |
+| 10 / 15 | 6. Visualizing Data & Project Scope | {{< fa screwdriver-wrench >}} Sarah Elmendorf <br> {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Marty Downs |
+| 10 / 22 | 7. Plan the Work | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 10 / 29 | 8. Build Consensus & Do Quality Control | {{< fa people-group >}} Carrie Kappel <br>  {{< fa screwdriver-wrench >}} Nick Lyon |
+| 11 / 05 | 9. Tools for Meetings & Data Wrangling | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 11 / 12 | 10. Intellectual Credit | {{< fa people-group >}} Marty Downs |
+| 11 / 19 | 11. Group Stats Presentations | **_SSECR Participants!_** |
 | 11 / 26 | **No Class!** | -- |
-| 12 / 03 | 13. Looking Ahead & Spatial Data | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 12 / 10 | 14. Share the Story | {{< fa people-group >}} _TBD_ |
-| 12 / 17 | Only happens if we start 9/10 instead of 8/27 | |
+| 12 / 03 | 12. Making Reports & Websites | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 12 / 10 | 13. Looking Ahead & Spatial Data | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 12 / 17  | 14. Share the Story | {{< fa people-group >}} _TBD_ |
 | TBD | **Final Project Symposium** | _SSECR Participants!_ |
 | TBD | Presentations on LTER Community Call | _SSECR Participants!_ |
 
