@@ -26,33 +26,33 @@ website:
         href: index.qmd
       - section: "Course Content"
         contents: 
-            - text: "Synthesis Team Fundamentals"
+            - text: "1. Synthesis Team Fundamentals"
               href: module-01.qmd
-            - text: "Project Documentation & Organization"
+            - text: "2. Project Documentation & Organization"
               href: module-02.qmd
-            - text: "Reproducible & Successful Teams"
+            - text: "3. Reproducible & Successful Teams"
               href: module-03.qmd
-            - text: "Group Dialogue & Data Searches"
+            - text: "4. Group Dialogue & Data Searches"
               href: module-04.qmd
-            - text: "Qualities of Good Meetings & Data Logs"
+            - text: "5. Qualities of Good Meetings & Data Logs"
               href: module-05.qmd
-            - text: "Visualizing Data & Project Scope"
+            - text: "6. Visualizing Data & Project Scope"
               href: module-06.qmd
-            - text: "Plan the Work"
+            - text: "7. Plan the Work"
               href: module-07.qmd
-            - text: "Build Consenus & Do Quality Control"
+            - text: "8. Build Consenus & Do Quality Control"
               href: module-08.qmd
-            - text: "Tools for Meetings & Data Wrangling"
+            - text: "9. Tools for Meetings & Data Wrangling"
               href: module-09.qmd
-            - text: "Intellectual Credit"
+            - text: "10. Intellectual Credit"
               href: module-10.qmd
-            - text: "Group Stats Presentations"
+            - text: "11. Group Stats Presentations"
               href: module-11.qmd
-            - text: "Making Reports & Websites"
+            - text: "12. Making Reports & Websites"
               href: module-12.qmd
-            - text: "Looking Ahead & Spatial Data"
+            - text: "13. Looking Ahead & Spatial Data"
               href: module-13.qmd
-            - text: "Share the Story"
+            - text: "14. Share the Story"
               href: module-14.qmd
       - text: "Additional Resources"
         href: resources.qmd
