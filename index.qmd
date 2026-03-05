@@ -51,31 +51,29 @@ Project groups will also meet at a time of their own choosing to work on project
 :::{.panel-tabset}
 ### 2026-27  Schedule
 
-All meeting days are _Thursdays_ in 2026.
+All dates are in 2026.
 
 | **Date** | **Module** | **Primary Instructors** |
-|:---:|:----------|:---------|
-| 8 / 27 | **1. Synthesis Team Fundamentals** <br> - Version Control 101 <br> - Science of Team Science <br> - Benefits of Diverse Teams | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} _Marty Downs / Carrie Kappel_ (TBD) |
-| 9 / 03 | Skip for Labor Day on 9/7 | -- |
-| 9 / 10 | **2. Project Documentation & Organization** <br> - Reproducibility Overview <br> - Project Documentation <br> - Project Organization <br> - Generative AI & Synthesis | {{< fa screwdriver-wrench >}} Nick Lyon & _Sarah Elmendorf / Li Kui_ (TBD) |
-| 9 / 17 | **3. Reproducible & Successful Teams** <br> - Reproducible Code <br> - Supporting Team Functioning <br> - Navigating Conflict | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Carrie Kappel |
-| 9 / 24 | **4. Group Dialogue & Data Searches** <br> - Enabling Participation <br> - Debate to Dialogue <br> - Thinking Styles <br> - Participation <br> - Data Repositories & Searches | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Li Kui |
-| 10 / 01 | 5. {{< fa screwdriver-wrench >}} | |
-| 10 / 08 | 6. {{< fa screwdriver-wrench >}} | |
-| 10 / 15 | 7. {{< fa screwdriver-wrench >}} | |
-| 10 / 22 | 8. {{< fa screwdriver-wrench >}} | |
-| 10 / 29 | 9. {{< fa screwdriver-wrench >}} | |
-| 11 / 05 | 10. {{< fa screwdriver-wrench >}} | |
-| 11 / 12 | 11. {{< fa screwdriver-wrench >}} | |
-| 11 / 19 | 12. {{< fa screwdriver-wrench >}} | |
-| 11 / 26 | No Class; Thanksgiving | -- |
-| 12 / 03 | 13. {{< fa screwdriver-wrench >}} | |
-| 12 / 10 | 14. {{< fa screwdriver-wrench >}} | |
-| 12 / 17 | TBD {{< fa screwdriver-wrench >}} | |
-
-
-{{< fa people-group >}} <br> {{< fa screwdriver-wrench >}}
-{{< fa screwdriver-wrench >}} <br> {{< fa people-group >}}
+|:---:|:-------------|:---------|
+| 8 / 27 | 1. Synthesis Team Fundamentals | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} _Marty Downs / Carrie Kappel_ (TBD) |
+| 9 / 03 | **Skip for Labor Day on 9/7** | -- |
+| 9 / 10 | 2. Project Documentation & Organization | {{< fa people-group >}} Nick Lyon <br> {{< fa screwdriver-wrench >}} _Sarah Elmendorf / Li Kui_ (TBD) |
+| 9 / 17 | 3. Reproducible & Successful Teams | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Carrie Kappel |
+| 9 / 24 | 4. Group Dialogue & Data Searches | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Li Kui |
+| 10 / 01 | 5. Qualities of Good Meetings & Data Logs | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Marty Downs |
+| 10 / 08 | 6. Visualizing Data & Project Scope | {{< fa screwdriver-wrench >}} Sarah Elmendorf <br> {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Marty Downs |
+| 10 / 15 | 7. Plan the Work | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 10 / 22 | 8. Build Consensus & Do Quality Control | {{< fa people-group >}} Carrie Kappel <br>  {{< fa screwdriver-wrench >}} Nick Lyon |
+| 10 / 29 | 9. Tools for Meetings & Data Wrangling | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 11 / 05 | 10. Intellectual Credit | {{< fa people-group >}} Marty Downs |
+| 11 / 12 | **11. Group Stats Presentations** | _SSECR Participants!_ |
+| 11 / 19 | 12. Making Reports & Websites | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 11 / 26 | **No Class!** | -- |
+| 12 / 03 | 13. Looking Ahead & Spatial Data | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
+| 12 / 10 | 14. Share the Story | {{< fa people-group >}} _TBD_ |
+| 12 / 17 | Only happens if we start 9/10 instead of 8/27 | |
+| TBD | **Final Project Symposium** | _SSECR Participants!_ |
+| TBD | Presentations on LTER Community Call | _SSECR Participants!_ |
 
 ### 2024-25 Schedule
 
