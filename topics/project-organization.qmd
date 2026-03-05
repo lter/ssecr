@@ -72,13 +72,24 @@ You may also want to use _multiple_ delimiters to indicate different things. For
 These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let's consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.
 
 :::panel-tabset
-
-## Version 1
+### Version 1
 
 ::::{.columns}
 :::{.column width="40%"}
 
-<img src="topics/images/image_proj-struct-v1.png" alt="" width="90%">
+{{< fa folder >}} synthesis-project  
+&nbsp;|--&nbsp;{{< fa file-csv >}} clean-data.csv  
+&nbsp;|--&nbsp;{{< fa file-csv >}} community data.csv  
+&nbsp;|--&nbsp;{{< fa file-code >}} graphing.r  
+&nbsp;|--&nbsp;{{< fa file-image >}} ordination-plot.tiff  
+&nbsp;|--&nbsp;{{< fa file-pdf >}} results report V2.pdf  
+&nbsp;|--&nbsp;{{< fa file-code >}} results report V2.qmd  
+&nbsp;|--&nbsp;{{< fa file-code >}} results-report__DRAFT.qmd  
+&nbsp;|--&nbsp;{{< fa file-image >}} scatterplot.jpg  
+&nbsp;|--&nbsp;{{< fa file-image >}} spp-boxplot.png  
+&nbsp;|--&nbsp;{{< fa file-code >}} stats-feb 2024.r  
+&nbsp;|--&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
+&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} Wrangle.r  
 
 :::
 :::{.column width="60%"}
@@ -91,17 +102,35 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 
 - No use of sub-folders to divide logically-linked content
 - File names lack key context (e.g., workflow order, inputs vs. outputs, etc.)
-- Inconsistent use of delimiters
+- Inconsistent use of delimiters/casing
 
 :::
 ::::
 
-## Version 2
+### Version 2
 
 ::::{.columns}
 :::{.column width="40%"}
 
-<img src="topics/images/image_proj-struct-v2.png" alt="" width="90%">
+{{< fa folder >}} synthesis-project  
+&nbsp;|--&nbsp;{{< fa folder >}} data  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} clean-data.csv  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-csv >}} community data.csv  
+&nbsp;|--&nbsp;{{< fa folder >}} graphs  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} ordination-plot.tiff  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} scatterplot.jpg  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-image >}} spp-boxplot.png  
+&nbsp;|--&nbsp;{{< fa folder >}} reports  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-pdf >}} results report V2.pdf  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} results report V2.qmd  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} results-report__DRAFT.qmd  
+&nbsp;|--&nbsp;{{< fa folder >}} scripts  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} graphing.r  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} stats-feb 2024.r  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} Wrangle.r  
+&nbsp;|--&nbsp;{{< fa file-text >}} LICENSE  
+&nbsp;|--&nbsp;{{< fa file-text >}} README.md  
+&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
 
 :::
 :::{.column width="60%"}
@@ -116,20 +145,40 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 - File names still inconsistent
     - File names contain different information in different order
     - Mixed use of delimiters
+    - Mixed use of upper/lowercase
     - Many file names include spaces
+- Code file order not clear from filenames
 
 :::
 ::::
 
-## Version 3
+### Version 3
 
 ::::{.columns}
-:::{.column width="40%"}
+:::{.column width="45%"}
 
-<img src="topics/images/image_proj-struct-v3.png" alt="" width="90%">
+{{< fa folder >}} synthesis-project  
+&nbsp;|--&nbsp;{{< fa folder >}} data  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} raw-community-comp-data.csv  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-csv >}} tidy-community-data.csv  
+&nbsp;|--&nbsp;{{< fa folder >}} graphs  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} abundance boxplot.png  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} abundance scatterplot.jpg  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-image >}} community ordination.tiff  
+&nbsp;|--&nbsp;{{< fa folder >}} reports  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-pdf >}} results report feb 14 2024.pdf  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} results report feb 14 2024.qmd  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} results report may xx 2024.qmd  
+&nbsp;|--&nbsp;{{< fa folder >}} scripts  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} data analysis.r  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} data tidying.r  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} graphing.r  
+&nbsp;|--&nbsp;{{< fa file-text >}} LICENSE  
+&nbsp;|--&nbsp;{{< fa file-text >}} README.md  
+&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
 
 :::
-:::{.column width="60%"}
+:::{.column width="55%"}
 
 #### Positives
 
@@ -144,25 +193,44 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 :::
 ::::
 
-## Version 4
+### Version 4
 
 ::::{.columns}
-:::{.column width="40%"}
+:::{.column width="45%"}
 
-<img src="topics/images/image_proj-struct-v4.png" alt="" width="90%">
+{{< fa folder >}} synthesis-project  
+&nbsp;|--&nbsp;{{< fa folder >}} data  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} 00_raw-community-data.csv  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-csv >}} 01_tidy-community-data.csv  
+&nbsp;|--&nbsp;{{< fa folder >}} graphs  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} 02_abundance boxplot.png  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} 02_abundance scatterplot.jpg  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-image >}} 02_community ordination.tiff  
+&nbsp;|--&nbsp;{{< fa folder >}} reports  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-pdf >}} results_2024-02-14.pdf  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} results_2024-02-14.qmd  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} results_2024-05-xx.qmd  
+&nbsp;|--&nbsp;{{< fa folder >}} scripts  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} 01_tidy.r  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} 02_graph.r  
+&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} 03_analyze.r  
+&nbsp;|--&nbsp;{{< fa file-text >}} LICENSE  
+&nbsp;|--&nbsp;{{< fa file-text >}} README.md  
+&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
 
 :::
-:::{.column width="60%"}
+:::{.column width="55%"}
 
 #### Positives
 
 - Scripts include zero-padded numbers indicating order of operations
-- Inputs / outputs share zero padded slug with source script
+- Outputs share zero padded slug with source script
 - Report file names machine sorted from least to most recent (top to bottom)
 
 #### Areas for Improvement
 
-- Depending on sub-folder complexity, could add sub-folder specific README files
+- Could add subfolder-specific README files
+    - Depends on complexity of respective subfolder
 - Graph file names still include spaces
 
 :::
