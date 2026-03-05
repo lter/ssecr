@@ -1,4 +1,4 @@
-## Project Documentation & Organization
+## Project Documentation
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives
