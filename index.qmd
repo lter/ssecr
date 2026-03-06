@@ -51,25 +51,25 @@ Project groups will also meet at a time of their own choosing to work on project
 :::{.panel-tabset}
 ### 2026-27  Schedule
 
-All dates are in 2026.
+**All dates are in 2026.** _Icon legend: <span style="color:#4AB2CB">{{< fa people-group >}} Interpersonal Skill Expert</span> | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Technical Skill Expert</span>_. Instructor order reflects order of content within each module.
 
 | **Date** | **Module** | **Primary Instructors** |
-|:---:|:-------------|:---------|
-| 9 / 10 | 1. Synthesis Team Fundamentals | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} _Marty Downs / Carrie Kappel_ (TBD) |
-| 9 / 17 | 2. Project Documentation & Organization | {{< fa people-group >}} Nick Lyon <br> {{< fa screwdriver-wrench >}} _Sarah Elmendorf / Li Kui_ (TBD) |
-| 9 / 24 | 3. Reproducible & Successful Teams | {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Carrie Kappel |
-| 10 / 01 | 4. Group Dialogue & Data Searches | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Li Kui |
-| 10 / 08 | 5. Qualities of Good Meetings & Data Logs | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Marty Downs |
-| 10 / 15 | 6. Visualizing Data & Project Scope | {{< fa screwdriver-wrench >}} Sarah Elmendorf <br> {{< fa screwdriver-wrench >}} Nick Lyon <br> {{< fa people-group >}} Marty Downs |
-| 10 / 22 | 7. Plan the Work | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 10 / 29 | 8. Build Consensus & Do Quality Control | {{< fa people-group >}} Carrie Kappel <br>  {{< fa screwdriver-wrench >}} Nick Lyon |
-| 11 / 05 | 9. Tools for Meetings & Data Wrangling | {{< fa people-group >}} Carrie Kappel <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 11 / 12 | 10. Intellectual Credit | {{< fa people-group >}} Marty Downs |
-| 11 / 19 | 11. Group Stats Presentations | **_SSECR Participants!_** |
+|:---:|:-----------------|:---------|
+| 9 / 10 | 1. Synthesis Team Fundamentals | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} _Marty Downs (TBD)_</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} _Carrie Kappel (TBD)_</span> |
+| 9 / 17 | 2. Project Documentation & Organization | <span style="color:#4AB2CB">{{< fa people-group >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Li Kui</span> |
+| 9 / 24 | 3. Reproducible & Successful Teams | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> |
+| 10 / 01 | 4. Group Dialogue & Data Searches | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Li Kui</span> |
+| 10 / 08 | 5. Qualities of Good Meetings & Data Logs | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Marty Downs</span> |
+| 10 / 15 | 6. Visualizing Data & Project Scope | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
+| 10 / 22 | 7. Plan the Work | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 10 / 29 | 8. Build Consensus & Do Quality Control | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br>  <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 11 / 05 | 9. Tools for Meetings & Data Wrangling | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 11 / 12 | 10. Intellectual Credit | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
+| 11 / 19 | 11. Group Stats Presentations | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} **_SSECR Participants!_** |
 | 11 / 26 | **No Class!** | -- |
-| 12 / 03 | 12. Making Reports & Websites | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 12 / 10 | 13. Looking Ahead & Spatial Data | {{< fa people-group >}} Marty Downs <br> {{< fa screwdriver-wrench >}} Nick Lyon |
-| 12 / 17  | 14. Share the Story | {{< fa people-group >}} _TBD_ |
+| 12 / 03 | 12. Making Reports & Websites | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 10 | 13. Looking Ahead & Spatial Data | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 17  | 14. Share the Story | <span style="color:#4AB2CB">{{< fa people-group >}} _TBD_</span> |
 | TBD | **Final Project Symposium** | _SSECR Participants!_ |
 | TBD | Presentations on LTER Community Call | _SSECR Participants!_ |
 
