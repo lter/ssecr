@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>project-organization – Synthesis Skills for Early Career Researchers</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,19 +36,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="../topics/images/logo_lter.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3da87255a3dd44c939c0535110ed2ecf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c09ca53a01c177fb6f1e15790796f6ff.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3da87255a3dd44c939c0535110ed2ecf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-654396b1f153c1f3287751cbd2776584.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-57c9b33a566fa064753e011d0aa1473d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-654396b1f153c1f3287751cbd2776584.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -423,26 +425,29 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="organizing-example" class="level3">
 <h3 class="anchored" data-anchor-id="organizing-example">Organizing Example</h3>
 <p>These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let’s consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.</p>
+<p>Top-level sub-folders are colored <span style="color:#209ACA"><strong>blue</strong></span> so that the high-level structure is easier to quickly scan.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Version 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Version 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Version 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Version 4</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="columns">
-<div class="column" style="width:40%;">
-<p><i class="fa-solid fa-folder" aria-label="folder"></i> synthesis-project<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> clean-data.csv<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> community data.csv<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> graphing.r<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> ordination-plot.tiff<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results report V2.pdf<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results report V2.qmd<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results-report__DRAFT.qmd<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> scatterplot.jpg<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> spp-boxplot.png<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> stats-feb 2024.r<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj<br>
-&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> Wrangle.r</p>
-</div><div class="column" style="width:60%;">
+<div class="column" style="width:50%;">
+<div style="font-family: monospace;">
+<p><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>synthesis-project</strong><br>
+|–&nbsp; <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> clean-data.csv<br>
+|–&nbsp; <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> community data.csv<br>
+|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> graphing.r<br>
+|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> ordination-plot.tiff<br>
+|–&nbsp; <i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results report V2.pdf<br>
+|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> results report V2.qmd<br>
+|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> results_DRAFT.qmd<br>
+|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> scatterplot.jpg<br>
+|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> spp-boxplot.png<br>
+|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> stats-feb 2024.r<br>
+|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj<br>
+└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> Wrangle.r</p>
+</div>
+</div><div class="column" style="width:50%;">
 <section id="positives" class="level4">
 <h4 class="anchored" data-anchor-id="positives">Positives</h4>
 <ul>
@@ -462,27 +467,29 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <div class="columns">
-<div class="column" style="width:40%;">
-<p><i class="fa-solid fa-folder" aria-label="folder"></i> synthesis-project<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> data<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> clean-data.csv<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> community data.csv<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> graphs<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> ordination-plot.tiff<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> scatterplot.jpg<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> spp-boxplot.png<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> reports<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results report V2.pdf<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results report V2.qmd<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results-report__DRAFT.qmd<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> scripts<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> graphing.r<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> stats-feb 2024.r<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> Wrangle.r<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-text" aria-label="file-text"></i> LICENSE<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-text" aria-label="file-text"></i> README.md<br>
-&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj</p>
-</div><div class="column" style="width:60%;">
+<div class="column" style="width:50%;">
+<div style="font-family: monospace;">
+<p><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>synthesis-project</strong><br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>data</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> clean-data.csv<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> community data.csv<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>graphs</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> ordination-plot.tiff<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> scatterplot.jpg<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-image" aria-label="file-image"></i> spp-boxplot.png<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>reports</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results report V2.pdf<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> results report V2.qmd<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> results_DRAFT.qmd<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>scripts</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> graphing.r<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> stats-feb 2024.r<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> Wrangle.r<br>
+|–&nbsp; <i class="fa-solid fa-file-text" aria-label="file-text"></i> LICENSE<br>
+|–&nbsp; <i class="fa-solid fa-file-text" aria-label="file-text"></i> README.md<br>
+└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj</p>
+</div>
+</div><div class="column" style="width:50%;">
 <section id="positives-1" class="level4">
 <h4 class="anchored" data-anchor-id="positives-1">Positives</h4>
 <ul>
@@ -508,27 +515,29 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <div class="columns">
-<div class="column" style="width:45%;">
-<p><i class="fa-solid fa-folder" aria-label="folder"></i> synthesis-project<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> data<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> raw-community-comp-data.csv<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> tidy-community-data.csv<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> graphs<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> abundance boxplot.png<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> abundance scatterplot.jpg<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> community ordination.tiff<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> reports<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results report feb 14 2024.pdf<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results report feb 14 2024.qmd<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results report may xx 2024.qmd<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> scripts<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> data analysis.r<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> data tidying.r<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> graphing.r<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-text" aria-label="file-text"></i> LICENSE<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-text" aria-label="file-text"></i> README.md<br>
-&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj</p>
-</div><div class="column" style="width:55%;">
+<div class="column" style="width:50%;">
+<div style="font-family: monospace;">
+<p><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>synthesis-project</strong><br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>data</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> raw-community-comp.csv<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> tidy-community-comp.csv<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>graphs</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> abundance boxplot.png<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> abundance scatter.jpg<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-image" aria-label="file-image"></i> comm ordination.tiff<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>reports</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results feb 14 2024.pdf<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> results feb 14 2024.qmd<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> results may xx 2024.qmd<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>scripts</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> data analysis.r<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> data tidying.r<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> graphing.r<br>
+|–&nbsp; <i class="fa-solid fa-file-text" aria-label="file-text"></i> LICENSE<br>
+|–&nbsp; <i class="fa-solid fa-file-text" aria-label="file-text"></i> README.md<br>
+└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj</p>
+</div>
+</div><div class="column" style="width:50%;">
 <section id="positives-2" class="level4">
 <h4 class="anchored" data-anchor-id="positives-2">Positives</h4>
 <ul>
@@ -548,27 +557,29 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <div class="columns">
-<div class="column" style="width:45%;">
-<p><i class="fa-solid fa-folder" aria-label="folder"></i> synthesis-project<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> data<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> 00_raw-community-data.csv<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-csv" aria-label="file-csv"></i> 01_tidy-community-data.csv<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> graphs<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> 02_abundance boxplot.png<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> 02_abundance scatterplot.jpg<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-image" aria-label="file-image"></i> 02_community ordination.tiff<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> reports<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results_2024-02-14.pdf<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results_2024-02-14.qmd<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> results_2024-05-xx.qmd<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-folder" aria-label="folder"></i> scripts<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> 01_tidy.r<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|–&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> 02_graph.r<br>
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> 03_analyze.r<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-text" aria-label="file-text"></i> LICENSE<br>
-&nbsp;|–&nbsp;<i class="fa-solid fa-file-text" aria-label="file-text"></i> README.md<br>
-&nbsp; L&nbsp;&nbsp;<i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj</p>
-</div><div class="column" style="width:55%;">
+<div class="column" style="width:50%;">
+<div style="font-family: monospace;">
+<p><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>synthesis-project</strong><br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>data</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> 00_raw-community.csv<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-csv" aria-label="file-csv"></i> 01_tidy-community.csv<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>graphs</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> 02_abundance boxplot.png<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-image" aria-label="file-image"></i> 02_abundance scatter.jpg<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-image" aria-label="file-image"></i> 02_comm ordination.tiff<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>reports</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-pdf" aria-label="file-pdf"></i> results_2024-02-14.pdf<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> results_2024-02-14.qmd<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> results_2024-05-xx.qmd<br>
+|–&nbsp; <span style="color:#209ACA"><i class="fa-solid fa-folder" aria-label="folder"></i> <strong>scripts</strong></span><br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> 01_tidy.r<br>
+|&nbsp;&nbsp;&nbsp;|–&nbsp; <i class="fa-solid fa-file-code" aria-label="file-code"></i> 02_graph.r<br>
+|&nbsp;&nbsp;&nbsp;└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> 03_analyze.r<br>
+|–&nbsp; <i class="fa-solid fa-file-text" aria-label="file-text"></i> LICENSE<br>
+|–&nbsp; <i class="fa-solid fa-file-text" aria-label="file-text"></i> README.md<br>
+└ - <i class="fa-solid fa-file-code" aria-label="file-code"></i> synthesis-project.Rproj</p>
+</div>
+</div><div class="column" style="width:50%;">
 <section id="positives-3" class="level4">
 <h4 class="anchored" data-anchor-id="positives-3">Positives</h4>
 <ul>
