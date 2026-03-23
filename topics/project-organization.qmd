@@ -71,28 +71,32 @@ You may also want to use _multiple_ delimiters to indicate different things. For
 
 These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let's consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.
 
-:::panel-tabset
+Top-level sub-folders are colored <span style="color:#209ACA">**blue**</span> so that the high-level structure is easier to quickly scan.
+
+:::{.panel-tabset}
 ### Version 1
 
 ::::{.columns}
-:::{.column width="40%"}
+:::{.column width="50%"}
 
-{{< fa folder >}} synthesis-project  
-&nbsp;|--&nbsp;{{< fa file-csv >}} clean-data.csv  
-&nbsp;|--&nbsp;{{< fa file-csv >}} community data.csv  
-&nbsp;|--&nbsp;{{< fa file-code >}} graphing.r  
-&nbsp;|--&nbsp;{{< fa file-image >}} ordination-plot.tiff  
-&nbsp;|--&nbsp;{{< fa file-pdf >}} results report V2.pdf  
-&nbsp;|--&nbsp;{{< fa file-code >}} results report V2.qmd  
-&nbsp;|--&nbsp;{{< fa file-code >}} results-report__DRAFT.qmd  
-&nbsp;|--&nbsp;{{< fa file-image >}} scatterplot.jpg  
-&nbsp;|--&nbsp;{{< fa file-image >}} spp-boxplot.png  
-&nbsp;|--&nbsp;{{< fa file-code >}} stats-feb 2024.r  
-&nbsp;|--&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
-&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} Wrangle.r  
+<div style="font-family: monospace;">
+{{< fa folder >}} **synthesis-project**  
+|--&nbsp; {{< fa file-csv >}} clean-data.csv  
+|--&nbsp; {{< fa file-csv >}} community data.csv  
+|--&nbsp; {{< fa file-code >}} graphing.r  
+|--&nbsp; {{< fa file-image >}} ordination-plot.tiff  
+|--&nbsp; {{< fa file-pdf >}} results report V2.pdf  
+|--&nbsp; {{< fa file-code >}} results report V2.qmd  
+|--&nbsp; {{< fa file-code >}} results_DRAFT.qmd  
+|--&nbsp; {{< fa file-image >}} scatterplot.jpg  
+|--&nbsp; {{< fa file-image >}} spp-boxplot.png  
+|--&nbsp; {{< fa file-code >}} stats-feb 2024.r  
+|--&nbsp; {{< fa file-code >}} synthesis-project.Rproj  
+└ - {{< fa file-code >}} Wrangle.r  
+</div>
 
 :::
-:::{.column width="60%"}
+:::{.column width="50%"}
 
 #### Positives
 
@@ -110,30 +114,31 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 ### Version 2
 
 ::::{.columns}
-:::{.column width="40%"}
+:::{.column width="50%"}
 
-{{< fa folder >}} synthesis-project  
-&nbsp;|--&nbsp;{{< fa folder >}} data  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} clean-data.csv  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-csv >}} community data.csv  
-&nbsp;|--&nbsp;{{< fa folder >}} graphs  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} ordination-plot.tiff  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} scatterplot.jpg  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-image >}} spp-boxplot.png  
-&nbsp;|--&nbsp;{{< fa folder >}} reports  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-pdf >}} results report V2.pdf  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} results report V2.qmd  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} results-report__DRAFT.qmd  
-&nbsp;|--&nbsp;{{< fa folder >}} scripts  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} graphing.r  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} stats-feb 2024.r  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} Wrangle.r  
-&nbsp;|--&nbsp;{{< fa file-text >}} LICENSE  
-&nbsp;|--&nbsp;{{< fa file-text >}} README.md  
-&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
-
+<div style="font-family: monospace;">
+{{< fa folder >}} **synthesis-project**  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **data**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-csv >}} clean-data.csv  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-csv >}} community data.csv  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **graphs**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-image >}} ordination-plot.tiff  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-image >}} scatterplot.jpg  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-image >}} spp-boxplot.png  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **reports**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-pdf >}} results report V2.pdf  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} results report V2.qmd  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} results_DRAFT.qmd  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **scripts**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} graphing.r  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} stats-feb 2024.r  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} Wrangle.r  
+|--&nbsp; {{< fa file-text >}} LICENSE  
+|--&nbsp; {{< fa file-text >}} README.md  
+└ - {{< fa file-code >}} synthesis-project.Rproj  
+</div>
 :::
-:::{.column width="60%"}
+:::{.column width="50%"}
 
 #### Positives
 
@@ -155,30 +160,32 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 ### Version 3
 
 ::::{.columns}
-:::{.column width="45%"}
+:::{.column width="50%"}
 
-{{< fa folder >}} synthesis-project  
-&nbsp;|--&nbsp;{{< fa folder >}} data  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} raw-community-comp-data.csv  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-csv >}} tidy-community-data.csv  
-&nbsp;|--&nbsp;{{< fa folder >}} graphs  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} abundance boxplot.png  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} abundance scatterplot.jpg  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-image >}} community ordination.tiff  
-&nbsp;|--&nbsp;{{< fa folder >}} reports  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-pdf >}} results report feb 14 2024.pdf  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} results report feb 14 2024.qmd  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} results report may xx 2024.qmd  
-&nbsp;|--&nbsp;{{< fa folder >}} scripts  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} data analysis.r  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} data tidying.r  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} graphing.r  
-&nbsp;|--&nbsp;{{< fa file-text >}} LICENSE  
-&nbsp;|--&nbsp;{{< fa file-text >}} README.md  
-&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
+<div style="font-family: monospace;">
+{{< fa folder >}} **synthesis-project**  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **data**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-csv >}} raw-community-comp.csv  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-csv >}} tidy-community-comp.csv  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **graphs**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-image >}} abundance boxplot.png  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-image >}} abundance scatter.jpg  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-image >}} comm ordination.tiff  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **reports**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-pdf >}} results feb 14 2024.pdf  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} results feb 14 2024.qmd  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} results may xx 2024.qmd  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **scripts**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} data analysis.r  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} data tidying.r  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} graphing.r  
+|--&nbsp; {{< fa file-text >}} LICENSE  
+|--&nbsp; {{< fa file-text >}} README.md  
+└ - {{< fa file-code >}} synthesis-project.Rproj  
+</div>
 
 :::
-:::{.column width="55%"}
+:::{.column width="50%"}
 
 #### Positives
 
@@ -196,30 +203,31 @@ These tips are all worthwhile but they can feel a little abstract without a set 
 ### Version 4
 
 ::::{.columns}
-:::{.column width="45%"}
+:::{.column width="50%"}
 
-{{< fa folder >}} synthesis-project  
-&nbsp;|--&nbsp;{{< fa folder >}} data  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-csv >}} 00_raw-community-data.csv  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-csv >}} 01_tidy-community-data.csv  
-&nbsp;|--&nbsp;{{< fa folder >}} graphs  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} 02_abundance boxplot.png  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-image >}} 02_abundance scatterplot.jpg  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-image >}} 02_community ordination.tiff  
-&nbsp;|--&nbsp;{{< fa folder >}} reports  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-pdf >}} results_2024-02-14.pdf  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} results_2024-02-14.qmd  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} results_2024-05-xx.qmd  
-&nbsp;|--&nbsp;{{< fa folder >}} scripts  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} 01_tidy.r  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;|--&nbsp;{{< fa file-code >}} 02_graph.r  
-&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} 03_analyze.r  
-&nbsp;|--&nbsp;{{< fa file-text >}} LICENSE  
-&nbsp;|--&nbsp;{{< fa file-text >}} README.md  
-&nbsp; L&nbsp;&nbsp;{{< fa file-code >}} synthesis-project.Rproj  
-
+<div style="font-family: monospace;">
+{{< fa folder >}} **synthesis-project**  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **data**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-csv >}} 00_raw-community.csv  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-csv >}} 01_tidy-community.csv  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **graphs**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-image >}} 02_abundance boxplot.png  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-image >}} 02_abundance scatter.jpg  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-image >}} 02_comm ordination.tiff  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **reports**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-pdf >}} results_2024-02-14.pdf  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} results_2024-02-14.qmd  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} results_2024-05-xx.qmd  
+|--&nbsp; <span style="color:#209ACA">{{< fa folder >}} **scripts**</span>  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 01_tidy.r  
+|&nbsp;&nbsp;&nbsp;|--&nbsp; {{< fa file-code >}} 02_graph.r  
+|&nbsp;&nbsp;&nbsp;└ - {{< fa file-code >}} 03_analyze.r  
+|--&nbsp; {{< fa file-text >}} LICENSE  
+|--&nbsp; {{< fa file-text >}} README.md  
+└ - {{< fa file-code >}} synthesis-project.Rproj  
+</div>
 :::
-:::{.column width="55%"}
+:::{.column width="50%"}
 
 #### Positives
 
