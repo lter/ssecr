@@ -9,7 +9,13 @@ Check back later
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
+On your own, consider the following:
 
+- What's one thing your group is doing really well to ensure all team members can participate in meetings and project work?
+- What's one area where your team has room to improve its inclusive facilitation practices?
+- What could you personally be doing better to ensure equal access to participation?
+
+Take notes on your thoughts because we'll discuss more in small groups and as a class when we cover this module!
 
 :::
 
