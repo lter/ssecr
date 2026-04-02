@@ -50,6 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -447,7 +450,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction"><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> [Overview Under Construction]</a></li>
   <li><a href="#reproducibility-best-practices-summary" id="toc-reproducibility-best-practices-summary" class="nav-link" data-scroll-target="#reproducibility-best-practices-summary">Reproducibility Best Practices Summary</a></li>
-  <li><a href="#lego-activity" id="toc-lego-activity" class="nav-link" data-scroll-target="#lego-activity">Lego Activity</a></li>
   <li><a href="#project-documentation" id="toc-project-documentation" class="nav-link" data-scroll-target="#project-documentation">Project Documentation</a>
   <ul class="collapse">
   <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
@@ -536,18 +538,59 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 <p>Making sure that your project is reproducible requires a handful of steps before you begin, some actions during the life of the project, and then a few finishing touches when the project nears its conclusion. The following diagram may prove helpful as a coarse roadmap for how these steps might be followed in a general project setting.</p>
-<p align="center">
-<img src="topics/images/image_synthesis-project-steps.png" alt="General steps for creating and maintaining a reproducible project. Steps follow the major headings of this section from starting on the 'right foot' with well thought out documentation, flowing through to consistent maintenance, and ending with some of the decisions needed for publication" width="90%">
-</p>
-</section>
-<section id="lego-activity" class="level2">
-<h2 class="anchored" data-anchor-id="lego-activity">Lego Activity</h2>
-<p>Before we dive further into the world of reproducibility for synthesis projects, we thought it would be fun (and informative!) to begin with an activity that is a useful analogy for the importance of some of the concepts we’ll cover today. The LEGO activity was designed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a> at the University of Glasgow. The full materials can be accessed <a href="https://eprints.gla.ac.uk/196477/">here</a>.</p>
+<p><a href="topics/images/image_synthesis-project-steps.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="topics/images/image_synthesis-project-steps.png" class="img-fluid" alt="General steps for creating and maintaining a reproducible project. Steps follow the major headings of this section from starting on the 'right foot' with well thought out documentation, flowing through to consistent maintenance, and ending with some of the decisions needed for publication"></a></p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: LEGO Reproducibility Demonstration
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The LEGO activity was designed by <a href="https://orcid.org/0000-0002-1936-3499">Mary Donaldson</a> and <a href="https://orcid.org/0000-0001-8950-8422">Matt Mahon</a> at the University of Glasgow. The full materials can be accessed <a href="https://eprints.gla.ac.uk/196477/">here</a>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Part 1 - Creation Phase</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Part 2 - Replication Phase</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Part 3 - Discussion</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>In small groups,</p>
+<ol type="1">
+<li>Build a small house / building / structure of your choice using the provided LEGO blocks
+<ul>
+<li>Feel free to make this as complex and detailed as you would like and accessorize as desired</li>
+</ul></li>
+<li>Keep notes on how to replicate the build using the template provided</li>
+<li>Let an instructor know when you’re done and they will take a picture of the finished build</li>
+<li>Disassemble build and prepare setup for the replication phase</li>
+</ol>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>In the same small groups,</p>
+<ol type="1">
+<li>Using the resources provided by the previous group, attempt to replicate their build</li>
+<li>Consider which information was helpful and what additional information you would have found useful in attempting to replicate the previous build</li>
+<li>Let an instructor know when you’re done and they will take a picture of the finished build</li>
+</ol>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>As a whole class, let’s discuss the following:</p>
+<ul>
+<li>Did you find this a simple way to document your process?</li>
+<li>Was there anything you found difficult to capture?</li>
+<li>Did those replicating the builds find it straightforward to follow?</li>
+<li>Did you encounter any ambiguity in the instructions?</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="project-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="project-documentation">Project Documentation</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -556,7 +599,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -577,21 +620,21 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </ol>
 <p>Your project’s README becomes the ‘landing page’ for those navigating your repository and makes it easy for team members to know where documentation should go (in the README!). You may also choose to create a README file for some of the sub-folders of your project. This can be particularly valuable for your “data” folder(s) as it is an easy place to store data source/provenance information that might be overwhelming to include in the project-level README file.</p>
 <p>Finally, you should choose a place to keep track of ideas, conversations, and decisions about the project. While you can take notes on these topics on a piece of paper, adopting a digital equivalent is often helpful because you can much more easily search a lengthy document when it is machine readable. We will discuss GitHub elsewhere in the course, but GitHub offers something called “issues” that can be a really effective place to record some of this information.</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Activity: Create a README
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Create a README
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Create a draft README for one of your research projects. If all of your projects already have READMEs (very impressive!) revisit the one with the least detail.</p>
 <ul>
-<li>Include a 2-4 sentence description of the project objectives / hypotheses</li>
+<li>Add a 2-4 sentence description of the project objectives / hypotheses</li>
 <li>Identify and describe (in 1 sentence) the primary sub-folders in the project</li>
-<li>If your chosen project includes scripts, summarize each and indicate which script(s) they depend on and which depend on them</li>
+<li>If your chosen project includes scripts, <em>briefly</em> summarize each and indicate which script(s) they depend on and which depend on them</li>
 </ul>
 <p>Feel free to put your personal flair on the README! If there is other information you feel would be relevant to an outsider looking at your project, you can definitely add that.</p>
 </div>
@@ -601,7 +644,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="project-organization" class="level2">
 <h2 class="anchored" data-anchor-id="project-organization">Project Organization</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -610,10 +653,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
+<li><u>Explain</u> strengths of some common organization strategies</li>
 <li><u>Implement</u> reproducible project organization strategies</li>
 </ul>
 </div>
@@ -637,28 +681,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><strong>Craft informative file names</strong></li>
 </ol>
 <p>An ideal file name should give some information about the file’s contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should <em>be inherently meaningful</em>. This lets you change folder names without fear that files would also need to be re-named.</p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Discussion: Project Structure
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>With a partner discuss (some of) the following questions:</p>
-<ul>
-<li>How do you typically organize your projects’ files?</li>
-<li>What benefits do you see of your current approach?</li>
-<li>What–if any–limitations to your system have you experienced?</li>
-<li>Do you think your structure would work well in a team environment?
-<ul>
-<li>If not, what changes might you make to better fit that context?</li>
-</ul></li>
-</ul>
-</div>
-</div>
 <section id="naming-tips" class="level4">
 <h4 class="anchored" data-anchor-id="naming-tips">Naming Tips</h4>
 <p>We’ve brought up the importance of naming several times already but haven’t actually discussed the specifics of what makes a “good” name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.</p>
@@ -686,9 +708,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>These tips are all worthwhile but they can feel a little abstract without a set of files firmly in mind. Let’s consider an example synthesis project where we incrementally change the project structure to follow increasing more of the guidelines we suggest above.</p>
 <p>Top-level sub-folders are colored <span style="color:#209ACA"><strong>blue</strong></span> so that the high-level structure is easier to quickly scan.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Version 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Version 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Version 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Version 4</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Version 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Version 2</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Version 3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Version 4</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="font-family: monospace;">
@@ -724,7 +746,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="font-family: monospace;">
@@ -772,7 +794,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="font-family: monospace;">
@@ -814,7 +836,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <div class="columns">
 <div class="column" style="width:50%;">
 <div style="font-family: monospace;">
@@ -877,13 +899,54 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="quarantine-external-outputs" class="level4">
 <h4 class="anchored" data-anchor-id="quarantine-external-outputs">Quarantine External Outputs</h4>
 <p>This can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Project Structure Conversation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Part 1 - Reflect</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Part 2 - Discuss</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>On your own, reflect on the following questions:</p>
+<ul>
+<li>What strategies do you currently use to keep files for a particular project organized?</li>
+<li>Why did you adopt those strategies?</li>
+<li>What do you think are particular strengths of your current method?</li>
+<li>What limitations do you experience–even when working alone–because of your organization method?</li>
+<li><u>Do you think your structure would work well in a team environment?</u>
+<ul>
+<li>If not, what changes might you make to better fit that context?</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>In small groups:</p>
+<ol type="1">
+<li>Take a few minutes and give an overview of your organization strategy to your groupmates
+<ul>
+<li>Note that if it takes longer than that, it may be a sign that your organization method is too complicated and thus brittle</li>
+</ul></li>
+<li>What strengths do you see in others’ methods that you would like to adopt for yourself?</li>
+<li>What choices feel like limitations or are confusing to you?</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
 <section id="responsibly-using-generative-ai" class="level2">
 <h2 class="anchored" data-anchor-id="responsibly-using-generative-ai">Responsibly Using Generative AI</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -892,7 +955,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <p><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> Under construction; check back later</p>
@@ -909,12 +972,12 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="how-you-can-and-cannot-use-ai" class="level3">
 <h3 class="anchored" data-anchor-id="how-you-can-and-cannot-use-ai">How You Can and Cannot Use AI</h3>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">What AI <em>Can</em> Do</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">What AI <em>Cannot</em> Do</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">What AI <em>Can</em> Do</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">What AI <em>Cannot</em> Do</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> Under construction</p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> Under construction</p>
 </div>
 </div>
@@ -1400,6 +1463,38 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
