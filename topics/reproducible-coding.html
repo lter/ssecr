@@ -363,6 +363,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#script-organization" id="toc-script-organization" class="nav-link" data-scroll-target="#script-organization">Script Organization</a></li>
   <li><a href="#file-paths" id="toc-file-paths" class="nav-link" data-scroll-target="#file-paths">File Paths</a></li>
   <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style</a></li>
+  <li><a href="#never-edit-raw-data" id="toc-never-edit-raw-data" class="nav-link" data-scroll-target="#never-edit-raw-data"><em>Never</em> Edit Raw Data</a></li>
+  <li><a href="#separate-raw-and-processed-data" id="toc-separate-raw-and-processed-data" class="nav-link" data-scroll-target="#separate-raw-and-processed-data">Separate Raw and Processed Data</a></li>
+  <li><a href="#quarantine-external-outputs" id="toc-quarantine-external-outputs" class="nav-link" data-scroll-target="#quarantine-external-outputs">Quarantine External Outputs</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -536,6 +539,18 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <p>Don’t be afraid of empty space!</p>
 </blockquote>
 <p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
+</section>
+<section id="never-edit-raw-data" class="level3">
+<h3 class="anchored" data-anchor-id="never-edit-raw-data"><em>Never</em> Edit Raw Data</h3>
+<p><strong>You should <em>never</em> edit raw data directly.</strong> If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
+</section>
+<section id="separate-raw-and-processed-data" class="level3">
+<h3 class="anchored" data-anchor-id="separate-raw-and-processed-data">Separate Raw and Processed Data</h3>
+<p>In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.</p>
+</section>
+<section id="quarantine-external-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="quarantine-external-outputs">Quarantine External Outputs</h3>
+<p>This can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)</p>
 
 
 </section>

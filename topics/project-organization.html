@@ -323,9 +323,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#project-organization" id="toc-project-organization" class="nav-link active" data-scroll-target="#project-organization">Project Organization</a>
   <ul class="collapse">
-  <li><a href="#fundamental-structure" id="toc-fundamental-structure" class="nav-link" data-scroll-target="#fundamental-structure">Fundamental Structure</a></li>
+  <li><a href="#the-project-folder" id="toc-the-project-folder" class="nav-link" data-scroll-target="#the-project-folder"><u>The</u> Project Folder</a></li>
+  <li><a href="#smart-sub-folders" id="toc-smart-sub-folders" class="nav-link" data-scroll-target="#smart-sub-folders">Smart Sub-Folders</a></li>
+  <li><a href="#context-rich-yet-brief-names" id="toc-context-rich-yet-brief-names" class="nav-link" data-scroll-target="#context-rich-yet-brief-names">Context-Rich Yet Brief Names</a></li>
+  <li><a href="#human-machine-agreement" id="toc-human-machine-agreement" class="nav-link" data-scroll-target="#human-machine-agreement">Human-Machine Agreement</a></li>
+  <li><a href="#no-special-characters" id="toc-no-special-characters" class="nav-link" data-scroll-target="#no-special-characters">No Special Characters</a></li>
+  <li><a href="#consistent-delimiters" id="toc-consistent-delimiters" class="nav-link" data-scroll-target="#consistent-delimiters">Consistent Delimiters</a></li>
+  <li><a href="#consider-slugs" id="toc-consider-slugs" class="nav-link" data-scroll-target="#consider-slugs">Consider Slugs</a></li>
   <li><a href="#organizing-example" id="toc-organizing-example" class="nav-link" data-scroll-target="#organizing-example">Organizing Example</a></li>
-  <li><a href="#organization-recommendations" id="toc-organization-recommendations" class="nav-link" data-scroll-target="#organization-recommendations">Organization Recommendations</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -361,45 +366,44 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<section id="fundamental-structure" class="level3">
-<h3 class="anchored" data-anchor-id="fundamental-structure">Fundamental Structure</h3>
+<p>“Organization” is a <em>big</em> topic but can have serious ramifications for how well/easily you can work on a big, collaborative, synthesis project. To make this more manageable, let’s tackle project organization from the ‘top’ and work our way down to more granular facets of organization.</p>
 <p><img src="topics/images/comic_xkcd-folders.png" alt="One stick figure looks in despair at another's computer where many badly-named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right"></p>
-<p><u>The simplest way of beginning a reproducible project is adopting a good file organization system</u>. There is no single “best” way of organizing your projects’ files as long as you are <em>consistent</em>. Consistency will make your system–whatever that consists of–understandable to others.</p>
-<p>Here are some rules to keep in mind as you decide how to organize your project:</p>
-<ol type="1">
-<li><strong>Use one folder per project</strong></li>
-</ol>
-<p>Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.</p>
+<p><u>The simplest way of keeping a reproducible project organized is using folders and file names to effectively keep different categories of content separate</u>. There is no single “best” way of doing this so long as you are <em>consistent</em>. Consistency will make your system–whatever that consists of–understandable to others.</p>
+<p>Let’s consider some tenets of good organization that you might consider adopting!</p>
+<section id="the-project-folder" class="level3">
+<h3 class="anchored" data-anchor-id="the-project-folder"><u>The</u> Project Folder</h3>
+<p><strong>Use one folder per project!</strong> Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.</p>
 <p>Note that <u>how you define “project” may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.</p>
-<ol start="2" type="1">
-<li><strong>Organize content with sub-folders</strong></li>
-</ol>
-<p>Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don’t feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.</p>
-<ol start="3" type="1">
-<li><strong>Craft informative file names</strong></li>
-</ol>
-<p>An ideal file name should give some information about the file’s contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should <em>be inherently meaningful</em>. This lets you change folder names without fear that files would also need to be re-named.</p>
-<section id="naming-tips" class="level4">
-<h4 class="anchored" data-anchor-id="naming-tips">Naming Tips</h4>
-<p>We’ve brought up the importance of naming several times already but haven’t actually discussed the specifics of what makes a “good” name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.</p>
-<blockquote class="blockquote">
-<p>Names should be sorted by a computer and human in the same way</p>
-</blockquote>
-<p>Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow <em>should be</em> run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to “zero pad” numbers so that all numbers have the same number of digits (e.g., “01” and “10” vs.&nbsp;“1” and “10”).</p>
-<blockquote class="blockquote">
-<p>Names should avoid spaces and special characters</p>
-</blockquote>
-<p>Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs.&nbsp;uppercase).</p>
-<blockquote class="blockquote">
-<p>Names should use consistent delimiters</p>
-</blockquote>
-<p><strong>Delimiters</strong> are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder “coral_reef_data” which would be more readable than “coralreefdata”.</p>
-<p>You may also want to use <em>multiple</em> delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.</p>
-<blockquote class="blockquote">
-<p>Names should use “slugs” to connect inputs and outputs</p>
-</blockquote>
-<p><strong>Slugs</strong> are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named “02_tidy.R” and all of the data files it creates are named “02_…”. Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.</p>
 </section>
+<section id="smart-sub-folders" class="level3">
+<h3 class="anchored" data-anchor-id="smart-sub-folders">Smart Sub-Folders</h3>
+<p><strong>Organize content with sub-folders but <em>keep it reasonable</em>.</strong> Putting files that share a purpose, source, or theme into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization, because the sub-folder names are themselves partial documentation for their purpose!</p>
+<p>However, <em>don’t overdo it!</em> Making an intricate maze of sub-folders is just as bad for collaborative settings as having everything loose in the top-level project folder. Just one level of sub-folders is enough for most projects. If you find yourself tempted to use deeply nested sub-folders, consider whether you’ve defined the project correctly–it could be a sign that there are really several separate, albeit related, projects at play.</p>
+</section>
+<section id="context-rich-yet-brief-names" class="level3">
+<h3 class="anchored" data-anchor-id="context-rich-yet-brief-names">Context-Rich Yet Brief Names</h3>
+<p><strong>Balance information-density with brevity.</strong> An ideal folder/file name should give some information about the file’s contents, purpose, and relation to other project files while still being fairly short. These are definitely conflicting perogatives but trying to ‘thread the needle’ will yield better fiile names.</p>
+<p>In your search for brevity, <strong>avoid confusing acronyms or abbreviations!</strong> It can be tempting to make your file names short by adopting bizarre abbreviations but this results in a worse (i.e., less informative) outcome than just having file names that are slightly too long.</p>
+<p>Keep in mind too that if your folder names and order are informative, some of the information burden can be lifted from the files by themselves. For example, if you have a folder called “reports”, you could exclude that word from all the report files contained within the folder and instead emphasize report topic or date of creation.</p>
+</section>
+<section id="human-machine-agreement" class="level3">
+<h3 class="anchored" data-anchor-id="human-machine-agreement">Human-Machine Agreement</h3>
+<p><strong>File names should be sorted by a computer and human in the same way.</strong> Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow <em>should be</em> run (e.g., “analysis.r” might be the top script in your GitHub repo but is unlikely to be the first step of your workflow).</p>
+<p>For scripts, if you add a number to the start of the file indicating its order in the workflow, the computer will sort the files in an order that makes sense for humans reviewing the project. You may also want to “zero pad” numbers so that all numbers have the same number of digits and sort correctly (e.g., “01” and “10” vs.&nbsp;“1” and “10”).</p>
+</section>
+<section id="no-special-characters" class="level3">
+<h3 class="anchored" data-anchor-id="no-special-characters">No Special Characters</h3>
+<p><strong>Avoid spaces and special characters.</strong> Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores (<code>_</code>) or hyphens (<code>-</code>) to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs.&nbsp;uppercase).</p>
+</section>
+<section id="consistent-delimiters" class="level3">
+<h3 class="anchored" data-anchor-id="consistent-delimiters">Consistent Delimiters</h3>
+<p><strong>Be consistent with which delimiters you use and when.</strong> “Delimiter” are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly-used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder “coral_reef_data” which would be more readable than “coralreefdata”.</p>
+<p>You may also want to use <em>multiple</em> delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words. For example, “data_coral-reef” instead of “data_coral_reef”.</p>
+</section>
+<section id="consider-slugs" class="level3">
+<h3 class="anchored" data-anchor-id="consider-slugs">Consider Slugs</h3>
+<p><strong>Use “slugs” to connect scripts with their outputs.</strong> “Slugs” are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Weird or unlikely outputs are then easily traced to the scripts that created them because of their shared slug.</p>
+<p>For example, all outputs of a script named “02_tidy.r” should start with “02_”.</p>
 </section>
 <section id="organizing-example" class="level3">
 <h3 class="anchored" data-anchor-id="organizing-example">Organizing Example</h3>
@@ -582,21 +586,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-</section>
-<section id="organization-recommendations" class="level3">
-<h3 class="anchored" data-anchor-id="organization-recommendations">Organization Recommendations</h3>
-<p>If you integrate any of the concepts we’ve covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you’d like additional recommendations we’ve assembled a non-exhaustive set of <em>additional</em> “best practices” that you may find helpful.</p>
-<section id="never-edit-raw-data" class="level4">
-<h4 class="anchored" data-anchor-id="never-edit-raw-data">Never Edit Raw Data</h4>
-<p>First and foremost, it is critical that you <u><strong><em>never</em></strong></u> edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
-</section>
-<section id="separate-raw-and-processed-data" class="level4">
-<h4 class="anchored" data-anchor-id="separate-raw-and-processed-data">Separate Raw and Processed Data</h4>
-<p>In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.</p>
-</section>
-<section id="quarantine-external-outputs" class="level4">
-<h4 class="anchored" data-anchor-id="quarantine-external-outputs">Quarantine External Outputs</h4>
-<p>This can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -640,7 +629,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 
 
-</section>
 </section>
 </section>
 
