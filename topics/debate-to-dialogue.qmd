@@ -10,7 +10,9 @@ After completing this topic you will be able to:
 
 :::
 
-Dialogue is a collaborative effort to understand and learn from each other. Debate, on the other hand, is an oppositional effort to convince the other side that you are right. Inclusive facilitation aims to support dialogue and skillful discussion. Dialogue allows groups to recognize the limits on their own and others' individual perspectives and to strive for more coherent thought. Dialogue becomes a container for collective thinking and exploration - a process that can take teams in directions not imagined or planned. In dialogue, all views are treated as equally valid, and different views are presented as a means toward discovering a new view. Participants listen to understand one another, not to win. Complex issues are explored and shared meaning is created. When it comes time to make a decision, skillful discussion is required. Both skillful discussion and dialogue are critical to the collaborative process, and the more artfully a group can move between these two forms of discourse (and out of less productive debate and polite discussion) according to what is needed, the more effective the group will be.
+Dialogue is a collaborative effort to understand and learn from each other. Debate, on the other hand, is an oppositional effort to convince the other side that you are right. Inclusive facilitation aims to support dialogue and skillful discussion. Dialogue allows groups to recognize the limits on their own and others' individual perspectives and to strive for more coherent thought. Dialogue becomes a container for collective thinking and exploration--a process that can take teams in directions not imagined or planned. 
+
+In dialogue, all views are treated as equally valid, and different views are presented as a means toward discovering a new view. Participants listen to understand one another, not to win. Complex issues are explored and shared meaning is created. When it comes time to make a decision, skillful discussion is required. Both skillful discussion and dialogue are critical to the collaborative process, and the more artfully a group can move between these two forms of discourse (and out of less productive debate and polite discussion) according to what is needed, the more effective the group will be.
 
 :::{.panel-tabset}
 
@@ -61,15 +63,11 @@ Based on over 30 years of observation and study of face-to-face communication in
 - **Oppose** - Challenge or disagree with the idea, action, or suggested direction
 - **Bystand** - Notice and articulate what's happening in the conversation, add a neutral perspective
 
-<p align="center">
-<img src="topics/images/figure_four-player-model.jpg" alt="Figure of four modes of communication, arrayed on two axes - Move versus Oppose on the axis of Advocacy and Follow vs. Bystand on the axis of Inquiry." width="95%"/>
-</p>
+![](topics/images/figure_four-player-model.jpg){fig-alt="Figure of four modes of communication, arrayed on two axes - Move versus Oppose on the axis of Advocacy and Follow vs. Bystand on the axis of Inquiry" .lightbox}
 
 Each action in a group conversation can be coded into one of these four action modes. Most of us have one of these modes that we feel most comfortable in and tend to default to in a group. The most effective conversations involve good listening and the skillful use of all four modes. Common "stuck" patterns emerge when groups are not deploying all four actions.
 
-<p align="center">
-<img src="topics/images/figure_stuck-communication-patterns.jpg" alt="Four common patterns of 'stuck' communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition." width="95%"/>
-</p>
+![](topics/images/figure_stuck-communication-patterns.jpg){fig-alt="Four common patterns of 'stuck' communication: Serial Moves, Polite Discussion, Point-Counterpoint Debate, and Covert Opposition" .lightbox}
 
 :::{.panel-tabset}
 #### Serial Moves

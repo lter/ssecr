@@ -9,6 +9,29 @@ After completing this topic you will be able to:
 
 :::
 
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Inclusivity Rapid Assessment
+
+:::{.panel-tabset}
+### Part 1 - Pair Discussion
+
+In pairs (from different teams):
+
+- Share what's working, what could be improved (2 mins each)
+- Compare notes and share suggestions for things to try
+
+### Part 2 - Whole-Class Discussion
+
+As a whole class, let's discuss your answers to the following questions:
+
+- What are some common practices that are working well?
+- Where is our learning edge?
+    - What are some common areas you identified where we have room to improve our inclusive facilitation practices? 
+- Please share an "a-ha" moment or idea from your partner that you want to try in your group?
+
+:::
+::::
+
 Creating the conditions for all team members to feel welcome and able to fully participate advances diversity, equity, and inclusion in science. As we learned in the [Team Science Practices module](https://lter.github.io/ssecr/mod_team-sci.html) it also has instrumental benefits, as diverse teams have been shown to be more productive and to produce higher impact results than less diverse teams. In part, that productivity can be attributed to the ability of the group to elicit and work with novel ideas and approaches, allowing more innovative analysis and problem solving.
 
 Facilitating equitable participation also helps to unleash the full capacity of a team to get things done. Too often, potential contributors opt out of offering their skills and talents to a collaborative endeavor because they feel undervalued or unclear on how to contribute. It might not feel worth their time to try to assert an idea or opinion when it doesn't feel welcome. A process that creates opportunities for everyone to engage and feel included can help avoid this situation.

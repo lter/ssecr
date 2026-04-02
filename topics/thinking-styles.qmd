@@ -9,6 +9,7 @@ After completing this topic you will be able to:
 - <u>Identify</u> one activity that privileges each thinking style
 
 :::
+
 People have different thinking preferences which influence what they expect and enjoy in group processes. There are many different frameworks for categorizing these facets but we'll use one based off of Ned Herrmann's Whole Brain Model.
 
 ::::{.callout-warning icon="false"}

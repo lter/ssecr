@@ -9,11 +9,9 @@ Check back later
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+
 
 :::
-
-{{< include activities/inclusivity-rapid-assessment.qmd >}}
 
 {{< include topics/participation-benefits.qmd >}}
 
@@ -22,9 +20,6 @@ Check back later
 {{< include topics/thinking-styles.qmd >}}
 
 {{< include topics/participation-access.qmd >}}
-
-
-
 
 {{< include topics/data-repositories.qmd >}}
 
