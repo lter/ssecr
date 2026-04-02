@@ -10,49 +10,55 @@ After completing this topic you will be able to:
 
 :::
 
-### Fundamental Structure
+"Organization" is a _big_ topic but can have serious ramifications for how well/easily you can work on a big, collaborative, synthesis project. To make this more manageable, let's tackle project organization from the 'top' and work our way down to more granular facets of organization.
 
 <img src="topics/images/comic_xkcd-folders.png" alt="One stick figure looks in despair at another's computer where many badly-named files are present. At the bottom text reads 'protip: never look in someone else's documents folder'" width="25%" align="right">
 
-<u>The simplest way of beginning a reproducible project is adopting a good file organization system</u>. There is no single "best" way of organizing your projects' files as long as you are _consistent_. Consistency will make your system--whatever that consists of--understandable to others.
+<u>The simplest way of keeping a reproducible project organized is using folders and file names to effectively keep different categories of content separate</u>. There is no single "best" way of doing this so long as you are _consistent_. Consistency will make your system--whatever that consists of--understandable to others.
 
-Here are some rules to keep in mind as you decide how to organize your project:
+Let's consider some tenets of good organization that you might consider adopting!
 
-1. **Use one folder per project**
+### <u>The</u> Project Folder
 
-Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.
+**Use one folder per project!** Keeping all inputs, outputs, and documentation in a single folder makes it easier to collaborate and share all project materials. Also, most programming applications (RStudio, VS Code, etc.) work best when all needed files are in the same folder.
 
 Note that <u>how you define "project" may affect the number of folders you need</u>! Some synthesis projects may separate data harmonization into its own project while for others that same effort might not warrant being considered as a separate project. Similarly, you may want to make a separate folder for each manuscript your group plans on writing so that the code for each paper is kept separate.
 
-2. **Organize content with sub-folders**
+### Smart Sub-Folders
 
-Putting files that share a purpose or source into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization. Don't feel like you need to use an intricate web of sub-folders either! Just one level of sub-folders is enough for many projects.
+**Organize content with sub-folders but _keep it reasonable_.** Putting files that share a purpose, source, or theme into logical sub-folders is a great idea! This makes it easy to figure out where to put new content and reduces the effort of documenting project organization, because the sub-folder names are themselves partial documentation for their purpose!
 
-3. **Craft informative file names**
+However, _don't overdo it!_ Making an intricate maze of sub-folders is just as bad for collaborative settings as having everything loose in the top-level project folder. Just one level of sub-folders is enough for most projects. If you find yourself tempted to use deeply nested sub-folders, consider whether you've defined the project correctly--it could be a sign that there are really several separate, albeit related, projects at play.
 
-An ideal file name should give some information about the file's contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should _be inherently meaningful_. This lets you change folder names without fear that files would also need to be re-named.
+### Context-Rich Yet Brief Names
 
-#### Naming Tips
+**Balance information-density with brevity.** An ideal folder/file name should give some information about the file's contents, purpose, and relation to other project files while still being fairly short. These are definitely conflicting perogatives but trying to 'thread the needle' will yield better fiile names.
 
-We've brought up the importance of naming several times already but haven't actually discussed the specifics of what makes a "good" name for a file or folder. Consider the adopting some (or all!) of the file name tips we outline below.
+In your search for brevity, **avoid confusing acronyms or abbreviations!** It can be tempting to make your file names short by adopting bizarre abbreviations but this results in a worse (i.e., less informative) outcome than just having file names that are slightly too long.
 
-> Names should be sorted by a computer and human in the same way
+Keep in mind too that if your folder names and order are informative, some of the information burden can be lifted from the files by themselves. For example, if you have a folder called "reports", you could exclude that word from all the report files contained within the folder and instead emphasize report topic or date of creation.
 
-Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow _should be_ run. If you add step numbers to the start of each file name the computer will sort the files in an order that makes sense for the project. You may also want to "zero pad" numbers so that all numbers have the same number of digits (e.g., "01" and "10" vs. "1" and "10").
+### Human-Machine Agreement
 
-> Names should avoid spaces and special characters
+**File names should be sorted by a computer and human in the same way.** Computers sort files/folders alphabetically and numerically. Sorting alphabetically rarely matches the order scripts in a workflow _should be_ run (e.g., "analysis.r" might be the top script in your GitHub repo but is unlikely to be the first step of your workflow).
 
-Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores or hyphens to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs. uppercase).
+For scripts, if you add a number to the start of the file indicating its order in the workflow, the computer will sort the files in an order that makes sense for humans reviewing the project. You may also want to "zero pad" numbers so that all numbers have the same number of digits and sort correctly (e.g., "01" and "10" vs. "1" and "10").
 
-> Names should use consistent delimiters
+### No Special Characters
 
-**Delimiters** are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder "coral_reef_data" which would be more readable than "coralreefdata".
+**Avoid spaces and special characters.** Spaces and special characters (e.g., é, ü, etc.) cause errors in some computers (particularly Windows operating systems). You can replace spaces with underscores (`_`) or hyphens (`-`) to increase machine readability. Avoid using special characters as much as possible. You should also be consistent about casing (i.e., lower vs. uppercase).
 
-You may also want to use _multiple_ delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words.
+### Consistent Delimiters
 
-> Names should use "slugs" to connect inputs and outputs
+**Be consistent with which delimiters you use and when.** "Delimiter" are characters used to separate pieces of information in otherwise plain text. Underscores are a commonly-used example of this. If a file/folder name has multiple pieces of information, you can separate these with a delimiter to make them more readable to people and machines. For example, you could name a folder "coral_reef_data" which would be more readable than "coralreefdata".
 
-**Slugs** are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Maybe a script is named "02_tidy.R" and all of the data files it creates are named "02_...". Weird or unlikely outputs are easily traced to the scripts that created them because of their shared slug.
+You may also want to use _multiple_ delimiters to indicate different things. For instance, you could use underscores to differentiate categories and then use hyphens instead of spaces between words. For example, "data_coral-reef" instead of "data_coral_reef".
+
+### Consider Slugs
+
+**Use "slugs" to connect scripts with their outputs.** "Slugs" are human-readable, unique pieces of file names that are shared between files and the outputs that they create. Weird or unlikely outputs are then easily traced to the scripts that created them because of their shared slug.
+
+For example, all outputs of a script named "02_tidy.r" should start with "02_". 
 
 ### Organizing Example
 
@@ -232,22 +238,6 @@ Top-level sub-folders are colored <span style="color:#209ACA">**blue**</span> so
 ::::
 
 :::
-
-### Organization Recommendations
-
-If you integrate any of the concepts we've covered above you will find the reproducibility and transparency of your project will greatly increase. However, if you'd like additional recommendations we've assembled a non-exhaustive set of _additional_ "best practices" that you may find helpful.
-
-#### Never Edit Raw Data
-
-First and foremost, it is critical that you <u>**_never_**</u> edit the raw data directly. If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a _separate_ file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that "looks" like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the 'real' raw data personally.
-
-#### Separate Raw and Processed Data
-
-In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project's scripts; even if you choose not to adopt a file naming convention that would make this clear.
-
-#### Quarantine External Outputs
-
-This can sound harsh, but it is often a good idea to "quarantine" outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we've described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Project Structure Conversation
