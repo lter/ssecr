@@ -85,6 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -363,9 +366,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#script-organization" id="toc-script-organization" class="nav-link" data-scroll-target="#script-organization">Script Organization</a></li>
   <li><a href="#file-paths" id="toc-file-paths" class="nav-link" data-scroll-target="#file-paths">File Paths</a></li>
   <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style</a></li>
-  <li><a href="#never-edit-raw-data" id="toc-never-edit-raw-data" class="nav-link" data-scroll-target="#never-edit-raw-data"><em>Never</em> Edit Raw Data</a></li>
-  <li><a href="#separate-raw-and-processed-data" id="toc-separate-raw-and-processed-data" class="nav-link" data-scroll-target="#separate-raw-and-processed-data">Separate Raw and Processed Data</a></li>
-  <li><a href="#quarantine-external-outputs" id="toc-quarantine-external-outputs" class="nav-link" data-scroll-target="#quarantine-external-outputs">Quarantine External Outputs</a></li>
+  <li><a href="#modifying-data" id="toc-modifying-data" class="nav-link" data-scroll-target="#modifying-data">Modifying Data</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -402,26 +403,24 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<p>Now that you’ve organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project’s worth of R code found that 74% of the associated R files <strong>failed to complete without error</strong> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
+<p>Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 projects’ worth of R code found that <em>74% of the associated R files failed to complete without error</em> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
 <p><img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right"></p>
-<p>When your scripts are clear and reproducibly-written you will reap the following benefits:</p>
+<p><strong>When your scripts are reproducibly-written you will reap significant benefits!</strong> These include:</p>
 <ol type="1">
-<li>Returning to your code after having set it down for weeks/months is much simpler</li>
-<li>Collaborating with team members requires less verbal explanation</li>
-<li>Sharing methods for external result validation is more straightforward</li>
-<li>In cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy</li>
+<li>Easier to return to your code after having set it down for weeks/months</li>
+<li>Less verbal explanation needed when collaborating or onboarding new team members</li>
+<li>Simpler to sharing methods for external result validation</li>
+<li>In cases where you’re developing a novel method or workflow, structuring your code reproducibly will increase the odds that someone outside of your team will adopt your strategy</li>
 </ol>
 <section id="code-and-the-stages-of-data" class="level3">
 <h3 class="anchored" data-anchor-id="code-and-the-stages-of-data">Code and the Stages of Data</h3>
 <p>You’ll likely need a number of scripts to accomplish the different stages of preparing a synthesized dataset. All of these scripts together are often called a “workflow.” Each script will meet a specific need and its outputs will be the inputs of the next script. These intermediary data products are sometimes useful in and of themselves and tend to occur and predictable points that exist in most code workflows.</p>
 <p>Raw data will be parsed into cleaned data–often using idiosyncratic or dataset-specific scripts–which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially <em>many</em> scripts, <strong>coding reproducibly is vital to making this workflow intuitive and easy to maintain.</strong></p>
 <p>You don’t necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!</p>
-<p align="center">
-<img src="topics/images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%">
-</p><figcaption>
+<a href="topics/images/image_data-stages.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="topics/images/image_data-stages.png" class="img-fluid" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data"></a>
+<figcaption>
 Diagram of data stages from raw data to published products. Credit: Margaret O’Brian &amp; Li Kui
 </figcaption>
-<p></p>
 </section>
 <section id="packages-namespacing-and-software-versions" class="level3">
 <h3 class="anchored" data-anchor-id="packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</h3>
@@ -540,17 +539,9 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </blockquote>
 <p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
 </section>
-<section id="never-edit-raw-data" class="level3">
-<h3 class="anchored" data-anchor-id="never-edit-raw-data"><em>Never</em> Edit Raw Data</h3>
-<p><strong>You should <em>never</em> edit raw data directly.</strong> If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
-</section>
-<section id="separate-raw-and-processed-data" class="level3">
-<h3 class="anchored" data-anchor-id="separate-raw-and-processed-data">Separate Raw and Processed Data</h3>
-<p>In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.</p>
-</section>
-<section id="quarantine-external-outputs" class="level3">
-<h3 class="anchored" data-anchor-id="quarantine-external-outputs">Quarantine External Outputs</h3>
-<p>This can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)</p>
+<section id="modifying-data" class="level3">
+<h3 class="anchored" data-anchor-id="modifying-data">Modifying Data</h3>
+<p>You should <em>never</em> edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
 
 
 </section>
@@ -1028,6 +1019,38 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

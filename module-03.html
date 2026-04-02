@@ -85,6 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -488,9 +491,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#script-organization" id="toc-script-organization" class="nav-link" data-scroll-target="#script-organization">Script Organization</a></li>
   <li><a href="#file-paths" id="toc-file-paths" class="nav-link" data-scroll-target="#file-paths">File Paths</a></li>
   <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style</a></li>
-  <li><a href="#never-edit-raw-data" id="toc-never-edit-raw-data" class="nav-link" data-scroll-target="#never-edit-raw-data"><em>Never</em> Edit Raw Data</a></li>
-  <li><a href="#separate-raw-and-processed-data" id="toc-separate-raw-and-processed-data" class="nav-link" data-scroll-target="#separate-raw-and-processed-data">Separate Raw and Processed Data</a></li>
-  <li><a href="#quarantine-external-outputs" id="toc-quarantine-external-outputs" class="nav-link" data-scroll-target="#quarantine-external-outputs">Quarantine External Outputs</a></li>
+  <li><a href="#modifying-data" id="toc-modifying-data" class="nav-link" data-scroll-target="#modifying-data">Modifying Data</a></li>
   </ul></li>
   <li><a href="#code-comments" id="toc-code-comments" class="nav-link" data-scroll-target="#code-comments">Code Comments</a>
   <ul class="collapse">
@@ -579,26 +580,24 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<p>Now that you’ve organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project’s worth of R code found that 74% of the associated R files <strong>failed to complete without error</strong> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
+<p>Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 projects’ worth of R code found that <em>74% of the associated R files failed to complete without error</em> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
 <p><img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right"></p>
-<p>When your scripts are clear and reproducibly-written you will reap the following benefits:</p>
+<p><strong>When your scripts are reproducibly-written you will reap significant benefits!</strong> These include:</p>
 <ol type="1">
-<li>Returning to your code after having set it down for weeks/months is much simpler</li>
-<li>Collaborating with team members requires less verbal explanation</li>
-<li>Sharing methods for external result validation is more straightforward</li>
-<li>In cases where you’re developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy</li>
+<li>Easier to return to your code after having set it down for weeks/months</li>
+<li>Less verbal explanation needed when collaborating or onboarding new team members</li>
+<li>Simpler to sharing methods for external result validation</li>
+<li>In cases where you’re developing a novel method or workflow, structuring your code reproducibly will increase the odds that someone outside of your team will adopt your strategy</li>
 </ol>
 <section id="code-and-the-stages-of-data" class="level3">
 <h3 class="anchored" data-anchor-id="code-and-the-stages-of-data">Code and the Stages of Data</h3>
 <p>You’ll likely need a number of scripts to accomplish the different stages of preparing a synthesized dataset. All of these scripts together are often called a “workflow.” Each script will meet a specific need and its outputs will be the inputs of the next script. These intermediary data products are sometimes useful in and of themselves and tend to occur and predictable points that exist in most code workflows.</p>
 <p>Raw data will be parsed into cleaned data–often using idiosyncratic or dataset-specific scripts–which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially <em>many</em> scripts, <strong>coding reproducibly is vital to making this workflow intuitive and easy to maintain.</strong></p>
 <p>You don’t necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!</p>
-<p align="center">
-<img src="topics/images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%">
-</p><figcaption>
+<a href="topics/images/image_data-stages.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="topics/images/image_data-stages.png" class="img-fluid" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data"></a>
+<figcaption>
 Diagram of data stages from raw data to published products. Credit: Margaret O’Brian &amp; Li Kui
 </figcaption>
-<p></p>
 </section>
 <section id="packages-namespacing-and-software-versions" class="level3">
 <h3 class="anchored" data-anchor-id="packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</h3>
@@ -717,17 +716,9 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </blockquote>
 <p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
 </section>
-<section id="never-edit-raw-data" class="level3">
-<h3 class="anchored" data-anchor-id="never-edit-raw-data"><em>Never</em> Edit Raw Data</h3>
-<p><strong>You should <em>never</em> edit raw data directly.</strong> If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
-</section>
-<section id="separate-raw-and-processed-data" class="level3">
-<h3 class="anchored" data-anchor-id="separate-raw-and-processed-data">Separate Raw and Processed Data</h3>
-<p>In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project’s scripts; even if you choose not to adopt a file naming convention that would make this clear.</p>
-</section>
-<section id="quarantine-external-outputs" class="level3">
-<h3 class="anchored" data-anchor-id="quarantine-external-outputs">Quarantine External Outputs</h3>
-<p>This can sound harsh, but it is often a good idea to “quarantine” outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we’ve described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)</p>
+<section id="modifying-data" class="level3">
+<h3 class="anchored" data-anchor-id="modifying-data">Modifying Data</h3>
+<p>You should <em>never</em> edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
 <p><img src="topics/images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right"></p>
 </section>
 </section>
@@ -780,14 +771,18 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Discussion: Comment on Comments
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Comment on Comments
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>With a partner discuss the following questions:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Part 1 - Discuss</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Part 2 - Revisit Old Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Part 3 - Discuss Again</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>With a partner, discuss the following questions:</p>
 <ul>
 <li>When you write comments, do you focus more on the “what” or the “why”?</li>
-<li>What would you estimate is the ratio of code to comment lines in your code?
+<li>What would you estimate is the ratio of code lines to comment lines in your code?
 <ul>
 <li>1:1 being every code line has one comment line</li>
 </ul></li>
@@ -798,33 +793,34 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <li>In what ways do you think you would need to change your commenting style for a team project?</li>
 </ul>
 </div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Activity: Make Comments
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Revisit a script from an old project (ideally one you haven’t worked on recently). Once you’ve opened the script:</p>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Individually, pick a script from an old project (ideally one you haven’t worked on recently), then:</p>
+<ol type="1">
+<li>Scan through it and try to identify the main purpose(s) of the code</li>
+<li>Ask yourself the following questions:
 <ul>
-<li>Scan through the script
-<ul>
-<li>Can you identify the main purpose(s) of the code?</li>
+<li>Are there any areas where you’re <em>not sure</em> what the code is doing and/or why it is included?</li>
+<li>Do you think an external expert would be able to read and understand your code?</li>
 </ul></li>
-<li>Identify any areas where you’re <em>not sure</em> either (A) what the code is doing or (B) why that section of code exists
+<li>Take a few minutes and add comments to clarify any vague areas you identified
 <ul>
-<li>Add comments to these areas to document what they’re up to</li>
+<li>Don’t edit the code itself, just add/edit comment lines!</li>
 </ul></li>
-<li>Share the commented version of one of these trouble areas with a partner
+</ol>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>With your partner from part 1:</p>
+<ol type="1">
+<li>Exchange your edited code files</li>
+<li>Read your partner’s code and identify what you think the main purpose of the code is
 <ul>
-<li>Do they understand the what and/or why of your code?</li>
-<li>If not, revise the comments and repeat</li>
+<li>Don’t try to run it! Just see what you can glean from reading alone</li>
 </ul></li>
-</ul>
+<li>Compare what you think the code does with what the original author intended it to do</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -832,7 +828,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="consider-custom-functions" class="level2">
 <h2 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -841,7 +837,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -855,7 +851,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <p>Instead of taking this copy/paste approach, you could <em>consider</em> writing a “custom” function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.</p>
 <section id="function-recommendations" class="level3">
 <h3 class="anchored" data-anchor-id="function-recommendations">Function Recommendations</h3>
-<p>We have the following ‘rules of thumb’ for custom function use:</p>
+<p>We have the following ‘rules of thumb’ for whether you should use a custom function:</p>
 <p><strong>- If a given operation is duplicated 3 or more times <u>within a project</u>, write a custom function</strong></p>
 <p>Functions written in this case can be extremely specific and–though documentation is always a good idea–can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won’t be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation <em>post hoc</em>.</p>
 <p><strong>- Write functions defensively</strong></p>
@@ -880,7 +876,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="conditions-and-practices-that-support-team-functioning" class="level2">
 <h2 class="anchored" data-anchor-id="conditions-and-practices-that-support-team-functioning">Conditions and Practices that Support Team Functioning</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -889,7 +885,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -900,15 +896,15 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <p>In order for teams to reap the instrumental benefits of diversity in membership, teams need to cultivate conditions that encourage all members to contribute at the times and in the ways that they are most skilled and effective. Explore the tabs below for some of these conditions.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Learning Orientation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Revising Assumptions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Cognitive Trust</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Affective Trust</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Learning Orientation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Revising Assumptions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Cognitive Trust</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Affective Trust</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Cultivate a <strong>learning goal orientation</strong> rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al.&nbsp;2013)</p>
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Cultivate a <strong>learning goal orientation</strong> rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al.&nbsp;2013).</p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>Remain open to <strong>revising assumptions and world views</strong>. When divergent positions are met only with resistance, groupthink gains the upper hand</p>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Remain open to <strong>revising assumptions and world views</strong>. When divergent positions are met only with resistance, groupthink gains the upper hand.</p>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p><strong>Cognitive trust</strong> is the rational belief that group members can and will deliver on their portion of the work. When it isn’t present, group members tend to pull back on their own contributions. Good coordination supports cognitive trust by providing clarity and accountability about who agreed to do what work and whether they delivered. It ensures that contributions can be appropriately credited and that work isn’t unnecessarily duplicated. Effective coordination and facilitation make space for <em>all</em> group members to engage.</p>
 <ul>
 <li><strong>Fast and slow processors</strong> can be accommodated by making space for written as well as verbal contributions and allowing “thinking time” before expecting a response.</li>
@@ -917,7 +913,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <li>Strategies for managing different <strong>geographies</strong> include virtual meetings, pulsed contributing times, and asynchronous editing of shared documents.</li>
 </ul>
 </div>
-<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <p><strong>Affective trust</strong> is the belief (usually grounded in common experience) that group members have your best interests in mind. Some strategies for building it include:</p>
 <ul>
 <li>Spend social time together - meals, activities when in-person, but also, don’t skimp on icebreakers and check-ins when virtual</li>
@@ -932,18 +928,16 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <section id="all-contribute-some-none-contribute-all" class="level3">
 <h3 class="anchored" data-anchor-id="all-contribute-some-none-contribute-all">All Contribute Some; None Contribute All</h3>
-<figure class="figure">
-<img src="topics/images/graphic_translational-team-competencies.png" alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership" width="100%" class="figure-img">
+<a href="topics/images/graphic_translational-team-competencies.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="topics/images/graphic_translational-team-competencies.png" class="img-fluid" alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership"></a>
 <figcaption>
 Overlapping and intersecting competencies across the domains (from Lotrecchiano <em>et al.</em> 2021). Colors define the primary domain for each competency.
 </figcaption>
-</figure>
 </section>
 </section>
 <section id="navigating-conflict" class="level2">
 <h2 class="anchored" data-anchor-id="navigating-conflict">Navigating Conflict</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -952,7 +946,7 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -980,17 +974,21 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
 <li>Identify areas of agreement and disagreement. State preferences and requests clearly. Together, prioritize what to address first.</li>
 <li>Focus on the future with positive intent. Work together to find a solution. Keep communication open. Tend relationships.</li>
 </ul>
-<p><img src="topics/images/graph_satisfaction-triangle.png" alt="A triangle labeled 'satisfaction triangle' indicating how procedural, emotional, and structural considerations are all important to satisfaction" width="100%"></p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
+<p><a href="topics/images/graph_satisfaction-triangle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="topics/images/graph_satisfaction-triangle.png" class="img-fluid" alt="A triangle labeled 'satisfaction triangle' indicating how procedural, emotional, and structural considerations are all important to satisfaction"></a></p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Activity: Scenarios
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Conflict Scenarios
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Part 1 - Scenarios</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Part 2 - Scenario Debrief</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>For the following set of scenarios, you will be randomly assigned to a breakout group and one of the following scenarios for a 20-minute discussion. After you join the group:</p>
 <ol type="1">
 <li>Briefly introduce yourselves</li>
@@ -1004,10 +1002,10 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
 <li>What interventions might have prevented, or could now resolve, the conflict?</li>
 </ul></li>
 </ol>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Overcommitment</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Authorship</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Research Approach</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<details>
+<summary>
+Scenario A: Overcommitment
+</summary>
 <p>Alix, a postdoc in the lab of Dr.&nbsp;Chambers, a well-known hydrologist, enjoys data analysis and offers to assemble and clean the group’s data using MatLab. Although only one other person in the group uses MatLab, Alix seems confident that the program is well-suited for what they need to do and that they can devote enough time to do the work.</p>
 <p>That winter, Alix’s father is diagnosed with cancer and Alix starts taking him to chemo treatments. They are already half-way through the analysis and it would take weeks for someone else to start over. They hate to let the group down and say that they will be able to work on data while waiting around in doctors’ offices. But as Winter drags into Spring and nothing has happened, the group gets frustrated.</p>
 <p>Terry starts working on the data in R, but struggles to make sense of Alix’s notes. By Fall, their one year of funding runs out and they have nothing to show for it.</p>
@@ -1019,8 +1017,11 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
 <li>Why might they have chosen not to?</li>
 <li>What practices could make it easier for them to take action?</li>
 </ul>
-</div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+</details>
+<details>
+<summary>
+Scenario B: Authorship
+</summary>
 <p>A synthesis group is attempting to connect data on municipal services with wildlife sightings at the urban-wildlands interface. Maria, a PhD student in sociology, is mainly focused on collecting municipal data. During a whole group discussion on where the group might find additional data sources for wildlife observations, she mentions a paper she had seen recently on scraping data from social media.</p>
 <p>Later that week, when the wildlife subgroup meets, they get excited about finding wildlife sightings through NextDoor and begin pursuing the idea. It works out better than they could have hoped and James, an assistant professor in computer science who is preparing his tenure package, spearheads a paper on their use of the technique. At the next full group meeting, he mentions that it is ready to be submitted.</p>
 <p>Maria would have appreciated the chance to work with James and is disappointed and angry that no one mentioned the paper to her.</p>
@@ -1031,22 +1032,23 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
 <li>What procedural, emotional, and substantive needs might each player have in this situation? How might they balance those needs in seeking a solution?</li>
 <li>How might the group have avoided the situation in the first place?</li>
 </ul>
-</div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+</details>
+<details>
+<summary>
+Scenario C: Research Approach
+</summary>
 <p>Arturo, a senior climate scientist with a large lab, brings two postdocs and a grad student to the first working group meeting of the <em>Causes of Harmful Algal Blooms</em> working group. In deciding which scenarios to evaluate, Arturo posits that temperature, rainfall, and growing degree-days will be the primary drivers and offers to assign one to each of his lab members. Arturo is motivated to participate in the working group because it builds on his prior research on climatic influences on HABs. He and his lab members see the working group as a great learning opportunity for early career researchers.</p>
 <p>Jasmine, an assistant professor in agronomy with a heavy teaching load, thinks that fertilizer rate and timing of application will be major drivers. Jasmine is highly motivated to play a leadership role in the working group and needs publications to advance her career, but her time is limited. She has time to find relevant datasets, but can’t commit to doing the analysis and doesn’t have students or postdocs to assign to the project. Looking at the role of coastal agriculture on HABs is central to why she said yes to joining the group.</p>
-<p><strong>Discussion questions</strong></p>
+<p><strong>Discussion questions:</strong></p>
 <ul>
 <li>What needs have each of the players in this conflict expressed?</li>
 <li>How should the group go about allocating effort n order to tackle the research project and meet those needs?</li>
 <li>Is it fair to ask one of Arturo’s postdocs to work outside their field? Why might they want (or not want) to do that?</li>
 <li>What other solutions might they consider?</li>
 </ul>
+</details>
 </div>
-</div>
-</div>
-<p><br></p>
-<p><strong>Scenario Debrief</strong></p>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>Consider the following:</p>
 <ul>
 <li>What was your group’s perspective on the assigned scenario?
@@ -1056,6 +1058,9 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
 <li>What commonalities do you see between your scenario and those of the other groups?</li>
 <li>How might you edit your group’s ground rules or process plan to avoid/mitigate this kind of conflict?</li>
 </ul>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -1534,6 +1539,38 @@ Overlapping and intersecting competencies across the domains (from Lotrecchiano 
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
