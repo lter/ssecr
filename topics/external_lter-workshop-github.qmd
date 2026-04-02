@@ -14,7 +14,6 @@ After completing this topic you will be able to:
 
 :::
 
-
 ### LTER Workshop Materials
 
 The workshop materials we will be working through live [here](https://lter.github.io/workshop-github/) but for convenience we have also embedded the workshop directly into the SSECR course website (see below).

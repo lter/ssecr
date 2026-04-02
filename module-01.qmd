@@ -18,5 +18,3 @@ Check back later
 {{< include topics/team-sci.qmd >}}
 
 {{< include topics/team-diversity.qmd >}}
-
-{{< include activities/draft-team-practices.qmd >}}

@@ -18,8 +18,6 @@ A National Academies study on the _Science of Team Science_ (NRC 2015) assembled
 
 Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent patterns in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.
 
-<p align="center"/>
-<img src="topics/images/figure_team-dev-phases.jpg" alt="graphic, laying out the 5 phases: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance" width="100%" />
-</p>
+![](topics/images/figure_team-dev-phases.jpg){fig-alt="Graphic laying out the 5 phases of team development: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance" fig-align="center" .lightbox}
 
 Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.  
