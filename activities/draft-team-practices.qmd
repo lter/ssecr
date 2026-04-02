@@ -1,8 +1,0 @@
-:::{.callout-note icon="false"}
-#### Activity: Draft Your Team's Practices
-
-In your project group, come up with one practice that you could include in your group practice guidelines to support **each** of the above mechanisms
-
-We will then reconvene as a class and each project group will describe one of their practices and how they think it will help.
-
-:::

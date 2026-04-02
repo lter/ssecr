@@ -16,10 +16,8 @@ There is pretty good evidence that collaborative teams produce research that is 
 
 Similarly, in a study of 6.6 million medical research papers, Yang et al. found that mixed gender teams consistently produced more novel and more impactful products. In another bibliographic analysis Abbasi and Jaafari (2013) found that inter-institute and inter-university collaborations resulted in higher-impact publications. Interestingly, the result was much weaker for international collaborations. 
 
-<figure>
-<img src="topics/images/graph_team-gender-novelty.png" alt="Graph showing that mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes" width="100%"/>
+![](topics/images/graph_team-gender-novelty.png){fig-alt="Graph showing that mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes" .lightbox}
 <figcaption> Mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes.  Mixed-gender teams are also more likely to publish an upper-tail paper than same-gender teams by as much as 14.6%, depending on team sizes.</figcaption>
-</figure>
 
 <img src="topics/images/text_go-far.png" alt="Colored background behind the quote 'If you want to go fast, go alone; if you want to go far, go together'" width="50%" align="right" />
 
@@ -35,7 +33,7 @@ The paradox of team science is that the very factors that slow progress may be _
 
 The categorization-elaboration model (CEM, van Knippenberg et al. 2004) proposed that information elaboration—-that is, the exchange, discussion, and integration of task-relevant information and perspectives, was responsible for many of the benefits attributed to diverse groups. But later researchers found there were a few necessary conditions for cognitive elaboration to take place and for groups to reap the benefits. Only when team members brought a _learning goal orientation_ to their work and when they remained open to revising their original ideas (Nederveen Pieterse 2013) did diversity improve team performance.
 
-#### {{< fa people-group >}} Avoiding ‘groupthink'
+#### {{< fa people-group >}} Avoiding ‘Groupthink'
 
 We are all familiar with the "we've always done it this way" effect that can happen when a group of people have been working together for a while. By introducing people from new fields, laboratories, or cultures, that complacent thinking is disrupted. Often, the very act of justifying _why_ we do something the way we do can invite a rethinking and improvement.
 
@@ -43,10 +41,34 @@ We are all familiar with the "we've always done it this way" effect that can hap
 
 Metacognition, or "thinking about thinking" requires individuals to reflect and articulate their process for achieving new knowledge. What information goes in?  Is information missing? How should it be analyzed and interpreted? Are those conclusions justified? 
 
-#### {{< fa binoculars >}} Enhanced group scanning ability and consideration of alternative solutions
+#### {{< fa binoculars >}} Improved Consideration of Alternative Solutions
 
 A science team may include members from different research disciplines, sectors, geographies or cultures. Along each of those axes, team members will have different personal networks and be more (or less) familiar with different literatures, models, communities, tools, and solutions. Collectively, the group has a much broader range of information to draw on...but only if group members feel empowered to contribute. 
 
-#### {{< fa list-check >}} Better task completion and more efficient use of resources
+#### {{< fa list-check >}} Better Task Completion & Resource-Use Efficiency
 
 "Many hands make light work" the saying goes. Think of a meta-analysis where 10 group members can each read 30 papers instead of 1 individual reading 300 papers. Dividing the workload *can* speed up the process, but only if there is an efficient way to manage dividing the work and then bringing the results back together again. Similarly, relying on a few skilled coders can be much more efficient than each individual writing their own code, but unless the group has a mechanism for getting broad input on key decisions, they will lose the value created by bringing together a larger group. 
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Draft Your Team's Practices
+
+:::{.panel-tabset}
+### Part 1 - Project Group Discussions
+
+Come up with one practice that you could include in your group practice guidelines to support **each** of the above mechanisms.
+
+- Information Elaboration
+- Avoiding Groupthink
+- Metacognition
+- Improved Consideration of Alternative Solutions
+- Better Task Completion & Resource-Use Efficiency
+
+### Part 2 - Whole-Class Discussion
+
+One member of each project reports out on:
+
+- What was one practice you discussed and plan to adopt?
+- How do you think that will help your group?
+
+:::
+::::
