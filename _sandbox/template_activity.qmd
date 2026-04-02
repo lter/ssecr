@@ -1,0 +1,15 @@
+---
+title: "Activity Callout Template"
+---
+
+Copy/paste the below template when making new activities! Drop the tabset panels if there are not multiple parts/stages to the activity.
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: ______
+
+:::{.panel-tabset}
+### Part 1 - X
+
+
+:::
+::::
