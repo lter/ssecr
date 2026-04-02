@@ -40,16 +40,40 @@ Comments describe _rationale_ and/or _context_ for code.
 no_pine_df <- dplyr::filter(full_df, genus != "Pinus")
 ```
 
-:::{.callout-warning icon="false"}
-#### Discussion: Comment on Comments
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Comment on Comments
 
-With a partner discuss the following questions:
+:::{.panel-tabset}
+### Part 1 - Discuss
+
+With a partner, discuss the following questions:
 
 - When you write comments, do you focus more on the "what" or the "why"?
-- What would you estimate is the ratio of code to comment lines in your code?
+- What would you estimate is the ratio of code lines to comment lines in your code?
     - 1:1 being every code line has one comment line
 - If you have revisited old code, were your comments helpful?
     - How could you make them more helpful?
 - In what ways do you think you would need to change your commenting style for a team project?
 
+### Part 2 - Revisit Old Code
+
+Individually, pick a script from an old project (ideally one you haven't worked on recently), then:
+
+1. Scan through it and try to identify the main purpose(s) of the code
+2. Ask yourself the following questions:
+    - Are there any areas where you're _not sure_ what the code is doing and/or why it is included?
+    - Do you think an external expert would be able to read and understand your code?
+3. Take a few minutes and add comments to clarify any vague areas you identified
+    - Don't edit the code itself, just add/edit comment lines!
+
+### Part 3 - Discuss Again
+
+With your partner from part 1:
+
+1. Exchange your edited code files
+2. Read your partner's code and identify what you think the main purpose of the code is
+    - Don't try to run it! Just see what you can glean from reading alone
+3. Compare what you think the code does with what the original author intended it to do
+
 :::
+::::

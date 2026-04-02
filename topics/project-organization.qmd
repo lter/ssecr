@@ -30,6 +30,12 @@ Note that <u>how you define "project" may affect the number of folders you need<
 
 However, _don't overdo it!_ Making an intricate maze of sub-folders is just as bad for collaborative settings as having everything loose in the top-level project folder. Just one level of sub-folders is enough for most projects. If you find yourself tempted to use deeply nested sub-folders, consider whether you've defined the project correctly--it could be a sign that there are really several separate, albeit related, projects at play.
 
+### Quarantine External Content
+
+This can sound harsh, but it is often **a good idea to "quarantine" files received from others until they can be carefully vetted** and fit into the proper place in your organization schema. This is not at all to suggest that such contributions might be malicious!
+
+Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)
+
 ### Context-Rich Yet Brief Names
 
 **Balance information-density with brevity.** An ideal folder/file name should give some information about the file's contents, purpose, and relation to other project files while still being fairly short. These are definitely conflicting perogatives but trying to 'thread the needle' will yield better fiile names.

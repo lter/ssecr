@@ -11,16 +11,16 @@ After completing this topic you will be able to:
 
 :::
 
-Now that you've organized your project in a reasonable way and documented those choices, we can move on to principles of reproducible coding! Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 project's worth of R code found that 74% of the associated R files **failed to complete without error** (Trisovic _et al._ 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.
+Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 projects' worth of R code found that _74% of the associated R files failed to complete without error_ (Trisovic _et al._ 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.
 
 <img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right">
 
-When your scripts are clear and reproducibly-written you will reap the following benefits:
+**When your scripts are reproducibly-written you will reap significant benefits!** These include:
 
-1. Returning to your code after having set it down for weeks/months is much simpler
-2. Collaborating with team members requires less verbal explanation
-3. Sharing methods for external result validation is more straightforward
-4. In cases where you're developing a novel method or workflow, structuring your code in this way will increase the odds that someone outside of your team will adopt your strategy
+1. Easier to return to your code after having set it down for weeks/months
+2. Less verbal explanation needed when collaborating or onboarding new team members
+3. Simpler to sharing methods for external result validation
+4. In cases where you're developing a novel method or workflow, structuring your code reproducibly will increase the odds that someone outside of your team will adopt your strategy
 
 ### Code and the Stages of Data
 
@@ -30,10 +30,8 @@ Raw data will be parsed into cleaned data--often using idiosyncratic or dataset-
 
 You don't necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!
 
-<p align="center">
-<img src="topics/images/image_data-stages.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%"/>
+![](topics/images/image_data-stages.png){fig-alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" .lightbox}
 <figcaption>Diagram of data stages from raw data to published products. Credit: Margaret O'Brian & Li Kui</figcaption>
-</p>
 
 ### Packages, Namespacing, and Software Versions
 
@@ -170,15 +168,6 @@ It can be difficult to balance these two imperatives but short object names are 
 
 Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.
 
+### Modifying Data
 
-### _Never_ Edit Raw Data
-
-**You should _never_ edit raw data directly.** If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a _separate_ file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that "looks" like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the 'real' raw data personally.
-
-### Separate Raw and Processed Data
-
-In the same vein as the previous best practice, we recommend that you separate the raw and processed data into separate folders. This will make it easier to avoid accidental edits to the raw data and will make it clear what data are created by your project's scripts; even if you choose not to adopt a file naming convention that would make this clear.
-
-### Quarantine External Outputs
-
-This can sound harsh, but it is often a good idea to "quarantine" outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we've described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)
+You should _never_ edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a _separate_ file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that "looks" like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the 'real' raw data personally.

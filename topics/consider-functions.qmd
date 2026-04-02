@@ -16,7 +16,7 @@ Instead of taking this copy/paste approach, you could _consider_ writing a "cust
 
 ### Function Recommendations
 
-We have the following 'rules of thumb' for custom function use:
+We have the following 'rules of thumb' for whether you should use a custom function:
 
 **- If a given operation is duplicated 3 or more times <u>within a project</u>, write a custom function**
 

@@ -29,4 +29,80 @@ In spite of your best efforts, conflicts will still arise. The satisfaction tria
 - Identify areas of agreement and disagreement. State preferences and requests clearly. Together, prioritize what to address first.
 - Focus on the future with positive intent. Work together to find a solution. Keep communication open. Tend relationships.
 
-<img src="topics/images/graph_satisfaction-triangle.png" alt="A triangle labeled 'satisfaction triangle' indicating how procedural, emotional, and structural considerations are all important to satisfaction" width="100%" />
+![](topics/images/graph_satisfaction-triangle.png){fig-alt="A triangle labeled 'satisfaction triangle' indicating how procedural, emotional, and structural considerations are all important to satisfaction" .lightbox}
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Conflict Scenarios
+
+:::{.panel-tabset}
+### Part 1 - Scenarios
+For the following set of scenarios, you will be randomly assigned to a breakout group and one of the following scenarios for a 20-minute discussion. After you join the group:
+
+1. Briefly introduce yourselves 
+2. Find or create a notes document
+3. Choose a notetaker, a reporter (may be the same as the notetaker or not), and a timekeeper (to keep the group moving through the questions). 
+4. A volunteer reads the scenario out loud for the group
+5. Take a minute or so to think quietly
+6. Discuss
+    - Try to articulate the emotional aspects, the procedural aspects, and the structural aspects of the conflict from each participant's point of view.
+    - What interventions might have prevented, or could now resolve, the conflict?
+
+<details>
+<summary>Scenario A: Overcommitment</summary>
+Alix, a postdoc in the lab of Dr. Chambers, a well-known hydrologist, enjoys data analysis and offers to assemble and clean the group's data using MatLab. Although only one other person in the group uses MatLab, Alix seems confident that the program is well-suited for what they need to do and that they can devote enough time to do the work.
+
+That winter, Alix's father is diagnosed with cancer and Alix starts taking him to chemo treatments. They are already half-way through the analysis and it would take weeks for someone else to start over. They hate to let the group down and say that they will be able to work on data while waiting around in doctors' offices. But as Winter drags into Spring and nothing has happened, the group gets frustrated.
+
+Terry starts working on the data in R, but struggles to make sense of Alix's notes. By Fall, their one year of funding runs out and they have nothing to show for it.
+
+**Discussion questions:**
+
+- Which sides of the satisfaction triangle are the different players in this scenario inhabiting? What needs are in conflict?
+- Identify at least three points at which someone could have intervened to change this outcome and better satisfy the needs of each party
+- Who and how?
+- Why might they have chosen not to?
+- What practices could make it easier for them to take action? 
+</details>
+
+<details>
+<summary>Scenario B: Authorship</summary>
+A synthesis group is attempting to connect data on municipal services with wildlife sightings at the urban-wildlands interface. Maria, a PhD student in sociology, is mainly focused on collecting municipal data. During a whole group discussion on where the group might find additional data sources for wildlife observations, she mentions a paper she had seen recently on scraping data from social media. 
+
+Later that week,  when the wildlife subgroup meets, they get excited about finding wildlife sightings through NextDoor and begin pursuing the idea. It works out better than they could have hoped and James, an assistant professor in computer science who is preparing his tenure package, spearheads a paper on their use of the technique. At the next full group meeting, he mentions that it is ready to be submitted. 
+
+Maria would have appreciated the chance to work with James and is disappointed and angry that no one mentioned the paper to her. 
+
+**Discussion questions:**
+
+- Where is Maria on the satisfaction triangle? Where is James?
+- What should Maria do now?
+- What procedural, emotional, and substantive needs might each player have in this situation? How might they balance those needs in seeking a solution?
+- How might the group have avoided the situation in the first place?
+</details>
+
+<details>
+<summary>Scenario C: Research Approach</summary>
+Arturo, a senior climate scientist with a large lab, brings two postdocs and a grad student to the first working group meeting of the _Causes of Harmful Algal Blooms_ working group.  In deciding which scenarios to evaluate, Arturo posits that temperature, rainfall, and growing degree-days will be the primary drivers and offers to assign one to each of his lab members. Arturo is motivated to participate in the working group because it builds on his prior research on climatic influences on HABs. He and his lab members see the working group as a great learning opportunity for early career researchers.
+
+Jasmine, an assistant professor in agronomy with a heavy teaching load, thinks that fertilizer rate and timing of application will be major drivers. Jasmine is highly motivated to play a leadership role in the working group and needs publications to advance her career, but her time is limited. She has time to find relevant datasets, but can't commit to doing the analysis and doesn't have students or postdocs to assign to the project. Looking at the role of coastal agriculture on HABs is central to why she said yes to joining the group.
+
+**Discussion questions:**
+
+- What needs have each of the players in this conflict expressed?
+- How should the group go about allocating effort n order to tackle the research project and meet those needs?
+- Is it fair to ask one of Arturo's postdocs to work outside their field? Why might they want (or not want) to do that?
+- What other solutions might they consider?
+</details>
+
+### Part 2 - Scenario Debrief
+
+Consider the following:
+
+-  What was your group's perspective on the assigned scenario?
+    - What solution would you propose in that context?
+- What commonalities do you see between your scenario and those of the other groups?
+- How might you edit your group's ground rules or process plan to avoid/mitigate this kind of conflict?
+
+
+:::
+::::

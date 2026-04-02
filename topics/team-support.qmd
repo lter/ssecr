@@ -12,15 +12,15 @@ After completing this topic you will be able to:
 In order for teams to reap the instrumental benefits of diversity in membership, teams need to cultivate conditions that encourage all members to contribute at the times and in the ways that they are most skilled and effective. Explore the tabs below for some of these conditions.
 
 :::{.panel-tabset}
-#### Learning Orientation
+### Learning Orientation
 
-Cultivate a **learning goal orientation** rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al. 2013)
+Cultivate a **learning goal orientation** rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al. 2013).
 
-#### Revising Assumptions
+### Revising Assumptions
 
-Remain open to **revising assumptions and world views**. When divergent positions are met only with resistance, groupthink gains the upper hand
+Remain open to **revising assumptions and world views**. When divergent positions are met only with resistance, groupthink gains the upper hand.
 
-#### Cognitive Trust
+### Cognitive Trust
 
 **Cognitive trust** is the rational belief that group members can and will deliver on their portion of the work. When it isn't present, group members tend to pull back on their own contributions. Good coordination supports cognitive trust by providing clarity and accountability about who agreed to do what work and whether they delivered. It ensures that contributions can be appropriately credited and that work isn't unnecessarily duplicated. Effective coordination and facilitation make space for _all_ group members to engage.
 
@@ -29,7 +29,7 @@ Remain open to **revising assumptions and world views**. When divergent position
 - Those with **caregiving responsibilities** may have unpredictable availability and shorter periods of concentrated effort. A task management system (such as GitHub Projects or Trello) that breaks down tasks into manageable chunks and provides necessary contexts can help them contribute without as much task-switching cost.
 -  Strategies for managing different **geographies** include virtual meetings, pulsed contributing times, and asynchronous editing of shared documents.
 
-#### Affective Trust
+### Affective Trust
 
 **Affective trust** is the belief (usually grounded in common experience) that group members have your best interests in mind. Some strategies for building it include:
 
@@ -44,7 +44,5 @@ Remain open to **revising assumptions and world views**. When divergent position
 
 ### All Contribute Some; None Contribute All
 
-<figure>
-<img src="topics/images/graphic_translational-team-competencies.png" alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership" width="100%" />
+![](topics/images/graphic_translational-team-competencies.png){fig-alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership" .lightbox}
 <figcaption>Overlapping and intersecting competencies across the domains (from Lotrecchiano _et al._ 2021). Colors define the primary domain for each competency.</figcaption>
-</figure>

@@ -16,14 +16,9 @@ Check back later
 {{< include topics/reproducible-coding.qmd >}}
 
 {{< include topics/code-comments.qmd >}}
-{{< include activities/comment-code.qmd >}}
 
 {{< include topics/consider-functions.qmd >}}
-
-
-
 
 {{< include topics/team-support.qmd >}}
 
 {{< include topics/team-conflict.qmd >}}
-{{< include activities/conflict-scenarios.qmd >}}
