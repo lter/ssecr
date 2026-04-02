@@ -20,7 +20,6 @@ Check back later
 {{< include topics/debate-to-dialogue.qmd >}}
 
 {{< include topics/thinking-styles.qmd >}}
-{{< include activities/brainstorm-thinking-styles.qmd >}}
 
 {{< include topics/participation-access.qmd >}}
 

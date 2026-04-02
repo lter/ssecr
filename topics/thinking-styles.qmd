@@ -5,16 +5,86 @@
 
 After completing this topic you will be able to: 
 
+- <u>Discuss</u> expectations and preferences of each thinking style
 - <u>Identify</u> one activity that privileges each thinking style
 
 :::
+People have different thinking preferences which influence what they expect and enjoy in group processes. There are many different frameworks for categorizing these facets but we'll use one based off of Ned Herrmann's Whole Brain Model.
 
-People have different thinking preferences which influence what they expect and enjoy in group processes (see Ned Herrmann's Whole Brain Model below).
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Whole Brain Model Thinking Styles
+
+:::{.panel-tabset}
+### Part 1 - Identify Yours
+
+To begin, we'll do an exercise to identify your thinking style in the Herrmann model.
+
+1. Read through the following statements
+2. Read through again and make a note of which **really** resonate with you
+3. Read through once more and make a note of which quite resonate but not to the same extent as those you identified in your prior read-through
+    - **Instructions continue below the table!**
+
+| \# | Statement | Category | - |  \# | Statement | Category |
+|:-:|:---------|:-:|-|:-:|:---------|:-:|
+| 1 | I learn through structured activities | B | | 21 | I plan things out | B |
+| 2 | I like accuracy | A | | 22 |  I like to deal with images/pictures | D |
+| 3 | I like exploring/bending the rules | D | | 23 | I like to learn from textbooks | A |
+| 4 | I synthesize ideas | D | | 24  | I know how things work | A |
+| 5 | I talk a lot | C | | 25 | I know how to do things | B |
+| 6 | I understand why | D | | 26 | I learn through experimentation | D |
+| 7 | I can sense what seems right | C | | 27 | I am critical | A |
+| 8 | I get emotionally involved | C | | 28 | I am expressive | C |
+| 9 | I get things done | B | | 29 | I like to think through ideas | A |
+| 10 | I go with the flow | C | | 30 | I like working / dealing with people | C |
+| 11 | I keep to the rules | B | | 31 | I am conscious of time and punctual | B |
+| 12 | I like to analyze/pull ideas/things apart  | A | | 32 | I see the big picture/pattern | D |
+| 13 | I learn through involvement | C | | 33 | I know facts | A |
+| 14 | I like to do things in sequence; one thing after another | B | | 34 | I like to learn by discussing/sharing | C |
+| 15 | I like to have/follow methods | B | | 35 | I like to deal with words/figures | A |
+| 16 | I am imaginative | D | | 36 | I am organized; everything has its place | B |
+| 17 | I am intuitive | D | | 37 | I am playful/like to take risks | D |
+| 18 | I am logical | A | | 38 | I am practical | B |
+| 19 | I am realistic | A | | 39 | Approximation works | D |
+| 20 | I am sensitive to others | C | | 40 | I act on impulse/am spontaneous | C |
+
+4. <u>You are working towards identifying your top 20</u>
+    - If you have more than 20, cross out the descriptors that resonate the least
+5. Using the letter codes in the column on the right, count the number of your chosen descriptors that fall into each of the four categories
+
+### Part 2 - Sub-Group Discussion
+
+1. Form groups based on the category (A, B, C, or D) where you had the highest count
+    - If you tied between two, you can go to either
+2. Identify your Herrmann thinking style!
+    - A = Analytical
+    - B = Practical
+    - C = Relational
+    - D = Experimental
+3. Click on the two images below these panels to make them larger and review what the Herrmann model predicts your primary thinking style expects and enjoys
+4. Discuss the following questions as a group
+    - Share one statement with which you particularly resonated with your group. Why do you think you identify strongly with this trait? Can you provide an example that illustrates this in your life?
+    - What are some strengths of your thinking style?
+    - What are some challenges associated with it?
+
+### Part 3 - Whole-Class Discussion
+
+Let's re-assemble the whole class. With your thinking style in mind:
+
+- What are some facilitation or meeting design techniques that you really appreciated?
+- What allowed you to fully participate?
+- Conversely, what did you find frustrating about the meeting design or facilitation techniques?
+
+Now, consider the expectations and preferences of the other thinking styles noted in the figure below and shared by your classmates.
+
+- Are there any that you commonly overlook when you are planning a meeting?
+
+:::
+::::
 
 :::{layout-ncol=2 layout-valign="center"}
 
-<img src="topics/images/figure_whole-brain-model.png" alt="Top-down image of a circle divided into four sections. Top left is blue, labeled 'analytical' in the circle. Top right is yellow, labeled 'experimental' in the circle. Bottom right is red and labeled 'relational' in circle. Bottom left is green and is labeled 'practical' in the circle. The circle also labels the lines separating each pair of adjacent quadrants as follows: analytical and experimental is 'intellectual', experimental and relational is 'intuitive', relational and practical is 'instinctive', and practical and analytical is 'rational'." width="100%"/>
+![](topics/images/figure_whole-brain-model.png){fig-alt="Top-down image of a circle divided into four sections. Top left is blue, labeled 'analytical' in the circle. Top right is yellow, labeled 'experimental' in the circle. Bottom right is red and labeled 'relational' in circle. Bottom left is green and is labeled 'practical' in the circle. The circle also labels the lines separating each pair of adjacent quadrants as follows: analytical and experimental is 'intellectual', experimental and relational is 'intuitive', relational and practical is 'instinctive', and practical and analytical is 'rational'" width="80%" fig-align="center" .lightbox}
 
-<img src="topics/images/figure_thinking-style-expects.png" alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="100%"/>
+![](topics/images/figure_thinking-style-expects.png){fig-alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="100%" fig-align="center" .lightbox}
 
 :::
