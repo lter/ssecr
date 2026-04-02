@@ -11,6 +11,40 @@ After completing this topic you will be able to:
 
 Making sure that your project is reproducible requires a handful of steps before you begin, some actions during the life of the project, and then a few finishing touches when the project nears its conclusion. The following diagram may prove helpful as a coarse roadmap for how these steps might be followed in a general project setting.
 
-<p align="center">
-<img src="topics/images/image_synthesis-project-steps.png" alt="General steps for creating and maintaining a reproducible project. Steps follow the major headings of this section from starting on the 'right foot' with well thought out documentation, flowing through to consistent maintenance, and ending with some of the decisions needed for publication" width="90%">
-</p>
+![](topics/images/image_synthesis-project-steps.png){fig-alt="General steps for creating and maintaining a reproducible project. Steps follow the major headings of this section from starting on the 'right foot' with well thought out documentation, flowing through to consistent maintenance, and ending with some of the decisions needed for publication" .lightbox}
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: LEGO Reproducibility Demonstration
+
+The LEGO activity was designed by [Mary Donaldson](https://orcid.org/0000-0002-1936-3499) and [Matt Mahon](https://orcid.org/0000-0001-8950-8422) at the University of Glasgow. The full materials can be accessed [here](https://eprints.gla.ac.uk/196477/).
+
+:::{.panel-tabset}
+### Part 1 - Creation Phase
+
+In small groups,
+
+1. Build a small house / building / structure of your choice using the provided LEGO blocks
+    - Feel free to make this as complex and detailed as you would like and accessorize as desired
+2. Keep notes on how to replicate the build using the template provided
+3. Let an instructor know when you’re done and they will take a picture of the finished build
+4. Disassemble build and prepare setup for the replication phase
+
+### Part 2 - Replication Phase
+
+In the same small groups, 
+
+1. Using the resources provided by the previous group, attempt to replicate their build 
+2. Consider which information was helpful and what additional information you would have found useful in attempting to replicate the previous build
+3. Let an instructor know when you’re done and they will take a picture of the finished build
+
+### Part 3 - Discussion
+
+As a whole class, let's discuss the following:
+ 
+- Did you find this a simple way to document your process?
+- Was there anything you found difficult to capture?
+- Did those replicating the builds find it straightforward to follow?
+- Did you encounter any ambiguity in the instructions?
+
+:::
+::::

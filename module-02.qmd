@@ -14,10 +14,8 @@ Check back later
 :::
 
 {{< include topics/reproducibility-summary.qmd >}}
-{{< include activities/reproducibility-lego.qmd >}}
 
 {{< include topics/project-documentation.qmd >}}
-{{< include activities/create-readme.qmd >}}
 
 {{< include topics/project-organization.qmd >}}
 

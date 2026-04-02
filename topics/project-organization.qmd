@@ -5,10 +5,10 @@
 
 After completing this topic you will be able to: 
 
+- <u>Explain</u> strengths of some common organization strategies
 - <u>Implement</u> reproducible project organization strategies
 
 :::
-
 
 ### Fundamental Structure
 
@@ -31,19 +31,6 @@ Putting files that share a purpose or source into logical sub-folders is a great
 3. **Craft informative file names**
 
 An ideal file name should give some information about the file's contents, purpose, and relation to other project files. Some of that may be reinforced by folder names, but the file name itself should _be inherently meaningful_. This lets you change folder names without fear that files would also need to be re-named.
-
-:::{.callout-warning icon="false"}
-#### Discussion: Project Structure
-
-With a partner discuss (some of) the following questions:
-
-- How do you typically organize your projects' files?
-- What benefits do you see of your current approach?
-- What--if any--limitations to your system have you experienced?
-- Do you think your structure would work well in a team environment?
-    - If not, what changes might you make to better fit that context?
-
-:::
 
 #### Naming Tips
 
@@ -261,3 +248,30 @@ In the same vein as the previous best practice, we recommend that you separate t
 #### Quarantine External Outputs
 
 This can sound harsh, but it is often a good idea to "quarantine" outputs received from others until they can be carefully vetted. This is not at all to suggest that such contributions might be malicious! As you embrace more of the project organization recommendations we've described above outputs from others have more and more opportunities to diverge from the framework you establish. Quarantining inputs from others gives you a chance to rename files to be consistent with the rest of your project as well as make sure that the style and content of the code also match (e.g., use or exclusion of particular packages, comment frequency and content, etc.)
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Project Structure Conversation
+
+:::{.panel-tabset}
+### Part 1 - Reflect
+
+On your own, reflect on the following questions:
+
+- What strategies do you currently use to keep files for a particular project organized?
+- Why did you adopt those strategies?
+- What do you think are particular strengths of your current method?
+- What limitations do you experience--even when working alone--because of your organization method?
+- <u>Do you think your structure would work well in a team environment?</u>
+    - If not, what changes might you make to better fit that context?
+
+### Part 2 - Discuss
+
+In small groups:
+
+1. Take a few minutes and give an overview of your organization strategy to your groupmates
+    - Note that if it takes longer than that, it may be a sign that your organization method is too complicated and thus brittle
+2. What strengths do you see in others' methods that you would like to adopt for yourself?
+3. What choices feel like limitations or are confusing to you?
+
+:::
+::::
