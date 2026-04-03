@@ -1,16 +1,103 @@
-## Data Inventory Value
+## Making a Data Inventory
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives
 
 After completing this topic you will be able to: 
 
+- <u>Define</u> "data inventory" in the context of a synthesis project 
+- <u>Discuss</u> useful elements to include in a data inventory
 - <u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products
 
 :::
 
+As you find data, it will become necessary to--somehow--record what data your group has on hand. A **data inventory** is an extremely useful tool in this effort! A data inventory can take many forms but at its simplest, it should be a **table where each dataset you find gets one row and critical information about that dataset is recorded in each column.** It can be difficult to know which columns to include but keep in mind that it is always easiest to record information that you don't wind up using than it is to go hunt through all of your datasets for some piece of information you didn't record in the first place.
+
+We've grouped some recommendations for useful data inventory components below into some loose categories but these are _guidelines_ and your team likely will come up with useful additions--or may not need some of these pieces of information!
+
+:::{.panel-tabset}
+### Source
+
+First and foremost, you'll want to record **where you found the data and where you can find it again if needed.**
+
+- What is the URL to the data?
+- When did you last download or otherwise receive the data?
+- Who owns the data (either a person or an institution)?
+- What is the contact info for the data owner?
+- What is the name of the data file when you originally download it?
+- Is there a paper or report that may provide context that isn't included in the official metadata? If so, what's the link/citation info for that document?
+    - Sometimes a peer-reviewed paper's Methods section might include valuable context that isn't actually included in the data!
+- If the data have a license, how are you allowed to use the data? How must you cite the data owner/data maintainer?
+
+### Explanatory Variables
+
+Sometimes a data inventory can be a **useful source of explanatory variables for your analysis!**
+
+- What are the coordinates (i.e., latitude & longitude) of the data?
+    - Remember to enter these in decimal degrees if you want to use them in analysis!
+- What country/state/county/locality is the data from?
+    - Include all of these that might vary across your datasets!
+- What habitat or ecosystem is the data from?
+- What's the focal taxonomic group?
+- What's the taxonomic granularity?
+    - I.e., is there information about different species or only at a higher level?
+- Are the data experimental or observational?
+    - If experimental, what treatments were applied? When? How frequently?
+- What is the time range of the data?
+- What is the temporal granularity of the data?
+    - Relatedly, what are the first and last years/time points in the data?
+- How big was the study area/experimental plot?
+
+### Team Delegation
+
+If you start relying on a data inventory, **it can become a valuable place to assign or delegate tasks within your group.** This can also be helpful at the end of the project when you're trying to remember who deserves credit for finding data/metadata.
+
+- Who--in your group--is responsible for filling out the other columns in the data?
+    - I.e., whose 'homework' is it to flesh out this row of the data inventory?
+- Who is responsible for double-checking the metadata entered by the first team member?
+- Who is the primary point of contact with the original data owner/maintainer?
+
+### Data Use
+
+One _critical_ use of a data inventory that is often overlooked: **are the data useful to your question?**
+
+If you found the data before, your later data searches will likely also turn it up even if it's not useful! You can save other group members a headache by noting not applicable data so they can disregard it from their searches. 
+
+If a particular dataset is not useful, **_why_ is it not useful?** If your questions or in/exclusion criteria evolve, maybe it will become useful later!
+
+:::
+
+### Data Inventory Value
+
 Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:
 
-- Well-documented data inventory table make it easier for researchers to find and access specific data for reproducible research
+- A well-documented data inventory makes it easier for researchers to find and access specific data for reproducible research
 - Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
-- Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)
+- Detailed documentation will speed up the data publication process (e.g., data provenance, difference among methods)
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Draft a Data Inventory
+
+:::{.panel-tabset}
+### Part 1 - Draft the Inventory
+
+In your project groups:
+
+1. Create a spreadsheet to serve as your data inventory
+2. Add the name of each dataset you've already found
+3. **Discuss** what columns would be useful in your data inventory
+    - Remember to re-visit the recommendations above!
+4. Add the agreed-upon columns to your data inventory
+5. Add information for each dataset in the new columns
+
+### Part 2 - Discuss
+
+As a whole class, let's discuss the following questions:
+
+- What elements of your data inventory do you think will be particularly useful?
+- Did you identify any components not included in the above recommendations? If so, what were they?
+- What challenges do you think you're likely to encounter while searching for datasets?
+    - Are there any structural changes you can/did make to your data inventory to ameliorate these obstacles?
+
+:::
+::::

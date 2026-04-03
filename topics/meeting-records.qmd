@@ -23,3 +23,45 @@ Consider using:
 - Manifestos, abstracts, and other written collateral to distill ideas
 
 When capturing notes, try to use people's own words; if necessary ask them to distill long or complex points into a headline you can capture. Invite them to offer corrections if the notetaker didn't capture what they meant.
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Team Planning
+
+:::{.panel-tabset}
+### Part 1 - Reflection
+
+On your own, think about an upcoming team meeting that hasn't yet been planned
+
+- _Why_ will you be meeting? 
+- What do you think should be the purpose of that meeting?
+
+### Part 2 - Team Discussion
+
+In your project teams:
+
+- Decide as a group which upcoming meeting you want to focus on
+- Identify a facilitator, timekeeper, reporter for _today's_ breakout session (not the meeting)
+- Use round robin or silent Google Doc-ing to hear everyone's answers to the prompt
+- Plan your next meeting together (resources: EasyRetro board, tools highlighted above)
+    - Agree on the meeting purpose
+    - Identify 1-3 intended outcomes
+    - Draft an agenda for the meeting
+    - _What activities will you use to make your meeting inclusive? Can you include an activity that preferences each thinking style?_
+    - Identify roles and responsibilities
+    - What's your plan for harvesting content?
+    - Identify any prep work for participants and for the facilitator(s)
+- Discuss:
+    - _How might things get off track?_
+    - _What's your plan if they do?_
+- Modify your plan as needed
+
+### Part 3 - Class Discussion
+
+As a whole class, let's discuss your answers to the following questions:
+
+- What activities did you identify to help make your meeting inclusive to all the thinking styles on your team?
+- Where would you like advice from the class?
+- Are there other questions you are holding related to inclusive facilitation?
+
+:::
+::::

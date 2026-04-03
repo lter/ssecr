@@ -15,5 +15,5 @@ Good meeting design starts with understanding your purpose and objectives, as we
 A good rule of thumb is to allow 2-3x as much time to plan a meeting as its duration. 
 
 <p align="center">
-<img src="topics/images/figure_meeting-design-questions.png" alt="Figure separating meeting planning into 'why, what, how, and who' facets" width="95%"/>
+<img src="topics/images/figure_meeting-design-questions.png" alt="Figure separating meeting planning into 'why, what, how, and who' facets" width="85%"/>
 </p>
