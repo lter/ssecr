@@ -321,7 +321,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-inventory-value" id="toc-data-inventory-value" class="nav-link active" data-scroll-target="#data-inventory-value">Data Inventory Value</a></li>
+  <li><a href="#making-a-data-inventory" id="toc-making-a-data-inventory" class="nav-link active" data-scroll-target="#making-a-data-inventory">Making a Data Inventory</a>
+  <ul class="collapse">
+  <li><a href="#data-inventory-value" id="toc-data-inventory-value" class="nav-link" data-scroll-target="#data-inventory-value">Data Inventory Value</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -334,8 +337,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 
 
-<section id="data-inventory-value" class="level2">
-<h2 class="anchored" data-anchor-id="data-inventory-value">Data Inventory Value</h2>
+<section id="making-a-data-inventory" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-data-inventory">Making a Data Inventory</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -350,19 +353,132 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
+<li><u>Define</u> “data inventory” in the context of a synthesis project</li>
+<li><u>Discuss</u> useful elements to include in a data inventory</li>
 <li><u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products</li>
 </ul>
 </div>
 </div>
 </div>
+<p>As you find data, it will become necessary to–somehow–record what data your group has on hand. A <strong>data inventory</strong> is an extremely useful tool in this effort! A data inventory can take many forms but at its simplest, it should be a <strong>table where each dataset you find gets one row and critical information about that dataset is recorded in each column.</strong> It can be difficult to know which columns to include but keep in mind that it is always easiest to record information that you don’t wind up using than it is to go hunt through all of your datasets for some piece of information you didn’t record in the first place.</p>
+<p>We’ve grouped some recommendations for useful data inventory components below into some loose categories but these are <em>guidelines</em> and your team likely will come up with useful additions–or may not need some of these pieces of information!</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Source</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Explanatory Variables</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Team Delegation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Data Use</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>First and foremost, you’ll want to record <strong>where you found the data and where you can find it again if needed.</strong></p>
+<ul>
+<li>What is the URL to the data?</li>
+<li>When did you last download or otherwise receive the data?</li>
+<li>Who owns the data (either a person or an institution)?</li>
+<li>What is the contact info for the data owner?</li>
+<li>What is the name of the data file when you originally download it?</li>
+<li>Is there a paper or report that may provide context that isn’t included in the official metadata? If so, what’s the link/citation info for that document?
+<ul>
+<li>Sometimes a peer-reviewed paper’s Methods section might include valuable context that isn’t actually included in the data!</li>
+</ul></li>
+<li>If the data have a license, how are you allowed to use the data? How must you cite the data owner/data maintainer?</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Sometimes a data inventory can be a <strong>useful source of explanatory variables for your analysis!</strong></p>
+<ul>
+<li>What are the coordinates (i.e., latitude &amp; longitude) of the data?
+<ul>
+<li>Remember to enter these in decimal degrees if you want to use them in analysis!</li>
+</ul></li>
+<li>What country/state/county/locality is the data from?
+<ul>
+<li>Include all of these that might vary across your datasets!</li>
+</ul></li>
+<li>What habitat or ecosystem is the data from?</li>
+<li>What’s the focal taxonomic group?</li>
+<li>What’s the taxonomic granularity?
+<ul>
+<li>I.e., is there information about different species or only at a higher level?</li>
+</ul></li>
+<li>Are the data experimental or observational?
+<ul>
+<li>If experimental, what treatments were applied? When? How frequently?</li>
+</ul></li>
+<li>What is the time range of the data?</li>
+<li>What is the temporal granularity of the data?
+<ul>
+<li>Relatedly, what are the first and last years/time points in the data?</li>
+</ul></li>
+<li>How big was the study area/experimental plot?</li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>If you start relying on a data inventory, <strong>it can become a valuable place to assign or delegate tasks within your group.</strong> This can also be helpful at the end of the project when you’re trying to remember who deserves credit for finding data/metadata.</p>
+<ul>
+<li>Who–in your group–is responsible for filling out the other columns in the data?
+<ul>
+<li>I.e., whose ‘homework’ is it to flesh out this row of the data inventory?</li>
+</ul></li>
+<li>Who is responsible for double-checking the metadata entered by the first team member?</li>
+<li>Who is the primary point of contact with the original data owner/maintainer?</li>
+</ul>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>One <em>critical</em> use of a data inventory that is often overlooked: <strong>are the data useful to your question?</strong></p>
+<p>If you found the data before, your later data searches will likely also turn it up even if it’s not useful! You can save other group members a headache by noting not applicable data so they can disregard it from their searches.</p>
+<p>If a particular dataset is not useful, <strong><em>why</em> is it not useful?</strong> If your questions or in/exclusion criteria evolve, maybe it will become useful later!</p>
+</div>
+</div>
+</div>
+<section id="data-inventory-value" class="level3">
+<h3 class="anchored" data-anchor-id="data-inventory-value">Data Inventory Value</h3>
 <p>Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:</p>
 <ul>
-<li>Well-documented data inventory table make it easier for researchers to find and access specific data for reproducible research</li>
+<li>A well-documented data inventory makes it easier for researchers to find and access specific data for reproducible research</li>
 <li>Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment</li>
-<li>Detailed documentation will speed up the data publication process (e.g., data provenance, the difference among methods, etc.)</li>
+<li>Detailed documentation will speed up the data publication process (e.g., data provenance, difference among methods)</li>
 </ul>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Draft a Data Inventory
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Part 1 - Draft the Inventory</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Part 2 - Discuss</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>In your project groups:</p>
+<ol type="1">
+<li>Create a spreadsheet to serve as your data inventory</li>
+<li>Add the name of each dataset you’ve already found</li>
+<li><strong>Discuss</strong> what columns would be useful in your data inventory
+<ul>
+<li>Remember to re-visit the recommendations above!</li>
+</ul></li>
+<li>Add the agreed-upon columns to your data inventory</li>
+<li>Add information for each dataset in the new columns</li>
+</ol>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>As a whole class, let’s discuss the following questions:</p>
+<ul>
+<li>What elements of your data inventory do you think will be particularly useful?</li>
+<li>Did you identify any components not included in the above recommendations? If so, what were they?</li>
+<li>What challenges do you think you’re likely to encounter while searching for datasets?
+<ul>
+<li>Are there any structural changes you can/did make to your data inventory to ameliorate these obstacles?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
