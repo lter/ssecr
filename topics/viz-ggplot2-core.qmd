@@ -22,8 +22,6 @@ Note that the theme component may be implicit in some graphs because there is a 
 This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don't have one in mind, you can use the example dataset shown in the code chunks throughout this module. This dataset comes from the [`lterdatasampler` R package](https://lter.github.io/lterdatasampler/) and the data are about fiddler crabs (_Minuca pugnax_) at the [Plum Island Ecosystems (PIE) LTER](https://pie-lter.mbl.edu/) site.
 
 ```{r data-prep}
-#| eval: false
-
 #| message: false
 #| warning: false
 
@@ -45,9 +43,6 @@ With this dataset in hand, let's make a series of increasingly customized graphs
 Let's begin with a scatterplot of crab size on the Y-axis with latitude on the X. We'll forgo doing anything to the theme elements at this point to focus on the other three elements.
 
 ```{r gg-1}
-#| eval: false
-
-
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
@@ -63,9 +58,6 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) + # 
 We can improve on this graph by tweaking theme elements to make it use fewer of the default settings.
 
 ```{r gg-2}
-#| eval: false
-
-
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
@@ -83,9 +75,6 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) +
 We can further modify `ggplot2` graphs by adding _multiple_ geometries if you find it valuable to do so. Note however that <u>geometry order matters</u>! Geometries added later will be "in front of" those added earlier. Also, adding too much data to a plot will begin to make it difficult for others to understand the central take-away of the graph so you may want to be careful about the level of information density in each graph. Let's add boxplots behind the points to characterize the distribution of points more quantitatively.
 
 ```{r gg-3}
-#| eval: false
-
-
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
@@ -106,9 +95,6 @@ ggplot(data = pie_crab, mapping = aes(x = latitude, y = size, fill = site)) +
 Let's calculate some summary statistics of crab size to include that in our plot.
 
 ```{r gg-4-prep}
-#| eval: false
-
-
 #| message: false
 
 # Load the supportR library
@@ -125,9 +111,6 @@ str(crab_summary)
 With this data object in-hand, we can make a graph that includes both this and the original, un-summarized crab data. To better focus on the 'multiple data objects' bit of this example we'll pare down on the actual graph code.
 
 ```{r gg-4}
-#| eval: false
-
-
 #| fig-align: center
 #| fig-width: 9
 #| fig-height: 4
@@ -147,5 +130,17 @@ ggplot() + # <1>
 ```
 1. If you want multiple data objects in the same `ggplot2` graph you need to leave this top level `ggplot()` call _empty!_ Otherwise you'll get weird errors with aesthetics later in the graph
 2. This geometry adds the error bars and it's important that we add it before the summarized data points themselves if we want the error bars to be 'behind' their respective points
+
+::::
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Graph Creation
+
+In a script, attempt the following with one of either your or your group's datasets:
+
+- Make a graph using `ggplot2`
+    - Include at least one geometry
+    - Include at least one aesthetic (beyond X/Y axes)
+    - Modify at least one theme element from the default
 
 ::::

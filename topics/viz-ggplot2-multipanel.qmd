@@ -13,7 +13,7 @@ After completing this topic you will be able to:
 
 It is sometimes the case that you want to make a single graph file that has multiple panels. For many of us, we might default to creating the separate graphs that we want, exporting them, and then using software like Microsoft PowerPoint to stitch those panels into the single image we had in mind from the start. However, as all of us who have used this method know, this is hugely cumbersome when your advisor/committee/reviewers ask for edits and you now have to redo all of the manual work behind your multi-panel graph. 
 
-Fortunately, there are two nice entirely scripted alternatives that you might consider: **Faceted graphs** and **Plot grids**. See below for more information on both.
+Fortunately, there are two nice--entirely scripted--alternatives that you might consider: **Faceted graphs** and **Plot grids**. See below for more information on both.
 
 :::{.panel-tabset}
 ### Facets
@@ -22,10 +22,17 @@ In a faceted graph, <u>every panel of the graph has the same aesthetics</u>. The
 
 Let's check out an example.
 
+```{r multipanel-setup}
+#| include: false
+
+# Load needed libraries
+library(tidyverse); library(lterdatasampler)
+
+# Load the fiddler crab dataset
+data(pie_crab)
+```
+
 ```{r facet-1}
-#| eval: false
-
-
 #| fig-align: center
 #| fig-width: 6
 #| fig-height: 6
@@ -46,9 +53,6 @@ In a plot grid, <u>each panel is completely independent of all others</u>. These
 Let's check out an example that relies on the `cowplot` library.
 
 ```{r grid-1}
-#| eval: false
-
-
 #| message: false
 #| fig-align: center
 #| fig-width: 9
@@ -81,3 +85,14 @@ cowplot::plot_grid(crab_p1, crab_p2, labels = "AUTO", nrow = 1) # <4>
 3. This geometry is responsible for _horizontal_ error bars (note the "h" at the end of the function name)
 4. The `labels = "AUTO"` argument means that each panel of the plot grid gets the next sequential capital letter. You could also substitute that for a vector with labels of your choosing
 :::
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Multi-Panel Graph Creation
+
+In a script, attempt the following:
+
+1. Create two graphs with `ggplot2` that have _different geometries_
+2. Assemble the appropriate type of multi-panel graph
+3. If appropriate, facet one of the two graphs by some grouping variable and re-generate the multi-panel graph from step 2
+
+::::

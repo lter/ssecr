@@ -5,7 +5,7 @@
 
 After completing this topic you will be able to: 
 
-- <u>Describe</u> how data visualization fit into the synthesis process
+- <u>Describe</u> how data visualization fits into the synthesis process
 
 :::
 

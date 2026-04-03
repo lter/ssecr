@@ -22,21 +22,26 @@ Like outlining a paper, there are a few basic steps to developing a solid projec
 
 Honestly, you could do all of this in a spreadsheet, but there are a few types of visualizations that a lot of people find helpful, which we'll discuss later today. First, though, we'll remind ourselves of _why_ the investment in planning time is so valuable.
 
-::: {.callout-warning icon="false"}
-### Discussion: Project Management "Fails"
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Learning From Project "Fails"
 
 Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment...
 
-**Part 1**
+:::{.panel-tabset}
+### Part 1 - Reflection
 
-Reflect silently on one of your own project management "fails"
+On your own, reflect on one of your own project management "fails"
 
 - What went wrong?
 - How could planning have prevented or improved the situation?
 
-**Part 2**
+### Part 2 - Group Discussion
 
-- Share your project management "fails"
-- If time allows, consider what aspects of planning are most likely to be skipped or overlooked
+In your project groups,
+
+- Share (one of) your project management "fails"
+    - And how you think it could have been avoided/ameliorated
+- Consider what aspects of planning are most likely to be skipped or overlooked in a synthesis effort
 
 :::
+::::

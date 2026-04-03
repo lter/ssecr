@@ -12,21 +12,10 @@ After completing this topic you will be able to:
 
 For defining the project and agreeing on the goals, mind maps are useful individual or group exercises. Mind maps offer a lightly-structured way of exploring a focus area. The graphical approach helps to surface unexpected connections and reveal gaps in understanding. Tools for developing them can be as simple as pen and paper, basic drawing apps, a zoom whiteboard, or online collaboration and project planning tools such as Miro, Mural, and FigJam.
 
-Start with a general topic or question, then expand to the precedents and implications.
-Then expand from there to the assumptions, modifying conditions, or follow-on implications related to each of your precedents or implications.
-Often, looking at a problem head-on reveals little new, but surfacing and testing the underlying assumptions can open up fresh territory.
+Start with a general topic or question, then expand to the precedents and implications. Then expand from there to the assumptions, modifying conditions, or follow-on implications related to each of your precedents or implications. Often, looking at a problem head-on reveals little new, but surfacing and testing the underlying assumptions can open up fresh territory.
 
-<p align="center">
-<img src="topics/images/figure_mind-map.png" alt="Bubble with a central concept or question, surrounded, at the first level, by inputs, outputs or modifiers and at the second level by question, concerns, or implications" width="90%"/>
-</p>
+![](topics/images/figure_mind-map.png){fig-alt="Bubble with a central concept or question, surrounded, at the first level, by inputs, outputs or modifiers and at the second level by question, concerns, or implications" .lightbox}
 
-The mind map will likely surface many relevant and un-answered questions, but time is limited.
-You'll need to choose one on which to focus.
-One way to prioritize them is to place them on a two-by-two matrix of payoff v. feasibility.
-The most important payoff for a particular team may be scientific novelty, practical importance, or whether it's a fun and engaging question for the group.
-Often, the most interesting questions will also require the most effort and the group will need to determine what trade-offs they are willing to accept.
-But sometimes, a question emerges that is both interesting and feasible--perhaps because a new source of data has just become available or simply because no one saw the question from that angle before.
+The mind map will likely surface many relevant and un-answered questions, but time is limited. You'll need to choose one on which to focus. One way to prioritize them is to place them on a two-by-two matrix of payoff v. feasibility. The most important payoff for a particular team may be scientific novelty, practical importance, or whether it's a fun and engaging question for the group. Often, the most interesting questions will also require the most effort and the group will need to determine what trade-offs they are willing to accept. But sometimes, a question emerges that is both interesting and feasible--perhaps because a new source of data has just become available or simply because no one saw the question from that angle before.
 
-<p align="center">
-<img src="topics/images/figure_feasibility-matrix.png" alt="x and y axes, labelled with novelty/importance (Y) and feasibility (x), with project ideas distributed across the resulting space" width="90%"/>
-</p>
+![](topics/images/figure_feasibility-matrix.png){fig-alt="x and y axes, labelled with novelty/importance (Y) and feasibility (x), with project ideas distributed across the resulting space" .lightbox}
