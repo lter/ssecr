@@ -9,7 +9,7 @@ Check back later
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+**Complete your first draft of the data inventory!** This should include (at least) 3-5 datasets and all columns that you know at this point are likely to be useful--even if we expect that you may discover additional useful pieces of information to record as your project continues.
 
 :::
 
