@@ -85,6 +85,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -483,9 +486,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction"><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> [Overview Under Construction]</a></li>
   <li><a href="#outline-your-analysis" id="toc-outline-your-analysis" class="nav-link" data-scroll-target="#outline-your-analysis">Outline Your Analysis</a></li>
   <li><a href="#plan-the-work" id="toc-plan-the-work" class="nav-link" data-scroll-target="#plan-the-work">Plan the Work</a></li>
-  <li><a href="#making-a-wrangling-plan" id="toc-making-a-wrangling-plan" class="nav-link" data-scroll-target="#making-a-wrangling-plan">Making a Wrangling Plan</a></li>
+  <li><a href="#making-a-workflow-plan" id="toc-making-a-workflow-plan" class="nav-link" data-scroll-target="#making-a-workflow-plan">Making a Workflow Plan</a></li>
   <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
-  <li><a href="#wrangling-scope" id="toc-wrangling-scope" class="nav-link" data-scroll-target="#wrangling-scope">Wrangling Scope</a></li>
   <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -560,12 +562,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>Once the team has settled on a question and specific set of processes to explore or test, it’s worth sketching out the steps in your analysis. By making the inputs, processing, and outputs of each step explicit, you’ll identify needed data sooner and avoid (some) backtracking.</p>
 <p>The process of building an explicit analysis description as a team can quickly reveal mismatches in team members’ mental models and uncover hidden assumptions. Making those (often disciplinary) differences visible early can mitigate some of the biggest risks of interdisciplinary research and also offer a way into the most novel insights. A well-structured analysis plan can also be a touchstone to return to throughout the life of your project, keeping the team on-track and avoiding mission creep.</p>
-<p align="center">
-<img src="topics/images/figure_analysis-flow.png" alt="rectangular boxes containing data sources (Si concentration, streamflow, watershed geometry and land use, watershed precipitation), linked to diamond-shaped boxed describing processing steps, linked to more rectangles with outputs" width="90%">
-</p><figcaption>
-Analysis flowchart for a (relatively) straightforward test of controls on Silica exports in streamflow.
+<a href="topics/images/figure_analysis-flow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="topics/images/figure_analysis-flow.png" class="img-fluid" alt="Rectangular boxes containing data sources (Si concentration, streamflow, watershed geometry and land use, watershed precipitation), linked to diamond-shaped boxed describing processing steps, linked to more rectangles with output"></a>
+<figcaption>
+Analysis flowchart for a test of controls on Silica exports in streamflow.
 </figcaption>
-<p></p>
 </section>
 <section id="plan-the-work" class="level2">
 <h2 class="anchored" data-anchor-id="plan-the-work">Plan the Work</h2>
@@ -603,31 +603,22 @@ Analysis flowchart for a (relatively) straightforward test of controls on Silica
 </ul>
 <p>A robust support infrastructure exists for the project management profession – including formal training and a multitude of (often pricey) apps. But for the job of managing research collaborations, we’ve found that the single most important factor is whether your collaborators will use the system. For that to happen, they must have easy access to it, ideally without setting up a new account and as part of something they already do every day.</p>
 <p>For non-coders, we’ve included a <a href="https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing">Google sheet template</a> of a Gantt chart, pictured below.</p>
-<p align="center">
-<img src="topics/images/image_gantt-image.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%">
-</p>
+<p><a href="topics/images/image_gantt-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="topics/images/image_gantt-image.png" class="img-fluid" alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks"></a></p>
 <p>But if you’re already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub’s project management capabilities? In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project. Issues can also be created in the project itself. Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates. The examples below draw from the repository we are using to organize the first iteration of this course.</p>
-<p align="center">
-<img src="topics/images/image_github-project.png" alt="a series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" width="100%">
-</p><figcaption>
-Organizing with GitHub Projects
-</figcaption>
-<p></p>
+<p><a href="topics/images/image_github-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="topics/images/image_github-project.png" class="img-fluid" alt="A series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned"></a></p>
 <p>Two additional views make it even easier to track overall progress and individual workloads. The “roadmap” view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue’s start or end date will adjust accordingly. The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.</p>
 <p>The “sliced tasks view” also allows each collaborator to see only their own assigned tasks.</p>
-<p align="center">
-<img src="topics/images/image_github-gantt.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%">
-</p><figcaption>
+<a href="topics/images/image_github-gantt.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="topics/images/image_github-gantt.png" class="img-fluid" alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks"></a>
+<figcaption>
 Gantt Chart Example using GitHub Projects
 </figcaption>
-<p></p>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Activity: Develop a Project Timeline/Gantt Chart
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Develop a Project Timeline/Gantt Chart
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -640,7 +631,7 @@ Gantt Chart Example using GitHub Projects
 </ul></li>
 </ul>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Google Sheet Template</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">GitHub</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Google Sheet Template</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">GitHub Project</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ol type="1">
@@ -699,8 +690,8 @@ Gantt Chart Example using GitHub Projects
 </div>
 </div>
 </section>
-<section id="making-a-wrangling-plan" class="level2">
-<h2 class="anchored" data-anchor-id="making-a-wrangling-plan">Making a Wrangling Plan</h2>
+<section id="making-a-workflow-plan" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-workflow-plan">Making a Workflow Plan</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -715,29 +706,29 @@ Gantt Chart Example using GitHub Projects
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
-<li><u>Identify</u> typical steps in data harmonization and wrangling workflows</li>
+<li><u>Identify</u> major needs and possible obstacles in your group’s data workflow</li>
 </ul>
 </div>
 </div>
 </div>
-<p><em>Before</em> you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data manipulation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group’s plan for your data.</p>
+<p><em>Before</em> you start actually developing your data workflow (or early in the development process), it is a good idea to develop a plan for what data manipulation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group’s plan for your data.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Discussion: Wrangling Plan
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Discuss Workflow Plan
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>With your project groups discuss the following questions:</p>
+<p>With your project group, discuss the following questions:</p>
 <ul>
-<li>What harmonization needs to be done to make your starting data files comparable?
+<li>What needs to be done to make your starting data files comparable?
 <ul>
 <li>Consider units, taxonomic resolution, spatial/temporal granularity, etc.</li>
 </ul></li>
-<li>Once you have harmonized your data, what wrangling needs to be done?
+<li>Once the original data files are comparable, what else needs to be done?
 <ul>
 <li>Do you need to calculate index metrics? Change the ‘shape’ of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?</li>
 </ul></li>
@@ -783,12 +774,10 @@ Gantt Chart Example using GitHub Projects
 <li>“tidy_name” – New name for each raw column that should be carried to the harmonized data</li>
 </ol>
 <p>Note that any raw names either not included in the column key or that lack a tidy name equivalent will be excluded from the final data object. For more information, consult the <code>ltertools</code> <a href="https://lter.github.io/ltertools/articles/ltertools.html">package vignette</a>. For convenience, we’re attaching the visual diagram of this method of harmonization from the package vignette.</p>
-<p align="center">
-<img src="topics/images/figure_harmonize-workflow.png" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table" width="90%">
-</p>
+<p><a href="topics/images/figure_harmonize-workflow.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="topics/images/figure_harmonize-workflow.png" class="img-fluid" alt="Four color-coded tables are in a soft rectangle. One is pulled out and its column names are replaced based on their respective 'tidy names' in the column key table. This is done for each of the other tables then the four tables--with fixed column names--are combined into a single data table"></a></p>
 </section>
-<section id="wrangling-scope" class="level2">
-<h2 class="anchored" data-anchor-id="wrangling-scope">Wrangling Scope</h2>
+<section id="exploring-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -804,41 +793,19 @@ Gantt Chart Example using GitHub Projects
 <p>After completing this topic you will be able to:</p>
 <ul>
 <li><u>Define</u> “wrangling”</li>
+<li><u>Extract</u> typical data structure information</li>
 </ul>
 </div>
 </div>
 </div>
 <p>For the purposes of SSECR, we’ll define “wrangling” as <u>all modifications to a single data object meant to create a single, analysis-ready ‘tidy’ data object</u>. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) <em>also falls into this category!</em></p>
-<p>Data wrangling is a <em>huge</em> subject that covers a wide range of topics. In this part of the module, we’ll attempt to touch on a wide range of tools that may prove valuable to your data wrangling efforts. This is certainly non-exhaustive and you’ll likely find new tools that fit your coding style and professional intuition better. However, hopefully the topics covered below provide a nice ‘jumping off’ point to reproducibly prepare your data for analysis and visualization work later in the lifecycle of the project.</p>
-<p>To begin, we’ll load the Plum Island Ecosystems fiddler crab dataset we’ve used in other modules.</p>
+<p>Data wrangling is a <em>huge</em> subject that covers a wide range of topics. That said, the first step of most–if not all–wrangling is simply exploring your data! To begin, we’ll load a Plum Island Ecosystems fiddler crab dataset from the <code>lterdatasampler</code> R package.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
-<section id="exploring-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Extract</u> typical data structure information</li>
-</ul>
-</div>
-</div>
 </div>
 <p>Before beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.</p>
 <p>Checking the data structure is one way of getting a lot of this high-level information.</p>
@@ -858,7 +825,7 @@ Gantt Chart Example using GitHub Projects
  $ name         : chr  "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
 </div>
 </div>
-<p>For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information elsewhere.</p>
+<p>For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information with different methods.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -916,11 +883,11 @@ Gantt Chart Example using GitHub Projects
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Discussion: Data Exploration Tools
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Discuss Data Exploration
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>With a group of 4-5 others discuss the following questions:</p>
+<p>With a small group, discuss the following questions:</p>
 <ul>
 <li>What tools do you use when exploring new data?</li>
 <li>Do you already use any of these tools to explore your data?
@@ -1408,6 +1375,38 @@ Gantt Chart Example using GitHub Projects
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

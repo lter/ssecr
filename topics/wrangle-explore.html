@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>wrangle-plan – Synthesis Skills for Early Career Researchers</title>
+<title>wrangle-explore – Synthesis Skills for Early Career Researchers</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -321,7 +356,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#making-a-wrangling-plan" id="toc-making-a-wrangling-plan" class="nav-link active" data-scroll-target="#making-a-wrangling-plan">Making a Wrangling Plan</a></li>
+  <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link active" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -334,8 +369,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 
 
-<section id="making-a-wrangling-plan" class="level2">
-<h2 class="anchored" data-anchor-id="making-a-wrangling-plan">Making a Wrangling Plan</h2>
+<section id="exploring-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-the-data">Exploring the Data</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -350,38 +385,110 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
-<li><u>Identify</u> typical steps in data harmonization and wrangling workflows</li>
+<li><u>Define</u> “wrangling”</li>
+<li><u>Extract</u> typical data structure information</li>
 </ul>
 </div>
 </div>
 </div>
-<p><em>Before</em> you start writing your data harmonization and wrangling code, it is a good idea to develop a plan for what data manipulation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group’s plan for your data.</p>
+<p>For the purposes of SSECR, we’ll define “wrangling” as <u>all modifications to a single data object meant to create a single, analysis-ready ‘tidy’ data object</u>. This includes quality control, unit conversions, and data ‘shape’ changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) <em>also falls into this category!</em></p>
+<p>Data wrangling is a <em>huge</em> subject that covers a wide range of topics. That said, the first step of most–if not all–wrangling is simply exploring your data! To begin, we’ll load a Plum Island Ecosystems fiddler crab dataset from the <code>lterdatasampler</code> R package.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the lterdatasampler package</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Before beginning any code operations, it’s important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.</p>
+<p>Checking the data structure is one way of getting a lot of this high-level information.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check dataset structure</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Classes 'tbl_df', 'tbl' and 'data.frame':   392 obs. of  9 variables:
+ $ date         : Date, format: "2016-07-24" "2016-07-24" ...
+ $ latitude     : num  30 30 30 30 30 30 30 30 30 30 ...
+ $ site         : chr  "GTM" "GTM" "GTM" "GTM" ...
+ $ size         : num  12.4 14.2 14.5 12.9 12.4 ...
+ $ air_temp     : num  21.8 21.8 21.8 21.8 21.8 ...
+ $ air_temp_sd  : num  6.39 6.39 6.39 6.39 6.39 ...
+ $ water_temp   : num  24.5 24.5 24.5 24.5 24.5 ...
+ $ water_temp_sd: num  6.12 6.12 6.12 6.12 6.12 ...
+ $ name         : chr  "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
+</div>
+</div>
+<p>For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you’ll need to find that information with different methods.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      date               latitude         site                size      
+ Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  
+ 1st Qu.:2016-07-28   1st Qu.:34.00   Class :character   1st Qu.:12.02  
+ Median :2016-08-01   Median :39.10   Mode  :character   Median :14.44  
+ Mean   :2016-08-02   Mean   :37.69                      Mean   :14.66  
+ 3rd Qu.:2016-08-09   3rd Qu.:41.60                      3rd Qu.:17.34  
+ Max.   :2016-08-13   Max.   :42.70                      Max.   :23.43  
+    air_temp      air_temp_sd      water_temp    water_temp_sd  
+ Min.   :10.29   Min.   :6.391   Min.   :13.98   Min.   :4.838  
+ 1st Qu.:12.05   1st Qu.:8.110   1st Qu.:14.33   1st Qu.:6.567  
+ Median :13.93   Median :8.410   Median :17.50   Median :6.998  
+ Mean   :15.20   Mean   :8.654   Mean   :17.65   Mean   :7.252  
+ 3rd Qu.:18.63   3rd Qu.:9.483   3rd Qu.:20.54   3rd Qu.:7.865  
+ Max.   :21.79   Max.   :9.965   Max.   :24.50   Max.   :9.121  
+     name          
+ Length:392        
+ Class :character  
+ Mode  :character  
+                   
+                   
+                   </code></pre>
+</div>
+</div>
+<p>For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the sites included in the data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(<span class="fu">unique</span>(pie_crab<span class="sc">$</span>site))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "BC"  "CC"  "CT"  "DB"  "GTM" "JC"  "NB"  "NIB" "PIE" "RC"  "SI"  "VCR"
+[13] "ZI" </code></pre>
+</div>
+</div>
+<p>For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the ‘base’ packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.</p>
+<div class="cell" data-layout-align="center">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the psych library</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the histogram of crab "size" (carapace width in mm)</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>psych<span class="sc">::</span><span class="fu">multi.hist</span>(pie_crab<span class="sc">$</span>size)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wrangle-explore_files/figure-html/multi-hist-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="384"></p>
+</figure>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Discussion: Wrangling Plan
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Discuss Data Exploration
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>With your project groups discuss the following questions:</p>
+<p>With a small group, discuss the following questions:</p>
 <ul>
-<li>What harmonization needs to be done to make your starting data files comparable?
+<li>What tools do you use when exploring new data?</li>
+<li>Do you already use any of these tools to explore your data?
 <ul>
-<li>Consider units, taxonomic resolution, spatial/temporal granularity, etc.</li>
+<li>If you do, why do you use them?</li>
+<li>If not, where do you think they might be valuable to include?</li>
 </ul></li>
-<li>Once you have harmonized your data, what wrangling needs to be done?
-<ul>
-<li>Do you need to calculate index metrics? Change the ‘shape’ of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?</li>
-</ul></li>
-<li>How can you make your workflow less repetitive / more efficient?
-<ul>
-<li>Reducing redundancy makes integrating new ideas <em>dramatically</em> easier</li>
-</ul></li>
-<li>How easy will it be to maintain or revisit this code workflow?</li>
-<li>How can you change the workflow now to make life easier for ‘future you’?</li>
+<li>What value–if any–do you see in including these exploratory efforts in your code workflow?</li>
 </ul>
 </div>
 </div>

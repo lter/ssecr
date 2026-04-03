@@ -50,6 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -370,24 +373,92 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </ul>
 <p>A robust support infrastructure exists for the project management profession – including formal training and a multitude of (often pricey) apps. But for the job of managing research collaborations, we’ve found that the single most important factor is whether your collaborators will use the system. For that to happen, they must have easy access to it, ideally without setting up a new account and as part of something they already do every day.</p>
 <p>For non-coders, we’ve included a <a href="https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing">Google sheet template</a> of a Gantt chart, pictured below.</p>
-<p align="center">
-<img src="topics/images/image_gantt-image.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%">
-</p>
+<p><a href="topics/images/image_gantt-image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="topics/images/image_gantt-image.png" class="img-fluid" alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks"></a></p>
 <p>But if you’re already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub’s project management capabilities? In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project. Issues can also be created in the project itself. Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates. The examples below draw from the repository we are using to organize the first iteration of this course.</p>
-<p align="center">
-<img src="topics/images/image_github-project.png" alt="a series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" width="100%">
-</p><figcaption>
-Organizing with GitHub Projects
-</figcaption>
-<p></p>
+<p><a href="topics/images/image_github-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="topics/images/image_github-project.png" class="img-fluid" alt="A series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned"></a></p>
 <p>Two additional views make it even easier to track overall progress and individual workloads. The “roadmap” view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue’s start or end date will adjust accordingly. The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.</p>
 <p>The “sliced tasks view” also allows each collaborator to see only their own assigned tasks.</p>
-<p align="center">
-<img src="topics/images/image_github-gantt.png" alt="a series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" width="100%">
-</p><figcaption>
+<a href="topics/images/image_github-gantt.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="topics/images/image_github-gantt.png" class="img-fluid" alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks"></a>
+<figcaption>
 Gantt Chart Example using GitHub Projects
 </figcaption>
-<p></p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Develop a Project Timeline/Gantt Chart
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As a project group, work through the following prompts.</p>
+<p>Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.</p>
+<ul>
+<li>Decide whether you will use the Google Sheet template or GitHub
+<ul>
+<li>Click the respective tab for the next direction</li>
+</ul></li>
+</ul>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Google Sheet Template</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">GitHub Project</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ol type="1">
+<li>Access the <a href="https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing"><strong>Google sheet template</strong></a>, and copy it into your project folder
+<ul>
+<li>The template has two tabs</li>
+<li>The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead</li>
+<li>The “basic” tab will update the graph when you update task dates</li>
+</ul></li>
+<li>Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet</li>
+<li>Add or remove steps as needed for your proposed project</li>
+<li>Choose task leads
+<ul>
+<li>They should expect to draw on other group members for assistance and feedback</li>
+</ul></li>
+<li>Review the chart
+<ul>
+<li>What appear to be the bottlenecks?</li>
+<li>How could you mitigate them?</li>
+<li>Can subgroups work simultaneously on different sub-projects?</li>
+<li>Do you need to think about re-scoping the project?</li>
+</ul></li>
+<li>Revise task dates as needed</li>
+</ol>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ol type="1">
+<li>Go to your project repository and find the project that has been created for you (top center menu)
+<ul>
+<li>It will open in a Kanban Board view</li>
+</ul></li>
+<li>Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description
+<ul>
+<li>A nice touch here is to add a checklist of subtasks</li>
+</ul></li>
+<li>Choose task leads and add them to each task card (supporting group members can also be added)</li>
+<li>Add approximate start dates and target end dates for each task</li>
+<li>When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back</li>
+<li>Review the chart
+<ul>
+<li>What appear to be the bottlenecks? How could you mitigate them?</li>
+<li>Can subgroups work simultaneously on different sub-projects?</li>
+<li>Do you need to think about re-scoping the project?</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<ul>
+<li>Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart
+<ul>
+<li>Every group meeting? Every Monday? Once a month?</li>
+</ul></li>
+<li>After 30 minutes, return to whole group and discuss any insights or innovations</li>
+</ul>
+</div>
+</div>
 
 
 </section>
@@ -864,6 +935,38 @@ Gantt Chart Example using GitHub Projects
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

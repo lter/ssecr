@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>make-gantt-chart – Synthesis Skills for Early Career Researchers</title>
+<title>workflow-plan – Synthesis Skills for Early Career Researchers</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -48,6 +48,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-fc652b69767dfb87e5fc62f18776310b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-c3ec97e756145dd830593d18b35bf4d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -315,7 +317,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#making-a-workflow-plan" id="toc-making-a-workflow-plan" class="nav-link active" data-scroll-target="#making-a-workflow-plan">Making a Workflow Plan</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <p><img src="topics/images/logo_nceas.png" class="img-fluid" style="width:40.0%" alt="NCEAS Logo"> <img src="topics/images/logo_lter.png" class="img-fluid" style="width:34.0%" alt="LTER Logo"></p>
 </div></div></div>
@@ -326,85 +334,60 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 
 
-<div class="callout callout-style-default callout-note no-icon callout-titled">
+<section id="making-a-workflow-plan" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-workflow-plan">Making a Workflow Plan</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Identify</u> major needs and possible obstacles in your group’s data workflow</li>
+</ul>
+</div>
+</div>
+</div>
+<p><em>Before</em> you start actually developing your data workflow (or early in the development process), it is a good idea to develop a plan for what data manipulation needs to be done. Just like with visualization, it can be helpful to literally sketch out this plan so that you think through the major points in your data pipeline before beginning to write code that turns out to not be directly related to your core priorities. Consider the discussion below for some leading questions that may help you articulate your group’s plan for your data.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Activity: Develop a Project Timeline/Gantt Chart
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Discuss Workflow Plan
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>As a project group, work through the following prompts.</p>
-<p>Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.</p>
+<p>With your project group, discuss the following questions:</p>
 <ul>
-<li>Decide whether you will use the Google Sheet template or GitHub
+<li>What needs to be done to make your starting data files comparable?
 <ul>
-<li>Click the respective tab for the next direction</li>
+<li>Consider units, taxonomic resolution, spatial/temporal granularity, etc.</li>
 </ul></li>
-</ul>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Google Sheet Template</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">GitHub</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ol type="1">
-<li>Access the <a href="https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing"><strong>Google sheet template</strong></a>, and copy it into your project folder
+<li>Once the original data files are comparable, what else needs to be done?
 <ul>
-<li>The template has two tabs</li>
-<li>The manual one requires you to update the dates and graphical representation separately, but is a little more intuitive to edit and allows you to change bar color by assigned task lead</li>
-<li>The “basic” tab will update the graph when you update task dates</li>
+<li>Do you need to calculate index metrics? Change the ‘shape’ of the data? Aggregate to a particular spatial/temporal resolution or sampling intensity?</li>
 </ul></li>
-<li>Working backwards from the end of May, estimate how long each task will take and enter it in the spreadsheet</li>
-<li>Add or remove steps as needed for your proposed project</li>
-<li>Choose task leads
+<li>How can you make your workflow less repetitive / more efficient?
 <ul>
-<li>They should expect to draw on other group members for assistance and feedback</li>
+<li>Reducing redundancy makes integrating new ideas <em>dramatically</em> easier</li>
 </ul></li>
-<li>Review the chart
-<ul>
-<li>What appear to be the bottlenecks?</li>
-<li>How could you mitigate them?</li>
-<li>Can subgroups work simultaneously on different sub-projects?</li>
-<li>Do you need to think about re-scoping the project?</li>
-</ul></li>
-<li>Revise task dates as needed</li>
-</ol>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ol type="1">
-<li>Go to your project repository and find the project that has been created for you (top center menu)
-<ul>
-<li>It will open in a Kanban Board view</li>
-</ul></li>
-<li>Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description
-<ul>
-<li>A nice touch here is to add a checklist of subtasks</li>
-</ul></li>
-<li>Choose task leads and add them to each task card (supporting group members can also be added)</li>
-<li>Add approximate start dates and target end dates for each task</li>
-<li>When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back</li>
-<li>Review the chart
-<ul>
-<li>What appear to be the bottlenecks? How could you mitigate them?</li>
-<li>Can subgroups work simultaneously on different sub-projects?</li>
-<li>Do you need to think about re-scoping the project?</li>
-</ul></li>
-</ol>
-</div>
-</div>
-</div>
-<ul>
-<li>Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart
-<ul>
-<li>Every group meeting? Every Monday? Once a month?</li>
-</ul></li>
-<li>After 30 minutes, return to whole group and discuss any insights or innovations</li>
+<li>How easy will it be to maintain or revisit this code workflow?</li>
+<li>How can you change the workflow now to make life easier for ‘future you’?</li>
 </ul>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -872,7 +855,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     </div>   
     <div class="nav-footer-center">
 <p>Copyright 2026, LTER Network</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
