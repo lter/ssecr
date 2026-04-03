@@ -1,0 +1,78 @@
+## Exploring the Data
+
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Define</u> "wrangling"
+- <u>Extract</u> typical data structure information
+
+:::
+  
+For the purposes of SSECR, we'll define "wrangling" as <u>all modifications to a single data object meant to create a single, analysis-ready 'tidy' data object</u>. This includes quality control, unit conversions, and data 'shape' changes to name a few. Note that attaching ancillary data to your primary data object (e.g., attaching temperature data to a dataset on plant species composition) _also falls into this category!_
+
+Data wrangling is a _huge_ subject that covers a wide range of topics. That said, the first step of most--if not all--wrangling is simply exploring your data! To begin, we'll load a Plum Island Ecosystems fiddler crab dataset from the `lterdatasampler` R package.
+
+```{r wrangle-explore_setup}
+#| message: false
+#| warning: false
+
+# Load the lterdatasampler package
+library(lterdatasampler)
+
+# Load the fiddler crab dataset
+data(pie_crab)
+```
+
+Before beginning any code operations, it's important to get a sense for the data. Characteristics like the dimensions of the dataset, the column names, and the type of information stored in each column are all crucial pre-requisites to knowing what tools can or should be used on the data.
+
+Checking the data structure is one way of getting a lot of this high-level information.
+
+```{r wrangle-explore_str}
+# Check dataset structure
+str(pie_crab)
+```
+
+For data that are primarily numeric, you may find data summary functions to be valuable. Note that most functions of this type do not provide useful information on text columns so you'll need to find that information with different methods.
+
+```{r wrangle-explore_summary}
+# Get a simple summary of the data
+summary(pie_crab)
+```
+
+For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.
+
+```{r wrangle-explore_sort-unique}
+# Look at the sites included in the data
+sort(unique(pie_crab$site))
+```
+
+For those of you who think more visually, a histogram can be a nice way of examining numeric data. There are simple histogram functions in the 'base' packages of most programming languages but it can sometimes be worth it to use those from special libraries because they can often convey additional detail.
+
+```{r multi-hist}
+#| message: false
+#| fig-align: center
+#| fig-width: 4
+#| fig-height: 3
+
+# Load the psych library
+library(psych)
+
+# Get the histogram of crab "size" (carapace width in mm)
+psych::multi.hist(pie_crab$size)
+```
+
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Discuss Data Exploration
+
+With a small group, discuss the following questions:
+
+- What tools do you use when exploring new data?
+- Do you already use any of these tools to explore your data?
+    - If you do, why do you use them?
+    - If not, where do you think they might be valuable to include?
+- What value--if any--do you see in including these exploratory efforts in your code workflow?
+
+::::

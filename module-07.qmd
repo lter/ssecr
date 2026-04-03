@@ -16,16 +16,9 @@ Check back later
 {{< include topics/proj-analysis.qmd >}}
 
 {{< include topics/proj-mgmt-plan.qmd >}}
-{{< include activities/make-gantt-chart.qmd >}}
 
-
-
-
-
-{{< include topics/wrangle-plan.qmd >}}
+{{< include topics/workflow-plan.qmd >}}
 
 {{< include topics/harmonize-data.qmd >}}
 
-{{< include topics/wrangle-scope.qmd >}}
-
-{{< include topics/data-explore.qmd >}}
+{{< include topics/wrangle-explore.qmd >}}
