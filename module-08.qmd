@@ -15,10 +15,6 @@ Check back later
 
 {{< include topics/thinking-convergence.qmd >}}
 
-
-
 {{< include topics/wrangle-qc.qmd >}}
 
 {{< include topics/code-custom-functions.qmd >}}
-{{< include activities/write-function.qmd >}}
-

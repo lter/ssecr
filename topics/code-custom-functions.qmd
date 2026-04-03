@@ -280,3 +280,18 @@ result_extract(model = pika_mod2, include_r2 = c(TRUE, FALSE))
 
 :::
 
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Write Your Own Custom Function
+
+In a script, attempt the following on the PIE crab data from the `lterdatasampler` R package:
+
+- Write a function that:
+    - (A) calculates the median of the user-supplied column
+    - (B) determines whether each value is above, equal to, or below the median
+    - (C) makes a column indicating the results of step B
+- Use the function on the _standard deviation_ of water temperature
+- Use it again on the standard deviation of air temperature
+- Revisit your function and identify 2-3 likely errors
+- Write custom checks (and error messages) for the set of likely issues you just identified
+
+::::
