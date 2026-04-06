@@ -58,8 +58,9 @@ Deciding whether a given variable should be a fixed or random effect can be toug
 
 If your hypothesis includes that variable than it should likely be a fixed effect. If the variable is just a facet of your experimental design but isn't something you're necessarily interested in testing, then it should likely be a random effect. And, once you've made your decision, it is totally okay to change your mind and tweak the structure of your model!
 
-::: {.callout-warning icon="false"}
-#### Discussion: Random versus Fixed Effects
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Discuss Random vs. Fixed Effects
 
 With a small group, decide whether you think the terms in the examples below should be fixed effects or random effects:
 
@@ -74,7 +75,8 @@ With a small group, decide whether you think the terms in the examples below sho
 -   You study vascular plant chemical defenses against herbivory
     -   Should phylogeny (i.e., evolutionary relatedness) be a fixed or random effect?
     -   What about feeding guild of the herbivore?
-:::
+
+::::
 
 ### Mixed-Effects Case Study
 
@@ -105,6 +107,8 @@ This naive test seems to support our hypothesis. However, sampling effort differ
 There could be an argument for including year as a fixed effect in its own right but some preliminary investigations reveal no significant climatic differences across the region we worked in those three years. So, while we think that years may differ from one another, that difference is not something we care to analyze.
 
 ```{r mem-mix1}
+#| message: false
+
 # Load the needed library
 library(lmerTest)
 
