@@ -196,3 +196,15 @@ wget -nc --load-cookies ..\.urs_cookies --save-cookies ..\.urs_cookies --keep-se
 If you encounter any issues, follow this step-by-step guide on [using `wget` and `curl` specifically with the GES DISC data system](https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Access%20GES%20DISC%20Data%20Using%20wget%20and%20curl).
 
 :::
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Practice Downloading Data
+
+- Each member work on the data that you have been assigned. 
+- Discuss with your group how to collaborate on coding without creating merge conflicts
+    - _There are many right answers here so discuss the pros/cons of each and pick one that feels best for your group!_
+- Write a script **for your group** to download data using your chosen method
+- Zoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach. 
+    - If no datasets in your group's inventory need the download method you chose, try to run the example codes provided
+
+::::
