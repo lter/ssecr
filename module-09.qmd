@@ -20,7 +20,6 @@ Check back later
 {{< include topics/code-split-columns.qmd >}}
 
 {{< include topics/code-joins.qmd >}}
-{{< include activities/write-join.qmd >}}
 
 {{< include topics/code-shape.qmd >}}
 

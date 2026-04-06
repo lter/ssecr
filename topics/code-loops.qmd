@@ -31,26 +31,32 @@ for(k in 2:4){ # <1>
 Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let's return to our Plum Island Ecosystems crab dataset for a more nuanced example.
 
 ```{r loop-2}
-#| eval: false
+#| message: false
+
+# Load needed libraries
+library(lterdatasampler); library(tidyverse)
+
+# Load needed data
+data(pie_crab)
 
 # Create an empty list
 crab_list <- list()
 
-# Let's loop across size categories of crab
-for(focal_size in unique(pie_crab_v4$size_category)){ # <1>
+# Let's loop across study sites
+for(focal_site in unique(pie_crab$site)){ # <1>
   
   # Subset the data to just this size category
-  focal_df <- pie_crab_v4 %>% 
-    dplyr::filter(size_category == focal_size)
+  focal_df <- pie_crab %>% 
+    dplyr::filter(site == focal_site)
   
   # Calculate average and standard deviation of size within this category
-  size_avg <- mean(focal_df$size, na.rm = T) 
-  size_dev <- sd(focal_df$size, na.rm = T) 
+  focal_avg <- mean(focal_df$size, na.rm = T) 
+  focal_dev <- sd(focal_df$size, na.rm = T) 
   
   # Assemble this into a data table and add to our list
-  crab_list[[focal_size]] <- data.frame("size_category" = focal_size,
-                                        "size_mean" = size_avg,
-                                        "size_sd" = size_dev)
+  crab_list[[focal_site]] <- data.frame("site" = focal_site,
+                                        "crab.size_mean" = focal_avg,
+                                        "crab.size_sd" = focal_dev)
 } # Close loop
 
 # Unlist the outputs into a dataframe

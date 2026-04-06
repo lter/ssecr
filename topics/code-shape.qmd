@@ -18,7 +18,7 @@ Let's consider an example to help clarify this. We'll simulate a butterfly datas
 ```{r shape-libs}
 #| include: false
 
-library(magrittr)
+library(tidyr); library(magrittr)
 ```
 
 ```{r shape}
