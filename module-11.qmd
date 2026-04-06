@@ -2,9 +2,9 @@
 title: "Statistics for Synthesis"
 ---
 
-## Overview
+After data have been prepared for synthesis, how to go about analyzing those data can be quite difficult. Statistical power is rarely an issue because of the sheer volume of data available for many synthesis questions which enables some tools that are not as easily-used in non-synthesis contexts. This increased breadth of options can be paralyzing to some groups and deciding what is "right" versus "good enough" can be a sticking point for some groups.
 
-{{< fa person-digging >}} Under Construction
+Given the wide range in statistical training in graduate curricula (and corresponding breadth of experience among early career researchers), we'll be approaching this module in a different way than other modules. **This module uses a "flipped approach" where project teams will share and discuss their proposed analyses with one another.**
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
@@ -13,10 +13,6 @@ title: "Statistics for Synthesis"
 - You should be ready to discuss feedback with the rest of the class
 
 :::
-
-{{< include topics/stats-presentations.qmd >}}
-
----
 
 {{< include topics/stats-hypotheses.qmd >}}
 
