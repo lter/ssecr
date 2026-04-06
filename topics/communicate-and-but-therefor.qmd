@@ -64,3 +64,25 @@ I'll be using this paper as an example: [Using a units ontology to annotate pre-
 
 Scientific data needs units--meters per second, grams, etc.--to have any real meaning, **AND** researchers might write those units in any number of different ways, even though they refer to the same thing (e.g., "meters per second" might be written "m/s", or "m-s", or "m per s"). **BUT** computers read those different annotations as unique, preventing easy analysis across different datasets. **THEREFORE** an LTER working group developed a tool that turns a mess of units into a standardized unit ontology, solving problems with this method.
 :::
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Elevator Pitch & ABT
+
+:::{.panel-tabset}
+### Part 1 - Revize
+
+- Revisit your draft elevator pitch and tweak it to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences _max_
+    - If you can't fit it all in, you're probably trying to say too much!
+
+### Part 2 - Share
+
+- Share out and critique in groups
+- Things to look out for as a listener:
+    - Do I know just enough information to understand the problem? If not, what am I missing?
+    - Does the problem 'hook' me in?
+    - Are the stakes clear?
+    - What would make this speak to me more?
+    - Does the conclusion actually resolve the problem?
+
+:::
+::::

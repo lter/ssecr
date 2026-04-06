@@ -78,3 +78,29 @@ A lot of people in Alaska are threatened by fire every summer, and instead of tr
 
 Fuel breaks are necessary for mitigating fire risk to local communities in Alaska. But fuel breaks are disruptive to the ecosystem, ugly to look at, and provide little to no value to local communities outside of mitigating fire risk. This project re-imagines fuel breaks to maximize benefits to local communities by providing space for parks, food production, or industry while maintaining their effectiveness as a fire mitigation strategy.
 :::
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Elevator Pitch & Different Audiences
+
+:::{.panel-tabset}
+### Part 1 - Revise
+
+Re-imagine your elevator pitch to the following different audiences:
+
+- Friend
+- Colleague in a different subfield of your field
+- Funder
+- Reporter asking for a short summary for a radio story
+- 8th grade students visiting your site
+- Another audience (of your choosing!)
+
+### Part 2 - Share
+
+Share out and critique in groups!
+
+- Things to look out for as a listener:
+    - Is the "hook" appropriate for each audience?
+    - Is the detail or technical language appropriate for that audience?
+
+:::
+::::

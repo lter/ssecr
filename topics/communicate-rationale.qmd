@@ -20,3 +20,20 @@ Putting your work out in public let's others find it. That could lead to new col
 Think about this--one [SBC LTER researcher was walking on the beach](https://www.independent.com/2022/10/08/chance-encounter-on-beach-leads-to-3-million-for-santa-barbara-coastal-research/), doing drone surveys. Someone stopped to chat, and they explained their research to them. A few weeks later, the SBC LTER had *three million more dollars*, after that person decided to donate to the cause. All from SciComm!
 
 Today, we're going to walk through turning your own research into an elevator pitch, a tight, concise explanation of what you've done. The process of creating an elevator pitch will give you the tools necessary to adapt your message to a variety of different audiences and formats.
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Draft Elevator Pitch
+
+Individually:
+
+- Draft a 1-minute-long elevator pitch for your project
+- 3 minutes to write, 5 minutes to share with your peers
+
+<details>
+<summary>{{< fa puzzle-piece >}} Hint</summary>
+All effective communication contains a story!
+</details>
+
+This first exercise is a starting point. First of all, it's really hard to distill your whole project down to a minute! Think about how much you left out, and how much it hurt to leave that out. From here, we'll continue to refine and rebuild this elevator pitch.
+
+::::

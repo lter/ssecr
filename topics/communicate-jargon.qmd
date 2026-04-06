@@ -14,19 +14,19 @@ What is jargon? "Special words or expressions that are used by a particular prof
 That's not very useful. Let's illustrate this better with an example:
 
 <details>
-<summary>Click me!</summary>
+<summary>UpGoer5 Graphic</summary>
 <img src="https://imgs.xkcd.com/comics/up_goer_five_2x.png" alt="Cartoon of a rocketship with labels that only use the one thousand most common English words" width="100%"/>
 </details>
 
 This is a rocket, that's described _only_ by the thousand (ten hundred) most common words in English. Kind of a mess, huh!
 
-:::{.callout-note icon="false"}
-#### Activity: UpGoer5
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: UpGoer5
 
-- Describe your research using the [UpGooer5 text editor](https://splasho.com/upgoer5/)
+- Describe your research using the [UpGoer5 text editor](https://splasho.com/upgoer5/)
 - Share your draft once you have one!
 
-:::
+::::
 
 Remember our elevator pitch for scientific data?
 
@@ -52,7 +52,7 @@ But Russel Hirst, who has a [great lesson on jargon](https://www.russelhirst.com
 
 > Remember, though: when you are reducing jargon, you must not damage accuracy. For example, if you were to substitute "burnable" for "flammable," you could be doing readers a great disservice; "flammable" has a specific meaning. A flammable substance (such as gasoline) is not merely burnable; it is very easily ignited, will ignite if a flame or spark merely touches its fumes, and it burns with great intensity. - Russel Hirst
 
-#### But Jargon is a Double-Edged Sword
+### But Jargon is a Double-Edged Sword
 
 So...use jargon but don't use it wrong? Yep!
 
@@ -101,3 +101,11 @@ Translate communication into various formats based on efficacy with target group
 **Adapt communication to fit different audiences**
 </details>
 :::
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Elevator Pitch & Jargon
+
+- Revisit your elevator pitch
+- Is there anywhere you can streamline or clarify your language? 
+
+::::

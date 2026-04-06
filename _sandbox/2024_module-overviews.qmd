@@ -44,17 +44,6 @@ Now that we have covered how to find data and use data visualization methods to 
 
 Whether group members are excited about continuing to work together or ready to go their own ways, a little thought and discussion about how group members envision their next steps can set you up for success. In this module, we discuss ways to help ensure that your work is recognized and cited, talk about expectations going forward, and begin thinking about how continued work could be supported.
 
-## Communicating Findings Overview
-
-So you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. In this module, we talk through some broadly applicable scicomm strategies that will get you started.
-
-:::{.callout-important}
-### Note for Those Completing this Module Independently
-
-This module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
-
-:::
-
 ## Reproducible Reports Overview
 
 At this point in the course, we anticipate that your synthesis project is--if not finished--in a state where some amount of external-facing products would be beneficial (see our suggested [milestones page](https://lter.github.io/ssecr/proj_milestones.html)). "**Computational notebooks**" (e.g., Quarto documents, Jupyter Notebooks, R Markdown files, etc.) are an excellent choice for creating reproducible documentation that has direct ties to scripts or data files relevant to your project. Effective notebook files allow you to leverage _both_ your technical skills and your scientific communication skills.

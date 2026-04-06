@@ -2,28 +2,23 @@
 title: "Sharing Your Synthesis Story"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
+So, you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. 
 
-Check back later
+In this module, we'll talk through some broadly applicable scicomm strategies that will get you started. <u>Note for asynchronous learners</u>: this module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+- No specific pre-class preparation for this module!
 
 :::
 
-{{< include topics/communication-rationale.qmd >}}
-{{< include activities/elevator-pitch-p01.qmd >}}
+{{< include topics/communicate-rationale.qmd >}}
 
 {{< include topics/communicate-stories.qmd >}}
 
 {{< include topics/communicate-and-but-therefor.qmd >}}
-{{< include activities/elevator-pitch-p02.qmd >}}
 
 {{< include topics/communicate-jargon.qmd >}}
-{{< include activities/elevator-pitch-p03.qmd >}}
 
 {{< include topics/communicate-audiences.qmd >}}
-{{< include activities/elevator-pitch-p04.qmd >}}
-
