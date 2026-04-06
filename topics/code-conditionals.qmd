@@ -14,21 +14,14 @@ Rather than finding and replacing content, you may want to create a new column b
 
 If you only want your conditional to support two outcomes (as in an either/or statement) there are useful functions that support this. Let's return to our Plum Island Ecosystems crab dataset for an example.
 
-```{r conditional-libs}
-#| include: false
-
-# Load the lterdatasampler package
-library(lterdatasampler)
-
-# Load the fiddler crab dataset
-data(pie_crab)
-```
-
 ```{r ifelse}
 #| message: false
 
-# Load tidyverse
-library(tidyverse)
+# Load the lterdatasampler package
+library(lterdatasampler); library(tidyverse)
+
+# Load the fiddler crab dataset
+data(pie_crab)
 
 # Make a new colum with an either/or conditional
 pie_crab_v2 <- pie_crab %>% 
@@ -68,3 +61,18 @@ pie_crab_v2 %>%
 2.  This line is a catch-all for any rows that _don't_ meet previous conditions
 
 Note that you can use functions like this one when you do have an either/or conditional if you prefer this format.
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Practice Conditionals
+
+In a script, attempt the following with the PIE crab data:
+
+-   Create a column indicating when air temperature is above or below 13° Fahrenheit
+-   Create a column indicating whether water temperature is lower than the first quartile, between the first quartile and the median water temp, between the median and the third quartile or greater than the third quartile
+
+<details>
+<summary>{{< fa puzzle-piece >}} Hint</summary>
+Consult the `summary` function output!
+</details>
+
+::::

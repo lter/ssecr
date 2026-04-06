@@ -15,12 +15,7 @@ Check back later
 
 {{< include topics/group-process-design.qmd >}}
 
-{{< include activities/design-process-p01.qmd >}}
-{{< include activities/design-process-p02.qmd >}}
-
-
 {{< include topics/code-conditionals.qmd >}}
-{{< include activities/write-conditional.qmd >}}
 
 {{< include topics/code-split-columns.qmd >}}
 
