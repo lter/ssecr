@@ -20,5 +20,3 @@ Check back later
 {{< include topics/author-policy.qmd >}}
 
 {{< include topics/credit-future.qmd >}}
-{{< include activities/draft-authorship-policy.qmd >}}
-

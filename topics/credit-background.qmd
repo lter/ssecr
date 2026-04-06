@@ -44,50 +44,37 @@ Of course, it's useful to bear in mind that human psychology also has a role to 
 
 At each stage of a project, different factors may work to distort, conceal, or amplify the contributions of some authors or potential authors. Take a few minutes to consider each project stage and how misperceptions might arise.
 
-:::{.callout-warning icon="false"}
-#### Discussion: Your Experiences with Intellectual Credit
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Discuss Your Experiences with Intellectual Credit
 
 Take a few minutes to reflect on your own experiences in each of these areas before expanding each of the below panels. **In each area, what types of contributions have you noticed get under- or over-valued?**
 
-::: {.callout-caution collapse="true" appearance="minimal"}
+:::{.panel-tabset}
 ### Hypothesis Development
 
 -   In group discussions, the contributions of asynchronous or virtual participants can easily be discounted, because they seem less immediate.
 -   Similarly, when an idea is first contributed by an early career-stage participant, it can be overlooked until echoed by a senior participant.
 -   Often, a seemingly naive question ignites the process that leads to a new way of seeing the problem. In these cases, the conclusion is often remembered, but the question (and the questioner) rarely is.
 
-:::
-
-::: {.callout-warning collapse="true" appearance="minimal"}
 ### Data Gathering
 
 -   Data that are easily accessed and downloaded can receive less credit than when the synthesis team needs to make direct contact with the original researcher to get access or permission to use. Data should always be cited, even when they are already publicly available.
 -   Significant labor goes into finding, downloading, and cleaning datasets, but it is not glamorous work and often happens in isolation. That does not make it any less essential.
 
-:::
-
-::: {.callout-note collapse="true" appearance="minimal"}
 ### Data Analysis
 
 -   Data analysis is the "meat" of synthesis, but even here there are pitfalls. Consider the originality of the approach and the labor involved when valuing analytical contributions.
 -   While the work of doing the analysis may fall to the more quantitatively skilled team members, key insights at this stage often come from careful review by, and discussion with, field ecologists and savvy communicators. Just because someone didn't write the R code doesn't mean they didn't contribute to analysis.
 
-:::
-
-::: {.callout-tip collapse="true" appearance="minimal"}
 ### Writing
 
 -   Like framing a house, framing the "story" of a paper provides essential structure and stability -- even when covered by the walls and trim (or words and figures) of the built-out product.
 -   Getting the first few paragraphs on the page is a valuable contribution -- even if not a single one of those words makes it to the final draft. Editing and expanding others' work is far easier than writing de novo.
 
-:::
-
-::: {.callout-important collapse="true" appearance="minimal"}
 ### Editing
 
 -   Even when all contributors are fluent writers, the job of merging disparate sections into a single voice is challenging and deserves credit.
 -   Resolving versions, checking references, and formatting are thankless, but essential tasks in getting to a publishable product.
 
 :::
-
-:::
+::::
