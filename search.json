@@ -798,7 +798,7 @@
     "href": "module-12.html#introduction-to-quarto",
     "title": "Planning a Smooth Finish & Quarto 101",
     "section": "Introduction to Quarto",
-    "text": "Introduction to Quarto\n\n\n\n\n\n\nTip Learning Objectives\n\n\n\n\n\nAfter completing this topic you will be able to:\n\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages\n\n\n\n\n\nLTER Workshop Materials\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).\n\n\n\n\n\n\n\nNoteActivity: Making a Team / Personal Website\n\n\n\nNote that you do not need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.\nEventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, all but one member of your group must work on individual sites instead. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena.",
+    "text": "Introduction to Quarto\n\n\n\n\n\n\nTip Learning Objectives\n\n\n\n\n\nAfter completing this topic you will be able to:\n\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages\n\n\n\n\n\nLTER Workshop Materials\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).\n\n\n\n\n\n\n\nWarning Activity: Making a Team / Personal Website\n\n\n\nNote that you do not need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.\nEventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, all but one member of your group must work on individual sites instead. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena.",
     "crumbs": [
       "Course Content",
       "12. Making Reports & Websites"
@@ -1163,25 +1163,11 @@
     "text": "We have been overjoyed to work with a wide variety of early career researchers. They represent a breadth of disciplines and ecosystems but are united by being bright, creative, passionate scientists. To ensure they receive appropriate credit for their contributions to this course we’ve invited participants to have their GitHub profiles linked to the course website on this page. This is an opt-in model and as such there may be synthesis fellows who are not listed here but were valued members of the course community.\nFellows are ordered alphabetically by last name.\nIcon legend:  = GitHub |  = ORCID |  = website\n\n2024 Cohort\n\n\n\n\n\nAltman-Kurosaki - Lodge\nLloreda - Xu\n\n\n\n\nNoam T. Altman-Kurosaki –   \nCarla López Lloreda –   \n\n\nAbigail Borgmeier –   \nEvald Maceno –   \n\n\nRichard J. Brokaw –   \nL. McKinley Nevins –   \n\n\nAshley N. Bulseco –   \nPooja Panwar –   \n\n\nAllison Case –   \nSierra B. Perez –   \n\n\nFrancis A. Chaves –   \nJulianna J. Renzi –   \n\n\nJeremy A. Collings –    \nKelsey J. Solomon –   \n\n\nShu Han Gan –   \nJames W. Sturges –   \n\n\nJonathan Gewirtzman –   \nTaylor A. Walker –   \n\n\nKatherine A. Hulting –   \nJunna Wang –   \n\n\nGuopeng Liang –   \nBethany L. Williams –   \n\n\nSmriti Pehim Limbu –   \nYiyang Xu –   \n\n\nJoey Krieger Lodge –   \n–"
   },
   {
-    "objectID": "activities/elevator-pitch-p04.html",
-    "href": "activities/elevator-pitch-p04.html",
+    "objectID": "activities/elevator-pitch-p03.html",
+    "href": "activities/elevator-pitch-p03.html",
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "NoteActivity: Elevator Pitch - Draft #4\n\n\n\nPart 1 - Revise\n\nRe-imagine your elevator pitch to the following different audiences:\n\nFriend\nColleague in a different subfield of your field\nFunder\nReporter asking for a short summary for a radio story\n8th grade students visiting your site\nAnother audience (of your choosing!)\n\n\nPart 2 - Share\n\nShare out and critique in groups\nThings to look out for as a listener:\n\nIs the “hook” appropriate for each audience?\nIs the detail or technical language appropriate for that audience?"
-  },
-  {
-    "objectID": "activities/elevator-pitch-p02.html",
-    "href": "activities/elevator-pitch-p02.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "NoteActivity: Elevator Pitch - Draft #2\n\n\n\nPart 1 - Revize\n\nRevisit your draft elevator pitch and tweak it to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences max\n\nIf you can’t fit it all in, you’re probably trying to say too much!\n\n\nPart 2 - Share\n\nShare out and critique in groups\nThings to look out for as a listener:\n\nDo I know just enough information to understand the problem? If not, what am I missing?\nDoes the problem ‘hook’ me in?\nAre the stakes clear?\nWhat would make this speak to me more?\nDoes the conclusion actually resolve the problem?"
-  },
-  {
-    "objectID": "activities/download-data.html",
-    "href": "activities/download-data.html",
-    "title": "Synthesis Skills for Early Career Researchers",
-    "section": "",
-    "text": "NoteActivity: Data Download\n\n\n\n\nEach member work on the data that you have been assigned.\nDiscuss with your group how to collaborate on coding without creating merge conflicts\n\nThere are many right answers here so discuss the pros/cons of each and pick one that feels best for your group!\n\nWrite a script for your group to download data using your chosen method\nZoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach.\n\nIf no datasets in your group’s inventory need the download method you chose, try to run the example codes provided"
+    "text": "NoteActivity: Elevator Pitch - Draft #3\n\n\n\n\nRevisit your elevator pitch\nIs there anywhere you can streamline or clarify your language?"
   },
   {
     "objectID": "activities/elevator-pitch-p01.html",
@@ -1191,18 +1177,25 @@
     "text": "NoteActivity: Elevator Pitch - Draft #1\n\n\n\nIndividually:\n\nDraft a 1-minute-long elevator pitch for your project\n3 minutes to write, 5 minutes to share with your peers\n\n\n\nHint\n\nAll effective communication contains a story!\n\nThis first exercise is a starting point. First of all, it’s really hard to distill your whole project down to a minute! Think about how much you left out, and how much it hurt to leave that out. From here, we’ll continue to refine and rebuild this elevator pitch."
   },
   {
-    "objectID": "activities/elevator-pitch-p03.html",
-    "href": "activities/elevator-pitch-p03.html",
+    "objectID": "activities/download-data.html",
+    "href": "activities/download-data.html",
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "NoteActivity: Elevator Pitch - Draft #3\n\n\n\n\nRevisit your elevator pitch\nIs there anywhere you can streamline or clarify your language?"
+    "text": "NoteActivity: Data Download\n\n\n\n\nEach member work on the data that you have been assigned.\nDiscuss with your group how to collaborate on coding without creating merge conflicts\n\nThere are many right answers here so discuss the pros/cons of each and pick one that feels best for your group!\n\nWrite a script for your group to download data using your chosen method\nZoom rooms for each download method will be available. You are encouraged to join the room that corresponds to your chosen method to discuss with others working on the same approach.\n\nIf no datasets in your group’s inventory need the download method you chose, try to run the example codes provided"
   },
   {
-    "objectID": "activities/make-website.html",
-    "href": "activities/make-website.html",
+    "objectID": "activities/elevator-pitch-p02.html",
+    "href": "activities/elevator-pitch-p02.html",
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "NoteActivity: Making a Team / Personal Website\n\n\n\nNote that you do not need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.\nEventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, all but one member of your group must work on individual sites instead. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena."
+    "text": "NoteActivity: Elevator Pitch - Draft #2\n\n\n\nPart 1 - Revize\n\nRevisit your draft elevator pitch and tweak it to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences max\n\nIf you can’t fit it all in, you’re probably trying to say too much!\n\n\nPart 2 - Share\n\nShare out and critique in groups\nThings to look out for as a listener:\n\nDo I know just enough information to understand the problem? If not, what am I missing?\nDoes the problem ‘hook’ me in?\nAre the stakes clear?\nWhat would make this speak to me more?\nDoes the conclusion actually resolve the problem?"
+  },
+  {
+    "objectID": "activities/elevator-pitch-p04.html",
+    "href": "activities/elevator-pitch-p04.html",
+    "title": "Synthesis Skills for Early Career Researchers",
+    "section": "",
+    "text": "NoteActivity: Elevator Pitch - Draft #4\n\n\n\nPart 1 - Revise\n\nRe-imagine your elevator pitch to the following different audiences:\n\nFriend\nColleague in a different subfield of your field\nFunder\nReporter asking for a short summary for a radio story\n8th grade students visiting your site\nAnother audience (of your choosing!)\n\n\nPart 2 - Share\n\nShare out and critique in groups\nThings to look out for as a listener:\n\nIs the “hook” appropriate for each audience?\nIs the detail or technical language appropriate for that audience?"
   },
   {
     "objectID": "index.html",
@@ -1918,14 +1911,14 @@
     "href": "topics/external_lter-workshop-quarto.html",
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "Tip Learning Objectives\n\n\n\n\n\nAfter completing this topic you will be able to:\n\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages\n\n\n\n\n\n\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below)."
+    "text": "Tip Learning Objectives\n\n\n\n\n\nAfter completing this topic you will be able to:\n\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages\n\n\n\n\n\n\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).\n\n\n\n\n\n\n\nWarning Activity: Making a Team / Personal Website\n\n\n\nNote that you do not need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.\nEventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, all but one member of your group must work on individual sites instead. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena."
   },
   {
     "objectID": "topics/external_lter-workshop-quarto.html#introduction-to-quarto",
     "href": "topics/external_lter-workshop-quarto.html#introduction-to-quarto",
     "title": "Synthesis Skills for Early Career Researchers",
     "section": "",
-    "text": "Tip Learning Objectives\n\n\n\n\n\nAfter completing this topic you will be able to:\n\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages\n\n\n\n\n\n\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below)."
+    "text": "Tip Learning Objectives\n\n\n\n\n\nAfter completing this topic you will be able to:\n\nIdentify the three fundamental elements of a typical notebook\nUse Markdown syntax to accomplish text styling\nCreate notebooks that include a blend of plain text and embedded code chunks\nMake a Quarto website\nDefine the purpose of GitHub Actions\nDeploy a notebook with GitHub Pages\n\n\n\n\n\n\nThe workshop materials we will be working through live here but for convenience we have also embedded the workshop directly into the SSECR course website (see below).\n\n\n\n\n\n\n\nWarning Activity: Making a Team / Personal Website\n\n\n\nNote that you do not need to keep your website up after you make it if you already have one or don’t want one but this activity will still be good practice regardless.\nEventually you will likely want a team-wide website. You are absolutely welcome to make this during today’s module but because the first draft must be made by a single person, all but one member of your group must work on individual sites instead. You can (and should!) revisit your site as a group to make sure all of you are happy with it but creating individual sites today will help all of you develop ‘muscle memory’ in this arena."
   },
   {
     "objectID": "topics/group-process-design.html",
