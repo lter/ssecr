@@ -30,8 +30,8 @@ Even for an individual donor, you'll want to have a list of talking points that 
 
 It can be intimidating, but it is immensely helpful to ask for feedback from experienced colleagues at various stages of proposal development. Be sure to specify what kind of feedback would be useful to you and to give them a (reasonable) deadline.
 
-:::{.callout-warning icon="false"}
-#### Discussion: Revisit Group Authorship Agreement
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Discuss Revisit Group Authorship Agreement
 
 With a partner/group discuss (some of) the following questions:
 
@@ -46,4 +46,4 @@ Break out into project groups and discuss the following questions as they might 
 
 Record the decisions and preserve for further discussion as projects evolve.
 
-:::
+::::

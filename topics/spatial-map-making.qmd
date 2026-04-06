@@ -18,6 +18,13 @@ After completing this topic you will be able to:
 # This module uses raster and vector data that *are not widely available*
 # You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module
 # Reach out to Nick Lyon if questions exist
+
+# Load needed libraries
+library(sf); library(terra)
+
+# Read in needed data
+nc_poly <- sf::st_read(dsn = file.path("data", "nc_borders.shp"))
+nc_pixel <- terra::rast(x = file.path("data", "nc_elevation.tif"))
 ```
 
 Now that we've covered the main types of spatial data as well as how to check the CRS (and transform if needed) we're ready to make maps! For consistency with other modules on data visualization, we'll use `ggplot2` to make our maps but note that base R also supports map making and there are many useful tutorials elsewhere on making maps in that framework.
@@ -25,8 +32,6 @@ Now that we've covered the main types of spatial data as well as how to check th
 The `maps` package includes some useful national and US state borders so we'll begin by preparing an object that combines both sets of borders.
 
 ```{r map-borders}
-#| eval: false
-
 # Load library
 library(maps)
 
@@ -49,6 +54,11 @@ With the borders object and our modified raster in hand, we can now make a map t
 ```{r map-raster-ACTUAL}
 #| include: false
 #| eval: false
+
+# !!! NOTE TO SSECR DESIGN TEAM !!!
+
+# This chunk made the graph and exported it locally
+# So that we can just embed the image directly and avoid the computing of actually making the map
 
 # Load library
 library(ggplot2)

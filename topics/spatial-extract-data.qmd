@@ -18,6 +18,13 @@ After completing this topic you will be able to:
 # This module uses raster and vector data that *are not widely available*
 # You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module
 # Reach out to Nick Lyon if questions exist
+
+# Load needed libraries
+library(sf); library(terra)
+
+# Read in needed data
+nc_poly <- sf::st_read(dsn = file.path("data", "nc_borders.shp"))
+nc_pixel <- terra::rast(x = file.path("data", "nc_elevation.tif"))
 ```
 
 By far the most common spatial operation that LNO-funded synthesis working groups want to perform is extraction of some spatial covariate data within their region of interest. "Extraction" here includes (1) the actual gathering of values from the desired area, (2) summarization of those values, and (3) attaching those summarized values to an existing tabular dataset for further analysis/visualization. As with any coding task there are many ways of accomplishing this end but we'll focus on one method in the following code chunks: extraction in R via the `exactextractr` package.
@@ -26,14 +33,11 @@ This package expects that you'll want to extract raster data within a the border
 
 We'll begin by making a simpler version of our North Carolina vector data. This ensures that the extraction is as fast as possible for demonstrative purposes while still being replicable for you.
 
-```{r spatial-extract-libs}
-#| include: false
-
-library(tidyverse); library(exactextractr)
-```
-
 ```{r extract-prep}
-#| eval: false
+#| message: false
+
+# Load needed libraries
+library(tidyverse); library(exactextractr); library(purrr)
 
 # Simplify the vector data
 nc_poly_simp <- nc_poly %>% 
@@ -48,12 +52,7 @@ dplyr::glimpse(nc_poly_simp) # <1>
 Now let's use this simplified object and extract elevation for our counties of interest (normally we'd likely do this for all counties but the process is the same).
 
 ```{r extract-actual}
-#| eval: false
 #| message: false
-
-# Load needed libraries
-library(exactextractr)
-library(purrr)
 
 # Perform extraction
 extracted_df <- exactextractr::exact_extract(x = nc_pixel, y = nc_poly_simp, # <1>

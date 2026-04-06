@@ -18,6 +18,13 @@ After completing this topic you will be able to:
 # This module uses raster and vector data that *are not widely available*
 # You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module
 # Reach out to Nick Lyon if questions exist
+
+# Load needed libraries
+library(sf); library(terra)
+
+# Read in needed data
+nc_poly <- sf::st_read(dsn = file.path("data", "nc_borders.shp"))
+nc_pixel <- terra::rast(x = file.path("data", "nc_elevation.tif"))
 ```
 
 A fundamental problem in spatial data is how to project data collected on a nearly spherical planet onto a two-dimensional plane. This has been solved--or at least clarified--by the use of <u>C</u>oordinate <u>R</u>eference <u>S</u>ystems (a.k.a. "CRS"). All spatial data have a CRS that is explicitly identified in the data and/or the metadata because the data _are not interpretable_ without knowing which CRS is used.
@@ -40,7 +47,6 @@ You can check and transform the CRS in any scripted language that allows the loa
 For vector data we can check the CRS with other functions from the `sf` library. It can be a little difficult to parse all of the information that returns but essentially it is most important that the CRS match that of any other spatial data with which we are working.
 
 ```{r crs-check-vector}
-#| eval: false
 # Check CRS
 sf::st_crs(x = nc_poly)
 ```
@@ -48,8 +54,6 @@ sf::st_crs(x = nc_poly)
 Once you know the CRS, you can transform the data to another CRS if desired. This is a relatively fast operation for vector data because we're transforming geometric data rather than potentially millions of pixels.
 
 ```{r crs-transform-vector}
-#| eval: false
-
 # Transform CRS
 nc_poly_nad83 <- sf::st_transform(x = nc_poly, crs = 3083) # <1>
 
@@ -63,8 +67,6 @@ sf::st_crs(nc_poly_nad83)
 For raster data we can check the CRS with other functions from the `terra` library. It can be a little difficult to parse all of the information that returns but essentially it is most important that the CRS match that of any other spatial data with which we are working.
 
 ```{r crs-check-raster}
-#| eval: false
-
 # Check CRS
 terra::crs(nc_pixel)
 ```
@@ -74,8 +76,6 @@ As with vector data, if desired you can transform the data to another CRS. Howev
 In the interests of making this website reasonably quick to re-build, the following code chunk is not actually evaluated but is the correct syntax for this operation.
 
 ```{r crs-transform-raster}
-#| eval: false
-
 # Transform CRS
 nc_pixel_nad83 <- terra::project(x = nc_pixel, y = "epsg:3083")
 

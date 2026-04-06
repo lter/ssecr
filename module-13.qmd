@@ -17,11 +17,6 @@ Check back later
 
 {{< include topics/persuasive-proposal.qmd >}}
 
-
-
-
-{{< include topics/spatial-data-packages.qmd >}}
-
 {{< include topics/spatial-data-types.qmd >}}
 
 {{< include topics/spatial-crs.qmd >}}
