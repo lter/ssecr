@@ -426,42 +426,64 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p>Once you get the hang of loops, they can be a nice way of simplifying your code in a relatively human-readable way! Let’s return to our Plum Island Ecosystems crab dataset for a more nuanced example.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list</span></span>
-<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a>crab_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lterdatasampler); <span class="fu">library</span>(tidyverse)</span>
 <span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's loop across size categories of crab</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-5" class="code-annotation-target"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_size <span class="cf">in</span> <span class="fu">unique</span>(pie_crab_v4<span class="sc">$</span>size_category)){</span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset the data to just this size category</span></span>
-<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a>  focal_df <span class="ot">&lt;-</span> pie_crab_v4 <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(size_category <span class="sc">==</span> focal_size)</span>
-<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate average and standard deviation of size within this category</span></span>
-<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12" aria-hidden="true" tabindex="-1"></a>  size_avg <span class="ot">&lt;-</span> <span class="fu">mean</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
-<span id="annotated-cell-2-13"><a href="#annotated-cell-2-13" aria-hidden="true" tabindex="-1"></a>  size_dev <span class="ot">&lt;-</span> <span class="fu">sd</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
-<span id="annotated-cell-2-14"><a href="#annotated-cell-2-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="annotated-cell-2-15"><a href="#annotated-cell-2-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble this into a data table and add to our list</span></span>
-<span id="annotated-cell-2-16"><a href="#annotated-cell-2-16" aria-hidden="true" tabindex="-1"></a>  crab_list[[focal_size]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"size_category"</span> <span class="ot">=</span> focal_size,</span>
-<span id="annotated-cell-2-17"><a href="#annotated-cell-2-17" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_mean"</span> <span class="ot">=</span> size_avg,</span>
-<span id="annotated-cell-2-18"><a href="#annotated-cell-2-18" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"size_sd"</span> <span class="ot">=</span> size_dev)</span>
-<span id="annotated-cell-2-19"><a href="#annotated-cell-2-19" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close loop</span></span>
-<span id="annotated-cell-2-20"><a href="#annotated-cell-2-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-21"><a href="#annotated-cell-2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Unlist the outputs into a dataframe</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2">2</button><span id="annotated-cell-2-22" class="code-annotation-target"><a href="#annotated-cell-2-22" aria-hidden="true" tabindex="-1"></a>crab_df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">list_rbind</span>(<span class="at">x =</span> crab_list)</span>
-<span id="annotated-cell-2-23"><a href="#annotated-cell-2-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-24"><a href="#annotated-cell-2-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the resulting data table</span></span>
-<span id="annotated-cell-2-25"><a href="#annotated-cell-2-25" aria-hidden="true" tabindex="-1"></a>crab_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed data</span></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an empty list</span></span>
+<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a>crab_list <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's loop across study sites</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-11" class="code-annotation-target"><a href="#annotated-cell-2-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(focal_site <span class="cf">in</span> <span class="fu">unique</span>(pie_crab<span class="sc">$</span>site)){</span>
+<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-2-13"><a href="#annotated-cell-2-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Subset the data to just this size category</span></span>
+<span id="annotated-cell-2-14"><a href="#annotated-cell-2-14" aria-hidden="true" tabindex="-1"></a>  focal_df <span class="ot">&lt;-</span> pie_crab <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-2-15"><a href="#annotated-cell-2-15" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(site <span class="sc">==</span> focal_site)</span>
+<span id="annotated-cell-2-16"><a href="#annotated-cell-2-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-2-17"><a href="#annotated-cell-2-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate average and standard deviation of size within this category</span></span>
+<span id="annotated-cell-2-18"><a href="#annotated-cell-2-18" aria-hidden="true" tabindex="-1"></a>  focal_avg <span class="ot">&lt;-</span> <span class="fu">mean</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
+<span id="annotated-cell-2-19"><a href="#annotated-cell-2-19" aria-hidden="true" tabindex="-1"></a>  focal_dev <span class="ot">&lt;-</span> <span class="fu">sd</span>(focal_df<span class="sc">$</span>size, <span class="at">na.rm =</span> T) </span>
+<span id="annotated-cell-2-20"><a href="#annotated-cell-2-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="annotated-cell-2-21"><a href="#annotated-cell-2-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Assemble this into a data table and add to our list</span></span>
+<span id="annotated-cell-2-22"><a href="#annotated-cell-2-22" aria-hidden="true" tabindex="-1"></a>  crab_list[[focal_site]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"site"</span> <span class="ot">=</span> focal_site,</span>
+<span id="annotated-cell-2-23"><a href="#annotated-cell-2-23" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"crab.size_mean"</span> <span class="ot">=</span> focal_avg,</span>
+<span id="annotated-cell-2-24"><a href="#annotated-cell-2-24" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">"crab.size_sd"</span> <span class="ot">=</span> focal_dev)</span>
+<span id="annotated-cell-2-25"><a href="#annotated-cell-2-25" aria-hidden="true" tabindex="-1"></a>} <span class="co"># Close loop</span></span>
+<span id="annotated-cell-2-26"><a href="#annotated-cell-2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-27"><a href="#annotated-cell-2-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Unlist the outputs into a dataframe</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2">2</button><span id="annotated-cell-2-28" class="code-annotation-target"><a href="#annotated-cell-2-28" aria-hidden="true" tabindex="-1"></a>crab_df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">list_rbind</span>(<span class="at">x =</span> crab_list)</span>
+<span id="annotated-cell-2-29"><a href="#annotated-cell-2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-30"><a href="#annotated-cell-2-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Check out the resulting data table</span></span>
+<span id="annotated-cell-2-31"><a href="#annotated-cell-2-31" aria-hidden="true" tabindex="-1"></a>crab_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="5" data-code-annotation="1">Note that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="11" data-code-annotation="1">Note that this is not the most efficient way of doing group-wise summarization but is–hopefully–a nice demonstration of loops!</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="22" data-code-annotation="2">When all elements of your list have the same column names, <code>list_rbind</code> efficiently stacks those elements into one longer data table.</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="28" data-code-annotation="2">When all elements of your list have the same column names, <code>list_rbind</code> efficiently stacks those elements into one longer data table.</span>
 </dd>
 </dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   site crab.size_mean crab.size_sd
+1   GTM      12.403214     1.804449
+2    SI       9.854333     1.790097
+3   NIB      13.292000     2.419173
+4    ZI      12.063714     2.009251
+5    RC      12.491600     2.344991
+6   VCR      16.335667     2.938512
+7    DB      15.604000     2.119959
+8    JC      15.274667     2.722022
+9    CT      14.691515     2.357521
+10   NB      17.140345     2.288182
+11   CC      16.815185     2.054690
+12   BC      16.197297     4.814464
+13  PIE      18.503929     2.296058</code></pre>
 </div>
 </div>
 

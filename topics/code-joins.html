@@ -356,7 +356,11 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#joining-data" id="toc-joining-data" class="nav-link active" data-scroll-target="#joining-data">Joining Data</a></li>
+  <li><a href="#joining-data" id="toc-joining-data" class="nav-link active" data-scroll-target="#joining-data">Joining Data</a>
+  <ul class="collapse">
+  <li><a href="#check-join-keys" id="toc-check-join-keys" class="nav-link" data-scroll-target="#check-join-keys">Check Join Keys</a></li>
+  <li><a href="#actually-join-data" id="toc-actually-join-data" class="nav-link" data-scroll-target="#actually-join-data">Actually Join Data</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -392,33 +396,64 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 <p>Often the early steps of a synthesis project involve combining the data tables horizontally. You might imagine that you have two groups’ data on sea star abundance and–once you’ve synonymized the column names–you can simply ‘stack’ the tables on top of one another. Slightly trickier but no less common is combining tables by the contents of a shared column (or columns). Cases like this include wanting to combine your sea star table with ocean temperature data from the region of each group’s research. You can’t simply attach the columns because that assumes that the row order is identical between the two data tables (and indeed, that there are the same number of rows in both to begin with!). In this case, if both data tables shared some columns (perhaps “site” and coordinate columns) you can use <strong>joins</strong> to let your computer match these key columns and make sure that only appropriate rows are combined.</p>
+<section id="check-join-keys" class="level3">
+<h3 class="anchored" data-anchor-id="check-join-keys">Check Join Keys</h3>
 <p>Because joins are completely dependent upon the value in both columns being an <em>exact</em> match, it is a good idea to carefully check the contents of those columns before attempting a join to make sure that the join will be successful.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the earlier fish dataframe</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse); <span class="fu">library</span>(supportR)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use text replacement methods to fix that mistake in one table</span></span>
-<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a>fish_tax_v2 <span class="ot">&lt;-</span> fish_tax <span class="sc">%&gt;%</span> </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"^eel$"</span>,</span>
-<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">replacement =</span> <span class="st">"moray eel"</span>, </span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">x =</span> species))</span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check to make sure that fixed it</span></span>
-<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax_v2<span class="sc">$</span>species)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dataframe of fish counts</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">23</span>, <span class="dv">1</span>))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the other one</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Following element(s) found in old object but not new: </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "moray eel"</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Following element(s) found in new object but not old: </code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "eel"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use text replacement methods to fix the mistmatch between the two tables</span></span>
+<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>fish_tax_v2 <span class="ot">&lt;-</span> fish_tax <span class="sc">%&gt;%</span> </span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-3" class="code-annotation-target"><a href="#annotated-cell-3-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">species =</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"^eel$"</span>,</span>
+<span id="annotated-cell-3-4"><a href="#annotated-cell-3-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">replacement =</span> <span class="st">"moray eel"</span>, </span>
+<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5" aria-hidden="true" tabindex="-1"></a>                               <span class="at">x =</span> species))</span>
+<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check to make sure that fixed it</span></span>
+<span id="annotated-cell-3-8"><a href="#annotated-cell-3-8" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax_v2<span class="sc">$</span>species)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="1">The symbols around “eel” mean that we’re only finding/replacing <em>exact</em> matches. It doesn’t matter in this context but often replacing a partial match would result in more problems. For example, replacing “eel” with “moray eel” could make “electric eel” into “electric moray eel”.</span>
+<span data-code-cell="annotated-cell-3" data-code-lines="3" data-code-annotation="1">The symbols around “eel” mean that we’re only finding/replacing <em>exact</em> matches. It doesn’t matter in this context but often replacing a partial match would result in more problems. For example, replacing “eel” with “moray eel” could make “electric eel” into “electric moray eel”.</span>
 </dd>
 </dl>
 </div>
+<div class="cell-output cell-output-stderr">
+<pre><code>All elements of old object found in new</code></pre>
 </div>
+<div class="cell-output cell-output-stderr">
+<pre><code>All elements of new object found in old</code></pre>
+</div>
+</div>
+</section>
+<section id="actually-join-data" class="level3">
+<h3 class="anchored" data-anchor-id="actually-join-data">Actually Join Data</h3>
 <p>Now that the shared column matches between the two two dataframes we can use a join to combine them! There are four types of join:</p>
 <ol type="1">
 <li>left/right join</li>
@@ -428,26 +463,61 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </ol>
 <p>You can learn more about the types of join <a href="https://lter.github.io/workshop-tidyverse/join.html">here</a> or <a href="https://njlyon0.github.io/teach_r-for-biologists/materials/slides_4a.html#/title-slide">here</a> but the quick explanation is that <u>the name of the join indicates whether the rows of the “left” and/or the “right” table are retained in the combined table</u>. In synthesis work a left join or full join is most common (where you have your primary data in the left position and some ancillary/supplementary dataset in the right position).</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-3"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-3-1"><a href="#annotated-cell-3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's combine the fish count and fish taxonomy information</span></span>
-<span id="annotated-cell-3-2"><a href="#annotated-cell-3-2" aria-hidden="true" tabindex="-1"></a>fish_df <span class="ot">&lt;-</span> fish_ct <span class="sc">%&gt;%</span> </span>
-<span id="annotated-cell-3-3"><a href="#annotated-cell-3-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Actual join step</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-3" data-target-annotation="1">1</button><span id="annotated-cell-3-4" class="code-annotation-target"><a href="#annotated-cell-3-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(<span class="at">y =</span> fish_tax_v2, <span class="at">by =</span> <span class="st">"species"</span>) <span class="sc">%&gt;%</span></span>
-<span id="annotated-cell-3-5"><a href="#annotated-cell-3-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Move 'family' column to the left of all other columns</span></span>
-<span id="annotated-cell-3-6"><a href="#annotated-cell-3-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">relocate</span>(family, <span class="at">.before =</span> dplyr<span class="sc">::</span><span class="fu">everything</span>())</span>
-<span id="annotated-cell-3-7"><a href="#annotated-cell-3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-3-8"><a href="#annotated-cell-3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the result of that</span></span>
-<span id="annotated-cell-3-9"><a href="#annotated-cell-3-9" aria-hidden="true" tabindex="-1"></a>fish_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Let's combine the fish count and fish taxonomy information</span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>fish_df <span class="ot">&lt;-</span> fish_ct <span class="sc">%&gt;%</span> </span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Actual join step</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1">1</button><span id="annotated-cell-4-4" class="code-annotation-target"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(<span class="at">y =</span> fish_tax_v2, <span class="at">by =</span> <span class="st">"species"</span>) <span class="sc">%&gt;%</span></span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Move 'family' column to the left of all other columns</span></span>
+<span id="annotated-cell-4-6"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">relocate</span>(family, <span class="at">.before =</span> dplyr<span class="sc">::</span><span class="fu">everything</span>())</span>
+<span id="annotated-cell-4-7"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-8"><a href="#annotated-cell-4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the result of that</span></span>
+<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9" aria-hidden="true" tabindex="-1"></a>fish_df</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-3" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-3" data-code-lines="4" data-code-annotation="1">The ‘by’ argument accepts a vector of column names found in both data tables</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="4" data-code-annotation="1">The ‘by’ argument accepts a vector of column names found in both data tables</span>
 </dd>
 </dl>
 </div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          family   species count
+1     Salmonidae    salmon    12
+2     Serranidae      bass    14
+3 Pleuronectidae   halibut    23
+4     Muraenidae moray eel     1</code></pre>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Practice Joining Data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In a script, attempt the following with the PIE crab data:</p>
+<ol type="1">
+<li>Create a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)
+<ul>
+<li>Use your judgement on which month(s) should fall into each given PIE’s latitude/location</li>
+</ul></li>
+<li>Join your season table to the PIE crab data based on month</li>
+<li>Calculate the average size of crabs in each season in order to identify which season correlates with the largest crabs</li>
+</ol>
+<details>
+<summary>
+<i class="fa-solid fa-puzzle-piece" aria-label="puzzle-piece"></i> Hint
+</summary>
+You may need to modify the PIE dataset to ensure both data tables share at least one column upon which they can be joined
+</details>
+</div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
