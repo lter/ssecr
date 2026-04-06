@@ -69,7 +69,7 @@ Scientific data needs units--meters per second, grams, etc.--to have any real me
 ### {{<fa rocket >}} Activity: Elevator Pitch & ABT
 
 :::{.panel-tabset}
-### Part 1 - Revize
+### Part 1 - Revise
 
 - Revisit your draft elevator pitch and tweak it to include AND, BUT, and THEREFORE, but keep your elevator pitch to 4 sentences _max_
     - If you can't fit it all in, you're probably trying to say too much!
