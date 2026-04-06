@@ -402,18 +402,33 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse); <span class="fu">library</span>(supportR)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tibble' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tidyr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'purrr' was built under R version 4.4.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.4.3</code></pre>
+</div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dataframe of fish counts</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">23</span>, <span class="dv">1</span>))</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the other one</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dataframe of fish counts</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">14</span>, <span class="dv">23</span>, <span class="dv">1</span>))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a fish taxonomy dataframe that corresponds with the other one</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>fish_tax <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"eel"</span>),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>                       <span class="st">"family"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"Salmonidae"</span>, <span class="st">"Serranidae"</span>, <span class="st">"Pleuronectidae"</span>, <span class="st">"Muraenidae"</span>))</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Check to make sure that the 'species' column matches between both tables</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>supportR<span class="sc">::</span><span class="fu">diff_check</span>(<span class="at">old =</span> fish_ct<span class="sc">$</span>species, <span class="at">new =</span> fish_tax<span class="sc">$</span>species) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Following element(s) found in old object but not new: </code></pre>
 </div>
@@ -502,7 +517,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ol type="1">
 <li>Create a data frame where you bin months into seasons (i.e., winter, spring, summer, fall)
 <ul>
-<li>Use your judgement on which month(s) should fall into each given PIE’s latitude/location</li>
+<li>Use your judgment on which month(s) should fall into each given PIE’s latitude/location</li>
 </ul></li>
 <li>Join your season table to the PIE crab data based on month</li>
 <li>Calculate the average size of crabs in each season in order to identify which season correlates with the largest crabs</li>
