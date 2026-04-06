@@ -12,4 +12,10 @@ Copy/paste the below template when making new activities! Drop the tabset panels
 
 
 :::
+
+<details>
+<summary>{{< fa puzzle-piece >}} Hint</summary>
+Consult the `summary` function output!
+</details>
+
 ::::
