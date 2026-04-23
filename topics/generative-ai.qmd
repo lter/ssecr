@@ -10,6 +10,12 @@ After completing this topic you will be able to:
 
 :::
 
+::: {.callout-note}
+## Acknowledgments
+
+Parts of the content in this topic were adapted from the National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub's 2026 workshop to the Delta Stewardship Council. Those materials can be found at [nceas-learning-hub.github.io/2026_delta_week2](https://nceas-learning-hub.github.io/2026_delta_week2/s08_project_doc_organization.html).
+:::
+
 Generative AI (hereafter "genAI") has become increasingly broadly-discussed and adopted in the sciences. As with any other flexible tool, there are a variety of opinions and use-cases. The goal of this component of this lesson is _not_ to provide comprehensive coverage for the entirety of genAI, rather **the goal here is to give you a _starting_ point for thinking about genAI and deciding whether/how you'd like to use these tools.** We are by no means experts in the design and application of AI, we are just curious and excited (and sometimes apprehensive) about the possibilities these new tools offer.
 
 ### Big Picture
