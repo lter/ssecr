@@ -1,5 +1,7 @@
 ---
 title: "Organization, Documentation, & AI Assistance"
+bibliography: 
+    - topics/references/gen-ai_refs.bib
 ---
 
 ### {{< fa person-digging >}} \[Overview Under Construction\]
