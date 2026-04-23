@@ -44,8 +44,9 @@ vignettes/*.pdf
 # .DS_Store (Mac file)
 .DS_Store
 
-# Secret Quarto directory
+# Quarto-specific content
 /.quarto/
+**/*.quarto_ipynb
 
 # Folders
 docs/
