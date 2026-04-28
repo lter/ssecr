@@ -2,9 +2,7 @@
 title: "Inclusive Facilitation & Data Discovery"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+Your group has now likely begun to meet regularly and some of the technical work has likely also begun. You may now benefit from discussing tools for enabling full participation, as well as some models for thinking about how we communicate in groups and how some patterns of "stuck" communication can be resolved. Finally, we'll end on a primer for finding data useful for your project, either from existing data repositories or via sensibly-composed, general searches.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
