@@ -4,14 +4,12 @@ bibliography:
     - topics/references/gen-ai_refs.bib
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+Your project is in its early stages right now but the best way to _get_ organized is to set things up so that you _stay_ organized. So, before you organically accrue many project files, we'll discuss some useful tenets of project organization and documentation (two tightly-related concepts) and how they apply to synthesis work. We'll also discuss generative artificial intelligence (genAI), and hopefully give you some resources for how these tools work, where they can be safely used, and some considerations for when you might consider using these tools less or--potentially--not at all.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module!
 
 :::
 
