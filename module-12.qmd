@@ -2,14 +2,12 @@
 title: "Planning a Smooth Finish & Quarto 101"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+Recognizing that this course may only be the start of your project, we are nearing the end of it so we'll begin this lesson with some thoughts on how you can prepare to wrap up your work in a way that makes it as useful as possible--both to 'future you' and to groups looking to build on your work. Relatedly, we'll discuss the composition and value of computational notebook files and even how one type of such files (Quarto) can be used to create project websites easily and for free.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+Before this lesson, [install Quarto](https://quarto.org/docs/download/) on your computer.
 
 :::
 
