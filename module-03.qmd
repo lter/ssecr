@@ -2,14 +2,12 @@
 title: "Reproducible Work & Supporting the Team"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+At this point, you may be writing preliminary code--or at least such code is clearly approching in your near future. Let's discuss some facets of how that code can be made as reproducible as possible so that even these 'rough draft' code files are as polished as possible. Similarly, we'll give you some tools on understanding team dynamics and navigating conflict--hopefully before you need them!
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module!
 
 :::
 
