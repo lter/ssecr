@@ -4,11 +4,7 @@ title: "Course Overview"
 
 Synthesis Skills for Early Career Researchers (SSECR; _\[SEE-ker\]_) is a course organized by the Long Term Ecological Research (LTER) Network. **This course aims to address the need for more comprehensive interpersonal and data skills in ecology.** You can find more information on SSECR at the [LTER Network page for the course](https://lternet.edu/ssecr/). 
 
-The course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. Applicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants' own work, the Network Office has compiled a small library of synthesis ideas in search of execution. SSECR begins with a number of activities aimed at establishing cohort cohesion and helping participants coalesce into 4-5 person project teams.
-
-The Network Office has also recruited a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately five times per year. To apply to become a team mentor, go [here](https://lternet.edu/ssecr-mentor-application/).
-
-Other specific course priorities include:
+Some specific course priorities include:
 
 - Surface and test new synthesis ideas for feasibility
 - Prepare more graduate students to be effective participants in/leaders of the synthesis projects
@@ -21,11 +17,22 @@ We hope this course is useful to you and encourage you to use these materials! I
 
 > Lyon, N.J., Kappel, C., Elmendorf, S., Kui, L., Maurer, G. E., De La Rosa, G., & Downs, M. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. [https://doi.org/10.5281/zenodo.16969471](https://doi.org/10.5281/zenodo.16969471)
 
+### R Packages
+
+So far, the code facets of this course are taught primarily in R. Specific R packages are described and loaded in each module as they are needed but to quickly ensure that you have most of the needed packages, feel free to copy and run the following code. Note that if you do not already have the `librarian` package, you'll need to un-comment the first line and install it before running the second line. Packages are in alphabetical order
+
+```{r}
+#| label: ssecr-r-packages
+#| message: false
+
+# install.packages("librarian")
+librarian::shelf(cowplot, lterdatasampler, psych, sf, supportR, tidyverse)
+```
+
 ## Course Structure
 
 :::{.panel-tabset}
 ### 2026-27 Structure
-
 
 Course participants meet for two hours, weekly, at the same time each week. Each session covers a module (linked in the sidebar on the left of this page) that includes a blend of technical and interpersonal skills relevant for inclusive synthesis and team work on the chosen group projects.
 
