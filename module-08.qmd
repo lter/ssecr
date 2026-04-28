@@ -2,14 +2,12 @@
 title: "Building Consensus & Checking the Data"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+This module is focused on how your group might build consensus, particularly with regard to specific hypotheses or research questions that fit within your larger project frame. We'll also discuss some checks you may want to run on your data and specific functions in R that perform those operations.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module!
 
 :::
 
