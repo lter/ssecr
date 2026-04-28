@@ -2,14 +2,12 @@
 title: "'Parking Downhill' & Spatial Data Fundamentals"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+Similarly to the prior module, today we'll cover ways in which you can make it as easy as possible to set this project aside if needed but lose as little momentum as possible when picking it back up. We'll also cover how a persuasive grant proposal might be derived from your work thus far. Finally, we'll end by discussing how you might work with spatial data as this is frequently a peripheral or lower-priority question for synthesis groups.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module!
 
 :::
 
