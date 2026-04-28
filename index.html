@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -446,6 +481,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#citing-these-materials" id="toc-citing-these-materials" class="nav-link active" data-scroll-target="#citing-these-materials">Citing These Materials</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
   <li><a href="#course-structure" id="toc-course-structure" class="nav-link" data-scroll-target="#course-structure">Course Structure</a></li>
   <li><a href="#course-scheduling" id="toc-course-scheduling" class="nav-link" data-scroll-target="#course-scheduling">Course Scheduling</a></li>
   <li><a href="#course-policies" id="toc-course-policies" class="nav-link" data-scroll-target="#course-policies">Course Policies</a>
@@ -484,9 +520,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 
 
 <p>Synthesis Skills for Early Career Researchers (SSECR; <em>[SEE-ker]</em>) is a course organized by the Long Term Ecological Research (LTER) Network. <strong>This course aims to address the need for more comprehensive interpersonal and data skills in ecology.</strong> You can find more information on SSECR at the <a href="https://lternet.edu/ssecr/">LTER Network page for the course</a>.</p>
-<p>The course is structured around small group synthesis projects, so that lessons are immediately applied to a synthesis problem that is relevant to learners and will likely result in a publication. Applicants will propose modest or exploratory synthesis projects as part of the application process. In addition to ideas stemming from participants’ own work, the Network Office has compiled a small library of synthesis ideas in search of execution. SSECR begins with a number of activities aimed at establishing cohort cohesion and helping participants coalesce into 4-5 person project teams.</p>
-<p>The Network Office has also recruited a corps of potential project mentors, who will be matched with participant projects and who agree to meet with students approximately five times per year. To apply to become a team mentor, go <a href="https://lternet.edu/ssecr-mentor-application/">here</a>.</p>
-<p>Other specific course priorities include:</p>
+<p>Some specific course priorities include:</p>
 <ul>
 <li>Surface and test new synthesis ideas for feasibility</li>
 <li>Prepare more graduate students to be effective participants in/leaders of the synthesis projects</li>
@@ -499,6 +533,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <blockquote class="blockquote">
 <p>Lyon, N.J., Kappel, C., Elmendorf, S., Kui, L., Maurer, G. E., De La Rosa, G., &amp; Downs, M. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.16969471">https://doi.org/10.5281/zenodo.16969471</a></p>
 </blockquote>
+</section>
+<section id="r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="r-packages">R Packages</h3>
+<p>So far, the code facets of this course are taught primarily in R. Specific R packages are described and loaded in each module as they are needed but to quickly ensure that you have most of the needed packages, feel free to copy and run the following code. Note that if you do not already have the <code>librarian</code> package, you’ll need to un-comment the first line and install it before running the second line. Packages are in alphabetical order</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("librarian")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>librarian<span class="sc">::</span><span class="fu">shelf</span>(cowplot, lterdatasampler, psych, sf, supportR, tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
 <section id="course-structure" class="level2">
 <h2 class="anchored" data-anchor-id="course-structure">Course Structure</h2>

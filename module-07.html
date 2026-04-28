@@ -483,8 +483,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction"><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> [Overview Under Construction]</a></li>
-  <li><a href="#outline-your-analysis" id="toc-outline-your-analysis" class="nav-link" data-scroll-target="#outline-your-analysis">Outline Your Analysis</a></li>
+  <li><a href="#outline-your-analysis" id="toc-outline-your-analysis" class="nav-link active" data-scroll-target="#outline-your-analysis">Outline Your Analysis</a></li>
   <li><a href="#plan-the-work" id="toc-plan-the-work" class="nav-link" data-scroll-target="#plan-the-work">Plan the Work</a></li>
   <li><a href="#making-a-workflow-plan" id="toc-making-a-workflow-plan" class="nav-link" data-scroll-target="#making-a-workflow-plan">Making a Workflow Plan</a></li>
   <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
@@ -517,9 +516,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </header>
 
 
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction" class="level3">
-<h3 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120706572736f6e2d64696767696e67203e7d7d-overview-under-construction"><i class="fa-solid fa-person-digging" aria-label="person-digging"></i> [Overview Under Construction]</h3>
-<p>Check back later</p>
+<p>As your project work has advanced, your group may find that it’s useful to articulate specific sub-goals or desired products. This module will cover some ways of identifying those outcomes and the tasks that are prerequisite to those ends. We’ll also discuss how you might go about “harmonizing” (i.e., standardizing and–possibly–combining) the data you have found and what initial exploratory steps might be useful.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -532,13 +529,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<ul>
-<li><i class="fa-solid fa-screwdriver-wrench" aria-label="screwdriver-wrench"></i> TBD</li>
-</ul>
+<p>There is no specific pre-class preparation for this module!</p>
 </div>
 </div>
 </div>
-</section>
 <section id="outline-your-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="outline-your-analysis">Outline Your Analysis</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
@@ -765,7 +759,7 @@ Gantt Chart Example using GitHub Projects
 </div>
 </div>
 <p>For the purposes of SSECR, we’ll define “harmonization” as <u>the process of combining separate primary data objects into one object</u>. This includes things like synonymizing columns, or changing data format to support combination. This <em>excludes</em> quality control steps–even those that are undertaken before harmonization begins.</p>
-<p>Data harmonization is an interesting topic in that it is <em>vital</em> for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgement calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.</p>
+<p>Data harmonization is an interesting topic in that it is <em>vital</em> for synthesis projects but only very rarely relevant for primary research. Synthesis projects must reckon with the data choices made by each team of original data collectors. These collectors may or may not have recorded their judgment calls (or indeed, any metadata) but before synthesis work can be meaningfully done these independent datasets must be made comparable to one another and combined.</p>
 <p>For tabular data, we recommend using the <a href="https://lter.github.io/ltertools/"><code>ltertools</code> R package</a> to perform any needed harmonization. This package relies on a “column key” to translate the original column names into equivalents that apply across all datasets. Users can generate this column key however they would like but Google Sheets is a strong option as it allows multiple synthesis team members to simultaneously work on filling in the needed bits of the key. If you already have a set of files locally, <code>ltertools</code> does offer a <code>begin_key</code> function that creates the first two required columns in the column key.</p>
 <p>The column key requires three columns:</p>
 <ol type="1">
