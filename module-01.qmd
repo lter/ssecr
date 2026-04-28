@@ -2,14 +2,12 @@
 title: "Version Control & Team Science Fundamentals"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+As we set out on our synthesis journey, it'll be important to begin with two critically important tools for collaborating: GitHub, and an understanding of the crucial elements of team science. GitHub is an 'actual' tool (i.e., a web-based platform you can visit) but thinking deeply about how and why your team works in the way that it does will also prove to be a helpful component of your process; particularly in navigating interpersonal conflicts or mismatches in communication strategy.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+Prior to this lesson, you should do the [workshop preparation steps](https://lter.github.io/workshop-github/#workshop-preparation) for the LTER GitHub workshop for either RStudio or Positron
 
 :::
 
