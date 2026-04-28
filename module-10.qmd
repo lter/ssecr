@@ -9,7 +9,7 @@ In this module we will discuss a few models for aligning expectations around int
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- No specific pre-class preparation for this module!
+There is no specific pre-class preparation for this module!
 
 :::
 
