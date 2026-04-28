@@ -2,14 +2,14 @@
 title: "Sharing Your Synthesis Story"
 ---
 
-So, you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. 
+So, you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. In this module, we'll talk through some broadly applicable scicomm strategies that will get you started. 
 
-In this module, we'll talk through some broadly applicable scicomm strategies that will get you started. <u>Note for asynchronous learners</u>: this module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
+**Note that if you are working through this module asynchronously you may find this module logistically challenging to do alone.** This module was designed to be _highly_ interactive and includes a lot of peer editing. We highly recommend getting a small group of friends and or peers together so that peer editing and sharing can be a part of the experience!
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- No specific pre-class preparation for this module!
+There is no specific pre-class preparation for this module!
 
 :::
 
