@@ -2,14 +2,12 @@
 title: "Data Inventories & Effective Meetings"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. Similarly, we'll provide you some tools and best practices for making sure that your meetings are impactful, necessary, and accessible to all participants so that meeting with the group doesn't cost you any momentum!
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module, however, **_after_ this lesson, you should create a data inventory and begin to add data you find to it.**
 
 :::
 
