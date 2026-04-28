@@ -2,14 +2,12 @@
 title: "Group Process Design & Code Tools"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+We'll begin by covering some useful microstructures to help you through the different kinds of thinking surrounding the "groan zone" to hopefully operationalize some of the content we've covered in earlier modules. We will then transition into some tangible code examples for the kind of data wrangling you are likely to do as you take harmonized, QC'd data and try to turn it into 'analysis-ready' data.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module!
 
 :::
 
