@@ -38,7 +38,9 @@ cv <- function(x){
     stop("`x` must be numeric")
   
   # Calculate CV
-  sd(x = x) / mean(x = x)
+  coef_var <- sd(x = x) / mean(x = x)
+
+  return(coef_var) }
 ```
 
 The key to defensive programming is to try to get functions to fail _fast_ and fail _informatively_ as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and--for complex functions--can save a ton of useless processing time when failure is guaranteed at a later step.
