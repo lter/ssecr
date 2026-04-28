@@ -1544,91 +1544,11 @@
     ]
   },
   {
-    "objectID": "resources.html#version-control",
-    "href": "resources.html#version-control",
+    "objectID": "resources.html#analysis-modeling",
+    "href": "resources.html#analysis-modeling",
     "title": "Additional Resources",
-    "section": "Version Control",
-    "text": "Version Control\n\nBryan J. et al. Happy Git and GitHub for the useR. 2024.\nPereira Braga, P.H. et al. Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. 2023. Methods in Ecology and Evolution\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Intro to Git and GitHub. 2023.\nGitHub. Git Cheat Sheet. 2023.",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#reproducibility",
-    "href": "resources.html#reproducibility",
-    "title": "Additional Resources",
-    "section": "Reproducibility",
-    "text": "Reproducibility\n\nBritish Ecological Society (BES). Better Science Guides: Reproducible Code. 2024.\nEnglehardt, C. et al. FAIR Teaching Handbook. 2024.\nCsik, S. et al. UCSB Master of Environmental Data Science (MEDS) README Guidelines. 2024.\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Before We Start. 2024.\nThe Carpentries. Introduction to R for Geospatial Data: Project Management with RStudio. 2024.\nBriney, K. Research Data Management Workbook. 2024.\nGoogle. Style Guide. 2024.\nLTER Scientific Computing Team. Team Coding: 5 Essentials. 2024.\nJennings, L. et al. Applying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. 2023. Nature Ecology & Evolution\nWickham, H. & Bryan, J. R Packages (2nd ed.). 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: FAIR and CARE Principles. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Reproducibility & Provenance. 2023.\nLowndes, J.S. et al. Documenting Things: Openly for Future Us. 2023. posit::conf(2023)\nTrisovic, A. et al. A Large-Scale Study on Research Code Quality and Execution. 2022. Scientific Data\nWickham, H. Advanced R: Style Guide. (1st ed.). 2019.\nvan Rossum, G. et al. PEP 8: Style Guide for Python Code. 2013. Python Enhancement Proposals",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#data-discovery-management",
-    "href": "resources.html#data-discovery-management",
-    "title": "Additional Resources",
-    "section": "Data Discovery & Management",
-    "text": "Data Discovery & Management\n\nBritish Ecological Society (BES). Better Science Guides: Data Management Guide. 2024.\nLTER Scientific Computing Team. Data Acquisition Guide for TRY and AppEEARS. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Data Management Essentials. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Writing Data Management Plans. 2023.\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer\nGlobal Biodiversity Information Facility (GBIF) Data Portal\niDigBio Digitized Specimen Portal\nLTAR Data Dashboards and Visualizations\nLTAR Group Data within the Ag Data Commons, the digital repository of the National Agricultural Library\nData Is Plural and its data list for exploring the cool datasets in various domains",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#team-science-practices",
-    "href": "resources.html#team-science-practices",
-    "title": "Additional Resources",
-    "section": "Team Science Practices",
-    "text": "Team Science Practices\n\nBates, A.E. et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nHong, L., & Page, S. E. Individual selection criteria for optimal team composition. 2024. Theory and Decision\nLowman, H. et al., Collaborative consortia can boost postdoctoral workforce development. 2024. PNAS\nLiberatore, A. Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together. 2024.\nLahr, H. How to effectively engage teams in interdisciplinary collaborations. 2024\nPeterson, D.M. et al., Team Science: A Syllabus for Success on Big Projects. 2023. Ecology and Evolution\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. Open Science Synthesis: Team Science for Synthesis. 2023.\nGraffius, S.M. Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update. 2023\nGaynor, K.M., et al., Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams. 2022. PLoS Computational Biology\nYang, Y. et al., Gender-diverse teams produce more novel and higher-impact scientific ideas. 2022. PNAS\nDelta Stewardship Council. Open Science Synthesis: Thinking Preferences. 2021.\nDeutsch, L. et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\nFarrell, K.J. et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nLotrecchiano, G.R., et al., Individual and team competencies in translational teams. 2021. Journal of Clinical and Translational Science\n\nFolger, J.P., et al., Working Through Conflict: Strategies for Relationships, Groups, and Organizations (8th ed.). 2017. Routledge\nLee, Y. et al., Creativity in scientific teams: Unpacking novelty and impact. 2015. Research Policy\nAbbasi, A., & Jaafari, A. Research impact and scholars’ geographical diversity. 2013. Journal of Informetrics\nNederveen P.A., et al., Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation. 2013. Academy of Management Journal\nHampton, S.E. & Parker, J.N. Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\nWoolley, A.W. et al., Evidence for a Collective Intelligence Factor in the Performance of Human Groups. 2010. Science\nFiore S.M. et al., Interdisciplinarity as Teamwork: How the Science of Teams Can Inform Team Science. 2008. Small Group Research\nStokols, D. et al., The Ecology of Team Science: Understanding Contextual Influences on Transdisciplinary Collaboration. 2008. American Journal of Preventive Medicine\nvan Knippenberg, D. et al., Work Group Diversity and Group Performance: An Integrative Model and Research Agenda. 2004. Journal of Applied Psychology\nMilliken, F.J. & Martins, L.L. Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups. 1996. The Academy of Management Review\nTuckman, B.W., & Jensen, M.A.C. Stages of Small-Group Development Revisited. 1977. Group and Organizational Studies\nTuckman, B.W. Developmental Sequence in Small Groups. 1965. Psychological Bulletin",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#inclusive-facilitation",
-    "href": "resources.html#inclusive-facilitation",
-    "title": "Additional Resources",
-    "section": "Inclusive Facilitation",
-    "text": "Inclusive Facilitation\n\nKhuri et al., Inclusive Practice Glossary for Facilitators. 2024.\nCravens, A.E., et al., Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration. 2022.\nWoodley, L. et al., A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events. 2021.\nTarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. 2021.\nLipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. 2014.\nKaner, S. Facilitator’s Guide to Participatory Decision-Making (Revised). 2014.\nKantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley & Sons. 2012.\nGray, D. et al., Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O’Reilly Media. 2010.\nBohm, D. On Dialogue. Routledge Classics. 2004.\nIAF Endorsed™ Facilitation Training Programmes\nFacilitation Training Programs recommended by the Facilitator School\nLiberating Structures: Including and Unleashing Everyone\nGamestorming\nSciTS and Team Science Resources compiled by INSciTS, the International Network for the Science of Team Science\nDealing with Disruptive Behaviors in Meetings",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#data-visualization-exploration",
-    "href": "resources.html#data-visualization-exploration",
-    "title": "Additional Resources",
-    "section": "Data Visualization & Exploration",
-    "text": "Data Visualization & Exploration\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Data Visualization with ggplot2. 2024.\nThe Carpentries. Data Analysis and Visualization in Python for Ecologists: Making Plots with plotnine. 2024.\nChang, W. et al., ggplot2: Elegant Graphics for Data Analysis. 3rd edition. 2023.\nLTER Scientific Computing Team. Coding in the Tidyverse: ‘Visualize’ Module. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS). Colorblind Safe Color Schemes. 2022.\nWilke, C.O. Fundamentals of Data Visualization. 2020.\nThe R Graph Gallery",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#project-management",
-    "href": "resources.html#project-management",
-    "title": "Additional Resources",
-    "section": "Project Management",
-    "text": "Project Management\n\nGitHub. Issues and Projects. 2026.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Issues. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Milestones. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Projects. 2024.\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Logic Models and Synthesis Development. 2021.\nNCEAS Project Management Workshop for new synthesis working groups\nCommercial Project Management Options\n\nAsana. Task and project management. Free up to 10 members.\nWrike. Tasks and project management. Capable for individuals. $10/person/month for teams.\nClickUp. Capable free plan. Less intuitive to set up.\nMiro. Free for up to three projects. More focus on diagrams and brainstorming than ongoing project management.\nEasy Retro",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#supporting-divergent-emergent-and-convergent-thinking",
-    "href": "resources.html#supporting-divergent-emergent-and-convergent-thinking",
-    "title": "Additional Resources",
-    "section": "Supporting Divergent, Emergent, and Convergent Thinking",
-    "text": "Supporting Divergent, Emergent, and Convergent Thinking\n\nCravens, A.E., et al., Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration. 2022.\nKappel, C. Collaboration: From groan zone to growth zone. Integration and Implementation Insights.. 2019.\nLipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. 2014.\nKaner, S. Facilitator’s Guide to Participatory Decision-Making (Revised). 2014.\nGray, D. et al., Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O’Reilly Media. 2010.\nBohm, D. On Dialogue. Routledge Classics. 2004.\nIAF Endorsed™ Facilitation Training Programmes\nFacilitation Training Programs recommended by the Facilitator School\nLiberating Structures: Including and Unleashing Everyone\nGamestorming",
-    "crumbs": [
-      "Additional Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#data-harmonization-wrangling",
-    "href": "resources.html#data-harmonization-wrangling",
-    "title": "Additional Resources",
-    "section": "Data Harmonization & Wrangling",
-    "text": "Data Harmonization & Wrangling\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Working with Data. 2024.\nLTER Scientific Computing Team. Coding in the Tidyverse. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub coreR: Cleaning & Wrangling Data. 2023.\nNCEAS Learning Hub coreR: Writing Functions & Packages. 2023.- Todd-Brown, K.E.O. et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nElgarby, O. The Ultimate Guide to Data Cleaning. 2019. Medium\nDelta Science Program Data Munging / QA / QC / Cleaning. 2019.\nFox, J. Ten Commandments for Good Data Management. 2016. Dynamic Ecology\nBorer, E. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin",
+    "section": "Analysis & Modeling",
+    "text": "Analysis & Modeling\n\nSpake, R. et al. Understanding ‘It Depends’ in Ecology: A Guide to Hypothesizing, Visualising and Interpreting Statistical Interactions. 2023. Biological Reviews\nSpake, R. et al. Improving Quantitative Synthesis to Achieve Generality in Ecology. 2022. Nature Ecology and Evolution\nKurz, A. S. Bayesian Meta-Analysis in brms-II. 2022.\nViechtbauer, W. Meta-Analysis with R. 2022.\nTredennick, A.T. et al. A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology. 2021. Ecology\nHarrier, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2021.\nViechtbauer, W. The metafor Package: A Meta-Analysis Package for R. 2021.\nKurz, A. S. Bayesian Meta-Analysis in brms. 2020.\nVuorre, M. Bayesian Meta-Analysis with R, Stan, and brms. 2016.\nZuur, A.F. et al. Mixed Effects Models and Extensions in Ecology with R. 2009.",
     "crumbs": [
       "Additional Resources"
     ]
@@ -1644,11 +1564,71 @@
     ]
   },
   {
-    "objectID": "resources.html#analysis-modeling",
-    "href": "resources.html#analysis-modeling",
+    "objectID": "resources.html#communicating-findings",
+    "href": "resources.html#communicating-findings",
     "title": "Additional Resources",
-    "section": "Analysis & Modeling",
-    "text": "Analysis & Modeling\n\nSpake, R. et al. Understanding ‘It Depends’ in Ecology: A Guide to Hypothesizing, Visualising and Interpreting Statistical Interactions. 2023. Biological Reviews\nSpake, R. et al. Improving Quantitative Synthesis to Achieve Generality in Ecology. 2022. Nature Ecology and Evolution\nKurz, A. S. Bayesian Meta-Analysis in brms-II. 2022.\nViechtbauer, W. Meta-Analysis with R. 2022.\nTredennick, A.T. et al. A Practical Guide to Selecting Models for Exploration, Inference, and Prediction in Ecology. 2021. Ecology\nHarrier, M. et al. Doing Meta-Analysis with R: A Hands-On Guide. 2021.\nViechtbauer, W. The metafor Package: A Meta-Analysis Package for R. 2021.\nKurz, A. S. Bayesian Meta-Analysis in brms. 2020.\nVuorre, M. Bayesian Meta-Analysis with R, Stan, and brms. 2016.\nZuur, A.F. et al. Mixed Effects Models and Extensions in Ecology with R. 2009.",
+    "section": "Communicating Findings",
+    "text": "Communicating Findings\n\nKelso Harper, LTER Visual Media Series. 2024.\nScience Graphics with Jen Christiansen, LTER Visual Media Series. 2024.\nJasiek Krzysztofiak, LTER Visual Media Series. 2024.\nCorominas, J. Adapted Creativities: How to customize your messages to win over different audiences. 2024. Adsmurai\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Communicating Your Science. 2023.\nKrishnan, A. Why do we use jargon when talking about science?. 2023. MongaBay\nPrast, I. Writing for Different Audiences: Adapting Your Tone and Style. 2023. Medium\nDelta Science Program. Session 7: Communicating Your Research: The Message Box. 2021.\nFive tips for scientists speaking to reporters. 2021. AAAS SciLine\nWebster, T. The Simplest Storytelling Structure. 2020. Medium\nFoot, G. How to get an audience to care about your science. 2020. ‘Talking Science’ Course #4. YouTube\nFoot, G. How to explain a science idea clearly. 2020. ‘Talking Science’ Course #6. YouTube\nWenker, R. Storytelling and Science: What’s ABT got to do with it?. 2018. University of Maryland, Center for Environmental Science\nOlson, R. Great Challenges Day at TEDMED 2013. 2013\nA Guide to Scientific Storytelling. Cartoonbase.\nAmerican Geophysical Union (AGU). A Scientist’s Guide to Working with the Media.",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#data-discovery-management",
+    "href": "resources.html#data-discovery-management",
+    "title": "Additional Resources",
+    "section": "Data Discovery & Management",
+    "text": "Data Discovery & Management\n\nBritish Ecological Society (BES). Better Science Guides: Data Management Guide. 2024.\nLTER Scientific Computing Team. Data Acquisition Guide for TRY and AppEEARS. 2024.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Data Management Essentials. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Data Management Essentials and the FAIR & CARE Principles. 2023.\nNCEAS Learning Hub. UCSB Faculty Seminar Series: Writing Data Management Plans. 2023.\nEnvironmental Data Initiative (EDI) Data Portal\nDataONE Data Catalog\nOcean Observatories Initiative (OOI) Data Explorer\nGlobal Biodiversity Information Facility (GBIF) Data Portal\niDigBio Digitized Specimen Portal\nLTAR Data Dashboards and Visualizations\nLTAR Group Data within the Ag Data Commons, the digital repository of the National Agricultural Library\nData Is Plural and its data list for exploring the cool datasets in various domains",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#data-harmonization-wrangling",
+    "href": "resources.html#data-harmonization-wrangling",
+    "title": "Additional Resources",
+    "section": "Data Harmonization & Wrangling",
+    "text": "Data Harmonization & Wrangling\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Working with Data. 2024.\nLTER Scientific Computing Team. Coding in the Tidyverse. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub coreR: Cleaning & Wrangling Data. 2023.\nNCEAS Learning Hub coreR: Writing Functions & Packages. 2023.- Todd-Brown, K.E.O. et al. Reviews and Syntheses: The Promise of Big Diverse Soil Data, Moving Current Practices Towards Future Potential. 2022. Biogeosciences\nElgarby, O. The Ultimate Guide to Data Cleaning. 2019. Medium\nDelta Science Program Data Munging / QA / QC / Cleaning. 2019.\nFox, J. Ten Commandments for Good Data Management. 2016. Dynamic Ecology\nBorer, E. et al. Some Simple Guidelines for Effective Data Management. 2009. Ecological Society of America Bulletin",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#data-visualization-exploration",
+    "href": "resources.html#data-visualization-exploration",
+    "title": "Additional Resources",
+    "section": "Data Visualization & Exploration",
+    "text": "Data Visualization & Exploration\n\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Data Visualization with ggplot2. 2024.\nThe Carpentries. Data Analysis and Visualization in Python for Ecologists: Making Plots with plotnine. 2024.\nChang, W. et al., ggplot2: Elegant Graphics for Data Analysis. 3rd edition. 2023.\nLTER Scientific Computing Team. Coding in the Tidyverse: ‘Visualize’ Module. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS). Colorblind Safe Color Schemes. 2022.\nWilke, C.O. Fundamentals of Data Visualization. 2020.\nThe R Graph Gallery",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#inclusive-facilitation",
+    "href": "resources.html#inclusive-facilitation",
+    "title": "Additional Resources",
+    "section": "Inclusive Facilitation",
+    "text": "Inclusive Facilitation\n\nKhuri et al., Inclusive Practice Glossary for Facilitators. 2024.\nCravens, A.E., et al., Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration. 2022.\nWoodley, L. et al., A guide to using virtual events to facilitate community building: Making a PACT for more engaging virtual meetings and events. 2021.\nTarallo, B. & Monlux, M. Surviving the Horror of Online Meetings: How to Facilitate Good Virtual Meetings & Manage Meeting Monsters. 2021.\nLipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. 2014.\nKaner, S. Facilitator’s Guide to Participatory Decision-Making (Revised). 2014.\nKantor, D. Reading the room: Group dynamics for coaches and leaders. John Wiley & Sons. 2012.\nGray, D. et al., Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O’Reilly Media. 2010.\nBohm, D. On Dialogue. Routledge Classics. 2004.\nIAF Endorsed™ Facilitation Training Programmes\nFacilitation Training Programs recommended by the Facilitator School\nLiberating Structures: Including and Unleashing Everyone\nGamestorming\nSciTS and Team Science Resources compiled by INSciTS, the International Network for the Science of Team Science\nDealing with Disruptive Behaviors in Meetings",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#interactivity-shiny-apps",
+    "href": "resources.html#interactivity-shiny-apps",
+    "title": "Additional Resources",
+    "section": "Interactivity & Shiny Apps",
+    "text": "Interactivity & Shiny Apps\n\nPosit. Welcome to Shiny. 2024.\nLyon, N.J., et al. Shiny Apps for Sharing Science. 2022.",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#multivariate-data",
+    "href": "resources.html#multivariate-data",
+    "title": "Additional Resources",
+    "section": "Multivariate Data",
+    "text": "Multivariate Data\n\nAbdi, H. & Williams, L.J., Principal Coponent Analysis. WIREs Computational Statistics. 2010.\nRamette, A., Multivariate Analyses in Microbial Ecology. FEMS Microbial Ecology. 2007.\nJackson, D.A., Stopping Rules in Principal Components Analysis: A Comparison of Heuristical and Statistical Approaches. Ecology. 1993.\nClarke, K.R., Non-Parametric Multivariate Analyses of Changes in Community Structure. Australian Journal of Ecology. 1993.\nKenkel, N.C. & Oroloci, L., Applying Metric and Nonmetric Multidimensional Scaling to Ecological Studies: Some New Results. Ecology. 1986.",
     "crumbs": [
       "Additional Resources"
     ]
@@ -1664,11 +1644,21 @@
     ]
   },
   {
-    "objectID": "resources.html#communicating-findings",
-    "href": "resources.html#communicating-findings",
+    "objectID": "resources.html#project-management",
+    "href": "resources.html#project-management",
     "title": "Additional Resources",
-    "section": "Communicating Findings",
-    "text": "Communicating Findings\n\nKelso Harper, LTER Visual Media Series. 2024.\nScience Graphics with Jen Christiansen, LTER Visual Media Series. 2024.\nJasiek Krzysztofiak, LTER Visual Media Series. 2024.\nCorominas, J. Adapted Creativities: How to customize your messages to win over different audiences. 2024. Adsmurai\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Communicating Your Science. 2023.\nKrishnan, A. Why do we use jargon when talking about science?. 2023. MongaBay\nPrast, I. Writing for Different Audiences: Adapting Your Tone and Style. 2023. Medium\nDelta Science Program. Session 7: Communicating Your Research: The Message Box. 2021.\nFive tips for scientists speaking to reporters. 2021. AAAS SciLine\nWebster, T. The Simplest Storytelling Structure. 2020. Medium\nFoot, G. How to get an audience to care about your science. 2020. ‘Talking Science’ Course #4. YouTube\nFoot, G. How to explain a science idea clearly. 2020. ‘Talking Science’ Course #6. YouTube\nWenker, R. Storytelling and Science: What’s ABT got to do with it?. 2018. University of Maryland, Center for Environmental Science\nOlson, R. Great Challenges Day at TEDMED 2013. 2013\nA Guide to Scientific Storytelling. Cartoonbase.\nAmerican Geophysical Union (AGU). A Scientist’s Guide to Working with the Media.",
+    "section": "Project Management",
+    "text": "Project Management\n\nGitHub. Issues and Projects. 2026.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Issues. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Milestones. 2024.\nLTER Scientific Computing Team. Collaborative Coding with GitHub: Projects. 2024.\nNCEAS Learning Hub & Delta Stewardship Council. Open Science Synthesis: Logic Models and Synthesis Development. 2021.\nNCEAS Project Management Workshop for new synthesis working groups\nCommercial Project Management Options\n\nAsana. Task and project management. Free up to 10 members.\nWrike. Tasks and project management. Capable for individuals. $10/person/month for teams.\nClickUp. Capable free plan. Less intuitive to set up.\nMiro. Free for up to three projects. More focus on diagrams and brainstorming than ongoing project management.\nEasy Retro",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#reproducibility",
+    "href": "resources.html#reproducibility",
+    "title": "Additional Resources",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\nBritish Ecological Society (BES). Better Science Guides: Reproducible Code. 2024.\nEnglehardt, C. et al. FAIR Teaching Handbook. 2024.\nCsik, S. et al. UCSB Master of Environmental Data Science (MEDS) README Guidelines. 2024.\nThe Carpentries. Data Analysis and Visualization in R for Ecologists: Before We Start. 2024.\nThe Carpentries. Introduction to R for Geospatial Data: Project Management with RStudio. 2024.\nBriney, K. Research Data Management Workbook. 2024.\nGoogle. Style Guide. 2024.\nLTER Scientific Computing Team. Team Coding: 5 Essentials. 2024.\nJennings, L. et al. Applying the ‘CARE Principles for Indigenous Data Governance’ to Ecology and Biodiversity Research. 2023. Nature Ecology & Evolution\nWickham, H. & Bryan, J. R Packages (2nd ed.). 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: FAIR and CARE Principles. 2023.\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Reproducibility & Provenance. 2023.\nLowndes, J.S. et al. Documenting Things: Openly for Future Us. 2023. posit::conf(2023)\nTrisovic, A. et al. A Large-Scale Study on Research Code Quality and Execution. 2022. Scientific Data\nWickham, H. Advanced R: Style Guide. (1st ed.). 2019.\nvan Rossum, G. et al. PEP 8: Style Guide for Python Code. 2013. Python Enhancement Proposals",
     "crumbs": [
       "Additional Resources"
     ]
@@ -1694,21 +1684,31 @@
     ]
   },
   {
-    "objectID": "resources.html#multivariate-data",
-    "href": "resources.html#multivariate-data",
+    "objectID": "resources.html#supporting-divergent-emergent-and-convergent-thinking",
+    "href": "resources.html#supporting-divergent-emergent-and-convergent-thinking",
     "title": "Additional Resources",
-    "section": "Multivariate Data",
-    "text": "Multivariate Data\n\nAbdi, H. & Williams, L.J., Principal Coponent Analysis. WIREs Computational Statistics. 2010.\nRamette, A., Multivariate Analyses in Microbial Ecology. FEMS Microbial Ecology. 2007.\nJackson, D.A., Stopping Rules in Principal Components Analysis: A Comparison of Heuristical and Statistical Approaches. Ecology. 1993.\nClarke, K.R., Non-Parametric Multivariate Analyses of Changes in Community Structure. Australian Journal of Ecology. 1993.\nKenkel, N.C. & Oroloci, L., Applying Metric and Nonmetric Multidimensional Scaling to Ecological Studies: Some New Results. Ecology. 1986.",
+    "section": "Supporting Divergent, Emergent, and Convergent Thinking",
+    "text": "Supporting Divergent, Emergent, and Convergent Thinking\n\nCravens, A.E., et al., Science facilitation: navigating the intersection of intellectual and interpersonal expertise in scientific collaboration. 2022.\nKappel, C. Collaboration: From groan zone to growth zone. Integration and Implementation Insights.. 2019.\nLipmanowicz & McCandless. The Surprising Power of Liberating Structures: Simple Rules to Unleash a Culture of Innovation. Liberating Structures Press. 2014.\nKaner, S. Facilitator’s Guide to Participatory Decision-Making (Revised). 2014.\nGray, D. et al., Gamestorming: A Playbook for Innovators, Rulebreakers, and Changemakers. O’Reilly Media. 2010.\nBohm, D. On Dialogue. Routledge Classics. 2004.\nIAF Endorsed™ Facilitation Training Programmes\nFacilitation Training Programs recommended by the Facilitator School\nLiberating Structures: Including and Unleashing Everyone\nGamestorming",
     "crumbs": [
       "Additional Resources"
     ]
   },
   {
-    "objectID": "resources.html#interactivity-shiny-apps",
-    "href": "resources.html#interactivity-shiny-apps",
+    "objectID": "resources.html#team-science-practices",
+    "href": "resources.html#team-science-practices",
     "title": "Additional Resources",
-    "section": "Interactivity & Shiny Apps",
-    "text": "Interactivity & Shiny Apps\n\nPosit. Welcome to Shiny. 2024.\nLyon, N.J., et al. Shiny Apps for Sharing Science. 2022.",
+    "section": "Team Science Practices",
+    "text": "Team Science Practices\n\nBates, A.E. et al., Overcome Imposter Syndrome: Contribute to Working Groups and Build Strong Networks. 2024. Biological Conservation\nHong, L., & Page, S. E. Individual selection criteria for optimal team composition. 2024. Theory and Decision\nLowman, H. et al., Collaborative consortia can boost postdoctoral workforce development. 2024. PNAS\nLiberatore, A. Developing a Successful Team: Concepts and Strategies to Navigate Change and Conflict Together. 2024.\nLahr, H. How to effectively engage teams in interdisciplinary collaborations. 2024\nPeterson, D.M. et al., Team Science: A Syllabus for Success on Big Projects. 2023. Ecology and Evolution\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub & Delta Stewardship Council. Open Science Synthesis: Team Science for Synthesis. 2023.\nGraffius, S.M. Leverage the Phases of Team Development — Forming, Storming, Norming, Performing, and Adjourning — to Help Your Teams be Happier and More Productive: 2023 Update. 2023\nGaynor, K.M., et al., Ten Simple Rules to Cultivate Belonging in Collaborative Data Science Research Teams. 2022. PLoS Computational Biology\nYang, Y. et al., Gender-diverse teams produce more novel and higher-impact scientific ideas. 2022. PNAS\nDelta Stewardship Council. Open Science Synthesis: Thinking Preferences. 2021.\nDeutsch, L. et al., Leading Inter- and Transdisciplinary Research: Lessons from Applying Theories of Change to a Strategic Research Program. 2021. Environmental Science & Policy\nFarrell, K.J. et al., Training Macrosystems Scientists Requires Both Interpersonal and Technical Skills. 2021. Frontiers in Ecology and the Environment\nLotrecchiano, G.R., et al., Individual and team competencies in translational teams. 2021. Journal of Clinical and Translational Science\n\nFolger, J.P., et al., Working Through Conflict: Strategies for Relationships, Groups, and Organizations (8th ed.). 2017. Routledge\nLee, Y. et al., Creativity in scientific teams: Unpacking novelty and impact. 2015. Research Policy\nAbbasi, A., & Jaafari, A. Research impact and scholars’ geographical diversity. 2013. Journal of Informetrics\nNederveen P.A., et al., Cultural Diversity and Team Performance: The Role of Team Member Goal Orientation. 2013. Academy of Management Journal\nHampton, S.E. & Parker, J.N. Collaboration and Productivity in Scientific Synthesis. 2011. BioScience\nWoolley, A.W. et al., Evidence for a Collective Intelligence Factor in the Performance of Human Groups. 2010. Science\nFiore S.M. et al., Interdisciplinarity as Teamwork: How the Science of Teams Can Inform Team Science. 2008. Small Group Research\nStokols, D. et al., The Ecology of Team Science: Understanding Contextual Influences on Transdisciplinary Collaboration. 2008. American Journal of Preventive Medicine\nvan Knippenberg, D. et al., Work Group Diversity and Group Performance: An Integrative Model and Research Agenda. 2004. Journal of Applied Psychology\nMilliken, F.J. & Martins, L.L. Searching for Common Threads: Understanding the Multiple Effects of Diversity in Organizational Groups. 1996. The Academy of Management Review\nTuckman, B.W., & Jensen, M.A.C. Stages of Small-Group Development Revisited. 1977. Group and Organizational Studies\nTuckman, B.W. Developmental Sequence in Small Groups. 1965. Psychological Bulletin",
+    "crumbs": [
+      "Additional Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#version-control",
+    "href": "resources.html#version-control",
+    "title": "Additional Resources",
+    "section": "Version Control",
+    "text": "Version Control\n\nBryan J. et al. Happy Git and GitHub for the useR. 2024.\nPereira Braga, P.H. et al. Not Just for Programmers: How GitHub can Accelerate Collaborative and Reproducible Research in Ecology and Evolution. 2023. Methods in Ecology and Evolution\nNational Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub. coreR: Intro to Git and GitHub. 2023.\nGitHub. Git Cheat Sheet. 2023.",
     "crumbs": [
       "Additional Resources"
     ]
