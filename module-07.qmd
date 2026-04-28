@@ -2,14 +2,12 @@
 title: "Project and Code Planning"
 ---
 
-### {{< fa person-digging >}} \[Overview Under Construction\]
-
-Check back later
+As your project work has advanced, your group may find that it's useful to articulate specific sub-goals or desired products. This module will cover some ways of identifying those outcomes and the tasks that are prerequisite to those ends. We'll also discuss how you might go about "harmonizing" (i.e., standardizing and--possibly--combining) the data you have found and what initial exploratory steps might be useful.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-- {{< fa screwdriver-wrench >}} TBD
+There is no specific pre-class preparation for this module!
 
 :::
 
