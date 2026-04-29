@@ -1,0 +1,9 @@
+---
+title: "Page Not Found"
+---
+
+### Oops!
+
+The page you are looking for wasn't found. We update the SSECR website extensively between cohorts so **it is likely that the page you were searching for still exists but has been re-named.** You may want to try using the navigation bar to return to the homepage so that you can search for the content you were looking for using the sidebar.
+
+If you feel that you've reached this page because of an error, please post a {{< fa brands github >}} GitHub Issue on [this website's GitHub repository](https://github.com/lter/ssecr/issues)!
