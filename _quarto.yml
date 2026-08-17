@@ -77,8 +77,8 @@ website:
     center: "Copyright 2026, LTER Network"
     background: secondary
   margin-footer: |
-    ![NCEAS Logo](topics/images/logo_nceas.png){ width=40% }
-    ![LTER Logo](topics/images/logo_lter.png){ width=34% }
+    ![NCEAS Logo](/topics/images/logo_nceas.png){ width=40% }
+    ![LTER Logo](/topics/images/logo_lter.png){ width=34% }
 
 format:
   html:
