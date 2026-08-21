@@ -62,7 +62,7 @@ Project groups will also meet at a time of their own choosing to work on project
 
 | **Date** | **Module** | **Primary Instructors** |
 |:---:|:-----------------|:---------|
-| 8 / 20 | 0. Introduction & Project Introductions | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} **_Course Instructors_** |
+| 8 / 20 | 0. Course & Project Introductions | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} **_Course Instructors_** |
 | 9 / 10 | 1. Synthesis Team Fundamentals | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} _Marty Downs (TBD)_</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} _Carrie Kappel (TBD)_</span> |
 | 9 / 17 | 2. Project Organization & AI Assistance | <span style="color:#4AB2CB">{{< fa people-group >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> |
 | 9 / 24 | 3. Reproducible & Successful Teams | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> |
