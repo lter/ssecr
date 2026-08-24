@@ -69,7 +69,7 @@ website:
         menu: 
             - text: "Instructors"
               href: instructors.qmd
-            - text: "Fellows"
+            - text: "Synthesis Fellows"
               href: fellows.qmd
       - icon: github
         href: https://github.com/lter/ssecr
