@@ -14,7 +14,7 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 ::::{.columns}
 :::{.column}
 
-| <u>Agonvonon - Marvy</u> |
+| |
 |:---:|
 | _Georges Agonvonon_ -- [{{< fa brands github >}}](https://github.com/agonvononga) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0199-9691) {{< fa globe >}} |
 | _Nyika Campbell_ -- [{{< fa brands github >}}](https://github.com/nyikacampbell) [{{< fa brands orcid >}}](https://orcid.org/0009-0001-6882-508X) [{{< fa globe >}}](https://nyikacampbell.wixsite.com/home) |
@@ -35,7 +35,7 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 :::
 :::{.column}
 
-| <u>Medina - Yang</u> |
+| |
 |:---:|
 | _Nicholas Medina_ -- [{{< fa brands github >}}](https://github.com/nmedina17) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5465-3988) {{< fa globe >}} |
 | _Taylor Michael_ -- [{{< fa brands github >}}](https://github.com/TaylorCMichael) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5685-5396) [{{< fa globe >}}](https://taylorcmichael.weebly.com/) |
@@ -58,7 +58,7 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 
 ### 2024-25 Cohort
 
-| <u>Altman-Kurosaki - Lodge</u> | <u>Lloreda - Xu</u> |
+| | |
 |:---:|:---:|
 | _Noam T. Altman-Kurosaki_ -- [{{< fa brands github >}}](https://github.com/https://github.com/naltmank) [{{< fa brands orcid >}}](https://orcid.org/https://orcid.org/0000-0001-5175-3334) {{< fa globe >}} | _Carla López Lloreda_ -- [{{< fa brands github >}}](https://github.com/https://github.com/carlalopezll) [{{< fa brands orcid >}}](https://orcid.org/https://orcid.org/0000-0002-7983-1741) {{< fa globe >}} |
 | _Abigail Borgmeier_ -- [{{< fa brands github >}}](https://github.com/https://github.com/aeborgmeier) [{{< fa brands orcid >}}](https://orcid.org/https://orcid.org/0009-0003-7244-6255) {{< fa globe >}} | _Evald Maceno_ -- [{{< fa brands github >}}](https://github.com/https://github.com/Emaceno79) [{{< fa brands orcid >}}](https://orcid.org/https://orcid.org/0009-0001-2873-4466) {{< fa globe >}} |
