@@ -14,8 +14,9 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 ::::{.columns}
 :::{.column}
 
-| <u>Campbell - Marvy</u> |
+| <u>Agonvonon - Marvy</u> |
 |:---:|
+| _Georges Agonvonon_ -- [{{< fa brands github >}}](https://github.com/agonvononga) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-0199-9691) {{< fa globe >}} |
 | _Nyika Campbell_ -- [{{< fa brands github >}}](https://github.com/nyikacampbell) [{{< fa brands orcid >}}](https://orcid.org/0009-0001-6882-508X) [{{< fa globe >}}](https://nyikacampbell.wixsite.com/home) |
 | _Ivan Mauricio Cely Toro_ -- [{{< fa brands github >}}](https://github.com/mauriciocely) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2008-681X) [{{< fa globe >}}](https://mauriciocely.github.io/) |
 | _Jared M. Collins_ -- [{{< fa brands github >}}](https://github.com/jaredcoll) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-6785-6565) {{< fa globe >}} |
@@ -47,9 +48,10 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 | _Parikrama Sapkota_ -- {{< fa brands github >}} [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0971-1872) {{< fa globe >}} |
 | _Nathalie Ylenia Triches_ -- [{{< fa brands github >}}](https://github.com/ntriches) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3401-3403) {{< fa globe >}} |
 | _Rosario Vidales_ -- [{{< fa brands github >}}](https://github.com/vidalesr) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7029-6925) {{< fa globe >}} |
-| _Sainfort Vital_ -- {{< fa brands github >}} [{{< fa brands orcid >}}](https://orcid.org/0009-0005-2034-6927) {{< fa globe >}} |
+| _Sainfort Vital_ -- [{{< fa brands github >}}](https://github.com/sainfortvital) [{{< fa brands orcid >}}](https://orcid.org/0009-0005-2034-6927) {{< fa globe >}} |
 | _Anita Weissflog_ -- [{{< fa brands github >}}](https://github.com/DataAnita) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-9527-0964) {{< fa globe >}} |
 | _Zhaoxun Yang_ -- [{{< fa brands github >}}](https://github.com/znyang02) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1021-9933) {{< fa globe >}} |
+| -- |
 
 :::
 :::::
