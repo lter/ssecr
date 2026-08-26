@@ -1,5 +1,5 @@
 ---
-title: "Data Visualization & Project Management 101"
+title: "Data Inventories & Project Management 101"
 ---
 
 While there are many ways of evaluating whether data are useful, visualization is one of the quicker methods. That visualization can also be useful at virtually all other stages of your project is a happy accident of which you can take advantage. After discussing data visualization, we'll introduce some tenets of how you can manage the many tasks that make up your goal of 'doing this project.' This will help you more precisely handle and delegate tasks going forward.
@@ -7,19 +7,11 @@ While there are many ways of evaluating whether data are useful, visualization i
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-**Complete your first draft of the data inventory!** This should include (at least) 3-5 datasets and all columns that you know at this point are likely to be useful--even if we expect that you may discover additional useful pieces of information to record as your project continues.
+There is no specific pre-class preparation for this module, however, **_after_ this lesson, you should create a data inventory and begin to add data you find to it.**
 
 :::
 
-{{< include topics/viz-synthesis.qmd >}}
-
-{{< include topics/viz-exploration.qmd >}}
-
-{{< include topics/viz-draw.qmd >}}
-
-{{< include topics/viz-ggplot2-core.qmd >}}
-
-{{< include topics/viz-ggplot2-multipanel.qmd >}}
+{{< include topics/data-inventory.qmd >}}
 
 {{< include topics/proj-mgmt-def.qmd >}}
 

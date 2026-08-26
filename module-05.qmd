@@ -1,5 +1,5 @@
 ---
-title: "Data Inventories & Effective Meetings"
+title: "Data Visualization & Effective Meetings"
 ---
 
 As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. Similarly, we'll provide you some tools and best practices for making sure that your meetings are impactful, necessary, and accessible to all participants so that meeting with the group doesn't cost you any momentum!
@@ -7,11 +7,9 @@ As your quest for relevant data continues, we'll discuss how creating and mainta
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-There is no specific pre-class preparation for this module, however, **_after_ this lesson, you should create a data inventory and begin to add data you find to it.**
+There is no specific pre-class preparation for this module!
 
 :::
-
-{{< include topics/data-inventory.qmd >}}
 
 {{< include topics/meeting-process-design.qmd >}}
 
@@ -22,3 +20,13 @@ There is no specific pre-class preparation for this module, however, **_after_ t
 {{< include topics/meeting-variants.qmd >}}
 
 {{< include topics/meeting-records.qmd >}}
+
+{{< include topics/viz-synthesis.qmd >}}
+
+{{< include topics/viz-exploration.qmd >}}
+
+{{< include topics/viz-draw.qmd >}}
+
+{{< include topics/viz-ggplot2-core.qmd >}}
+
+{{< include topics/viz-ggplot2-multipanel.qmd >}}
