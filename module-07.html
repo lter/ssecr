@@ -411,13 +411,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./module-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Qualities of Good Meetings &amp; Data Logs</span></a>
+ <span class="menu-text">5. Good Meetings &amp; Visualizing Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./module-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">6. Visualizing Data &amp; Project Scope</span></a>
+ <span class="menu-text">6. Data Logs &amp; Project Scope</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -532,7 +532,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p>There is no specific pre-class preparation for this module!</p>
+<p><strong>Complete your first draft of the data inventory!</strong> This should include (at least) 3-5 datasets and all columns that you know at this point are likely to be useful–even if we expect that you may discover additional useful pieces of information to record as your project continues.</p>
 </div>
 </div>
 </div>
@@ -827,13 +827,13 @@ Gantt Chart Example using GitHub Projects
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get a simple summary of the data</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      date               latitude         site                size      
- Min.   :2016-07-24   Min.   :30.00   Length:392         Min.   : 6.64  
- 1st Qu.:2016-07-28   1st Qu.:34.00   Class :character   1st Qu.:12.02  
- Median :2016-08-01   Median :39.10   Mode  :character   Median :14.44  
- Mean   :2016-08-02   Mean   :37.69                      Mean   :14.66  
- 3rd Qu.:2016-08-09   3rd Qu.:41.60                      3rd Qu.:17.34  
- Max.   :2016-08-13   Max.   :42.70                      Max.   :23.43  
+<pre><code>      date               latitude            site          size      
+ Min.   :2016-07-24   Min.   :30.00   Length   :392   Min.   : 6.64  
+ 1st Qu.:2016-07-28   1st Qu.:34.00   N.unique : 13   1st Qu.:12.02  
+ Median :2016-08-01   Median :39.10   N.blank  :  0   Median :14.44  
+ Mean   :2016-08-02   Mean   :37.69   Min.nchar:  2   Mean   :14.66  
+ 3rd Qu.:2016-08-09   3rd Qu.:41.60   Max.nchar:  3   3rd Qu.:17.34  
+ Max.   :2016-08-13   Max.   :42.70                   Max.   :23.43  
     air_temp      air_temp_sd      water_temp    water_temp_sd  
  Min.   :10.29   Min.   :6.391   Min.   :13.98   Min.   :4.838  
  1st Qu.:12.05   1st Qu.:8.110   1st Qu.:14.33   1st Qu.:6.567  
@@ -841,13 +841,13 @@ Gantt Chart Example using GitHub Projects
  Mean   :15.20   Mean   :8.654   Mean   :17.65   Mean   :7.252  
  3rd Qu.:18.63   3rd Qu.:9.483   3rd Qu.:20.54   3rd Qu.:7.865  
  Max.   :21.79   Max.   :9.965   Max.   :24.50   Max.   :9.121  
-     name          
- Length:392        
- Class :character  
- Mode  :character  
-                   
-                   
-                   </code></pre>
+        name    
+ Length   :392  
+ N.unique : 13  
+ N.blank  :  0  
+ Min.nchar:  8  
+ Max.nchar: 32  
+                </code></pre>
 </div>
 </div>
 <p>For text columns it can sometimes be useful to simply look at the unique entries in a given column and sort them alphabetically for ease of parsing.</p>

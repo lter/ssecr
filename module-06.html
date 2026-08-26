@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Visualization &amp; Project Management 101 – Synthesis Skills for Early Career Researchers</title>
+<title>Data Inventories &amp; Project Management 101 – Synthesis Skills for Early Career Researchers</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,41 +25,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -357,7 +322,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-01.html">Course Content</a></li><li class="breadcrumb-item"><a href="./module-06.html">6. Visualizing Data &amp; Project Scope</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-01.html">Course Content</a></li><li class="breadcrumb-item"><a href="./module-06.html">6. Data Logs &amp; Project Scope</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -411,13 +376,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./module-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">5. Qualities of Good Meetings &amp; Data Logs</span></a>
+ <span class="menu-text">5. Good Meetings &amp; Visualizing Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./module-06.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">6. Visualizing Data &amp; Project Scope</span></a>
+ <span class="menu-text">6. Data Logs &amp; Project Scope</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -486,14 +451,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-visualization-for-synthesis" id="toc-data-visualization-for-synthesis" class="nav-link active" data-scroll-target="#data-visualization-for-synthesis">Data Visualization for Synthesis</a></li>
-  <li><a href="#visualization-for-exploration" id="toc-visualization-for-exploration" class="nav-link" data-scroll-target="#visualization-for-exploration">Visualization for Exploration</a>
+  <li><a href="#making-a-data-inventory" id="toc-making-a-data-inventory" class="nav-link active" data-scroll-target="#making-a-data-inventory">Making a Data Inventory</a>
   <ul class="collapse">
-  <li><a href="#exploratory-visualization-applications" id="toc-exploratory-visualization-applications" class="nav-link" data-scroll-target="#exploratory-visualization-applications">Exploratory Visualization Applications</a></li>
+  <li><a href="#data-inventory-value" id="toc-data-inventory-value" class="nav-link" data-scroll-target="#data-inventory-value">Data Inventory Value</a></li>
   </ul></li>
-  <li><a href="#final-pre-code-step-draw" id="toc-final-pre-code-step-draw" class="nav-link" data-scroll-target="#final-pre-code-step-draw">Final Pre-Code Step: Draw!</a></li>
-  <li><a href="#graphing-with-ggplot2" id="toc-graphing-with-ggplot2" class="nav-link" data-scroll-target="#graphing-with-ggplot2">Graphing with <code>ggplot2</code></a></li>
-  <li><a href="#multi-panel-graphs" id="toc-multi-panel-graphs" class="nav-link" data-scroll-target="#multi-panel-graphs">Multi-Panel Graphs</a></li>
   <li><a href="#what-is-project-management" id="toc-what-is-project-management" class="nav-link" data-scroll-target="#what-is-project-management">What is Project Management?</a></li>
   <li><a href="#how-to-start" id="toc-how-to-start" class="nav-link" data-scroll-target="#how-to-start">How to Start</a></li>
   <li><a href="#setting-the-project-scope" id="toc-setting-the-project-scope" class="nav-link" data-scroll-target="#setting-the-project-scope">Setting the Project Scope</a></li>
@@ -506,9 +467,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-01.html">Course Content</a></li><li class="breadcrumb-item"><a href="./module-06.html">6. Visualizing Data &amp; Project Scope</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./module-01.html">Course Content</a></li><li class="breadcrumb-item"><a href="./module-06.html">6. Data Logs &amp; Project Scope</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Data Visualization &amp; Project Management 101</h1>
+<h1 class="title">Data Inventories &amp; Project Management 101</h1>
 </div>
 
 
@@ -538,12 +499,12 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p><strong>Complete your first draft of the data inventory!</strong> This should include (at least) 3-5 datasets and all columns that you know at this point are likely to be useful–even if we expect that you may discover additional useful pieces of information to record as your project continues.</p>
+<p>There is no specific pre-class preparation for this module, however, <strong><em>after</em> this lesson, you should create a data inventory and begin to add data you find to it.</strong></p>
 </div>
 </div>
 </div>
-<section id="data-visualization-for-synthesis" class="level2">
-<h2 class="anchored" data-anchor-id="data-visualization-for-synthesis">Data Visualization for Synthesis</h2>
+<section id="making-a-data-inventory" class="level2">
+<h2 class="anchored" data-anchor-id="making-a-data-inventory">Making a Data Inventory</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -558,553 +519,135 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
-<li><u>Describe</u> how data visualization fits into the synthesis process</li>
+<li><u>Define</u> “data inventory” in the context of a synthesis project</li>
+<li><u>Discuss</u> useful elements to include in a data inventory</li>
+<li><u>Create</u> a data inventory for identified data that allows for easy re-finding of those data products</li>
 </ul>
 </div>
 </div>
 </div>
-<p>As shown in the graphic below, visualization can be valuable throughout the lifecycle of a synthesis project, albeit in different ways at different phases of a project.</p>
-<p align="center">
-<img src="topics/images/image_data-stages-with-viz.png" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data" width="90%">
-</p><figcaption>
-Diagram of data stages from raw data to published products. Credit: Margaret O’Brian &amp; Li Kui &amp; Sarah Elmendorf
-</figcaption>
-<p></p>
-</section>
-<section id="visualization-for-exploration" class="level2">
-<h2 class="anchored" data-anchor-id="visualization-for-exploration">Visualization for Exploration</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Explain</u> how data visualization can be used to explore data</li>
-</ul>
-</div>
-</div>
-</div>
-<p>Exploratory data visualization is an important part of any scientific project. Before launching into analysis it is valuable to make some simple plots to scan the contents. These plots may reveal any number of issues, such as typos, sensor calibration problems or differences in the protocol over time.</p>
-<p>These “fitness for use” visualizations are even more critical for synthesis projects. In synthesis, we are often re-purposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group’s question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of ‘warts’ that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g.&nbsp;spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process. Others may come as a surprise.</p>
-<p>During the early stages of a synthesis project, you will want to gain skill to quickly scan through large volumes of data. The figures you make will typically be for internal use only, and therefore have low emphasis on aesthetics.</p>
-<section id="exploratory-visualization-applications" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-visualization-applications">Exploratory Visualization Applications</h3>
-<p>Specific applications of exploratory data visualization include identifying:</p>
+<p>As you find data, it will become necessary to–somehow–record what data your group has on hand. A <strong>data inventory</strong> is an extremely useful tool in this effort! A data inventory can take many forms but at its simplest, it should be a <strong>table where each dataset you find gets one row and critical information about that dataset is recorded in each column.</strong> It can be difficult to know which columns to include but keep in mind that it is always easiest to record information that you don’t wind up using than it is to go hunt through all of your datasets for some piece of information you didn’t record in the first place.</p>
+<p>We’ve grouped some recommendations for useful data inventory components below into some loose categories but these are <em>guidelines</em> and your team likely will come up with useful additions–or may not need some of these pieces of information!</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Dataset Coverage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Metadata Errors</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Methodological Differences</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Other Issues</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Source</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Explanatory Variables</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Team Delegation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Data Use</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>This may include temporal, spatial, or taxonomic coverage, to name a few.</p>
-<p>For example, the metadata might indicate a dataset covers the period 2010-2020. That could mean one data point in 2010 and one in 2020! This may not be useful for a time-series analysis.</p>
+<p>First and foremost, you’ll want to record <strong>where you found the data and where you can find it again if needed.</strong></p>
+<ul>
+<li>What is the URL to the data?</li>
+<li>When did you last download or otherwise receive the data?</li>
+<li>Who owns the data (either a person or an institution)?</li>
+<li>What is the contact info for the data owner?</li>
+<li>What is the name of the data file when you originally download it?</li>
+<li>Is there a paper or report that may provide context that isn’t included in the official metadata? If so, what’s the link/citation info for that document?
+<ul>
+<li>Sometimes a peer-reviewed paper’s Methods section might include valuable context that isn’t actually included in the data!</li>
+</ul></li>
+<li>If the data have a license, how are you allowed to use the data? How must you cite the data owner/data maintainer?</li>
+</ul>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Do the units “make sense” with the figure? Typos in metadata do occur, so if you find yourself with elephants weighing only a few grams, it may be necessary to reach out to the dataset contact.</p>
+<p>Sometimes a data inventory can be a <strong>useful source of explanatory variables for your analysis!</strong></p>
+<ul>
+<li>What are the coordinates (i.e., latitude &amp; longitude) of the data?
+<ul>
+<li>Remember to enter these in decimal degrees if you want to use them in analysis!</li>
+</ul></li>
+<li>What country/state/county/locality is the data from?
+<ul>
+<li>Include all of these that might vary across your datasets!</li>
+</ul></li>
+<li>What habitat or ecosystem is the data from?</li>
+<li>What’s the focal taxonomic group?</li>
+<li>What’s the taxonomic granularity?
+<ul>
+<li>I.e., is there information about different species or only at a higher level?</li>
+</ul></li>
+<li>Are the data experimental or observational?
+<ul>
+<li>If experimental, what treatments were applied? When? How frequently?</li>
+</ul></li>
+<li>What is the time range of the data?</li>
+<li>What is the temporal granularity of the data?
+<ul>
+<li>Relatedly, what are the first and last years/time points in the data?</li>
+</ul></li>
+<li>How big was the study area/experimental plot?</li>
+</ul>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Consider the following:</p>
+<p>If you start relying on a data inventory, <strong>it can become a valuable place to assign or delegate tasks within your group.</strong> This can also be helpful at the end of the project when you’re trying to remember who deserves credit for finding data/metadata.</p>
 <ul>
-<li>Do the data from sequential years, replicate sites, different providers generally fall into the same ranges or is there sensor drift or changes in protocols that need to be addressed?</li>
-<li>A risk of synthesis projects is that you may find you are comparing apples to oranges across datasets, as the individual datasets included in your project were likely not collected in a coordinated fashion.</li>
-<li>A benefit of synthesis projects is you will typically have large volumes of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a ‘typical’ location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be addressed in the data harmonization process.</li>
+<li>Who–in your group–is responsible for filling out the other columns in the data?
+<ul>
+<li>I.e., whose ‘homework’ is it to flesh out this row of the data inventory?</li>
+</ul></li>
+<li>Who is responsible for double-checking the metadata entered by the first team member?</li>
+<li>Who is the primary point of contact with the original data owner/maintainer?</li>
 </ul>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>In addition to those other uses of exploratory visualization, you may also find:</p>
+<p>One <em>critical</em> use of a data inventory that is often overlooked: <strong>are the data useful to your question?</strong></p>
+<p>If you found the data before, your later data searches will likely also turn it up even if it’s not useful! You can save other group members a headache by noting not applicable data so they can disregard it from their searches.</p>
+<p>If a particular dataset is not useful, <strong><em>why</em> is it not useful?</strong> If your questions or in/exclusion criteria evolve, maybe it will become useful later!</p>
+</div>
+</div>
+</div>
+<section id="data-inventory-value" class="level3">
+<h3 class="anchored" data-anchor-id="data-inventory-value">Data Inventory Value</h3>
+<p>Documenting potential datasets (and their metadata) thoroughly in a data inventory provides numerous benefits! These include:</p>
 <ul>
-<li>Harmonization issues
-<ul>
-<li>Are all your datasets measured in units that can be converted to the same units?</li>
-<li>If not, can you envision metrics (relative abundance? Effect size?) that would make datasets intercomparable?</li>
-</ul></li>
-<li>Some entire datasets cannot be used</li>
-<li>Parts of some datasets cannot be used</li>
-<li>Additional quality control is needed (e.g.&nbsp;filtering large outliers)</li>
+<li>A well-documented data inventory makes it easier for researchers to find and access specific data for reproducible research</li>
+<li>Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment</li>
+<li>Detailed documentation will speed up the data publication process (e.g., data provenance, difference among methods)</li>
 </ul>
-</div>
-</div>
-</div>
-<p>Identifying all of these pieces of information is an important precursor to the data harmonization stage, where you will process the datasets you have selected into an analysis-ready format. Visualization is a–relatively–easy way of doing these checks!</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Data Sleuth
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Draft a Data Inventory
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In this activity, you’ll play the role of data detective. You will have many potential datasets to look through. It is important to do it correctly, but you likely won’t need or want to develop boutique code to examine each dataset, especially since some may be discarded after an initial pass.</p>
-<p>As a project team, discuss the following points:</p>
-<ol type="1">
-<li>Decide on a structure for tracking results of exploratory data checks
-<ul>
-<li>Git issues? Additional columns in your team-data-inventory google sheet? Something else?</li>
-<li>Draft a list of ‘generic checks’ you would want to apply to each dataset before inclusion in your synthesis</li>
-</ul></li>
-<li>Use the <code>summarytools</code> and/or <code>datacleanr</code> packages to explore one exemplar dataset that you intend to include in your project
-<ul>
-<li>Discuss any issues you discover</li>
-<li>Create a “to do” list for the exemplar dataset that details additional steps needed to make that dataset analysis ready (e.g.&nbsp;remove 1993 due to incomplete sampling, convert concentrations from mmols to mg/L, contact dataset providers to ask about anomalous values in April 2021)</li>
-<li>Revise the list of ‘generic checks’ for remaining datasets as necessary</li>
-</ul></li>
-<li>If you choose to save any images and/or code you used in your exploratory data visualization, decide on a naming convention and storage location
-<ul>
-<li>Will you add these files to your <code>.gitignore</code> or do you plan on committing them?</li>
-</ul></li>
-<li>What additional plots would you ideally make that are not available through these generic tools?</li>
-</ol>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><code>summarytools</code> Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><code>datacleanr</code> Package</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Part 1 - Draft the Inventory</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Part 2 - Discuss</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the library</span></span>
-<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(summarytools)</span>
-<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a>dataset_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"your_file_name_here.csv"</span>)</span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># View the data in your Rstudio environment</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1">1</button><span id="annotated-cell-2-8" class="code-annotation-target"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a>summarytools<span class="sc">::</span><span class="fu">view</span>(summarytools<span class="sc">::</span><span class="fu">dfSummary</span>(dataset_1), <span class="at">footnote =</span> <span class="cn">NA</span>)</span>
-<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Alternatively,save the results for viewing later, or to share with your team</span></span>
-<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(summarytools<span class="sc">::</span><span class="fu">dfSummary</span>(dataset_1), <span class="at">footnote =</span> <span class="cn">NA</span>,</span>
-<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">'dataset_01_summary.html'</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="8" data-code-annotation="1">Careful! Use lowercase ‘v’ in the <code>view</code> function of the <code>summarytools</code> package</span>
-</dd>
-</dl>
-</div>
-</div>
+<p>In your project groups:</p>
+<ol type="1">
+<li>Create a spreadsheet to serve as your data inventory</li>
+<li>Add the name of each dataset you’ve already found</li>
+<li><strong>Discuss</strong> what columns would be useful in your data inventory
+<ul>
+<li>Remember to re-visit the recommendations above!</li>
+</ul></li>
+<li>Add the agreed-upon columns to your data inventory</li>
+<li>Add information for each dataset in the new columns</li>
+</ol>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the library</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(datacleanr)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>dataset_1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"your_file_name_here.csv"</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch the shiny app and view the data interactively</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>datacleanr<span class="sc">::</span><span class="fu">dcr_app</span>(dataset_1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</div>
-</div>
-<p>Both of these packages have extensive vignettes and online instructional materials. See <a href="https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html">here</a> for one from <code>summarytools</code> and <a href="https://the-hull.github.io/datacleanr/">here</a> for one from <code>datacleanr</code>.</p>
-</div>
-</div>
-</section>
-</section>
-<section id="final-pre-code-step-draw" class="level2">
-<h2 class="anchored" data-anchor-id="final-pre-code-step-draw">Final Pre-Code Step: Draw!</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
+<p>As a whole class, let’s discuss the following questions:</p>
 <ul>
-<li><u>Explain</u> why drawing a graph is a useful step before writing code to ‘actually’ make the graph</li>
-</ul>
-</div>
-</div>
-</div>
-<p>It may sound facile, but one of the best things you can do to make your life easier when you ‘actually’ start making graphs is to draw your hypothetical graph. You will likely find that creating a small sketch of your ideal figure will help you make some critical decisions. This can save you time so you don’t laboriously code a graph that–once created–doesn’t meet your expectations. You may still change your mind once you’ve seen the graph your code produces (and that is okay!) but you’ll likely make some of the necessary larger decisions with pen and paper and streamline your process in generating a visualization that perfectly meets your needs.</p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Sketch-y Graphing
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>On a piece of scrap paper, draw one graph you think might be helpful in your project. Then, ask yourself the following questions:</p>
+<li>What elements of your data inventory do you think will be particularly useful?</li>
+<li>Did you identify any components not included in the above recommendations? If so, what were they?</li>
+<li>What challenges do you think you’re likely to encounter while searching for datasets?
 <ul>
-<li>Does the graph make it clear whether your hypothesis is or is not supported?
-<ul>
-<li>How / will you identify statistical significance?</li>
-</ul></li>
-<li>What type of graph makes the most sense (e.g., boxplot vs.&nbsp;violin plot, etc.)?</li>
-<li>What information is contained in the axes versus stored in other graph elements (e.g., point shape, color, transparency, etc.)?</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="graphing-with-ggplot2" class="level2">
-<h2 class="anchored" data-anchor-id="graphing-with-ggplot2">Graphing with <code>ggplot2</code></h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Define</u> fundamental <code>ggplot2</code> vocabulary</li>
-<li><u>Create</u> <code>ggplot2</code> graphs</li>
-</ul>
-</div>
-</div>
-</div>
-<p>You may already be familiar with the <code>ggplot2</code> package in R but if you are not, it is a popular graphing library based on <a href="https://bookshop.org/p/books/the-grammar-of-graphics-leland-wilkinson/1518348?ean=9780387245447">The Grammar of Graphics</a>. Every ggplot is composed of four elements:</p>
-<ol type="1">
-<li>A ‘core’ <code>ggplot</code> function call</li>
-<li>Aesthetics</li>
-<li>Geometries</li>
-<li>Theme</li>
-</ol>
-<p>Note that the theme component may be implicit in some graphs because there is a suite of default theme elements that applies unless otherwise specified.</p>
-<p>This module will use example data to demonstrate these tools but as we work through these topics you should <u>feel free to substitute a dataset of your choosing</u>! If you don’t have one in mind, you can use the example dataset shown in the code chunks throughout this module. This dataset comes from the <a href="https://lter.github.io/lterdatasampler/"><code>lterdatasampler</code> R package</a> and the data are about fiddler crabs (<em>Minuca pugnax</em>) at the <a href="https://pie-lter.mbl.edu/">Plum Island Ecosystems (PIE) LTER</a> site.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse); <span class="fu">library</span>(lterdatasampler)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the fiddler crab dataset</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(pie_crab)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Check its structure</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(pie_crab)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [392 × 9] (S3: tbl_df/tbl/data.frame)
- $ date         : Date[1:392], format: "2016-07-24" "2016-07-24" ...
- $ latitude     : num [1:392] 30 30 30 30 30 30 30 30 30 30 ...
- $ site         : chr [1:392] "GTM" "GTM" "GTM" "GTM" ...
- $ size         : num [1:392] 12.4 14.2 14.5 12.9 12.4 ...
- $ air_temp     : num [1:392] 21.8 21.8 21.8 21.8 21.8 ...
- $ air_temp_sd  : num [1:392] 6.39 6.39 6.39 6.39 6.39 ...
- $ water_temp   : num [1:392] 24.5 24.5 24.5 24.5 24.5 ...
- $ water_temp_sd: num [1:392] 6.12 6.12 6.12 6.12 6.12 ...
- $ name         : chr [1:392] "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" "Guana Tolomoto Matanzas NERR" ...</code></pre>
-</div>
-</div>
-<p>With this dataset in hand, let’s make a series of increasingly customized graphs to demonstrate some of the tools in <code>ggplot2</code>.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">1. Starter Graph</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2. Custom Theme</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">3. Multiple Geometries</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">4. Multiple Datasets</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p>Let’s begin with a scatterplot of crab size on the Y-axis with latitude on the X. We’ll forgo doing anything to the theme elements at this point to focus on the other three elements.</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1">1</button><span id="annotated-cell-5-1" class="code-annotation-target"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size, <span class="at">fill =</span> site)) <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2">2</button><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="1" data-code-annotation="1">We’re defining both the data and the X/Y aesthetics in this top-level bit of the plot. Also, note that each line ends with a plus sign</span>
-</dd>
-<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="2" data-code-annotation="2">Because we defined the data and aesthetics in the <code>ggplot()</code> function call above, this geometry can assume those mappings without re-specifying</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="module-06_files/figure-html/gg-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>We can improve on this graph by tweaking theme elements to make it use fewer of the default settings.</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size, <span class="at">fill =</span> site)) <span class="sc">+</span></span>
-<span id="annotated-cell-6-2"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1">1</button><span id="annotated-cell-6-3" class="code-annotation-target"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
-<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
-<span id="annotated-cell-6-5"><a href="#annotated-cell-6-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"black"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-6" data-code-lines="3" data-code-annotation="1">All theme elements require these <code>element_...</code> helper functions. <code>element_blank</code> removes theme elements but otherwise you’ll need to use the helper function that corresponds to the type of theme element (e.g., <code>element_text</code> for theme elements affecting graph text)</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="module-06_files/figure-html/gg-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>We can further modify <code>ggplot2</code> graphs by adding <em>multiple</em> geometries if you find it valuable to do so. Note however that <u>geometry order matters</u>! Geometries added later will be “in front of” those added earlier. Also, adding too much data to a plot will begin to make it difficult for others to understand the central take-away of the graph so you may want to be careful about the level of information density in each graph. Let’s add boxplots behind the points to characterize the distribution of points more quantitatively.</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-7"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size, <span class="at">fill =</span> site)) <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1">1</button><span id="annotated-cell-7-2" class="code-annotation-target"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">pch =</span> <span class="dv">21</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-7-3"><a href="#annotated-cell-7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>(), </span>
-<span id="annotated-cell-7-5"><a href="#annotated-cell-7-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
-<span id="annotated-cell-7-6"><a href="#annotated-cell-7-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"black"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-7" data-code-lines="2" data-code-annotation="1">By putting the boxplot geometry first we ensure that it doesn’t cover up the points that overlap with the ‘box’ part of each boxplot</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="module-06_files/figure-html/gg-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
-<p><code>ggplot2</code> also supports adding more than one data object to the same graph! While this module doesn’t cover map creation, maps are a common example of a graph with more than one data object. Another common use would be to include both the full dataset and some summarized facet of it in the same plot.</p>
-<p>Let’s calculate some summary statistics of crab size to include that in our plot.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR library</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize crab size within latitude groups</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>crab_summary <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">summary_table</span>(<span class="at">data =</span> pie_crab, <span class="at">groups =</span> <span class="fu">c</span>(<span class="st">"site"</span>, <span class="st">"latitude"</span>),</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">response =</span> <span class="st">"size"</span>, <span class="at">drop_na =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check the structure</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(crab_summary)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>'data.frame':   13 obs. of  6 variables:
- $ site       : chr  "BC" "CC" "CT" "DB" ...
- $ latitude   : num  42.2 41.9 41.3 39.1 30 39.6 41.6 33.3 42.7 34.7 ...
- $ mean       : num  16.2 16.8 14.7 15.6 12.4 ...
- $ std_dev    : num  4.81 2.05 2.36 2.12 1.8 2.72 2.29 2.42 2.3 2.34 ...
- $ sample_size: int  37 27 33 30 28 30 29 30 28 25 ...
- $ std_error  : num  0.79 0.39 0.41 0.39 0.34 0.5 0.43 0.44 0.43 0.47 ...</code></pre>
-</div>
-</div>
-<p>With this data object in-hand, we can make a graph that includes both this and the original, un-summarized crab data. To better focus on the ‘multiple data objects’ bit of this example we’ll pare down on the actual graph code.</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-1" class="code-annotation-target"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="annotated-cell-9-2"><a href="#annotated-cell-9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(pie_crab, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> size, <span class="at">fill =</span> site),</span>
-<span id="annotated-cell-9-3"><a href="#annotated-cell-9-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span> </span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="2">2</button><span id="annotated-cell-9-4" class="code-annotation-target"><a href="#annotated-cell-9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(crab_summary, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude,</span>
-<span id="annotated-cell-9-5"><a href="#annotated-cell-9-5" aria-hidden="true" tabindex="-1"></a>                                            <span class="at">ymax =</span> mean <span class="sc">+</span> std_error,</span>
-<span id="annotated-cell-9-6"><a href="#annotated-cell-9-6" aria-hidden="true" tabindex="-1"></a>                                            <span class="at">ymin =</span> mean <span class="sc">-</span> std_error),</span>
-<span id="annotated-cell-9-7"><a href="#annotated-cell-9-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-9-8"><a href="#annotated-cell-9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(crab_summary, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> latitude, <span class="at">y =</span> mean, <span class="at">fill =</span> site),</span>
-<span id="annotated-cell-9-9"><a href="#annotated-cell-9-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">pch =</span> <span class="dv">23</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span> </span>
-<span id="annotated-cell-9-10"><a href="#annotated-cell-9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>(),</span>
-<span id="annotated-cell-9-11"><a href="#annotated-cell-9-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">panel.background =</span> <span class="fu">element_blank</span>(),</span>
-<span id="annotated-cell-9-12"><a href="#annotated-cell-9-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.line =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"black"</span>))</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="1" data-code-annotation="1">If you want multiple data objects in the same <code>ggplot2</code> graph you need to leave this top level <code>ggplot()</code> call <em>empty!</em> Otherwise you’ll get weird errors with aesthetics later in the graph</span>
-</dd>
-<dt data-target-cell="annotated-cell-9" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="4" data-code-annotation="2">This geometry adds the error bars and it’s important that we add it before the summarized data points themselves if we want the error bars to be ‘behind’ their respective points</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="module-06_files/figure-html/gg-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Graph Creation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In a script, attempt the following with one of either your or your group’s datasets:</p>
-<ul>
-<li>Make a graph using <code>ggplot2</code>
-<ul>
-<li>Include at least one geometry</li>
-<li>Include at least one aesthetic (beyond X/Y axes)</li>
-<li>Modify at least one theme element from the default</li>
+<li>Are there any structural changes you can/did make to your data inventory to ameliorate these obstacles?</li>
 </ul></li>
 </ul>
 </div>
 </div>
+</div>
+</div>
+</div>
 </section>
-<section id="multi-panel-graphs" class="level2">
-<h2 class="anchored" data-anchor-id="multi-panel-graphs">Multi-Panel Graphs</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Describe</u> the difference(s) between “faceted” graphs and “plot grids”</li>
-<li><u>Create</u> faceted <code>ggplot2</code> graphs</li>
-<li><u>Assemble</u> grids of plots</li>
-</ul>
-</div>
-</div>
-</div>
-<p>It is sometimes the case that you want to make a single graph file that has multiple panels. For many of us, we might default to creating the separate graphs that we want, exporting them, and then using software like Microsoft PowerPoint to stitch those panels into the single image we had in mind from the start. However, as all of us who have used this method know, this is hugely cumbersome when your advisor/committee/reviewers ask for edits and you now have to redo all of the manual work behind your multi-panel graph.</p>
-<p>Fortunately, there are two nice–entirely scripted–alternatives that you might consider: <strong>Faceted graphs</strong> and <strong>Plot grids</strong>. See below for more information on both.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Facets</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Plot Grids</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<p>In a faceted graph, <u>every panel of the graph has the same aesthetics</u>. These are often used when you want to show the relationship between two (or more) variables but separated by some other variable. In synthesis work, you might show the relationship between your core response and explanatory variables but facet by the original study. This would leave you with one panel per study where each would show the relationship only at that particular study.</p>
-<p>Let’s check out an example.</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-11"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-11-1"><a href="#annotated-cell-11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(pie_crab, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> size, <span class="at">color =</span> site))<span class="sc">+</span></span>
-<span id="annotated-cell-11-2"><a href="#annotated-cell-11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="1">1</button><span id="annotated-cell-11-3" class="code-annotation-target"><a href="#annotated-cell-11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(. <span class="sc">~</span> site) <span class="sc">+</span></span>
-<span id="annotated-cell-11-4"><a href="#annotated-cell-11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="2">2</button><span id="annotated-cell-11-5" class="code-annotation-target"><a href="#annotated-cell-11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="3" data-code-annotation="1">This is a <code>ggplot2</code> function that assumes you want panels laid out in a regular grid. There are other <code>facet_...</code> alternatives that let you specify row versus column arrangement. You could also facet by multiple variables by putting something to the left of the tilde</span>
-</dd>
-<dt data-target-cell="annotated-cell-11" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-11" data-code-lines="5" data-code-annotation="2">We can remove the legend because the site names are in the facet titles in the gray boxes</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="module-06_files/figure-html/facet-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<p>In a plot grid, <u>each panel is completely independent of all others</u>. These are often used in publications where you want to highlight several <em>different</em> relationships that have some thematic connection. In synthesis work, your hypotheses may be more complicated than in primary research and such a plot grid would then be necessary to put all visual evidence for a hypothesis in the same location. On a practical note, plot grids are also a common way of circumventing figure number limits enforced by journals.</p>
-<p>Let’s check out an example that relies on the <code>cowplot</code> library.</p>
-<div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-12"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-12-1"><a href="#annotated-cell-12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load a needed library</span></span>
-<span id="annotated-cell-12-2"><a href="#annotated-cell-12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(cowplot)</span>
-<span id="annotated-cell-12-3"><a href="#annotated-cell-12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-12-4"><a href="#annotated-cell-12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the first graph</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1">1</button><span id="annotated-cell-12-5" class="code-annotation-target"><a href="#annotated-cell-12-5" aria-hidden="true" tabindex="-1"></a>crab_p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(pie_crab, <span class="fu">aes</span>(<span class="at">x =</span> site, <span class="at">y =</span> size, <span class="at">fill =</span> site)) <span class="sc">+</span></span>
-<span id="annotated-cell-12-6"><a href="#annotated-cell-12-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>() <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="2">2</button><span id="annotated-cell-12-7" class="code-annotation-target"><a href="#annotated-cell-12-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span></span>
-<span id="annotated-cell-12-8"><a href="#annotated-cell-12-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
-<span id="annotated-cell-12-9"><a href="#annotated-cell-12-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
-<span id="annotated-cell-12-10"><a href="#annotated-cell-12-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-12-11"><a href="#annotated-cell-12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the second</span></span>
-<span id="annotated-cell-12-12"><a href="#annotated-cell-12-12" aria-hidden="true" tabindex="-1"></a>crab_p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(pie_crab, <span class="fu">aes</span>(<span class="at">x =</span> air_temp, <span class="at">y =</span> water_temp)) <span class="sc">+</span></span>
-<span id="annotated-cell-12-13"><a href="#annotated-cell-12-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymax =</span> water_temp <span class="sc">+</span> water_temp_sd, <span class="at">ymin =</span> water_temp <span class="sc">-</span> water_temp_sd),</span>
-<span id="annotated-cell-12-14"><a href="#annotated-cell-12-14" aria-hidden="true" tabindex="-1"></a>                 <span class="at">width =</span> <span class="fl">0.1</span>) <span class="sc">+</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="3">3</button><span id="annotated-cell-12-15" class="code-annotation-target"><a href="#annotated-cell-12-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbarh</span>(<span class="fu">aes</span>(<span class="at">xmax =</span> air_temp <span class="sc">+</span> air_temp_sd, <span class="at">xmin =</span> air_temp <span class="sc">-</span> air_temp_sd),</span>
-<span id="annotated-cell-12-16"><a href="#annotated-cell-12-16" aria-hidden="true" tabindex="-1"></a>                 <span class="at">width =</span> <span class="fl">0.1</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-12-17"><a href="#annotated-cell-12-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">fill =</span> site), <span class="at">pch =</span> <span class="dv">23</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="annotated-cell-12-18"><a href="#annotated-cell-12-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span>
-<span id="annotated-cell-12-19"><a href="#annotated-cell-12-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-12-20"><a href="#annotated-cell-12-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Assemble into a plot grid</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="4">4</button><span id="annotated-cell-12-21" class="code-annotation-target"><a href="#annotated-cell-12-21" aria-hidden="true" tabindex="-1"></a>cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(crab_p1, crab_p2, <span class="at">labels =</span> <span class="st">"AUTO"</span>, <span class="at">nrow =</span> <span class="dv">1</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-annotation">
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-12" data-code-lines="5" data-code-annotation="1">Note that we’re assigning these graphs to objects!</span>
-</dd>
-<dt data-target-cell="annotated-cell-12" data-target-annotation="2">2</dt>
-<dd>
-<span data-code-cell="annotated-cell-12" data-code-lines="7" data-code-annotation="2">This is a handy function for flipping X and Y axes without re-mapping the aesthetics</span>
-</dd>
-<dt data-target-cell="annotated-cell-12" data-target-annotation="3">3</dt>
-<dd>
-<span data-code-cell="annotated-cell-12" data-code-lines="15" data-code-annotation="3">This geometry is responsible for <em>horizontal</em> error bars (note the “h” at the end of the function name)</span>
-</dd>
-<dt data-target-cell="annotated-cell-12" data-target-annotation="4">4</dt>
-<dd>
-<span data-code-cell="annotated-cell-12" data-code-lines="21" data-code-annotation="4">The <code>labels = "AUTO"</code> argument means that each panel of the plot grid gets the next sequential capital letter. You could also substitute that for a vector with labels of your choosing</span>
-</dd>
-</dl>
-</div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="module-06_files/figure-html/grid-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="864"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Multi-Panel Graph Creation
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In a script, attempt the following:</p>
-<ol type="1">
-<li>Create two graphs with <code>ggplot2</code> that have <em>different geometries</em></li>
-<li>Assemble the appropriate type of multi-panel graph</li>
-<li>If appropriate, facet one of the two graphs by some grouping variable and re-generate the multi-panel graph from step 2</li>
-</ol>
-</div>
-</div>
 </section>
 <section id="what-is-project-management" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-project-management">What is Project Management?</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1113,7 +656,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1126,9 +669,9 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <p>The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don’t require a full-time project manager to implement.</p>
 <p>Some common elements of project management schemes include:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Logical Step Sequence</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Identify Dependencies</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Clarify Responsibilities</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false" href="">Mitigate Risk</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Logical Step Sequence</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Identify Dependencies</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Clarify Responsibilities</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Mitigate Risk</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1148,7 +691,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </tbody>
 </table>
 </div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1168,7 +711,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </tbody>
 </table>
 </div>
-<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1188,7 +731,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </tbody>
 </table>
 </div>
-<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1214,7 +757,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="how-to-start" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-start">How to Start</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1223,7 +766,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1256,16 +799,16 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <div class="callout-body-container callout-body">
 <p>Anyone who has completed a moderately complex task has stories about planning failures: critical tools left back at the lab when doing field work; key recipe ingredients not purchased before the guests arrive; logistical questions un-asked and un-planned for; mismatched assumptions revealed only at the last moment…</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Part 1 - Reflection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Part 2 - Group Discussion</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Part 1 - Reflection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Part 2 - Group Discussion</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>On your own, reflect on one of your own project management “fails”</p>
 <ul>
 <li>What went wrong?</li>
 <li>How could planning have prevented or improved the situation?</li>
 </ul>
 </div>
-<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>In your project groups,</p>
 <ul>
 <li>Share (one of) your project management “fails”
@@ -1283,7 +826,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="setting-the-project-scope" class="level2">
 <h2 class="anchored" data-anchor-id="setting-the-project-scope">Setting the Project Scope</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1292,7 +835,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse show">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
