@@ -37,7 +37,11 @@ librarian::shelf(cowplot, exactextractr, lterdatasampler, maps, psych, sf, suppo
 
 Course participants meet for two hours, weekly, at the same time each week. Each session covers a module (linked in the sidebar on the left of this page) that includes a blend of technical and interpersonal skills relevant for inclusive synthesis and team work on the chosen group projects.
 
-Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions about 5 times throughout the term.
+Project groups will also meet at a time of their own choosing to make project-related decisions (project direction, ground rules, AI policy, organizational approaches, etc.) and individuals will pursue independent project work, including data discovery, analysis, interpretation, and writing. Project mentors are encouraged to participate in work sessions about 5 times throughout the term.
+
+All the instructional materials are compiled in this website, which is accompanied by an online workbook containing discussion prompts and interactive exercises. Each participant can make a copy of the workbook to create their own space for personal  notes and resources.
+
+Key resources are linked throughout the modules and assembled in the [Resources section](resources.qmd) at the end. 
 
 ### 2024-25 Structure
 
