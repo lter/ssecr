@@ -41,7 +41,7 @@ Project groups will also meet at a time of their own choosing to make project-re
 
 All the instructional materials are compiled in this website, which is accompanied by an online workbook containing discussion prompts and interactive exercises. Each participant can make a copy of the workbook to create their own space for personal  notes and resources.
 
-Key resources are linked throughout the modules and assembled in the [Resources section](resources.qmd) at the end. 
+Key resources are linked throughout the modules and assembled in the [Resources section](resources.qmd) at the end.  
 
 ### 2024-25 Structure
 
