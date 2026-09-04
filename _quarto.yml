@@ -73,9 +73,13 @@ website:
               href: fellows.qmd
       - icon: github
         href: https://github.com/lter/ssecr
+  
   page-footer: 
-    center: "Copyright 2026, LTER Network"
-    background: secondary
+    background: secondary  
+    center: |
+     [LTER Network](https://lternet.edu). [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</br>
+       ![](topics/images/logo_nsf.png){ float=left } *This material is based upon work supported by the U.S. National Science Foundation under grant no. 2419138, 08/01/2024-present.</br>Any opinions, findings, conclusions, or recommendations expressed in the material are those of the author(s)</br> and do not necessarily reflect the views of the U. S. National Science Foundation.*
+
   margin-footer: |
     ![NCEAS Logo](/topics/images/logo_nceas.png){ width=40% }
     ![LTER Logo](/topics/images/logo_lter.png){ width=34% }

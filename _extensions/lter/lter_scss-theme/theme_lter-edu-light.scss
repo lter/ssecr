@@ -62,3 +62,10 @@ pre code:not(.sourceCode) { background-color: $gray-0; }
 
 // Underline URLs
 .reveal .slide a { text-decoration: underline; }
+
+// Full-width footer
+.nav-footer-center {
+  flex: 1 1 100% !important;
+  max-width: 100% !important;
+  text-align: center;
+}
