@@ -9,6 +9,48 @@ One of the primary facets of the course is that Synthesis Fellows assemble into 
 Team members and project mentors are listed in reverse alphabetical order by last name and their LTER site affiliation is indicated in parentheses. For more information on LTER sites, check out the [site profiles](https://lternet.edu/site/) section of the Network website.
 
 :::{.panel-tabset}
+## 2026 Teams
+
+### Ecological Efficacy of Climate Adaptation Actions
+
+<u>Team Members</u>: **TBD**
+
+<u>Science Mentor(s)</u>: **TBD**
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-eco-efficacy**](https://github.com/lter/ssecr-eco-efficacy)
+
+### Shifting Baselines at Global Change Experiments
+
+<u>Team Members</u>: **TBD**
+
+<u>Science Mentor(s)</u>: **TBD**
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-shifting-bases**](https://github.com/lter/ssecr-shifting-bases)
+
+### Arctic-Boreal Phenology
+
+<u>Team Members</u>: **TBD**
+
+<u>Science Mentor(s)</u>: **TBD**
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-boreal-phenology**](https://github.com/lter/ssecr-boreal-phenology)
+
+### Detecting Time Lags in Ecosystem Nutrient Inputs & Outputs
+
+<u>Team Members</u>: **TBD**
+
+<u>Science Mentor(s)</u>: **TBD**
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-time-lags**](https://github.com/lter/ssecr-time-lags)
+
+### Biodiversity as a Mediator of Global Change Effects on Ecosystem Functioning
+
+<u>Team Members</u>: **TBD**
+
+<u>Science Mentor(s)</u>: **TBD**
+
+{{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-biodiv-mediator**](https://github.com/lter/ssecr-biodiv-mediator)
+
 ## 2024-25 Teams
 
 ### Carbon Cycling Responses Across Spatiotemporal Scales
