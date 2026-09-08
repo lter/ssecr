@@ -11,8 +11,14 @@ Prior to this lesson, you should do the [workshop preparation steps](https://lte
 
 :::
 
+{{< include topics/meeting-process-design.qmd >}}
+
+{{< include topics/meeting-roles.qmd >}}
+
+{{< include topics/meeting-online.qmd >}}
+
+{{< include topics/meeting-variants.qmd >}}
+
+{{< include topics/meeting-records.qmd >}}
+
 {{< include topics/external_lter-workshop-github.qmd >}}
-
-{{< include topics/team-sci.qmd >}}
-
-{{< include topics/team-diversity.qmd >}}
