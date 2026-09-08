@@ -88,6 +88,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-8770d201efb1ff558929b318cac77a45.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -483,14 +486,15 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#process-design" id="toc-process-design" class="nav-link active" data-scroll-target="#process-design">Process Design</a></li>
-  <li><a href="#meeting-roles" id="toc-meeting-roles" class="nav-link" data-scroll-target="#meeting-roles">Meeting Roles</a></li>
-  <li><a href="#online-meetings" id="toc-online-meetings" class="nav-link" data-scroll-target="#online-meetings">Online Meetings</a></li>
-  <li><a href="#alternatives-to-conventional-meeting-structures" id="toc-alternatives-to-conventional-meeting-structures" class="nav-link" data-scroll-target="#alternatives-to-conventional-meeting-structures">Alternatives to Conventional Meeting Structures</a>
+  <li><a href="#science-of-team-science" id="toc-science-of-team-science" class="nav-link active" data-scroll-target="#science-of-team-science">Science of Team Science</a>
   <ul class="collapse">
-  <li><a href="#microstructures-for-small-group-meetings" id="toc-microstructures-for-small-group-meetings" class="nav-link" data-scroll-target="#microstructures-for-small-group-meetings">Microstructures for Small Group Meetings</a></li>
+  <li><a href="#predictable-team-trajectory" id="toc-predictable-team-trajectory" class="nav-link" data-scroll-target="#predictable-team-trajectory">Predictable Team Trajectory</a></li>
   </ul></li>
-  <li><a href="#harvesting-meeting-content" id="toc-harvesting-meeting-content" class="nav-link" data-scroll-target="#harvesting-meeting-content">Harvesting Meeting Content</a></li>
+  <li><a href="#instrumental-benefits-of-diverse-teams" id="toc-instrumental-benefits-of-diverse-teams" class="nav-link" data-scroll-target="#instrumental-benefits-of-diverse-teams">Instrumental Benefits of Diverse Teams</a>
+  <ul class="collapse">
+  <li><a href="#a-more-nuanced-view-emerges" id="toc-a-more-nuanced-view-emerges" class="nav-link" data-scroll-target="#a-more-nuanced-view-emerges">A More Nuanced View Emerges</a></li>
+  <li><a href="#what-mechanisms-are-responsible-for-the-diversity-effect" id="toc-what-mechanisms-are-responsible-for-the-diversity-effect" class="nav-link" data-scroll-target="#what-mechanisms-are-responsible-for-the-diversity-effect">What Mechanisms are Responsible for the Diversity Effect?</a></li>
+  </ul></li>
   <li><a href="#data-visualization-for-synthesis" id="toc-data-visualization-for-synthesis" class="nav-link" data-scroll-target="#data-visualization-for-synthesis">Data Visualization for Synthesis</a></li>
   <li><a href="#visualization-for-exploration" id="toc-visualization-for-exploration" class="nav-link" data-scroll-target="#visualization-for-exploration">Visualization for Exploration</a>
   <ul class="collapse">
@@ -544,8 +548,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<section id="process-design" class="level2">
-<h2 class="anchored" data-anchor-id="process-design">Process Design</h2>
+<section id="science-of-team-science" class="level2">
+<h2 class="anchored" data-anchor-id="science-of-team-science">Science of Team Science</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -560,20 +564,27 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
-<li><u>Articulate</u> core considerations for an effective meeting</li>
-<li><u>Plan</u> effective meetings!</li>
+<li><u>Interpret</u> and enact current best practices in team science</li>
+<li><u>Identify</u> different interaction styles and the effect they have on group dynamics</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Good meeting design starts with understanding your purpose and objectives, as well as your participants. Once you understand why you need to meet (your overarching goal) and what you want to accomplish (the specific outcomes you are driving toward), you can turn to how you will accomplish your purpose (i.e.&nbsp;the agenda of activities, timings, and tech) and who will play what roles. You want participants to know their role and how to be at their best.</p>
-<p>A good rule of thumb is to allow 2-3x as much time to plan a meeting as its duration.</p>
-<p align="center">
-<img src="topics/images/figure_meeting-design-questions.png" alt="Figure separating meeting planning into 'why, what, how, and who' facets" width="85%">
-</p>
+<p>Research in management, organizational behavior, and psychology has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000’s–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of “science of team science” or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al.&nbsp;2008).</p>
+<p>National Academies studies in 2015 (<a href="https://www.nationalacademies.org/read/19007"><em>Enhancing the Effectiveness of Team Science</em></a>, NRC) and 2025 (<a href="https://www.nationalacademies.org/read/29043"><em>Research and Application in Team Science</em></a><em>, NASEM)</em> assembled the existing evidence base into how team composition, coordination, support, and organizational context could improve outcomes for science teams. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience.</p>
+<section id="predictable-team-trajectory" class="level3">
+<h3 class="anchored" data-anchor-id="predictable-team-trajectory">Predictable Team Trajectory</h3>
+<p>Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent patterns in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./topics/images/figure_team-dev-phases.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./topics/images/figure_team-dev-phases.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Graphic laying out the 5 phases of team development: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance"></a></p>
+</figure>
+</div>
+<p>Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.</p>
 </section>
-<section id="meeting-roles" class="level2">
-<h2 class="anchored" data-anchor-id="meeting-roles">Meeting Roles</h2>
+</section>
+<section id="instrumental-benefits-of-diverse-teams" class="level2">
+<h2 class="anchored" data-anchor-id="instrumental-benefits-of-diverse-teams">Instrumental Benefits of Diverse Teams</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -588,60 +599,89 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
-<li><u>Identify</u> useful roles for any meeting</li>
+<li><u>Identify</u> benefits (and potential costs of) diverse teams</li>
+<li><u>Describe</u> the mechanisms underlying those benefits</li>
+<li><u>Develop</u> ways to mitigate costs of diverse teams</li>
+<li><u>Incorporate</u> practices supporting diverse teams into group practice guidelines</li>
 </ul>
 </div>
 </div>
 </div>
-<p>It’s very difficult to both facilitate a conversation and engage fully in it as a participant. If you add taking notes on top of that, it’s sure to become overwhelming. So recruit some help. The number of roles you need to fill will depend on the size of the group and the complexity of the process. Online meetings particularly benefit from a team approach to facilitation. Share and rotate duties over time:</p>
-<ul>
-<li><strong>Process facilitator</strong> - sets tone and pace, mediates conflicts, and ensures all voices are being heard, interpersonal dynamics are positive/effective, and group is staying on task</li>
-<li><strong>Meeting chair</strong> (optional) - keeps an eye on the overall vision and progress of the meeting</li>
-<li><strong>Timekeeper</strong> - may also be the chair or facilitator</li>
-<li><strong>Tech Host</strong> - monitors chat, sets up breakout rooms, records meeting, troubleshoots technology as needed in virtual/hybrid meetings</li>
-<li><strong>Notetaker</strong> - captures action items and notes, often in a google doc that can be viewed and added to by others; may also produce a meeting summary</li>
-<li><strong>Scribe</strong> - captures important points that can be seen in real time by the whole group, usually on a whiteboard or flipchart</li>
-<li><strong>Spotter</strong> - keeps a running list of who is waiting to speak (especially in large groups or intense discussions)</li>
-<li><strong>Relationship monitor</strong> - tracks group dynamics and actively works to help everyone feel included and engaged on personal and social levels, may also be the facilitator</li>
-<li><strong>Participation monitor</strong> - engineers opportunities for participation, quells interrupters, amplifies and credits the messages of quieter participants, may also be the facilitator</li>
-</ul>
-<p>As you get to know your team members, you can start to match people to these different roles based on their skills and recruit them to help. Also, be aware of who has been performing a given role so that you don’t risk repeatedly trapping one group member in an administrative role across many meetings where they can’t contribute fully on an intellectual level.</p>
+<p><img src="./topics/images/graph_team-size-novelty.jpg" alt="Graph showing novelty peaks at a team size of about 6 authors (examining only authors from a single private university). From: Lee et al. 2014" width="45%" align="right"></p>
+<p>There is good evidence that collaborative teams produce research that is more novel and has higher impact than work produced by individuals or smaller more homogeneous groups (Lee at al.&nbsp;2015, Hong and Page 2024, Yang et al.&nbsp;2022). Woolley et al (2010) found evidence for a “collective intelligence” in teams, which is not strongly correlated with the average or maximum individual intelligence of group members but is correlated with the average social sensitivity of group members, the equality in distribution of conversational turn-taking, and the proportion of females in the group.</p>
+<p>Similarly, in a study of 6.6 million medical research papers, Yang et al.&nbsp;found that mixed gender teams consistently produced more novel and more impactful products. In another bibliographic analysis Abbasi and Jaafari (2013) found that inter-institute and inter-university collaborations resulted in higher-impact publications. Interestingly, the result was much weaker for international collaborations.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./topics/images/graph_team-gender-novelty.png" class="img-fluid figure-img" alt="Graph showing that mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes"></p>
+<figcaption>Mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes. Mixed-gender teams are also more likely to publish an upper-tail paper than same-gender teams by as much as 14.6%, depending on team sizes.</figcaption>
+</figure>
+</div>
+<p>It seems reasonable to expect that the effects of cultural and economic diversity on teams would be similar to that of gender diversity, but those factors remain harder to parse at this scale. In any case, the bump in creativity or publishing impact is only a happy side effect of assembling a diverse team. <img src="./topics/images/text_go-far.png" class="img-fluid" style="float: right; width: 50%; padding:10px" alt="Colored background behind the quote 'If you want to go fast, go alone; if you want to go far, go together&amp;apos"> The real reason to do so is that it allows us to tackle bigger questions, makes our findings more relevant, our science more fun, and our world more fair. What it <em>does not do</em> (at least in our experience) is make the process faster!</p>
+<section id="a-more-nuanced-view-emerges" class="level3">
+<h3 class="anchored" data-anchor-id="a-more-nuanced-view-emerges">A More Nuanced View Emerges</h3>
+<p>The paradox of team science is that the very factors that slow progress may be <em>exactly</em> the factors that generate new insight – Milliken and Martins’ (1996) double-edged sword. The pressing question becomes not: “<strong>Does</strong> diversity improve team performance?” but rather: “<strong>How and when</strong> does diversity improve team performance?”</p>
 </section>
-<section id="online-meetings" class="level2">
-<h2 class="anchored" data-anchor-id="online-meetings">Online Meetings</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<section id="what-mechanisms-are-responsible-for-the-diversity-effect" class="level3">
+<h3 class="anchored" data-anchor-id="what-mechanisms-are-responsible-for-the-diversity-effect">What Mechanisms are Responsible for the Diversity Effect?</h3>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-information-elaboration" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d696e666f203e7d7d-information-elaboration"><i class="fa-solid fa-circle-info" aria-label="circle-info"></i> Information Elaboration</h4>
+<p>The categorization-elaboration model (CEM, van Knippenberg et al.&nbsp;2004) proposed that information elaboration—-that is, the exchange, discussion, and integration of task-relevant information and perspectives, was responsible for many of the benefits attributed to diverse groups. But later researchers found there were a few necessary conditions for cognitive elaboration to take place and for groups to reap the benefits. Only when team members brought a <em>learning goal orientation</em> to their work and when they remained open to revising their original ideas (Nederveen Pieterse 2013) did diversity improve team performance.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070656f706c652d67726f7570203e7d7d-avoiding-groupthink" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612070656f706c652d67726f7570203e7d7d-avoiding-groupthink"><i class="fa-solid fa-people-group" aria-label="people-group"></i> Avoiding ‘Groupthink’</h4>
+<p>We are all familiar with the “we’ve always done it this way” effect that can happen when a group of people have been working together for a while. By introducing people from new fields, laboratories, or cultures, that complacent thinking is disrupted. Often, the very act of justifying <em>why</em> we do something the way we do can invite a rethinking and improvement.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612079696e2d79616e67203e7d7d-metacognition" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612079696e2d79616e67203e7d7d-metacognition"><i class="fa-solid fa-yin-yang" aria-label="yin-yang"></i> Metacognition</h4>
+<p>Metacognition, or “thinking about thinking” requires individuals to reflect and articulate their process for achieving new knowledge. What information goes in? Is information missing? How should it be analyzed and interpreted? Are those conclusions justified?</p>
+<p>In the setting of a group from different backgrounds, that process happens out loud, with multiple opportunities to challenge, re-think, and improve.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062696e6f63756c617273203e7d7d-improved-consideration-of-alternative-solutions" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c2066612062696e6f63756c617273203e7d7d-improved-consideration-of-alternative-solutions"><i class="fa-solid fa-binoculars" aria-label="binoculars"></i> Improved Consideration of Alternative Solutions</h4>
+<p>A science team may include members from different research disciplines, sectors, geographies or cultures. Along each of those axes, team members will have different personal networks and be more (or less) familiar with different literatures, models, communities, tools, and solutions. Collectively, the group has a much broader range of information to draw on…but only if group members feel empowered to contribute.</p>
+</section>
+<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c6973742d636865636b203e7d7d-better-task-completion-resource-use-efficiency" class="level4">
+<h4 class="anchored" data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206c6973742d636865636b203e7d7d-better-task-completion-resource-use-efficiency"><i class="fa-solid fa-list-check" aria-label="list-check"></i> Better Task Completion &amp; Resource-Use Efficiency</h4>
+<p>“Many hands make light work” the saying goes. Think of a meta-analysis where 10 group members can each read 30 papers instead of 1 individual reading 300 papers. Dividing the workload <em>can</em> speed up the process, but only if there is an efficient way to manage dividing the work and then bringing the results back together again. Conversely, relying on a few skilled coders can be much more efficient than each individual writing their own code, but unless the group has a mechanism for getting broad input on key decisions, they will lose the value created by bringing together a larger group.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Draft Your Team’s Practices
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Part 1 - Project Group Discussions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Part 2 - Whole-Class Discussion</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Come up with one practice that you could include in your group practice guidelines to support <strong>each</strong> of the above mechanisms.</p>
 <ul>
-<li><u>Explain</u> methods for improving the experience of virtual participants on hybrid teams</li>
+<li>Information Elaboration</li>
+<li>Avoiding Groupthink</li>
+<li>Metacognition</li>
+<li>Improved Consideration of Alternative Solutions</li>
+<li>Better Task Completion &amp; Resource-Use Efficiency</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>One member of each project reports out on:</p>
+<ul>
+<li>What was one practice you discussed and plan to adopt?</li>
+<li>How do you think that will help your group?</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Online meetings benefit from all the same considerations as in person meetings, plus a little extra care and planning. Keeping your team engaged is doubly challenging in a virtual setting: our computers are full of distractions (email! notifications! internet rabbit holes!) <em>and</em> as the facilitator, it’s harder to tell whether participants are engaged when all you have to go on is a small video window. Managing people’s energy and attention and creating opportunities for real human connection are real challenges. On the flip side, online meetings allow distributed teams to stay connected and can provide a dynamic and rich platform for shared work.</p>
-<p>In addition to the general tips above, in online settings:</p>
-<ol type="1">
-<li>Be thoughtful and equitable when scheduling across time zones</li>
-<li>Develop online meeting norms for your team and enforce them (e.g., use of chat, indicating you want to speak)</li>
-<li>Ask a team member to help you monitor the chat and assist participants with tech or connectivity challenges</li>
-<li>Encourage personal connection (e.g., with check ins, invitations to have video on)</li>
-<li>Check engagement regularly</li>
-<li>Provide breaks (bio breaks, silence, invitations to step away from the screen for reflection)</li>
-<li>Make video optional</li>
-<li>Take advantage of tech tools (breakout rooms, polls, shared notes, virtual whiteboards, recording, transcription, etc.)</li>
-</ol>
+</div>
+</div>
 </section>
-<section id="alternatives-to-conventional-meeting-structures" class="level2">
-<h2 class="anchored" data-anchor-id="alternatives-to-conventional-meeting-structures">Alternatives to Conventional Meeting Structures</h2>
+</section>
+</section>
+<section id="data-visualization-for-synthesis" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization-for-synthesis">Data Visualization for Synthesis</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -653,200 +693,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Explain</u> how some meeting microstructures privilege different thinking styles</li>
-<li><u>Use</u> some common microstructures</li>
-</ul>
-</div>
-</div>
-</div>
-<p>Differences in thinking and learning styles, disciplinary background, power, and other dimensions of diversity mean that there’s no such thing as a one-size-fits-all approach for participatory processes. Nonetheless, we tend to default to a small set of traditional ways of sharing information and engaging people when we meet. These conventional structures are often either too limiting (presentations, status reports, and managed discussions) or too free-form and disorganized (open discussions and brainstorms) to effectively tap the wisdom of the group (Lipmanowicz and McCandless, 2014). To support the engagement of all participants, we need to break out of those traditional ways of meeting.</p>
-<p>Books and websites like Liberating Structures, Gamestorming, and the Facilitator’s Guide to Participatory Decision Making offer dozens of alternative group processes (see Resources). Known as microstructures or knowledge games, these simple, fun activities are designed to include everyone, distribute control, and unleash creativity. One or more activities can be matched to your intended outcomes and arranged in a sequence to advance the team toward your overall goal. Liberating Structures offers a <a href="https://www.liberatingstructures.com/matching-matrix">matching matrix</a> to help you identify microstructures that could fit your needs and an app you can use to browse and assemble strings of activities. <a href="https://gamestorming.com/">Gamestorming</a> organizes their activities into categories (e.g.&nbsp;games for opening, games for decision-making) for exploration.</p>
-<section id="microstructures-for-small-group-meetings" class="level3">
-<h3 class="anchored" data-anchor-id="microstructures-for-small-group-meetings">Microstructures for Small Group Meetings</h3>
-<p>Here are a few microstructures that work well for small group virtual meetings. They also work for larger groups and in person settings:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>Microstructure</strong></th>
-<th style="text-align: center;"><strong>Thinking Preference</strong></th>
-<th style="text-align: left;"><strong>Purpose</strong></th>
-<th style="text-align: left;"><strong>How It Works</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Icebreaker / check in</td>
-<td style="text-align: center;"><strong><span style="color:red">Relational</span></strong></td>
-<td style="text-align: left;">Connect as a team, start on a positive, human note</td>
-<td style="text-align: left;">Many versions exist, e.g., one word to describe how you are arriving; one thing you are feeling grateful for today; coolest thing you’ve learned lately; describe where you grew up without using any place names, etc.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Round robin / go around</td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
-<td style="text-align: left;">Hear from everyone</td>
-<td style="text-align: left;">Everyone answers the same prompt. Alternatives to going in order: each speaker calls on the next person after they have shared - keeping track of who has / hasn’t spoken keeps people paying attention; popcorn-style - people share in the order that they feel moved to speak</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://www.liberatingstructures.com/1-1-2-4-all/">1,2,4,all</a></td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
-<td style="text-align: left;">Engage everyone in generating questions, ideas, and suggestions</td>
-<td style="text-align: left;">Individual reflection; Pair share; Two pairs combine and share as a group of 4; Small groups share highlights with whole group</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://www.liberatingstructures.com/14-min-specs/">Min specs</a></td>
-<td style="text-align: center;"><strong><span style="color:gold">Experimental</span></strong></td>
-<td style="text-align: left;">Specify simple rules the group must follow to achieve your purpose</td>
-<td style="text-align: left;">1,2,4,all format; Individuals brainstorm things the group must do or must not do to achieve its purpose; Share in pairs or small groups; Pare the list down to the minimum set of rules you could follow and still achieve the purpose</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://gamestorming.com/?s=affinity+map">Affinity Map</a></td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
-<td style="text-align: left;">Surface ideas, detect patterns, and analyze</td>
-<td style="text-align: left;">Brainstorm ideas using sticky notes on a wall or virtual whiteboard; Cluster into categories; If useful, prioritize within categories</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://gamestorming.com/brainwriting/">Brainwriting</a></td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
-<td style="text-align: left;">Surface and elaborate ideas</td>
-<td style="text-align: left;">(1) Brainstorm ideas in a google doc or virtual whiteboard (or on index cards in person); (2) Read and add to each other’s ideas; (3) Discuss</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="https://www.liberatingstructures.com/9-what-so-what-now-what-w/">What, So What, Now What</a></td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong></td>
-<td style="text-align: left;">Make sense of past progress or experiences and decide on future actions</td>
-<td style="text-align: left;">What - As a group, compile the facts and observations relevant to the context; So What - Reflect on the facts and their implications, identify patterns, generate hypotheses; Now What - Draw conclusions - What actions make sense?</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="https://gamestorming.com/five-fingered-consensus/">Fist to Five</a> / Gradient of Agreement</td>
-<td style="text-align: center;"><strong><span style="color:green">Practical</span></strong>, <strong><span style="color:red">Relational</span></strong></td>
-<td style="text-align: left;">Assess degree of consensus; seek closure</td>
-<td style="text-align: left;">Use when ready to close a discussion or make a decision; Invite participants to rate their level of agreement with a proposal on a scale of 0-5; Five fingers means “absolute, total agreement or support” and a fist means “complete opposition”</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Polling</td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong></td>
-<td style="text-align: left;">Rank alternatives</td>
-<td style="text-align: left;">Before you start - clarify how you will use the results - are you gathering information or taking a vote to make a decision?; Decide how many votes per person; In person - use sticky dots; Virtually - use +1s in a google doc or a digital polling tool (e.g., Zoom, Mural, slido)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Feasibility-Impact Matrix (see figure below)</td>
-<td style="text-align: center;"><strong><span style="color:blue">Analytical</span></strong>, <strong><span style="color:green">Practical</span></strong>, <strong><span style="color:gold">Experimental</span></strong></td>
-<td style="text-align: left;">Compare alternatives</td>
-<td style="text-align: left;">Discuss and agree on definitions for two criteria for evaluating ideas: feasibility of implementation and impact potential; Rate each idea against these two axes and map onto 2x2 grid</td>
-</tr>
-</tbody>
-</table>
-<p align="center">
-<img src="topics/images/figure_project-impact-vs-feasibility.png" alt="Graph of impact versus feasibility where both axes range from low to high and the plot area is divided into four equal sections" width="70%">
-</p>
-</section>
-</section>
-<section id="harvesting-meeting-content" class="level2">
-<h2 class="anchored" data-anchor-id="harvesting-meeting-content">Harvesting Meeting Content</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<p><u>Paraphrase</u> why recording meeting content ‘as you go’ is useful</p>
-</div>
-</div>
-</div>
-<p>As you go, and definitely before your meeting is over, engage your team in synthesizing and capturing the information that has been discussed. This helps you to deepen understanding, document your workflow and decisions, and pick up easily next time. Use a consistent system - like a running notes document linked in the calendar item. Graphics or drawings can be a valuable complement to oral and written content in making thinking visible.</p>
-<p align="center">
-<img src="topics/images/image_visible-thinking.png" alt="Art of many groups of people with blue speech bubbles connected by an orange amorphous cloud" width="100%">
-</p><figcaption>
-Making thinking visible, Credit: Nancy Margulies, World Cafe, Flickr
-</figcaption>
-<p></p>
-<p>Consider using:</p>
-<ul>
-<li>Grids to organize information</li>
-<li>Conceptual models or mind maps to articulate shared understanding of complex systems</li>
-<li>Manifestos, abstracts, and other written collateral to distill ideas</li>
-</ul>
-<p>When capturing notes, try to use people’s own words; if necessary ask them to distill long or complex points into a headline you can capture. Invite them to offer corrections if the notetaker didn’t capture what they meant.</p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Team Planning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Part 1 - Reflection</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Part 2 - Team Discussion</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Part 3 - Class Discussion</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>On your own, think about an upcoming team meeting that hasn’t yet been planned</p>
-<ul>
-<li><em>Why</em> will you be meeting?</li>
-<li>What do you think should be the purpose of that meeting?</li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>In your project teams:</p>
-<ul>
-<li>Decide as a group which upcoming meeting you want to focus on</li>
-<li>Identify a facilitator, timekeeper, reporter for <em>today’s</em> breakout session (not the meeting)</li>
-<li>Use round robin or silent Google Doc-ing to hear everyone’s answers to the prompt</li>
-<li>Plan your next meeting together (resources: EasyRetro board, tools highlighted above)
-<ul>
-<li>Agree on the meeting purpose</li>
-<li>Identify 1-3 intended outcomes</li>
-<li>Draft an agenda for the meeting</li>
-<li><em>What activities will you use to make your meeting inclusive? Can you include an activity that preferences each thinking style?</em></li>
-<li>Identify roles and responsibilities</li>
-<li>What’s your plan for harvesting content?</li>
-<li>Identify any prep work for participants and for the facilitator(s)</li>
-</ul></li>
-<li>Discuss:
-<ul>
-<li><em>How might things get off track?</em></li>
-<li><em>What’s your plan if they do?</em></li>
-</ul></li>
-<li>Modify your plan as needed</li>
-</ul>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>As a whole class, let’s discuss your answers to the following questions:</p>
-<ul>
-<li>What activities did you identify to help make your meeting inclusive to all the thinking styles on your team?</li>
-<li>Where would you like advice from the class?</li>
-<li>Are there other questions you are holding related to inclusive facilitation?</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="data-visualization-for-synthesis" class="level2">
-<h2 class="anchored" data-anchor-id="data-visualization-for-synthesis">Data Visualization for Synthesis</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -866,7 +712,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="visualization-for-exploration" class="level2">
 <h2 class="anchored" data-anchor-id="visualization-for-exploration">Visualization for Exploration</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -875,7 +721,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1003,7 +849,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="final-pre-code-step-draw" class="level2">
 <h2 class="anchored" data-anchor-id="final-pre-code-step-draw">Final Pre-Code Step: Draw!</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1012,7 +858,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1047,7 +893,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="graphing-with-ggplot2" class="level2">
 <h2 class="anchored" data-anchor-id="graphing-with-ggplot2">Graphing with <code>ggplot2</code></h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1056,7 +902,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse show">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1263,7 +1109,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="multi-panel-graphs" class="level2">
 <h2 class="anchored" data-anchor-id="multi-panel-graphs">Multi-Panel Graphs</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1272,7 +1118,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-15" class="callout-15-contents callout-collapse collapse show">
+<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1868,6 +1714,38 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
