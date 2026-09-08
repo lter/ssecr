@@ -15,7 +15,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **TBD**
 
-<u>Science Mentor(s)</u>: **TBD**
+<u>Science Mentor(s)</u>: [Dr. Sarah Weiskopf](https://www.usgs.gov/staff-profiles/sarah-weiskopf), Research Ecologist, National Climate Adaptation Science Center, US Geological Survey and [Dr. Meagan Oldfather](https://www.usgs.gov/staff-profiles/meagan-oldfather), Biologist, USGS North Central Climate Adaptation Science Center
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-eco-efficacy**](https://github.com/lter/ssecr-eco-efficacy)
 
@@ -23,7 +23,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **TBD**
 
-<u>Science Mentor(s)</u>: **TBD**
+<u>Science Mentor(s)</u>: [Dr. Pam Templer](https://people.bu.edu/ptempler/), Distinguished Professor, Boston University & **TBD**
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-shifting-bases**](https://github.com/lter/ssecr-shifting-bases)
 
@@ -39,7 +39,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **TBD**
 
-<u>Science Mentor(s)</u>: **TBD**
+<u>Science Mentor(s)</u>: [Dr. Adam Wymore](https://ecosheds.weebly.com/), Associate Professor, University of New Hampshire
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-time-lags**](https://github.com/lter/ssecr-time-lags)
 
@@ -47,7 +47,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: **TBD**
 
-<u>Science Mentor(s)</u>: **TBD**
+<u>Science Mentor(s)</u>: [Dr. Laura Dee](https://www.lauraedee.com/), University of Colorado-Boulder and [Dr. Tim Ohlert](https://tim-ecology.weebly.com/), Postdoctoral Associate, University of Colorado, Boulder
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-biodiv-mediator**](https://github.com/lter/ssecr-biodiv-mediator)
 
