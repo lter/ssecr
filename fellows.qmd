@@ -22,7 +22,6 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 | _Jared M. Collins_ -- [{{< fa brands github >}}](https://github.com/jaredcoll) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-6785-6565) {{< fa globe >}} |
 | _Emerson Conrad-Rooney_ -- [{{< fa brands github >}}](https://github.com/econradrooney) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7435-2832) [{{< fa globe >}}](http://econradrooney.com) |
 | _Adesuwa S. Erhunmwunse_ -- [{{< fa brands github >}}](https://github.com/Adesuwaerhuns) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-9732-1481) {{< fa globe >}} |
-| _Ileana Fenwick_ -- [{{< fa brands github >}}](https://github.com/IleanaF) {{< fa brands orcid >}} {{< fa globe >}} |
 | _Damian Forck_ -- [{{< fa brands github >}}](https://github.com/DamianF100) {{< fa brands orcid >}} [{{< fa globe >}}](https://www.ntnu.edu/employees/damian.t.forck) |
 | _Claudia Marcela Franco_ -- [{{< fa brands github >}}](https://github.com/clamafra) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-6886-4989) {{< fa globe >}} |
 | _Yasas Gamagedara_ -- [{{< fa brands github >}}](https://github.com/kanthsaz) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-6826-8420) [{{< fa globe >}}](https://kanthsaz.github.io/) |
@@ -51,7 +50,6 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 | _Sainfort Vital_ -- [{{< fa brands github >}}](https://github.com/sainfortvital) [{{< fa brands orcid >}}](https://orcid.org/0009-0005-2034-6927) {{< fa globe >}} |
 | _Anita Weissflog_ -- [{{< fa brands github >}}](https://github.com/DataAnita) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-9527-0964) {{< fa globe >}} |
 | _Zhaoxun Yang_ -- [{{< fa brands github >}}](https://github.com/znyang02) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1021-9933) {{< fa globe >}} |
-| -- |
 
 :::
 :::::
