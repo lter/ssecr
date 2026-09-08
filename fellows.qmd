@@ -49,7 +49,7 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 | _Rosario Vidales_ -- [{{< fa brands github >}}](https://github.com/vidalesr) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-7029-6925) {{< fa globe >}} |
 | _Sainfort Vital_ -- [{{< fa brands github >}}](https://github.com/sainfortvital) [{{< fa brands orcid >}}](https://orcid.org/0009-0005-2034-6927) {{< fa globe >}} |
 | _Anita Weissflog_ -- [{{< fa brands github >}}](https://github.com/DataAnita) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-9527-0964) {{< fa globe >}} |
-| _Zhaoxun Yang_ -- [{{< fa brands github >}}](https://github.com/znyang02) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1021-9933) {{< fa globe >}} |
+| _Zhaoxun (Nancy) Yang_ -- [{{< fa brands github >}}](https://github.com/znyang02) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1021-9933) {{< fa globe >}} |
 
 :::
 :::::
