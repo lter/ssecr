@@ -113,6 +113,10 @@ Project groups will also meet at a time of their own choosing to work on project
 
 ## Course Policies
 
+### Generative AI
+
+{{< include policy/generative-ai.qmd >}}
+
 ### Attendance
 
 {{< include policy/attendance.qmd >}}
