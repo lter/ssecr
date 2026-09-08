@@ -11,15 +11,9 @@ There is no specific pre-class preparation for this module!
 
 :::
 
-{{< include topics/meeting-process-design.qmd >}}
+{{< include topics/team-sci.qmd >}}
 
-{{< include topics/meeting-roles.qmd >}}
-
-{{< include topics/meeting-online.qmd >}}
-
-{{< include topics/meeting-variants.qmd >}}
-
-{{< include topics/meeting-records.qmd >}}
+{{< include topics/team-diversity.qmd >}}
 
 {{< include topics/viz-synthesis.qmd >}}
 
