@@ -1,4 +1,4 @@
-## Harvesting Meeting Content
+## Capturing Meeting Content
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives
@@ -20,7 +20,7 @@ Consider using:
 
 - Grids to organize information
 - Conceptual models or mind maps to articulate shared understanding of complex systems 
-- Manifestos, abstracts, and other written collateral to distill ideas
+- Project briefs, abstracts, and other written collateral to distill ideas
 
 When capturing notes, try to use people's own words; if necessary ask them to distill long or complex points into a headline you can capture. Invite them to offer corrections if the notetaker didn't capture what they meant.
 
@@ -30,38 +30,47 @@ When capturing notes, try to use people's own words; if necessary ask them to di
 :::{.panel-tabset}
 ### Part 1 - Reflection
 
-On your own, think about an upcoming team meeting that hasn't yet been planned
+On your own, think about your upcoming first team meeting:
 
-- _Why_ will you be meeting? 
-- What do you think should be the purpose of that meeting?
+- What do you think should be the purpose of this first meeting? What would you like to accomplish?
+- What do you think your group _must_ do or discuss in order to launch your work together well?
 
 ### Part 2 - Team Discussion
 
-In your project teams:
+In your project teams
 
-- Decide as a group which upcoming meeting you want to focus on
-- Identify a facilitator, timekeeper, reporter for _today's_ breakout session (not the meeting)
-- Use round robin or silent Google Doc-ing to hear everyone's answers to the prompt
-- Plan your next meeting together (resources: EasyRetro board, tools highlighted above)
-    - Agree on the meeting purpose
-    - Identify 1-3 intended outcomes
-    - Draft an agenda for the meeting
-    - _What activities will you use to make your meeting inclusive? Can you include an activity that preferences each thinking style?_
-    - Identify roles and responsibilities
-    - What's your plan for harvesting content?
-    - Identify any prep work for participants and for the facilitator(s)
-- Discuss:
-    - _How might things get off track?_
-    - _What's your plan if they do?_
-- Modify your plan as needed
+- Identify a facilitator, timekeeper, scribe/notetaker, and reporter for today’s breakout session (not the meeting)
+- Use round robin or silent Google Doc-ing to hear everyone’s answers to the prompts. Don’t discuss or edit until you have heard from everyone:
+-- What do you see as the overarching purpose of our first team meeting?
+-- What’s one thing that we must accomplish (i.e. one intended outcome)?
 
-### Part 3 - Class Discussion
+- Discuss and refine the plan for your meeting together:
+  - Agree on the meeting purpose
+  - Identify 1-3 intended outcomes
+  - Decide on meeting length
+  - Draft an agenda for the meeting
 
-As a whole class, let's discuss your answers to the following questions:
+- Discuss: What activities or facilitation techniques will you use to move through this agenda? How will you ensure inclusive and equitable participation? 
 
-- What activities did you identify to help make your meeting inclusive to all the thinking styles on your team?
-- Where would you like advice from the class?
-- Are there other questions you are holding related to inclusive facilitation?
+- Discuss: Based on your previous experience, how might things get off track? What’s your plan if they do?
+ 
+- Identify roles and responsibilities
+  - Facilitator:
+  - Timekeeper:
+  - Notetaker / Scribe:
+
+- Identify any prep work for participants and for the facilitator(s)
+
+- Calendar the meeting, if time permits!
+
+
+### Part 3 - Class Share-out
+
+Report out:
+
+- What did you identify as your purpose and intended outcomes?
+- What activities or facilitation practices did you identify to help make your meeting inclusive and effective?
+
 
 :::
 ::::
