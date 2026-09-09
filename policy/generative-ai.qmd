@@ -1,5 +1,5 @@
 
-Generative artificial intelligence (hereafter "genAI") can feel unavoidable--particularly in data science contexts. As the instructors of the course, we don't feel it's appropriate to dictate how or where you use genAI, though for the purposes of this course, we do have some recommendations.
+Generative artificial intelligence (hereafter "genAI") can feel unavoidable--particularly in data science contexts. As the instructors of the course, we don't feel it's appropriate (or possible) to dictate how or where you use genAI, though for the purposes of this course, we do have some recommendations.
 
 Broadly, we can divide genAI considerations into two bins: using it by/for yourself versus using it with your project group.
 
@@ -10,11 +10,11 @@ What "responsible" genAI use actually consists of is ill-defined (at time of wri
 
 1. **You should use genAI to _augment_ your learning, _not_ replace it!**
 
-We hope that SSECR leaves you with a set of skills that are useful in many facets of your career going forward and developing "muscle memory" through repetitive practice is a critical part of that.
+We hope that SSECR leaves you with a set of skills that are useful in many facets of your career going forward and developing "muscle memory" through repetitive practice is a critical part of the learning process.
 
 2. **All genAI outputs should be checked before being relied upon.**
 
-Ideally, use of genAI should be start and end with a human. You should carefully consider the prompt and inputs that you use and check the output to make sure it is exactly what you expected. Both pieces of this can be tricky to do if you are not already proficient in the skill for which you're using genAI so keep that in mind. Even if you possess that skill, remember to still set aside time to review genAI outputs before accepting them.
+Ideally, use of genAI should start and end with a human. You should carefully consider the prompt and inputs that you use and check the output to make sure it is exactly what you expected. Both pieces of this can be tricky to do if you are not already proficient in the skill for which you're using genAI, so keep that in mind. Even if you possess that skill, remember to set aside time to review genAI outputs before accepting them.
 
 #### Project Group Use
 
@@ -30,14 +30,14 @@ So, we recommend the following:
 
 1. **Discuss genAI comfortability with the group <u>as early as possible</u>!**
 
-Get specific! Are you okay with using it to refactor code? What about writing first draft text? Brainstorming research questions?. You'll want to have chatted about this stuff _before_ someone uses genAI in a way that feels reasonable to them but deeply unreasonable to another group members. Think about ways to ask for consent and record that consent and listen from a place of trying to understand. If you normally use genAI for every facet of your work, you'll likely have to use it less to compromise with the group. If you don't use genAI at all, you may need to consider which use-cases you are more comfortable with the group using genAI for.
+Get specific! Are you okay with using it to re-factor code? What about writing first draft text? Brainstorming research questions?. You'll want to have chatted about this stuff _before_ someone uses genAI in a way that feels reasonable to them but deeply unreasonable to another group member. Think about ways to ask for consent and record that consent and listen from a place of trying to understand. If you normally use genAI for every facet of your work, you'll likely have to use it less to compromise with the group. If you don't use genAI at all, you may need to consider in which use-cases you can relax that stance.
 
 2. **Document your use of genAI!**
 
-Write down information on how you use genAI _as you use it._ This might include what models you used, when you used them, the specific text of the prompt you used, or other related factors. This documentation will be useful when you write up an eventual product and will also help make sure that your group is using genAI in ways that are consistent with your discussion about how community norms in this sphere (see point \#1). Writing it down as you go will help make sure you don't forget that you used genAI for some piece of the project months later when you're writing it up.
+Write down information on how you use genAI _as you use it._ This might include what models you used, when you used them, the specific text of the prompt you used, or other related factors. This documentation will be useful when you write up an eventual product and will also help make sure that your group is using genAI in ways that are consistent with your discussion about community norms in this sphere (see point \#1). Writing it down as you go will help make sure you don't forget that you used genAI for some piece of the project months later when you're writing it up.
 
 3. **Disclose your use of genAI in any/all products that you create!**
 
-If you document your use of genAI (see point \#2), this should be fairly straightforward! You want to avoid getting a paper rejected because you said you used genAI for "manuscript writing" so leaning on your specific documentation of genAI use will help you be completely forthright about your use of these tools. This will help avoid any awkward or professionally-damaging situations around undisclosed genAI use.
+If you document your use of genAI (see point \#2), this should be fairly straightforward! You want to avoid getting a paper rejected because you said you used genAI for "manuscript writing" so leaning on your specific documentation of genAI use will help you be completely forthright and specific about your use of these tools. This will help avoid any awkward or professionally-damaging situations around undisclosed genAI use.
 
 :::

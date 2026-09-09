@@ -39,7 +39,7 @@ Course participants meet for two hours, weekly, at the same time each week. Each
 
 Project groups will also meet at a time of their own choosing to make project-related decisions (project direction, ground rules, AI policy, organizational approaches, etc.) and individuals will pursue independent project work, including data discovery, analysis, interpretation, and writing. Project mentors are encouraged to participate in work sessions about 5 times throughout the term.
 
-All the instructional materials are compiled in this website, which is accompanied by an online workbook containing discussion prompts and interactive exercises. Each participant can make a copy of the workbook to create their own space for personal  notes and resources.
+All the instructional materials are compiled in this website, which is accompanied by an online workbook containing discussion prompts and interactive exercises. Each participant can make a copy of the workbook sections to create their own space for personal notes and resources.
 
 Key resources are linked throughout the modules and assembled in the [Resources section](resources.qmd) at the end.  
 
@@ -49,11 +49,11 @@ Course participants meet for three hours, bi-weekly, at the same time each week.
 
 Each session also includes networking opportunities with successful synthesis scientists.
 
-2. **Instruction (~120 minutes)**: Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the year. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently. 
+2. **Instruction (~120 minutes)**: Each session will focus on a specific instructional topic, with technical skills, team-science skills, and communication topics interspersed throughout the term. The discussion will be limited to official course participants, but instructional materials for each topic will be available online, allowing individuals or site- or topic-based groups to follow along independently. 
     - Technical skills will build on earlier lessons and are not intended to be stand-alone modules.
     - The course will include social and leadership skills required to bring a synthesis project from idea to completion (or, for larger projects to completed proposal) and will include techniques for ensuring that multiple thinking and learning styles are respected and valued.
 
-Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions at about 5 times throughout the term.
+Project groups will also meet at a time of their own choosing to work on projects. Project mentors are encouraged to participate in work sessions about 5 times throughout the term.
 
 :::
 
