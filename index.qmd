@@ -17,6 +17,13 @@ We hope this course is useful to you and encourage you to use these materials! I
 
 > Lyon, N.J., Kappel, C., Elmendorf, S., Kui, L., Maurer, G. E., De La Rosa, G., & Downs, M. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. [https://doi.org/10.5281/zenodo.16969471](https://doi.org/10.5281/zenodo.16969471)
 
+### Shared Drives
+
+You will want to access two shared google drives throughout the course: 
+
+-  [2026-cohort](https://drive.google.com/drive/folders/1n6CflMnmQZCb9bE502no4OPatw_ApnJH?usp=drive_link) contains the course roster, project coalescing materials, recordings of class sessions, and [worksheets for each module](https://docs.google.com/document/d/118OL8ctl1F-kqO-Se5nLm7gjG6mUNJKbQ_3z-KMnaNc/copy) containing discussion prompts and exercises. Please make a copy for your personal and group notes.
+-  [LTER-SSECR_Projects](https://drive.google.com/drive/u/0/folders/0AEVMRiHeZkcXUk9PVA) is where you will keep data and notes related to your synthesis projects. 
+
 ### R Packages
 
 So far, the code facets of this course are taught primarily in R. Specific R packages are described and loaded in each module as they are needed but to quickly ensure that you have most of the needed packages, feel free to copy and run the following code. Note that if you do not already have the `librarian` package, you'll need to un-comment the first line and install it before running the second line. Packages are in alphabetical order
