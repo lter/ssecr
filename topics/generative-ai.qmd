@@ -1,4 +1,4 @@
-<!-- This qmd is included in the website via `{{< include topics/generative-ai.qmd >}}` in module-02.qmd, which declares `bibliography: topics/references/gen-ai_refs.bib`. Citations here (e.g. [@zewe_2025]) rely on that field and will not resolve if this file is previewed or rendered standalone. -->
+<!-- This qmd is included in the website via `{{< include topics/generative-ai.qmd >}}` in module-02.qmd, which declares `bibliography: topics/references/gen-ai_refs.bib`. Citations here (e.g. [@zewe_2025]) rely on that field and will not resolve if this file is previewed or rendered standalone. Use instead quarto preview module-02.qmd for building -->
 
 ## Responsibly Using Generative AI
 
@@ -7,32 +7,26 @@
 
 After completing this topic you will be able to:
 
-- Identify modalities for engaging with generative AI
-- Discuss some use-cases and drawbacks of genAI
-- Understand methods for tracking and reporting AI use in research
+- <u>Identify</u> modalities for engaging with generative AI
+- <u>Evaluate</u> some benefits and risks of genAI in a research and learning setting
+- <u>Understand</u> methods for tracking and reporting AI use in scientific collaborations
 
 :::
 
-::: {.callout-note}
-## Acknowledgments
-
-Parts of the content in this topic were adapted from the National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub's 2026 workshop to the Delta Stewardship Council. Those materials can be found at [nceas-learning-hub.github.io/2026_delta_week2](https://nceas-learning-hub.github.io/2026_delta_week2/s08_project_doc_organization.html).
-:::
-
-Generative AI (hereafter "genAI") has become increasingly broadly-discussed and adopted in the sciences. As with any other flexible tool, there are a variety of opinions and use-cases. The goal of this lesson is _not_ to provide comprehensive coverage for the entirety of genAI, rather **the goal here is to give you a _starting_ point for thinking about genAI and deciding whether/how you'd like to use these tools.** We are by no means experts in the design and application of AI, we are just curious and excited (and sometimes apprehensive) about the possibilities these new tools offer.
+Generative AI (hereafter "genAI") is a rapidly evolving topic. The pace of new tool development outpaces our ability to track the myriad of potential applications for ecological synthesis. At the same time, there are real costs to using AI, so we encourage intentional decision-making around its use. **The goal of this lesson is to give you a _starting_ point for thinking about genAI and deciding whether/how you would like to use these tools.** We will _not_ provide comprehensive coverage for how AI works, or provide tutorials on specific AI platforms today. We are by no means experts in the design and application of AI, we are just curious and excited (and sometimes apprehensive) about the possibilities these new tools offer.
 
 ### Big Picture
 
 GenAI results are _probabilistic_ rather than _deterministic._ The same exact prompt is not guaranteed to return the same result. This means that genAI results are not reproducible (i.e., cannot be guaranteed to return the same output from the same inputs) so should be used with caution when reproducibility is a priority. However, you might ask a genAI tool to help you generate *code* to analyse your data that you can review, modify, save and rerun.
 
-**Whether and how to use genAI for these projects is something your team will need to decide on collaboratively.** The potential applications and drawbacks described below--or that you've encountered in your own work--may provide helpful context for that conversation but the key point is that you do discuss this as a group and reach a shared understanding and plan of action that everyone on the team is comfortable with.
+**Whether and how to use genAI for these projects is something your team will need to decide on collaboratively.** The potential applications and drawbacks described below--or that you've encountered in your own work--may provide helpful context for that conversation. But the key point is that aligning expectations and developing [group norms](https://www.nceas.ucsb.edu/sites/default/files/2025-08/GroupNorms_CheatSheet.pdf) around AI are a key part of a successful scientific collaboration.
 
 Finally, note that **you have a professional obligation to verify and validate genAI output** This requires some fundamental understanding of the task so that you can provide adequate human oversight. Remember that the same truism that applies to non-AI coding also applies here: the worst case isn't that your code gets an error, it's that your code _appears_ to work but does not actually do what you intend!
 
 
 ### AI Use-Cases
 
-There are a handful of particularly well-recognized potential use-cases for genAI in a typical researchers toolkit. A non-exhaustive set of these is included below.
+There are a handful of particularly well-recognized potential use-cases for genAI in a typical researcher's toolkit. A non-exhaustive set of these is included below.
 
 :::{.panel-tabset}
 #### Note-Taking
@@ -41,27 +35,48 @@ Many video conference platforms (e.g., Microsoft Teams, Zoom) now include AI com
 
 #### Literature Search and Ideation
 
-Most general purpose chatbots can do basic research when prompted. But, all AI tools reflect the biases in their training sets and have a strong tendency for sycophancy as a result of model training that rewards agreeableness. As a result, AI adoption narrows the diversity of research topics pursued [@hao_artificial_2026] and AI chatbots tend to support rather than challenge user's views [@naddaf_ai_2025]. While general purpose AI tools often 'hallucinate' scientific publications, those which retrieve information from curated databases of scientific papers may help researchers discover new papers more effectively than traditional search. Specialized genAI tools are being developed for literature search and scientific [brainstorming](https://www.anthropic.com/news/claude-science-ai-workbench) that reduce the tendency to fabricate references. If you are interested in experimenting with tools such as [Consensus](https://consensus.app/), a commercial application, or [Asta](https://asta.allen.ai/), a non-profit alternative, evaluate the outputs with the potential impact on critical thinking(#learning-and-critical-thinking) in mind. In sum, use genAI to supplement, rather than replace, the bright minds around you.
+Most general purpose chatbots can do basic research when prompted. But, all AI tools reflect the biases in their training sets and have a strong tendency for sycophancy as a result of model training that rewards agreeableness. As a result, AI adoption narrows the diversity of research topics pursued [@hao_artificial_2026] and AI chatbots tend to support rather than challenge user's views [@naddaf_ai_2025]. While general purpose AI tools often 'hallucinate' scientific publications, those which retrieve information from curated databases of scientific papers may help researchers discover new papers more effectively than traditional search. Specialized genAI tools are being developed for literature search and scientific [brainstorming][@gottweis_accelerating_2026] that reduce the tendency to fabricate references. If you are interested in experimenting with tools such as [Consensus](https://consensus.app/), [SciSpace](https://scispace.com/), [Elicit](https://elicit.com/) (all commercial applications), or [Asta](https://asta.allen.ai/) (a non-profit alternative), evaluate the outputs with the potential impact on research creativity in mind. In sum, use genAI to supplement, rather than replace, the bright minds around you.
 
 #### Writing and Editing 
 
 While most people would consider using AI to write a scientific paper in its entirety unethical, there is often a fuzzy line between using AI to help with editing versus writing. For example, you might use AI as a thesaurus, to provide suggestions on how to improve clarity of a sentence or paragraph, to correct grammar or help with syntax when writing in a second language. In July 2026, ~190 organizations signed onto the Code of Practice on Transparency of AI-generated Content, and AI companies have begun watermarking AI-generated text in an effort to reduce the use of undisclosed AI across many domains, including scientific writing [@gibney_can_2026]. 
 
 
-#### Scientific Coding
+#### Coding & Statistics
 
-From writing original code, debugging or reviewing code, refactoring code you've already written to run more efficiently or translating between coding languages, AI coding assistants can be incredibly valuable for speeding up the process. At the same time, vetting the output of AI generated code is essential, and doing so effectively requires the subject matter expertise to define appropriate goals, understand the code and set up effective testing strategies. 
+From writing original code, debugging or reviewing code, refactoring code you've already written to run more efficiently or translating between coding languages, AI coding assistants can be incredibly valuable for speeding up the process. At the same time, vetting the output of AI generated code is essential, and doing so effectively requires the subject matter expertise to define appropriate goals, understand the code and set up effective testing strategies. Researchers should treat AI-generated recommendations as suggestions rather than decisions, and verify that the chosen approach reflects the research question, sampling design, data characteristics, assumptions, and relevant disciplinary knowledge.
 
-The sycophantic tendencies also provide challenges for integrating AI into data science tasks, where LLMs have been documented to 'see' what they expect to see [@couch_when_2025]. The confident 'tone' of AI responses can mask underlying uncertainties in analytical tasks. A recent evaluation in fisheries modeling specifically concluded the AI agents reliably write functional code, but not necessarily scientifically accurate code [@brown_automating_2026]
+The sycophantic tendencies also provide challenges for integrating AI into data science tasks, where LLMs have been documented to 'see' what they expect to see [@couch_when_2025]. The confident 'tone' of AI responses can mask underlying uncertainties. A recent evaluation in fisheries modeling [@brown_automating_2026] concluded the AI agents reliably write functional, but not necessarily scientifically accurate code.
 
-If you're new to statistics, coding or a particular programming language, we encourage you to invest some time in the [*desirable difficulties*](#learning-and-critical-thinking) of learning. This likely involves working through some basic material without relying on AI to simply write the code for you, and experiencing some frustrating code failure along the way. You may also consider using AI as a learning tool, explaining code written by others.
+If you're new to coding, or to a particular programming language or type of statistical analysis, we encourage you to invest some time in the *desirable difficulties* of learning (see Learning and Critical Thinking, below). This likely involves working through some basic material without relying on AI to simply write the code for you, and experiencing some frustrating code failure along the way. You may also consider using AI as a learning tool to explaining code written by others or to explore statistical approaches, explain unfamiliar methods, identify assumptions, and suggest diagnostic tests.
 
 
 :::
 
 ### Flavors of AI Coding Tools
 
-There are a few different ways with which you can engage genAI tools. The costs and benefits in terms of speed and human control tend to be inversely related, with the degree of human-in-the-loop interaction decreasing as you move to increasingly agentic tools, which work more independently, and faster. Consider which is the best fit for your needs as you work.
+There are a few different ways with which you can engage genAI tools. The costs and benefits in terms of speed and human control tend to be inversely related, with the degree of human-in-the-loop interaction decreasing as you move to increasingly agentic tools, which work more independently, and faster.
+
+```{=html}
+<div style="display: flex; flex-direction: column; gap: 8px; margin: 20px 0;">
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <span style="font-weight: bold; margin-right: 10px; color: #a8c8e8;">slower</span>
+    <div style="position: relative; width: 60%; height: 30px;">
+      <div style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: calc(100% - 20px); height: 20px; background: linear-gradient(to right, #a8c8e8, #1a3d66);"></div>
+      <div style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 25px solid transparent; border-bottom: 25px solid transparent; border-left: 30px solid #1a3d66;"></div>
+    </div>
+    <span style="font-weight: bold; margin-left: 10px; color: #1a3d66;">faster</span>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <span style="font-weight: bold; margin-right: 10px; color: #1a3d66;">more interaction</span>
+    <div style="position: relative; width: 60%; height: 30px;">
+      <div style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: calc(100% - 20px); height: 20px; background: linear-gradient(to right, #1a3d66, #a8c8e8);"></div>
+      <div style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 0; height: 0; border-top: 25px solid transparent; border-bottom: 25px solid transparent; border-right: 30px solid #1a3d66;"></div>
+    </div>
+    <span style="font-weight: bold; margin-left: 10px; color: #a8c8e8;">less interaction</span>
+  </div>
+</div>
+```
 
 :::{.panel-tabset}
 #### Browser/Chatbot
@@ -74,29 +89,36 @@ You can use genAI as an assistant that is directly tied into your IDE (Integrate
 
 #### Fully Agentic Mode
 
-Fully agentic coding moves from synchronous interactions to asynchronous interactions. Researchers typically develop a detailed plan and then hand off the plan to the agent to iterate independently until the task is completed. Mistakes may be harder to catch because of the volume of generated code to review, but the rate of code development is typically faster. Because of the increased risks associated with decreasing human oversight, we recommend only using fully agentic mode in a sandboxed environment, ideally a virtual machine, that has no access to sensitive data or confidential information and to give careful thought to how you will test and verify outputs. 
+In agentic mode, AI moves beyond providing suggestions to carrying out multi-step tasks on a researcher’s behalf. For example, an agent can explore project files, write and modify scripts, run code, inspect errors and outputs, create tests, update documentation, and revise its approach based on results. With appropriate connections, it can also interact with tools such as GitHub, databases, and web services. Mistakes may be harder to catch because of the volume of generated code to review, but the rate of code development is typically faster. When using AI for scientific research, the human-in-the-loop supervision requires careful planning before implementation as well as breaking the agent’s workflow and outputs into manageable chunks that can be reviewed and tested. Adherence to the security recommendations below is also paramount. 
 
 
 :::
 
+
 ### AI Drawbacks
 
-**The purpose of this section is just to briefly touch on some drawbacks of generative AI** (at time of writing), **_not_ to provide an exhaustive review on this topic.** If you choose to engage with AI tools, consider doing your own due diligence prior to making a decision in general or for a particular project.
+This section highlights *select* drawbacks of generative AI(at time of writing), which may provoke your thinking on whether and how to use AI for a particular task.
 
 :::{.panel-tabset}
 
 #### Learning and Critical Thinking
 
-There is an inherent tension between the ease with which a task can be accomplished and its value to learning. The concept of *desirable difficulties* describes learning activities that require more effort and take more time, but lead to deeper learning and better retention [@bjork1994institutional]. Using generative AI allows you to complete a task quickly but come with a cost to development of critical thinking skills, memory, and neural connections in your brain [@kosmyna_2025]. In this course, we challenge you to think about what skills you want to develop and invest the time and effort to do those tasks without the assistance of genAI. Other tasks you may be happy offloading on an AI assistant, but do so with awareness of the impacts on your own learning.
+There is an inherent tension between the ease with which a task can be accomplished and its value to learning. The concept of *desirable difficulties* describes learning activities that require more effort and take more time, but lead to deeper learning and better retention [@bjork1994institutional]. Using generative AI allows you to complete a task quickly but come with a cost to development of critical thinking skills, memory, and neural connections in your brain [@kosmyna_2025].
+
+How you use AI can also influence your learning outcomes. For example, a (small) Anthropic sponsored study of software engineers [@shen_how_2026] observed that skill-development was higher among programmers who use AI not simply to produce code, but also to ask questions and request explanations. 
+
+In this course, we challenge you to think about what skills you want to develop and invest the time and effort to do those tasks without the assistance of genAI. Other tasks you may be happy offloading on an AI assistant, but do so with awareness of the impacts on your own learning.
+
+Research also suggests that while AI tools may increase productivity for individual scientists, it may narrow the diversity of scientific inquiry [hao_artificial_2026].
 
 #### Security
 
-Agents running on your machine generally inherit the permissions of the user who is logged in. This allows them to do anything you can do, including reading, modifying and deleting files, accessing the web, installing software, and executing code. Access to your private data, exposure to untrusted content and ability to externally communicate (aka the ["lethal trifecta"](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)) make agentic coding particularly dangerous. Agents may install malicious code or follow nefarious instructions hidden on a website, such as instructions to reveal confidential information. The safest option for using agents is working in a sandbox completely isolated from your computer, such as a virtual machine. Next best is to review and approve any actions taken by an AI agent, including always reviewing code written by agents before executing it. 
+Agents running on your machine generally inherit the permissions of the user who is logged in. This allows them to do anything you can do, including reading, modifying and deleting files, accessing the web, installing software, and executing code. Access to your private data, exposure to untrusted content and ability to externally communicate (aka the ["lethal trifecta"](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)) make agentic coding particularly dangerous. Agents may install malicious code or follow nefarious instructions hidden on a website, such as instructions to reveal confidential information. The safest option for using agents is working in a sandbox completely isolated from your computer, such as a virtual machine. Next best is to review and approve any AI-generated suggestions, including always reviewing code written by genAI before executing it. 
 
 
 #### Environment
 
-Using AI directly and substantively contributes to climate change [@un_2024].
+The cumulative environmental footprint of genAI is concerning [@un_2024]. Breaking down the problem reveals that the environmental impacts depend not just on whether you use AI, but where, and how.
 
 **Data Centers** – Data centers are power- and water-hungry, as well as noisy. In 2025, AI-focused data centers consumed 0.5% of the world's electricity, a number which is projected to grow to 3% by 2030 [@ritchie_how_2026]. Large data centers may use 1-5 million gallons of water a day, comparable to the daily water usage of a town of 10-50,000 people [@osaka_2023]. Their environmental impacts in terms of pollution, energy and water costs, and public health are unevenly distributed across the country, with disparate impacts often accumulating in underserved communities [@bharath_ai_2026].
 
@@ -112,18 +134,18 @@ GenAI tools are/were trained on all publicly-available information (in many case
 If you use these tools, be sure to check the privacy settings to ensure that you are comfortable with how your interactions are used to train the model you're using. Most commercial genAI tools default to a setting where they collect your inputs to improve the model, but many of them allow you to opt out. Privacy settings also change over time, so pay attention to communications from your AI model provider. Running a model locally (e.g. on your laptop), or on computing resources provided by your institution can also ameliorate some privacy concerns. Research projects that rely on sensitive data (e.g., Human Subjects research, Indigenous data) require additional guardrails and as a rule should not be used in any commercial AI application. 
 
 
-#### Oversight & Bias
-
-If the information going into a model is inaccurate, biased, fabricated, etc., the product will be inaccurate, biased, or fabricated. AI suffers from a range of biases [@nazer_2023]. GenAI used in hiring decisions is particularly problematic as it reflects the biases built into current hiring pools and industry demographics. Amazon had to scrap its AI-hiring tool after finding it penalized resumes including the word "women" [@dastin_2018].
-
 #### Access and Equity
 Access to generative AI tools differs among institutions, regions and with economic resources. Learning and training opportunities are also highly variable [@freed_access_2026]. We will work with students in this course to ensure equitable access for the duration of the class. Use them to understand what is possible, but remember that depending on your professional trajectory, the whims of your institution's higher-ups and/or the tech vendors providing commercial AI tools -- you may or may not have access to similar tools in the future.  
 :::
 
 ### AI Disclosure and Tracking
 
-However you choose to use AI, it's expected that AI contributions to scientific research be disclosed at the time of publication. A few frameworks for categorizing and reporting AI use in scientific publications have emerged [@ahmetoglu_ai_2026; @suchikova_gaidet_2026], but whatever disclosure statement you eventually write will require remembering what you actually did. This can be challenging when a project has evolved over months to years, due to difficulty in recalling content source (aka "the AI Memory Gap" [@zindulka_ai_2025]). When interacting with a chatbot, take a moment at the end of your session to ask the chatbot to summarize the task, platform, and date. We have provided some [templates](https://docs.google.com/spreadsheets/d/1DBp8iEPROnObzA7ABGo735ltlzLqNpJpZSGgFawKMOY/edit?usp=drive_link). For agentic coding exercises, you might consider setting up a self-documenting workflow, such as instructing your agent to regularly update a prompt action log (example [here](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md)).
+However you choose to use AI, it's expected that AI contributions to scientific research be disclosed at the time of publication. A few frameworks for categorizing and reporting AI use in scientific publications have emerged [@ahmetoglu_ai_2026; @suchikova_gaidet_2026], but whatever disclosure statement you eventually write will require remembering what you actually did. This can be challenging when a project has evolved over months to years, due to difficulty in recalling content source (aka "the AI Memory Gap" [@zindulka_ai_2025]). For agentic coding exercises, you might consider setting up a self-documenting workflow, such as instructing your agent to regularly update a prompt action log (example [here](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md)). When interacting with a chatbot, take a moment at the end of your session to ask the chatbot to summarize the task, platform, and date. We have provided one possible [template](https://docs.google.com/spreadsheets/d/1DBp8iEPROnObzA7ABGo735ltlzLqNpJpZSGgFawKMOY/edit?usp=drive_link) (see specifically the AI tabs for this exercise). 
 
+---
+
+### Summary
+![](/topics/images/figure_AI-flowchart.png){fig-alt="Responsible AI for Research Checklist" .lightbox}
 ---
 
 ### Learn More
@@ -146,17 +168,36 @@ The field of genAI is moving rapidly. While we have attempted to compile contemp
 
 As a project team, get together and discuss (some of) the following questions:
 
-- What policies around genAI use does your institution have?
-    - How will those policies affect how you're even potentially able to use these tools as part of this group?
-- Do you use these tools yourself?
-    - If so, where have they worked well and where have they been less useful or you've been less comfortable using them?
-- For the work in this group, are there contexts where you are more or less comfortable using genAI tools?
-    - Note-taking?
-    - Code assistance?
-    - Scientific paper writing?
-    - Manuscript revision?
-- How do you plan to document (and eventually report) your use of genAI for this project?
+- Does your institution have genAI policies that influence how you can use genAI tools in this course?
+- Do you use genAI tools yourself?
+    - If so, where have they worked well and where have they been less useful?
+        **As you navigate this prompt, reflect on how easy or difficult it is to recall your past use of AI.**
+- Are there tasks (e.g. note-taking, brainstorming, code assistance, writing) where you are eager or hesitant to use genAI tools?
+- How do you plan to document your *group norms and agreements* about genAI use of for this project?
+- How do you plan to track your use of genAI over the course of this project (remembering that you will likely need to describe your AI use in any publications derived from this work)?
+
+
 
 Conversations about AI use can become heated and may be susceptible to various forms of stuck communication, **remember to intentionally apply facilitation and dialogue techniques as you seek to understand your colleagues' perspectives.**
 
+:::
+
+###Slides
+<iframe
+  src="https://docs.google.com/presentation/d/1i3zfv4kUTg0k0vZM0q1ftBeZxZe2gNcp/preview"
+  width="100%"
+  height="600"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+::: {.callout-note}
+## Acknowledgments
+
+This content builds upon the National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub's 2026 workshop to the Delta Stewardship Council. Those materials can be found at [nceas-learning-hub.github.io/2026_delta_week2](https://nceas-learning-hub.github.io/2026_delta_week2/s08_project_doc_organization.html). We also acknowledge the [ESIIL-NCEAS AI-in-a-Day working group](https://cu-esiil.github.io/AI-in-a-day_website/) for ideas and resources.
+:::
+
+::: {.callout-note}
+## GenAI Disclosure
+GenAI assistance was used for layout and formatting of this lesson.
 :::
