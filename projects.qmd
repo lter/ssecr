@@ -103,6 +103,12 @@ Team members and project mentors are listed in reverse alphabetical order by las
 The below benchmarks are meant to provide a _rough_ progress estimate of how your project "should" progress during the course. Your group may at times be ahead of these milestones or behind at others so **please use this resource as general guidance rather than specific timing requirements.**
 
 :::{.panel-tabset}
+#### 2026 Milestones
+
+### {{< fa person-digging >}} Under construction! 
+
+In the meantime, check the tab for the previous cohort's milestones and focus on only the first few months' milestones.
+
 #### 2024-25 Milestones
 
 ### Months 1-2 (Sep./Oct.)
@@ -132,7 +138,7 @@ The below benchmarks are meant to provide a _rough_ progress estimate of how you
 ### Month 6 (Feb.)
 
 - Run and interpret preliminary analyses
-- Consider drafting an 'extended figures document' that summarizes key messages and includes rough draft figures)
+- Consider drafting an 'extended figures document' that summarizes key messages and includes rough draft figures
 - Create an intellectual credit agreement as a team
 
 ### Month 7 (Mar.)

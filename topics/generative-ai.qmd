@@ -109,7 +109,7 @@ How you use AI can also influence your learning outcomes. For example, a (small)
 
 In this course, we challenge you to think about what skills you want to develop and invest the time and effort to do those tasks without the assistance of genAI. Other tasks you may be happy offloading on an AI assistant, but do so with awareness of the impacts on your own learning.
 
-Research also suggests that while AI tools may increase productivity for individual scientists, it may narrow the diversity of scientific inquiry [hao_artificial_2026].
+Research also suggests that while AI tools may increase productivity for individual scientists, it may narrow the diversity of scientific inquiry [@hao_artificial_2026].
 
 #### Security
 
