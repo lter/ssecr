@@ -97,7 +97,7 @@ In agentic mode, AI moves beyond providing suggestions to carrying out multi-ste
 
 ### AI Drawbacks
 
-This section highlights *select* drawbacks of generative AI(at time of writing), which may provoke your thinking on whether and how to use AI for a particular task.
+This section highlights *select* drawbacks of generative AI (at time of writing in late 2026), which may provoke your thinking on whether and how to use AI for a particular task.
 
 :::{.panel-tabset}
 
@@ -122,6 +122,8 @@ The cumulative environmental footprint of genAI is concerning [@un_2024]. Breaki
 
 **Data Centers** – Data centers are power- and water-hungry, as well as noisy. In 2025, AI-focused data centers consumed 0.5% of the world's electricity, a number which is projected to grow to 3% by 2030 [@ritchie_how_2026]. Large data centers may use 1-5 million gallons of water a day, comparable to the daily water usage of a town of 10-50,000 people [@osaka_2023]. Their environmental impacts in terms of pollution, energy and water costs, and public health are unevenly distributed across the country, with disparate impacts often accumulating in underserved communities [@bharath_ai_2026].
 
+**AI Queries** – Because of the pace of development in AI tools, it is impossible to give exact environmental consequences at the query or token level for today. However, we can cite costs in the (recent) past and be specific about the model where those numbers were calculated. In 2025, a ChatGPT query used about 5 times the energy of an equivalent web search [@zewe_2025]. In 2024, a 100-word email written by ChatGPT-4 used 519 mL (17.6 oz) of water--about equivalent to a single-use water bottle [@verma_2024]. As a rough estimate, in 2025, a medium-length ChatGPT-5 response used about as much water as running a shower for a quarter of a second [@lo_ai_2025]. In 2026, a long-input AI query (7500 words) used a similar amount of energy to what is used by a laptop over 5 minutes [@ritchie_how_2026].
+
 **AI Queries** – The carbon and water costs of AI use depend on the query, the model used and the data center locations. For that reason, it is difficult to give an exact number. But as a rough estimate a medium-length ChatGPT-5 response uses the equivalent water of showering for a quarter of a second[@lo_ai_2025]; and a long-input query (7500 words) and about the same energy as running your laptop for 5 minutes [@ritchie_how_2026]. 
 
 **AI Agents** – Agentic AI tasks consume orders of magnitude more than a short chat. Heavy agentic AI use is where the electricity consumption becomes more environmentally significant. Rough estimates here indicate each person-day of agentic AI use has the energy footprint of running a couple of refridgerators, all day long [@hausfather_real_2026].
@@ -142,26 +144,21 @@ Access to generative AI tools differs among institutions, regions and with econo
 
 However you choose to use AI, it's expected that AI contributions to scientific research be disclosed at the time of publication. A few frameworks for categorizing and reporting AI use in scientific publications have emerged [@ahmetoglu_ai_2026; @suchikova_gaidet_2026], but whatever disclosure statement you eventually write will require remembering what you actually did. This can be challenging when a project has evolved over months to years, due to difficulty in recalling content source (aka "the AI Memory Gap" [@zindulka_ai_2025]). For agentic coding exercises, you might consider setting up a self-documenting workflow, such as instructing your agent to regularly update a prompt action log (example [here](https://github.com/CU-ESIIL/LLM_lesson_exemplar/blob/main/AGENTS.md)). When interacting with a chatbot, take a moment at the end of your session to ask the chatbot to summarize the task, platform, and date. We have provided one possible [template](https://docs.google.com/spreadsheets/d/1DBp8iEPROnObzA7ABGo735ltlzLqNpJpZSGgFawKMOY/edit?usp=drive_link) (see specifically the AI tabs for this exercise). 
 
----
-
-### Summary
 ![](/topics/images/figure_AI-flowchart.png){fig-alt="Responsible AI for Research Checklist" .lightbox}
----
 
 ### Learn More
 
 ::: columns
 ::: {.column width="60%"}
-The field of genAI is moving rapidly. While we have attempted to compile contemporary resources at the time of writing, they are likely to evolve over the course of the semester. As well, many citations rely on blog posts and preprints, which may not be persistent. If you're looking for current information, ESIIL's AI-in-a-Day working group is loosely curating a [Zotero](https://www.zotero.org/groups/6299595/ai_4_envt_sci/library) library of AI-related articles of relevance to environmental scientists. Use the colored tags to filter (see example on the right) and sort by date to find something recent that suits your interests.
+The field of genAI is moving rapidly. While we have attempted to compile contemporary resources at the time of writing, they are likely to evolve over the course of the semester. As well, many citations rely on blog posts and preprints, which may not be persistent.
 :::
 
 ::: {.column width="40%"}
-![](/topics/images/zotero.jpg)
+![](/topics/images/zotero.jpg){fig-alt="Screen capture of labels used in the Zotero library including 'ethics', 'privacy', and 'teaching'."}
 :::
 :::
 
-
-
+If you're looking for current information, ESIIL's AI-in-a-Day working group is loosely curating a [Zotero](https://www.zotero.org/groups/6299595/ai_4_envt_sci/library) library of AI-related articles of relevance to environmental scientists. Use the colored tags to filter (see example on the right) and sort by date to find something recent that suits your interests.
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Discuss AI Use With Your Project Team
@@ -177,9 +174,7 @@ As a project team, get together and discuss (some of) the following questions:
 
 Conversations about AI use can become heated and may be susceptible to various forms of stuck communication, **remember to intentionally apply facilitation and dialogue techniques as you seek to understand your colleagues' perspectives.**
 
-
-
-:::
+::::
 
 ### Slides
 <iframe
@@ -190,13 +185,13 @@ Conversations about AI use can become heated and may be susceptible to various f
   allowfullscreen>
 </iframe>
 
-::: {.callout-note}
-## Acknowledgments
+::: {.callout-note icon="false"}
+## {{< fa book >}} Acknowledgments
 
 This content builds upon the National Center for Ecological Analysis and Synthesis (NCEAS) Learning Hub's 2026 workshop to the Delta Stewardship Council. Those materials can be found at [nceas-learning-hub.github.io/2026_delta_week2](https://nceas-learning-hub.github.io/2026_delta_week2/s08_project_doc_organization.html). We also acknowledge the [ESIIL-NCEAS AI-in-a-Day working group](https://cu-esiil.github.io/AI-in-a-day_website/) for ideas and resources.
 :::
 
-::: {.callout-note}
-## GenAI Disclosure
-GenAI assistance was used for layout and formatting of this lesson.
+::: {.callout-note icon="false"}
+## {{< fa robot >}} GenAI Disclosure
+GenAI assistance was used for layout and formatting of the "Responsibly Using Generative AI" topic in this module.
 :::
