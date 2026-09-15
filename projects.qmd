@@ -23,7 +23,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>:Nyika Campbell, Emerson	Conrad-Rooney, Asher Marvy, Deni Murray, Kalea Nippert-Churchman
 
-<u>Science Mentor(s)</u>: [Dr. Pam Templer](https://people.bu.edu/ptempler/), Distinguished Professor, Boston University & **TBD**
+<u>Science Mentor(s)</u>: [Dr. Pam Templer](https://people.bu.edu/ptempler/), Distinguished Professor, Boston University & [Dr. Emily Grman](https://www.emich.edu/biology/faculty/e-grman.php), Eastern Michigan University
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-shifting-bases**](https://github.com/lter/ssecr-shifting-bases)
 
@@ -31,7 +31,6 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: Mauricio Cely Toro, Damian Forck, Abby Hay, Ida Lie-Nielsen, Taylor Michael, Nathalie Triches
 
-<u>Science Mentor(s)</u>: **TBD**
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-boreal-phenology**](https://github.com/lter/ssecr-boreal-phenology)
 
