@@ -124,8 +124,6 @@ The cumulative environmental footprint of genAI is concerning [@un_2024]. Breaki
 
 **AI Queries** – Because of the pace of development in AI tools, it is impossible to give exact environmental consequences at the query or token level for today. However, we can cite costs in the (recent) past and be specific about the model where those numbers were calculated. In 2025, a ChatGPT query used about 5 times the energy of an equivalent web search [@zewe_2025]. In 2024, a 100-word email written by ChatGPT-4 used 519 mL (17.6 oz) of water--about equivalent to a single-use water bottle [@verma_2024]. As a rough estimate, in 2025, a medium-length ChatGPT-5 response used about as much water as running a shower for a quarter of a second [@lo_ai_2025]. In 2026, a long-input AI query (7500 words) used a similar amount of energy to what is used by a laptop over 5 minutes [@ritchie_how_2026].
 
-**AI Queries** – The carbon and water costs of AI use depend on the query, the model used and the data center locations. For that reason, it is difficult to give an exact number. But as a rough estimate a medium-length ChatGPT-5 response uses the equivalent water of showering for a quarter of a second[@lo_ai_2025]; and a long-input query (7500 words) and about the same energy as running your laptop for 5 minutes [@ritchie_how_2026]. 
-
 **AI Agents** – Agentic AI tasks consume orders of magnitude more than a short chat. Heavy agentic AI use is where the electricity consumption becomes more environmentally significant. Rough estimates here indicate each person-day of agentic AI use has the energy footprint of running a couple of refridgerators, all day long [@hausfather_real_2026].
 
 
