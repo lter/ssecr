@@ -73,3 +73,14 @@ Use the 'in URL' operator (`inurl:`) to **search for pages that have a specific 
 
 Example: `inurl:data soil chemistry`
 :::
+
+
+### Refining search results
+
+### Document your search
+
+* Where you searched
+* How you searched
+* What you found (data inventory)
+* What you didn't find
+
