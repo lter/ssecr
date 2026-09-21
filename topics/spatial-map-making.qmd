@@ -20,7 +20,7 @@ After completing this topic you will be able to:
 # Reach out to Nick Lyon if questions exist
 
 # Load needed libraries
-library(sf); library(terra)
+library(sf); library(terra); library(magrittr)
 
 # Read in needed data
 nc_poly <- sf::st_read(dsn = file.path("data", "nc_borders.shp"))
