@@ -52,3 +52,13 @@ Creating an R package can definitely seem like a daunting task but duplication a
 [Hadley Wickham](https://hadley.nz/) and [Jenny Bryan](https://jennybryan.org/about/) have written a [free digital book](https://r-pkgs.org/) on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.
 
 If you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.
+
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
+
+**GenAI can also be an excellent helper in turning a one-off script into a custom function.** This has the benefit that you have a built in "verification" test (i.e., does it produce the same output as the code you wrote to do the operation by hand). 
+
+If you're interested in adopting Tidyverse syntax in your custom functions (e.g., using unquoted column names, using the unique-to-Tidyverse operators), genAI can give you a useful refresher on how those things work inside of functions that you wrote. GenAI can both fix problems you generate when making the attempt yourself and can--usually--explain the "why" to you.
+
+**Keep in mind though, using genAI in this way risks limiting your thinking about the repeated operation that you're wanting to capture in the first place!** Frequently, the process of writing (and debugging) a custom function will reveal assumptions 'baked in' to your order of operations that may hinder or not be relevant to the actual output you want. The evolution of a code workflow can be instructive and valuable in and of itself.
+:::

@@ -37,3 +37,9 @@ Feel free to put your personal flair on the README! If there is other informatio
 
 ::::
 
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
+
+**AI can be an excellent helper in data documentation and READMEs**. A human absolutely needs to check over whether an AI-generated piece of documentation is right, but just getting it to make a nice README with all the scripts and a draft of what they do can be a nice jump start to good documentation.
+
+:::
