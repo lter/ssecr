@@ -17,13 +17,9 @@ Take notes on your thoughts because we'll discuss more in small groups and as a 
 
 :::
 
-{{< include topics/participation-benefits.qmd >}}
-
 {{< include topics/debate-to-dialogue.qmd >}}
 
 {{< include topics/thinking-styles.qmd >}}
-
-{{< include topics/participation-access.qmd >}}
 
 {{< include topics/data-repositories.qmd >}}
 

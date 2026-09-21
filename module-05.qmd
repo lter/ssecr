@@ -11,9 +11,10 @@ There is no specific pre-class preparation for this module!
 
 :::
 
-{{< include topics/team-sci.qmd >}}
 
 {{< include topics/team-diversity.qmd >}}
+
+{{< include topics/team-support.qmd >}}
 
 {{< include topics/viz-synthesis.qmd >}}
 
