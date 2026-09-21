@@ -11,12 +11,6 @@ There is no specific pre-class preparation for this module!
 
 :::
 
-{{< include topics/reproducible-coding.qmd >}}
-
-{{< include topics/code-comments.qmd >}}
-
-{{< include topics/consider-functions.qmd >}}
-
 {{< include topics/participation-benefits-activity.qmd >}}
 
 {{< include topics/team-sci.qmd >}}
@@ -27,3 +21,8 @@ There is no specific pre-class preparation for this module!
 
 {{< include topics/participation-access.qmd >}}
 
+{{< include topics/reproducible-coding.qmd >}}
+
+{{< include topics/code-comments.qmd >}}
+
+{{< include topics/consider-functions.qmd >}}
