@@ -545,6 +545,22 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="modifying-data" class="level3">
 <h3 class="anchored" data-anchor-id="modifying-data">Modifying Data</h3>
 <p>You should <em>never</em> edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Caution</span><i class="fa-solid fa-robot" aria-label="robot"></i> Generative AI Considerations
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p><strong>Consider whether there are privacy concerns with sharing your data with AI <em>before</em> allowing an AI agent access to your local Git repository!</strong> Especially if you have a “data/” folder in your Git repo becaause granting AI access to your Git folder will also include sub-directories of that folder (whether or not Git tracks them!)</p>
+</div>
+</div>
+</div>
 
 
 </section>
