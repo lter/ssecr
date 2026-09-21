@@ -486,7 +486,15 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link active" data-scroll-target="#reproducible-coding">Reproducible Coding</a>
+  <li><a href="#collaboration-reflection" id="toc-collaboration-reflection" class="nav-link active" data-scroll-target="#collaboration-reflection">Collaboration Reflection</a></li>
+  <li><a href="#science-of-team-science" id="toc-science-of-team-science" class="nav-link" data-scroll-target="#science-of-team-science">Science of Team Science</a>
+  <ul class="collapse">
+  <li><a href="#predictable-team-trajectory" id="toc-predictable-team-trajectory" class="nav-link" data-scroll-target="#predictable-team-trajectory">Predictable Team Trajectory</a></li>
+  </ul></li>
+  <li><a href="#benefits-of-enabling-full-participation" id="toc-benefits-of-enabling-full-participation" class="nav-link" data-scroll-target="#benefits-of-enabling-full-participation">Benefits of Enabling Full Participation</a></li>
+  <li><a href="#navigating-conflict" id="toc-navigating-conflict" class="nav-link" data-scroll-target="#navigating-conflict">Navigating Conflict</a></li>
+  <li><a href="#ensuring-equitable-access-to-participation" id="toc-ensuring-equitable-access-to-participation" class="nav-link" data-scroll-target="#ensuring-equitable-access-to-participation">Ensuring Equitable Access to Participation</a></li>
+  <li><a href="#reproducible-coding" id="toc-reproducible-coding" class="nav-link" data-scroll-target="#reproducible-coding">Reproducible Coding</a>
   <ul class="collapse">
   <li><a href="#code-and-the-stages-of-data" id="toc-code-and-the-stages-of-data" class="nav-link" data-scroll-target="#code-and-the-stages-of-data">Code and the Stages of Data</a></li>
   <li><a href="#packages-namespacing-and-software-versions" id="toc-packages-namespacing-and-software-versions" class="nav-link" data-scroll-target="#packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</a></li>
@@ -504,14 +512,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul class="collapse">
   <li><a href="#function-recommendations" id="toc-function-recommendations" class="nav-link" data-scroll-target="#function-recommendations">Function Recommendations</a></li>
   </ul></li>
-  <li><a href="#collaboration-reflection" id="toc-collaboration-reflection" class="nav-link" data-scroll-target="#collaboration-reflection">Collaboration Reflection</a></li>
-  <li><a href="#science-of-team-science" id="toc-science-of-team-science" class="nav-link" data-scroll-target="#science-of-team-science">Science of Team Science</a>
-  <ul class="collapse">
-  <li><a href="#predictable-team-trajectory" id="toc-predictable-team-trajectory" class="nav-link" data-scroll-target="#predictable-team-trajectory">Predictable Team Trajectory</a></li>
-  </ul></li>
-  <li><a href="#benefits-of-enabling-full-participation" id="toc-benefits-of-enabling-full-participation" class="nav-link" data-scroll-target="#benefits-of-enabling-full-participation">Benefits of Enabling Full Participation</a></li>
-  <li><a href="#navigating-conflict" id="toc-navigating-conflict" class="nav-link" data-scroll-target="#navigating-conflict">Navigating Conflict</a></li>
-  <li><a href="#ensuring-equitable-access-to-participation" id="toc-ensuring-equitable-access-to-participation" class="nav-link" data-scroll-target="#ensuring-equitable-access-to-participation">Ensuring Equitable Access to Participation</a></li>
+  <li><a href="#prep-work-for-next-module" id="toc-prep-work-for-next-module" class="nav-link" data-scroll-target="#prep-work-for-next-module">Prep Work for Next Module</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -557,324 +558,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 </div>
-<section id="reproducible-coding" class="level2">
-<h2 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Discuss</u> methods for improving the reproducibility of your code products</li>
-<li><u>Define</u> code reproducibility-related vocabulary (e.g., “namespace”, “file path”)</li>
-<li><u>Explain</u> common pitfalls in file paths in code and how you might avoid them</li>
-</ul>
-</div>
-</div>
-</div>
-<p>Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 projects’ worth of R code found that <em>74% of the associated R files failed to complete without error</em> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
-<p><img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right"></p>
-<p><strong>When your scripts are reproducibly-written you will reap significant benefits!</strong> These include:</p>
-<ol type="1">
-<li>Easier to return to your code after having set it down for weeks/months</li>
-<li>Less verbal explanation needed when collaborating or onboarding new team members</li>
-<li>Simpler to sharing methods for external result validation</li>
-<li>In cases where you’re developing a novel method or workflow, structuring your code reproducibly will increase the odds that someone outside of your team will adopt your strategy</li>
-</ol>
-<section id="code-and-the-stages-of-data" class="level3">
-<h3 class="anchored" data-anchor-id="code-and-the-stages-of-data">Code and the Stages of Data</h3>
-<p>You’ll likely need a number of scripts to accomplish the different stages of preparing a synthesized dataset. All of these scripts together are often called a “workflow.” Each script will meet a specific need and its outputs will be the inputs of the next script. These intermediary data products are sometimes useful in and of themselves and tend to occur and predictable points that exist in most code workflows.</p>
-<p>Raw data will be parsed into cleaned data–often using idiosyncratic or dataset-specific scripts–which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially <em>many</em> scripts, <strong>coding reproducibly is vital to making this workflow intuitive and easy to maintain.</strong></p>
-<p>You don’t necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!</p>
-<a href="topics/images/image_data-stages.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="topics/images/image_data-stages.png" class="img-fluid" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data"></a>
-<figcaption>
-Diagram of data stages from raw data to published products. Credit: Margaret O’Brian &amp; Li Kui
-</figcaption>
-</section>
-<section id="packages-namespacing-and-software-versions" class="level3">
-<h3 class="anchored" data-anchor-id="packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</h3>
-<p>An under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script <em>and</em> the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions <strong>is not sustainable</strong> but recording key information can help users set up the code environment that does work for your project.</p>
-<section id="load-libraries-explicitly" class="level4">
-<h4 class="anchored" data-anchor-id="load-libraries-explicitly">Load Libraries Explicitly</h4>
-<p>It is important to load libraries at the start of <em>every</em> script. In some languages (like Python) this step is required but in others (like R) this step is technically “optional” but disastrous to skip. It is safe to skip including the installation step in your code because the library step should tell code-literate users which packages they need to install.</p>
-<p>For instance you might begin each script with something like:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr); <span class="fu">library</span>(magrittr); <span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get to actual work</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>. . .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way cuts down on the number of lines while still being precise about which packages are needed in the script.</p>
-<p>If you are feeling generous you could use the <a href="https://cran.r-project.org/web/packages/librarian/index.html"><code>librarian</code> R package</a> to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load `librarian` package</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(librarian)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install missing packages and load needed libraries</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">shelf</span>(dplyr, magrittr, ggplot2)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get to actual work</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>. . .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="function-namespacing" class="level4">
-<h4 class="anchored" data-anchor-id="function-namespacing">Function Namespacing</h4>
-<p>It is also strongly recommended to “namespace” functions everywhere you use them. In R this is technically optional but it is a really good practice to adopt, <em>particularly for functions that may appear in multiple packages</em> with the same name but do very different operations depending on their source. In R the ‘namespacing operator’ is two colons.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the `mutate` function from the `dplyr` package</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">mutate</span>(. . .)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>An ancillary benefit of namespacing is that namespaced functions don’t need to have their respective libraries loaded. Still good practice to load the library though!</p>
-</section>
-<section id="package-versions" class="level4">
-<h4 class="anchored" data-anchor-id="package-versions">Package Versions</h4>
-<p>While working on a project you should use the latest version of every needed package. However, as you prepare to publish or otherwise publicize your code, you’ll need to record package versions. R provides the <code>sessionInfo</code> function (from the <a href="https://cran.r-project.org/web/packages/R.utils/index.html"><code>utils</code> package</a> included in “base” R) which neatly summarizes some high level facets of your code environment. Note that for this method to work you’ll need to actually run the library-loading steps of your scripts.</p>
-<p>For more in-depth records of package versions and environment preservation–in R–you might also consider the <a href="https://cran.r-project.org/web/packages/renv/index.html"><code>renv</code> package</a> or the <a href="https://cran.r-project.org/web/packages/packrat/index.html"><code>packrat</code> package</a>.</p>
-</section>
-</section>
-<section id="script-organization" class="level3">
-<h3 class="anchored" data-anchor-id="script-organization">Script Organization</h3>
-<p>Every change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!</p>
-<p>You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).</p>
-</section>
-<section id="file-paths" class="level3">
-<h3 class="anchored" data-anchor-id="file-paths">File Paths</h3>
-<p>When importing inputs or exporting outputs we need to specify “file paths”. These are the set of folders between where your project is ‘looking’ and where the input/output should come from/go. The figure from Trisovic <em>et al.</em> (2022) shows that file path and working directory errors are a substantial barrier to code that can be re-run in clean coding environments. Consider the following ways of specifying file paths from least to most reproducible.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Worst</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Bad</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Better</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Best!</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="absolute-paths" class="level4">
-<h4 class="anchored" data-anchor-id="absolute-paths">Absolute Paths</h4>
-<p>The worst way of specifying a file path is to use the “absolute” file path. This is the path from the root of your computer to a given file. There are many issues here but the primary one is that <u>absolute paths only work for one computer</u>! Given that only one person can even run lines of code that use absolute paths, it’s not really worth specifying the other issues.</p>
-</section>
-<section id="example" class="level4">
-<h4 class="anchored" data-anchor-id="example">Example</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)/Data/bees.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<section id="manually-setting-the-working-directory" class="level4">
-<h4 class="anchored" data-anchor-id="manually-setting-the-working-directory">Manually Setting the Working Directory</h4>
-<p>Marginally better than using the absolute path is to set the working directory to some location. This may look neater than the absolute path option but it actually has the same point of failure: Both methods <u>only work for one computer</u>!</p>
-</section>
-<section id="example-1" class="level4">
-<h4 class="anchored" data-anchor-id="example-1">Example</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set working directory</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="at">dir =</span> <span class="st">"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)"</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"Data/bees.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<section id="relative-paths" class="level4">
-<h4 class="anchored" data-anchor-id="relative-paths">Relative Paths</h4>
-<p>Instead of using absolute paths or manually setting the working directory you can use “relative” file paths! Relative paths <u>assume all project content lives in the same folder</u>.</p>
-<p>This is a safe assumption because it is the most fundamental tenet of reproducible project organization! The strength of relative paths is actually a serious contributing factor for why it is good practice to use a single folder.</p>
-</section>
-<section id="example-2" class="level4">
-<h4 class="anchored" data-anchor-id="example-2">Example</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-9"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-9-1"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
-<button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-2" class="code-annotation-target"><a href="#annotated-cell-9-2" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"Data/bees.csv"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<dl class="code-annotation-container-hidden code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
-<dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="2" data-code-annotation="1">Parts of file path specific to each user are automatically recognized by the computer</span>
-</dd>
-</dl>
-</section>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<section id="operating-system-flexible-relative-paths" class="level4">
-<h4 class="anchored" data-anchor-id="operating-system-flexible-relative-paths">Operating System-Flexible Relative Paths</h4>
-<p>The “better” example is nice but has a serious limitation: <u>it hard coded the type of slash between file path elements</u>. This means that <em>only computers of the same operating system as the code author</em> could run that line.</p>
-<p>We can use functions to automatically detect and insert the correct slashes though!</p>
-</section>
-<section id="example-3" class="level4">
-<h4 class="anchored" data-anchor-id="example-3">Example</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">file.path</span>(<span class="st">"Data"</span>, <span class="st">"bees.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-</div>
-</div>
-</div>
-</section>
-<section id="code-style" class="level3">
-<h3 class="anchored" data-anchor-id="code-style">Code Style</h3>
-<p>When it comes to code style, the same ‘rule of thumb’ applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! That said, there are a few principles worth adopting if you have not already done so.</p>
-<blockquote class="blockquote">
-<p>Use concise and descriptive object names</p>
-</blockquote>
-<p>It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.</p>
-<blockquote class="blockquote">
-<p>Don’t be afraid of empty space!</p>
-</blockquote>
-<p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
-</section>
-<section id="modifying-data" class="level3">
-<h3 class="anchored" data-anchor-id="modifying-data">Modifying Data</h3>
-<p>You should <em>never</em> edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
-<p><img src="topics/images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right"></p>
-</section>
-</section>
-<section id="code-comments" class="level2">
-<h2 class="anchored" data-anchor-id="code-comments">Code Comments</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Explain</u> the difference between “what” and “why” comments</li>
-<li><u>Create</u> useful comments in code</li>
-</ul>
-</div>
-</div>
-</div>
-<p>A “comment” in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so when in doubt: add more comments!</p>
-<p>There are two major strategies for comments and either or both might make sense for your project.</p>
-<section id="what-comments" class="level3">
-<h3 class="anchored" data-anchor-id="what-comments">“What” Comments</h3>
-<p>Comments describe <em>what</em> the code is doing.</p>
-<ul>
-<li>Benefits: allows team members to understand workflow without code literacy</li>
-<li>Risks: rationale for code not explicit</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove all pine trees from dataset</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>no_pine_df <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(full_df, genus <span class="sc">!=</span> <span class="st">"Pinus"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="why-comments" class="level3">
-<h3 class="anchored" data-anchor-id="why-comments">“Why” Comments</h3>
-<p>Comments describe <em>rationale</em> and/or <em>context</em> for code.</p>
-<ul>
-<li>Benefits: built-in documentation for team decisions</li>
-<li>Risks: assumes everyone can read code</li>
-</ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cone-bearing plants are not comparable with other plants in dataset</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>no_pine_df <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(full_df, genus <span class="sc">!=</span> <span class="st">"Pinus"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Comment on Comments
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Part 1 - Discuss</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Part 2 - Revisit Old Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Part 3 - Discuss Again</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>With a partner, discuss the following questions:</p>
-<ul>
-<li>When you write comments, do you focus more on the “what” or the “why”?</li>
-<li>What would you estimate is the ratio of code lines to comment lines in your code?
-<ul>
-<li>1:1 being every code line has one comment line</li>
-</ul></li>
-<li>If you have revisited old code, were your comments helpful?
-<ul>
-<li>How could you make them more helpful?</li>
-</ul></li>
-<li>In what ways do you think you would need to change your commenting style for a team project?</li>
-</ul>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>Individually, pick a script from an old project (ideally one you haven’t worked on recently), then:</p>
-<ol type="1">
-<li>Scan through it and try to identify the main purpose(s) of the code</li>
-<li>Ask yourself the following questions:
-<ul>
-<li>Are there any areas where you’re <em>not sure</em> what the code is doing and/or why it is included?</li>
-<li>Do you think an external expert would be able to read and understand your code?</li>
-</ul></li>
-<li>Take a few minutes and add comments to clarify any vague areas you identified
-<ul>
-<li>Don’t edit the code itself, just add/edit comment lines!</li>
-</ul></li>
-</ol>
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>With your partner from part 1:</p>
-<ol type="1">
-<li>Exchange your edited code files</li>
-<li>Read your partner’s code and identify what you think the main purpose of the code is
-<ul>
-<li>Don’t try to run it! Just see what you can glean from reading alone</li>
-</ul></li>
-<li>Compare what you think the code does with what the original author intended it to do</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="consider-custom-functions" class="level2">
-<h2 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h2>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>After completing this topic you will be able to:</p>
-<ul>
-<li><u>Explain</u> when and why writing your own function is preferable to non-function code</li>
-<li><u>Write</u> your own function</li>
-</ul>
-</div>
-</div>
-</div>
-<p>In most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.</p>
-<p>Instead of taking this copy/paste approach, you could <em>consider</em> writing a “custom” function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.</p>
-<section id="function-recommendations" class="level3">
-<h3 class="anchored" data-anchor-id="function-recommendations">Function Recommendations</h3>
-<p>We have the following ‘rules of thumb’ for whether you should use a custom function:</p>
-<p><strong>- If a given operation is duplicated 3 or more times <u>within a project</u>, write a custom function</strong></p>
-<p>Functions written in this case can be extremely specific and–though documentation is always a good idea–can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won’t be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation <em>post hoc</em>.</p>
-<p><strong>- Write functions defensively</strong></p>
-<p>When you write custom functions, it is really valuable to take the time to write them defensively. In this context, “defensively” means that you anticipate likely errors and <em>write your own informative/human readable error messages</em>. Let’s consider a simplified version of a function from the <a href="https://github.com/lter/ltertools/tree/main"><code>ltertools</code> R package</a> for calculating the coefficient of variation (CV).</p>
-<p>The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given <em>a non-number</em> you get the following warning message: “In mean.default(x =”…“) : argument is not numeric or logical: returning NA”.</p>
-<p>Someone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>cv <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if x is not numeric</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.numeric</span>(x) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`x` must be numeric"</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate CV</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  coef_var <span class="ot">&lt;-</span> <span class="fu">sd</span>(<span class="at">x =</span> x) <span class="sc">/</span> <span class="fu">mean</span>(<span class="at">x =</span> x)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(coef_var) }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The key to defensive programming is to try to get functions to fail <em>fast</em> and fail <em>informatively</em> as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and–for complex functions–can save a ton of useless processing time when failure is guaranteed at a later step.</p>
-<p><strong>- If a given operation is duplicated 3 or more times <u>across projects</u>, consider creating an R package</strong></p>
-<p>Creating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function’s script for each project that needs the tool.</p>
-<p><a href="https://hadley.nz/">Hadley Wickham</a> and <a href="https://jennybryan.org/about/">Jenny Bryan</a> have written a <a href="https://r-pkgs.org/">free digital book</a> on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.</p>
-<p>If you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.</p>
-</section>
-</section>
 <section id="collaboration-reflection" class="level2">
 <h2 class="anchored" data-anchor-id="collaboration-reflection">Collaboration Reflection</h2>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
@@ -888,15 +571,15 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-body-container callout-body">
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Part 1 - Pair Discussion</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Part 2 - Whole-Class Discussion</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Part 1 - Pair Discussion</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Part 2 - Whole-Class Discussion</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>In pairs:</p>
 <ul>
 <li>Think back on a collaboration that you consider successful. What worked well? What were you doing? What were others doing? What conditions or practices supported the success of your team?</li>
 </ul>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>As a whole class, let’s discuss your answers to the following questions:</p>
 <ul>
 <li>What are some common practices that worked well?</li>
@@ -911,7 +594,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="science-of-team-science" class="level2">
 <h2 class="anchored" data-anchor-id="science-of-team-science">Science of Team Science</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -920,7 +603,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -937,7 +620,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <p>Creating a team is not just a matter of putting a bunch of people in a room together. Social scientists have identified consistent patterns in the evolution of teams (Tuckman 1965, Tuckman and Jenson 1977). Knowing that this is a process nearly every team experiences may make it (at least somewhat) more comfortable.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./topics/images/figure_team-dev-phases.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./topics/images/figure_team-dev-phases.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Graphic laying out the 5 phases of team development: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance"></a></p>
+<p><a href="./topics/images/figure_team-dev-phases.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="./topics/images/figure_team-dev-phases.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Graphic laying out the 5 phases of team development: forming, storming, norming, performing, and adjourning, with accompanying fluctuations in team performance"></a></p>
 </figure>
 </div>
 <p>Teams that are assembled from across organizations must agree to adopt a common set of norms and processes in order to progress from storming to performing. This can feel like a detour from the science, but a modest early investment in developing shared practices pays off in the long run.</p>
@@ -946,7 +629,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="benefits-of-enabling-full-participation" class="level2">
 <h2 class="anchored" data-anchor-id="benefits-of-enabling-full-participation">Benefits of Enabling Full Participation</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -955,7 +638,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -974,7 +657,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <section id="navigating-conflict" class="level2">
 <h2 class="anchored" data-anchor-id="navigating-conflict">Navigating Conflict</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -983,7 +666,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1011,7 +694,7 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 <li>Identify areas of agreement and disagreement. State preferences and requests clearly. Together, prioritize what to address first.</li>
 <li>Focus on the future with positive intent. Work together to find a solution. Keep communication open. Tend relationships.</li>
 </ul>
-<p><a href="topics/images/graph_satisfaction-triangle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="topics/images/graph_satisfaction-triangle.png" class="img-fluid" alt="A triangle labeled 'satisfaction triangle' indicating how procedural, emotional, and structural considerations are all important to satisfaction"></a></p>
+<p><a href="topics/images/graph_satisfaction-triangle.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="topics/images/graph_satisfaction-triangle.png" class="img-fluid" alt="A triangle labeled 'satisfaction triangle' indicating how procedural, emotional, and structural considerations are all important to satisfaction"></a></p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1023,9 +706,9 @@ Diagram of data stages from raw data to published products. Credit: Margaret O�
 </div>
 <div class="callout-body-container callout-body">
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Part 1 - Scenarios</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Part 2 - Scenario Debrief</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Part 1 - Scenarios</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Part 2 - Scenario Debrief</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>For the following set of scenarios, you will be randomly assigned to a breakout group and one of the following scenarios for a 20-minute discussion. After you join the group:</p>
 <ol type="1">
 <li>Briefly introduce yourselves</li>
@@ -1085,7 +768,7 @@ Scenario C: Research Approach
 </ul>
 </details>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Consider the following:</p>
 <ul>
 <li>What was your group’s perspective on the assigned scenario?
@@ -1104,7 +787,7 @@ Scenario C: Research Approach
 <section id="ensuring-equitable-access-to-participation" class="level2">
 <h2 class="anchored" data-anchor-id="ensuring-equitable-access-to-participation">Ensuring Equitable Access to Participation</h2>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -1113,7 +796,7 @@ Scenario C: Research Approach
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
@@ -1140,6 +823,343 @@ Scenario C: Research Approach
 <li>Language</li>
 <li>Time zone (for geographically distributed teams)</li>
 </ul>
+</section>
+<section id="reproducible-coding" class="level2">
+<h2 class="anchored" data-anchor-id="reproducible-coding">Reproducible Coding</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Discuss</u> methods for improving the reproducibility of your code products</li>
+<li><u>Define</u> code reproducibility-related vocabulary (e.g., “namespace”, “file path”)</li>
+<li><u>Explain</u> common pitfalls in file paths in code and how you might avoid them</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Doing your data operations with scripts is more reproducible than doing those operations without a programming language (i.e., with Microsoft Excel, Google Sheets, etc.). However, scripts are often written in a way that is not reproducible. A recent study aiming to run 2,000 projects’ worth of R code found that <em>74% of the associated R files failed to complete without error</em> (Trisovic <em>et al.</em> 2022). Many of those errors involve coding practices that hinder reproducibility but are easily preventable by the original code authors.</p>
+<p><img src="topics/images/figure_trisovic-diagram.png" alt="Figure showing that of 2335 R files only 1097 succeed while 850 experienced a library error, 221 involve a set working directory error, 229 had a file path error, 136 had an 'object not found' error, and 56 had some other type of error" width="50%" align="right"></p>
+<p><strong>When your scripts are reproducibly-written you will reap significant benefits!</strong> These include:</p>
+<ol type="1">
+<li>Easier to return to your code after having set it down for weeks/months</li>
+<li>Less verbal explanation needed when collaborating or onboarding new team members</li>
+<li>Simpler to sharing methods for external result validation</li>
+<li>In cases where you’re developing a novel method or workflow, structuring your code reproducibly will increase the odds that someone outside of your team will adopt your strategy</li>
+</ol>
+<section id="code-and-the-stages-of-data" class="level3">
+<h3 class="anchored" data-anchor-id="code-and-the-stages-of-data">Code and the Stages of Data</h3>
+<p>You’ll likely need a number of scripts to accomplish the different stages of preparing a synthesized dataset. All of these scripts together are often called a “workflow.” Each script will meet a specific need and its outputs will be the inputs of the next script. These intermediary data products are sometimes useful in and of themselves and tend to occur and predictable points that exist in most code workflows.</p>
+<p>Raw data will be parsed into cleaned data–often using idiosyncratic or dataset-specific scripts–which is then processed into standardized data which can then be further parsed into published data products. Because this process results in potentially <em>many</em> scripts, <strong>coding reproducibly is vital to making this workflow intuitive and easy to maintain.</strong></p>
+<p>You don’t necessarily need to follow all of the guidelines described below but in general, the more of these guidelines you follow the easier it will be to make needed edits, onboard new team members, maintain the workflow in the long term, and generally maximize the value of your work to yourself and others!</p>
+<a href="topics/images/image_data-stages.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="topics/images/image_data-stages.png" class="img-fluid" alt="Diagram depicting how raw data is transformed to cleaned data, then standardized data, and finally to published data products by a set of scripts between each 'type' of data"></a>
+<figcaption>
+Diagram of data stages from raw data to published products. Credit: Margaret O’Brian &amp; Li Kui
+</figcaption>
+</section>
+<section id="packages-namespacing-and-software-versions" class="level3">
+<h3 class="anchored" data-anchor-id="packages-namespacing-and-software-versions">Packages, Namespacing, and Software Versions</h3>
+<p>An under-appreciated facet of reproducible coding is a record of what code packages are used in a particular script <em>and</em> the version number of those packages. Packages evolve over time and code that worked when using one version of a given package may not work for future versions of that same package. Perpetually updating your code to work with the latest package versions <strong>is not sustainable</strong> but recording key information can help users set up the code environment that does work for your project.</p>
+<section id="load-libraries-explicitly" class="level4">
+<h4 class="anchored" data-anchor-id="load-libraries-explicitly">Load Libraries Explicitly</h4>
+<p>It is important to load libraries at the start of <em>every</em> script. In some languages (like Python) this step is required but in others (like R) this step is technically “optional” but disastrous to skip. It is safe to skip including the installation step in your code because the library step should tell code-literate users which packages they need to install.</p>
+<p>For instance you might begin each script with something like:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load needed libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr); <span class="fu">library</span>(magrittr); <span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Get to actual work</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>. . .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In R the semicolon allows you to put multiple code operations in the same line of the script. Listing the needed libraries in this way cuts down on the number of lines while still being precise about which packages are needed in the script.</p>
+<p>If you are feeling generous you could use the <a href="https://cran.r-project.org/web/packages/librarian/index.html"><code>librarian</code> R package</a> to install packages that are not yet installed and simultaneously load all needed libraries. Note that users would still need to install librarian itself but this at least limits possible errors to one location. This is done like so:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load `librarian` package</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(librarian)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install missing packages and load needed libraries</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">shelf</span>(dplyr, magrittr, ggplot2)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Get to actual work</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>. . .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="function-namespacing" class="level4">
+<h4 class="anchored" data-anchor-id="function-namespacing">Function Namespacing</h4>
+<p>It is also strongly recommended to “namespace” functions everywhere you use them. In R this is technically optional but it is a really good practice to adopt, <em>particularly for functions that may appear in multiple packages</em> with the same name but do very different operations depending on their source. In R the ‘namespacing operator’ is two colons.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the `mutate` function from the `dplyr` package</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dplyr<span class="sc">::</span><span class="fu">mutate</span>(. . .)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>An ancillary benefit of namespacing is that namespaced functions don’t need to have their respective libraries loaded. Still good practice to load the library though!</p>
+</section>
+<section id="package-versions" class="level4">
+<h4 class="anchored" data-anchor-id="package-versions">Package Versions</h4>
+<p>While working on a project you should use the latest version of every needed package. However, as you prepare to publish or otherwise publicize your code, you’ll need to record package versions. R provides the <code>sessionInfo</code> function (from the <a href="https://cran.r-project.org/web/packages/R.utils/index.html"><code>utils</code> package</a> included in “base” R) which neatly summarizes some high level facets of your code environment. Note that for this method to work you’ll need to actually run the library-loading steps of your scripts.</p>
+<p>For more in-depth records of package versions and environment preservation–in R–you might also consider the <a href="https://cran.r-project.org/web/packages/renv/index.html"><code>renv</code> package</a> or the <a href="https://cran.r-project.org/web/packages/packrat/index.html"><code>packrat</code> package</a>.</p>
+</section>
+</section>
+<section id="script-organization" class="level3">
+<h3 class="anchored" data-anchor-id="script-organization">Script Organization</h3>
+<p>Every change to the data between the initial raw data and the finished product should be scripted. The ideal would be that you could hand someone your code and the starting data and have them be able to perfectly retrace your steps. This is not possible if you make unscripted modifications to the data at any point!</p>
+<p>You may wish to break your scripted workflow into separate, modular files for ease of maintenance and/or revision. This is a good practice so long as each file fits clearly into a logical/thematic group (e.g., data cleaning versus analysis).</p>
+</section>
+<section id="file-paths" class="level3">
+<h3 class="anchored" data-anchor-id="file-paths">File Paths</h3>
+<p>When importing inputs or exporting outputs we need to specify “file paths”. These are the set of folders between where your project is ‘looking’ and where the input/output should come from/go. The figure from Trisovic <em>et al.</em> (2022) shows that file path and working directory errors are a substantial barrier to code that can be re-run in clean coding environments. Consider the following ways of specifying file paths from least to most reproducible.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Worst</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Bad</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Better</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Best!</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<section id="absolute-paths" class="level4">
+<h4 class="anchored" data-anchor-id="absolute-paths">Absolute Paths</h4>
+<p>The worst way of specifying a file path is to use the “absolute” file path. This is the path from the root of your computer to a given file. There are many issues here but the primary one is that <u>absolute paths only work for one computer</u>! Given that only one person can even run lines of code that use absolute paths, it’s not really worth specifying the other issues.</p>
+</section>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)/Data/bees.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<section id="manually-setting-the-working-directory" class="level4">
+<h4 class="anchored" data-anchor-id="manually-setting-the-working-directory">Manually Setting the Working Directory</h4>
+<p>Marginally better than using the absolute path is to set the working directory to some location. This may look neater than the absolute path option but it actually has the same point of failure: Both methods <u>only work for one computer</u>!</p>
+</section>
+<section id="example-1" class="level4">
+<h4 class="anchored" data-anchor-id="example-1">Example</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set working directory</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="at">dir =</span> <span class="st">"~/Users/lyon/Documents/Grad School/Thesis (Chapter 1)"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"Data/bees.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<section id="relative-paths" class="level4">
+<h4 class="anchored" data-anchor-id="relative-paths">Relative Paths</h4>
+<p>Instead of using absolute paths or manually setting the working directory you can use “relative” file paths! Relative paths <u>assume all project content lives in the same folder</u>.</p>
+<p>This is a safe assumption because it is the most fundamental tenet of reproducible project organization! The strength of relative paths is actually a serious contributing factor for why it is good practice to use a single folder.</p>
+</section>
+<section id="example-2" class="level4">
+<h4 class="anchored" data-anchor-id="example-2">Example</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-9"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-9-1"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1">1</button><span id="annotated-cell-9-2" class="code-annotation-target"><a href="#annotated-cell-9-2" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"Data/bees.csv"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-9" data-code-lines="2" data-code-annotation="1">Parts of file path specific to each user are automatically recognized by the computer</span>
+</dd>
+</dl>
+</section>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<section id="operating-system-flexible-relative-paths" class="level4">
+<h4 class="anchored" data-anchor-id="operating-system-flexible-relative-paths">Operating System-Flexible Relative Paths</h4>
+<p>The “better” example is nice but has a serious limitation: <u>it hard coded the type of slash between file path elements</u>. This means that <em>only computers of the same operating system as the code author</em> could run that line.</p>
+<p>We can use functions to automatically detect and insert the correct slashes though!</p>
+</section>
+<section id="example-3" class="level4">
+<h4 class="anchored" data-anchor-id="example-3">Example</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in bee community data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>my_df <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="fu">file.path</span>(<span class="st">"Data"</span>, <span class="st">"bees.csv"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="code-style" class="level3">
+<h3 class="anchored" data-anchor-id="code-style">Code Style</h3>
+<p>When it comes to code style, the same ‘rule of thumb’ applies here that applied to project organization: virtually any system will work so long as you (and your team) are consistent! That said, there are a few principles worth adopting if you have not already done so.</p>
+<blockquote class="blockquote">
+<p>Use concise and descriptive object names</p>
+</blockquote>
+<p>It can be difficult to balance these two imperatives but short object names are easier to re-type and visually track through a script. Descriptive object names on the other hand are useful because they help orient people reading the script to what the object contains.</p>
+<blockquote class="blockquote">
+<p>Don’t be afraid of empty space!</p>
+</blockquote>
+<p>Scripts are free to write regardless of the number of lines so do not feel as though there is a strict character limit you need to keep in mind. Cramped code is difficult to read and thus can be challenging to share with others or debug on your own. Inserting an empty line between coding lines can help break up sections of code and putting spaces before and after operators can make reading single lines much simpler.</p>
+</section>
+<section id="modifying-data" class="level3">
+<h3 class="anchored" data-anchor-id="modifying-data">Modifying Data</h3>
+<p>You should <em>never</em> edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a <em>separate</em> file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that “looks” like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the ‘real’ raw data personally.</p>
+<p><img src="topics/images/meme_comments.jpg" alt="Meme-style image where someone puts on progressively more clown makeup as they explain why they don't need to leave code comments" width="40%" align="right"></p>
+</section>
+</section>
+<section id="code-comments" class="level2">
+<h2 class="anchored" data-anchor-id="code-comments">Code Comments</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Explain</u> the difference between “what” and “why” comments</li>
+<li><u>Create</u> useful comments in code</li>
+</ul>
+</div>
+</div>
+</div>
+<p>A “comment” in a script is a human readable, non-coding line that helps give context for the code. In R (and Python), comment lines start with a hashtag (#). Including comments is a low effort way of both (A) creating internal documentation for the script and (B) increasing the reproducibility of the script. It is difficult to include “too many” comments, so when in doubt: add more comments!</p>
+<p>There are two major strategies for comments and either or both might make sense for your project.</p>
+<section id="what-comments" class="level3">
+<h3 class="anchored" data-anchor-id="what-comments">“What” Comments</h3>
+<p>Comments describe <em>what</em> the code is doing.</p>
+<ul>
+<li>Benefits: allows team members to understand workflow without code literacy</li>
+<li>Risks: rationale for code not explicit</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove all pine trees from dataset</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>no_pine_df <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(full_df, genus <span class="sc">!=</span> <span class="st">"Pinus"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="why-comments" class="level3">
+<h3 class="anchored" data-anchor-id="why-comments">“Why” Comments</h3>
+<p>Comments describe <em>rationale</em> and/or <em>context</em> for code.</p>
+<ul>
+<li>Benefits: built-in documentation for team decisions</li>
+<li>Risks: assumes everyone can read code</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cone-bearing plants are not comparable with other plants in dataset</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>no_pine_df <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(full_df, genus <span class="sc">!=</span> <span class="st">"Pinus"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Comment on Comments
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Part 1 - Discuss</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Part 2 - Revisit Old Code</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Part 3 - Discuss Again</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>With a partner, discuss the following questions:</p>
+<ul>
+<li>When you write comments, do you focus more on the “what” or the “why”?</li>
+<li>What would you estimate is the ratio of code lines to comment lines in your code?
+<ul>
+<li>1:1 being every code line has one comment line</li>
+</ul></li>
+<li>If you have revisited old code, were your comments helpful?
+<ul>
+<li>How could you make them more helpful?</li>
+</ul></li>
+<li>In what ways do you think you would need to change your commenting style for a team project?</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>Individually, pick a script from an old project (ideally one you haven’t worked on recently), then:</p>
+<ol type="1">
+<li>Scan through it and try to identify the main purpose(s) of the code</li>
+<li>Ask yourself the following questions:
+<ul>
+<li>Are there any areas where you’re <em>not sure</em> what the code is doing and/or why it is included?</li>
+<li>Do you think an external expert would be able to read and understand your code?</li>
+</ul></li>
+<li>Take a few minutes and add comments to clarify any vague areas you identified
+<ul>
+<li>Don’t edit the code itself, just add/edit comment lines!</li>
+</ul></li>
+</ol>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>With your partner from part 1:</p>
+<ol type="1">
+<li>Exchange your edited code files</li>
+<li>Read your partner’s code and identify what you think the main purpose of the code is
+<ul>
+<li>Don’t try to run it! Just see what you can glean from reading alone</li>
+</ul></li>
+<li>Compare what you think the code does with what the original author intended it to do</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="consider-custom-functions" class="level2">
+<h2 class="anchored" data-anchor-id="consider-custom-functions">Consider Custom Functions</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Explain</u> when and why writing your own function is preferable to non-function code</li>
+<li><u>Write</u> your own function</li>
+</ul>
+</div>
+</div>
+</div>
+<p>In most cases, duplicating code is not good practice. Such duplication risks introducing a typo in one copy but not the others. Additionally, if a decision is made later on that requires updating this section of code, you must remember to update each copy separately.</p>
+<p>Instead of taking this copy/paste approach, you could <em>consider</em> writing a “custom” function that fits your purposes. All instances where you would have copied the code now invoke this same function. Any error is easily tracked to the single copy of the function and changes to that step of the workflow can be accomplished in a centralized location.</p>
+<section id="function-recommendations" class="level3">
+<h3 class="anchored" data-anchor-id="function-recommendations">Function Recommendations</h3>
+<p>We have the following ‘rules of thumb’ for whether you should use a custom function:</p>
+<p><strong>- If a given operation is duplicated 3 or more times <u>within a project</u>, write a custom function</strong></p>
+<p>Functions written in this case can be extremely specific and–though documentation is always a good idea–can be a little lighter on documentation. Note that the reason you can reduce the emphasis on documentation is only because of the assumption that you won’t be sharing the function widely. If you do decide the function could be widely valuable you would need to add the needed documentation <em>post hoc</em>.</p>
+<p><strong>- Write functions defensively</strong></p>
+<p>When you write custom functions, it is really valuable to take the time to write them defensively. In this context, “defensively” means that you anticipate likely errors and <em>write your own informative/human readable error messages</em>. Let’s consider a simplified version of a function from the <a href="https://github.com/lter/ltertools/tree/main"><code>ltertools</code> R package</a> for calculating the coefficient of variation (CV).</p>
+<p>The coefficient of variation is equal to the standard deviation divided by the mean. Fortunately, R provides functions for calculating both of these already and both expect numeric vectors. If either of those functions is given <em>a non-number</em> you get the following warning message: “In mean.default(x =”…“) : argument is not numeric or logical: returning NA”.</p>
+<p>Someone with experience in R may be able to interpret this error but for many users this error message is completely opaque. In the function included below however we can see that there is a simpler, more human readable version of the error message and the function is stopped before it can ever reach the part of the code that would throw the warning message included above.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>cv <span class="ot">&lt;-</span> <span class="cf">function</span>(x){</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Error out if x is not numeric</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">is.numeric</span>(x) <span class="sc">!=</span> <span class="cn">TRUE</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"`x` must be numeric"</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Calculate CV</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  coef_var <span class="ot">&lt;-</span> <span class="fu">sd</span>(<span class="at">x =</span> x) <span class="sc">/</span> <span class="fu">mean</span>(<span class="at">x =</span> x)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(coef_var) }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The key to defensive programming is to try to get functions to fail <em>fast</em> and fail <em>informatively</em> as soon as a problem is detected! This is easier to debug and understand for coders with a range of coding expertise and–for complex functions–can save a ton of useless processing time when failure is guaranteed at a later step.</p>
+<p><strong>- If a given operation is duplicated 3 or more times <u>across projects</u>, consider creating an R package</strong></p>
+<p>Creating an R package can definitely seem like a daunting task but duplication across projects carries the same weaknesses of excessive duplication within a project. However, when duplication is across projects, not even writing a custom function saves you because you need to duplicate that function’s script for each project that needs the tool.</p>
+<p><a href="https://hadley.nz/">Hadley Wickham</a> and <a href="https://jennybryan.org/about/">Jenny Bryan</a> have written a <a href="https://r-pkgs.org/">free digital book</a> on this subject that demystifies a lot of this process and may make you feel more confident to create your own R package if/when one is needed.</p>
+<p>If you do take this path, you can simply install your package as you would any other in order to have access to the operations rather than creating duplicates by hand.</p>
+</section>
+</section>
+<section id="prep-work-for-next-module" class="level1">
+<h1>Prep Work for Next Module</h1>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-file-pen" aria-label="file-pen"></i> Pre-Class Preparation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
+<section id="before-we-meet-to-cover-the-next-module-do-all-of-the-work-in-the-callout-like-this-one-at-the-top-of-that-modules-page" class="level4 callout-body-container callout-body">
+<h4 class="anchored" data-anchor-id="before-we-meet-to-cover-the-next-module-do-all-of-the-work-in-the-callout-like-this-one-at-the-top-of-that-modules-page"><strong>Before we meet to cover the next module</strong>, do all of the work in the callout like this one at the top of that module’s page!</h4>
+</section>
+</div>
+</div>
 
 
 </section>
