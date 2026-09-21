@@ -25,7 +25,7 @@ To begin, we'll do an exercise to identify your thinking style in the Herrmann m
     -   **Instructions continue below the table!**
 
 | \# | Statement | Category | \- | \# | Statement | Category |
-|:--------:|:------------|:--------:|----------|:--------:|:------------|:--------:|
+|:--:|:---|:--:|----|:--:|:---|:--:|
 | 1 | I learn through structured activities | B |  | 21 | I plan things out | B |
 | 2 | I like accuracy | A |  | 22 | I like to deal with images/pictures | D |
 | 3 | I like exploring/bending the rules | D |  | 23 | I like to learn from textbooks | A |

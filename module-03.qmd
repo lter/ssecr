@@ -17,11 +17,13 @@ There is no specific pre-class preparation for this module!
 
 {{< include topics/consider-functions.qmd >}}
 
+{{< include topics/participation-benefits-activity.qmd >}}
+
 {{< include topics/team-sci.qmd >}}
 
-{{< include topics/team-conflict.qmd >}}
-
 {{< include topics/participation-benefits.qmd >}}
+
+{{< include topics/team-conflict.qmd >}}
 
 {{< include topics/participation-access.qmd >}}
 
