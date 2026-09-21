@@ -22,3 +22,11 @@ Prior to this lesson, you should do the [workshop preparation steps](https://lte
 {{< include topics/meeting-records.qmd >}}
 
 {{< include topics/external_lter-workshop-github.qmd >}}
+
+# Prep Work for Next Module
+
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::

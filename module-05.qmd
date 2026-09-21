@@ -25,3 +25,11 @@ There is no specific pre-class preparation for this module!
 {{< include topics/viz-ggplot2-core.qmd >}}
 
 {{< include topics/viz-ggplot2-multipanel.qmd >}}
+
+# Prep Work for Next Module
+
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::

@@ -18,3 +18,11 @@ Before this lesson, [install Quarto](https://quarto.org/docs/download/) on your 
 {{< include topics/notebook-value.qmd >}}
 
 {{< include topics/external_lter-workshop-quarto.qmd >}}
+
+# Prep Work for Next Module
+
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::
