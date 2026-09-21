@@ -104,9 +104,23 @@ The below benchmarks are meant to provide a _rough_ progress estimate of how you
 :::{.panel-tabset}
 #### 2026 Milestones
 
-### {{< fa person-digging >}} Under construction! 
+### Month 1 (Aug.)
 
-In the meantime, check the tab for the previous cohort's milestones and focus on only the first few months' milestones.
+- Project groups mostly coalesced
+
+### Months 2-3 (Sep./Oct.)
+
+- Collaboratively identified ground rules, communication and coordination plan, and project roles
+- Create agreements around intellectual credit & AI acceptable use
+- Literature review well underway and/or complete
+- Good progress finding data (50-75% known needed data found)
+
+### Months 4-5 (Nov./Dec.)
+
+- Draft a plan for your analyses
+    - Sufficient detail that you can articulate what harmonized data might be needed
+- Exploratory visualization ongoing
+- **Decided on post-SSECR plans/goals**
 
 #### 2024-25 Milestones
 
