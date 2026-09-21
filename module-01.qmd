@@ -11,6 +11,8 @@ Prior to this lesson, you should do the [workshop preparation steps](https://lte
 
 :::
 
+{{< include topics/-course-intro.qmd >}}
+
 {{< include topics/meeting-process-design.qmd >}}
 
 {{< include topics/meeting-roles.qmd >}}
