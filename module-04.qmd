@@ -4,18 +4,23 @@ title: "Inclusive Facilitation & Data Discovery"
 
 Your group has now likely begun to meet regularly and some of the technical work has likely also begun. You may now benefit from discussing tools for enabling full participation, as well as some models for thinking about how we communicate in groups and how some patterns of "stuck" communication can be resolved. Finally, we'll end on a primer for finding data useful for your project, either from existing data repositories or via sensibly-composed, general searches.
 
-:::{.callout-note icon="false" collapse="false"}
+::::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-On your own, consider the following:
+The next module has prep work for both you as an individual and your group.
 
-- What's one thing your group is doing really well to ensure all team members can participate in meetings and project work?
-- What's one area where your team has room to improve its inclusive facilitation practices?
-- What could you personally be doing better to ensure equal access to participation?
+:::{.panel-tabset}
+### You
 
-Take notes on your thoughts because we'll discuss more in small groups and as a class when we cover this module!
+Do Part 1 ("Identify Yours") of the Whole Brain Model Thinking Styles activity under the "[Designing Meetings for All Thinking Styles](https://lter.github.io/ssecr/module-04.html#designing-meetings-for-all-thinking-styles)" heading. 
 
+**Write down your totals for each of the four categories somewhere you can easily find it in the future.** We'll do the rest of the activity when we meet.
+
+### Your Group
+
+Revisit your group's primary research question and add that somewhere in your GitHub repository's README.md file. It's okay if this evolves in the future, we just want to capture where your thinking is _right now._
 :::
+::::
 
 {{< include topics/debate-to-dialogue.qmd >}}
 
