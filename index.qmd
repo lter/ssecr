@@ -82,16 +82,16 @@ Project groups will also meet at a time of their own choosing to work on project
 | 10 / 08 | 5. Exploring Diversity & Visualization | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> |
 | 10 / 15 | 6. Managing Data & Projects | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
 | 10 / 22 | 7. Planning the Work | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 10 / 29 | 8. Build Consensus & Do Quality Control | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br>  <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 11 / 05 | 9. Tools for Meetings & Data Wrangling | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 11 / 12 | 10. Intellectual Credit | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
-| 11 / 19 | 11. Group Stats Presentations | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} **_SSECR Participants!_** |
+| 10 / 29 | 8. Surviving the Groan Zone | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br>  <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 11 / 05 | 9. Refining Meetings & Code | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 11 / 12 | 10. Ensuring Equitable Credit | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
+| 11 / 19 | 11. Testing Synthesis Hypotheses | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
 | 11 / 26 | **No Class!** | -- |
-| 12 / 03 | 12. Making Reports & Websites | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 12 / 10 | 13. Looking Ahead & Spatial Data | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 12 / 17  | 14. Share the Story | <span style="color:#4AB2CB">{{< fa people-group >}} _TBD_</span> |
-| TBD | **Final Project Symposium** | _SSECR Participants!_ |
-| TBD | Presentations on LTER Community Call | _SSECR Participants!_ |
+| 12 / 03 | 12. Looking Ahead | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 10 | 13. Parking Downhill | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 17  | 14. Sharing the Story | <span style="color:#4AB2CB">{{< fa people-group >}} _TBD_</span> |
+| TBD | Final Project Symposium | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
+| TBD | Presentations on LTER Community Call | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
 
 ### 2024-25 Schedule
 

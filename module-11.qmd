@@ -1,5 +1,5 @@
 ---
-title: "Statistics for Synthesis"
+title: "Testing Synthesis Hypotheses"
 ---
 
 After data have been prepared for synthesis, how to go about analyzing those data can be quite difficult. Statistical power is rarely an issue because of the sheer volume of data available for many synthesis questions which enables some tools that are not as easily-used in non-synthesis contexts. This increased breadth of options can be paralyzing to some groups and deciding what is "right" versus "good enough" can be a sticking point for some groups.
