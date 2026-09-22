@@ -1,5 +1,5 @@
 ---
-title: "Data Visualization & Effective Meetings"
+title: "Exploring Diversity & Visualization"
 ---
 
 As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. Similarly, we'll provide you some tools and best practices for making sure that your meetings are impactful, necessary, and accessible to all participants so that meeting with the group doesn't cost you any momentum!

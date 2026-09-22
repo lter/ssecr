@@ -1,5 +1,5 @@
 ---
-title: "Inclusive Facilitation & Data Discovery"
+title: "Searching for Consensus & Data"
 ---
 
 Your group has now likely begun to meet regularly and some of the technical work has likely also begun. You may now benefit from discussing tools for enabling full participation, as well as some models for thinking about how we communicate in groups and how some patterns of "stuck" communication can be resolved. Finally, we'll end on a primer for finding data useful for your project, either from existing data repositories or via sensibly-composed, general searches.

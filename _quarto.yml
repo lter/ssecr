@@ -32,13 +32,13 @@ website:
               href: module-02.qmd
             - text: "3. Working Collaboratively"
               href: module-03.qmd
-            - text: "4. Group Dialogue & Data Searches"
+            - text: "4. Searching for Consensus & Data"
               href: module-04.qmd
-            - text: "5. Good Meetings & Visualizing Data"
+            - text: "5. Exploring Diversity & Visualization"
               href: module-05.qmd
-            - text: "6. Data Logs & Project Scope"
+            - text: "6. Managing Data & Projects"
               href: module-06.qmd
-            - text: "7. Plan the Work"
+            - text: "7. Planning the Work"
               href: module-07.qmd
             - text: "8. Build Consenus & Do Quality Control"
               href: module-08.qmd
