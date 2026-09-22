@@ -175,6 +175,6 @@ You should _never_ edit raw data directly! If you do need to edit the raw data, 
 :::{.callout-caution icon="false" collapse="false"}
 ### {{< fa robot >}} Generative AI Considerations
 
-**Consider whether there are privacy concerns with sharing your data with AI _before_ allowing an AI agent access to your local Git repository!** Especially if you have a "data/" folder in your Git repo becaause granting AI access to your Git folder will also include sub-directories of that folder (whether or not Git tracks them!)
+**Consider whether there are privacy concerns with sharing your data with AI _before_ allowing an AI agent access to your local Git repository!** Especially if you have a "data/" folder in your Git repo because granting AI access to your Git folder will also include sub-directories of that folder (whether or not Git tracks them!)
 
 :::
