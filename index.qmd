@@ -30,6 +30,7 @@ So far, the code facets of this course are taught primarily in R. Specific R pac
 
 ```{r}
 #| label: ssecr-r-packages
+#| output: false
 #| message: false
 #| warning: false
 
