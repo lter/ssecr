@@ -17,12 +17,11 @@ We hope this course is useful to you and encourage you to use these materials! I
 
 > Lyon, N.J., Kappel, C., Elmendorf, S., Kui, L., Maurer, G. E., De La Rosa, G., & Downs, M. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. [https://doi.org/10.5281/zenodo.16969471](https://doi.org/10.5281/zenodo.16969471)
 
-### Shared Drives
+### Shared Google Drives
 
-You will want to access two shared google drives throughout the course: 
+If you are part of a [cohort of synthesis fellows](https://lter.github.io/ssecr/fellows.html) (i.e., are participating in a version of SSECR offered by the LTER Network Office), then you will need access to a number of files not contained in this website or its GitHub repository.
 
--  [2026-cohort](https://drive.google.com/drive/folders/1n6CflMnmQZCb9bE502no4OPatw_ApnJH?usp=drive_link) contains the course roster, project coalescing materials, recordings of class sessions, and [worksheets for each module](https://docs.google.com/document/d/118OL8ctl1F-kqO-Se5nLm7gjG6mUNJKbQ_3z-KMnaNc/copy) containing discussion prompts and exercises. Please make a copy for your personal and group notes.
--  [LTER-SSECR_Projects](https://drive.google.com/drive/u/0/folders/0AEVMRiHeZkcXUk9PVA) is where you will keep data and notes related to your synthesis projects. 
+**All of the materials that you need live in the {{< fa brand drive >}} Shared Google Drive named "LTER-SSECR_Projects".** Click [here](https://drive.google.com/drive/u/0/shared-drives) to see the list of Shared Drives to which you have access. If you _do not_ see that Shared Drive in your list, contact [one of the course leads](https://lter.github.io/ssecr/instructors.html) to get added.
 
 ### R Packages
 
