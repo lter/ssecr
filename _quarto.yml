@@ -28,9 +28,9 @@ website:
         contents: 
             - text: "1. Synthesis Team Fundamentals"
               href: module-01.qmd
-            - text: "2. Project Organization & AI Assistance"
+            - text: "2. Prioritizing Reproducibility"
               href: module-02.qmd
-            - text: "3. Reproducible & Successful Teams"
+            - text: "3. Working Collaboratively"
               href: module-03.qmd
             - text: "4. Group Dialogue & Data Searches"
               href: module-04.qmd
