@@ -1,8 +1,10 @@
-## Development Version
+## Version 1.0.900
 
 This is the development version of the course. Changes from the preceding version are identified below as they are made.
 
-- Zenodo DOI and formal citation for these materials added to course content
+- Separates original, single-focus modules into sub-components (called "topics") and re-organizes topics into modules that each contain a mix of interpersonal and technical skills needed for synthesis
+- Adds Zenodo DOI and citation information for materials
+- Updates course policy on generative AI and adds discussion questions about genAI where appropriate
 
 ## Version 1.0
 
