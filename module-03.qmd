@@ -1,8 +1,8 @@
 ---
-title: "Reproducible Work & Supporting the Team"
+title: "Working Collaboratively"
 ---
 
-At this point, you may be haolding some discussions among the team that could be challenging. Today we'll give you some tools on understanding team dynamics and navigating conflict--hopefully before you need them - then cwe'll circle back in later classes to provide some broader context. Similarly, you are probably already writing preliminary code--or at least such code is clearly approaching in your near future. We'll discuss some facets of how that code can be made as reproducible as possible so that even these 'rough draft' code files are interpretable by others. 
+At this point, you may be writing preliminary code--or at least such code is clearly approching in your near future. Let's discuss some facets of how that code can be made as reproducible as possible so that even these 'rough draft' code files are as polished as possible. Similarly, we'll give you some tools on understanding team dynamics and navigating conflict--hopefully before you need them!
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
@@ -11,12 +11,26 @@ There is no specific pre-class preparation for this module!
 
 :::
 
+{{< include topics/participation-benefits-activity.qmd >}}
+
+{{< include topics/team-sci.qmd >}}
+
+{{< include topics/participation-benefits.qmd >}}
+
+{{< include topics/team-conflict.qmd >}}
+
+{{< include topics/participation-access.qmd >}}
+
 {{< include topics/reproducible-coding.qmd >}}
 
 {{< include topics/code-comments.qmd >}}
 
 {{< include topics/consider-functions.qmd >}}
 
-{{< include topics/team-support.qmd >}}
+# Prep Work for Next Module
 
-{{< include topics/team-conflict.qmd >}}
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::

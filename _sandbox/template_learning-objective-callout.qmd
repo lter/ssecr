@@ -1,0 +1,17 @@
+---
+title: "Activity Callout Template"
+---
+
+Copy/paste the below template when making new learning objective callouts.
+
+Where possible, try to use [Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy) to get "power verbs" for learning objectives.
+
+:::{.callout-tip icon="false" collapse="false"}
+### {{< fa brain >}} Learning Objectives
+
+After completing this topic you will be able to: 
+
+- <u>Power Verb</u> ....
+
+:::
+

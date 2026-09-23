@@ -77,3 +77,12 @@ With your partner from part 1:
 
 :::
 ::::
+
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
+
+A classic use-case of genAI is translating text from a language you don't understand into one that you do. This also applies to coding languages and comments in code! Asking AI to add comments to existing code, or explain the purpose of a whole script to you in accessible terms, are both classic ways of using genAI.
+
+So long as feeding the code in question into genAI is consistent with your group's norms, consider genAI in this realm!
+
+:::

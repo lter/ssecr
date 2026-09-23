@@ -25,15 +25,15 @@ $font-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 // Base document colors
-$navbar-bg: $lter-green-3; // navbar
+$navbar-bg: $lter-green-1; // navbar
 $navbar-fg: $cream; // navbar foreground elements
-$sidebar-bg: $lter-green-3; // sidebar
+$sidebar-bg: $lter-blue-1; // sidebar
 $sidebar-fg: $cream; // sidebar foreground elements
-$navbar-hl: $lter-green-1; // highlight color when on a page
+$navbar-hl: $lter-green-3; // highlight color when on a page
 $body-bg: $black; // page background
 $body-color: $cream; // page text
-$footer-bg: $lter-blue-2; // footer
-$footer-fg: $cream; // footer text
+$footer-bg: $lter-green-2; // footer
+$footer-fg: $gray-0; // footer text
 $link-color: $lter-tan; // hyperlinks
 
 // Code text
@@ -43,21 +43,20 @@ $code-color: $lter-green-1; // inline code text color
 
 /*-- scss:rules --*/
 
-// Code chunk ouput
+// Improve code chunk ouput background color contrast
 pre code:not(.sourceCode) { background-color: $gray-0; }
 
 // Active tabset panel (tab then tab content)
 .nav-tabs .nav-link.active { 
   background-color: $gray-3; 
-  color: $black;
-}
-.tab-content { background-color: $gray-3; }
+  color: $cream; }
+.tab-content { background-color: $gray-3; 
+  color: $cream; }
 
-// Navbar dropdown elements
-.dropdown-menu{
-  --bs-dropdown-link-hover-color: #f4f3ee;
-  --bs-dropdown-link-hover-bg: #97AE3F;
-}
+  // Highlight dropdown element as mouse goes over it
+  .dropdown-menu{
+  --bs-dropdown-link-hover-color: #222823;
+  --bs-dropdown-link-hover-bg: #209ACA; }
 
 // Underline URLs
 .reveal .slide a { text-decoration: underline; }
@@ -66,5 +65,4 @@ pre code:not(.sourceCode) { background-color: $gray-0; }
 .nav-footer-center {
   flex: 1 1 100% !important;
   max-width: 100% !important;
-  text-align: center;
-}
+  text-align: center; }

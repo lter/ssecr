@@ -1,0 +1,22 @@
+## Collaboration Reflection
+
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Inclusivity Rapid Assessment
+
+:::{.panel-tabset}
+### Part 1 - Pair Discussion
+
+In pairs:
+
+- Think back on a collaboration that you consider successful. What worked well? What were you doing? What were others doing? What conditions or practices supported the success of your team?
+
+### Part 2 - Whole-Class Discussion
+
+As a whole class, let's discuss your answers to the following questions:
+
+- What are some common practices that worked well?
+- Please share an "a-ha" moment or idea from your partner that you want to try in your group?
+
+:::
+::::
+

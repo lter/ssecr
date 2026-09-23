@@ -17,12 +17,11 @@ We hope this course is useful to you and encourage you to use these materials! I
 
 > Lyon, N.J., Kappel, C., Elmendorf, S., Kui, L., Maurer, G. E., De La Rosa, G., & Downs, M. (2025). Synthesis Skills for Early Career Researchers (SSECR) (v1.0). Zenodo. [https://doi.org/10.5281/zenodo.16969471](https://doi.org/10.5281/zenodo.16969471)
 
-### Shared Drives
+### Shared Google Drives
 
-You will want to access two shared google drives throughout the course: 
+If you are part of a [cohort of synthesis fellows](https://lter.github.io/ssecr/fellows.html) (i.e., are participating in a version of SSECR offered by the LTER Network Office), then you will need access to a number of files not contained in this website or its GitHub repository.
 
--  [2026-cohort](https://drive.google.com/drive/folders/1n6CflMnmQZCb9bE502no4OPatw_ApnJH?usp=drive_link) contains the course roster, project coalescing materials, recordings of class sessions, and [worksheets for each module](https://docs.google.com/document/d/118OL8ctl1F-kqO-Se5nLm7gjG6mUNJKbQ_3z-KMnaNc/copy) containing discussion prompts and exercises. Please make a copy for your personal and group notes.
--  [LTER-SSECR_Projects](https://drive.google.com/drive/u/0/folders/0AEVMRiHeZkcXUk9PVA) is where you will keep data and notes related to your synthesis projects. 
+**All of the materials that you need live in the {{< fa brand drive >}} Shared Google Drive named "LTER-SSECR_Projects".** Click [here](https://drive.google.com/drive/u/0/shared-drives) to see the list of Shared Drives to which you have access. If you _do not_ see that Shared Drive in your list, contact [one of the course leads](https://lter.github.io/ssecr/instructors.html) to get added.
 
 ### R Packages
 
@@ -30,11 +29,12 @@ So far, the code facets of this course are taught primarily in R. Specific R pac
 
 ```{r}
 #| label: ssecr-r-packages
+#| output: false
 #| message: false
 #| warning: false
 
 # install.packages("librarian")
-librarian::shelf(cowplot, exactextractr, lterdatasampler, maps, psych, sf, supportR, terra, tidyverse)
+librarian::shelf(cowplot, esc, exactextractr, lterdatasampler, maps, psych, sf, supportR, terra, tidyverse)
 ```
 
 ## Course Structure
@@ -75,22 +75,22 @@ Project groups will also meet at a time of their own choosing to work on project
 |:---:|:-----------------|:---------|
 | 8 / 20 | 0. Course & Project Introductions | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} **_Course Instructors_** |
 | 9 / 10 | 1. Synthesis Team Fundamentals | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> |
-| 9 / 17 | 2. Project Organization & AI Assistance | <span style="color:#4AB2CB">{{< fa people-group >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> |
-| 9 / 24 | 3. Reproducible & Successful Teams | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> |
-| 10 / 01 | 4. Group Dialogue & Data Searches | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Greg Maurer</span> |
-| 10 / 08 | 5. Good Meetings & Visualizing Data | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> |
-| 10 / 15 | 6. Data Logs & Project Scope | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
-| 10 / 22 | 7. Plan the Work | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 10 / 29 | 8. Build Consensus & Do Quality Control | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br>  <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 11 / 05 | 9. Tools for Meetings & Data Wrangling | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 11 / 12 | 10. Intellectual Credit | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
-| 11 / 19 | 11. Group Stats Presentations | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} **_SSECR Participants!_** |
+| 9 / 17 | 2. Prioritizing Reproducibility | <span style="color:#4AB2CB">{{< fa people-group >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> |
+| 9 / 24 | 3. Working Collaboratively | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> |
+| 10 / 01 | 4. Searching for Consensus & Data | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Greg Maurer</span> |
+| 10 / 08 | 5. Exploring Diversity & Visualization | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> |
+| 10 / 15 | 6. Managing Data & Projects | <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Sarah Elmendorf</span> <br> <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
+| 10 / 22 | 7. Planning the Work | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 10 / 29 | 8. Surviving the Groan Zone | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br>  <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 11 / 05 | 9. Refining Meetings & Code | <span style="color:#4AB2CB">{{< fa people-group >}} Carrie Kappel</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 11 / 12 | 10. Ensuring Equitable Credit | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> |
+| 11 / 19 | 11. Testing Synthesis Hypotheses | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
 | 11 / 26 | **No Class!** | -- |
-| 12 / 03 | 12. Making Reports & Websites | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 12 / 10 | 13. Looking Ahead & Spatial Data | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 12 / 17  | 14. Share the Story | <span style="color:#4AB2CB">{{< fa people-group >}} _TBD_</span> |
-| TBD | **Final Project Symposium** | _SSECR Participants!_ |
-| TBD | Presentations on LTER Community Call | _SSECR Participants!_ |
+| 12 / 03 | 12. Looking Ahead | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 10 | 13. Parking Downhill | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 17  | 14. Sharing the Story | <span style="color:#4AB2CB">{{< fa people-group >}} _TBD_</span> |
+| TBD | Final Project Symposium | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
+| TBD | Presentations on LTER Community Call | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
 
 ### 2024-25 Schedule
 
