@@ -1077,7 +1077,7 @@
     "href": "module-03.html",
     "title": "Working Collaboratively",
     "section": "",
-    "text": "At this point, you may be writing preliminary code–or at least such code is clearly approching in your near future. Let’s discuss some facets of how that code can be made as reproducible as possible so that even these ‘rough draft’ code files are as polished as possible. Similarly, we’ll give you some tools on understanding team dynamics and navigating conflict–hopefully before you need them!",
+    "text": "At this point, you may be holding some discussions among the team that could be challenging. Today we’ll give you some tools on understanding team dynamics and navigating conflict (hopefully before you need them) then we’ll circle back in later classes to provide some broader context. Similarly, you are probably already writing preliminary code–or at least such code is clearly approaching in your near future. We’ll discuss some facets of how that code can be made as reproducible as possible so that even these ‘rough draft’ code files are interpretable by others.",
     "crumbs": [
       "Course Content",
       "3. Working Collaboratively"
