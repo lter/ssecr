@@ -5,13 +5,19 @@
 
 After completing this topic you will be able to:
 
-- <u>Interpret</u> and enact current best practices in team science
-- <u>Identify</u> different interaction styles and the effect they have on group dynamics
+- <u>locate</u> resources for best practices in team science
+- <u>Identify</u> typical stages of project development
 :::
 
-Research in management, organizational behavior, and psychology has long focused on the performance of teams–often in military, healthcare and industrial contexts. While many aspects of this work are also relevant to scientific teams, there are some key differences having to do with differences in context, leadership, and incentives. In the early 2000's–as collaboration in science increased–the need for empirical research into the workings of science teams became apparent. The field of "science of team science" or SiTS was launched in 2006 with a conference at the National Institutes of Health (Stokols et al. 2008).
+Research in management, organizational behavior, and psychology has long focused on the performance of teams–often in military, healthcare and industrial contexts. Scientific teams have particular goals, leadership, and incentives that differ from the business and military contexts. As collaboration in science increased, the need for empirical research into the workings of science teams became apparent and the field of "science of team science" or SciTS was launched. A few key moments:
 
-National Academies studies in 2015 ([*Enhancing the Effectiveness of Team Science*](https://www.nationalacademies.org/read/19007), NRC) and 2025 ([*Research and Application in Team Science*](https://www.nationalacademies.org/read/29043)*, NASEM)* assembled the existing evidence base into how team composition, coordination, support, and organizational context could improve outcomes for science teams. Our goal here is not to review the whole field, but to provide a framework for thinking about the team functioning and process and to identify some key team science practices that are supported by both research and practical experience.
+- 2006 conference at the National Institutes of Health (Stokols et al. 2008)
+
+- National Academies studies in 2015 ([*Enhancing the Effectiveness of Team Science*](https://www.nationalacademies.org/read/19007), NRC)
+
+- 2025 ([*Research and Application in Team Science*](https://www.nationalacademies.org/read/29043)*, NASEM)* assembled the existing evidence base into how team composition, coordination, support, and organizational context could improve outcomes for science teams.
+
+In this course, we're not aiming to review the whole field, but to provide a framework for thinking about how your team is functioning and to identify some key team science practices that are supported by both research and practical experience.
 
 ### Predictable Team Trajectory
 
