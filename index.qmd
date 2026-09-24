@@ -21,7 +21,9 @@ We hope this course is useful to you and encourage you to use these materials! I
 
 If you are part of a [cohort of synthesis fellows](https://lter.github.io/ssecr/fellows.html) (i.e., are participating in a version of SSECR offered by the LTER Network Office), then you will need access to a number of files not contained in this website or its GitHub repository.
 
-**All of the materials that you need live in the {{< fa brand drive >}} Shared Google Drive named "LTER-SSECR_Projects".** Click [here](https://drive.google.com/drive/u/0/shared-drives) to see the list of Shared Drives to which you have access. If you _do not_ see that Shared Drive in your list, contact [one of the course leads](https://lter.github.io/ssecr/instructors.html) to get added.
+**All of the materials that you need live in the {{< fa brand drive >}} Shared Google Drive named "LTER-SSECR_Students"; click [here](https://drive.google.com/drive/u/0/shared-drives) to see the list of Shared Drives to which you have access.** 
+
+If you _do not_ see that Shared Drive in your list, contact [one of the course leads](https://lter.github.io/ssecr/instructors.html) to get added.
 
 ### R Packages
 
