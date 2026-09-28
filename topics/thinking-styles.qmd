@@ -53,15 +53,21 @@ To begin, we'll do an exercise to identify your thinking style in the Herrmann m
 
 ### Part 2 - Sub-Group Discussion
 
+<details>
+<summary>{{< fa puzzle-piece >}} Letter Code Translations</summary>
+**_Don't look at this if you haven't done "Part 1" already!_**
+
+- A: Analytical
+- B: Practical
+- C: Relational
+- D: Experimental
+
+</details>
+
 1.  Form groups based on the category (A, B, C, or D) where you had the highest count
     -   If you tied between two, you can go to either
-2.  Identify your Herrmann thinking style!
-    -   A = Analytical
-    -   B = Practical
-    -   C = Relational
-    -   D = Experimental
-3.  Click on the two images below these panels to make them larger and review what the Herrmann model predicts your primary thinking style expects and enjoys
-4.  Discuss the following questions as a group
+2.  Click on the two images below these panels to make them larger and review what the Herrmann model predicts your primary thinking style expects and enjoys
+3.  Discuss the following questions as a group
     -   Share one statement with which you particularly resonated with your group. Why do you think you identify strongly with this trait? Can you provide an example that illustrates this in your life?
     -   What are some strengths of your thinking style?
     -   What are some challenges associated with it?
