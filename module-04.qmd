@@ -26,13 +26,8 @@ Revisit your group's primary research question and add that somewhere in your Gi
 
 {{< include topics/thinking-styles.qmd >}}
 
-<<<<<<< HEAD
-=======
-{{< include topics/participation-access.qmd >}}
-
 {{< include topics/data-search-terms.qmd >}}
 
->>>>>>> 762ab29 (docs: framing out changes to data discovery in module 04)
 {{< include topics/data-repositories.qmd >}}
 
 {{< include topics/data-searches.qmd >}}

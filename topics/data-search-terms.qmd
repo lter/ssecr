@@ -1,31 +1,31 @@
-## Choosing search terms
+## Choosing Search Terms
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives
 
 After completing this topic you will be able to: 
 
-- <u>Understand</u> how research questions map to the data that will be needed
-- <u>Refine</u> your synthesis groups research question the terms of a data query
+- <u>Understand</u> the concepts and terms that are useful when searching for research data
+- <u>Refine</u> your synthesis group's research question into the terms of a data query
 
 :::
 
-The answer to any research question is found in data, and many questions are formulated with specific data in mind. Synthesis questions are often formulated with limited data in-hand and an intention to scale up the question to "all the available data." Therefore, synthesis projects usually begin with a process of data discovery - finding datasets that can be used to answer the question.
+<img src="topics/images/figure_data-search-venn.png" alt="A venn diagram with outer circle 'All available data' and inner circle 'Data that can answer my question'" width="35%" align="right"/>
 
-Venn diagram - All available data, data that can answer the question
+The answer to any research question is found in data. Many research questions are formulated with specific data in mind, but synthesis questions are often formulated with limited data in-hand and an intention to scale up the question to "all the available data." Therefore, synthesis projects usually begin with a process of data discovery --- finding datasets that can be used to answer the question.
 
-Finding the data you need for synthesis isn't always easy, but starting with a clear research question helps because you can map it to criteria and search terms that you'll use. This is because research questions and datasets contain the same conceptual elements. They both always include:
+Finding the data you need for synthesis isn't always easy, but starting with a clear research question helps because you can map it to the criteria and search terms that you'll use. This is because research questions and datasets both have the same conceptual elements, which include:
 
-- Variables observed, measured, or estimated (precipitation, gas flux, abundance)
-- Observational units - the actual thing being observed or measured (an ecosystem process, a layer of soil, animals, part of a tree)
+- **Observational units:** a thing or phenomenon to be observed or measured. _Examples: an ecosystem process, a layer of soil, animals, part of a tree_
+- **Variables:** an attribute or characteristic of the observational units that can take different values, and which can be observed, measured, or estimated. _Examples: precipitation, gas flux, species abundance_
 
-In addition, they both often have:
+When mapping these concepts to data, you can think of the observational units as being represented by rows in a data table, and variables being represented by the columns. Other elements that will appear in both a research question and the data are:
 
-- Groups of some kind (known or hypothesized - treatments, taxonomic group, functional type)
-- A temporal dimension (explicit or not - time of observation)
-- A spatial dimension (explicit or not - location of observation)
+- **Groups**, which are observed or hypothesized subdivisions in the observational units and data. _Examples: treatments, taxonomic group, functional types_
+- **Temporal dimensions**, which are often necessary to understand when things happen or the effect of time. _Examples: time of observation, age of subject_
+- **Spatial dimensions**, which describe where things happen, or the effect of location. _Examples: location of observation or study subject, distance to resource_
 
-Translating these concepts as they are written in your research question to the attributes of the data you will search will help you find useful datasets more efficiently.
+Translating these concepts, as they are appear in your research question, to the attributes of the data you will search will help you find useful datasets more efficiently.
 
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 | Research question                  | Conceptual mapping            | Data search criteria                                      |
@@ -47,6 +47,7 @@ Translating these concepts as they are written in your research question to the 
 |                                    |                               | - **Spatial:** yes, need a latitude gradient              |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 
+: Some examples of mappings between research questions and data search terms.
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Map your research question to data search terms

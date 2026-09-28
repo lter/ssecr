@@ -5,26 +5,100 @@
 
 After completing this topic you will be able to: 
 
-- <u>Identify</u> repositories "known for" particular types of data
+- <u>Understand</u> the differences between generalist repositories, more specialized repositories, and search aggregators.
+- <u>Identify</u> some repositories "known for" particular types of data
 
 :::
 
-There are _a lot_ of specialized data repositories out there. These organizations are either primarily dedicated to storing and managing data or those operations constitute a substantive proportion of their efforts. In synthesis work, you may already have some datasets in-hand at the outset but it likely that **you will need to find more data to test your hypotheses**. Data repositories are a great way of finding/accessing data that are relevant to your questions.
+When you start a synthesis research project, you may already have some datasets in-hand at the outset but it is likely that **you will need to find more data to test your hypotheses**. Research data repositories are organizations or facilities that are primarily dedicated to storing and managing research data, so they are a great place to find and access relevant data for answering your research question. There are _a lot_ of data repositories out there. In fact, the Registry of Research Data Repositories ([re3data.org](https://www.re3data.org/)) lists 3526 repositories at the time of writing, so you probably can't search them all exhaustively. It helps to know the landscape and search efficiently.
 
-You'll become familiar with many of these when you need a particular type of data and go searching for it but to help speed you along, see the list below for a non-exhaustive set of some that have proved useful to other synthesis projects in the past. They are in alphabetical order. If the "{{< fa brands r-project >}} Package" column contains the GitHub logo ({{< fa brands github >}}) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).
+::: {.callout-tip}
+
+## A word about metadata and searching repositories
+
+:::{style="float: right; width: 40%;  margin: 0.5em 0 1em 1.5em; text-align: left;"}
+
+![A **dataset** is one or more data files AND the metadata describing those data. It is a good idea to keep data and metadata together forever.](topics/images/a_dataset.png){fig-alt="A figure showing a folder with data and metadata files inside"}
+
+:::
+
+We're about describe a bunch of repositories, and then move on to strategies for searching them. It is first worth mentioning that, while we visit repositories to access the many, many data files they contain, every repository (so far as we know) also publishes **metadata** describing those data. If you've never heard of metadata before, the quick definition is "data about the data," or information describing a unit of data. Metadata usually contains information about:
+
+- **who** collected the data
+- **what** was collected
+- **when**, **where**, **how** and **why** the data were collected.
+
+When you search in a repository or aggregator, _you are not searching the data themselves, you are searching the metadata._ The metadata contain essential information that let you understand the data, evaluate if they are fit for your research purpose, and use the data. So, the essential unit of data you should think about during synthesis research is the **dataset** --- data and metadata together. Keep the dataset concept in mind as you create your synthesis data products, and remember to collect metadata.
+
+:::
+
+We can categorize repositories a few different ways. **Generalist repositories** hold all kinds of data from all sorts of research. They tend to have fairly lax requirements for metadata and data quality, so you may have to sift through your search results carefully to determine if a dataset is fit for use. **Domain-specific repositories** specialize in data from a particular domain, such as a scientific discipline (e.g. environmental science or biomedical research), location (e.g. Arctic data), or research network (e.g. NEON). They tend to have higher metadata standards for the data they accept into the repository. Some repositories are also **data-specific**, meaning they specialize in a limited number of data types and may have strict requirements for metadata and data formatting. These differences in repository specialization can have big impacts on how much time you spend finding useful data and getting it ready to analyze.
+
+![There is a gradient in repository specialization (domain, metadata/data standards) and how Findable, Accessible, Interoperable, and Reusable (FAIR) the data are. Adapted from Gries et al. 2023](topics/images/figure_data-repos-conceptual.png){width=70% fig-align="center" fig-alt="A figure showing the research data repositories as circles along a spectrum of specialization and FAIR-ness"}
+
+Below we present three non-exhaustive lists of repositories that have proven useful to other synthesis projects in the past. They are broken into categories as above, and are in alphabetical order. If the "{{< fa brands r-project >}} Package" column contains the GitHub logo ({{< fa brands github >}}) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).
+
+:::{.panel-tabset}
+
+### Domain-specific repositories
+
+| **Name** | **Description** | {{< fa brands r-project >}} **Package** |
+|:---:|:---|:---:|
+| [Arctic Data Center](https://arcticdata.io/) | The primary NSF-funded repository for Arctic research data, accepting observational, experimental, and modeling data from multiple disciplines. Uses EML metadata and operates as a DataONE member node. | [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html) |
+| [BCO-DMO](https://www.bco-dmo.org/) | The Biological and Chemical Oceanography Data Management Office serves NSF-funded ocean science projects, curating biological, chemical, and physical oceanographic data from research cruises, moorings, and laboratory experiments. Marine and coastal LTER sites often publish data here. | -- |
+| [EDI](https://edirepository.org/) | Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems. Specializes in detailed metadata (as EML) and is one of the primary repositories for LTER data. | [`EDIutils`](https://cran.r-project.org/web/packages/EDIutils/index.html) |
+| [ESS-DIVE](https://ess-dive.lbl.gov/) | The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems. Used by many Department of Energy funded science programs. | -- |
+| [NASA](https://data.nasa.gov/) | Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via [AppEEARS](https://appeears.earthdatacloud.nasa.gov/). | [`nasadata`](https://cran.r-project.org/web/packages/nasadata/index.html) |
+| [ORNL DAAC](https://daac.ornl.gov/) | One of NASA's Distributed Active Archive Centers (DAACs), based at Oak Ridge National Lab. Specializing in terrestrial ecology and biogeochemical dynamics and including field campaign, remote sensing, and model archive data with detailed user guides for each product. | -- |
+| [PANGAEA](https://pangaea.de/) | A curated repository based in Europe for a wide range of Earth and environmental science data. Frequently used to deposit data as supplements to journal articles. | [`pangaear`](https://cran.r-project.org/web/packages/pangaear/index.html) |
+| [USGS](https://www.usgs.gov/products/data/all-data) | Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments. | [`dataRetrieval`](https://cran.r-project.org/web/packages/dataRetrieval/index.html) |
+
+: Domain-specific repositories accepting a broad range of data. These publish multiple data types and generally maintain higher metadata standards than generalist repositories, though the data may not be well-standardized. {#tbl-domain-repos}
+
+
+
+### Specialized repositories
 
 | **Name** | **Description** | {{< fa brands r-project >}} **Package** |
 |:---:|:---|:---:|
 | [AmeriFlux](https://ameriflux.lbl.gov/data/data-policy/) | Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research. | [`amerifluxr`](https://cran.r-project.org/web/packages/amerifluxr/index.html) |
-| [DataONE](https://www.dataone.org/) | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research. | [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html) |
-| [EDI](https://edirepository.org/) | Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems. | [`EDIutils`](https://cran.r-project.org/web/packages/EDIutils/index.html) |
-| [ESS-DIVE](https://ess-dive.lbl.gov/) | The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems. | -- |
+| [FLUXNET](https://fluxnet.org/) | A global network aggregating and reprocessing eddy covariance data from regional networks including AmeriFlux and ICOS. Data pass through a uniform gap-filling and partitioning pipeline (e.g., the FLUXNET2015 release), producing directly comparable carbon, water, and energy flux products across sites. | -- |
 | [GBIF](https://www.gbif.org/) | The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation. | [`rgbif`](https://cran.r-project.org/web/packages/rgbif/index.html) |
 | [Google Earth Engine](https://earthengine.google.com/) | Google Earth Engine is a cloud-based geospatial analysis platform that provides access to vast amounts of satellite imagery and environmental data for monitoring and understanding changes in the Earth's surface. | {{< fa brands github >}} [`rgee`](https://github.com/r-spatial/rgee) |
+| [ICOS](https://www.icos-cp.eu/) | The Integrated Carbon Observation System provides standardized greenhouse gas and flux measurements from European atmospheric, ecosystem, and ocean stations. Sampling protocols, instrumentation, and processing are harmonized across the network, and data are released under a common licence with DOIs. | -- |
 | [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) | The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research. | {{< fa brands github >}} [`rstac`](https://github.com/brazil-data-cube/rstac) |
-| [NASA](https://data.nasa.gov/) | Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via [AppEEARS](https://appeears.earthdatacloud.nasa.gov/). | [`nasadata`](https://cran.r-project.org/web/packages/nasadata/index.html) |
+| [Movebank](https://www.movebank.org) | A free, online database of animal tracking data hosted by the Max Planck Institute of Animal Behavior. Billions of observations contributed by a worldwide community of researchers. | [`move2`](https://cran.r-project.org/web/packages/move2/index.html) |
 | [NCBI](https://www.ncbi.nlm.nih.gov/) | Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research. | [`rentrez`](https://cran.r-project.org/web/packages/rentrez/index.html) |
-| [NEON](https://data.neonscience.org/) | Provides ecological data from U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research. | [`neonUtilities`](https://cran.r-project.org/web/packages/neonUtilities/index.html) |
+| [NEON](https://data.neonscience.org/) | Provides standardized ecological data from a network of intensively monitored U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research. | [`neonUtilities`](https://cran.r-project.org/web/packages/neonUtilities/index.html) |
 | [NOAA](https://data.noaa.gov/onestop/) | Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends. | {{< fa brands github >}} [`EpiNOAA-R`](https://github.com/NOAA-Big-Data-Program/EpiNOAA-R) |
-| [Open Traits Network](https://opentraits.org/datasets.html) | While not a repository _per se_, the Open Traits Network has compiled an extensive lists of repositories for trait data. Check out their repository inventory for trait data | -- |
-| [USGS](https://www.usgs.gov/products/data/all-data) | Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments. | [`dataRetrieval`](https://cran.r-project.org/web/packages/dataRetrieval/index.html) |
+| [TERN](https://portal.tern.org.au) | Data portal for Australia's Terrestrial Ecosystem Research Network, providing ecological data from field sites across Earth's smallest continient. Somewhat similar to NEON in the U.S. | [ausplotsR](https://cran.r-project.org/web/packages/ausplotsR/index.html) |
+| [OBIS](https://obis.org/) | The Ocean Biodiversity Information System is a global clearing-house for marine biodiversity data, holding over 100 million occurrence records plus associated measurements and facts. Contributions are standardized to Darwin Core and validated before publication. | [`robis`](https://cran.r-project.org/web/packages/robis/index.html) |
+| [OpenTopography](https://opentopography.org/) | Provides high-resolution topographic data, including lidar point clouds, derived rasters, and global elevation products, with on-demand processing tools for generating DEMs and derivative products. | -- |
+
+: Highly specialized repositories that require standardized sampling, data formats, and/or metadata. Many of these repositories are also specific to a particular research domain or network. {#tbl-specialized-repos}
+
+
+### Generalist repositories
+
+| **Name** | **Description** | {{< fa brands r-project >}} **Package** |
+|:---:|:---|:---:|
+| [Dryad](https://datadryad.org/) | A curated, nonprofit repository for data underlying scientific publications, with a focus on biosciences. Accepts any file format, applies CC0 to all submissions, and assigns DOIs. Widely used to satisfy journal data-availability requirements. | [`rdryad`](https://cran.r-project.org/web/packages/rdryad/index.html) |
+| [Figshare](https://figshare.com/) | A general-purpose repository for figures, datasets, posters, preprints, and other research outputs. Minimal metadata requirements, DOIs on deposit, and a generous file-size allowance make it a quick option for supplementary materials. | [`rfigshare`](https://cran.r-project.org/web/packages/rfigshare/index.html) |
+| [Harvard Dataverse](https://dataverse.harvard.edu/) | An open repository hosting datasets across all disciplines, organized into individual "dataverses" that let projects or institutions manage their own collections. Supports versioning, DOIs, and a structured citation metadata block. | [`dataverse`](https://cran.r-project.org/web/packages/dataverse/index.html) |
+| [Zenodo](https://zenodo.org/) | A general-purpose repository operated by CERN, accepting any file type or discipline. Integrates directly with GitHub to archive software releases and mint DOIs, with a concept DOI that always resolves to the latest version. | [`zen4R`](https://cran.r-project.org/web/packages/zen4R/index.html) |
+
+: Generalist repositories accepting a broad range of data types with minimal metadata requirements. Be aware that it can be difficult to separate the "wheat from the chaff."
+
+:::
+
+### Searching _across_ repositories
+
+If you don't find everything you're looking for in a particular data repository, you might want to consider a broader search across many repositories. There are a few data search aggregators out there that are quite useful for this. These services collect or index metadata from many repositories and allow you to search them in one interface. They do not always provide the data directly, instead linking out to the source repository.
+
+| **Name** | **Description** | {{< fa brands r-project >}} **Package** |
+|:---:|:---|:---:|
+| [DataONE](https://www.dataone.org/) | Aggregates environmental and ecological data from global sources, focusing on biodiversity, climate, and ecosystem research. | [`dataone`](https://cran.r-project.org/web/packages/dataone/index.html) |
+| [Google Dataset Search](https://datasetsearch.research.google.com/) | Google Dataset Search crawls schema.org metadata published on repository landing pages to make datasets discoverable across thousands of sources at once. Useful as a starting point when the holding repository is unknown, but coverage depends on how well each repository exposes its metadata. | -- |
+| [OpenAIRE EXPLORE](https://explore.openaire.eu) | OpenAIRE is a central organization in the European Commission's open science initiative. The EXLORE tool indexes dataset metadata from thousands of repositories, journals, registries and other sources. Data sources are worldwide, not just European. | {{< fa brands github >}} [OpenAIRE](https://github.com/KTH-Library/OpenAIRE/) |
+| [Open Traits Network](https://opentraits.org/datasets.html) | The Open Traits Network has compiled an extensive lists of repositories for trait data. Check out their repository inventory for trait data. | -- |
+
