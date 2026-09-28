@@ -361,20 +361,23 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <p><img src="topics/images/figure_data-search-venn.png" alt="A venn diagram with outer circle 'All available data' and inner circle 'Data that can answer my question'" width="35%" align="right"></p>
 <p>The answer to any research question is found in data. Many research questions are formulated with specific data in mind, but synthesis questions are often formulated with limited data in-hand and an intention to scale up the question to “all the available data.” Therefore, synthesis projects usually begin with a process of data discovery — finding datasets that can be used to answer the question.</p>
-<p>Finding the data you need for synthesis isn’t always easy, but starting with a clear research question helps because you can map it to the criteria and search terms that you’ll use. This is because research questions and datasets both have the same conceptual elements, which include:</p>
+<p>Data discovery isn’t always easy, but starting with a clear research question helps because you can map it to the search criteria and terms that you’ll use. This is because research questions and datasets both have the same conceptual elements, which include:</p>
 <ul>
 <li><strong>Observational units:</strong> a thing or phenomenon to be observed or measured. <em>Examples: an ecosystem process, a layer of soil, animals, part of a tree</em></li>
 <li><strong>Variables:</strong> an attribute or characteristic of the observational units that can take different values, and which can be observed, measured, or estimated. <em>Examples: precipitation, gas flux, species abundance</em></li>
 </ul>
-<p>When mapping these concepts to data, you can think of the observational units as being represented by rows in a data table, and variables being represented by the columns. Other elements that will appear in both a research question and the data are:</p>
+<p>When mapping these concepts to data, think of the observational units as being represented by rows in a data table, and variables as being represented by the columns. There are some other elements that usually appear in both a research question and the data.</p>
 <ul>
 <li><strong>Groups</strong>, which are observed or hypothesized subdivisions in the observational units and data. <em>Examples: treatments, taxonomic group, functional types</em></li>
-<li><strong>Temporal dimensions</strong>, which are often necessary to understand when things happen or the effect of time. <em>Examples: time of observation, age of subject</em></li>
-<li><strong>Spatial dimensions</strong>, which describe where things happen, or the effect of location. <em>Examples: location of observation or study subject, distance to resource</em></li>
+<li><strong>Temporal dimensions</strong>, which are necessary to understand when things happen or the effect of time. <em>Examples: time of observation, age of subject</em></li>
+<li><strong>Spatial dimensions</strong>, which describe where things happen or the effect of location. <em>Examples: location of observation or study subject, distance to resource</em></li>
 </ul>
-<p>Translating these concepts, as they are appear in your research question, to the attributes of the data you will search will help you find useful datasets more efficiently.</p>
+<p>Translating these concepts, as they are appear in your research question, to the attributes of the data you will search will help you find useful datasets more efficiently. Below are some examples of mappings between research questions and data search terms.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Species richness after disturbance</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Forests vs.&nbsp;deserts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Latitudinal body size gradient</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <table class="caption-top table">
-<caption>Some examples of mappings between research questions and data search terms.</caption>
 <colgroup>
 <col style="width: 28%">
 <col style="width: 24%">
@@ -398,7 +401,25 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><strong>Temporal:</strong> time since disturbance</li>
 </ul></td>
 </tr>
-<tr class="even">
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 24%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Research question</th>
+<th>Conceptual mapping</th>
+<th>Data search criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
 <td>Are forests or deserts more sensitive to vapor pressure deficit?</td>
 <td>Is group 1 or group 2 more strongly related to variable X?</td>
 <td><ul>
@@ -408,6 +429,24 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><strong>Temporal:</strong> probably (processes vary over time)</li>
 </ul></td>
 </tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 24%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Research question</th>
+<th>Conceptual mapping</th>
+<th>Data search criteria</th>
+</tr>
+</thead>
+<tbody>
 <tr class="odd">
 <td>Is the latitudinal gradient in small mammal body size changing?</td>
 <td>Is the relationship between variable 1 and variable 2 changing?</td>
@@ -421,6 +460,9 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -431,18 +473,34 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Get into project groups and distill your research questions down to a conceptual mapping like the ones above.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">With your group (10 min)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Class discussion (5-10 min)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Get into project groups and distill your research questions down to a conceptual mapping like the ones above. Once you have a conceptual map, answer these questions in your group’s notes document:</p>
 <ol type="1">
-<li>What variables and observational units are of interest?</li>
-<li>Will you be comparing groups within the data?</li>
-<li>Temporal dimensions?</li>
-<li>Spatial dimensions?</li>
+<li>What observational units is the group asking questions about?</li>
+<li>What variables are of interest?</li>
+<li>Are there any distinct groups to compare?</li>
+<li>Is time or space important? If so, how?</li>
 </ol>
+<p><strong>After you answer these 4 questions, take a minute to talk as a group about a data search strategy.</strong></p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Lets spend a few minutes comparing notes on potential search strategies.</p>
+<ul>
+<li>Were there any unresolved questions or stumbling blocks?</li>
+<li>What search terms will the group use?</li>
+<li>Any thoughts on query structure or where to search?</li>
+</ul>
+</div>
 </div>
 </div>
 <p>Once you have an idea of your search terms, it is time to think about <strong>where to search for data</strong>.</p>
 
 
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
