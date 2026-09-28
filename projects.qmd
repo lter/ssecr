@@ -8,7 +8,7 @@ One of the primary facets of the course is that Synthesis Fellows assemble into 
 
 Team members and project mentors are listed in reverse alphabetical order by last name and their LTER site affiliation is indicated in parentheses. For more information on LTER sites, check out the [site profiles](https://lternet.edu/site/) section of the Network website.
 
-:::{.panel-tabset}
+::: panel-tabset
 ## 2026 Teams
 
 ### Ecological Efficacy of Climate Adaptation Actions
@@ -21,7 +21,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 ### Shifting Baselines at Global Change Experiments
 
-<u>Team Members</u>:Nyika Campbell, Emerson	Conrad-Rooney, Asher Marvy, Deni Murray, Kalea Nippert-Churchman
+<u>Team Members</u>:Nyika Campbell, Emerson Conrad-Rooney, Asher Marvy, Deni Murray, Kalea Nippert-Churchman
 
 <u>Science Mentor(s)</u>: [Dr. Pam Templer](https://people.bu.edu/ptempler/), Distinguished Professor, Boston University & [Dr. Emily Grman](https://www.emich.edu/biology/faculty/e-grman.php), Eastern Michigan University
 
@@ -31,6 +31,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: Mauricio Cely Toro, Damian Forck, Abby Hay, Ida Lie-Nielsen, Taylor Michael, Nathalie Triches
 
+<u>Science Mentor(s)</u>: [Dr. Syndonia (Donie) Bret-Harte](https://www.uaf.edu/bw/about/faculty.php?who=Bret-Harte_Syndonia) and [Dr. Eugénie Euskirchen](https://sites.google.com/a/alaska.edu/e-euskirchen/home/research-interests-and-current-projects) University of Alaska Fairbanks
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-boreal-phenology**](https://github.com/lter/ssecr-boreal-phenology)
 
@@ -38,7 +39,7 @@ Team members and project mentors are listed in reverse alphabetical order by las
 
 <u>Team Members</u>: Jared Collins, Yasas Gamagedara, Nicholas Medina, Katie Polik, Sa'ad Rafie, Sainfort Vital
 
-<u>Science Mentor(s)</u>: [Dr. Adam Wymore](https://ecosheds.weebly.com/), Associate Professor, University of New Hampshire
+<u>Science Mentor(s)</u>: [Dr. Adam Wymore](https://ecosheds.weebly.com/), Associate Professor, University of New Hampshire and [Dr. Amy Burgin](https://www.eeb.iastate.edu/people/amy-burgin), Iowa State University
 
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-time-lags**](https://github.com/lter/ssecr-time-lags)
 
@@ -93,15 +94,13 @@ Team members and project mentors are listed in reverse alphabetical order by las
 {{< fa brands github >}} <u>GitHub Repository</u>: [lter / **ssecr-driver-scales**](https://github.com/lter/ssecr-driver-scales)
 
 <u>Project Question(s)</u>: Are the effects of environmental drivers consistent across ecological scales?
-
 :::
 
 ## Project Milestones
 
+The below benchmarks are meant to provide a *rough* progress estimate of how your project "should" progress during the course. Your group may at times be ahead of these milestones or behind at others so **please use this resource as general guidance rather than specific timing requirements.**
 
-The below benchmarks are meant to provide a _rough_ progress estimate of how your project "should" progress during the course. Your group may at times be ahead of these milestones or behind at others so **please use this resource as general guidance rather than specific timing requirements.**
-
-:::{.panel-tabset}
+::: panel-tabset
 #### 2026 Milestones
 
 ### Month 1 (Aug.)
@@ -118,7 +117,7 @@ The below benchmarks are meant to provide a _rough_ progress estimate of how you
 ### Months 4-5 (Nov./Dec.)
 
 - Draft a plan for your analyses
-    - Sufficient detail that you can articulate what harmonized data might be needed
+  - Sufficient detail that you can articulate what harmonized data might be needed
 - Exploratory visualization ongoing
 - **Decided on post-SSECR plans/goals**
 
@@ -133,7 +132,7 @@ The below benchmarks are meant to provide a _rough_ progress estimate of how you
 ### Month 3 (Nov.)
 
 - Draft a plan for your analyses
-    - Looking for sufficient detail that you can articulate what harmonized data might be needed
+  - Looking for sufficient detail that you can articulate what harmonized data might be needed
 - Largely finished finding data
 - Exploratory visualization
 
@@ -142,11 +141,11 @@ The below benchmarks are meant to provide a _rough_ progress estimate of how you
 - Strong progress harmonizing your data
 - Internal project status check-in and team dynamics assessment
 
-### Month 5 (Jan.) 
+### Month 5 (Jan.)
 
 - Finish harmonizing data
 - Revize planned analyses
-    - Harmonizing the data will help inform what questions you want to (or are able to) ask
+  - Harmonizing the data will help inform what questions you want to (or are able to) ask
 
 ### Month 6 (Feb.)
 
@@ -159,12 +158,11 @@ The below benchmarks are meant to provide a _rough_ progress estimate of how you
 - Draft outline for the product that your team aims to create
 - Begin generating publication-quality figures
 - Prepare datasets for publication (if relevant)
-    - Consider FAIR and CARE data practices
+  - Consider FAIR and CARE data practices
 
 ### Month 8-9 (Apr./May)
 
 - Draft publishable dataset
 - Team product ready to report on (internally) to SSECR fellows & instructors
 - Intellectual credit contributions table completed
-
 :::
