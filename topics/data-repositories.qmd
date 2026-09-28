@@ -18,7 +18,7 @@ When you start a synthesis research project, you may already have some datasets 
 
 :::{style="float: right; width: 40%;  margin: 0.5em 0 1em 1.5em; text-align: left;"}
 
-![A **dataset** is one or more data files AND the metadata describing those data. It is a good idea to keep data and metadata together forever.](topics/images/a_dataset.png){fig-alt="A figure showing a folder with data and metadata files inside"}
+![A **dataset** is one or more data files AND the metadata describing those data. It is a good idea to keep data and metadata together forever.](topics/images/figure_a-dataset.png){fig-alt="A figure showing a folder with data and metadata files inside"}
 
 :::
 
