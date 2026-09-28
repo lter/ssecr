@@ -26,6 +26,8 @@ Revisit your group's primary research question and add that somewhere in your Gi
 
 {{< include topics/thinking-styles.qmd >}}
 
+{{< include topics/data-search-terms.qmd >}}
+
 {{< include topics/data-repositories.qmd >}}
 
 {{< include topics/data-searches.qmd >}}
