@@ -28,7 +28,7 @@ We're about describe a bunch of repositories, and then move on to strategies for
 - **what** was collected
 - **when**, **where**, **how** and **why** the data were collected.
 
-When you search in a repository or aggregator, _you are not searching the data themselves, you are searching the metadata._ The metadata contain essential information that let you understand the data, evaluate if they are fit for your research purpose, and use the data. So, the essential unit of data you should think about during synthesis research is the **dataset** --- data and metadata together. Keep the dataset concept in mind as you create your synthesis data products, and remember to collect metadata.
+When you search in a repository or aggregator, _you are not searching the data themselves, you are searching the metadata._ The metadata contain essential information that you need to understand the data, evaluate if they are fit for your research purpose, and use in your analysis. So, the essential unit of data to consider during synthesis research is the **dataset** --- data and metadata together. Keep the dataset concept, and the value of metadata, in mind as you search for data, and as you create your own synthesis data products.
 
 :::
 

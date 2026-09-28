@@ -29,24 +29,24 @@ Once you've done proper evaluation, you need to **refine the search**. How to do
 
 Dataset authors sometimes use heterogeneous terms for **observational units**, **variables**, **groups** and **temporal/spatial dimensions** when describing a dataset for publication. Repository curators do not always standardize these terms in the published metadata. So, if you didn't find what you were hoping to find in your search, you may have already narrowed your results by choosing overly-specific search terms. Try adding synonyms and closely-related terms, or expanding the search to broader concepts and terms. Here are a few suggestions on how to do that:
 
-- The scientific terms used to name variables, observational units and groups often have commonly used synonyms and acronyms that are worth adding these to the search, e.g.
+- The scientific terms used to name variables, observational units and groups often have commonly used synonyms and acronyms that are worth adding to the search, e.g.
     - "soil respiration" _and_ "soil CO~2~ efflux"
     - "net primary production" _and_ "NPP"
     - "grasses" _and_ "Poaceae"
-- Many search terms have closely-related concepts or variables that can be searched for, including variables derived or calculated from others.
+- Many search terms have closely-related concepts or near-equivalent variables that can be searched for.
     - "fertilization" _and_ "N addition"
     - "primary production" _and_ "carbon assimilation" _and_ "photosynthesis"
     - "percent cover" _and_ "community composition"
 - Searches can be made broader in a number of ways, including conceptually, taxonomically, temporally and spatially. Some suggestions:
     - Include metrics or indices derived from your variables of interest, such as "Simpson's diversity index" (derived from species abundance data) or "vapor pressure deficit" (derived from air temperature and humidity).
     - Search broader taxonomic groups (genus or family) or functional groups (herbivores, benthic macroinvertebrates), instead of only species binomials.
-    - Search terms for higher-level processes or phenomena can produce many related variables of interest. For example a "forest carbon cycle" search might produce "litterfall" results, and a "eutrophication" search might produce "dissolved oxygen" results.
+    - Searching for higher-level processes or phenomena can produce many related variables of interest. For example a "forest carbon cycle" search might produce "litterfall" results, and a "eutrophication" search might produce "dissolved oxygen" results.
     - Seach on region, state, or country names in addition to more localized site names. For instance, searching for the "North Atlantic Ocean" might produce useful results if "NES LTER" does not.
 
 
 ### Advanced queries
 
-Constructing a more advanced query can help you either expand or narrow your search. Usually this is done using search "operators". Virtually all search engines support operators to help users create more effective queries, and if you don't use operators, most systems just return any results with matching words. With operators you can combine, narrow or expand terms, and include or exclude matches with logical operations. This helps hone search results when you have very specific criteria for candidate datasets.
+Constructing a more advanced query can help you either expand or narrow your search. Usually this is done by adding terms and using search "operators," which virtually all search engines allow as part of an "advanced search" method. Without operators most systems just return any results with matching words, but with operators you can combine, narrow or expand terms, and include or exclude matches with logical operations. This helps hone search results when you have very specific criteria for candidate datasets.
 
 Below are some useful operators that you can use with many search tools.
 
@@ -130,7 +130,7 @@ As you proceed through the Search&rarr;Evaluate&rarr;Refine loop, remember that 
 - What repositories, aggregators, or other data sources you searched
 - Your search queries and the results for each round of searching
 - How you filtered the results after the search
-- Datasets you found found that were fit for use (this will become a "Data Inventory," as we'll discuss later).
+- Datasets you found that were fit for use (this will become a "Data Inventory," as we'll discuss later).
 - What data you didn't find
 
 ### Contingency plans

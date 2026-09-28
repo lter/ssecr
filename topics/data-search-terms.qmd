@@ -14,18 +14,22 @@ After completing this topic you will be able to:
 
 The answer to any research question is found in data. Many research questions are formulated with specific data in mind, but synthesis questions are often formulated with limited data in-hand and an intention to scale up the question to "all the available data." Therefore, synthesis projects usually begin with a process of data discovery --- finding datasets that can be used to answer the question.
 
-Finding the data you need for synthesis isn't always easy, but starting with a clear research question helps because you can map it to the criteria and search terms that you'll use. This is because research questions and datasets both have the same conceptual elements, which include:
+Data discovery isn't always easy, but starting with a clear research question helps because you can map it to the search criteria and terms that you'll use. This is because research questions and datasets both have the same conceptual elements, which include:
 
 - **Observational units:** a thing or phenomenon to be observed or measured. _Examples: an ecosystem process, a layer of soil, animals, part of a tree_
 - **Variables:** an attribute or characteristic of the observational units that can take different values, and which can be observed, measured, or estimated. _Examples: precipitation, gas flux, species abundance_
 
-When mapping these concepts to data, you can think of the observational units as being represented by rows in a data table, and variables being represented by the columns. Other elements that will appear in both a research question and the data are:
+When mapping these concepts to data, think of the observational units as being represented by rows in a data table, and variables as being represented by the columns. There are some other elements that usually appear in both a research question and the data.
 
 - **Groups**, which are observed or hypothesized subdivisions in the observational units and data. _Examples: treatments, taxonomic group, functional types_
-- **Temporal dimensions**, which are often necessary to understand when things happen or the effect of time. _Examples: time of observation, age of subject_
-- **Spatial dimensions**, which describe where things happen, or the effect of location. _Examples: location of observation or study subject, distance to resource_
+- **Temporal dimensions**, which are necessary to understand when things happen or the effect of time. _Examples: time of observation, age of subject_
+- **Spatial dimensions**, which describe where things happen or the effect of location. _Examples: location of observation or study subject, distance to resource_
 
-Translating these concepts, as they are appear in your research question, to the attributes of the data you will search will help you find useful datasets more efficiently.
+Translating these concepts, as they are appear in your research question, to the attributes of the data you will search will help you find useful datasets more efficiently. Below are some examples of mappings between research questions and data search terms.
+
+:::{.panel-tabset}
+
+### Species richness after disturbance
 
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 | Research question                  | Conceptual mapping            | Data search criteria                                      |
@@ -35,11 +39,23 @@ Translating these concepts, as they are appear in your research question, to the
 |                                    |                               | - **Groups:** maybe?                                      |
 |                                    |                               | - **Temporal:** time since disturbance                    |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
+
+### Forests vs. deserts
+
++------------------------------------+-------------------------------+-----------------------------------------------------------+
+| Research question                  | Conceptual mapping            | Data search criteria                                      |
++====================================+===============================+===========================================================+
 | Are forests or deserts more        | Is group 1 or group 2 more    | - **Variables:** VPD, NPP, evapotranspiration rate, etc.  | 
 | sensitive to vapor pressure        | strongly related to variable  | - **Obs. units:** site meteorology & ecosystem processes  |
 | deficit?                           | X?                            | - **Groups:** forest ecosystems, desert ecosystems        |
 |                                    |                               | - **Temporal:** probably (processes vary over time)       |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
+
+### Latitudinal body size gradient
+
++------------------------------------+-------------------------------+-----------------------------------------------------------+
+| Research question                  | Conceptual mapping            | Data search criteria                                      |
++====================================+===============================+===========================================================+
 | Is the latitudinal gradient in     | Is the relationship between   | - **Variables:** body length, mass, capture location      | 
 | small mammal body size changing?   | variable 1 and variable 2     | - **Obs. units:** individual small mammals                |
 |                                    | changing?                     | - **Groups:** species? functional group? year captured?   |
@@ -47,17 +63,32 @@ Translating these concepts, as they are appear in your research question, to the
 |                                    |                               | - **Spatial:** yes, need a latitude gradient              |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 
-: Some examples of mappings between research questions and data search terms.
+:::
+
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Map your research question to data search terms
 
-Get into project groups and distill your research questions down to a conceptual mapping like the ones above.
+:::{.panel-tabset}
 
-1. What variables and observational units are of interest?
-2. Will you be comparing groups within the data?
-3. Temporal dimensions?
-4. Spatial dimensions?
+### With your group (10 min)
+
+Get into project groups and distill your research questions down to a conceptual mapping like the ones above. Once you have a conceptual map, answer these questions in your group's notes document:
+
+1. What observational units is the group asking questions about?
+2. What variables are of interest?
+3. Are there any distinct groups to compare?
+4. Is time or space important? If so, how?
+
+**After you answer these 4 questions, take a minute to talk as a group about a data search strategy.**
+
+### Class discussion (5-10 min) 
+
+Lets spend a few minutes comparing notes on potential search strategies.
+
+- Were there any unresolved questions or stumbling blocks?
+- What search terms will the group use?
+- Any thoughts on query structure or where to search?
 
 :::
 
