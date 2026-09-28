@@ -91,5 +91,6 @@ Lets spend a few minutes comparing notes on potential search strategies.
 - Any thoughts on query structure or where to search?
 
 :::
+::::
 
 Once you have an idea of your search terms, it is time to think about **where to search for data**. 
