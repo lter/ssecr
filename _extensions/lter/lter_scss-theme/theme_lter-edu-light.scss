@@ -54,6 +54,11 @@ pre code:not(.sourceCode) { background-color: $gray-0; }
 .tab-content { background-color: #FFF; 
   color: $black; }
 
+// Improve contrast to callout backgrounds
+.callout-body { 
+  background-color: #FFF; 
+  color: $black; }
+
 // Highlight dropdown element as mouse goes over it
 .dropdown-menu{
   --bs-dropdown-link-hover-color: #f4f3ee;
