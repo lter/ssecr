@@ -27,21 +27,22 @@ Once you've done proper evaluation, you need to **refine the search**. How to do
 
 ### Expand search terms
 
-Dataset authors sometimes use heterogeneous terms for **observational units**, **variables**, **groups** and **temporal/spatial dimensions** when describing a dataset for publication. Repository curators do not always standardize these terms in the published metadata. So, if you didn't find what you were hoping to find in your search, you may have already narrowed your results by choosing overly-specific search terms. Try adding synonyms and closely-related terms, or expanding the search to broader concepts and terms. Here are a few suggestions on how to do that:
+Dataset authors sometimes use heterogeneous terms for **observational units**, **variables**, **groups** and **temporal/spatial dimensions** when describing a dataset for publication. Repository curators do not always standardize these terms in the published metadata. So, if your search didn't find what you were looking for you may have chosen overly-specific search terms. Remember that scientific language is full of synonyms, acronyms, and closely related terms, and adding these to a search may return more results. For example:
 
-- The scientific terms used to name variables, observational units and groups often have commonly used synonyms and acronyms that are worth adding to the search, e.g.
-    - "soil respiration" _and_ "soil CO~2~ efflux"
-    - "net primary production" _and_ "NPP"
-    - "grasses" _and_ "Poaceae"
-- Many search terms have closely-related concepts or near-equivalent variables that can be searched for.
-    - "fertilization" _and_ "N addition"
-    - "primary production" _and_ "carbon assimilation" _and_ "photosynthesis"
-    - "percent cover" _and_ "community composition"
-- Searches can be made broader in a number of ways, including conceptually, taxonomically, temporally and spatially. Some suggestions:
-    - Include metrics or indices derived from your variables of interest, such as "Simpson's diversity index" (derived from species abundance data) or "vapor pressure deficit" (derived from air temperature and humidity).
-    - Search broader taxonomic groups (genus or family) or functional groups (herbivores, benthic macroinvertebrates), instead of only species binomials.
-    - Searching for higher-level processes or phenomena can produce many related variables of interest. For example a "forest carbon cycle" search might produce "litterfall" results, and a "eutrophication" search might produce "dissolved oxygen" results.
-    - Seach on region, state, or country names in addition to more localized site names. For instance, searching for the "North Atlantic Ocean" might produce useful results if "NES LTER" does not.
+- "water" and "H~2~O" are the same thing
+- "grasses" and "Poaceae" refer to the same taxonomic group
+- "net primary production" is commonly called "NPP"
+- "Nitrogen addition" is a kind of "fertilization"
+- "soil CO~2~ efflux" is mostly equivalent to "soil respiration" 
+- "relative abundance" is one measure of "community composition"
+- "Simpson's diversity index" is derived from "species abundance" data
+- "vapor pressure deficit" is derived from "air temperature" and "humidity"
+
+You can also include broader, more inclusive terms in your search to capture a wider range of concepts, taxa, times or locations in the data. Here are a few suggestions how:
+
+- Search broader taxonomic groups (genus or family) or functional groups (herbivores, benthic macroinvertebrates), instead of only species binomials.
+- Searching for higher-level processes or phenomena can lead to specific variables of interest. For example a "forest carbon cycle" search might produce "litterfall" results, and a "eutrophication" search might produce "dissolved oxygen" results.
+- Search on region, state, or country names in addition to more localized site names. For instance, searching for "North Atlantic Ocean" might produce useful results if "NES LTER" does not.
 
 
 ### Advanced queries
@@ -54,28 +55,31 @@ Below are some useful operators that you can use with many search tools.
 
 Use quotation marks (`""`) to **search for an exact phrase**. This is particularly useful when you need specific data points or exact wording.
 
-Example: `"reef biodiversity"`
+- Example: `"reef biodiversity"` (will not match "grassland biodiversity")
 
 #### Wildcard
 
 Use an asterisk (`*`) to **search using a placeholder for any word or phrase in the query**. This is useful for finding variations of a term.
 
-Example: `Pinus * data`
+- Examples: `primary produc*` (matches "primary production", "primary producers", "primary productivity")
 
 #### Boolean operators (AND, OR, NOT)
 
-Boolean operators let you introduce logic into the search by combining and excluding search terms in different ways. The Boolean operators below can be combined in different ways go create complex queries.
+Boolean operators let you introduce logic into the search by combining and excluding search terms in different ways. The Boolean operators below can be combined in different ways go create complex queries. The 'or' operator (`OR`, `|`) means to **search for either one term *or* another**. It broadens your search to include multiple terms.
 
-- The 'or' operator (`OR`, `|`) means to **search for either one term *or* another**. It broadens your search to include multiple terms.
-    - Example: `"prairie pollinator" OR "grassland pollinator"`
-- The 'and' operator (`AND`, `&`, `+`) means to **search for one term *and* another at the same time**. It narrows the search and is useful when you need combinations of criteria to be met.
-    - Example: `bat + cactus`
-- The 'not' operator (`NOT`, `-`, `!`) means to **exclude certain terms from your search**. Useful to filter out irrelevant results.
-    - Example: `marine biodiversity data -fishery`
+- Example: `"prairie pollinator" OR "grassland pollinator"` (match datasets about either prarie or grassland pollinators)
+
+The 'and' operator (`AND`, `&`, `+`) means to **search for one term *and* another at the same time**. It narrows the search and is useful when you need combinations of criteria to be met.
+
+- Example: `bat + cactus` (match datasets about _both_ bats and cacti, not one or the other)
+
+The 'not' operator (`NOT`, `-`, `!`) means to **exclude certain terms from your search**. Useful to filter out irrelevant results.
+
+- Example: `marine biodiversity -fishery` (exclude datasets with the term "fishery")
 
 #### Search indexed metadata
 
-Most repository and aggregator search interfaces index specific metadata fields for search and expose them as operators that include those fields in search queries. Below are some examples from Google Dataset Search, but similar capabilities are available at other repositories and aggregators and should be available in the documentation.
+Most repository and aggregator search interfaces index specific metadata fields for search and expose them as operators that can be used in search queries. Below are some examples from Google Dataset Search, but similar capabilities are available at other repositories and aggregators.
 
 - **Site:** Use the site operator (`site:`) to **search within a specific website or domain**. This is helpful when you're looking for data from a particular source. _Example: `site:.gov bird data`_
 - **File Type:** Use the file type operator (`filetype:`) to **search for data with a specific file extension**. Useful to make sure the data you find is already in a format you can interact with. _Example: `filetype:tif precipitation data`_
@@ -98,7 +102,8 @@ Sometimes searching for data yields large numbers of datasets, even after going 
 
 1. Having the agent or model download and ingest every dataset can over-burden the repository and consume too many tokens. Instead, consider downloading metadata first for the model to iterate over and review. 
 2. Give the agent or model a clear plan to follow for each dataset.
-2. Save all prompts and model outputs to enable some reproducibility, and for disclosure purposes.
+3. Save all prompts and model outputs to enable some reproducibility, and for disclosure purposes.
+4. Be sure to validate the genAI's results by doing some spot checking (at a minumum).
 
 :::
 
@@ -106,24 +111,27 @@ Sometimes searching for data yields large numbers of datasets, even after going 
 
 Sometimes, even after several times around the Search&rarr;Evaluate&rarr;Refine loop, you may come up with very few search results. At this time you should consider:
 
-1. **Searching in more repositories.** You can refer to the lists of generalist, domain-specific, and specialized repositories mentioned above for ideas on new places to search. As you search more sources, consider putting your searches into a script for reproducibility. Many repositories and aggregators have search APIs and wrappers that you can use for this.
+1. **Searching in more repositories.** You can refer to the lists of generalist, domain-specific, and data specialist repositories mentioned above for ideas on new places to search. As you search more sources, consider putting your searches into a script for reproducibility. Many repositories and aggregators have search APIs and wrappers that you can use for this.
 2. **Reaching out to data managers and researchers for help.** When you think there is data to be found but that it may not be published in repositories yet, it may be worth reaching out to a data manager or individual researchers. Many research sites and networks have dedicated data managers that can help connect you with data, or the researchers collecting it. Check websites for contact information.
 
 
 :::{.callout-caution icon="false" collapse="false"}
 ### {{< fa robot >}} Generative AI Considerations
 
-**Generative AI models are skilled at understanding repository APIs and writing code to use them.** If a repository provides a search API, using genAI to write search scripts that make API requests to the repository can be a great way to speed up your searches and make them more reproducible. There are two important considerations before you do this:
+**Generative AI models are skilled at understanding repository APIs and writing code to use them.** If a repository provides a search API, using genAI to write search scripts that make API requests to the repository can be a great way to speed up your searches and make them more reproducible. There are some important considerations before you do this:
 
 1. Do you want to learn how to write API requests yourself?
-2. Will the GenAI code overburden the repository API by sending too many requests?
+2. Will the AI-generaged code overburden the repository API by sending too many requests?
 
-If the answer to these questions is "yes", don't take this shortcut without learning more and consulting with the repository first.
+If the answer to these questions is "yes", or "I don't know", don't take this shortcut without learning more, and consult with the repository first to learn how to make "polite" API requests (such as adding pauses between requests).
+
+And **remember that validation is critical anytime you delegate to genAI.** Make sure an AI-generated search query is surfacing data you know exists before you trust it with your search tasks.
 
 :::
 
 :::
 
+### Reproducible searching
 
 As you proceed through the Search&rarr;Evaluate&rarr;Refine loop, remember that **reproducible science practices apply to search too!** You should document your search process, just as you would document group decisions, analytical procedures, and other activities. For data search, be sure to keep track of:
 
@@ -137,11 +145,11 @@ As you proceed through the Search&rarr;Evaluate&rarr;Refine loop, remember that 
 
 Sometimes, despite all the best efforts that a synthesis group makes, there isn't much data to be found. This isn't necessarily the end of the story for your synthesis question or project. A lack of data could mean that you have a truly novel research question, or that you have uncovered a "gap" in how the research community approaches certain topics. In such cases, the focus of the synthesis project can shift slightly away from finding, harmonizing and analyzing data and towards things like:
 
-- Writing a perspective piece highlighting the percieved gap in the research data
+- Writing a perspective piece highlighting the perceived gap in the research data
 - Proposing a new research network or program to answer a novel research question
 
 
-### Slides
+## Slides
 <iframe
   src="https://jornada-im.github.io/jeds/docs/slides/finding-data-slides.html"
   width="100%"
