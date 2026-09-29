@@ -326,9 +326,10 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#the-search-evaluate-and-refine-loop" id="toc-the-search-evaluate-and-refine-loop" class="nav-link active" data-scroll-target="#the-search-evaluate-and-refine-loop">The Search, Evaluate, and Refine Loop</a>
   <ul class="collapse">
+  <li><a href="#reproducible-searching" id="toc-reproducible-searching" class="nav-link" data-scroll-target="#reproducible-searching">Reproducible searching</a></li>
   <li><a href="#contingency-plans" id="toc-contingency-plans" class="nav-link" data-scroll-target="#contingency-plans">Contingency plans</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -377,27 +378,22 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Expand search terms</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Advanced queries</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Winnow huge results</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Search in new places</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Dataset authors sometimes use heterogeneous terms for <strong>observational units</strong>, <strong>variables</strong>, <strong>groups</strong> and <strong>temporal/spatial dimensions</strong> when describing a dataset for publication. Repository curators do not always standardize these terms in the published metadata. So, if you didn’t find what you were hoping to find in your search, you may have already narrowed your results by choosing overly-specific search terms. Try adding synonyms and closely-related terms, or expanding the search to broader concepts and terms. Here are a few suggestions on how to do that:</p>
+<p>Dataset authors sometimes use heterogeneous terms for <strong>observational units</strong>, <strong>variables</strong>, <strong>groups</strong> and <strong>temporal/spatial dimensions</strong> when describing a dataset for publication. Repository curators do not always standardize these terms in the published metadata. So, if your search didn’t find what you were looking for you may have chosen overly-specific search terms. Remember that scientific language is full of synonyms, acronyms, and closely related terms, and adding these to a search may return more results. For example:</p>
 <ul>
-<li>The scientific terms used to name variables, observational units and groups often have commonly used synonyms and acronyms that are worth adding to the search, e.g.
+<li>“water” and “H<sub>2</sub>O” are the same thing</li>
+<li>“grasses” and “Poaceae” refer to the same taxonomic group</li>
+<li>“net primary production” is commonly called “NPP”</li>
+<li>“Nitrogen addition” is a kind of “fertilization”</li>
+<li>“soil CO<sub>2</sub> efflux” is mostly equivalent to “soil respiration”</li>
+<li>“relative abundance” is one measure of “community composition”</li>
+<li>“Simpson’s diversity index” is derived from “species abundance” data</li>
+<li>“vapor pressure deficit” is derived from “air temperature” and “humidity”</li>
+</ul>
+<p>You can also include broader, more inclusive terms in your search to capture a wider range of concepts, taxa, times or locations in the data. Here are a few suggestions how:</p>
 <ul>
-<li>“soil respiration” <em>and</em> “soil CO<sub>2</sub> efflux”</li>
-<li>“net primary production” <em>and</em> “NPP”</li>
-<li>“grasses” <em>and</em> “Poaceae”</li>
-</ul></li>
-<li>Many search terms have closely-related concepts or near-equivalent variables that can be searched for.
-<ul>
-<li>“fertilization” <em>and</em> “N addition”</li>
-<li>“primary production” <em>and</em> “carbon assimilation” <em>and</em> “photosynthesis”</li>
-<li>“percent cover” <em>and</em> “community composition”</li>
-</ul></li>
-<li>Searches can be made broader in a number of ways, including conceptually, taxonomically, temporally and spatially. Some suggestions:
-<ul>
-<li>Include metrics or indices derived from your variables of interest, such as “Simpson’s diversity index” (derived from species abundance data) or “vapor pressure deficit” (derived from air temperature and humidity).</li>
 <li>Search broader taxonomic groups (genus or family) or functional groups (herbivores, benthic macroinvertebrates), instead of only species binomials.</li>
-<li>Searching for higher-level processes or phenomena can produce many related variables of interest. For example a “forest carbon cycle” search might produce “litterfall” results, and a “eutrophication” search might produce “dissolved oxygen” results.</li>
-<li>Seach on region, state, or country names in addition to more localized site names. For instance, searching for the “North Atlantic Ocean” might produce useful results if “NES LTER” does not.</li>
-</ul></li>
+<li>Searching for higher-level processes or phenomena can lead to specific variables of interest. For example a “forest carbon cycle” search might produce “litterfall” results, and a “eutrophication” search might produce “dissolved oxygen” results.</li>
+<li>Search on region, state, or country names in addition to more localized site names. For instance, searching for “North Atlantic Ocean” might produce useful results if “NES LTER” does not.</li>
 </ul>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
@@ -406,34 +402,35 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <section id="quotes" class="level4">
 <h4 class="anchored" data-anchor-id="quotes">Quotes</h4>
 <p>Use quotation marks (<code>""</code>) to <strong>search for an exact phrase</strong>. This is particularly useful when you need specific data points or exact wording.</p>
-<p>Example: <code>"reef biodiversity"</code></p>
+<ul>
+<li>Example: <code>"reef biodiversity"</code> (will not match “grassland biodiversity”)</li>
+</ul>
 </section>
 <section id="wildcard" class="level4">
 <h4 class="anchored" data-anchor-id="wildcard">Wildcard</h4>
 <p>Use an asterisk (<code>*</code>) to <strong>search using a placeholder for any word or phrase in the query</strong>. This is useful for finding variations of a term.</p>
-<p>Example: <code>Pinus * data</code></p>
+<ul>
+<li>Examples: <code>primary produc*</code> (matches “primary production”, “primary producers”, “primary productivity”)</li>
+</ul>
 </section>
 <section id="boolean-operators-and-or-not" class="level4">
 <h4 class="anchored" data-anchor-id="boolean-operators-and-or-not">Boolean operators (AND, OR, NOT)</h4>
-<p>Boolean operators let you introduce logic into the search by combining and excluding search terms in different ways. The Boolean operators below can be combined in different ways go create complex queries.</p>
+<p>Boolean operators let you introduce logic into the search by combining and excluding search terms in different ways. The Boolean operators below can be combined in different ways go create complex queries. The ‘or’ operator (<code>OR</code>, <code>|</code>) means to <strong>search for either one term <em>or</em> another</strong>. It broadens your search to include multiple terms.</p>
 <ul>
-<li>The ‘or’ operator (<code>OR</code>, <code>|</code>) means to <strong>search for either one term <em>or</em> another</strong>. It broadens your search to include multiple terms.
+<li>Example: <code>"prairie pollinator" OR "grassland pollinator"</code> (match datasets about either prarie or grassland pollinators)</li>
+</ul>
+<p>The ‘and’ operator (<code>AND</code>, <code>&amp;</code>, <code>+</code>) means to <strong>search for one term <em>and</em> another at the same time</strong>. It narrows the search and is useful when you need combinations of criteria to be met.</p>
 <ul>
-<li>Example: <code>"prairie pollinator" OR "grassland pollinator"</code></li>
-</ul></li>
-<li>The ‘and’ operator (<code>AND</code>, <code>&amp;</code>, <code>+</code>) means to <strong>search for one term <em>and</em> another at the same time</strong>. It narrows the search and is useful when you need combinations of criteria to be met.
+<li>Example: <code>bat + cactus</code> (match datasets about <em>both</em> bats and cacti, not one or the other)</li>
+</ul>
+<p>The ‘not’ operator (<code>NOT</code>, <code>-</code>, <code>!</code>) means to <strong>exclude certain terms from your search</strong>. Useful to filter out irrelevant results.</p>
 <ul>
-<li>Example: <code>bat + cactus</code></li>
-</ul></li>
-<li>The ‘not’ operator (<code>NOT</code>, <code>-</code>, <code>!</code>) means to <strong>exclude certain terms from your search</strong>. Useful to filter out irrelevant results.
-<ul>
-<li>Example: <code>marine biodiversity data -fishery</code></li>
-</ul></li>
+<li>Example: <code>marine biodiversity -fishery</code> (exclude datasets with the term “fishery”)</li>
 </ul>
 </section>
 <section id="search-indexed-metadata" class="level4">
 <h4 class="anchored" data-anchor-id="search-indexed-metadata">Search indexed metadata</h4>
-<p>Most repository and aggregator search interfaces index specific metadata fields for search and expose them as operators that include those fields in search queries. Below are some examples from Google Dataset Search, but similar capabilities are available at other repositories and aggregators and should be available in the documentation.</p>
+<p>Most repository and aggregator search interfaces index specific metadata fields for search and expose them as operators that can be used in search queries. Below are some examples from Google Dataset Search, but similar capabilities are available at other repositories and aggregators.</p>
 <ul>
 <li><strong>Site:</strong> Use the site operator (<code>site:</code>) to <strong>search within a specific website or domain</strong>. This is helpful when you’re looking for data from a particular source. <em>Example: <code>site:.gov bird data</code></em></li>
 <li><strong>File Type:</strong> Use the file type operator (<code>filetype:</code>) to <strong>search for data with a specific file extension</strong>. Useful to make sure the data you find is already in a format you can interact with. <em>Example: <code>filetype:tif precipitation data</code></em></li>
@@ -466,6 +463,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li>Having the agent or model download and ingest every dataset can over-burden the repository and consume too many tokens. Instead, consider downloading metadata first for the model to iterate over and review.</li>
 <li>Give the agent or model a clear plan to follow for each dataset.</li>
 <li>Save all prompts and model outputs to enable some reproducibility, and for disclosure purposes.</li>
+<li>Be sure to validate the genAI’s results by doing some spot checking (at a minumum).</li>
 </ol>
 </div>
 </div>
@@ -474,7 +472,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>Sometimes, even after several times around the Search→Evaluate→Refine loop, you may come up with very few search results. At this time you should consider:</p>
 <ol type="1">
-<li><strong>Searching in more repositories.</strong> You can refer to the lists of generalist, domain-specific, and specialized repositories mentioned above for ideas on new places to search. As you search more sources, consider putting your searches into a script for reproducibility. Many repositories and aggregators have search APIs and wrappers that you can use for this.</li>
+<li><strong>Searching in more repositories.</strong> You can refer to the lists of generalist, domain-specific, and data specialist repositories mentioned above for ideas on new places to search. As you search more sources, consider putting your searches into a script for reproducibility. Many repositories and aggregators have search APIs and wrappers that you can use for this.</li>
 <li><strong>Reaching out to data managers and researchers for help.</strong> When you think there is data to be found but that it may not be published in repositories yet, it may be worth reaching out to a data manager or individual researchers. Many research sites and networks have dedicated data managers that can help connect you with data, or the researchers collecting it. Check websites for contact information.</li>
 </ol>
 <div class="callout callout-style-default callout-caution no-icon callout-titled">
@@ -489,18 +487,21 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p><strong>Generative AI models are skilled at understanding repository APIs and writing code to use them.</strong> If a repository provides a search API, using genAI to write search scripts that make API requests to the repository can be a great way to speed up your searches and make them more reproducible. There are two important considerations before you do this:</p>
+<p><strong>Generative AI models are skilled at understanding repository APIs and writing code to use them.</strong> If a repository provides a search API, using genAI to write search scripts that make API requests to the repository can be a great way to speed up your searches and make them more reproducible. There are some important considerations before you do this:</p>
 <ol type="1">
 <li>Do you want to learn how to write API requests yourself?</li>
-<li>Will the GenAI code overburden the repository API by sending too many requests?</li>
+<li>Will the AI-generaged code overburden the repository API by sending too many requests?</li>
 </ol>
-<p>If the answer to these questions is “yes”, don’t take this shortcut without learning more and consulting with the repository first.</p>
+<p>If the answer to these questions is “yes”, or “I don’t know”, don’t take this shortcut without learning more, and consult with the repository first to learn how to make “polite” API requests (such as adding pauses between requests).</p>
+<p>And <strong>remember that validation is critical anytime you delegate to genAI.</strong> Make sure an AI-generated search query is surfacing data you know exists before you trust it with your search tasks.</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
+<section id="reproducible-searching" class="level3">
+<h3 class="anchored" data-anchor-id="reproducible-searching">Reproducible searching</h3>
 <p>As you proceed through the Search→Evaluate→Refine loop, remember that <strong>reproducible science practices apply to search too!</strong> You should document your search process, just as you would document group decisions, analytical procedures, and other activities. For data search, be sure to keep track of:</p>
 <ul>
 <li>What repositories, aggregators, or other data sources you searched</li>
@@ -509,16 +510,18 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li>Datasets you found that were fit for use (this will become a “Data Inventory,” as we’ll discuss later).</li>
 <li>What data you didn’t find</li>
 </ul>
+</section>
 <section id="contingency-plans" class="level3">
 <h3 class="anchored" data-anchor-id="contingency-plans">Contingency plans</h3>
 <p>Sometimes, despite all the best efforts that a synthesis group makes, there isn’t much data to be found. This isn’t necessarily the end of the story for your synthesis question or project. A lack of data could mean that you have a truly novel research question, or that you have uncovered a “gap” in how the research community approaches certain topics. In such cases, the focus of the synthesis project can shift slightly away from finding, harmonizing and analyzing data and towards things like:</p>
 <ul>
-<li>Writing a perspective piece highlighting the percieved gap in the research data</li>
+<li>Writing a perspective piece highlighting the perceived gap in the research data</li>
 <li>Proposing a new research network or program to answer a novel research question</li>
 </ul>
 </section>
-<section id="slides" class="level3">
-<h3 class="anchored" data-anchor-id="slides">Slides</h3>
+</section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <iframe src="https://jornada-im.github.io/jeds/docs/slides/finding-data-slides.html" width="100%" height="500" frameborder="0" allowfullscreen="">
 </iframe>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
@@ -536,7 +539,6 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

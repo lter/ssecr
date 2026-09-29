@@ -327,6 +327,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#data-repositories" id="toc-data-repositories" class="nav-link active" data-scroll-target="#data-repositories">Data Repositories</a>
   <ul class="collapse">
   <li><a href="#searching-across-repositories" id="toc-searching-across-repositories" class="nav-link" data-scroll-target="#searching-across-repositories">Searching <em>across</em> repositories</a></li>
+  <li><a href="#more-resources" id="toc-more-resources" class="nav-link" data-scroll-target="#more-resources">More resources</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -387,19 +388,20 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li><strong>what</strong> was collected</li>
 <li><strong>when</strong>, <strong>where</strong>, <strong>how</strong> and <strong>why</strong> the data were collected.</li>
 </ul>
-<p>When you search in a repository or aggregator, <em>you are not searching the data themselves, you are searching the metadata.</em> The metadata contain essential information that you need to understand the data, evaluate if they are fit for your research purpose, and use in your analysis. So, the essential unit of data to consider during synthesis research is the <strong>dataset</strong> — data and metadata together. Keep the dataset concept, and the value of metadata, in mind as you search for data, and as you create your own synthesis data products.</p>
+<p>When you search in a repository or aggregator, <em>you are not searching the data themselves, you are searching the metadata.</em> The metadata contain essential information that you need to understand the data, evaluate if they are fit for your research purpose, and use in your analysis. So, research data should always be accompanied by descriptive metadata, a combination we refer to as a <strong>dataset</strong>. Keep the dataset concept, and the value of metadata, in mind as you search for data, and as you create your own synthesis data products.</p>
 </div>
 </div>
-<p>We can categorize repositories a few different ways. <strong>Generalist repositories</strong> hold all kinds of data from all sorts of research. They tend to have fairly lax requirements for metadata and data quality, so you may have to sift through your search results carefully to determine if a dataset is fit for use. <strong>Domain-specific repositories</strong> specialize in data from a particular domain, such as a scientific discipline (e.g.&nbsp;environmental science or biomedical research), location (e.g.&nbsp;Arctic data), or research network (e.g.&nbsp;NEON). They tend to have higher metadata standards for the data they accept into the repository. Some repositories are also <strong>data-specific</strong>, meaning they specialize in a limited number of data types and may have strict requirements for metadata and data formatting. These differences in repository specialization can have big impacts on how much time you spend finding useful data and getting it ready to analyze.</p>
+<p>We can categorize repositories a few different ways, though keep in mind that these categories are more of a spectrum. <strong>Generalist repositories</strong> hold all kinds of data from all sorts of research. They tend to have fairly lax requirements for metadata and data quality, so you may have to sift through your search results carefully to determine if a dataset is fit for use. <strong>Domain-specific repositories</strong> specialize in data from a particular domain, such as a scientific discipline (e.g.&nbsp;environmental science or biomedical research), region (e.g.&nbsp;Arctic data), or research community (e.g.&nbsp;USGS). They tend to have higher metadata standards for the data they accept into the repository. <strong>Data specialist</strong> repositories specialize in publishing a limited number of data types. They may only accept data from specific sources or research networks (e.g.&nbsp;NEON) and usually have strict requirements for metadata and data formatting. These differences in repository specialization can have big impacts on how much time you spend finding useful data and getting it ready to analyze.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="topics/images/figure_data-repos-conceptual.png" class="img-fluid figure-img" style="width:70.0%" alt="A figure showing the research data repositories as circles along a spectrum of specialization and FAIR-ness"></p>
 <figcaption>There is a gradient in repository specialization (domain, metadata/data standards) and how Findable, Accessible, Interoperable, and Reusable (FAIR) the data are. Adapted from Gries et al.&nbsp;2023</figcaption>
 </figure>
 </div>
-<p>Below we present three non-exhaustive lists of repositories that have proven useful to other synthesis projects in the past. They are broken into categories as above, and are in alphabetical order. If the “<i class="fa-brands fa-r-project" aria-label="r-project"></i> Package” column contains the GitHub logo (<i class="fa-brands fa-github" aria-label="github"></i>) then the package is available on GitHub but is not available on CRAN (or not available at time of writing).</p>
+<p>At most repositories you can search and access data through a graphical interface on the website, or by writing calls to an underlying “application programming interface”, or <strong>API</strong>. You may need to read the repository’s documentation to understand and use the API directly, but often repositories provide “wrappers” for the API written in your favorite programming language that make it easier. Something you’ll notice as you interact with repositories in 2026 is that many require you to create an account and login to access data. Although it may seem antithethetical to open science policies, authentication requirements are becoming the norm as repositories protect their systems and data from malicious actors and “bot” traffic (often AI-driven) on the internet. For now, be prepared to make an account to access data, and later in the course we will provide some guidance on low-friction ways to securely<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> authenticate with your repository credentials when you use scripts and API calls.</p>
+<p>Below we present three non-exhaustive lists of ecology and environmental data repositories that have proven useful to other synthesis projects in the past. They are broken into categories as above, and listed in alphabetical order. The “<i class="fa-brands fa-r-project" aria-label="r-project"></i> Package” column links to packages that can be used to find and access data from the repository in an R script (these are API wrappers, essentially). If it contains the GitHub logo (<i class="fa-brands fa-github" aria-label="github"></i>) then the package is available on GitHub but not on CRAN (or not available at time of writing). The “In DataONE” column indicates whether the repository’s holdings are indexed in <a href="https://search.dataone.org">DataONE</a>, which is a search aggregator, as explained below.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Domain-specific repositories</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Specialized repositories</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Generalist repositories</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Domain-specific repositories</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Data specialist repositories</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Generalist repositories</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div id="tbl-domain-repos" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -414,6 +416,7 @@ Table&nbsp;1: Domain-specific repositories accepting a broad range of data. Thes
 <th style="text-align: center;"><strong>Name</strong></th>
 <th style="text-align: left;"><strong>Description</strong></th>
 <th style="text-align: center;"><i class="fa-brands fa-r-project" aria-label="r-project"></i> <strong>Package</strong></th>
+<th style="text-align: center;"><strong>In DataONE</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -421,41 +424,49 @@ Table&nbsp;1: Domain-specific repositories accepting a broad range of data. Thes
 <td style="text-align: center;"><a href="https://arcticdata.io/">Arctic Data Center</a></td>
 <td style="text-align: left;">The primary NSF-funded repository for Arctic research data, accepting observational, experimental, and modeling data from multiple disciplines. Uses EML metadata and operates as a DataONE member node.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/dataone/index.html"><code>dataone</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://www.bco-dmo.org/">BCO-DMO</a></td>
 <td style="text-align: left;">The Biological and Chemical Oceanography Data Management Office serves NSF-funded ocean science projects, curating biological, chemical, and physical oceanographic data from research cruises, moorings, and laboratory experiments. Marine and coastal LTER sites often publish data here.</td>
 <td style="text-align: center;">–</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://edirepository.org/">EDI</a></td>
 <td style="text-align: left;">Contains a wide range of ecological and environmental datasets, including long-term observational data, experimental results, and field studies from diverse ecosystems. Specializes in detailed metadata (as EML) and is one of the primary repositories for LTER data.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/EDIutils/index.html"><code>EDIutils</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://ess-dive.lbl.gov/">ESS-DIVE</a></td>
 <td style="text-align: left;">The Environmental System Science Data Infrastructure for a Virtual Ecosystem (ESS-DIVE) includes a variety of observational, experimental, modeling and other data products from a wide range of ecological and urban systems. Used by many Department of Energy funded science programs.</td>
 <td style="text-align: center;">–</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://data.nasa.gov/">NASA</a></td>
 <td style="text-align: left;">Provides data on earth science, space exploration, and climate, including satellite imagery and observational data for both terrestrial and extraterrestrial studies. Nice GUI-based data download via <a href="https://appeears.earthdatacloud.nasa.gov/">AppEEARS</a>.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/nasadata/index.html"><code>nasadata</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://daac.ornl.gov/">ORNL DAAC</a></td>
 <td style="text-align: left;">One of NASA’s Distributed Active Archive Centers (DAACs), based at Oak Ridge National Lab. Specializing in terrestrial ecology and biogeochemical dynamics and including field campaign, remote sensing, and model archive data with detailed user guides for each product.</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">–</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://pangaea.de/">PANGAEA</a></td>
 <td style="text-align: left;">A curated repository based in Europe for a wide range of Earth and environmental science data. Frequently used to deposit data as supplements to journal articles.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/pangaear/index.html"><code>pangaear</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://www.usgs.gov/products/data/all-data">USGS</a></td>
 <td style="text-align: left;">Hosts data on geology, hydrology, biology, and geography, including topographical maps and natural resource assessments.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/dataRetrieval/index.html"><code>dataRetrieval</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 </tbody>
 </table>
@@ -476,6 +487,7 @@ Table&nbsp;2: Highly specialized repositories that require standardized sampling
 <th style="text-align: center;"><strong>Name</strong></th>
 <th style="text-align: left;"><strong>Description</strong></th>
 <th style="text-align: center;"><i class="fa-brands fa-r-project" aria-label="r-project"></i> <strong>Package</strong></th>
+<th style="text-align: center;"><strong>In DataONE</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -483,66 +495,79 @@ Table&nbsp;2: Highly specialized repositories that require standardized sampling
 <td style="text-align: center;"><a href="https://ameriflux.lbl.gov/data/data-policy/">AmeriFlux</a></td>
 <td style="text-align: left;">Provides data on carbon, water, and energy fluxes in ecosystems across the Americas, aiding in climate change and carbon cycle research.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/amerifluxr/index.html"><code>amerifluxr</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://fluxnet.org/">FLUXNET</a></td>
 <td style="text-align: left;">A global network aggregating and reprocessing eddy covariance data from regional networks including AmeriFlux and ICOS. Data pass through a uniform gap-filling and partitioning pipeline (e.g., the FLUXNET2015 release), producing directly comparable carbon, water, and energy flux products across sites.</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">–</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://www.gbif.org/">GBIF</a></td>
 <td style="text-align: left;">The Global Biodiversity Information Facility (GBIF) aggregates global species occurrence data and biodiversity records, supporting research in species distribution and conservation.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rgbif/index.html"><code>rgbif</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://earthengine.google.com/">Google Earth Engine</a></td>
 <td style="text-align: left;">Google Earth Engine is a cloud-based geospatial analysis platform that provides access to vast amounts of satellite imagery and environmental data for monitoring and understanding changes in the Earth’s surface.</td>
 <td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/r-spatial/rgee"><code>rgee</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://www.icos-cp.eu/">ICOS</a></td>
 <td style="text-align: left;">The Integrated Carbon Observation System provides standardized greenhouse gas and flux measurements from European atmospheric, ecosystem, and ocean stations. Sampling protocols, instrumentation, and processing are harmonized across the network, and data are released under a common licence with DOIs.</td>
+<td style="text-align: center;">–</td>
 <td style="text-align: center;">–</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://planetarycomputer.microsoft.com/">Microsoft Planetary Computer</a></td>
 <td style="text-align: left;">The Microsoft Planetary Computer is a cloud-based platform that combines global environmental datasets with advanced analytical tools to support sustainability and ecological research.</td>
 <td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/brazil-data-cube/rstac"><code>rstac</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://www.movebank.org">Movebank</a></td>
 <td style="text-align: left;">A free, online database of animal tracking data hosted by the Max Planck Institute of Animal Behavior. Billions of observations contributed by a worldwide community of researchers.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/move2/index.html"><code>move2</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></td>
 <td style="text-align: left;">Hosts genomic and biological data, including DNA, RNA, and protein sequences, supporting genomics and molecular biology research.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rentrez/index.html"><code>rentrez</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://data.neonscience.org/">NEON</a></td>
 <td style="text-align: left;">Provides standardized ecological data from a network of intensively monitored U.S. field sites, covering biodiversity, ecosystems, and environmental changes, supporting large-scale ecological research.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/neonUtilities/index.html"><code>neonUtilities</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://data.noaa.gov/onestop/">NOAA</a></td>
 <td style="text-align: left;">Offers meteorological, oceanographic, and climate data, essential for understanding atmospheric conditions, marine environments, and long-term climate trends.</td>
 <td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/NOAA-Big-Data-Program/EpiNOAA-R"><code>EpiNOAA-R</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://portal.tern.org.au">TERN</a></td>
 <td style="text-align: left;">Data portal for Australia’s Terrestrial Ecosystem Research Network, providing ecological data from field sites across Earth’s smallest continient. Somewhat similar to NEON in the U.S.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/ausplotsR/index.html">ausplotsR</a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://obis.org/">OBIS</a></td>
 <td style="text-align: left;">The Ocean Biodiversity Information System is a global clearing-house for marine biodiversity data, holding over 100 million occurrence records plus associated measurements and facts. Contributions are standardized to Darwin Core and validated before publication.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/robis/index.html"><code>robis</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://opentopography.org/">OpenTopography</a></td>
 <td style="text-align: left;">Provides high-resolution topographic data, including lidar point clouds, derived rasters, and global elevation products, with on-demand processing tools for generating DEMs and derivative products.</td>
 <td style="text-align: center;">–</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 </tbody>
 </table>
@@ -552,34 +577,39 @@ Table&nbsp;2: Highly specialized repositories that require standardized sampling
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <table class="caption-top table">
-<caption>Generalist repositories accepting a broad range of data types with minimal metadata requirements. Be aware that it can be difficult to separate the “wheat from the chaff.”</caption>
+<caption>Generalist repositories accepting a broad range of data types with minimal metadata requirements. Be aware that it can be difficult to separate the “wheat from the chaff.” R packages marked with an asterisk (*) are being deprecated soon.</caption>
 <thead>
 <tr class="header">
 <th style="text-align: center;"><strong>Name</strong></th>
 <th style="text-align: left;"><strong>Description</strong></th>
 <th style="text-align: center;"><i class="fa-brands fa-r-project" aria-label="r-project"></i> <strong>Package</strong></th>
+<th style="text-align: center;"><strong>In DataONE</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://datadryad.org/">Dryad</a></td>
 <td style="text-align: left;">A curated, nonprofit repository for data underlying scientific publications, with a focus on biosciences. Accepts any file format, applies CC0 to all submissions, and assigns DOIs. Widely used to satisfy journal data-availability requirements.</td>
-<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rdryad/index.html"><code>rdryad</code></a></td>
+<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rdryad/index.html"><code>rdryad</code></a>*</td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://figshare.com/">Figshare</a></td>
 <td style="text-align: left;">A general-purpose repository for figures, datasets, posters, preprints, and other research outputs. Minimal metadata requirements, DOIs on deposit, and a generous file-size allowance make it a quick option for supplementary materials.</td>
-<td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/rfigshare/index.html"><code>rfigshare</code></a></td>
+<td style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/ropenscilabs/deposits"><code>deposits</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><a href="https://dataverse.harvard.edu/">Harvard Dataverse</a></td>
 <td style="text-align: left;">An open repository hosting datasets across all disciplines, organized into individual “dataverses” that let projects or institutions manage their own collections. Supports versioning, DOIs, and a structured citation metadata block.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/dataverse/index.html"><code>dataverse</code></a></td>
+<td style="text-align: center;"><p><i class="fa-solid fa-check" aria-label="check"></i></p></td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><a href="https://zenodo.org/">Zenodo</a></td>
 <td style="text-align: left;">A general-purpose repository operated by CERN, accepting any file type or discipline. Integrates directly with GitHub to archive software releases and mint DOIs, with a concept DOI that always resolves to the latest version.</td>
 <td style="text-align: center;"><a href="https://cran.r-project.org/web/packages/zen4R/index.html"><code>zen4R</code></a></td>
+<td style="text-align: center;">–</td>
 </tr>
 </tbody>
 </table>
@@ -588,7 +618,7 @@ Table&nbsp;2: Highly specialized repositories that require standardized sampling
 </div>
 <section id="searching-across-repositories" class="level3">
 <h3 class="anchored" data-anchor-id="searching-across-repositories">Searching <em>across</em> repositories</h3>
-<p>If you don’t find everything you’re looking for in a particular data repository, you might want to consider a broader search across many repositories. There are a few data search aggregators out there that are quite useful for this. These services collect or index metadata from many repositories and allow you to search them in one interface. They do not always provide the data directly, instead linking out to the source repository.</p>
+<p>If you don’t find everything you’re looking for in a particular data repository, you might want to consider a broader search across many repositories. There are a few data search aggregators out there that are quite useful for this. These services collect or index metadata from many repositories and allow you to search them in one interface. They do not always provide the data directly, instead linking out to the source repository. <strong>Be careful to screen out duplicate results if you search directly in repositories and then in aggregators where those repositories are listed.</strong></p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -620,12 +650,24 @@ Table&nbsp;2: Highly specialized repositories that require standardized sampling
 </tr>
 </tbody>
 </table>
+</section>
+<section id="more-resources" class="level3">
+<h3 class="anchored" data-anchor-id="more-resources">More resources</h3>
+<ul>
+<li>The executive branch agencies of the U.S. federal government collect lots of data. They are distributed across many repositories, which makes it a little difficult to know where to look. The <a href="https://www.federaldatafieldguide.us">Federal Data Field Guide</a> explains the federal data landscape, and the <a href="https://catalog.data.gov/">Data.gov catalog</a> provides a fairly comprehensive listing of published federal datasets.</li>
+</ul>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>One quick reminder here is that if you are accessing APIs with a script, <strong>never paste your private credentials into something you will push to GitHub!</strong> We’ll return to this later.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
