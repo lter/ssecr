@@ -1,13 +1,15 @@
 ---
 title: "Data Visualization & Effective Meetings"
+bibliography: 
+    - topics/references/viz-meet_refs.bib
 ---
 
-As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. Similarly, we'll provide you some tools and best practices for making sure that your meetings are impactful, necessary, and accessible to all participants so that meeting with the group doesn't cost you any momentum!
+Today, we'll provide you some tools and best practices for making sure that your meetings are impactful, necessary, and accessible to all participants so that meeting with the group doesn't cost you any momentum! We'll then follow up with a quick primer on ggplot and how to leverage data visualization for exploring data. While there are many ways of evaluating whether data are useful, visualization is one of the quicker methods. That visualization can also be useful at virtually all other stages of your project is a happy accident of which you can take advantage. 
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-There is no specific pre-class preparation for this module!
+Please identify and download one potential dataset your group is considering including in your synthesis to use in class today. If you haven't identified any yet, select a dataset from the [lterdatasampler](https://lter.github.io/lterdatasampler/) to practice with instead.
 
 :::
 
@@ -17,10 +19,12 @@ There is no specific pre-class preparation for this module!
 
 {{< include topics/viz-synthesis.qmd >}}
 
-{{< include topics/viz-exploration.qmd >}}
-
 {{< include topics/viz-draw.qmd >}}
 
 {{< include topics/viz-ggplot2-core.qmd >}}
 
 {{< include topics/viz-ggplot2-multipanel.qmd >}}
+
+{{< include topics/viz-exploration.qmd >}}
+
+
