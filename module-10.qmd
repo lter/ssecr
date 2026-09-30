@@ -1,5 +1,5 @@
 ---
-title: "Ensuring Equitable Intellectual Credit"
+title: "Ensuring Equitable Credit"
 ---
 
 Group synthesis requires many types of contributions, from raw data to idea generation, analysis, group organization, figure development, conceptualizing, writing, and editing. Often, little of this work is directly compensated. Conflicts and misunderstandings about what contributions earn authorship arise--especially in the absence of a clearly-articulated policy on intellectual credit. 
@@ -20,3 +20,11 @@ There is no specific pre-class preparation for this module!
 {{< include topics/author-policy.qmd >}}
 
 {{< include topics/credit-future.qmd >}}
+
+# Prep Work for Next Module
+
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::

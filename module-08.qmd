@@ -1,5 +1,5 @@
 ---
-title: "Building Consensus & Checking the Data"
+title: "Surviving the Groan Zone"
 ---
 
 This module is focused on how your group might build consensus, particularly with regard to specific hypotheses or research questions that fit within your larger project frame. We'll also discuss some checks you may want to run on your data and specific functions in R that perform those operations.
@@ -16,3 +16,11 @@ There is no specific pre-class preparation for this module!
 {{< include topics/wrangle-qc.qmd >}}
 
 {{< include topics/code-custom-functions.qmd >}}
+
+# Prep Work for Next Module
+
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::

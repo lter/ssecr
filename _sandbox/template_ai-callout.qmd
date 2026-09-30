@@ -1,0 +1,10 @@
+---
+title: "GenAI Callout Template"
+---
+
+Copy/paste the below template when making AI considerations / food for thought callouts!
+
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
+
+:::

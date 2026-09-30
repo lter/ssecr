@@ -94,6 +94,21 @@ Jasmine, an assistant professor in agronomy with a heavy teaching load, thinks t
 - What other solutions might they consider?
 </details>
 
+<details>
+<summary>Scenario D: AI Use</summary>
+Naomi is a new graduate student in a bioinformatics lab. At the first lab meeting, she listens to one of the group’s postdocs, Marc, present about a new tool he is developing to analyze eDNA data. Naomi is excited by the work and asks Marc if she can help. Marc enthusiastically brings Naomi onto the project and helps her identify a few key skills she needs to learn in order to contribute. 
+
+A few weeks later, Naomi and Marc meet to talk about their progress. Marc is highly motivated to publish the tool quickly so he can reference it on his job applications, but Naomi is moving slowly as she learns new skills. Marc, concerned by her pace, suggests that she use AI coding tools to speed up her process and help her contribute faster. 
+
+Naomi feels torn - she joined the project because she wanted to learn specific skills and is worried that using AI will impede her learning process. At the same time, she doesn’t want to hold up Marc’s job search, especially when he’s giving her an opportunity.
+
+**Discussion questions:**
+
+- Which sides of the satisfaction triangle are the different players in this scenario inhabiting? What needs are in conflict?
+- How might Marc and Naomi balance their needs in seeking a solution?
+- What practices could make it easier for them to take action or avoid this situation in the first place?
+</details>
+
 ### Part 2 - Scenario Debrief
 
 Consider the following:

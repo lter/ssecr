@@ -1,75 +1,165 @@
-## Searching for Data
+## The Search, Evaluate, and Refine Loop
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives
 
 After completing this topic you will be able to: 
 
-- <u>Explain</u> how to effectively search for data outside of specialized repositories
-- <u>Use</u> some typical search operators to refine your quest for data
+- <u>Explain</u> some strategies you can use to effectively search for data in repositories, aggregators and search engines
+- <u>Evaluate</u> your data search results and judge whether they can be used to answer a research question
 
 :::
 
-If you don't find what you're looking for in a particular data repository (or want to look for data not included in one of those platforms), you might want to consider a broader search. For instance, [Google](https://www.google.com) is a surprisingly good resource for finding data and--for those familiar with Google Scholar for peer reviewed literature-specific Googling--there is a dataset-specific variant of Google called [Google Dataset Search](https://datasetsearch.research.google.com/).
+<img src="topics/images/figure_search-eval-refine.png" alt="A circle of pastel arrows labeled 'Search', 'Evaluate', and 'Refine'" width="35%" align="right"/>
 
-### Search Operators
+Searching for data effectively is an iterative process. You'll usually start with simple exploratory searches, evaluate results, refine the search to include more specific terms or logic, and then search again. You may have to execute this loop multiple times to get the results you need for a synthesis project.  
 
-Virtually all search engines support "operators" to create more effective queries (i.e., search parameters). If you don't use operators, most systems will just return results that have any of the words in your search which is non-ideal, especially when you're looking for very specific criteria in candidate datasets.
+The **evaluation step in this loop is key** and typically involves answering some questions about the search results. These questions should range from simple sanity checks to in-depth evaluation of individual datasets, and the answers you get will tell you how to refine your search. Below are some examples of questions to ask during evaluation.
 
-See the tabs below for some useful operators that might help narrow your dataset search even when using more general platforms.
+- **Did the search find datasets you know are present?** This is a basic sanity check that tells you if your search terms are effective. If you started a synthesis project with some candidate datasets, or you've browsed the target repository a little, just make sure you can find things you already know are there.
+- **After spot-checking a few search results, do they appear fit-for-use?** "Fit-for-use" means a dataset can be used to answer your research question. To know this you must check whether the observational units, variables, groups, and temporal/spatial dimensions that you are interested in are present.
+- **Did you get too many results to evaluate?** If you did, you may want to add or exclude search terms and try the search again, or find another way to winnow down the results.
+- **Did you get too few results?** If your early searches return only a few results, or no results, you'll probably need to expand your search terms or search in other repositories. If you consistently get few to no results when searching repositories try an even more targeted approach like reaching out directly to data managers and researchers.
+
+Once you've done proper evaluation, you need to **refine the search**. How to do this depends on the answers to your evaluation questions above. In the tabs below we describe some practical strategies you can use to refine the next iteration of your search.
 
 :::{.panel-tabset}
+
+### Expand search terms
+
+Dataset authors sometimes use heterogeneous terms for **observational units**, **variables**, **groups** and **temporal/spatial dimensions** when describing a dataset for publication. Repository curators do not always standardize these terms in the published metadata. So, if your search didn't find what you were looking for you may have chosen overly-specific search terms. Remember that scientific language is full of synonyms, acronyms, and closely related terms, and adding these to a search may return more results. For example:
+
+- "water" and "H~2~O" are the same thing
+- "grasses" and "Poaceae" refer to the same taxonomic group
+- "net primary production" is commonly called "NPP"
+- "Nitrogen addition" is a kind of "fertilization"
+- "soil CO~2~ efflux" is mostly equivalent to "soil respiration" 
+- "relative abundance" is one measure of "community composition"
+- "Simpson's diversity index" is derived from "species abundance" data
+- "vapor pressure deficit" is derived from "air temperature" and "humidity"
+
+You can also include broader, more inclusive terms in your search to capture a wider range of concepts, taxa, times or locations in the data. Here are a few suggestions how:
+
+- Search broader taxonomic groups (genus or family) or functional groups (herbivores, benthic macroinvertebrates), instead of only species binomials.
+- Searching for higher-level processes or phenomena can lead to specific variables of interest. For example a "forest carbon cycle" search might produce "litterfall" results, and a "eutrophication" search might produce "dissolved oxygen" results.
+- Search on region, state, or country names in addition to more localized site names. For instance, searching for "North Atlantic Ocean" might produce useful results if "NES LTER" does not.
+
+
+### Advanced queries
+
+Constructing a more advanced query can help you either expand or narrow your search. Usually this is done by adding terms and using search "operators," which virtually all search engines allow as part of an "advanced search" method. Without operators most systems just return any results with matching words, but with operators you can combine, narrow or expand terms, and include or exclude matches with logical operations. This helps hone search results when you have very specific criteria for candidate datasets.
+
+Below are some useful operators that you can use with many search tools.
+
 #### Quotes
 
 Use quotation marks (`""`) to **search for an exact phrase**. This is particularly useful when you need specific data points or exact wording.
 
-Example: `"reef biodiversity"`
+- Example: `"reef biodiversity"` (will not match "grassland biodiversity")
 
 #### Wildcard
 
 Use an asterisk (`*`) to **search using a placeholder for any word or phrase in the query**. This is useful for finding variations of a term.
 
-Example: `Pinus * data`
+- Examples: `primary produc*` (matches "primary production", "primary producers", "primary productivity")
 
-#### Plus
+#### Boolean operators (AND, OR, NOT)
 
-Use a plus sign (`+`) to **search using more than one query *at the same time***. This is useful when you need combinations of criteria to be met.
+Boolean operators let you introduce logic into the search by combining and excluding search terms in different ways. The Boolean operators below can be combined in different ways go create complex queries. The 'or' operator (`OR`, `|`) means to **search for either one term *or* another**. It broadens your search to include multiple terms.
 
-Example: `bat + cactus`
+- Example: `"prairie pollinator" OR "grassland pollinator"` (match datasets about either prarie or grassland pollinators)
 
-#### OR
+The 'and' operator (`AND`, `&`, `+`) means to **search for one term *and* another at the same time**. It narrows the search and is useful when you need combinations of criteria to be met.
 
-Use the 'or' operator (`OR`) operator to **search for either one term *or* another**. It broadens your search to include multiple terms.
+- Example: `bat + cactus` (match datasets about _both_ bats and cacti, not one or the other)
 
-Example: `"prairie pollinator" OR "grassland pollinator"`
+The 'not' operator (`NOT`, `-`, `!`) means to **exclude certain terms from your search**. Useful to filter out irrelevant results.
 
-#### Minus
+- Example: `marine biodiversity -fishery` (exclude datasets with the term "fishery")
 
-Use a minus sign (`-`; a.k.a. "hyphen") to **exclude certain words from your search**. Useful to filter out irrelevant results.
+#### Search indexed metadata
 
-Example: `marine biodiversity data -fishery`
+Most repository and aggregator search interfaces index specific metadata fields for search and expose them as operators that can be used in search queries. Below are some examples from Google Dataset Search, but similar capabilities are available at other repositories and aggregators.
 
-#### Site
+- **Site:** Use the site operator (`site:`) to **search within a specific website or domain**. This is helpful when you're looking for data from a particular source. _Example: `site:.gov bird data`_
+- **File Type:** Use the file type operator (`filetype:`) to **search for data with a specific file extension**. Useful to make sure the data you find is already in a format you can interact with. _Example: `filetype:tif precipitation data`_
+- **In Title:** Use the 'in title' operator (`intitle:`) to **search for pages that have a specific word in the title**. This can narrow down your results to more relevant pages. _Example: `intitle:"lithology"`_
+- **In URL:** Use the 'in URL' operator (`inurl:`) to **search for pages that have a specific word in the URL**. This can help locate data repositories or specific datasets. _Example: `inurl:data soil chemistry`_
 
-Use the site operator (`site:`) to **search within a specific website or domain**. This is helpful when you're looking for data from a particular source.
+### Winnow huge results
 
-Example: `site:.gov bird data`
+Sometimes searching for data yields large numbers of datasets, even after going a few times around the Search&rarr;Evaluate&rarr;Refine loop. This might be because there are plenty of research data about the topic, or it might be because the search tools and metadata are not adequate to filter the search results. Either way, large result sets can be very difficult and time-consuming to evaluate. If you wound up with a very large search result, you'll want to systematically and carefully review the datasets to make sure that they are fit-for-use. Here are a few pointers:
 
-#### File Type
+- Keep the original search result for reproducibility. You may want to return to it in the future.
+- Be clear about and document what critera are used to exclude datasets from the result set.
+- Distribute the work equitably. Reviewing datasets can be tedious and unrewarding, so don't put it all on one person.
 
-Use the file type operator (`filetype:`) to **search for data with a specific file extension**. Useful to make sure the data you find is already in a format you can interact with.
 
-Example: `filetype:tif precipitation data`
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
 
-#### In Title
+**Generative AI models can be helpful for long, repetitive tasks like extracting metadata from, or applying filtering criteria to, large search results.** If you or your synthesis group has an unmanageably large search result to evaluate, delegating to genAI can be helpful if the group is comfortable with that. Make sure you follow some clear guidelines though:
 
-Use the 'in title' operator (`intitle:`) to **search for pages that have a specific word in the title**. This can narrow down your results to more relevant pages.
+1. Having the agent or model download and ingest every dataset can over-burden the repository and consume too many tokens. Instead, consider downloading metadata first for the model to iterate over and review. 
+2. Give the agent or model a clear plan to follow for each dataset.
+3. Save all prompts and model outputs to enable some reproducibility, and for disclosure purposes.
+4. Be sure to validate the genAI's results by doing some spot checking (at a minumum).
 
-Example: `intitle:"lithology"`
-
-#### In URL
-
-Use the 'in URL' operator (`inurl:`) to **search for pages that have a specific word in the URL**. This can help locate data repositories or specific datasets.
-
-Example: `inurl:data soil chemistry`
 :::
+
+### Search in new places
+
+Sometimes, even after several times around the Search&rarr;Evaluate&rarr;Refine loop, you may come up with very few search results. At this time you should consider:
+
+1. **Searching in more repositories.** You can refer to the lists of generalist, domain-specific, and data specialist repositories mentioned above for ideas on new places to search. As you search more sources, consider putting your searches into a script for reproducibility. Many repositories and aggregators have search APIs and wrappers that you can use for this.
+2. **Reaching out to data managers and researchers for help.** When you think there is data to be found but that it may not be published in repositories yet, it may be worth reaching out to a data manager or individual researchers. Many research sites and networks have dedicated data managers that can help connect you with data, or the researchers collecting it. Check websites for contact information.
+
+
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
+
+**Generative AI models are skilled at understanding repository APIs and writing code to use them.** If a repository provides a search API, using genAI to write search scripts that make API requests to the repository can be a great way to speed up your searches and make them more reproducible. There are some important considerations before you do this:
+
+1. Do you want to learn how to write API requests yourself?
+2. Will the AI-generaged code overburden the repository API by sending too many requests?
+
+If the answer to these questions is "yes", or "I don't know", don't take this shortcut without learning more, and consult with the repository first to learn how to make "polite" API requests (such as adding pauses between requests).
+
+And **remember that validation is critical anytime you delegate to genAI.** Make sure an AI-generated search query is surfacing data you know exists before you trust it with your search tasks.
+
+:::
+
+:::
+
+### Reproducible searching
+
+As you proceed through the Search&rarr;Evaluate&rarr;Refine loop, remember that **reproducible science practices apply to search too!** You should document your search process, just as you would document group decisions, analytical procedures, and other activities. For data search, be sure to keep track of:
+
+- What repositories, aggregators, or other data sources you searched
+- Your search queries and the results for each round of searching
+- How you filtered the results after the search
+- Datasets you found that were fit for use (this will become a "Data Inventory," as we'll discuss later).
+- What data you didn't find
+
+### Contingency plans
+
+Sometimes, despite all the best efforts that a synthesis group makes, there isn't much data to be found. This isn't necessarily the end of the story for your synthesis question or project. A lack of data could mean that you have a truly novel research question, or that you have uncovered a "gap" in how the research community approaches certain topics. In such cases, the focus of the synthesis project can shift slightly away from finding, harmonizing and analyzing data and towards things like:
+
+- Writing a perspective piece highlighting the perceived gap in the research data
+- Proposing a new research network or program to answer a novel research question
+
+
+## Slides
+<iframe
+  src="https://jornada-im.github.io/jeds/docs/slides/finding-data-slides.html"
+  width="100%"
+  height="500"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+
+::: {.callout-note icon="false"}
+## {{< fa robot >}} GenAI Disclosure
+GenAI assistance was used to draft the figures and format the tables in the "Choosing  Search Terms," "Data Repositories," and "The Search, Evaluate, and Refine Loop" topics in this module.
+:::
+

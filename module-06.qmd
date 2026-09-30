@@ -1,5 +1,5 @@
 ---
-title: "Data Inventories & Project Management 101"
+title: "Managing Data & Projects"
 ---
 
 As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. After discussing data inventories, we'll introduce some tenets of how you can manage the many tasks that make up your goal of 'doing this project.' This will help you more precisely handle and delegate tasks going forward.
@@ -18,3 +18,11 @@ There is no specific pre-class preparation for this module, however, **_after_ t
 {{< include topics/proj-mgmt-start.qmd >}}
 
 {{< include topics/proj-mgmt-scope.qmd >}}
+
+# Prep Work for Next Module
+
+:::{.callout-note icon="false" collapse="false"}
+### {{< fa file-pen >}} Pre-Class Preparation
+
+#### **Before we meet to cover the next module**, do all of the work in the callout like this one at the top of that module's page!
+:::

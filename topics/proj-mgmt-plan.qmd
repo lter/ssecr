@@ -1,4 +1,4 @@
-## Plan the Work
+## Beginning to Manage the Project
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives

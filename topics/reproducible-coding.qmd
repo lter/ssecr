@@ -171,3 +171,10 @@ Scripts are free to write regardless of the number of lines so do not feel as th
 ### Modifying Data
 
 You should _never_ edit raw data directly! If you do need to edit the raw data, use a script to make all needed edits and save the output of that script as a _separate_ file. Editing the raw data directly without a script or using a script but overwriting the raw data are both incredibly risky operations because your create a file that "looks" like the raw data (and is likely documented as such) but differs from what others would have if they downloaded the 'real' raw data personally.
+
+:::{.callout-caution icon="false" collapse="false"}
+### {{< fa robot >}} Generative AI Considerations
+
+**Consider whether there are privacy concerns with sharing your data with AI _before_ allowing an AI agent access to your local Git repository!** Especially if you have a "data/" folder in your Git repo because granting AI access to your Git folder will also include sub-directories of that folder (whether or not Git tracks them!)
+
+:::
