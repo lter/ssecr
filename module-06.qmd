@@ -2,7 +2,7 @@
 title: "Managing Data & Projects"
 ---
 
-While there are many ways of evaluating whether data are useful, visualization is one of the quicker methods. That visualization can also be useful at virtually all other stages of your project is a happy accident of which you can take advantage. After discussing data visualization, we'll introduce some tenets of how you can manage the many tasks that make up your goal of 'doing this project.' This will help you more precisely handle and delegate tasks going forward.
+As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. After discussing data inventories, we'll introduce some tenets of how you can manage the many tasks that make up your goal of 'doing this project.' This will help you more precisely handle and delegate tasks going forward.
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation

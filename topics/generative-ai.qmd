@@ -1,6 +1,6 @@
 <!-- This qmd is included in the website via `{{< include topics/generative-ai.qmd >}}` in module-02.qmd, which declares `bibliography: topics/references/gen-ai_refs.bib`. Citations here (e.g. [@zewe_2025]) rely on that field and will not resolve if this file is previewed or rendered standalone. Use instead quarto preview module-02.qmd for building -->
 
-## Responsibly Using Generative AI
+## Responsibly Using Generative AI {#responsible-ai}
 
 :::{.callout-tip icon="false" collapse="false"}
 ### {{< fa brain >}} Learning Objectives
