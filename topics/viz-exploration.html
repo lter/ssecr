@@ -361,7 +361,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <ul>
   <li><a href="#visualization-for-exploration" id="toc-visualization-for-exploration" class="nav-link active" data-scroll-target="#visualization-for-exploration">Visualization for Exploration</a>
   <ul class="collapse">
-  <li><a href="#exploratory-visualization-applications" id="toc-exploratory-visualization-applications" class="nav-link" data-scroll-target="#exploratory-visualization-applications">Exploratory Visualization Applications</a></li>
+  <li><a href="#getting-started-with-exploratory-data-analysis-for-synthesis-projects" id="toc-getting-started-with-exploratory-data-analysis-for-synthesis-projects" class="nav-link" data-scroll-target="#getting-started-with-exploratory-data-analysis-for-synthesis-projects">Getting started with exploratory data analysis for synthesis projects</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -391,83 +391,50 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <div class="callout-body-container callout-body">
 <p>After completing this topic you will be able to:</p>
 <ul>
-<li><u>Explain</u> how data visualization can be used to explore data</li>
+<li><u>Understand</u> the role of exploratory data analysis in ecological synthesis</li>
+<li><u>Practice</u> using data visualization as a tool to explore data</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Exploratory data visualization is an important part of any scientific project. Before launching into analysis it is valuable to make some simple plots to scan the contents. These plots may reveal any number of issues, such as typos, sensor calibration problems or differences in the protocol over time.</p>
-<p>These “fitness for use” visualizations are even more critical for synthesis projects. In synthesis, we are often re-purposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group’s question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of ‘warts’ that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g.&nbsp;spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process. Others may come as a surprise.</p>
-<p>During the early stages of a synthesis project, you will want to gain skill to quickly scan through large volumes of data. The figures you make will typically be for internal use only, and therefore have low emphasis on aesthetics.</p>
-<section id="exploratory-visualization-applications" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-visualization-applications">Exploratory Visualization Applications</h3>
+<p>Exploratory data analysis (EDA) is an important part of any scientific project. EDA refers to the process of interrogating the data to understand its contents and identify any issues prior to embarking on the actual science.</p>
+<p>These “fitness-for-use” types of investigations are especially critical for synthesis projects, where we are often re-purposing data to answer questions that differ from the original study motivations. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group’s question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of ‘warts’ that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g.&nbsp;spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the <span title="Standardizing and combining different datasets to maximize comparability prior to analysis" style="text-decoration: underline dotted; cursor: help;">data harmonization</span> process. Others may come as a surprise such as typos, sensor calibration problems, missing data, or differences in the protocol over time.</p>
+<p>Simple plots and data summaries are often the most efficient ways to start this process and help you quickly get a sense of the data you have to work with.</p>
+<section id="getting-started-with-exploratory-data-analysis-for-synthesis-projects" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-exploratory-data-analysis-for-synthesis-projects">Getting started with exploratory data analysis for synthesis projects</h3>
 <p>Specific applications of exploratory data visualization include identifying:</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Dataset Coverage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Metadata Errors</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Methodological Differences</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Other Issues</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Dataset Coverage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Metadata Errors</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Methodological Differences</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Quality &amp; Harmonization</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>This may include temporal, spatial, or taxonomic coverage, to name a few.</p>
-<p>For example, the metadata might indicate a dataset covers the period 2010-2020. That could mean one data point in 2010 and one in 2020! This may not be useful for a time-series analysis.</p>
+<p>Datasets vary in when, where, and what they cover. Some of this can be determined by carefully reading the metadata, but often inspection of the actual data is necessary. For example, the metadata might indicate a dataset covers the period 2010-2020. That could mean one data point in 2010 and one in 2020 or continuous sampling over the whole period.</p>
+<p><strong>Missing data</strong> is another element linked to dataset coverage. Missing data may be random (e.g.&nbsp;in the case of lost samples) or nonrandom (e.g.&nbsp;in the case of values below a method detection limit). In some cases missing data may imply a particular value (e.g.&nbsp;taxa missing from presence-only surveys have an abundance of 0). Datasets may be archived with missing values as explicit (e.g.&nbsp;with NA or -9999 to indicate missing data), or implicit (e.g.&nbsp;where entire dates or sampling bouts are missing from a time-series). Understanding these differences in the datasets you are amassing is critical to developing a robust analysis plan <span class="citation" data-cites="rubin_inference_1976">[@rubin_inference_1976]</span>.</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Do the units “make sense” with the figure? Typos in metadata do occur, so if you find yourself with elephants weighing only a few grams, it may be necessary to reach out to the dataset contact.</p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Consider the following:</p>
-<ul>
-<li>Do the data from sequential years, replicate sites, different providers generally fall into the same ranges or is there sensor drift or changes in protocols that need to be addressed?</li>
-<li>A risk of synthesis projects is that you may find you are comparing apples to oranges across datasets, as the individual datasets included in your project were likely not collected in a coordinated fashion.</li>
-<li>A benefit of synthesis projects is you will typically have large volumes of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a ‘typical’ location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be addressed in the data harmonization process.</li>
-</ul>
+<p>In synthesis projects, you are typically combining datasets collected over many sites or many years. As a result, the protocols, or its implementation, may differ over space or time either intentionally or unintentionally. You’ll want to inspect these issues and determine if additional processing is necessary to relativize the disparate datasets into comparable units before combining them for analysis. A benefit of synthesis projects is you will typically have large amounts of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a ‘typical’ location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. For this type of visualization we generally want to look at whether the data from sequential years, replicate sites, different providers generally fall into the same range and have similar variability. If not, consider whether there is a strong biological reason for the difference, or whether there might be changes in protocols or sensor drift that need to be addressed.</p>
+<p><em>In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be rectified in the data harmonization process.</em></p>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>In addition to those other uses of exploratory visualization, you may also find:</p>
+<p>In the process of exploratory visualization, you may also find:</p>
 <ul>
+<li>Additional quality control is needed (e.g.&nbsp;filtering large outliers)</li>
 <li>Harmonization issues
 <ul>
-<li>Are all your datasets measured in units that can be converted to the same units?</li>
-<li>If not, can you envision metrics (relative abundance? Effect size?) that would make datasets intercomparable?</li>
+<li>Are all your datasets measured in the same units, or ones that are easily converted?</li>
+<li>If not, can you envision metrics or derived variables (e.g.&nbsp;relative abundance, rate of increase or effect sizes) that would make datasets intercomparable?</li>
 </ul></li>
-<li>Some entire datasets cannot be used</li>
-<li>Parts of some datasets cannot be used</li>
-<li>Additional quality control is needed (e.g.&nbsp;filtering large outliers)</li>
 </ul>
 </div>
 </div>
 </div>
-<p>Identifying all of these pieces of information is an important precursor to the data harmonization stage, where you will process the datasets you have selected into an analysis-ready format. Visualization is a–relatively–easy way of doing these checks!</p>
-<div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Data Sleuth
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In this activity, you’ll play the role of data detective. You will have many potential datasets to look through. It is important to do it correctly, but you likely won’t need or want to develop boutique code to examine each dataset, especially since some may be discarded after an initial pass.</p>
-<p>As a project team, discuss the following points:</p>
-<ol type="1">
-<li>Decide on a structure for tracking results of exploratory data checks
-<ul>
-<li>Git issues? Additional columns in your team-data-inventory google sheet? Something else?</li>
-<li>Draft a list of ‘generic checks’ you would want to apply to each dataset before inclusion in your synthesis</li>
-</ul></li>
-<li>Use the <code>summarytools</code> and/or <code>datacleanr</code> packages to explore one exemplar dataset that you intend to include in your project
-<ul>
-<li>Discuss any issues you discover</li>
-<li>Create a “to do” list for the exemplar dataset that details additional steps needed to make that dataset analysis ready (e.g.&nbsp;remove 1993 due to incomplete sampling, convert concentrations from mmols to mg/L, contact dataset providers to ask about anomalous values in April 2021)</li>
-<li>Revise the list of ‘generic checks’ for remaining datasets as necessary</li>
-</ul></li>
-<li>If you choose to save any images and/or code you used in your exploratory data visualization, decide on a naming convention and storage location
-<ul>
-<li>Will you add these files to your <code>.gitignore</code> or do you plan on committing them?</li>
-</ul></li>
-<li>What additional plots would you ideally make that are not available through these generic tools?</li>
-</ol>
+<p>Careful exploratory data analysis is an important precursor to the data harmonization stage, where you will process the datasets you have selected into an analysis-ready format, including any additional filtering or data transformations you determine are needed. Visualization is a–relatively–easy way of planning for that stage. Visualization also surfaces the ‘unknown unknowns’ that you may not have initially thought to check for in brainstorming possible fitness-for-use and data-quality checks to conduct.</p>
+<p>It is also perfectly ok to determine after exploratory analysis that you need to discard parts of datasets or even entire datasets.</p>
+<p>Because the figures you make at this stage will typically be used for internal use only, you’ll often want to iterate through this stage efficiently. Aesthetics are less important here than in publication-quality figures, as long as the content is legible. Below we provide a non-exhaustive set of tools that can help iterate through this stage efficiently. If you choose to use AI-tools, make sure to reference the <a href="../module-02.html#responsible-ai">Responsible use of genAI</a> checklist to ensure you’re engaging AI as a learning partner; that security and privacy issues are considered; and that you are documenting your use as you go.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><code>summarytools</code> Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><code>datacleanr</code> Package</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href=""><code>summarytools</code> Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href=""><code>datacleanr</code> Package</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">AI Tools</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <div class="cell">
@@ -492,6 +459,7 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </dl>
 </div>
 </div>
+<p>See <a href="https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html">here</a> for more extensive tutorials.</p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <div class="cell">
@@ -504,10 +472,52 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Launch the shiny app and view the data interactively</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>datacleanr<span class="sc">::</span><span class="fu">dcr_app</span>(dataset_1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+<p>See <a href="https://the-hull.github.io/datacleanr/">here</a> for more extensive tutorials</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>AI tools can be very helpful for EDA and plotting. For small datasets, you may be able to upload the entire dataset into a browser-based chatbot and ask for assistance writing code to conduct exploratory data analysis and generate plots. If you go this route, we recommend downloading the code so you can iterate on it as you work through more datasets and refine your approach.</p>
+<p>Any AI-coding assistants (e.g.&nbsp;Claude Code, Codex, Opencode) can produce plots and run EDA. The integration into a familiar IDE can be helpful for going back and forth between manual and AI-assisted coding. There are various options available depending on your IDE. For RStudio/Positron specifically, Posit Assistant is often a logical choice because of its integration with the IDE and data-science focus, as well as its ability to ‘see’ plots in your IDE. As with the R-packages above, the development team has made some tutorials directed at <a href="https://assistant.posit.co/docs/guides/explore-your-data/">exploratory data analysis</a>. The /eda-log slash command can be used to keep a log of your progress and remaining questions and the /clean mode often works well too for surfacing quality issues and inconsistencies.</p>
+<p>Chatbots and AI-coding assistants are also remarkably good at carefully reading the metadata, so providing this context to your AI-assistant improves efficiency.</p>
 </div>
 </div>
 </div>
-<p>Both of these packages have extensive vignettes and online instructional materials. See <a href="https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html">here</a> for one from <code>summarytools</code> and <a href="https://the-hull.github.io/datacleanr/">here</a> for one from <code>datacleanr</code>.</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span><i class="fa-solid fa-rocket" aria-label="rocket"></i> Activity: Data Sleuth
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In this activity, you’ll play the role of data detective.</p>
+<p>As a project team:</p>
+<ol type="1">
+<li>Draft a checklist or sketch out a few visualizations that would help you assess fitness of use of a particular dataset for your synthesis question.</li>
+<li>Use <code>ggplot</code>, <code>datacleanr</code> or an AI code-assistant<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> or a chatbot<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to explore one exemplar dataset that you intend to include in your project.
+<ul>
+<li>Discuss any issues you discover</li>
+<li>Create a “to do” list for the exemplar dataset that details additional steps needed to make that dataset analysis ready (e.g.&nbsp;remove 1993 due to incomplete sampling; contact dataset providers to ask about anomalous values in April 2021)</li>
+</ul></li>
+<li>Decide on a structure for tracking results of exploratory data checks to-do lists.
+<ul>
+<li>Git issues? Google sheets or docs? Another collaborative tool?</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-robot" aria-label="robot"></i> GenAI Disclosure
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>GenAI assistance was used for layout and formatting of the “Visualization for Exploration” topic in this module.</p>
 </div>
 </div>
 
@@ -515,7 +525,14 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>If you go the AI-route, make sure to ask your AI tool to generate <em>code</em>, not just provide an answer, so that you can verify results<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Depending on the dataset size, you probably will not be able to upload the entire dataset into a chatbox. But you can upload a sample and ask it to help generate code that you can run.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
