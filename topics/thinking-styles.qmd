@@ -51,7 +51,7 @@ To begin, we'll do an exercise to identify your thinking style in the Herrmann m
     -   If you have more than 20, cross out the descriptors that resonate the least
 5.  Using the letter codes in the column on the right, count the number of your chosen descriptors that fall into each of the four categories
 
-### Part 2 - Sub-Group Discussion
+### Part 2 - Project Group Discussion
 
 <details>
 <summary>{{< fa puzzle-piece >}} Letter Code Translations</summary>
@@ -64,32 +64,28 @@ To begin, we'll do an exercise to identify your thinking style in the Herrmann m
 
 </details>
 
-1.  Form groups based on the category (A, B, C, or D) where you had the highest count
-    -   If you tied between two, you can go to either
-2.  Click on the two images below these panels to make them larger and review what the Herrmann model predicts your primary thinking style expects and enjoys
-3.  Discuss the following questions as a group
-    -   Share one statement with which you particularly resonated with your group. Why do you think you identify strongly with this trait? Can you provide an example that illustrates this in your life?
-    -   What are some strengths of your thinking style?
-    -   What are some challenges associated with it?
+1.  Click on the two images below these panels to make them larger and review what the Herrmann model predicts your primary thinking style expects and enjoys. Then, revisit the table of [meeting variants](https://lter.github.io/ssecr/module-01.html#microstructures-for-small-group-meetings) to support different thinking styles from our first class. 
+
+2.  Join your project breakout group and discuss the following:
+    -   What are your thinking styles? What you enjoy/expect?
+    -   How do your thinking styles play out in teams?
+    -   How can you design group work to take advantage of the group's strengths? Which microstructures will be most useful to your group?
+    -   If you are light on one thinking style, how can your group fill that gap?
 
 ### Part 3 - Whole-Class Discussion
 
-Let's re-assemble the whole class. With your thinking style in mind:
+Let's re-assemble the whole class. With your thinking styles in mind:
 
--   What are some facilitation or meeting design techniques that you really appreciated?
--   What allowed you to fully participate?
--   Conversely, what did you find frustrating about the meeting design or facilitation techniques?
+-   What are some of the microstructures or group practices that could support the thinking styles in your group?
+-   Are there any that you commonly overlook in your planning?
 
-Now, consider the expectations and preferences of the other thinking styles noted in the figure below and shared by your classmates.
 
--   Are there any that you commonly overlook when you are planning a meeting?
 :::
 ::::
 
 ::: {layout-ncol="2" layout-valign="center"}
-![](topics/images/figure_whole-brain-model.png){.lightbox fig-alt="Top-down image of a circle divided into four sections. Top left is blue, labeled 'analytical' in the circle. Top right is yellow, labeled 'experimental' in the circle. Bottom right is red and labeled 'relational' in circle. Bottom left is green and is labeled 'practical' in the circle. The circle also labels the lines separating each pair of adjacent quadrants as follows: analytical and experimental is 'intellectual', experimental and relational is 'intuitive', relational and practical is 'instinctive', and practical and analytical is 'rational'" width="80%" fig-align="center"}
+![](/topics/images/figure_whole-brain-model.png){.lightbox fig-alt="Top-down image of a circle divided into four sections. Top left is blue, labeled 'analytical' in the circle. Top right is yellow, labeled 'experimental' in the circle. Bottom right is red and labeled 'relational' in circle. Bottom left is green and is labeled 'practical' in the circle. The circle also labels the lines separating each pair of adjacent quadrants as follows: analytical and experimental is 'intellectual', experimental and relational is 'intuitive', relational and practical is 'instinctive', and practical and analytical is 'rational'" width="80%" fig-align="center"}
 
-![](topics/images/figure_thinking-style-expects.png){.lightbox fig-alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="100%" fig-align="center"}
+![](/topics/images/figure_thinking-style-expects.png){.lightbox fig-alt="Circle divided into same quadrants as previous image where each quadrant contains the expectations and enjoyments of that thinking style. Top left expects clear/concise info, well articulated ideas, accuracy, and certainty and enjoys a good debate, critical analysis, and readings. Top right expects an overview, a conceptual framework, freedom to explore, analogies/metaphors, and visuals and enjoys initiative and imagination, connections to other approaches, newness and 'fun'. Bottom right expects involvement with others, personal anecdotes, experimental approach, and feelings to be considered and enjoys the personal touch, group discussion and harmony. Bottom left expects step-by-step unfolding, detailed program, punctuality, and an explanation of how and enjoys a structured approach, low risk, and concrete examples" width="100%" fig-align="center"}
 :::
 
-In our first class, we discussed meeting 'microstructures' that can support a variety of thinking styles. Now that you know your and your group members' thinking styles, revisit the section on [meeting variants](https://lter.github.io/ssecr/module-01.html#microstructures-for-small-group-meetings). Are there microstructures that you could incorporate into your weekly meetings?

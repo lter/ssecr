@@ -5,26 +5,28 @@
 
 After completing this topic you will be able to: 
 
-- <u>Explain</u> how data visualization can be used to explore data
+- <u>Understand</u> the role of exploratory data analysis in ecological synthesis
+- <u>Practice</u> using data visualization as a tool to explore data
 
 :::
 
-Exploratory data visualization is an important part of any scientific project. Before launching into analysis it is valuable to make some simple plots to scan the contents. These plots may reveal any number of issues, such as typos, sensor calibration problems or differences in the protocol over time.
+Exploratory data analysis (EDA) is an important part of any scientific project. EDA refers to the process of interrogating the data to understand its contents and identify any issues prior to embarking on the actual science.
 
-These "fitness for use" visualizations are even more critical for synthesis projects. In synthesis, we are often re-purposing publicly available datasets to answer questions that differ from the original motivations for data collection. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group's question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of 'warts' that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g. spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the data harmonization process. Others may come as a surprise.
+These "fitness-for-use" types of investigations are especially critical for synthesis projects, where we are often re-purposing data to answer questions that differ from the original study motivations. As a result, the metadata included with a published dataset may be insufficient to assess whether the data are useful for your group's question. Datasets may not have been carefully quality-controlled prior to publication and could include any number of 'warts' that can complicate analyses or bias results. Some of these idiosyncrasies you may be able to anticipate in advance (e.g. spelling errors in taxonomy) and we encourage you to explicitly test for those and rectify them during the [data harmonization]{title="Standardizing and combining different datasets to maximize comparability prior to analysis" style="text-decoration: underline dotted; cursor: help;"} process. Others may come as a surprise such as typos, sensor calibration problems, missing data, or differences in the protocol over time.
 
-During the early stages of a synthesis project, you will want to gain skill to quickly scan through large volumes of data. The figures you make will typically be for internal use only, and therefore have low emphasis on aesthetics.
+Simple plots and data summaries are often the most efficient ways to start this process and help you quickly get a sense of the data you have to work with.
 
-### Exploratory Visualization Applications
+
+### Getting started with exploratory data analysis for synthesis projects
 
 Specific applications of exploratory data visualization include identifying:
 
 :::{.panel-tabset}
 ### Dataset Coverage
 
-This may include temporal, spatial, or taxonomic coverage, to name a few.
+Datasets vary in when, where, and what they cover. Some of this can be determined by carefully reading the metadata, but often inspection of the actual data is necessary. For example, the metadata might indicate a dataset covers the period 2010-2020. That could mean one data point in 2010 and one in 2020 or continuous sampling over the whole period.
 
-For example, the metadata might indicate a dataset covers the period 2010-2020. That could mean one data point in 2010 and one in 2020! This may not be useful for a time-series analysis.
+**Missing data** is another element linked to dataset coverage. Missing data may be random (e.g. in the case of lost samples) or nonrandom (e.g. in the case of values below a method detection limit). In some cases missing data may imply a particular value (e.g. taxa missing from presence-only surveys have an abundance of 0). Datasets may be archived with missing values as explicit (e.g. with NA or -9999 to indicate missing data), or implicit (e.g. where entire dates or sampling bouts are missing from a time-series). Understanding these differences in the datasets you are amassing is critical to developing a robust analysis plan [@rubin_inference_1976].
 
 ### Metadata Errors
 
@@ -32,44 +34,26 @@ Do the units "make sense" with the figure? Typos in metadata do occur, so if you
 
 ### Methodological Differences
 
-Consider the following:
+In synthesis projects, you are typically combining datasets collected over many sites or many years. As a result, the protocols, or its implementation, may differ over space or time either intentionally or unintentionally. You'll want to inspect these issues and determine if additional processing is necessary to relativize the disparate datasets into comparable units before combining them for analysis. A benefit of synthesis projects is you will typically have large amounts of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a 'typical' location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. For this type of visualization we generally want to look at whether the data from sequential years, replicate sites, different providers generally fall into the same range and have similar variability. If not, consider whether there is a strong biological reason for the difference, or whether there might be changes in protocols or sensor drift that need to be addressed.
 
-- Do the data from sequential years, replicate sites, different providers generally fall into the same ranges or is there sensor drift or changes in protocols that need to be addressed?
-- A risk of synthesis projects is that you may find you are comparing apples to oranges across datasets, as the individual datasets included in your project were likely not collected in a coordinated fashion.
-- A benefit of synthesis projects is you will typically have large volumes of data, collected from many locations or timepoints. This data volume can be leveraged to give you a good idea of how your response variable looks at a 'typical' location as well as inform your gestalt sense of how much site-to-site, study-to-study, or year-to-year variability is expected. In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be addressed in the data harmonization process. 
+  *In our experience, where one particular dataset, or time period, strongly differs from the others, the most common root cause is differences in methodology that need to be rectified in the data harmonization process.* 
 
-### Other Issues
+### Quality & Harmonization
 
-In addition to those other uses of exploratory visualization, you may also find:
+In the process of exploratory visualization, you may also find:
 
-- Harmonization issues
-    - Are all your datasets measured in units that can be converted to the same units?
-    - If not, can you envision metrics (relative abundance? Effect size?) that would make datasets intercomparable?
-- Some entire datasets cannot be used
-- Parts of some datasets cannot be used
 - Additional quality control is needed (e.g. filtering large outliers)
+- Harmonization issues
+    - Are all your datasets measured in the same units, or ones that are easily converted?
+    - If not, can you envision metrics or derived variables (e.g. relative abundance, rate of increase or effect sizes) that would make datasets intercomparable?
 
 :::
 
-Identifying all of these pieces of information is an important precursor to the data harmonization stage, where you will process the datasets you have selected into an analysis-ready format. Visualization is a--relatively--easy way of doing these checks!
+Careful exploratory data analysis is an important precursor to the data harmonization stage, where you will process the datasets you have selected into an analysis-ready format, including any additional filtering or data transformations you determine are needed. Visualization is a--relatively--easy way of planning for that stage. Visualization also surfaces the 'unknown unknowns' that you may not have initially thought to check for in brainstorming possible fitness-for-use and data-quality checks to conduct. 
 
-::::{.callout-warning icon="false"}
-### {{<fa rocket >}} Activity: Data Sleuth
+It is also perfectly ok to determine after exploratory analysis that you need to discard parts of datasets or even entire datasets. 
 
-In this activity, you'll play the role of data detective. You will have many potential datasets to look through. It is important to do it correctly, but you likely won't need or want to develop boutique code to examine each dataset, especially since some may be discarded after an initial pass.
-
-As a project team, discuss the following points:
-
-1. Decide on a structure for tracking results of exploratory data checks
-    - Git issues? Additional columns in your team-data-inventory google sheet? Something else?
-    - Draft a list of 'generic checks' you would want to apply to each dataset before inclusion in your synthesis
-2. Use the `summarytools` and/or `datacleanr` packages to explore one exemplar dataset that you intend to include in your project
-    - Discuss any issues you discover
-    - Create a "to do" list for the exemplar dataset that details additional steps needed to make that dataset analysis ready (e.g. remove 1993 due to incomplete sampling, convert concentrations from mmols to mg/L, contact dataset providers to ask about anomalous values in April 2021)
-    - Revise the list of 'generic checks' for remaining datasets as necessary
-3. If you choose to save any images and/or code you used in your exploratory data visualization, decide on a naming convention and storage location
-    - Will you add these files to your `.gitignore` or do you plan on committing them?
-4. What additional plots would you ideally make that are not available through these generic tools?
+Because the figures you make at this stage will typically be used for internal use only, you'll often want to iterate through this stage efficiently. Aesthetics are less important here than in publication-quality figures, as long as the content is legible. Below we provide a non-exhaustive set of tools that can help iterate through this stage efficiently. If you choose to use AI-tools, make sure to reference the [Responsible use of genAI](/module-02.qmd#responsible-ai) checklist to ensure you're engaging AI as a learning partner; that security and privacy issues are considered; and that you are documenting your use as you go.
 
 :::{.panel-tabset}
 ### `summarytools` Package
@@ -92,6 +76,8 @@ print(summarytools::dfSummary(dataset_1), footnote = NA,
 ```
 1. Careful! Use lowercase 'v' in the `view` function of the `summarytools` package
 
+See [here](https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html) for more extensive tutorials.
+
 ### `datacleanr` Package
 
 ```{r data-sleuth_datacleanr}
@@ -107,8 +93,39 @@ dataset_1 <- read_csv("your_file_name_here.csv")
 datacleanr::dcr_app(dataset_1)
 ```
 
+See [here](https://the-hull.github.io/datacleanr/) for more extensive tutorials
+
+### AI Tools
+
+AI tools can be very helpful for EDA and plotting. For small datasets, you may be able to upload the entire dataset into a browser-based chatbot and ask for assistance writing code to conduct exploratory data analysis and generate plots. If you go this route, we recommend downloading the code so you can iterate on it as you work through more datasets and refine your approach.
+
+Any AI-coding assistants (e.g. Claude Code, Codex, Opencode) can produce plots and run EDA. The integration into a familiar IDE can be helpful for going back and forth between manual and AI-assisted coding. There are various options available depending on your IDE. For RStudio/Positron specifically, Posit Assistant is often a logical choice because of its integration with the IDE and data-science focus, as well as its ability to 'see' plots in your IDE. As with the R-packages above, the development team has made some tutorials directed at [exploratory data analysis](https://assistant.posit.co/docs/guides/explore-your-data/). The /eda-log slash command can be used to keep a log of your progress and remaining questions and the /clean mode often works well too for surfacing quality issues and inconsistencies.
+
+Chatbots and AI-coding assistants are also remarkably good at carefully reading the metadata, so providing this context to your AI-assistant improves efficiency. 
+
 :::
 
-Both of these packages have extensive vignettes and online instructional materials. See [here](https://cran.r-project.org/web/packages/summarytools/vignettes/introduction.html) for one from `summarytools` and [here](https://the-hull.github.io/datacleanr/) for one from `datacleanr`.
+::::{.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Data Sleuth
+
+In this activity, you'll play the role of data detective.
+
+As a project team:
+
+1. Draft a checklist or sketch out a few visualizations that would help you assess fitness of use of a particular dataset for your synthesis question.
+2. Use `ggplot`, `datacleanr` or an AI code-assistant[^ai-code] or a chatbot[^chatbot]  to explore one exemplar dataset that you intend to include in your project.
+    - Discuss any issues you discover
+    - Create a "to do" list for the exemplar dataset that details additional steps needed to make that dataset analysis ready (e.g. remove 1993 due to incomplete sampling; contact dataset providers to ask about anomalous values in April 2021)
+3. Decide on a structure for tracking results of exploratory data checks to-do lists.
+    - Git issues? Google sheets or docs? Another collaborative tool?
+
+[^ai-code]: If you go the AI-route, make sure to ask your AI tool to generate *code*, not just provide an answer, so that you can verify results
+
+[^chatbot]: Depending on the dataset size, you probably will not be able to upload the entire dataset into a chatbox. But you can upload a sample and ask it to help generate code that you can run.
 
 ::::
+
+::: {.callout-note icon="false"}
+## {{< fa robot >}} GenAI Disclosure
+GenAI assistance was used for layout and formatting of the "Visualization for Exploration" topic in this module.
+:::
