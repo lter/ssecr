@@ -34,10 +34,11 @@ Translating these concepts, as they are appear in your research question, to the
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 | Research question                  | Conceptual mapping            | Data search criteria                                      |
 +====================================+===============================+===========================================================+
-| Does species richness increase or  | Does variable X increase or   | - **Variables:** presence/absence, richness (# species)   |
-| decrease after disturbance?        | decrease with time?           | - **Obs. units:** sampling area w/ known disturbance time |
-|                                    |                               | - **Groups:** maybe?                                      |
+| Does species richness increase or  | Does variable X increase or   | - **Variables:** species occurrence or richness (#)       |
+| decrease after disturbance?        | decrease with time?           | - **Obs. units:** a community w/ known disturbance time   |
+|                                    |                               | - **Groups:** _unspecified_                               |
 |                                    |                               | - **Temporal:** time since disturbance                    |
+|                                    |                               | - **Spatial:** _unspecified_                              |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 
 ### Forests vs. deserts
@@ -45,10 +46,11 @@ Translating these concepts, as they are appear in your research question, to the
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 | Research question                  | Conceptual mapping            | Data search criteria                                      |
 +====================================+===============================+===========================================================+
-| Are forests or deserts more        | Is group 1 or group 2 more    | - **Variables:** VPD, NPP, evapotranspiration rate, etc.  | 
-| sensitive to vapor pressure        | strongly related to variable  | - **Obs. units:** site meteorology & ecosystem processes  |
+| Are forests or deserts more        | Is group 1 or group 2 more    | - **Variables:** VPD, primary production (or similar)     | 
+| sensitive to vapor pressure        | strongly related to variable  | - **Obs. units:** site meteorology & organisms/processes  |
 | deficit?                           | X?                            | - **Groups:** forest ecosystems, desert ecosystems        |
-|                                    |                               | - **Temporal:** probably (processes vary over time)       |
+|                                    |                               | - **Temporal:** _unspecified (but probably)_              |
+|                                    |                               | - **Spatial:** _unspecified_                              |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 
 ### Latitudinal body size gradient
@@ -56,11 +58,11 @@ Translating these concepts, as they are appear in your research question, to the
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 | Research question                  | Conceptual mapping            | Data search criteria                                      |
 +====================================+===============================+===========================================================+
-| Is the latitudinal gradient in     | Is the relationship between   | - **Variables:** body length, mass, capture location      | 
-| small mammal body size changing?   | variable 1 and variable 2     | - **Obs. units:** individual small mammals                |
-|                                    | changing?                     | - **Groups:** species? functional group? year captured?   |
-|                                    |                               | - **Temporal:** yes, at least two time periods            |
-|                                    |                               | - **Spatial:** yes, need a latitude gradient              |
+| Is the latitudinal gradient in     | Is the relationship between   | - **Variables:** body length or mass, capture location    | 
+| small mammal body size changing?   | variable X and variable Y     | - **Obs. units:** individual small mammals                |
+|                                    | changing?                     | - **Groups:** _unspecified_                               |
+|                                    |                               | - **Temporal:** at least two time periods                 |
+|                                    |                               | - **Spatial:** latitude gradient                          |
 +------------------------------------+-------------------------------+-----------------------------------------------------------+
 
 :::
