@@ -29,17 +29,16 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 | _Lorenzo Maggio Laquidara_ -- [{{< fa brands github >}}](https://github.com/MaggioLaquidara) [{{< fa brands orcid >}}](https://orcid.org/0009-0003-3347-0703) {{< fa globe >}} |
 | _Ida Lie-Nielsen_ -- [{{< fa brands github >}}](https://github.com/IdaLie-Nie) [{{< fa brands orcid >}}](https://orcid.org/0009-0001-9913-8573) {{< fa globe >}} |
 | _Asher Marvy_ -- [{{< fa brands github >}}](https://github.com/ajmarvy) [{{< fa brands orcid >}}](https://orcid.org/0009-0006-1690-6749) {{< fa globe >}} |
-| _Nicholas Medina_ -- [{{< fa brands github >}}](https://github.com/nmedina17) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5465-3988) {{< fa globe >}} |
 
 :::
 :::{.column}
 
 | |
 |:---:|
+| _Nicholas Medina_ -- [{{< fa brands github >}}](https://github.com/nmedina17) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5465-3988) {{< fa globe >}} |
 | _Taylor Michael_ -- [{{< fa brands github >}}](https://github.com/TaylorCMichael) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-5685-5396) [{{< fa globe >}}](https://taylorcmichael.weebly.com/) |
 | _Desneiges Murray_ -- [{{< fa brands github >}}](https://github.com/denimurray) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-2422-3287) [{{< fa globe >}}](https://denimurraybgc.weebly.com/) |
 | _Kalea Nippert-Churchman_ -- [{{< fa brands github >}}](https://github.com/krnippert) [{{< fa brands orcid >}}](https://orcid.org/0009-0009-3542-9118) {{< fa globe >}} |
-| _Airy	Peralta_ -- [{{< fa brands github >}}](https://github.com/airyadriana) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-3652-2623) [{{< fa globe >}}](http://airyadriana.github.io) |
 | _Catherine Polik_ -- [{{< fa brands github >}}](https://github.com/katiepolik) [{{< fa brands orcid >}}](https://orcid.org/0000-0003-0440-1162) {{< fa globe >}} |
 | _Sa'ad A. A. Rafie_ -- [{{< fa brands github >}}](https://github.com/srafie2) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-5199-1439) {{< fa globe >}} |
 | _Olivia Ross_ -- [{{< fa brands github >}}](https://github.com/olross4) [{{< fa brands orcid >}}](https://orcid.org/0009-0008-6594-1596) {{< fa globe >}} |
@@ -49,7 +48,6 @@ _Icon legend: {{< fa brands github >}} = GitHub | {{< fa brands orcid >}} = ORCI
 | _Sainfort Vital_ -- [{{< fa brands github >}}](https://github.com/sainfortvital) [{{< fa brands orcid >}}](https://orcid.org/0009-0005-2034-6927) {{< fa globe >}} |
 | _Anita Weissflog_ -- [{{< fa brands github >}}](https://github.com/DataAnita) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-9527-0964) {{< fa globe >}} |
 | _Zhaoxun (Nancy) Yang_ -- [{{< fa brands github >}}](https://github.com/znyang02) [{{< fa brands orcid >}}](https://orcid.org/0000-0002-1021-9933) {{< fa globe >}} |
-| -- | 
 
 :::
 :::::
