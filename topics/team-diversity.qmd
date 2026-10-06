@@ -19,7 +19,7 @@ Similarly, in a study of 6.6 million medical research papers, Yang et al. found 
 
 ![Mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes. Mixed-gender teams are also more likely to publish an upper-tail paper than same-gender teams by as much as 14.6%, depending on team sizes.](/topics/images/graph_team-gender-novelty.png){fig-alt="Graph showing that mixed-gender teams are more likely to produce novel papers than same-gender teams at all team sizes"}
 
-Diversity in career stages can also be beneficial. For example, graduate students play a crucial “networker” role on scientific teams, particularly in connecting different lab groups to each other(Love et al. 2026).
+Diversity in career stages can also be beneficial. For example, graduate students play a crucial “networker” role on scientific teams, particularly in connecting different lab groups to each other (Love et al. 2026).
 
 It seems reasonable to expect that the effects of cultural and economic diversity on teams would be similar to that of gender diversity, but those factors remain harder to parse at this scale. In any case, the bump in creativity or publishing impact is only a happy side effect of assembling a diverse team. ![](/topics/images/text_go-far.png){style="float: right; width: 50%; padding:10px" fig-alt="Colored background behind the quote 'If you want to go fast, go alone; if you want to go far, go together&apos"} The real reason to do so is that it allows us to tackle bigger questions, makes our findings more relevant, our science more fun, and our world more fair. What it *does not do* (at least in our experience) is make the process faster!
 
@@ -51,25 +51,4 @@ A science team may include members from different research disciplines, sectors,
 
 "Many hands make light work" the saying goes. Think of a meta-analysis where 10 group members can each read 30 papers instead of 1 individual reading 300 papers. Dividing the workload *can* speed up the process, but only if there is an efficient way to manage dividing the work and then bringing the results back together again. Conversely, relying on a few skilled coders can be much more efficient than each individual writing their own code, but unless the group has a mechanism for getting broad input on key decisions, they will lose the value created by bringing together a larger group.
 
-:::: {.callout-warning icon="false"}
-### {{<fa rocket >}} Activity: Draft Your Team's Practices
 
-::: panel-tabset
-### Part 1 - Project Group Discussions
-
-Come up with one practice that you could include in your group practice guidelines to support **each** of the above mechanisms.
-
--   Information Elaboration
--   Avoiding Groupthink
--   Metacognition
--   Improved Consideration of Alternative Solutions
--   Better Task Completion & Resource-Use Efficiency
-
-### Part 2 - Whole-Class Discussion
-
-One member of each project reports out on:
-
--   What was one practice you discussed and plan to adopt?
--   How do you think that will help your group?
-:::
-::::

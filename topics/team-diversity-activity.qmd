@@ -1,0 +1,22 @@
+:::: {.callout-warning icon="false"}
+### {{<fa rocket >}} Activity: Draft Your Team's Practices
+
+::: panel-tabset
+### Part 1 - Project Group Discussions
+
+Come up with one practice that you could include in your group practice guidelines to support **each** of the above mechanisms.
+
+-   Information Elaboration
+-   Avoiding Groupthink
+-   Metacognition
+-   Improved Consideration of Alternative Solutions
+-   Better Task Completion & Resource-Use Efficiency
+
+### Part 2 - Pair Discussions
+
+Shift into pairs or trios.
+
+-   What was one practice you discussed and plan to adopt?
+-   How do you think that will help your group?
+:::
+::::

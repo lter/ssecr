@@ -25,6 +25,8 @@ Please also identify and download one potential dataset your group is considerin
 
 {{< include topics/team-support.qmd >}}
 
+{{< include topics/team-diversity-activity.qmd >}}
+
 {{< include topics/viz-synthesis.qmd >}}
 
 {{< include topics/viz-draw.qmd >}}
