@@ -14,11 +14,11 @@ In order for teams to reap the instrumental benefits of diversity in membership,
 :::{.panel-tabset}
 ### Learning Orientation
 
-Cultivate a **learning goal orientation** rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al. 2013).
+Cultivate a **learning goal orientation** rather than a product goal orientation. Expect to learn from one another and adapt your expectations and plans (Nederveen et al. 2013). While everyone wants to acheive a product, focusing on primarily on the outcome is a recipe for missed opportunities and insights. It also often leads to decisions that short-circuit reproducibility. 
 
 ### Revising Assumptions
 
-Remain open to **revising assumptions and world views**. When divergent positions are met only with resistance, groupthink gains the upper hand.
+Remain open to **revising assumptions and world views**. When divergent positions are met only with resistance, groupthink gains the upper hand. Whether or not divergent views ultimately prove to be "correct" is not the point. Taking the time to expand and explore them reveals underlying assumptions and often, new ways of moving forward.  
 
 ### Cognitive Trust
 
@@ -44,5 +44,7 @@ Remain open to **revising assumptions and world views**. When divergent position
 
 ### All Contribute Some; None Contribute All
 
-![](topics/images/graphic_translational-team-competencies.png){fig-alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership" .lightbox}
+Group formation and maintenance benefit from a variety of roles requiring different interpersonal skills at different stages. It is important that all group members participate in this maintenance work, but smart teams will allow members to contribute in different ways throughout the life of the project.
+
+![](topics/images/graphic_translational-team-competencies.png){fig-alt="Graphic showing how 'team communication', 'collaborative problem-solving' and 'managing team research' intersect and how those intersections benefit either team bonding or team leadership" width="75%" .lightbox}
 <figcaption>Overlapping and intersecting competencies across the domains (from Lotrecchiano _et al._ 2021). Colors define the primary domain for each competency.</figcaption>
