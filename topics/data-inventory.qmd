@@ -20,18 +20,29 @@ We've grouped some recommendations for useful data inventory components below in
 
 First and foremost, you'll want to record **where you found the data and where you can find it again if needed.**
 
-- What is the URL to the data?
+- What is the DOI or URL to the data?
 - When did you last download or otherwise receive the data?
-- Who owns the data (either a person or an institution)?
-- What is the contact info for the data owner?
-- What is the name of the data file when you originally download it?
+- What is the name of the data file when you originally downloaded it?[^filename]    
 - Is there a paper or report that may provide context that isn't included in the official metadata? If so, what's the link/citation info for that document?
     - Sometimes a peer-reviewed paper's Methods section might include valuable context that isn't actually included in the data!
-- If the data have a license, how are you allowed to use the data? How must you cite the data owner/data maintainer?
 
-### Explanatory Variables
+### Use Agreements
 
-Sometimes a data inventory can be a **useful source of explanatory variables for your analysis!**
+Tracking how you are allowed to use data is critical ethical data re-use.
+
+- Who owns the data (a person, multiple people, or an institution)?
+- What is the contact info for the data owner?
+- Does the data have a license that specifies how you are allowed to use the data and how it should be cited?
+- If the data were provided to you individually, or contributed by members of your group, what expectations do the dataset providers have?
+    -  Is an acknowledgement sufficient or is co-authorship a condition of use?
+    -  Are dataset providers comfortable with you publishing their raw data, or derived variables?
+    -  Are there any other 'co-owners' of the data that should also be included beyond the person who provided you with the data?
+    -  When working with unpublished data, we strongly encourage you to ask for and document permissions in writing (e.g., email) to avoid misunderstandings.
+
+
+### Variables
+
+A data inventory can be useful for tracking variables you intend to use in your analysis. Consider not only the **primary variable(s) of interest**, but also what explanatory **variables you might want to include in your analysis!**
 
 - What are the coordinates (i.e., latitude & longitude) of the data?
     - Remember to enter these in decimal degrees if you want to use them in analysis!
@@ -48,24 +59,33 @@ Sometimes a data inventory can be a **useful source of explanatory variables for
     - Relatedly, what are the first and last years/time points in the data?
 - How big was the study area/experimental plot?
 
-### Team Delegation
-
-If you start relying on a data inventory, **it can become a valuable place to assign or delegate tasks within your group.** This can also be helpful at the end of the project when you're trying to remember who deserves credit for finding data/metadata.
-
-- Who--in your group--is responsible for filling out the other columns in the data?
-    - I.e., whose 'homework' is it to flesh out this row of the data inventory?
-- Who is responsible for double-checking the metadata entered by the first team member?
-- Who is the primary point of contact with the original data owner/maintainer?
-
-### Data Use
+### Fitness for Use
 
 One _critical_ use of a data inventory that is often overlooked: **are the data useful to your question?**
 
-If you found the data before, your later data searches will likely also turn it up even if it's not useful! You can save other group members a headache by noting not applicable data so they can disregard it from their searches. 
+If you found the data before, your later data searches will likely also turn it up even if it's not useful! You can save other group members a headache by keeping datasets in your inventory table *even if you end up concluding that a dataset is not useful to your project* and noting the status appropriately, so it doesn't need to be re-investigated the next time it surfaces in a search.
 
-If a particular dataset is not useful, **_why_ is it not useful?** If your questions or in/exclusion criteria evolve, maybe it will become useful later!
+If a particular dataset is not useful, jot down a few notes on, **_why_ is it not useful?** If your questions or in/exclusion criteria evolve, maybe it will become useful later!
+
+### Team Delegation
+
+If you start relying on a data inventory, **it can become a valuable place to assign or delegate tasks within your group.** This can also be helpful at the end of the project when you're trying to remember who deserves credit for finding data/metadata. It can also be a helpful way to track **progress and status** of shared work. We will discuss more sophisticated methods for [project management](module-07.qmd#beginning-to-manage-the-project) later, but to start with, consider adding columns to your data inventory to track:
+
+- Who--in your group--is responsible for filling out the other columns for the dataset?
+    - I.e., whose 'homework' is it to flesh out this row of the data inventory?
+- Who is responsible for double-checking the metadata entered by the first team member?
+- Who is the primary point of contact with the original data owner/maintainer?
+- What is the current status of the dataset?
+    - Consider adding categories that reflect your workflow at this time, e.g., "data found", "metadata complete", "not applicable". You may add to this list as you outline and refine dataset-specific tasks in your [workflow plan](module-07.qmd#making-a-workflow-plan)
+
 
 :::
+
+::: {.callout-note icon="false"}
+## {{< fa robot >}} GenAI Opportunities
+GenAI tools excel at reading metadata and may be able to fill out *some* of your dataset inventory table from downloaded metadata or other dataset-specific documentation. If you choose to use AI for this, make sure you have a human assigned to double-check its work. Prompting your AI assistant to provide not only the answer but also a supporting quotation can accelerate the human verification process. Providing example rows that you've already filled out can also help AI understand the format and structure you are looking for (e.g., a convention of YYYY-YYYY for dates) and save you a lot of retyping and correcting.
+:::
+
 
 ### Data Inventory Value
 
@@ -73,7 +93,8 @@ Documenting potential datasets (and their metadata) thoroughly in a data invento
 
 - A well-documented data inventory makes it easier for researchers to find and access specific data for reproducible research
 - Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment
-- Detailed documentation will speed up the data publication process (e.g., data provenance, difference among methods)
+- Documentation ensures that any restrictions on data use are tracked to ensure proper crediting even as the project and team evolve
+- Detailed documentation will speed up the data publication process (e.g., data provenance and differences among methods)
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Draft a Data Inventory
@@ -101,3 +122,5 @@ As a whole class, let's discuss the following questions:
 
 :::
 ::::
+
+[^filename]: In the philosophy of "[keep raw data raw](https://dataoneorg.github.io/Education/bestpractices/preserve-information-keep)" it is invaluable to keep an exact copy of the data as provided -- including the author's original filename -- so you can trace back to a completely untouched original version if questions arise.
