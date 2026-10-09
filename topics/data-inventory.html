@@ -366,25 +366,38 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <p>As you find data, it will become necessary to–somehow–record what data your group has on hand. A <strong>data inventory</strong> is an extremely useful tool in this effort! A data inventory can take many forms but at its simplest, it should be a <strong>table where each dataset you find gets one row and critical information about that dataset is recorded in each column.</strong> It can be difficult to know which columns to include but keep in mind that it is always easiest to record information that you don’t wind up using than it is to go hunt through all of your datasets for some piece of information you didn’t record in the first place.</p>
 <p>We’ve grouped some recommendations for useful data inventory components below into some loose categories but these are <em>guidelines</em> and your team likely will come up with useful additions–or may not need some of these pieces of information!</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Source</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Explanatory Variables</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Team Delegation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Data Use</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Source</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Use Agreements</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Variables</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Fitness for Use</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Team Delegation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>First and foremost, you’ll want to record <strong>where you found the data and where you can find it again if needed.</strong></p>
 <ul>
-<li>What is the URL to the data?</li>
+<li>What is the DOI or URL to the data?</li>
 <li>When did you last download or otherwise receive the data?</li>
-<li>Who owns the data (either a person or an institution)?</li>
-<li>What is the contact info for the data owner?</li>
-<li>What is the name of the data file when you originally download it?</li>
+<li>What is the name of the data file when you originally downloaded it?<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><br>
+</li>
 <li>Is there a paper or report that may provide context that isn’t included in the official metadata? If so, what’s the link/citation info for that document?
 <ul>
 <li>Sometimes a peer-reviewed paper’s Methods section might include valuable context that isn’t actually included in the data!</li>
 </ul></li>
-<li>If the data have a license, how are you allowed to use the data? How must you cite the data owner/data maintainer?</li>
 </ul>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Sometimes a data inventory can be a <strong>useful source of explanatory variables for your analysis!</strong></p>
+<p>Tracking how you are allowed to use data is critical ethical data re-use.</p>
+<ul>
+<li>Who owns the data (a person, multiple people, or an institution)?</li>
+<li>What is the contact info for the data owner?</li>
+<li>Does the data have a license that specifies how you are allowed to use the data and how it should be cited?</li>
+<li>If the data were provided to you individually, or contributed by members of your group, what expectations do the dataset providers have?
+<ul>
+<li>Is an acknowledgement sufficient or is co-authorship a condition of use?</li>
+<li>Are dataset providers comfortable with you publishing their raw data, or derived variables?</li>
+<li>Are there any other ‘co-owners’ of the data that should also be included beyond the person who provided you with the data?</li>
+<li>When working with unpublished data, we strongly encourage you to ask for and document permissions in writing (e.g., email) to avoid misunderstandings.</li>
+</ul></li>
+</ul>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>A data inventory can be useful for tracking variables you intend to use in your analysis. Consider not only the <strong>primary variable(s) of interest</strong>, but also what explanatory <strong>variables you might want to include in your analysis!</strong></p>
 <ul>
 <li>What are the coordinates (i.e., latitude &amp; longitude) of the data?
 <ul>
@@ -412,22 +425,39 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <li>How big was the study area/experimental plot?</li>
 </ul>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>If you start relying on a data inventory, <strong>it can become a valuable place to assign or delegate tasks within your group.</strong> This can also be helpful at the end of the project when you’re trying to remember who deserves credit for finding data/metadata.</p>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>One <em>critical</em> use of a data inventory that is often overlooked: <strong>are the data useful to your question?</strong></p>
+<p>If you found the data before, your later data searches will likely also turn it up even if it’s not useful! You can save other group members a headache by keeping datasets in your inventory table <em>even if you end up concluding that a dataset is not useful to your project</em> and noting the status appropriately, so it doesn’t need to be re-investigated the next time it surfaces in a search.</p>
+<p>If a particular dataset is not useful, jot down a few notes on, <strong><em>why</em> is it not useful?</strong> If your questions or in/exclusion criteria evolve, maybe it will become useful later!</p>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<p>If you start relying on a data inventory, <strong>it can become a valuable place to assign or delegate tasks within your group.</strong> This can also be helpful at the end of the project when you’re trying to remember who deserves credit for finding data/metadata. It can also be a helpful way to track <strong>progress and status</strong> of shared work. We will discuss more sophisticated methods for <a href="module-07.qmd#beginning-to-manage-the-project">project management</a> later, but to start with, consider adding columns to your data inventory to track:</p>
 <ul>
-<li>Who–in your group–is responsible for filling out the other columns in the data?
+<li>Who–in your group–is responsible for filling out the other columns for the dataset?
 <ul>
 <li>I.e., whose ‘homework’ is it to flesh out this row of the data inventory?</li>
 </ul></li>
 <li>Who is responsible for double-checking the metadata entered by the first team member?</li>
 <li>Who is the primary point of contact with the original data owner/maintainer?</li>
+<li>What is the current status of the dataset?
+<ul>
+<li>Consider adding categories that reflect your workflow at this time, e.g., “data found”, “metadata complete”, “not applicable”. You may add to this list as you outline and refine dataset-specific tasks in your <a href="module-07.qmd#making-a-workflow-plan">workflow plan</a></li>
+</ul></li>
 </ul>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>One <em>critical</em> use of a data inventory that is often overlooked: <strong>are the data useful to your question?</strong></p>
-<p>If you found the data before, your later data searches will likely also turn it up even if it’s not useful! You can save other group members a headache by noting not applicable data so they can disregard it from their searches.</p>
-<p>If a particular dataset is not useful, <strong><em>why</em> is it not useful?</strong> If your questions or in/exclusion criteria evolve, maybe it will become useful later!</p>
 </div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span><i class="fa-solid fa-robot" aria-label="robot"></i> GenAI Opportunities
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>GenAI tools excel at reading metadata and may be able to fill out <em>some</em> of your dataset inventory table from downloaded metadata or other dataset-specific documentation. If you choose to use AI for this, make sure you have a human assigned to double-check its work. Prompting your AI assistant to provide not only the answer but also a supporting quotation can accelerate the human verification process. Providing example rows that you’ve already filled out can also help AI understand the format and structure you are looking for (e.g., a convention of YYYY-YYYY for dates) and save you a lot of retyping and correcting.</p>
 </div>
 </div>
 <section id="data-inventory-value" class="level3">
@@ -436,7 +466,8 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 <ul>
 <li>A well-documented data inventory makes it easier for researchers to find and access specific data for reproducible research</li>
 <li>Documentation will help researchers to quickly understand the context, scope, and limitations of the data, reducing the time spent on preliminary data assessment</li>
-<li>Detailed documentation will speed up the data publication process (e.g., data provenance, difference among methods)</li>
+<li>Documentation ensures that any restrictions on data use are tracked to ensure proper crediting even as the project and team evolve</li>
+<li>Detailed documentation will speed up the data publication process (e.g., data provenance and differences among methods)</li>
 </ul>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -484,7 +515,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>In the philosophy of “<a href="https://dataoneorg.github.io/Education/bestpractices/preserve-information-keep">keep raw data raw</a>” it is invaluable to keep an exact copy of the data as provided – including the author’s original filename – so you can trace back to a completely untouched original version if questions arise.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
