@@ -13,8 +13,6 @@ As your project work has advanced, your group may find that it's useful to artic
 
 {{< include topics/proj-analysis.qmd >}}
 
-{{< include topics/proj-mgmt-plan.qmd >}}
-
 {{< include topics/workflow-plan.qmd >}}
 
 {{< include topics/harmonize-data.qmd >}}
