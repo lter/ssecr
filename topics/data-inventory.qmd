@@ -69,7 +69,7 @@ If a particular dataset is not useful, jot down a few notes on, **_why_ is it no
 
 ### Team Delegation
 
-If you start relying on a data inventory, **it can become a valuable place to assign or delegate tasks within your group.** This can also be helpful at the end of the project when you're trying to remember who deserves credit for finding data/metadata. It can also be a helpful way to track **progress and status** of shared work. We will discuss more sophisticated methods for [project management](module-07.qmd#beginning-to-manage-the-project) later, but to start with, consider adding columns to your data inventory to track:
+If you start relying on a data inventory, **it can become a valuable place to assign or delegate tasks within your group.** This can also be helpful at the end of the project when you're trying to remember who deserves credit for finding data/metadata. It can also be a helpful way to track **progress and status** of shared work. We will discuss more sophisticated methods for [project management](module-06.qmd#beginning-to-manage-the-project) later, but to start with, consider adding columns to your data inventory to track:
 
 - Who--in your group--is responsible for filling out the other columns for the dataset?
     - I.e., whose 'homework' is it to flesh out this row of the data inventory?
@@ -83,7 +83,7 @@ If you start relying on a data inventory, **it can become a valuable place to as
 
 ::: {.callout-note icon="false"}
 ## {{< fa robot >}} GenAI Opportunities
-GenAI tools excel at reading metadata and may be able to fill out *some* of your dataset inventory table from downloaded metadata or other dataset-specific documentation. If you choose to use AI for this, make sure you have a human assigned to double-check its work. Prompting your AI assistant to provide not only the answer but also a supporting quotation can accelerate the human verification process. Providing example rows that you've already filled out can also help AI understand the format and structure you are looking for (e.g., a convention of YYYY-YYYY for dates) and save you a lot of retyping and correcting.
+GenAI tools excel at reading metadata and may be able to fill out *some* of your dataset inventory table from downloaded metadata or other dataset-specific documentation. If you choose to use AI for this, make sure you have a human assigned to double-check its work. Prompting your AI assistant to provide not only the answer but also a supporting quote can accelerate the human verification process. Providing example rows that you've already filled out can also help AI understand the format and structure you are looking for (e.g., a convention of YYYY-YYYY for dates) and save you a lot of tedious retyping and formatting corrections.
 :::
 
 
