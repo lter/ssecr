@@ -19,6 +19,8 @@ As your project work has advanced, your group may find that it's useful to artic
 
 {{< include topics/wrangle-explore.qmd >}}
 
+{{< include topics/wrangle-qc.qmd >}}
+
 # Prep Work for Next Module
 
 :::{.callout-note icon="false" collapse="false"}

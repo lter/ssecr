@@ -13,8 +13,6 @@ There is no specific pre-class preparation for this module!
 
 {{< include topics/thinking-convergence.qmd >}}
 
-{{< include topics/wrangle-qc.qmd >}}
-
 {{< include topics/code-custom-functions.qmd >}}
 
 # Prep Work for Next Module
