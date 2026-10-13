@@ -5,40 +5,21 @@
 
 After completing this topic you will be able to: 
 
-- <u>Identify</u> key elements of project management frameworks
+- <u>Identify</u> typical elements of project management frameworks
 
 :::
  
 There are dozens of formal project management frameworks/approaches, most of which come out of industries (such as software development, construction, and manufacturing) that require teams of people to work together with efficiency and accountability. You've probably heard the names tossed around: Agile, Scrum, Lean Sigma Six, Kanban, etc. There are whole industries devoted to training project managers and developing apps to support them.
 
-The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don't require a full-time project manager to implement.
+The trick, for scientific research projects, is to identify the approaches that also allow questions and goals to evolve along the way – and that don't require a full-time project manager to implement. It's easy to be seduced into thinking that the right system will keep your group organized. Hard-won experience tells us that the best system for your group is the one that requires the least adjustment to existing habits for the majority of group members.  
 
-Some common elements of project management schemes include:
 
-:::{.panel-tabset}
-### Logical Step Sequence
+PM Element | Industry Outcome | Science Outcome |
+|:-|:-|:-|
+| Break down tasks into manageable chunks |  Delegation | Task articulation and distribution | 
+| Sequence of steps | Ensure needed resources/people tools are available when needed | Know which skills are needed when; know what form the output of each script/analysis needs to take |
+| Identify dependencies | Avoid supply chain lags | Know what data you need and when you need them |
+| Clarify responsibilities | Document productivity and responsibility | Avoid duplication of effort; keep the project moving; support authorship/credit agreements |
+| Mitigate risk | Know when to abort or revise project goals | Assess threats to project success early and make a plan B |
 
-| Industry Outcome | Science Outcome |
-|:-|:-|
-| Ensure needed resources/people tools are available when needed | Know which skills are needed when; know what form the output of each script/analysis needs to take |
-
-### Identify Dependencies
-
-| Industry Outcome | Science Outcome |
-|:-|:-|
-| Avoid supply chain lags | Know what data you need and when you need them |
-
-### Clarify Responsibilities
-
-| Industry Outcome | Science Outcome |
-|:-|:-|
-| Document productivity and responsibility | Avoid duplication of effort; keep the project moving; support authorship/credit agreements |
-
-### Mitigate Risk
-
-| Industry Outcome | Science Outcome |
-|:-|:-|
-| Know when to abort or revise project goals | Assess threats to project success early and make a plan B |
-
-:::
-
+: **Common Elements of Project Management** {.bg-white .striped .hover .bordered .primary} 

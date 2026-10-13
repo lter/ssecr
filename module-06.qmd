@@ -15,11 +15,13 @@ There is no specific pre-class preparation for this module, however, **_after_ t
 
 {{< include topics/proj-mgmt-def.qmd >}}
 
+{{< include topics/proj-mgmt-scope.qmd >}}
+
 {{< include topics/proj-mgmt-start.qmd >}}
 
 {{< include topics/proj-mgmt-plan.qmd >}}
 
-{{< include topics/proj-mgmt-scope.qmd >}}
+
 
 # Prep Work for Next Module
 
