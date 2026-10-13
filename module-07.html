@@ -490,6 +490,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
   <li><a href="#making-a-workflow-plan" id="toc-making-a-workflow-plan" class="nav-link" data-scroll-target="#making-a-workflow-plan">Making a Workflow Plan</a></li>
   <li><a href="#harmonizing-data" id="toc-harmonizing-data" class="nav-link" data-scroll-target="#harmonizing-data">Harmonizing Data</a></li>
   <li><a href="#exploring-the-data" id="toc-exploring-the-data" class="nav-link" data-scroll-target="#exploring-the-data">Exploring the Data</a></li>
+  <li><a href="#quality-control" id="toc-quality-control" class="nav-link" data-scroll-target="#quality-control">Quality Control</a>
+  <ul class="collapse">
+  <li><a href="#qc-considerations" id="toc-qc-considerations" class="nav-link" data-scroll-target="#qc-considerations">QC Considerations</a></li>
+  <li><a href="#number-checking" id="toc-number-checking" class="nav-link" data-scroll-target="#number-checking">Number Checking</a></li>
+  <li><a href="#text-replacement" id="toc-text-replacement" class="nav-link" data-scroll-target="#text-replacement">Text Replacement</a></li>
+  <li><a href="#regular-expressions" id="toc-regular-expressions" class="nav-link" data-scroll-target="#regular-expressions">Regular Expressions</a></li>
+  </ul></li>
   <li><a href="#prep-work-for-next-module" id="toc-prep-work-for-next-module" class="nav-link" data-scroll-target="#prep-work-for-next-module">Prep Work for Next Module</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lter/ssecr/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
@@ -774,10 +781,123 @@ Analysis flowchart for a test of controls on Silica exports in streamflow.
 </div>
 </div>
 </section>
+<section id="quality-control" class="level2">
+<h2 class="anchored" data-anchor-id="quality-control">Quality Control</h2>
+<div class="callout callout-style-default callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span><i class="fa-solid fa-brain" aria-label="brain"></i> Learning Objectives
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>After completing this topic you will be able to:</p>
+<ul>
+<li><u>Define</u> quality control</li>
+<li><u>Summarize</u> typical operations in a quality control workflow</li>
+<li><u>Use</u> regular expressions to perform flexible text operations</li>
+</ul>
+</div>
+</div>
+</div>
+<p>You may have encountered the phrase “QA/QC” (<u>Q</u>uality <u>A</u>ssurance / <u>Q</u>uality <u>C</u>ontrol) in relation to data cleaning. Technically, quality <em>assurance</em> only encapsulates <em>preventative</em> measures for reducing errors. One example of QA would be using a template for field datasheets because using standard fields reduces the risk that data are recorded inconsistently and/or incompletely. Quality <em>control</em> on the other hand refers to all steps taken to resolve errors <em>after</em> data are collected. Any code that you write to fix typos or remove outliers from a dataset falls under the umbrella of QC.</p>
+<p>In synthesis work, QA is only very rarely an option. You’ll mostly be working with datasets that have already been collected and attempting to handle any issues <em>post hoc</em> which means the vast majority of data wrangling operations will be quality control methods. These QC efforts can be <strong>incredibly</strong> time-consuming so using a programming language (like R or Python) is a dramatic improvement over manually looking through the data using Microsoft Excel or other programs like it.</p>
+<section id="qc-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="qc-considerations">QC Considerations</h3>
+<p>The datasets you gather for your synthesis project will likely have a multitude of issues you’ll need to resolve before the data are ready for visualization or analysis. Some of these issues may be clearly identified in that datasets’ metadata or apply to all datasets but it is good practice to make a thorough QC effort as early as is feasible. Keep the following data issues and/or checks in mind as we cover code tools that may be useful in this context later in the module.</p>
+<ul>
+<li>Verify taxonomic classifications against authorities
+<ul>
+<li><a href="https://www.itis.gov/">ITIS</a>, <a href="https://www.gbif.org/">GBIF</a>, and <a href="https://www.marinespecies.org/">WoRMS</a> are all examples of taxonomic authorities</li>
+<li>Note that many of these authorities have R or Python libraries that can make this verification step scripted rather than dependent on manual searches</li>
+</ul></li>
+<li>Handle missing data
+<ul>
+<li>Some datasets will use a code to indicate missing values (likely identified in their metadata) while others will just have empty cells</li>
+</ul></li>
+<li>Check for unreasonable values / outliers
+<ul>
+<li>Can use conditionals to create “flags” for these values or just filter them out</li>
+</ul></li>
+<li>Check geographic coordinates’ reasonability
+<ul>
+<li>E.g., western hemisphere coordinates may lack the minus sign</li>
+</ul></li>
+<li>Check date formatting
+<ul>
+<li>I.e., if all sampling is done in the first week of each month it can be difficult to say whether a given date is formatted as MM/DD/YY or DD/MM/YY</li>
+</ul></li>
+<li>Consider spatial and temporal granularity among datasets
+<ul>
+<li>You may need to aggregate data from separate studies in different ways to ensure that the data are directly comparable across all of the data you gather</li>
+</ul></li>
+<li>Handle duplicate data / rows</li>
+</ul>
+</section>
+<section id="number-checking" class="level3">
+<h3 class="anchored" data-anchor-id="number-checking">Number Checking</h3>
+<p>When you read in a dataset and a column that <em>should be</em> numeric is instead read in as a character, it can be a sign that there are malformed numbers lurking in the background. Checking for and resolving these non-numbers is preferable to simply coercing the column into being numeric because the latter method typically changes those values to ‘NA’ where a human might be able to deduce the true number each value ‘should be.’</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the supportR package</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(supportR)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an example dataset with non-numbers in ideally numeric columns</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>fish_ct <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">"species"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"salmon"</span>, <span class="st">"bass"</span>, <span class="st">"halibut"</span>, <span class="st">"moray eel"</span>),</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">"count"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="st">"14x"</span>, <span class="st">"_23"</span>, <span class="dv">1</span>))</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for malformed numbers in column(s) that should be numeric</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>For 'count', 2 non-numbers identified: '14x' | '_23'</code></pre>
+</div>
+</div>
+<p>In the above example, “14x” would be coerced to NA if you simply force the column without checking but you could drop the “x” with text replacing methods once you use tools like this one to flag it for your attention.</p>
+</section>
+<section id="text-replacement" class="level3">
+<h3 class="anchored" data-anchor-id="text-replacement">Text Replacement</h3>
+<p>One of the simpler ways of handling text issues is just to replace a string with another string. Most programming languages support this functionality.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use pattern match/replace to simplify problem entries</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>fish_ct<span class="sc">$</span>count <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"x|_"</span>, <span class="at">replacement =</span> <span class="st">""</span>, <span class="at">x =</span> fish_ct<span class="sc">$</span>count)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that they are fixed</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>bad_nums <span class="ot">&lt;-</span> supportR<span class="sc">::</span><span class="fu">num_check</span>(<span class="at">data =</span> fish_ct, <span class="at">col =</span> <span class="st">"count"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>For 'count', no non-numeric values identified.</code></pre>
+</div>
+</div>
+<p>The vertical line in the <code>gsub</code> example above lets us search for (and replace) multiple patterns. Note however that while you can search for many patterns at once, only a single replacement value can be provided with this function.</p>
+</section>
+<section id="regular-expressions" class="level3">
+<h3 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h3>
+<p>You may sometimes want to perform more generic string matching where you don’t necessarily know–or want to list–all possible strings to find and replace. For instance, you may want remove any letter in a numeric column or find and replace numbers with some sort of text note. “Regular expressions” are how programmers specify these generic matches and using them can be a nice way of streamlining code.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make a test vector</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>regex_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"hello"</span>, <span class="st">"123"</span>, <span class="st">"goodbye"</span>, <span class="st">"456"</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Find all numbers and replace with the letter X</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:digit:]]"</span>, <span class="at">replacement =</span> <span class="st">"x"</span>, <span class="at">x =</span> regex_vec)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "hello"   "xxx"     "goodbye" "xxx"    </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace any number of letters with only a single 0</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"[[:alpha:]]+"</span>, <span class="at">replacement =</span> <span class="st">"0"</span>, <span class="at">x =</span> regex_vec)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0"   "123" "0"   "456"</code></pre>
+</div>
+</div>
+<p>The <a href="https://github.com/rstudio/cheatsheets/blob/afaa1fec4c5b9aabfa886218b6ba20317446d378/strings.pdf"><code>stringr</code> package cheatsheet</a> has a really nice list of regular expression options that you may find valuable if you want to delve deeper on this topic. Scroll to the second page of the PDF to see the most relevant parts.</p>
+</section>
+</section>
 <section id="prep-work-for-next-module" class="level1">
 <h1>Prep Work for Next Module</h1>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -786,7 +906,7 @@ Analysis flowchart for a test of controls on Silica exports in streamflow.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
 <section id="before-we-meet-to-cover-the-next-module-do-all-of-the-work-in-the-callout-like-this-one-at-the-top-of-that-modules-page" class="level4 callout-body-container callout-body">
 <h4 class="anchored" data-anchor-id="before-we-meet-to-cover-the-next-module-do-all-of-the-work-in-the-callout-like-this-one-at-the-top-of-that-modules-page"><strong>Before we meet to cover the next module</strong>, do all of the work in the callout like this one at the top of that module’s page!</h4>
 </section>
