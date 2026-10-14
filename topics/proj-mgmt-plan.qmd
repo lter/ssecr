@@ -16,25 +16,40 @@ A robust support infrastructure exists for the project management profession -- 
 But for the job of managing research collaborations, we've found that the single most important factor is whether your collaborators will use the system.
 For that to happen, they must have easy access to it, ideally without setting up a new account and as part of something they already do every day.
 
-For non-coders, we've included a [Google sheet template](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing) of a Gantt chart, pictured below.
+### Anatomy of an issue
 
-![](topics/images/image_gantt-image.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox}
+If you're already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub's project management capabilities?
+In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project. Issues can also be created in the project itself.
 
-But if you're already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub's project management capabilities?
-In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project.
+Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates.
+Many non-coders are also able to access and make good use of Gitub Projects through the web interface, which allows them to comment, raise questions, and take on tasks in the same interface as coders. 
 
-Issues can also be created in the project itself.
-Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates. The examples below draw from the repository we used to organize the first iteration of this course.
+![](topics/images/proj-mgmt-issue.png){fig-alt="an image of an issue in github, labelled with the locations where a user can add assignees, add keywords, add dependencies, expected timelines and other metadata" .lightbox}
+
+<!-- We've also included a Google sheet template to develop a Gantt chart outside of the GH interface entirely[Google sheet template](https://docs.google.com/spreadsheets/d/18Ydpam94Ycs2_y1NohSKeohauFf2s9agegxZgPJQNWg/edit?gid=1680445982#gid=1680445982).
+
+![](topics/images/proj-mgmt-gantt-2006.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox} -->
+
+Once once you have a few issues in your project, you'll find that GitHub Projects (and many other project management tools) offer multiple views to help guide your work and decision-making. 
+
+The examples below draw from the repository we used to organize the first iteration of this course.
+
+KanBan-style boards are often most intuitive, giving you a quick way to assess what is most urgent.
 
 ![](topics/images/image_github-project.png){fig-alt="A series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" .lightbox}
 
-A few additional views make it even easier to track overall progress and individual workloads.
-
-- The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
-- The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
+The "roadmap" view let's you lay out your whole project with estimated start and end dates for various activities. It functions like an interactive Gantt chart, where issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. The stack of issues can also be sorted by start date, target date, topic tags or assigned collaborator.
 
 ![](topics/images/image_github-gantt.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox}
 <figcaption>Gantt Chart Example using GitHub Projects</figcaption>
+
+The "sliced tasks view" allows each collaborator to see their own assigned tasks, which is very helpful when you  want to be sure you're delivering on your commitments.
+
+![](topics/images/proj-mgmt-my-tasks.png){fig-alt="kanban board filtered down to only tasks assigned to the logged in user red circles highlight the my tasks tab and the filter criteria" .lightbox}
+
+Another way to quickly access similar information is to filter the issues in your repository that are assigned to an individual.
+
+![](topics/images/proj-mgmt-issue-assigned.png){fig-alt="an issue list, filtered by the assigned user" .lightbox}
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Develop a Project Timeline/Gantt Chart (30 minutes)
@@ -83,3 +98,12 @@ Instructions are included for using either GitHub or a Google sheet template to 
 - After 30 minutes, return to whole group and discuss any insights or innovations
 
 ::::
+
+### Additional Resources
+
+We've really only brushed the surface of project management today. You will each find tools and approaches that fit your work style. As you do, a few additional resources may be helpful.
+
+- [GitHub "About Projects" Documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+- [LTER Network Office Scientific Computing Workshop on GH Issues](https://lter.github.io/workshop-github/issues.html)
+- [LTER Network Office Scientific Computing Workshop on GH Milestones](https://lter.github.io/workshop-github/milestones.html)
+- [LTER Network Office Scientific Computing Workshop on GH Projects](https://lter.github.io/workshop-github/projects.html)
