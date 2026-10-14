@@ -5,7 +5,8 @@
 
 After completing this topic you will be able to: 
 
-- <u>Describe</u> some benefits/drawbacks of different project management tools
+- <u>Explain</u> how to set up a project in GitHub
+- <u>Describe</u> some benefits/drawbacks of different project management views
 - <u>Draft</u> a plan for your own project using one of those tools
 
 :::
@@ -30,26 +31,27 @@ Many non-coders are also able to access and make good use of Gitub Projects thro
 
 ![](topics/images/proj-mgmt-gantt-2006.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox} -->
 
-Once once you have a few issues in your project, you'll find that GitHub Projects (and many other project management tools) offer multiple views to help guide your work and decision-making. 
+### Different views for different goals
 
-The examples below draw from the repository we used to organize the first iteration of this course.
+Once once you have a few issues in your project, you'll find that GitHub Projects (and many other project management tools) offer multiple views to help guide your work and decision-making. The examples below draw from the repository we used to organize the first iteration of this course.
 
 KanBan-style boards are often most intuitive, giving you a quick way to assess what is most urgent.
 
-![](topics/images/image_github-project.png){fig-alt="A series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" .lightbox}
+![A KanBan view of SSECR 2024 Project Board](topics/images/image_github-project.png){fig-alt="A series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" .lightbox}
 
 The "roadmap" view let's you lay out your whole project with estimated start and end dates for various activities. It functions like an interactive Gantt chart, where issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. The stack of issues can also be sorted by start date, target date, topic tags or assigned collaborator.
 
-![](topics/images/image_github-gantt.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox}
-<figcaption>Gantt Chart Example using GitHub Projects</figcaption>
+![Gantt Chart Example using GitHub Projects](topics/images/image_github-gantt.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox}
 
 The "sliced tasks view" allows each collaborator to see their own assigned tasks, which is very helpful when you  want to be sure you're delivering on your commitments.
 
-![](topics/images/proj-mgmt-my-tasks.png){fig-alt="kanban board filtered down to only tasks assigned to the logged in user red circles highlight the my tasks tab and the filter criteria" .lightbox}
+![Filter by your own tasks to keep yourself accountable](topics/images/proj-mgmt-my-tasks.png){fig-alt="kanban board filtered down to only tasks assigned to the logged in user red circles highlight the my tasks tab and the filter criteria" .lightbox}
 
 Another way to quickly access similar information is to filter the issues in your repository that are assigned to an individual.
 
-![](topics/images/proj-mgmt-issue-assigned.png){fig-alt="an issue list, filtered by the assigned user" .lightbox}
+![Repository issues can be used in a similar way](topics/images/proj-mgmt-issue-assigned.png){fig-alt="an issue list, filtered by the assigned user" .lightbox}
+
+In the following activity, we'll ask you to think through the major steps you need to accomplish, break them into manageable sub-tasks, set time-bound goals, and assign tasks. This won't solve every project management challenge you face, but if you can maintain it at a reasonable level, it will help keep you on track, know who committed to what, and reduce bottlenecks. We've included a google sheet version of the Gantt chart, but recommend that you focus on doing it in GitHub.
 
 ::::{.callout-warning icon="false"}
 ### {{<fa rocket >}} Activity: Develop a Project Timeline/Gantt Chart (30 minutes)
