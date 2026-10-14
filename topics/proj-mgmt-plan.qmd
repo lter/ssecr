@@ -10,15 +10,7 @@ After completing this topic you will be able to:
 
 :::
 
-Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities. Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities. With each task arranged on a timeline, it becomes easier to spot potential dependencies that could otherwise hold up the project. With simultaneous tasks stacked vertically, it becomes apparent when the planned workload is unrealistic.
-
-- Before diving into any specific tool, start by making a list of your goal and the steps necessary to get there.
-- Place them into an outline in the order they must proceed.
-    - Some steps cannot start until others are finished, while others can proceed simultaneously.
-    - Sequential steps get a new number, while steps that can be done in parallel get the same number with different letters.
-- Attach an estimated time frame to each step and identify a responsible team member (tentative at this point).
-- Arrange the steps in colored bars along a horizontal timeline.
-- Use the visualization to assess which steps are likely to be bottlenecks and when the team may be relying too heavily on one individual for mission-critical work.
+Once your team goals and the necessary steps are agreed on, it becomes much easier to build a project plan that clarifies the timeline and team member responsibilities. Especially with limited-term projects such as ours, a Gantt chart can be a particularly valuable way to map out project dependencies and responsibilities. With each task arranged on a timeline, spotting hidden dependencies and unrealistic workloads becomes much easier.
 
 A robust support infrastructure exists for the project management profession -- including formal training and a multitude of (often pricey) apps.
 But for the job of managing research collaborations, we've found that the single most important factor is whether your collaborators will use the system.
@@ -30,33 +22,43 @@ For non-coders, we've included a [Google sheet template](https://docs.google.com
 
 But if you're already working in GitHub or GitLab to collaborate on code, why not take advantage of GitHub's project management capabilities?
 In GitHub, issues from your repos can be assigned to projects (which sit at a level above repos), allowing an overarching view of all the tasks associated with a project.
+
 Issues can also be created in the project itself.
-Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates.
-The examples below draw from the repository we are using to organize the first iteration of this course.
+Both kinds of issues can be assigned to individuals, marked with topical tags, and assigned start and due dates. The examples below draw from the repository we used to organize the first iteration of this course.
 
 ![](topics/images/image_github-project.png){fig-alt="A series of vertical boards labelled back burner, inqueue, active progress, waiting, and done, with cards for specific tasks and individuals and due dates assigned" .lightbox}
 
-Two additional views make it even easier to track overall progress and individual workloads.
-The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue.
-In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly.
-The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
+A few additional views make it even easier to track overall progress and individual workloads.
 
-The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
+- The "roadmap" view in GitHub functions like an interactive Gantt chart, once start and target dates are assigned to an issue. In the roadmap view, issues can by dragged forward and back in time and the issue's start or end date will adjust accordingly. The stack of issues can be sorted by start date, target date, topic tags or assigned collaborator.
+- The "sliced tasks view" also allows each collaborator to see only their own assigned tasks.
 
 ![](topics/images/image_github-gantt.png){fig-alt="A series of overlapping horizontal colored bars represents the active work periods for several critical project tasks" .lightbox}
 <figcaption>Gantt Chart Example using GitHub Projects</figcaption>
 
 ::::{.callout-warning icon="false"}
-### {{<fa rocket >}} Activity: Develop a Project Timeline/Gantt Chart
+### {{<fa rocket >}} Activity: Develop a Project Timeline/Gantt Chart (30 minutes)
 
 As a project group, work through the following prompts.
 
 Instructions are included for using either GitHub or a Google sheet template to complete a project Gantt chart. GitHub has more capabilities, especially for accessing individual task lists, but the Google Sheet template is included in case group members are not yet comfortable with GitHub.
 
-- Decide whether you will use the Google Sheet template or GitHub
-    - Click the respective tab for the next direction
-
 :::{.panel-tabset}
+    
+### GitHub Project
+
+1. Go to your project repository and find the project that has been created for you (top center menu)
+    - It will open in a Kanban Board view
+2. Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description
+    - A nice touch here is to add a checklist of subtasks
+3. Choose task leads and add them to each task card (supporting group members can also be added)
+4. Add approximate start dates and target end dates for each task
+5. When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back
+6. Review the chart
+    - What appear to be the bottlenecks? How could you mitigate them?
+    - Can subgroups work simultaneously on different sub-projects?
+    - Do you need to think about re-scoping the project?
+
 ### Google Sheet Template
 
 1. Access the [**Google sheet template**](https://docs.google.com/spreadsheets/d/1VtbsyTtJE-clviTAjtDnXM1GvXP6JusDq06AVm8WOUI/edit?usp=sharing), and copy it into your project folder
@@ -72,22 +74,8 @@ Instructions are included for using either GitHub or a Google sheet template to 
     - How could you mitigate them?
     - Can subgroups work simultaneously on different sub-projects?
     - Do you need to think about re-scoping the project?
-6. Revise task dates as needed
-    
-### GitHub Project
+6. Revise task dates as needed    
 
-1. Go to your project repository and find the project that has been created for you (top center menu)
-    - It will open in a Kanban Board view
-2. Begin adding tasks/issues (bottom of each list). Click on the task title to open it and add a brief description
-    - A nice touch here is to add a checklist of subtasks
-3. Choose task leads and add them to each task card (supporting group members can also be added)
-4. Add approximate start dates and target end dates for each task
-5. When you have most of your major tasks entered, switch to the roadmap view and shift the timelines as needed by extending the boxes or dragging them forward or back
-6. Review the chart
-    - What appear to be the bottlenecks? How could you mitigate them?
-    - Can subgroups work simultaneously on different sub-projects?
-    - Do you need to think about re-scoping the project?
-    
 :::
 
 - Regardless of which tool you used, decide on a plan for checking in and updating the Gantt chart
