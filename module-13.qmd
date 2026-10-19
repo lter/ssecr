@@ -2,7 +2,13 @@
 title: "Parking Downhill"
 ---
 
-Similarly to the prior module, today we'll cover ways in which you can make it as easy as possible to set this project aside if needed but lose as little momentum as possible when picking it back up. We'll also cover how a persuasive grant proposal might be derived from your work thus far. Finally, we'll end by discussing how you might work with spatial data as this is frequently a peripheral or lower-priority question for synthesis groups.
+<!---
+!!! NOTE TO SSECR DESIGN TEAM !!!
+
+This module uses raster and vector data that *are not widely available*.
+You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module.
+Reach out to Nick Lyon if questions exist.
+--->
 
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation

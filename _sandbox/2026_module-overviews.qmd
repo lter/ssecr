@@ -1,0 +1,61 @@
+---
+title: "2026 Module Overviews"
+---
+
+## 1. Synthesis Team Fundamentals
+
+As we set out on our synthesis journey, it'll be important to begin with two critically important tools for collaborating: GitHub, and best practices for distributed team science. GitHub is an 'actual' tool (i.e., a web-based platform you can visit) but thinking deeply about how and why your team works in the way that it does and intentionally designing your meetings and systems to support everyone's engagement will also be a crucial component of your process; particularly in navigating interpersonal conflicts or differences in communication and thinking styles.
+
+## 2. Prioritizing Reproducibility
+
+Your project is in its early stages right now but the best way to _get_ organized is to set things up so that you _stay_ organized. So, before you organically accrue many project files, we'll discuss some useful tenets of project organization and documentation (two tightly-related concepts) and how they apply to synthesis work. We'll also discuss responsible use of generative artificial intelligence (genAI), and hopefully prompt some reflection about whether, where and how you might use these tools in your research.
+
+## 3. Working Collaboratively
+
+At this point, you may be holding some discussions among the team that could be challenging. Today we'll give you some tools on understanding team dynamics and navigating conflict (hopefully before you need them) then we'll circle back in later classes to provide some broader context. Similarly, you are probably already writing preliminary code--or at least such code is clearly approaching in your near future. We'll discuss some facets of how that code can be made as reproducible as possible so that even these 'rough draft' code files are interpretable by others. 
+
+## 4. Searching for Consensus & Data
+
+Your group has now likely begun to meet regularly and some of the technical work has likely also begun. You may now benefit from discussing tools for enabling full participation, as well as some models for thinking about how we communicate in groups and how some patterns of "stuck" communication can be resolved. Finally, we'll end on a primer for finding data useful for your project, either from existing data repositories or via sensibly-composed, general searches.
+
+## 5. Exploring Diversity & Visualization
+
+Today, we'll provide you some tools and best practices for making sure that your meetings are impactful, necessary, and accessible to all participants so that meeting with the group doesn't cost you any momentum! We'll then follow up with a quick primer on ggplot and how to leverage data visualization for exploring data. While there are many ways of evaluating whether data are useful, visualization is one of the quicker methods. That visualization can also be useful at virtually all other stages of your project is a happy accident of which you can take advantage.
+
+## 6. Managing Data & Projects
+
+As your quest for relevant data continues, we'll discuss how creating and maintaining a data inventory can be an effort that saves you heartache and greatly accelerates many of the technical facets of your project. After discussing data inventories, we'll introduce some tenets of how you can manage the many tasks that make up your goal of 'doing this project.' This will help you more precisely handle and delegate tasks going forward.
+
+## 7. Planning the Work
+
+As your project work has advanced, your group may find that it's useful to articulate specific sub-goals or desired products. This module will cover some ways of identifying those outcomes and the tasks that are prerequisite to those ends. We'll also discuss how you might go about "harmonizing" (i.e., standardizing and--possibly--combining) the data you have found and what initial exploratory steps might be useful.
+
+## 8. Surviving the Groan Zone
+
+This module is focused on how your group might build consensus, particularly with regard to specific hypotheses or research questions that fit within your larger project frame. We'll also discuss some checks you may want to run on your data and specific functions in R that perform those operations.
+
+## 9. Refining Meetings & Code
+
+We'll begin by covering some useful microstructures to help you through the different kinds of thinking surrounding the "groan zone" to hopefully operationalize some of the content we've covered in earlier modules. We will then transition into some tangible code examples for the kind of data wrangling you are likely to do as you take harmonized, QC'd data and try to turn it into 'analysis-ready' data.
+
+## 10. Ensuring Equitable Credit
+
+Group synthesis requires many types of contributions, from raw data to idea generation, analysis, group organization, figure development, conceptualizing, writing, and editing. Often, little of this work is directly compensated. Conflicts and misunderstandings about what contributions earn authorship arise--especially in the absence of a clearly-articulated policy on intellectual credit. 
+
+In this module we will discuss a few models for aligning expectations around intellectual credit and how they may differ depending on the participants and the particular product the group is developing. We'll also take some time for project groups to develop or refine their own intellect credit policies.
+
+## 11. Testing Synthesis Hypotheses
+
+After data have been prepared for synthesis, how to go about analyzing those data can be quite difficult. Statistical power is rarely an issue because of the sheer volume of data available for many synthesis questions which enables some tools that are not as easily-used in non-synthesis contexts. This increased breadth of options can be paralyzing to some groups and deciding what is "right" versus "good enough" can be a sticking point for some groups.
+
+## 12. Looking Ahead
+
+Recognizing that this course may only be the start of your project, we are nearing the end of it so we'll begin this lesson with some thoughts on how you can prepare to wrap up your work in a way that makes it as useful as possible--both to 'future you' and to groups looking to build on your work. Relatedly, we'll discuss the composition and value of computational notebook files and even how one type of such files (Quarto) can be used to create project websites easily and for free.
+
+## 13. Parking Downhill
+
+Similarly to the prior module, today we'll cover ways in which you can make it as easy as possible to set this project aside if needed but lose as little momentum as possible when picking it back up. We'll also cover how a persuasive grant proposal might be derived from your work thus far. Finally, we'll end by discussing how you might work with spatial data as this is frequently a peripheral or lower-priority question for synthesis groups.
+
+## 14. Sharing the Story
+
+So, you've done the research. Great! Now it's time to get the word out. Science communication is the final step in the synthesis science process. It lets your work grow to be as impactful as it can be. But it's hard, especially for those without training in it. In this module, we'll talk through some broadly applicable scicomm strategies that will get you started. 

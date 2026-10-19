@@ -2,12 +2,10 @@
 title: "Surviving the Groan Zone"
 ---
 
-This module is focused on how your group might build consensus, particularly with regard to specific hypotheses or research questions that fit within your larger project frame. We'll also discuss some checks you may want to run on your data and specific functions in R that perform those operations.
-
 :::{.callout-note icon="false" collapse="false"}
 ### {{< fa file-pen >}} Pre-Class Preparation
 
-There is no specific pre-class preparation for this module!
+- In your group's code workflow (planned or already-written), identify any steps that need to get repeated at least three times
 
 :::
 
