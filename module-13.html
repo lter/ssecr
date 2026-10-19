@@ -518,7 +518,13 @@ gtag('config', 'G-YGFW2JT4EY', { 'anonymize_ip': true});
 </header>
 
 
-<p>Similarly to the prior module, today we’ll cover ways in which you can make it as easy as possible to set this project aside if needed but lose as little momentum as possible when picking it back up. We’ll also cover how a persuasive grant proposal might be derived from your work thus far. Finally, we’ll end by discussing how you might work with spatial data as this is frequently a peripheral or lower-priority question for synthesis groups.</p>
+<!---
+!!! NOTE TO SSECR DESIGN TEAM !!!
+
+This module uses raster and vector data that *are not widely available*.
+You _must_ run run the 'prep-data_spatial.R' script in the "scripts/" directory before you will be able to render this module.
+Reach out to Nick Lyon if questions exist.
+--->
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -938,15 +944,10 @@ PROJCRS["NAD83 / Texas Centric Albers Equal Area",
 <p>In the interests of making this website reasonably quick to re-build, the following code chunk is not actually evaluated but is the correct syntax for this operation.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Transform CRS</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>nc_pixel_nad83 <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">project</span>(<span class="at">x =</span> nc_pixel, <span class="at">y =</span> <span class="st">"epsg:3083"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-|---------|---------|---------|---------|
-=========================================
-                                          </code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check CRS</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>terra<span class="sc">::</span><span class="fu">crs</span>(nc_pixel_nad83)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>nc_pixel_nad83 <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">project</span>(<span class="at">x =</span> nc_pixel, <span class="at">y =</span> <span class="st">"epsg:3083"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Re-check CRS</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>terra<span class="sc">::</span><span class="fu">crs</span>(nc_pixel_nad83)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "PROJCRS[\"NAD83 / Texas Centric Albers Equal Area\",\n    BASEGEOGCRS[\"NAD83\",\n        DATUM[\"North American Datum 1983\",\n            ELLIPSOID[\"GRS 1980\",6378137,298.257222101,\n                LENGTHUNIT[\"metre\",1]]],\n        PRIMEM[\"Greenwich\",0,\n            ANGLEUNIT[\"degree\",0.0174532925199433]],\n        ID[\"EPSG\",4269]],\n    CONVERSION[\"Texas Centric Albers Equal Area\",\n        METHOD[\"Albers Equal Area\",\n            ID[\"EPSG\",9822]],\n        PARAMETER[\"Latitude of false origin\",18,\n            ANGLEUNIT[\"degree\",0.0174532925199433],\n            ID[\"EPSG\",8821]],\n        PARAMETER[\"Longitude of false origin\",-100,\n            ANGLEUNIT[\"degree\",0.0174532925199433],\n            ID[\"EPSG\",8822]],\n        PARAMETER[\"Latitude of 1st standard parallel\",27.5,\n            ANGLEUNIT[\"degree\",0.0174532925199433],\n            ID[\"EPSG\",8823]],\n        PARAMETER[\"Latitude of 2nd standard parallel\",35,\n            ANGLEUNIT[\"degree\",0.0174532925199433],\n            ID[\"EPSG\",8824]],\n        PARAMETER[\"Easting at false origin\",1500000,\n            LENGTHUNIT[\"metre\",1],\n            ID[\"EPSG\",8826]],\n        PARAMETER[\"Northing at false origin\",6000000,\n            LENGTHUNIT[\"metre\",1],\n            ID[\"EPSG\",8827]]],\n    CS[Cartesian,2],\n        AXIS[\"easting (X)\",east,\n            ORDER[1],\n            LENGTHUNIT[\"metre\",1]],\n        AXIS[\"northing (Y)\",north,\n            ORDER[2],\n            LENGTHUNIT[\"metre\",1]],\n    USAGE[\n        SCOPE[\"State-wide spatial data presentation requiring true area measurements.\"],\n        AREA[\"United States (USA) - Texas.\"],\n        BBOX[25.83,-106.66,36.5,-93.5]],\n    ID[\"EPSG\",3083]]"</code></pre>
 </div>
@@ -979,18 +980,18 @@ PROJCRS["NAD83 / Texas Centric Albers Equal Area",
 <p>Now that we’ve covered the main types of spatial data as well as how to check the CRS (and transform if needed) we’re ready to make maps! For consistency with other modules on data visualization, we’ll use <code>ggplot2</code> to make our maps but note that base R also supports map making and there are many useful tutorials elsewhere on making maps in that framework.</p>
 <p>The <code>maps</code> package includes some useful national and US state borders so we’ll begin by preparing an object that combines both sets of borders.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load library</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Make 'borders' object</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>borders <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_as_sf</span>(maps<span class="sc">::</span><span class="fu">map</span>(<span class="at">database =</span> <span class="st">"world"</span>, <span class="at">plot =</span> F, <span class="at">fill =</span> T)) <span class="sc">%&gt;%</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(sf<span class="sc">::</span><span class="fu">st_as_sf</span>(maps<span class="sc">::</span><span class="fu">map</span>(<span class="at">database =</span> <span class="st">"state"</span>, <span class="at">plot =</span> F, <span class="at">fill =</span> T)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load library</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Make 'borders' object</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>borders <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_as_sf</span>(maps<span class="sc">::</span><span class="fu">map</span>(<span class="at">database =</span> <span class="st">"world"</span>, <span class="at">plot =</span> F, <span class="at">fill =</span> T)) <span class="sc">%&gt;%</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(sf<span class="sc">::</span><span class="fu">st_as_sf</span>(maps<span class="sc">::</span><span class="fu">map</span>(<span class="at">database =</span> <span class="st">"state"</span>, <span class="at">plot =</span> F, <span class="at">fill =</span> T)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Note that the simplest way of making a map that includes a raster is to coerce that raster into a dataframe. To do this we will translate each pixel’s geographic coordinates into X and Y values.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>nc_pixel_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(nc_pixel, <span class="at">xy =</span> T) <span class="sc">%&gt;%</span> </span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Rename the 'actual' data layer more clearly</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">elevation_m =</span> SRTMGL3_NC<span class="fl">.003</span>_SRTMGL3_DEM_doy2000042_aid0001)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>nc_pixel_df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(nc_pixel, <span class="at">xy =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Rename the 'actual' data layer more clearly</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">elevation_m =</span> SRTMGL3_NC<span class="fl">.003</span>_SRTMGL3_DEM_doy2000042_aid0001)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>With the borders object and our modified raster in hand, we can now make a map that includes useful context for state/nation borders. Synthesis projects often cover a larger geographic extent than primary projects so this is particularly useful in ways it might not be for primary research.</p>
 <div class="cell">
