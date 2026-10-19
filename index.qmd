@@ -36,7 +36,7 @@ So far, the code facets of this course are taught primarily in R. Specific R pac
 #| warning: false
 
 # install.packages("librarian")
-librarian::shelf(cowplot, esc, exactextractr, lterdatasampler, maps, psych, sf, supportR, terra, tidyverse)
+librarian::shelf(cowplot, esc, exactextractr, lmerTest, lterdatasampler, maps, psych, sf, supportR, terra, tidyverse)
 ```
 
 ## Course Structure
