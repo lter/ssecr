@@ -76,6 +76,9 @@ Check out the tabs below for tools that are particularly-well suited to differen
 
 Purpose: Identify where your group is in the diamond model right now and what stage you need to move through next. 
 
+![](/topics/images/figure_groan-zone.jpg){fig-alt="Figure of Sam Kaner's Diamond Model of Participatory Decision making, showing an increasing diversity of ideas on the left side of the diamond, created through divergent thinking, a period of emergent thinking in the middle known as the _groan zone_ and a narrowing set of ideas filtered down through convergent thinking to a final solution on the right side of the diamond" .lightbox}
+
+
 :::{.panel-tabset}
 ### Part 1 - Reflection
 
@@ -86,26 +89,21 @@ On your own, reflect on the following:
 - Think about the next group work or decision-making task that lies ahead:
     - What stage(s) of the diamond will that work take you through and what kind of thinking will be needed?
 
-### Part 2 - Project Team Discussion
+### Part 2 - Exploring Microstructures
 
-In your project groups:
+You will be assigned to breakout groups and asked to focus on either Emergent, Divergent, or Convergent thinking. 
 
-- Assign a facilitator/timekeeper, notetaker and reporter
-- Go around and--briefly--share your answers to the prompt
-- Discuss and try to reach consensus about which stage(s) of the diamond model best match the next chunk of work you have ahead of you.
-- _Create or refine a conceptual figure_ that captures how you are thinking about the system you are investigating
-- Once you are satisfied with your conceptual figure:
-    - Outline your key questions
-    - Map your planned analyses to them
-    - How are you going to answer each question with data?
-    - If you were working with the tools we suggested last time to start outlining your analysis, this should build from there
-- What are the \~3 key figures that would best illustrate your results?
+- As a group, explore the microstructures in the relevant tabs.
+- Discuss with your group members: which of these microstructures could you apply to your group? What challenges might you face?
 
-### Part 3 - Report Out
+### Part 3 - Process Design in Project Groups
 
-Share what you developed with the whole group!
+Share what you learned with your project group and discuss next steps!
 
-- After all groups have shared, offer suggestions to other groups and/or ask questions
+- Report back to your group any insights from exploring the microstructures. 
+- Return to the inital reflection questions: Where is your group right now in the diamond model? Have you been leveraging the relevant thinking for the stage you are in (divergent, emergent, or convergent)? What stage comes next?
+- Make a plan to use one microstructure in your next meeting. Be sure to assign a facilitator.
 
 :::
+
 ::::
