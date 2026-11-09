@@ -13,7 +13,7 @@ Many synthesis projects are able to find the original data of each study, harmon
 
 To perform meta-analysis you'll need to calculate an "effect size" for all studies you'd like to include. An effect size captures the *direction* and *magnitude* of the relationship analyzed in each original study. Note that some people disagree with the word "effect" in "effect size" because it suggests a causal relationship; for our purposes, let's consider 'effect' to be inclusive of correlative relationships and ignore the possible implication of causality.
 
-A number of effect sizes have been used in meta-analysis. To describe the difference between two groups, such as those in treatment in control conditions, you'll typically need:
+A number of effect sizes have been used in meta-analysis. To describe the difference between two groups, such as those in treatment versus control conditions, you'll typically need:
 
 1.  A measure of the 'central tendency' of the response
     -   Often the arithmetic mean
