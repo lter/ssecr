@@ -1,5 +1,7 @@
 # Intellectual Credit Guidelines
 
+<!-- Copy this file to the top-level of your GitHub repository and name it "CONTRIBUTING.md" _before_ editing it. -->
+
 This project had its genesis in the LTER [Synthesis Skills for Early Career Researchers](https://lter.github.io/ssecr/) course of 2026. The original project group (<mark>\[insert names here\]</mark>) developed the idea, gathered data... <mark>\[fill in here however far you have gotten/expect to get in the course\]</mark>. These guidelines articulate how we, as a group, have agreed to share intellectual credit for project outputs both during the course and in any related project work that may take place after the course has ended.
 
 *The headings and prompts below are intended to guide and facilitate substantive group discussion, *not* to constrain group decision making. There is no wrong way to do this except to avoid the conversation.*
