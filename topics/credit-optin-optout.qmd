@@ -12,9 +12,10 @@ There are two major ways to approach authorship. Opt-in approaches require indiv
 
 | Opt-in | Opt-out |
 |:------------------------:|:-----------------------:|
-| Controlled, committed team | Inclusive |
-| Defined boundaries | Workload can be highly variable among authors |
-| Communicating the opportunity can be challenging | Contributions diluted |
+| Can seem exclusionary | Inclusive |
+| Cohesive team | "herding cats" |
+| Risk of insular perspective | Risk of social loafing |
+| Prone to misunderstandings in regions where open data is not the norm | Key contributions can be diluted by a large author list |
 
 Some collaboration efforts use a hybrid system, where the primary paper issuing from a data assembly effort is expected to use an opt-out model (and therefore includes all the data contributors), while subsequent papers require potential authors to opt-in and participate in developing the analysis and writing the paper.
 
@@ -22,6 +23,7 @@ Some collaboration efforts use a hybrid system, where the primary paper issuing 
 ### {{< fa circle-check >}} **It's OK to opt out!**
 
 Researchers can be reluctant to opt-out of a paper for many reasons. They "should" have time. They need the paper for their CV. Or they are just embarrassed to have misjudged their own capacity to contribute. If you find that you can't contribute at a level that warrants authorship, the kindest thing you can do for your co-authors is to opt out.
+
 :::
 
 Authorship is also not the only way to recognize contributors. Generally, funders should appear in the acknowledgments section unless they have *also* contributed to the project in other ways. Other contributions, such as translation, line editing, acquisition of permits, or other logistical support are also appropriate for the acknowledgments section. Be careful, though, to consider whether they may have contributed in more substantial ways. Data providers should be credited by [citing their data](https://edirepository.org/resources/citing-data), in the references using a DOI and appropriate bibliographic information.
