@@ -26,17 +26,18 @@ Let's take a closer look at three approaches to authorship policies from teams o
 1.  [Nutrient Network Authorship Policy](https://nutnet.org/authorship)
 2.  [Expanded Authorship Guidelines](https://doi.org/10.1002/2688-8319.12060) (Cooke _et al._ 2021)
 3.  [CReDiT Framework](https://doi.org/10.1087/20150211) (Brand _et al._ 2015)
+   - [Tenzing Tool](https://casrai.org/guides/tenzing-credit-contributor-statement-tool) is an open source SHINY app that takes a CRediT spreadsheet and outputs a contributor roles taxonomy, ready to submit with a manuscript.
 
 ### Part 2 - Discuss as a Group
 Gather in your project teams and begin to build out your own authorship approach, if you have not already. Here are a few key questions to get you started:
 
-- How will you let participants know about papers and products?
-- Beyond your core group, have others been involved in ways that might warrant authorship?
-    - How will they learn about upcoming products.
-- Do you want to operate on an opt-in or an opt-out basis?
 - What kinds of products do you expect to produce?
 - What kinds of contributions do you think are most important?
 - What is the minimum requirement for being a paper author? A dataset author? A package creator?
+- Beyond your core group, have others been involved in ways that might warrant authorship?
+    - How will they learn about upcoming products.
+- How will you let participants know about papers and products?
+- Do you want to operate on an opt-in or an opt-out basis?
 
 :::
 ::::
