@@ -9,6 +9,15 @@ There is no specific pre-class preparation for this module!
 
 :::
 
+<!---
+Related GoogleSlide deck link: https://docs.google.com/presentation/d/1QKoNqqKJKhGOp6imNb2hiQViCrhS1T7hbEDu7t0Q_Ns/edit?usp=sharing
+--->
+
+
+<div style="display: flex; justify-content: center;"> 
+<iframe width="560" height="380" src="https://docs.google.com/presentation/d/1QKoNqqKJKhGOp6imNb2hiQViCrhS1T7hbEDu7t0Q_Ns/preview?" frameborder="0" allowfullscreen></iframe>
+</div> 
+
 {{< include topics/credit-background.qmd >}}
 
 {{< include topics/credit-optin-optout.qmd >}}
