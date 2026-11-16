@@ -89,7 +89,7 @@ Project groups will also meet at a time of their own choosing to work on project
 | 11 / 19 | 11. Testing Synthesis Hypotheses | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
 | 11 / 26 | **No Class!** | -- |
 | 12 / 03 | 12. Looking Ahead | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
-| 12 / 10 | 13. Parking Downhill | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
+| 12 / 10 | 13. Mapping the Way Ahead | <span style="color:#4AB2CB">{{< fa people-group >}} Marty Downs</span> <br> <span style="color:#97AE3F">{{< fa screwdriver-wrench >}} Nick Lyon</span> |
 | 12 / 17  | 14. Sharing the Story | <span style="color:#4AB2CB">{{< fa people-group >}} _TBD_</span> |
 | TBD | Final Project Symposium | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |
 | TBD | Presentations on LTER Community Call | {{< fa people-group >}} / {{< fa screwdriver-wrench >}} _SSECR Participants!_ |

@@ -50,12 +50,13 @@ website:
               href: module-11.qmd
             - text: "12. Looking Ahead"
               href: module-12.qmd
-            - text: "13. Parking Downhill"
+            - text: "13. Mapping the Way Ahead"
               href: module-13.qmd
             - text: "14. Sharing the Story"
               href: module-14.qmd
       - text: "Additional Resources"
         href: resources.qmd
+  
   navbar:
     background: primary
     right: 
